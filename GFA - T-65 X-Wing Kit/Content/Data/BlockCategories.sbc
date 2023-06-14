@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
+      <Name>GFA_Category</Name>
+      <ItemIds>
+        <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>Collector/GFA_SG_XWing_CargoScoop</string>
+        <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
+        <string>AdvancedDoor/GFA_SG_XWing_Wing</string>
+        <string>AdvancedDoor/GFA_SG_XWing_WingMirror</string>
+        <string>Thrust/GFA_SG_XWing_Intake</string>
+        <string>BatteryBlock/GFA_SG_XWing_Engine</string>
+        <string>Thrust/GFA_SG_XWing_Thruster</string>
+        <string>JumpDrive/GFA_SG_XWing_Hyperdrive</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category_XWing}</DisplayName>
+      <Name>GFA_Category_XWing</Name>
+      <ItemIds>
+        <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>Collector/GFA_SG_XWing_CargoScoop</string>
+        <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
+        <string>AdvancedDoor/GFA_SG_XWing_Wing</string>
+        <string>AdvancedDoor/GFA_SG_XWing_WingMirror</string>
+        <string>Thrust/GFA_SG_XWing_Intake</string>
+        <string>BatteryBlock/GFA_SG_XWing_Engine</string>
+        <string>Thrust/GFA_SG_XWing_Thruster</string>
+        <string>JumpDrive/GFA_SG_XWing_Hyperdrive</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
+      <Name>SmallBlocks</Name>
+      <ItemIds>
+        <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>Collector/GFA_SG_XWing_CargoScoop</string>
+        <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
+        <string>AdvancedDoor/GFA_SG_XWing_Wing</string>
+        <string>AdvancedDoor/GFA_SG_XWing_WingMirror</string>
+        <string>Thrust/GFA_SG_XWing_Intake</string>
+        <string>BatteryBlock/GFA_SG_XWing_Engine</string>
+        <string>Thrust/GFA_SG_XWing_Thruster</string>
+        <string>JumpDrive/GFA_SG_XWing_Hyperdrive</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>
