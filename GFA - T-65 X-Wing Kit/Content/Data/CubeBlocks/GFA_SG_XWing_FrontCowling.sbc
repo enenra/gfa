@@ -17,9 +17,12 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\small\GFA_SG_XWing_FrontCowling.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
+				<Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="InteriorPlate" Count="5" />
+				<Component Subtype="SteelPlate" Count="10" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="0.30" EndY="0.70"/>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.25" EndX="1.00" EndY="1.75"/>
@@ -30,6 +33,10 @@
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<MirroringBlock>GFA_SG_XWing_FrontCowlingMirror</MirroringBlock>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <PCU>5</PCU>
 		</Definition>
     
 		<Definition>
@@ -48,9 +55,12 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\small\GFA_SG_XWing_FrontCowlingMirror.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
+				<Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="InteriorPlate" Count="5" />
+				<Component Subtype="SteelPlate" Count="10" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Front" StartX="0.70" StartY="0.00" EndX="1.00" EndY="0.62"/>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.25" EndX="1.00" EndY="1.75"/>
@@ -61,6 +71,10 @@
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<MirroringBlock>GFA_SG_XWing_FrontCowling</MirroringBlock>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <PCU>5</PCU>
 		</Definition>
 
 	</CubeBlocks>

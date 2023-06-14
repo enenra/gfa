@@ -1,31 +1,56 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<CubeBlocks>
-		<Definition>
-			<Id>
-				<TypeId>CubeBlock</TypeId>
-				<SubtypeId>GFA_SG_XWing_NoseCone</SubtypeId>
-			</Id>
-			<DisplayName>{LOC:DisplayName_GFA_SG_XWing_NoseCone}</DisplayName>
-			<Description>{LOC:Description_GFA_SG_XWing_NoseCone}</Description>
-			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_XWing_NoseCone.dds</Icon>
-			<Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
-			<CubeSize>Small</CubeSize>
-			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="3" y="2" z="3"/>
-			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\small\GFA_SG_XWing_NoseCone.mwm</Model>
-			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
-			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
-			<BlockPairName>GFA_SG_XWing_NoseCone</BlockPairName>
-			<MountPoints>
-				<MountPoint Side="Back" StartX="0.50" StartY="0.50" EndX="2.50" EndY="2.00"/>
-				<MountPoint Side="Top" StartX="1.00" StartY="0.00" EndX="2.00" EndY="0.50"/>
-			</MountPoints>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-		</Definition>
-	</CubeBlocks>
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+      <Id>
+        <TypeId>CameraBlock</TypeId>
+        <SubtypeId>GFA_SG_XWing_NoseCone</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_SG_XWing_NoseCone}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_XWing_NoseCone}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_SG_XWing_NoseCone.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\small\GFA_SG_XWing_NoseCone.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="5" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <BlockPairName>GFA_SG_XWing_NoseCone</BlockPairName>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.50" StartY="0.50" EndX="2.50" EndY="2.00"/>
+        <MountPoint Side="Top" StartX="1.00" StartY="0.00" EndX="2.00" EndY="0.50"/>
+      </MountPoints>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <PCU>25</PCU>
+
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.00003</RequiredPowerInput>
+      <RequiredChargingInput>0.001</RequiredChargingInput>
+
+      <DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <DestroySound>PoofExplosionCat1</DestroySound>
+
+      <OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <RaycastConeLimit>45</RaycastConeLimit>
+      <RaycastDistanceLimit>-1</RaycastDistanceLimit>
+      <RaycastTimeMultiplier>2.0</RaycastTimeMultiplier>
+    </Definition>
+
+  </CubeBlocks>
 </Definitions>
