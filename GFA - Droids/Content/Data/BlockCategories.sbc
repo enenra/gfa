@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
+      <Name>GFA_Category</Name>
+      <ItemIds>
+        <string>CubeBlock/GFA_LG_Droids_R2</string>
+        <string>CubeBlock/GFA_SG_Droids_R2</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category_Droids}</DisplayName>
+      <Name>GFA_Category_Droids</Name>
+      <ItemIds>
+        <string>CubeBlock/GFA_LG_Droids_R2</string>
+        <string>CubeBlock/GFA_SG_Droids_R2</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+        <string>CubeBlock/GFA_LG_Droids_R2</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
+      <Name>SmallBlocks</Name>
+      <ItemIds>
+        <string>CubeBlock/GFA_SG_Droids_R2</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>
