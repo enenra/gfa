@@ -39,13 +39,14 @@ namespace Scripts
 {
     partial class Parts
     {
-        private AmmoDef GFA_Ammo_XWing_LaserCannon => new AmmoDef
+        private AmmoDef GFA_Ammo_KX9LaserCannon => new AmmoDef
         {
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "Laser Bolt", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = 100f, // Direct damage; one steel plate is worth 100.
             Mass = 1f, // In kilograms; how much force the impact will apply to the target.
+            Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             EnergyMagazineSize = 1000, // For energy weapons, how many shots to fire before reloading.
             HeatModifier = 1f, // Allows this ammo to modify the amount of heat the weapon produces per shot.
             NoGridOrArmorScaling = true, // If you enable this you can remove the damagescale section entirely.
@@ -94,8 +95,9 @@ namespace Scripts
                     MaxAbsorb = 120f, // Soft cutoff for damage, except for pooled falloff.  If pooled falloff, limits max damage per block.
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     ParticleScale = 1,
-                    CustomParticle = "GFA_Particle_XWing_LaserCannon_Muzzle", // Particle SubtypeID, from your Particle SBC
+                    CustomParticle = "", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "", // SubtypeID from your Audio SBC, not a filename
+                    NoVisuals = true,
                     NoSound = true,
                     Shape = Diamond, // Round or Diamond shape.  Diamond is more performance friendly.
                 },
@@ -107,23 +109,44 @@ namespace Scripts
                 DesiredSpeed = 400, // voxel phasing if you go above 5100
                 MaxTrajectory = 1000f, // Max Distance the projectile or beam can Travel.
                 TotalAcceleration = 1234.5, // 0 means no limit, something to do due with a thing called delta and something called v.
-                OnHit = new OnHitDef
-                {
-                    Duration = 0,
-                    ProcInterval = 0,
-                    ProcAmount = 0,
-                    ProcOnVoxels = false,
-                    FragOnProc = false,
-                    DieOnEnd = false,
-                    StickOnHit = false,
-                    AlignFragtoImpactAngle = false,
-                }
             },
             AmmoGraphics = new GraphicDef
             {
                 ModelName = "",
                 VisualProbability = 1f,
                 ShieldHitDraw = false,
+                Decals = new DecalDef
+                {
+                    MaxAge = 3600,
+                    Map = new[]
+                    {
+                        new TextureMapDef
+                        {
+                            HitMaterial = "Metal",
+                            DecalMaterial = "GunBullet",
+                        },
+                        new TextureMapDef
+                        {
+                            HitMaterial = "Glass",
+                            DecalMaterial = "GunBullet",
+                        },
+                    },
+                },
+                Particles = new AmmoParticleDef
+                {
+                    Hit = new ParticleDef
+                    {
+                        Name = "GFA_Particle_XWing_LaserCannon_Impact",
+                        ApplyToShield = true,
+                        Offset = Vector(x: 0, y: 0, z: 0),
+                        DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
+                        Extras = new ParticleOptionDef
+                        {
+                            Scale = 2,
+                            HitPlayChance = 1f,
+                        },
+                    },
+                },
                 Lines = new LineDef
                 {
                     ColorVariance = Random(start: 0.75f, end: 2f),

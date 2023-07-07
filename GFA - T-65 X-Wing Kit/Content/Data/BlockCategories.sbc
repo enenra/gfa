@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CategoryClasses>
 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -71,6 +72,30 @@
         <string>BatteryBlock/GFA_SG_XWing_Engine</string>
         <string>Thrust/GFA_SG_XWing_Thruster</string>
         <string>JumpDrive/GFA_SG_XWing_Hyperdrive</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_ConveyorBlocks</DisplayName>
+      <Name>Conveyors</Name>
+      <ItemIds>
+        <string>Collector/GFA_SG_XWing_CargoScoop</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_Cockpit</DisplayName>
+      <Name>Cockpits</Name>
+      <ItemIds>
+        <string>Cockpit/GFA_SG_XWing_Cockpit</string>
       </ItemIds>
     </Category>
 

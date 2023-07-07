@@ -14,8 +14,7 @@ using System.Collections.Generic;
 
 namespace Scripts {   
     partial class Parts {
-        // Don't edit above this line
-        WeaponDefinition GFA_Weapon_XWing_LaserCannon => new WeaponDefinition
+        WeaponDefinition GFA_Weapon_KX9LaserCannon => new WeaponDefinition
         {
             Assignments = new ModelAssignmentsDef
             {
@@ -111,9 +110,8 @@ namespace Scripts {
                 },
             },
             Ammos = new[] {
-                GFA_Ammo_XWing_LaserCannon,
+                GFA_Ammo_KX9LaserCannon,
             },
         };
-        // Don't edit below this line.
     }
 }

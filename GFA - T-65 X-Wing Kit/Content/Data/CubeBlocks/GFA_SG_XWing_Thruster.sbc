@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CubeBlocks>
 
     <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
@@ -65,7 +66,10 @@
 
       <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
       <FlameDamage>0.1</FlameDamage>
-      <FlameLengthScale>1.2</FlameLengthScale>
+      <FlameLengthScale>0.6</FlameLengthScale>
+      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
       <FlameIdleColor>
         <X>1</X>
         <Y>0</Y>

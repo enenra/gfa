@@ -5,7 +5,10 @@ namespace Scripts
     {
         internal Parts()
         {
-            PartDefinitions(GFA_Weapon_XWing_LaserCannon);
+            PartDefinitions(
+                GFA_Weapon_KX9LaserCannon,
+                GFA_Weapon_MG7ProtonTorpedoLauncher
+                );
         }
     }
 }
