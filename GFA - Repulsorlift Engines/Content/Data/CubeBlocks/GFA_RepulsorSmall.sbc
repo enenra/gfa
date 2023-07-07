@@ -34,11 +34,11 @@
         <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
         <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
       </MountPoints>
-			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_RepulsorSmall_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_RepulsorSmall_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_RepulsorSmall_BS3.mwm"/>
-			</BuildProgressModels>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_RepulsorSmall_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_RepulsorSmall_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_RepulsorSmall_BS3.mwm"/>
+      </BuildProgressModels>
       <BlockPairName>GFA_RepulsorSmall</BlockPairName>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
@@ -46,10 +46,10 @@
       <BuildTimeSeconds>30</BuildTimeSeconds>
       <ResourceSinkGroup>Thrust</ResourceSinkGroup>
       <IsAirTight>true</IsAirTight>
-      
+
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 
-      <ForceMagnitude>300000</ForceMagnitude>
+      <ForceMagnitude>1200000</ForceMagnitude>
       <SlowdownFactor>1</SlowdownFactor>
       <MaxPowerConsumption>2.5</MaxPowerConsumption>
       <MinPowerConsumption>0.000002</MinPowerConsumption>
@@ -107,11 +107,11 @@
         <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
         <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
       </MountPoints>
-			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_RepulsorSmall_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_RepulsorSmall_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_RepulsorSmall_BS3.mwm"/>
-			</BuildProgressModels>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_RepulsorSmall_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_RepulsorSmall_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_RepulsorSmall_BS3.mwm"/>
+      </BuildProgressModels>
       <BlockPairName>GFA_RepulsorSmall</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
@@ -122,7 +122,7 @@
 
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 
-      <ForceMagnitude>6000</ForceMagnitude>
+      <ForceMagnitude>24000</ForceMagnitude>
       <SlowdownFactor>1</SlowdownFactor>
       <MaxPowerConsumption>0.100</MaxPowerConsumption>
       <MinPowerConsumption>0.000002</MinPowerConsumption>
