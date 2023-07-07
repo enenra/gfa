@@ -36,7 +36,7 @@ using static Scripts.Structure.WeaponDefinition.AmmoDef.GraphicDef.DecalDef;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef.DamageTypes.Damage;
 
 namespace Scripts
-{ // Don't edit above this line
+{
     partial class Parts
     {
         private AmmoDef GFA_Ammo_XWing_LaserCannon => new AmmoDef
@@ -44,13 +44,15 @@ namespace Scripts
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "Laser Bolt", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 111f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = 100f, // Direct damage; one steel plate is worth 100.
             Mass = 1f, // In kilograms; how much force the impact will apply to the target.
-            EnergyMagazineSize = 1, // For energy weapons, how many shots to fire before reloading.
-            HeatModifier = -1f, // Allows this ammo to modify the amount of heat the weapon produces per shot.
+            EnergyMagazineSize = 1000, // For energy weapons, how many shots to fire before reloading.
+            HeatModifier = 1f, // Allows this ammo to modify the amount of heat the weapon produces per shot.
             NoGridOrArmorScaling = true, // If you enable this you can remove the damagescale section entirely.
+            HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             Shape = new ShapeDef // Defines the collision shape of the projectile, defaults to LineShape and uses the visual Line Length if set to 0.
             {
+                Shape = LineShape, // LineShape or SphereShape. Do not use SphereShape for fast moving projectiles if you care about precision.
                 Diameter = 2, // Diameter is minimum length of LineShape or minimum diameter of SphereShape.
             },
             DamageScales = new DamageScaleDef
@@ -60,8 +62,8 @@ namespace Scripts
                 // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
                 FallOff = new FallOffDef
                 {
-                    Distance = 0f, // Distance at which damage begins falling off.
-                    MinMultipler = 0.5f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    Distance = 500f, // Distance at which damage begins falling off.
+                    MinMultipler = 0.01f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Shields = new ShieldDef
                 {
@@ -92,19 +94,21 @@ namespace Scripts
                     MaxAbsorb = 120f, // Soft cutoff for damage, except for pooled falloff.  If pooled falloff, limits max damage per block.
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     ParticleScale = 1,
-                    CustomParticle = "", // Particle SubtypeID, from your Particle SBC
+                    CustomParticle = "GFA_Particle_XWing_LaserCannon_Muzzle", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "", // SubtypeID from your Audio SBC, not a filename
+                    NoSound = true,
                     Shape = Diamond, // Round or Diamond shape.  Diamond is more performance friendly.
-                }, 
+                },
             },
             Trajectory = new TrajectoryDef
             {
                 Guidance = None, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 MaxLifeTime = 900, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..). time begins at 0 and time must EXCEED this value to trigger "time > maxValue". Please have a value for this, It stops Bad things.
-                DesiredSpeed = 500, // voxel phasing if you go above 5100
+                DesiredSpeed = 400, // voxel phasing if you go above 5100
                 MaxTrajectory = 1000f, // Max Distance the projectile or beam can Travel.
                 TotalAcceleration = 1234.5, // 0 means no limit, something to do due with a thing called delta and something called v.
-                OnHit = new OnHitDef {
+                OnHit = new OnHitDef
+                {
                     Duration = 0,
                     ProcInterval = 0,
                     ProcAmount = 0,
@@ -117,128 +121,40 @@ namespace Scripts
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "", // Model Path goes here.  "\\Models\\Ammo\\Starcore_Arrow_Missile_Large"
-                VisualProbability = 1f, // %
+                ModelName = "",
+                VisualProbability = 1f,
                 ShieldHitDraw = false,
-                Decals = new DecalDef
-                {
-                    MaxAge = 3600,
-                    Map = new[]
-                    {
-                        new TextureMapDef
-                        {
-                            HitMaterial = "Metal",
-                            DecalMaterial = "GunBullet",
-                        },
-                        new TextureMapDef
-                        {
-                            HitMaterial = "Glass",
-                            DecalMaterial = "GunBullet",
-                        },
-                    },
-                },
-                Particles = new AmmoParticleDef
-                {
-                    Ammo = new ParticleDef
-                    {
-                        Name = "", //ShipWelderArc
-                        Offset = Vector(x: 0, y: 0, z: 0),
-                        DisableCameraCulling = true,// If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
-                        Extras = new ParticleOptionDef
-                        {
-                            Scale = 1,
-                        },
-                    },
-                    Hit = new ParticleDef
-                    {
-                        Name = "",
-                        ApplyToShield = true,
-                        Offset = Vector(x: 0, y: 0, z: 0),
-                        DisableCameraCulling = true, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
-                        Extras = new ParticleOptionDef
-                        {
-                            Scale = 1,
-                            HitPlayChance = 1f,
-                        },
-                    },
-                    Eject = new ParticleDef
-                    {
-                        Name = "",
-                        ApplyToShield = true,
-                        Offset = Vector(x: 0, y: 0, z: 0),
-                        DisableCameraCulling = true, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
-                        Extras = new ParticleOptionDef
-                        {
-                            Scale = 1,
-                            HitPlayChance = 1f,
-                        },
-                    },
-                },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.75f, end: 2f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 0f), // adds random value to default width (negatives shrinks width)
-                    DropParentVelocity = false, // If set to true will not take on the parents (grid/player) initial velocity when rendering.
+                    ColorVariance = Random(start: 0.75f, end: 2f),
+                    WidthVariance = Random(start: 0f, end: 0f),
+                    DropParentVelocity = false,
 
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 5f, //
-                        Width = 0.1f, //
-                        Color = Color(red: 3, green: 2, blue: 1f, alpha: 1), // RBG 255 is Neon Glowing, 100 is Quite Bright.
-                        FactionColor = DontUse, // DontUse, Foreground, Background.
-                        VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
-                        AlwaysDraw = false, // Prevents this tracer from being culled.  Only use if you have a reason too (very long tracers/trails).
-                        Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "WeaponLaser", // Please always have this Line set, if this Section is enabled.
-                        },
-                        TextureMode = Normal, // Normal, Cycle, Chaos, Wave
-                        Segmentation = new SegmentDef
-                        {
-                            Enable = false, // If true Tracer TextureMode is ignored
-                            Textures = new[] {
-                                "", // Please always have this Line set, if this Section is enabled.
-                            },
-                            SegmentLength = 0f, // Uses the values below.
-                            SegmentGap = 0f, // Uses Tracer textures and values
-                            Speed = 1f, // meters per second
-                            Color = Color(red: 1, green: 2, blue: 2.5f, alpha: 1),
-                            FactionColor = DontUse, // DontUse, Foreground, Background.
-                            WidthMultiplier = 1f,
-                            Reverse = false, 
-                            UseLineVariance = true,
-                            WidthVariance = Random(start: 0f, end: 0f),
-                            ColorVariance = Random(start: 0f, end: 0f)
-                        }
-                    },
-                    Trail = new TrailDef
-                    {
-                        Enable = false,
-                        AlwaysDraw = false, // Prevents this tracer from being culled.  Only use if you have a reason too (very long tracers/trails).
+                        Length = 10f,
+                        Width = 0.1f,
+                        Color = Color(red: 13, green: 3, blue: 2, alpha: 1),
+                        FactionColor = DontUse,
+                        VisualFadeStart = 0,
+                        VisualFadeEnd = 0,
+                        AlwaysDraw = false,
                         Textures = new[] {
-                            "", // Please always have this Line set, if this Section is enabled.
+                            "GFA_XWing_LaserCannon_Bullet",
                         },
-                        TextureMode = Normal,
-                        DecayTime = 3, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
-                        Color = Color(red: 0, green: 0, blue: 1, alpha: 1),
-                        FactionColor = DontUse, // DontUse, Foreground, Background.
-                        Back = false,
-                        CustomWidth = 0,
-                        UseWidthVariance = false,
-                        UseColorFade = true,
                     },
                 },
             },
             AmmoAudio = new AmmoAudioDef
             {
-                TravelSound = "", // SubtypeID for your Sound File. Travel, is sound generated around your Projectile in flight
-                HitSound = "",
+                TravelSound = "_GFA_LaserCannon_PassBy",
+                HitSound = "_GFA_XWing_LaserCannon_Impact",
                 ShotSound = "",
-                ShieldHitSound = "",
-                PlayerHitSound = "",
-                VoxelHitSound = "",
-                FloatingHitSound = "",
+                ShieldHitSound = "_GFA_Shield_Impact",
+                PlayerHitSound = "_GFA_XWing_LaserCannon_Impact",
+                VoxelHitSound = "_GFA_XWing_LaserCannon_Impact",
+                FloatingHitSound = "_GFA_XWing_LaserCannon_Impact",
                 HitPlayChance = 0.5f,
                 HitPlayShield = true,
             },

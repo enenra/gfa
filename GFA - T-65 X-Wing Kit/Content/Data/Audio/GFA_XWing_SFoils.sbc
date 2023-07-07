@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+  
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_XWing_SFoils_Close</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>20</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_XWing_SFoils_Close.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_XWing_SFoils_Close</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>5</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Volume>1.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_XWing_SFoils_Close.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_XWing_SFoils_Open</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>20</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_XWing_SFoils_Open.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_XWing_SFoils_Open</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>5</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Volume>1.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_XWing_SFoils_Open.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+  </Sounds>
+</Definitions>

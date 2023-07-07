@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_XWing_Thruster</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>50</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.5</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_XWing_Thruster_Start.wav</Start>
+          <Loop>Audio\Arc_GFA_XWing_Thruster_Loop.wav</Loop>
+          <End>Audio\Arc_GFA_XWing_Thruster_End.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_XWing_Thruster</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>30</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Volume>0.75</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_XWing_Thruster_Start.wav</Start>
+          <Loop>Audio\Arc_GFA_XWing_Thruster_Loop.wav</Loop>
+          <End>Audio\Arc_GFA_XWing_Thruster_End.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+  </Sounds>
+</Definitions>

@@ -47,11 +47,11 @@
 
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <PrimarySound>SmShipSmJet</PrimarySound>
+      <PrimarySound>_GFA_XWing_Thruster</PrimarySound>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
 
-      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <SilenceableByShipSoundSystem>false</SilenceableByShipSoundSystem>
 
       <ForceMagnitude>120000</ForceMagnitude>
       <SlowdownFactor>1</SlowdownFactor>
@@ -65,7 +65,19 @@
 
       <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
       <FlameDamage>0.1</FlameDamage>
-      <FlameLengthScale>1.4</FlameLengthScale>
+      <FlameLengthScale>1.2</FlameLengthScale>
+      <FlameIdleColor>
+        <X>1</X>
+        <Y>0</Y>
+        <Z>0.3</Z>
+        <W>0.65</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1</X>
+        <Y>0</Y>
+        <Z>0.2</Z>
+        <W>0.75</W>
+      </FlameFullColor>
     </Definition>
 
   </CubeBlocks>

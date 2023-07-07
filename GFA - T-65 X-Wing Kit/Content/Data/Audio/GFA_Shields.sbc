@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+  
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Shield_Impact</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>300</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <Volume>0.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_Shield_Impact</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>200</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <Volume>1.0</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+  </Sounds>
+</Definitions>
