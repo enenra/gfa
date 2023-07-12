@@ -14,6 +14,8 @@
         <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncher</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncherMirror</string>
         <string>Cockpit/GFA_SG_XWing_Cockpit</string>
         <string>Collector/GFA_SG_XWing_CargoScoop</string>
         <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
@@ -38,6 +40,8 @@
         <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncher</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncherMirror</string>
         <string>Cockpit/GFA_SG_XWing_Cockpit</string>
         <string>Collector/GFA_SG_XWing_CargoScoop</string>
         <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
@@ -62,6 +66,8 @@
         <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncher</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncherMirror</string>
         <string>Cockpit/GFA_SG_XWing_Cockpit</string>
         <string>Collector/GFA_SG_XWing_CargoScoop</string>
         <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
@@ -96,6 +102,20 @@
       <Name>Cockpits</Name>
       <ItemIds>
         <string>Cockpit/GFA_SG_XWing_Cockpit</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
+      <Name>Weapons</Name>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncher</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncherMirror</string>
+        <string>ConveyorSorter/GFA_SG_XWing_FireControl</string>
       </ItemIds>
     </Category>
 
