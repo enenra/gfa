@@ -14,7 +14,7 @@
       <Loopable>true</Loopable>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\Arc_GFA_XWing_Cockpit.wav</Start>
+          <Start>Audio\XWing\Arc_GFA_XWing_Cockpit.wav</Start>
         </Wave>
       </Waves>
     </Sound>
@@ -30,7 +30,76 @@
       <Loopable>true</Loopable>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\Arc_GFA_XWing_Cockpit.wav</Start>
+          <Start>Audio\XWing\Arc_GFA_XWing_Cockpit.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <!-- Canopy Sounds -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_XWing_Cockpit_Close</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>20</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\XWing\Arc_GFA_XWing_Cockpit_Close.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_XWing_Cockpit_Close</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>5</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Volume>1.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\XWing\Arc_GFA_XWing_Cockpit_Close.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_XWing_Cockpit_Open</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>20</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\XWing\Arc_GFA_XWing_Cockpit_Open.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_XWing_Cockpit_Open</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>5</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Volume>1.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\XWing\Arc_GFA_XWing_Cockpit_Open.wav</Start>
         </Wave>
       </Waves>
     </Sound>
