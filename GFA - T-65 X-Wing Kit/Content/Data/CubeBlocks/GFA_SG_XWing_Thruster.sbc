@@ -71,21 +71,23 @@
 
       <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
       <FlameDamage>0.1</FlameDamage>
-      <FlameLengthScale>0.6</FlameLengthScale>
-      <FlameFlare>LargeGridSmallThruster</FlameFlare>
+      <FlameLengthScale>0.1</FlameLengthScale>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>SmallGridSmallThruster</FlameFlare>
       <FlameVisibilityDistance>500</FlameVisibilityDistance>
-      <FlameGlareQuerySize>0.5</FlameGlareQuerySize>
+      <FlameGlareQuerySize>0.1</FlameGlareQuerySize>
       <FlameIdleColor>
-        <X>1</X>
-        <Y>0</Y>
-        <Z>0.3</Z>
-        <W>0.65</W>
+        <X>0.75</X>
+        <Y>0.0</Y>
+        <Z>0.1</Z>
+        <W>0.1</W>
       </FlameIdleColor>
       <FlameFullColor>
-        <X>1</X>
-        <Y>0</Y>
+        <X>1.5</X>
+        <Y>0.0</Y>
         <Z>0.2</Z>
-        <W>0.75</W>
+        <W>0.5</W>
       </FlameFullColor>
     </Definition>
 
