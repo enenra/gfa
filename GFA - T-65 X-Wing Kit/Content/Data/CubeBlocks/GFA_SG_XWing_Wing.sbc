@@ -27,9 +27,6 @@
         <Component Subtype="SteelPlate" Count="10" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
-			<BuildProgressModels>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_XWing_Wing_BS1.mwm"/>
-			</BuildProgressModels>
       <BlockPairName>GFA_SG_XWing_Wing</BlockPairName>
       <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
@@ -54,7 +51,6 @@
       <PCU>15</PCU>
       <PowerConsumptionIdle>0.00001</PowerConsumptionIdle>
       <PowerConsumptionMoving>0.001</PowerConsumptionMoving>
-      <!-- <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName> -->
 
       <Subparts>
         <SubpartDefinition>
@@ -125,7 +121,6 @@
       <PCU>15</PCU>
       <PowerConsumptionIdle>0.00001</PowerConsumptionIdle>
       <PowerConsumptionMoving>0.001</PowerConsumptionMoving>
-      <!-- <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName> -->
 
       <Subparts>
         <SubpartDefinition>
