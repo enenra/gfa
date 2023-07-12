@@ -9,11 +9,14 @@
         <SubtypeId>Arc_GFA_XWing_Thruster</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>50</MaxDistance>
+      <MaxDistance>100</MaxDistance>
       <PitchVariation>10</PitchVariation>
       <PreventSynchronization>1</PreventSynchronization>
       <Volume>0.5</Volume>
       <Loopable>true</Loopable>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="20" Distance="100" Sound="Arc_GFA_XWing_Thruster_Distant" />
+      </DistantSounds>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\XWing\Arc_GFA_XWing_Thruster_Start.wav</Start>
@@ -25,20 +28,58 @@
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_XWing_Thruster_Distant</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>800</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.5</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\XWing\Arc_GFA_XWing_Thruster_Loop_Distant.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
         <SubtypeId>Real_GFA_XWing_Thruster</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>30</MaxDistance>
+      <MaxDistance>50</MaxDistance>
       <PitchVariation>10</PitchVariation>
       <PreventSynchronization>1</PreventSynchronization>
       <RealisticFilter>realShipFilter</RealisticFilter>
       <Volume>0.75</Volume>
       <Loopable>true</Loopable>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="20" Distance="50" Sound="Real_GFA_XWing_Thruster_Distant" />
+      </DistantSounds>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\XWing\Arc_GFA_XWing_Thruster_Start.wav</Start>
           <Loop>Audio\XWing\Arc_GFA_XWing_Thruster_Loop.wav</Loop>
           <End>Audio\XWing\Arc_GFA_XWing_Thruster_End.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_XWing_Thruster_Distant</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>600</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.5</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\XWing\Arc_GFA_XWing_Thruster_Loop_Distant.wav</Loop>
         </Wave>
       </Waves>
     </Sound>
