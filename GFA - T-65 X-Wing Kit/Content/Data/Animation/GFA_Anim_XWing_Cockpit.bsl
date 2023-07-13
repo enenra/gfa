@@ -72,6 +72,7 @@ action Cockpit() {
 action Distance(7.5) {
     Arrive() {
 		if (isOpen == false) {
+            Canopy.reset()
 			openCanopy()
 		}
     }

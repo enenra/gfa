@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <!-- Destroyed -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Astromech_Destroyed</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>200</MaxDistance>
+      <PreventSynchronization>5</PreventSynchronization>
+      <DistantSounds>
+        <DistantSound Distance="200" Sound="WepExplDistB" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>25</DynamicMusicAmount>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Destroyed_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Destroyed_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Destroyed_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_Astromech_Destroyed</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>150</MaxDistance>
+      <PreventSynchronization>5</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>25</DynamicMusicAmount>
+      <Volume>1.0</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Destroyed_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Destroyed_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Destroyed_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <!-- Damaged -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Astromech_Damaged</SubtypeId>
+      </Id>
+      <Category>Particle</Category>
+      <MaxDistance>15</MaxDistance>
+      <Loopable>true</Loopable>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_1.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_2.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_3.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_4.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_5.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_Astromech_Damaged</SubtypeId>
+      </Id>
+      <Category>Particle</Category>
+      <MaxDistance>10</MaxDistance>
+      <Loopable>true</Loopable>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Volume>1.0</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_1.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_2.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_3.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_4.wav</Loop>
+        </Wave>
+        <Wave Type="D3">
+          <Loop>Audio\Astromech\Arc_GFA_Astromech_Damaged_5.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <!-- Arrive -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Astromech_Arrive</SubtypeId>
+      </Id>
+      <Category>Particle</Category>
+      <MaxDistance>20</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_3.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_4.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_5.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_Astromech_Arrive</SubtypeId>
+      </Id>
+      <Category>Particle</Category>
+      <MaxDistance>20</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Volume>1.0</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_3.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_4.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Arrive_5.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <!-- Ambient -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Astromech_Ambient</SubtypeId>
+      </Id>
+      <Category>Particle</Category>
+      <MaxDistance>20</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_3.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_4.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_5.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_Astromech_Ambient</SubtypeId>
+      </Id>
+      <Category>Particle</Category>
+      <MaxDistance>20</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Volume>1.0</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_3.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_4.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Astromech\Arc_GFA_Astromech_Ambient_5.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+  </Sounds>
+</Definitions>
