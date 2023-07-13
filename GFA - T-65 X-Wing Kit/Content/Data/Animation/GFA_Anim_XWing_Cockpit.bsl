@@ -24,7 +24,7 @@ func checkState() {
 
 func openCanopy() {
     if (isOpen == false) {
-        Canopy.rotate([1, 0, 0], -70.0, 60, InOutCubic)
+        Canopy.rotate([1, 0, 0], -70.0, 70, InOutCubic)
 		Emitter.playSound("_GFA_XWing_Cockpit_Open")
         isOpen = true
     }
@@ -32,7 +32,7 @@ func openCanopy() {
 
 func closeCanopy() {
     if (isOpen == true) {
-        Canopy.rotate([1, 0, 0], 70.0, 60, InOutCubic)
+        Canopy.rotate([1, 0, 0], 70.0, 70, InOutCubic)
 		Emitter.playSound("_GFA_XWing_Cockpit_Close")
         isOpen = false
     }
