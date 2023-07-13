@@ -5,25 +5,26 @@
 
 using Head as Subpart("head")
 using Emitter as Emitter("head")
+using Emissive as Emissive("Emissive") parent Head
 
 
 var isMoving = false
 var isTalking = true
+var moveDelay = 300
+var talkDelay = 600
+var moveLoopActive = false
+var talkLoopActive = false
 
 
 # Functions
 func moveHead() {
-	API.log("Move Loop happens")
-	API.log(isMoving)
 	if (isMoving == true) {
-		var rotateAmount = Math.randomrange(-90.0, 90.0)
+		var rotateAmount = Math.RandomRange(-180.0, 180.0)
 		Head.rotate([0, 1, 0], rotateAmount, Math.abs(rotateAmount), InOutQuart)
 	}
 }
 
 func playAmbient() {
-	API.log("Ambient Loop happens")
-	API.log(isTalking)
 	if (isTalking == true) {
 		Emitter.playSound("_GFA_Astromech_Ambient")
 	}
@@ -39,46 +40,50 @@ func playArrive() {
 # Actions
 action Block() {
 	Create() {
-		Head.reset()
+		Head.Reset()
 	}
 	Built() {
-		API.log("<<< Built triggered")
 		if (isTalking == true) {
 			playArrive()
 		}
 		if (isMoving == true) {
-			API.startloop(moveHead(), 1, 100, 60)
+			if (moveLoopActive == false) {
+				API.StartLoop("moveHead", moveDelay, -1, 0)
+			}
 		}
 	}
 	Working() {
-		API.log("<<< Working triggered")
 		isTalking = true
-		API.startloop(playAmbient(), 1, 100, 60)
+		if (talkLoopActive == false) {
+			API.StartLoop("playAmbient", talkDelay, -1, 0)
+		}
+		Emissive.SetColor(20, 0, 255, 1.0, false)
 	}
 	NotWorking() {
-		API.log("<<< NotWorking triggered")
 		isTalking = false
+		Emissive.SetColor(255, 0, 20, 1.0, false)
 	}
 }
 
 action Distance(15.0) {
     Arrive() {
-		API.log("<<< Arrive triggered")
 		isMoving = true
-		API.startloop(moveHead(), 1, 100, 60)
+		if (moveLoopActive == false) {
+			API.StartLoop("moveHead", moveDelay, -1, 0)
+		}
 
 		if (isTalking == true) {
 			playArrive()
+			if (talkLoopActive == false) {
+				API.StartLoop("playAmbient", talkDelay, -1, talkDelay)
+			}
 		}
-		API.startloop(playAmbient(), 10, 100, 60)
+		
     }
     Leave() {
-		API.log("<<< Leave triggered")
-		API.log("<<< reset:")
-		API.stoploop(moveHead())
-		Head.reset()
+		API.StopLoop("moveHead")
+		Head.MoveToOrigin(60, InOutQuart)
 
-		API.log("<<< reset:")
-		API.stoploop(playAmbient())
+		API.StopLoop("playAmbient")
     }
 }
