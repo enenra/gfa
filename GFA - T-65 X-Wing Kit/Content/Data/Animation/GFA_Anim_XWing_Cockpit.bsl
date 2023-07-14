@@ -2,82 +2,42 @@
 @Version 2
 @Author enenra
 
-
 using Canopy as Subpart("canopy")
 using Emitter as Emitter("canopy")
 
-
-var isSeated = false
-var isOpen = false
-
-
-# Functions
-func checkState() {
-    isSeated = Block.IsOccupied()
-	if (isSeated == true) {
-		Canopy.reset()
-	}
-	else {
-		openCanopy()
-	}
-}
-
 func openCanopy() {
-    if (isOpen == false) {
-        Canopy.rotate([1, 0, 0], -70.0, 70, InOutCubic)
-		Emitter.playSound("_GFA_XWing_Cockpit_Open")
-        isOpen = true
-    }
+	Canopy.reset().rotate([1, 0, 0], -70.0, 70, InOutCubic)
+	Emitter.playSound("_GFA_XWing_Cockpit_Open")
 }
 
 func closeCanopy() {
-    if (isOpen == true) {
-        Canopy.rotate([1, 0, 0], 70.0, 70, InOutCubic)
-		Emitter.playSound("_GFA_XWing_Cockpit_Close")
-        isOpen = false
-    }
+	Canopy.reset().rotate([1, 0, 0], -70.0, 0, Linear).rotate([1, 0, 0], 70.0, 70, InOutCubic)
+	Emitter.playSound("_GFA_XWing_Cockpit_Close")
 }
 
-
-# Actions
-action Block() {
-	Create() {
-		checkState()
-	}
-	Built() {
-		isOpen = false
-		checkState()
-	}
-	Working() {
-		checkState()
-	}
-	NotWorking() {
-		checkState()
+action block() {
+	create() {
+		Canopy.setResetPos()
 	}
 }
 
 action Cockpit() {
 	Enter() {
-		if (isOpen == true) {
-			closeCanopy()
-		}
+		closeCanopy()
 	}
 	Exit() {
-		if (isOpen == false) {
-			openCanopy()
-		}
+		openCanopy()
 	}
 }
 
 action Distance(7.5) {
     Arrive() {
-		if (isOpen == false) {
-            Canopy.reset()
+		if (block.isOccupied() == false) {
 			openCanopy()
 		}
     }
     Leave() {
-		if (isOpen == true) {
+		if (block.isOccupied() == false) {
 			closeCanopy()
 		}
     }

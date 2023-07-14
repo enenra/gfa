@@ -2,7 +2,6 @@
 @Version 2
 @Author enenra
 
-
 using Scoop as Button("cargoscoop", "detector_conveyor_1")
 using PistonInner01 as Subpart("piston_inner_001") parent Scoop
 using PistonInner02 as Subpart("piston_inner_002") parent Scoop
@@ -10,11 +9,8 @@ using PistonOuter01 as Subpart("piston_outer") parent PistonInner01
 using PistonOuter02 as Subpart("piston_outer") parent PistonInner02
 using Emitter as Emitter("cargoscoop")
 
-
 var isOpen = false
-var isWorking = false
 var duration = 100
-
 
 # Functions
 func reset() {
@@ -52,28 +48,22 @@ func closeScoop() {
     }
 }
 
-
 # Actions
 action Block() {
 	Working() {
-		isWorking = true
 		openScoop()
 	}
 	NotWorking() {
-		isWorking = false
 		closeScoop()
 	}
 }
 
 action Button(Scoop) {
 	Hovering(hovering) {
-		if (hovering == true) {
-			if (isWorking == false) {
+		if (block.IsWorking() == false) {
+			if (hovering == true) {
 				openScoop()
-			}			
-		}
-		else {
-			if (isWorking == false) {
+			} else {
 				closeScoop()
 			}
 		}
