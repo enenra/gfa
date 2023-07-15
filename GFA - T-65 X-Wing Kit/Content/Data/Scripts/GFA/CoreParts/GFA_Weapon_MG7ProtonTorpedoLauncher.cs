@@ -56,20 +56,20 @@ namespace Scripts {
                 AimingTolerance = 2f,
                 HardWare = new HardwareDef
                 {
-                    InventorySize = 0.3f,
+                    InventorySize = 1.5f,
                     Type = BlockWeapon,
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 80,
+                    RateOfFire = 60,
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1,
-                    ReloadTime = 720,
+                    ReloadTime = 480,
                     MagsToLoad = 1,
                 },
                 Audio = new HardPointAudioDef
                 {
-                    FiringSound = "WepLargeCalibreShot",
+                    FiringSound = "_GFA_XWing_ProtonTorpedo_Shot",
                     FiringSoundPerShot = true,
                 },
                 Graphics = new HardPointParticleDef

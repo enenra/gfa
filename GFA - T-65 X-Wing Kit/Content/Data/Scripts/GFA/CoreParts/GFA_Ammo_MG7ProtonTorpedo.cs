@@ -41,7 +41,7 @@ namespace Scripts
     {
         private AmmoDef GFA_Ammo_MG7ProtonTorpedo => new AmmoDef
         {
-            AmmoMagazine = "Energy",
+            AmmoMagazine = "GFA_AmmoMag_MG7ProtonTorpedo",
             BaseDamage = 100,
             HardPointUsable = true,
             NoGridOrArmorScaling = true,
