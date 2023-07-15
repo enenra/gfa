@@ -66,6 +66,18 @@ namespace Scripts
                     },
                 },
             },
+            AmmoAudio = new AmmoAudioDef
+            {
+                TravelSound = "_GFA_ProtonTorpedo_PassBy",
+                HitSound = "_GFA_Explosion",
+                ShotSound = "",
+                ShieldHitSound = "_GFA_Shield_Impact_Explosive",
+                PlayerHitSound = "_GFA_Explosion",
+                VoxelHitSound = "_GFA_Explosion",
+                FloatingHitSound = "_GFA_Explosion",
+                HitPlayChance = 0.5f,
+                HitPlayShield = true,
+            },
         };
     }
 }

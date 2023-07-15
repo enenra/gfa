@@ -7,7 +7,7 @@
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>Arc_GFA_XWing_ProtonTorpedo_Shot</SubtypeId>
+        <SubtypeId>Arc_GFA_ProtonTorpedo_Shot</SubtypeId>
       </Id>
       <Category>SHOT</Category>
       <MaxDistance>200</MaxDistance>
@@ -15,34 +15,34 @@
       <PreventSynchronization>1</PreventSynchronization>
       <Volume>0.5</Volume>
       <DistantSounds>
-        <DistantSound DistanceCrossfade="20" Distance="200" Sound="Arc_GFA_XWing_ProtonTorpedo_Shot_Distant" />
+        <DistantSound DistanceCrossfade="20" Distance="200" Sound="Arc_GFA_ProtonTorpedo_Shot_Distant" />
       </DistantSounds>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_1.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_1.wav</Start>
         </Wave>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_2.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_2.wav</Start>
         </Wave>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_3.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_3.wav</Start>
         </Wave>
       </Waves>
     </Sound>
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>Arc_GFA_XWing_ProtonTorpedo_Shot_Distant</SubtypeId>
+        <SubtypeId>Arc_GFA_ProtonTorpedo_Shot_Distant</SubtypeId>
       </Id>
       <Category>SHOT</Category>
       <MaxDistance>800</MaxDistance>
       <Volume>0.5</Volume>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_Distant_1.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_Distant_1.wav</Start>
         </Wave>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_Distant_2.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_Distant_2.wav</Start>
         </Wave>
       </Waves>
     </Sound>
@@ -50,7 +50,7 @@
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>Real_GFA_XWing_ProtonTorpedo_Shot</SubtypeId>
+        <SubtypeId>Real_GFA_ProtonTorpedo_Shot</SubtypeId>
       </Id>
       <Category>SHOT_R</Category>
       <MaxDistance>15</MaxDistance>
@@ -60,13 +60,13 @@
       <RealisticFilter>realShipFilter</RealisticFilter>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_1.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_1.wav</Start>
         </Wave>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_2.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_2.wav</Start>
         </Wave>
         <Wave Type="D3">
-          <Start>Audio\ProtonTorpedo\Arc_GFA_XWing_ProtonTorpedo_Shot_3.wav</Start>
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_Shot_3.wav</Start>
         </Wave>
       </Waves>
     </Sound>
@@ -136,6 +136,56 @@
         </Wave>
         <Wave Type="D3">
           <Start>Audio\Explosion\Arc_GFA_Explosion_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <!-- PassBy -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_ProtonTorpedo_PassBy</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>100</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Volume>0.25</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_PassBy_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_PassBy_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_PassBy_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_ProtonTorpedo_PassBy</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>150</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Volume>0.5</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_PassBy_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_PassBy_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\ProtonTorpedo\Arc_GFA_ProtonTorpedo_PassBy_3.wav</Start>
         </Wave>
       </Waves>
     </Sound>

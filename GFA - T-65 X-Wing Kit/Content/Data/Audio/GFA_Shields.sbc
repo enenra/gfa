@@ -47,6 +47,51 @@
         </Wave>
       </Waves>
     </Sound>
+  
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Shield_Impact_Explosive</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>300</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <Volume>0.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_Explosive_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_Explosive_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_Explosive_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_Shield_Impact_Explosive</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>200</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <Volume>1.0</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_Explosive_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_Explosive_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_Shield_Impact_Explosive_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
     
   </Sounds>
 </Definitions>
