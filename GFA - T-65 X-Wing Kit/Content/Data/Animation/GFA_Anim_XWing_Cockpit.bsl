@@ -6,13 +6,18 @@ using Canopy as Subpart("canopy")
 using Emitter as Emitter("canopy")
 
 func openCanopy() {
-	Canopy.reset().rotate([1, 0, 0], -70.0, 70, InOutCubic)
+	if (block.IsFunctional() == true) {
+		Canopy.reset()
+	}
+	Canopy.rotate([1, 0, 0], -70.0, 70, InOutCubic)
 	Emitter.playSound("_GFA_XWing_Cockpit_Open")
 }
 
 func closeCanopy() {
-	Canopy.reset().rotate([1, 0, 0], -70.0, 0, Linear).rotate([1, 0, 0], 70.0, 70, InOutCubic)
-	Emitter.playSound("_GFA_XWing_Cockpit_Close")
+	if (block.IsFunctional() == true) {
+		Canopy.reset().rotate([1, 0, 0], -70.0, 0, Linear).rotate([1, 0, 0], 70.0, 70, InOutCubic)
+		Emitter.playSound("_GFA_XWing_Cockpit_Close")
+	}
 }
 
 action block() {
