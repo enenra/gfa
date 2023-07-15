@@ -64,7 +64,7 @@ namespace Scripts
             {
                 Guidance = Smart,
                 TargetLossDegree = 80f, // Degrees, Is pointed forward
-                MaxLifeTime = 3600,
+                MaxLifeTime = 7200,
                 AccelPerSec = 100f,
                 MaxTrajectory = 1000,
                 GravityMultiplier = 0.25f,
