@@ -65,7 +65,6 @@ namespace Scripts {
                 Other = new OtherDef
                 {
                     ConstructPartCap = 1, // Maximum number of blocks with this weapon on a grid; 0 = unlimited.
-                    Debug = true, // Force enables debug mode.
                 },
                 Loading = new LoadingDef
                 {

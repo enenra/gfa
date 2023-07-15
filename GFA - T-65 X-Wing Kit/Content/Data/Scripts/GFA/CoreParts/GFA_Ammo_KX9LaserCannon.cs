@@ -44,7 +44,7 @@ namespace Scripts
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "Laser Bolt", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 0f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = 100f, // Direct damage; one steel plate is worth 100.
             Mass = 1f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             EnergyMagazineSize = 1000, // For energy weapons, how many shots to fire before reloading.
@@ -136,7 +136,7 @@ namespace Scripts
                 {
                     Hit = new ParticleDef
                     {
-                        Name = "GFA_Particle_XWing_LaserCannon_Impact",
+                        Name = "GFA_Particle_LaserCannon_Impact",
                         ApplyToShield = true,
                         Offset = Vector(x: 0, y: 0, z: 0),
                         DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
