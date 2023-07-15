@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<BlueprintClassEntries>
+  
 		<Entry Class="SmallBlocks" BlueprintSubtypeId="ShipWelder/GFA_SG_XWing_AstroBay"/>
 		<Entry Class="SmallBlocks" BlueprintSubtypeId="Collector/GFA_SG_XWing_CargoScoop"/>
 		<Entry Class="SmallBlocks" BlueprintSubtypeId="Cockpit/GFA_SG_XWing_Cockpit"/>
@@ -16,5 +17,8 @@
 		<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/GFA_SG_XWing_TorpLauncherMirror"/>
 		<Entry Class="SmallBlocks" BlueprintSubtypeId="AdvancedDoor/GFA_SG_XWing_Wing"/>
 		<Entry Class="SmallBlocks" BlueprintSubtypeId="AdvancedDoor/GFA_SG_XWing_WingMirror"/>
+    
+		<Entry Class="EliteConsumables" BlueprintSubtypeId="GFA_BP_MG7ProtonTorpedo"/>
+
 	</BlueprintClassEntries>
 </Definitions>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AmmoMagazines>
+  
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_MG7ProtonTorpedo</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_MG7ProtonTorpedo}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Projectile_ProtonTorpedo.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <Size>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </Size>
+      <Mass>45</Mass>
+      <Volume>50</Volume>
+      <Model>Models\Weapons\GFA_Projectile_ProtonTorpedo.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>3</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_MG7ProtonTorpedo" />
+
+      <MinimumOfferAmount>50</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+  </AmmoMagazines>
+</Definitions>

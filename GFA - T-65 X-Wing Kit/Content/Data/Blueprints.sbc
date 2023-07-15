@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GFA_BP_MG7ProtonTorpedo</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_MG7ProtonTorpedo}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Projectile_ProtonTorpedo.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <Prerequisites>
+        <Item Amount="55" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="7" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="0.2" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="0.2" TypeId="Ingot" SubtypeId="Uranium" />
+        <Item Amount="0.04" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Magnesium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="GFA_AmmoMag_MG7ProtonTorpedo" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+  </Blueprints>
+</Definitions>
