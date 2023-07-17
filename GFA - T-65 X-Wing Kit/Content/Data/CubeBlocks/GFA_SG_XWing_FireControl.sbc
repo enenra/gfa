@@ -18,9 +18,14 @@
       <ModelOffset x="0" y="0" z="0"/>
       <Model>Models\Cubes\small\GFA_SG_XWing_FireControl.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="10"/>
+          <Component Subtype="SteelPlate" Count="20" />
+          <Component Subtype="Construction" Count="10" />
+          <Component Subtype="MetalGrid" Count="5" />
+          <Component Subtype="LargeTube" Count="10" />
+          <Component Subtype="Computer" Count="1" />
+          <Component Subtype="SteelPlate" Count="15" />
       </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0"/>
+      <CriticalComponent Subtype="Computer" Index="0" />
       <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
