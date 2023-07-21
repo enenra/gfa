@@ -5,7 +5,7 @@ using VRage.ModAPI;
 using VRageMath;
 using Sandbox.Common.ObjectBuilders;
 
-namespace enenra.EmissiveControl
+namespace enenra.ThrusterEmissive
 {
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false)]
 
