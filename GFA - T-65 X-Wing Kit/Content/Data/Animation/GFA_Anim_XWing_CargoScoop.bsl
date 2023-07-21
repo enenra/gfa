@@ -12,7 +12,6 @@ using Emitter as Emitter("cargoscoop")
 var isOpen = false
 var duration = 100
 
-# Functions
 func reset() {
 	Scoop.Reset()
 	PistonInner01.Reset()
@@ -48,7 +47,6 @@ func closeScoop() {
     }
 }
 
-# Actions
 action Block() {
 	Working() {
 		openScoop()

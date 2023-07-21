@@ -2,19 +2,15 @@
 @Version 2
 @Author enenra
 
-
 using Head as Subpart("head")
 using Emitter as Emitter("head")
 using Emissive as Emissive("Emissive") parent Head
 
-
 var isMoving = false
 var isTalking = true
-var moveDelay = 300
-var talkDelay = 1200
+var moveDelay = 600
+var talkDelay = 3600
 
-
-# Functions
 func moveHead() {
 	if (block.IsFunctional() == true && isMoving == true) {
 		var rotateAmount = Math.RandomRange(-180.0, 180.0)
@@ -28,8 +24,6 @@ func playAmbient() {
 	}
 }
 
-
-# Actions
 action Block() {
 	Create() {
 		API.StartLoop("moveHead", moveDelay, -1)
