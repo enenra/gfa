@@ -47,6 +47,21 @@ namespace Scripts
             Health = 500,
             HardPointUsable = true,
             NoGridOrArmorScaling = true,
+            DamageScales = new DamageScaleDef
+            {
+                Shields = new ShieldDef
+                {
+                    Modifier = 2f, // Multiplier for damage against shields.
+                    Type = Default, // Damage vs healing against shields; Default, Heal
+                },
+                DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
+                {
+                    Base = Energy, // Base Damage uses this
+                    AreaEffect = Energy,
+                    Detonation = Energy,
+                    Shield = Energy, // Damage against shields is currently all of one type per projectile. Shield Bypass Weapons, always Deal Energy regardless of this line
+                },
+            },
             AreaOfDamage = new AreaOfDamageDef
             {
                 ByBlockHit = new ByBlockHitDef
