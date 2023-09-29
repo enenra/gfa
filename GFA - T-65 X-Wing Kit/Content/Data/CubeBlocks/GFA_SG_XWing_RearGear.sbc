@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+      <Id>
+        <TypeId>LandingGear</TypeId>
+				<SubtypeId>GFA_SG_XWing_RearGear</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_XWing_RearGear}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_XWing_RearGear}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_XWing_RearGear.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_XWing_RearGear.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_XWing_RearGear_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_XWing_RearGear_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_XWing_RearGear_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_XWing_RearGear</BlockPairName>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.50" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00" Default="true"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+			</MountPoints>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+
+      <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <EmissiveColorPreset>ConnectBlock</EmissiveColorPreset>
+      <MaxLockSeparatingVelocity>7</MaxLockSeparatingVelocity>
+      <DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+      <DestroySound>PoofExplosionCat1</DestroySound>
+      <PCU>35</PCU>
+
+      <LockSound>ShipLandGearOn</LockSound>
+      <UnlockSound>ShipLandGearOff</UnlockSound>
+      <FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>
