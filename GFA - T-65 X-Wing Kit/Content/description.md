@@ -1,10 +1,10 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/]1.0[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3044374869]1.0[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
-The Incom T-65 X-wing starfighter was the primary all-purpose starfighter of the Rebel Alliance. Known for its versatility and exceptional combat performance, it was a favorite with Rebel pilots. This block kit contains all blocks necessary to build your very own X-Wing. Many blocks have custom animations and sounds, and all of them have full build stages and LoDs. I've spent a very long time working on these blocks and they assemble to probably the most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=]X-Wing replica[/url] to date, with some adjustments to make them work better in Space Engineers.
+The Incom T-65 X-wing starfighter was the primary all-purpose starfighter of the Rebel Alliance. Known for its versatility and exceptional combat performance, it was a favorite with Rebel pilots. This block kit contains all blocks necessary to build your very own X-Wing. Many blocks have custom animations and sounds, and all of them have full build stages and LoDs. I've spent a very long time working on these blocks and they assemble to probably the most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3044377039]X-Wing replica[/url] to date, with some adjustments to make them work better in Space Engineers.
 [/quote]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]
