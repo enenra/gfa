@@ -3,8 +3,10 @@ using Sandbox.Game.Entities;
 using Sandbox.ModAPI;
 using System.Collections.Generic;
 using VRage.Game.Components;
+using VRage.Game.ModAPI;
 using VRage.ModAPI;
 using VRage.ObjectBuilders;
+using VRage.Utils;
 using VRageMath;
 
 namespace Repulsors
@@ -21,11 +23,12 @@ namespace Repulsors
         private const int THRESHOLD = 25;
 
         private IMyThrust _thrust;
+        private IMyCubeGrid _grid;
         private Vector3 _direction;
-        private bool _limited;
 
         public override void Init(MyObjectBuilder_EntityBase objectBuilder)
         {
+            //MyAPIGateway.Utilities.ShowMessage("", "Init");
             var thrust = Entity as IMyThrust;
             if (!_subtypes.Contains(thrust.BlockDefinition.SubtypeName)) return;
 
@@ -39,6 +42,7 @@ namespace Repulsors
 
             var forward = _thrust.Orientation.Forward;
             _direction = Base6Directions.GetVector(forward);
+            _grid = _thrust.CubeGrid;
 
             NeedsUpdate = MyEntityUpdateEnum.EACH_FRAME;
         }
@@ -49,16 +53,22 @@ namespace Repulsors
                 return;
 
             var grid = _thrust.CubeGrid;
+            if (grid != _grid)
+            {
+                UpdateOnceBeforeFrame();
+            }
+            
             var velocity = grid.Physics.LinearVelocity;
             var localV = Vector3.RotateAndScale(velocity, grid.PositionComp.WorldMatrixNormalizedInv);
             var velComponent = Vector3.Multiply(localV, _direction);
             var speed = - velComponent.Sum;
             var limit = speed > THRESHOLD;
+            var limited = MyUtils.IsEqual(_thrust.ThrustMultiplier, 0.001f);
+            //MyAPIGateway.Utilities.ShowNotification(_thrust.ThrustMultiplier.ToString(), 16);
 
-            if (limit != _limited)
+            if (limit != limited)
             {
                 _thrust.ThrustMultiplier = limit ? 0.001f : 1f;
-                _limited = limit;
             }
 
         }
