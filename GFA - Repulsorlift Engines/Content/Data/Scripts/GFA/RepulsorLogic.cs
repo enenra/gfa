@@ -63,12 +63,12 @@ namespace Repulsors
             var velComponent = Vector3.Multiply(localV, _direction);
             var speed = - velComponent.Sum;
             var limit = speed > THRESHOLD;
-            var limited = MyUtils.IsEqual(_thrust.ThrustMultiplier, 0.001f);
+            var limited = MyUtils.IsEqual(_thrust.ThrustMultiplier, 0.01f);
             //MyAPIGateway.Utilities.ShowNotification(_thrust.ThrustMultiplier.ToString(), 16);
 
             if (limit != limited)
             {
-                _thrust.ThrustMultiplier = limit ? 0.001f : 1f;
+                _thrust.ThrustMultiplier = limit ? 0.01f : 1f;
             }
 
         }
