@@ -7,6 +7,7 @@ namespace Scripts
         {
             PartDefinitions(
                 GFA_Weapon_KX9LaserCannon,
+                GFA_Weapon_KX9LaserCannonStandalone,
                 GFA_Weapon_MG7ProtonTorpedoLauncher
                 );
         }

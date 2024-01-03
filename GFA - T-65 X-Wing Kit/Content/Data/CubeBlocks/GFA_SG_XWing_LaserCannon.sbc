@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>GFA_SG_XWing_LaserCannon</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_SG_XWing_LaserCannon}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_XWing_LaserCannon}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_SG_XWing_LaserCannon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="12"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Center x="0" y="0" z="1"/>
+      <Model>Models\Cubes\small\GFA_SG_XWing_LaserCannon.mwm</Model>
+      <Components>
+          <Component Subtype="SteelPlate" Count="10" />
+          <Component Subtype="Construction" Count="5" />
+          <Component Subtype="MetalGrid" Count="5" />
+          <Component Subtype="LargeTube" Count="5" />
+          <Component Subtype="Computer" Count="1" />
+          <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.30" StartY="0.70" EndX="0.70" EndY="3.00"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_XWing_LaserCannon_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_XWing_LaserCannon_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_XWing_LaserCannon_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_SG_XWing_LaserCannon</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <PCU>25</PCU>
+
+      <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <PowerInput>0.00025</PowerInput>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+    </Definition>
+    
+  </CubeBlocks>
+</Definitions>
