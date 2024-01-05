@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_LG_XWing_ProtonTorpedoRack</SubtypeId>
+      </Id>
+      <Volume>1.5</Volume>
+      <InputConstraint Whitelist="true" Description="DisplayName_InventoryConstraint_GFA_AmmoMag_XWing_ProtonTorpedo" Icon="Textures\GUI\Icons\GFA_Filter_Ammo_ProtonTorpedo.dds">
+          <Entry>
+              <TypeId>AmmoMagazine</TypeId>
+              <SubtypeId>GFA_AmmoMag_MG7ProtonTorpedo</SubtypeId>
+          </Entry>
+      </InputConstraint>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SG_XWing_ProtonTorpedoRack</SubtypeId>
+      </Id>
+      <Volume>1.5</Volume>
+      <InputConstraint Whitelist="true" Description="DisplayName_InventoryConstraint_GFA_AmmoMag_XWing_ProtonTorpedo" Icon="Textures\GUI\Icons\GFA_Filter_Ammo_ProtonTorpedo.dds">
+          <Entry>
+              <TypeId>AmmoMagazine</TypeId>
+              <SubtypeId>GFA_AmmoMag_MG7ProtonTorpedo</SubtypeId>
+          </Entry>
+      </InputConstraint>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_LG_XWing_ProtonTorpedoRack_Mirror</SubtypeId>
+      </Id>
+      <Volume>1.5</Volume>
+      <InputConstraint Whitelist="true" Description="DisplayName_InventoryConstraint_GFA_AmmoMag_XWing_ProtonTorpedo" Icon="Textures\GUI\Icons\GFA_Filter_Ammo_ProtonTorpedo.dds">
+          <Entry>
+              <TypeId>AmmoMagazine</TypeId>
+              <SubtypeId>GFA_AmmoMag_MG7ProtonTorpedo</SubtypeId>
+          </Entry>
+      </InputConstraint>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SG_XWing_ProtonTorpedoRack_Mirror</SubtypeId>
+      </Id>
+      <Volume>1.5</Volume>
+      <InputConstraint Whitelist="true" Description="DisplayName_InventoryConstraint_GFA_AmmoMag_XWing_ProtonTorpedo" Icon="Textures\GUI\Icons\GFA_Filter_Ammo_ProtonTorpedo.dds">
+          <Entry>
+              <TypeId>AmmoMagazine</TypeId>
+              <SubtypeId>GFA_AmmoMag_MG7ProtonTorpedo</SubtypeId>
+          </Entry>
+      </InputConstraint>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
