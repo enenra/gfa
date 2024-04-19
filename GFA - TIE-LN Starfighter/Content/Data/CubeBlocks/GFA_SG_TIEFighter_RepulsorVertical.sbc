@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition>
+			<Id>
+				<TypeId>CubeBlock</TypeId>
+				<SubtypeId>GFA_SG_TIEFighter_RepulsorVertical</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_RepulsorVertical}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_TIEFighter_RepulsorVertical}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_RepulsorVertical.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="3" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10"/>
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.85" EndX="1.00" EndY="2.15" Default="true"/>
+				<MountPoint Side="Left" StartX="0.25" StartY="0.85" EndX="1.00" EndY="2.15"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.15" EndX="0.55" EndY="1.85"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_TIEFighter_RepulsorVertical</BlockPairName>
+			<MirroringX>Z</MirroringX>
+			<MirroringZ>Y</MirroringZ>
+		</Definition>
+	</CubeBlocks>
+</Definitions>
