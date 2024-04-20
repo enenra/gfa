@@ -59,9 +59,9 @@
       <ScreenAreas>
         <ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_Screen_Main" TextureResolution="256" ScreenWidth="1" ScreenHeight="1" Script="TSS_TargetingInfo" />
         <ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_Screen_TopCenter" TextureResolution="256" ScreenWidth="4" ScreenHeight="1" Script="TSS_ArtificialHorizon" />
-        <ScreenArea Name="CockpitScreen_03" DisplayName="DisplayName_Screen_TriangleRight" TextureResolution="128" ScreenWidth="1" ScreenHeight="1" Script="TSS_EnergyHydrogen" />
-        <ScreenArea Name="CockpitScreen_04" DisplayName="DisplayName_Screen_TriangleLeft" TextureResolution="128" ScreenWidth="1" ScreenHeight="1" Script="TSS_Gravity" />
-        <ScreenArea Name="CockpitScreen_05" DisplayName="DisplayName_Screen_Side" TextureResolution="64" ScreenWidth="2" ScreenHeight="3" Script="TSS_Velocity" />
+        <ScreenArea Name="CockpitScreen_03" DisplayName="DisplayName_Screen_TriangleRight" TextureResolution="256" ScreenWidth="1" ScreenHeight="1" Script="TSS_EnergyHydrogen" />
+        <ScreenArea Name="CockpitScreen_04" DisplayName="DisplayName_Screen_TriangleLeft" TextureResolution="256" ScreenWidth="1" ScreenHeight="1" Script="TSS_Gravity" />
+        <ScreenArea Name="CockpitScreen_05" DisplayName="DisplayName_Screen_Side" TextureResolution="256" ScreenWidth="2" ScreenHeight="3" Script="TSS_Velocity" />
       </ScreenAreas>
       <CharacterAnimation>GFA_TIEFighter_Pose</CharacterAnimation>
       <EnableFirstPerson>true</EnableFirstPerson>
