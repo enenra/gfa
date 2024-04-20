@@ -35,7 +35,7 @@ using VRage.Utils;
 
 namespace MWI.ThrusterSoundSystem
 {
-    [MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false, "GFA_SG_XWing_Thruster")]
+    [MyEntityComponentDescriptor(typeof(MyObjectBuilder_Thrust), false, "GFA_SG_TIEFighter_Thruster")]
     public class ThrusterSoundSystem : MyGameLogicComponent, IMyEventProxy
     {
         string thruster_sfx_version = "Sound System - v1.0";

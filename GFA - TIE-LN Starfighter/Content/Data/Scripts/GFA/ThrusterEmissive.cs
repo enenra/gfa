@@ -24,7 +24,7 @@ namespace enenra.ThrusterEmissive
             m_block = Entity as IMyThrust;
 
             var subtype = m_block.BlockDefinition.SubtypeName;
-            if (subtype != "GFA_SG_XWing_Thruster")
+            if (subtype != "GFA_SG_TIEFighter_Thruster")
             {
                 m_block = null;
                 return;

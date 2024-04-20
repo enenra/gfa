@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+				<SubtypeId>GFA_SG_TIEFighter_RepulsorBack</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_RepulsorBack}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_TIEFighter_RepulsorBack}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_RepulsorBack.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_TIEFighter_RepulsorBack.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="Thrust" Count="1" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Left" StartX="0.60" StartY="0.00" EndX="2.40" EndY="1.00" Default="true"/>
+				<MountPoint Side="Right" StartX="0.80" StartY="0.00" EndX="2.20" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorBack_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorBack_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorBack_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_TIEFighter_RepulsorBack</BlockPairName>
+			<MirroringX>Y</MirroringX>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+      <PCU>15</PCU>
+
+      <PrimarySound>SmShipSmJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <ForceMagnitude>360000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <MaxPowerConsumption>0.100</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>0.66666667</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+		</Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+				<SubtypeId>GFA_SG_TIEFighter_RepulsorSide</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_RepulsorSide}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_TIEFighter_RepulsorSide}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_RepulsorSide.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_TIEFighter_RepulsorSide.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="Thrust" Count="1" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.90" StartY="0.75" EndX="2.10" EndY="2.25"/>
+				<MountPoint Side="Back" StartX="0.79" StartY="0.48" EndX="2.21" EndY="2.52" Default="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorSide_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorSide_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorSide_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_TIEFighter_RepulsorSide</BlockPairName>
+			<MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+      <PCU>15</PCU>
+
+      <PrimarySound>SmShipSmJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <ForceMagnitude>360000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <MaxPowerConsumption>0.100</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>0.66666667</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+		</Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+				<SubtypeId>GFA_SG_TIEFighter_RepulsorVertical</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_RepulsorVertical}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_TIEFighter_RepulsorVertical}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_RepulsorVertical.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="3" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="Thrust" Count="1" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.85" EndX="1.00" EndY="2.15" Default="true"/>
+				<MountPoint Side="Left" StartX="0.25" StartY="0.85" EndX="1.00" EndY="2.15"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.15" EndX="0.55" EndY="1.85"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_RepulsorVertical_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_TIEFighter_RepulsorVertical</BlockPairName>
+			<MirroringX>Z</MirroringX>
+			<MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+      <PCU>15</PCU>
+
+      <PrimarySound>SmShipSmJet</PrimarySound>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+      <ForceMagnitude>360000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <MaxPowerConsumption>0.100</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>0.66666667</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

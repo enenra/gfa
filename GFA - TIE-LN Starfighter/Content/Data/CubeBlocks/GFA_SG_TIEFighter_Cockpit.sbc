@@ -1,55 +1,78 @@
 <?xml version="1.0" ?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<CubeBlocks>
-		<Definition xsi:type="MyObjectBuilder_CockpitDefinition">
-			<Id>
-				<TypeId>Cockpit</TypeId>
-				<SubtypeId>GFA_SG_TIEFighter_Cockpit</SubtypeId>
-			</Id>
-			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Cockpit}</DisplayName>
-			<Description>{LOC:Description_GFA_SG_TIEFighter_Cockpit}</Description>
-			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Cockpit.dds</Icon>
-			<CubeSize>Small</CubeSize>
-			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="3" y="3" z="3"/>
-			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\small\GFA_SG_TIEFighter_Cockpit.mwm</Model>
-			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
-			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
-			<MountPoints>
-				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Default="true"/>
-			</MountPoints>
-			<BlockPairName>GFA_TIEFighter_Cockpit</BlockPairName>
-			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>20</BuildTimeSeconds>
-			<PCU>150</PCU>
-			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
-			<DamagedSound>ParticleElectrical</DamagedSound>
-			<PrimarySound>_GFA_XWing_Cockpit</PrimarySound>
-			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
-			<DestroySound>WepSmallWarheadExpl</DestroySound>
-			<EnableFirstPerson>true</EnableFirstPerson>
-			<EnableShipControl>true</EnableShipControl>
-			<EnableBuilderCockpit>true</EnableBuilderCockpit>
-			<TargetLockingEnabled>true</TargetLockingEnabled>
-			<OxygenCapacity>180</OxygenCapacity>
-			<IsPressurized>true</IsPressurized>
-			<GetInSound>ShipSmCockpitIn</GetInSound>
-			<GetOutSound>ShipSmCockpitOut</GetOutSound>
-			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Cockpit_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_Cockpit_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_Cockpit_BS3.mwm"/>
-			</BuildProgressModels>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-		</Definition>
-	</CubeBlocks>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_CockpitDefinition">
+      <Id>
+        <TypeId>Cockpit</TypeId>
+        <SubtypeId>GFA_SG_TIEFighter_Cockpit</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Cockpit}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_TIEFighter_Cockpit}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Cockpit.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\small\GFA_SG_TIEFighter_Cockpit.mwm</Model>
+      <Components>
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="InteriorPlate" Count="15" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Cockpit_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_Cockpit_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_Cockpit_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_TIEFighter_Cockpit</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <IsAirTight>true</IsAirTight>
+      <PCU>150</PCU>
+
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <PrimarySound>_GFA_XWing_Cockpit</PrimarySound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <ScreenAreas>
+        <ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_Screen_Main" TextureResolution="256" ScreenWidth="1" ScreenHeight="1" Script="TSS_TargetingInfo" />
+        <ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_Screen_TopCenter" TextureResolution="256" ScreenWidth="4" ScreenHeight="1" Script="TSS_ArtificialHorizon" />
+        <ScreenArea Name="CockpitScreen_03" DisplayName="DisplayName_Screen_TriangleRight" TextureResolution="128" ScreenWidth="1" ScreenHeight="1" Script="TSS_EnergyHydrogen" />
+        <ScreenArea Name="CockpitScreen_04" DisplayName="DisplayName_Screen_TriangleLeft" TextureResolution="128" ScreenWidth="1" ScreenHeight="1" Script="TSS_Gravity" />
+        <ScreenArea Name="CockpitScreen_05" DisplayName="DisplayName_Screen_Side" TextureResolution="64" ScreenWidth="2" ScreenHeight="3" Script="TSS_Velocity" />
+      </ScreenAreas>
+      <CharacterAnimation>GFA_TIEFighter_Pose</CharacterAnimation>
+      <EnableFirstPerson>true</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>true</EnableBuilderCockpit>
+      <TargetLockingEnabled>true</TargetLockingEnabled>
+      <OxygenCapacity>180</OxygenCapacity>
+      <IsPressurized>true</IsPressurized>
+      <GetInSound>ShipSmCockpitIn</GetInSound>
+      <GetOutSound>ShipSmCockpitOut</GetOutSound>
+    </Definition>
+
+  </CubeBlocks>
 </Definitions>

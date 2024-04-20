@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Animations>
+  
+    <Animation>
+      <Id>
+        <TypeId>AnimationDefinition</TypeId>
+        <SubtypeId>GFA_TIEFighter_Pose</SubtypeId>
+      </Id>
+      <DisplayName>GFA_TIEFighter_Pose</DisplayName>
+      <Description>GFA_TIEFighter_Pose</Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <AnimationModel>Models\Characters\\Animations\GFA_TIEFighter_Pose.mwm</AnimationModel>
+      <ClipIndex>0</ClipIndex>
+      <InfluenceArea>Body</InfluenceArea>
+      <Public>false</Public>
+    </Animation>
+   
+  </Animations>
+</Definitions>
