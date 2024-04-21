@@ -32,15 +32,6 @@ func closeHatch() {
 	}
 }
 
-action Block() {
-	Working() {
-		openHatch()
-	}
-	NotWorking() {
-		closeHatch()
-	}
-}
-
 action Button(Hatch) {
 	Hovering(hovering) {
 		if (block.IsWorking() == true) {

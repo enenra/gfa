@@ -6,7 +6,7 @@ using Light as Light("Cockpit", 0.0)
 
 action Block() {
 	Working() {
-		Light.setcolor(255, 30, 20)
+		Light.setcolor(125, 15, 10)
 		Light.lighton()
 	}
 	NotWorking() {
