@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_LaserCannon_PassBy</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>100</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Volume>0.25</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_LaserCannon_PassBy_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_LaserCannon_PassBy_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_LaserCannon_PassBy_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_LaserCannon_PassBy</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>150</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Volume>0.5</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_LaserCannon_PassBy_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_LaserCannon_PassBy_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Arc_GFA_LaserCannon_PassBy_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+  </Sounds>
+</Definitions>
