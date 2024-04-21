@@ -14,7 +14,7 @@ namespace enenra.ThrusterEmissive
         IMyThrust m_block;
 
         private const string EMISSIVE_MATERIAL_NAME = "Emissive";
-        private Color WHITE = new Color(255, 255, 255);
+        private Color RED = new Color(255, 30, 20);
         private Color BLACK = new Color(0, 0, 0);
 
         bool IsWorking => m_block.IsWorking;
@@ -57,7 +57,7 @@ namespace enenra.ThrusterEmissive
 
             if (IsWorking)
             {
-                m_block.SetEmissiveParts(EMISSIVE_MATERIAL_NAME, WHITE, 5f);
+                m_block.SetEmissiveParts(EMISSIVE_MATERIAL_NAME, RED, 5f);
             }
             else 
             {

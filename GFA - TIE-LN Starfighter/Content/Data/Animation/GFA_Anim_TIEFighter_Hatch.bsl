@@ -14,6 +14,7 @@ func reset() {
 
 func openHatch() {
     if (isOpen == false) {
+		reset()
 		Hatch.rotate([1, 0, 0], -90.0, duration, InOutCubic)
 		
 		Emitter.playSound("_GFA_TIEFighter_Hatch_Open")
