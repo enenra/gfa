@@ -10,7 +10,7 @@
 			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Thruster}</DisplayName>
 			<Description>{LOC:Description_GFA_SG_TIEFighter_Thruster}</Description>
 			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Thruster.dds</Icon>
-      <Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Battery.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="2" y="1" z="1"/>
@@ -26,7 +26,7 @@
       </Components>
       <CriticalComponent Subtype="Thrust" Index="0" />
 			<MountPoints>
-				<MountPoint Side="Back" StartX="0.50" StartY="0.22" EndX="1.50" EndY="0.78" Default="true"/>
+				<MountPoint Side="Back" StartX="0.50" StartY="0.22" EndX="1.00" EndY="0.78" Default="true" CouplingTag="tieln_thruster"/>
 			</MountPoints>
 			<BuildProgressModels>
 				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Thruster_BS1.mwm"/>
@@ -35,7 +35,7 @@
 			</BuildProgressModels>
 			<BlockPairName>GFA_SG_TIEFighter_Thruster</BlockPairName>
 			<MirroringX>Z</MirroringX>
-			<MirroringZ>Y</MirroringZ>
+			<MirroringZ>X</MirroringZ>
 
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>

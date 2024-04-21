@@ -31,6 +31,8 @@
       <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Back" StartX="2.00" StartY="1.00" EndX="3.00" EndY="2.00" CouplingTag="tieln_thruster"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00" CouplingTag="tieln_thruster"/>
         <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
         <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
         <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>

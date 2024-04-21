@@ -27,8 +27,7 @@
         </Components>
         <CriticalComponent Subtype="Computer" Index="0" />
 				<MountPoints>
-					<MountPoint Side="Back" StartX="0.75" StartY="0.50" EndX="2.25" EndY="1.00" Default="true"/>
-					<MountPoint Side="Top" StartX="0.75" StartY="0.00" EndX="2.25" EndY="0.50"/>
+					<MountPoint Side="Back" StartX="0.75" StartY="0.50" EndX="2.25" EndY="1.00" Default="true" CouplingTag="tieln_weapons"/>
 				</MountPoints>
 				<BuildProgressModels>
 					<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Lasers_BS1.mwm"/>
