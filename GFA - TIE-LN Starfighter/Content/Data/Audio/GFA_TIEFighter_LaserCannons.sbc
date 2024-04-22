@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <!-- Shot -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_TIEFighter_LaserCannon_Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>200</MaxDistance>
+      <PitchVariation>30</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.5</Volume>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="20" Distance="200" Sound="Arc_GFA_TIEFighter_LaserCannon_Shot_Distant" />
+      </DistantSounds>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_TIEFighter_LaserCannon_Shot_Distant</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <Volume>0.5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_Distant_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_Distant_2.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_TIEFighter_LaserCannon_Shot</SubtypeId>
+      </Id>
+      <Category>SHOT_R</Category>
+      <MaxDistance>15</MaxDistance>
+      <PitchVariation>30</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.75</Volume>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_LaserCannon_Shot_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+  </Sounds>
+</Definitions>

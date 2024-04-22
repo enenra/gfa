@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_TIEFighter_Thruster</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>100</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.5</Volume>
+      <Loopable>true</Loopable>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="20" Distance="100" Sound="Arc_GFA_TIEFighter_Thruster_Distant" />
+      </DistantSounds>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_Start.wav</Start>
+          <Loop>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_Loop.wav</Loop>
+          <End>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_End.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_TIEFighter_Thruster_Distant</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>800</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.5</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_Loop_Distant.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_TIEFighter_Thruster</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>50</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Volume>0.75</Volume>
+      <Loopable>true</Loopable>
+      <DistantSounds>
+        <DistantSound DistanceCrossfade="20" Distance="50" Sound="Real_GFA_TIEFighter_Thruster_Distant" />
+      </DistantSounds>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_Start.wav</Start>
+          <Loop>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_Loop.wav</Loop>
+          <End>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_End.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real_GFA_TIEFighter_Thruster_Distant</SubtypeId>
+      </Id>
+      <Category>SHIP_JET</Category>
+      <MaxDistance>600</MaxDistance>
+      <PitchVariation>10</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>0.5</Volume>
+      <Loopable>true</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Loop>Audio\TIE-ln\Arc_GFA_TIEFighter_Thruster_Loop_Distant.wav</Loop>
+        </Wave>
+      </Waves>
+    </Sound>
+
+  </Sounds>
+</Definitions>
