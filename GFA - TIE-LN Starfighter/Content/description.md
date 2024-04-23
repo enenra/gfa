@@ -11,9 +11,9 @@ The standard starfighter of the Imperial Navy, the TIE (Twin Ion Engine) was kno
 
 
 [img]https://i.imgur.com/TGu2yer.png[/img]
-[img][/img]
-[img][/img]
-[img][/img]
+[img]https://i.imgur.com/19aLNls.gif[/img]
+[img]https://i.imgur.com/MvAtedM.gif[/img]
+[img]https://i.imgur.com/gS5sAa6.gif[/img]
 
 
 [img]https://i.imgur.com/bKN1G3e.png[/img]
