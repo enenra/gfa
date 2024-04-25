@@ -246,7 +246,7 @@ The solar-collector wings of TIE Fighters serve as their main source of power an
     <value>Functionality: Connector
 Manufacturer: Sienar Fleet Systems
 
-The top hatch of TIE Fighters contains additional transparisteel windows to improve the pilot's situational awareness. They also serve as connection points for the resupply of energy and oxygen.
+The top hatch of TIE Fighters contains additional transparisteel windows to improve the pilot's situational awareness. They also serve as connection points for the resupply of energy.
     </value>
     <comment/>
   </data>
@@ -302,6 +302,30 @@ Enveloped with quadranium steel armoring, the TIE Fighter's signature standardiz
   </data>
   <data name="DisplayName_Screen_Side" xml:space="preserve">
     <value>Side Screen</value>
+    <comment/>
+  </data>
+
+  <data name="DisplayName_GFA_LG_TIEFighter_DockingTube_Door" xml:space="preserve">
+    <value>TIE Docking Tube Airlock</value>
+    <comment/>
+  </data>
+  <data name="Description_GFA_LG_TIEFighter_DockingTube_Door" xml:space="preserve">
+    <value>Manufacturer: Sienar Fleet Systems
+
+The airlock part of a TIE docking tube, employed, among other places on Gozanti-class Cruisers.
+    </value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_TIEFighter_DockingTube" xml:space="preserve">
+    <value>TIE Docking Tube</value>
+    <comment/>
+  </data>
+  <data name="Description_GFA_LG_TIEFighter_DockingTube" xml:space="preserve">
+    <value>Functionality: Connector
+Manufacturer: Sienar Fleet Systems
+
+The lower part of a TIE docking tube, as employed on Gozanti-class cruisers. It can only be attached to the corresponding TIE docking tube airlock block.
+    </value>
     <comment/>
   </data>
 

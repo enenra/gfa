@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_AdvancedDoorDefinition">
+      <Id>
+        <TypeId>AdvancedDoor</TypeId>
+				<SubtypeId>GFA_LG_TIEFighter_DockingTube_Door</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_LG_TIEFighter_DockingTube_Door}</DisplayName>
+			<Description>{LOC:Description_GFA_LG_TIEFighter_DockingTube_Door}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_TIEFighter_DockingTube_Door.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\GFA_LG_TIEFighter_DockingTube_Door.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="130" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SmallTube" Count="12" />
+        <Component Subtype="Motor" Count="8" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.00" Default="true"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.35" StartY="0.75" EndX="0.65" EndY="1.00" CouplingTag="tie_dockingtube"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_TIEFighter_DockingTube_Door_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_TIEFighter_DockingTube_Door_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_TIEFighter_DockingTube_Door_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_LG_TIEFighter_DockingTube_Door</BlockPairName>
+			<MirroringY>X</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
+      <PCU>15</PCU>
+      <PowerConsumptionIdle>0.00001</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.001</PowerConsumptionMoving>
+
+      <Subparts>
+        <SubpartDefinition>
+          <Name>iris_1</Name>
+        </SubpartDefinition>
+        <SubpartDefinition>
+          <Name>iris_2</Name>
+        </SubpartDefinition>
+        <SubpartDefinition>
+          <Name>iris_3</Name>
+        </SubpartDefinition>
+        <SubpartDefinition>
+          <Name>iris_4</Name>
+        </SubpartDefinition>
+      </Subparts>
+      <OpeningSequence>
+        <Opening>
+          <IDs>0</IDs>
+          <Move>Rotate</Move>
+          <RotationAxis>Y</RotationAxis>
+          <PivotPosition x="0.0" y="0.0" z="0.761789" />
+          <MaxOpen>-60</MaxOpen>
+          <Speed>60</Speed>
+          <OpenSound>_GFA_XWing_SFoils_Open</OpenSound>
+          <CloseSound>_GFA_XWing_SFoils_Close</CloseSound>
+        </Opening>
+        <Opening>
+          <IDs>1</IDs>
+          <Move>Rotate</Move>
+          <RotationAxis>Y</RotationAxis>
+          <PivotPosition x="-0.761789" y="0.0" z="0.0" />
+          <MaxOpen>-60</MaxOpen>
+          <Speed>60</Speed>
+        </Opening>
+        <Opening>
+          <IDs>2</IDs>
+          <Move>Rotate</Move>
+          <RotationAxis>Y</RotationAxis>
+          <PivotPosition x="0.0" y="0.0" z="-0.761789" />
+          <MaxOpen>-60</MaxOpen>
+          <Speed>60</Speed>
+        </Opening>
+        <Opening>
+          <IDs>3</IDs>
+          <Move>Rotate</Move>
+          <RotationAxis>Y</RotationAxis>
+          <PivotPosition x="0.761789" y="0.0" z="0.0" />
+          <MaxOpen>-60</MaxOpen>
+          <Speed>60</Speed>
+        </Opening>
+      </OpeningSequence>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

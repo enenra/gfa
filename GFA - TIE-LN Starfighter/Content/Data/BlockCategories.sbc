@@ -23,6 +23,8 @@
         <string>ShipConnector/GFA_SG_TIEFighter_Port</string>
         <string>ConveyorSorter/GFA_SG_TIEFighter_Lasers</string>
         <string>Cockpit/GFA_SG_TIEFighter_Cockpit</string>
+        <string>AdvancedDoor/GFA_LG_TIEFighter_DockingTube_Door</string>
+        <string>ShipConnector/GFA_LG_TIEFighter_DockingTube</string>
       </ItemIds>
     </Category>
 
@@ -46,6 +48,21 @@
         <string>ShipConnector/GFA_SG_TIEFighter_Port</string>
         <string>ConveyorSorter/GFA_SG_TIEFighter_Lasers</string>
         <string>Cockpit/GFA_SG_TIEFighter_Cockpit</string>
+        <string>AdvancedDoor/GFA_LG_TIEFighter_DockingTube_Door</string>
+        <string>ShipConnector/GFA_LG_TIEFighter_DockingTube</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+        <string>AdvancedDoor/GFA_LG_TIEFighter_DockingTube_Door</string>
+        <string>ShipConnector/GFA_LG_TIEFighter_DockingTube</string>
       </ItemIds>
     </Category>
 

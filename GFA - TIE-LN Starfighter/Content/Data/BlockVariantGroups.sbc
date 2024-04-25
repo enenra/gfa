@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_TIE_DockingTube" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_TIEFighter_DockingTube_Door.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_TIEFighter_DockingTube_Door</DisplayName>
+      <Description>Description_GFA_LG_TIEFighter_DockingTube_Door</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_AdvancedDoor" Subtype="GFA_LG_TIEFighter_DockingTube_Door" />
+        <Block Type="MyObjectBuilder_ShipConnector" Subtype="GFA_LG_TIEFighter_DockingTube" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>
