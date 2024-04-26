@@ -13,7 +13,7 @@ func reset() {
 }
 
 func openHatch() {
-    if (isOpen == false) {
+    if (isOpen == false && API.iscontrollingentity() == false) {
 		reset()
 		Hatch.rotate([1, 0, 0], -90.0, duration, InOutCubic)
 		

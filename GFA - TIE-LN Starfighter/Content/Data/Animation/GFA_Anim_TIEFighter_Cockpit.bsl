@@ -2,11 +2,11 @@
 @Version 2
 @Author enenra
 
-using Light as Light("Cockpit", 0.0)
+using Light as Light("Cockpit", 1.5, false)
 
 action Block() {
 	Working() {
-		Light.setcolor(65, 8, 5)
+		Light.setcolor(85, 10, 7)
 		Light.lighton()
 	}
 	NotWorking() {
