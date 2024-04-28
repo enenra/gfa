@@ -4,24 +4,16 @@
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
-
+A small mod adding assets for the X-Wing vs. TIE Fighter PvP Map.
 [/quote]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]
 
 
 [img]https://i.imgur.com/TGu2yer.png[/img]
-
-
-[img]https://i.imgur.com/bKN1G3e.png[/img]
 [list]
-[*]
-[/list]
-
-
-[img]https://i.imgur.com/Ky5F2bo.png[/img]
-[list]
-[*][b]Ash Like Snow[/b] - 
+[*]A X-Wing vs. TIE Fighter Logo LCD image.
+[*]A X-Wing vs. TIE Fighter Poster LCD image.
 [/list]
 
 
