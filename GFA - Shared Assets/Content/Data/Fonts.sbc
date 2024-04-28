@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Fonts>
+
+    <Font>
+      <Id>
+        <TypeId>FontDefinition</TypeId>
+        <SubtypeId>GFA_Standard</SubtypeId>
+      </Id>
+      <Default>false</Default>
+      <Path>Fonts\GFA_Standard\FontDataPA.xml</Path>
+    </Font>
+
+    <Font>
+      <Id>
+        <TypeId>FontDefinition</TypeId>
+        <SubtypeId>GFA_Aurabesh</SubtypeId>
+      </Id>
+      <Default>false</Default>
+      <Path>Fonts\GFA_Aurabesh\FontDataPA.xml</Path>
+    </Font>
+
+  </Fonts>
+</Definitions>
