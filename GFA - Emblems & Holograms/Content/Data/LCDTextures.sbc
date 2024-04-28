@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LCDTextures>
+
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>GFA_LCD_Logo_GFA</SubtypeId>
+      </Id>
+      <LocalizationId>DisplayName_GFA_LCD_Logo_GFA</LocalizationId>
+      <TexturePath>Textures\LCD\GFA_LCD_Logo_GFA.dds</TexturePath>
+      <SpritePath>Textures\Sprites\GFA_LCD_Logo_GFA.dds</SpritePath>
+    </LCDTextureDefinition>
+
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>GFA_LCD_Logo_Empire</SubtypeId>
+      </Id>
+      <LocalizationId>DisplayName_GFA_LCD_Logo_Empire</LocalizationId>
+      <TexturePath>Textures\LCD\GFA_LCD_Logo_Empire.dds</TexturePath>
+      <SpritePath>Textures\Sprites\GFA_LCD_Logo_Empire.dds</SpritePath>
+    </LCDTextureDefinition>
+
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>GFA_LCD_Logo_Rebels</SubtypeId>
+      </Id>
+      <LocalizationId>DisplayName_GFA_LCD_Logo_Rebels</LocalizationId>
+      <TexturePath>Textures\LCD\GFA_LCD_Logo_Rebels.dds</TexturePath>
+      <SpritePath>Textures\Sprites\GFA_LCD_Logo_Rebels.dds</SpritePath>
+    </LCDTextureDefinition>
+
+  </LCDTextures>
+</Definitions>

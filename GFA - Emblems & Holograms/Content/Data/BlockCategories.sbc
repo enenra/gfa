@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
+      <Name>GFA_Category</Name>
+      <ItemIds>
+        <string>TerminalBlock/GFA_LG_Holo_Empire</string>
+        <string>TerminalBlock/GFA_LG_Holo_Empire_5x5</string>
+        <string>TerminalBlock/GFA_LG_Holo_Rebels</string>
+        <string>TerminalBlock/GFA_LG_Holo_Rebels_5x5</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+        <string>TerminalBlock/GFA_LG_Holo_Empire</string>
+        <string>TerminalBlock/GFA_LG_Holo_Empire_5x5</string>
+        <string>TerminalBlock/GFA_LG_Holo_Rebels</string>
+        <string>TerminalBlock/GFA_LG_Holo_Rebels_5x5</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>

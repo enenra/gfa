@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition>
+      <Id>
+        <TypeId>TerminalBlock</TypeId>
+        <SubtypeId>GFA_LG_Holo_Empire</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_Holo_Empire}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_Holo_Empire}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_Holo_Empire.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_Holo_Empire.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="Display" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_Holo_Empire_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_Holo_Empire_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_Holo_Empire_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_Holo_Empire</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PCU>10</PCU>
+      <IsAirTight>false</IsAirTight>
+
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <IdleSound>BlockProjectorOff</IdleSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>TerminalBlock</TypeId>
+        <SubtypeId>GFA_LG_Holo_Empire_5x5</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_Holo_Empire_5x5}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_Holo_Empire}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_Holo_Empire.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_Holo_Empire_5x5.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="Display" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_Holo_Empire_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_Holo_Empire_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_Holo_Empire_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_Holo_Empire_5x5</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PCU>50</PCU>
+      <IsAirTight>false</IsAirTight>
+
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <IdleSound>BlockProjectorOff</IdleSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      
+      <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
