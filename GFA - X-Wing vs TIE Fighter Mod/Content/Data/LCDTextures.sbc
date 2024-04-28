@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LCDTextures>
+    
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>GFA_LCD_Logo_PvPMap</SubtypeId>
+      </Id>
+      <LocalizationId>DisplayName_GFA_LCD_Logo_PvPMap</LocalizationId>
+      <TexturePath>Textures\LCD\GFA_LCD_Logo_PvPMap.dds</TexturePath>
+      <SpritePath>Textures\Sprites\GFA_LCD_Logo_PvPMap.dds</SpritePath>
+    </LCDTextureDefinition>
+
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>GFA_LCD_Poster_PvPMap</SubtypeId>
+      </Id>
+      <LocalizationId>DisplayName_GFA_LCD_Poster_PvPMap</LocalizationId>
+      <TexturePath>Textures\LCD\GFA_LCD_Poster_PvPMap.dds</TexturePath>
+      <SpritePath>Textures\Sprites\GFA_LCD_Poster_PvPMap.dds</SpritePath>
+    </LCDTextureDefinition>
+
+  </LCDTextures>
+</Definitions>
