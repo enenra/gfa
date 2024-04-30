@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CubeBlocks>
 
     <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
@@ -16,18 +17,18 @@
       <Size x="3" y="4" z="1"/>
       <ModelOffset x="0" y="0" z="0"/>
       <Model>Models\Cubes\small\GFA_SG_XWing_Hyperdrive.mwm</Model>
-				<Components>
-					<Component Subtype="SteelPlate" Count="40" />
-					<Component Subtype="MetalGrid" Count="20" />
-					<Component Subtype="GravityGenerator" Count="10" />
-					<Component Subtype="Detector" Count="10" />
-					<Component Subtype="PowerCell" Count="60" />
-					<Component Subtype="Superconductor" Count="200" />
-					<Component Subtype="Computer" Count="100" />
-					<Component Subtype="Construction" Count="10" />
-					<Component Subtype="SteelPlate" Count="20" />
-				</Components>
-				<CriticalComponent Subtype="Computer" Index="0" />
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="GravityGenerator" Count="10" />
+        <Component Subtype="Detector" Count="10" />
+        <Component Subtype="PowerCell" Count="60" />
+        <Component Subtype="Superconductor" Count="200" />
+        <Component Subtype="Computer" Count="100" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
       <BlockPairName>GFA_SG_XWing_Hyperdrive</BlockPairName>
       <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="4.00"/>
@@ -53,12 +54,12 @@
       <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
       <DestroySound>WepLrgWarheadExpl</DestroySound>
 
-      <RequiredPowerInput>7.5</RequiredPowerInput>
-      <PowerNeededForJump>1.5</PowerNeededForJump>
-      <PowerEfficiency>1.0</PowerEfficiency>
+      <RequiredPowerInput>5.5</RequiredPowerInput>
+      <PowerNeededForJump>1.0</PowerNeededForJump>
+      <PowerEfficiency>1.25</PowerEfficiency>
       <MinJumpDistance>100000</MinJumpDistance>
       <MaxJumpDistance>1000000</MaxJumpDistance>
-      <MaxJumpMass>125000</MaxJumpMass>
+      <MaxJumpMass>75000</MaxJumpMass>
     </Definition>
 
   </CubeBlocks>
