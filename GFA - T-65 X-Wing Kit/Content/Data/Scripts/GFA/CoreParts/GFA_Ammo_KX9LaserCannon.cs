@@ -172,12 +172,12 @@ namespace Scripts
             AmmoAudio = new AmmoAudioDef
             {
                 TravelSound = "_GFA_LaserCannon_PassBy",
-                HitSound = "_GFA_XWing_LaserCannon_Impact",
+                HitSound = "_GFA_LaserCannon_Impact",
                 ShotSound = "",
                 ShieldHitSound = "_GFA_Shield_Impact",
-                PlayerHitSound = "_GFA_XWing_LaserCannon_Impact",
-                VoxelHitSound = "_GFA_XWing_LaserCannon_Impact",
-                FloatingHitSound = "_GFA_XWing_LaserCannon_Impact",
+                PlayerHitSound = "_GFA_LaserCannon_Impact",
+                VoxelHitSound = "_GFA_LaserCannon_Impact",
+                FloatingHitSound = "_GFA_LaserCannon_Impact",
                 HitPlayChance = 0.5f,
                 HitPlayShield = true,
             },
