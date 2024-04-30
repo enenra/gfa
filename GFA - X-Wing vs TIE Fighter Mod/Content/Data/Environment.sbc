@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Environment>
+    <Id>
+      <TypeId>EnvironmentDefinition</TypeId>
+      <SubtypeId>Default</SubtypeId>
+    </Id>
+
+    <EnvironmentTexture>Textures\Desevro.dds</EnvironmentTexture>
+    <EnvironmentOrientation Yaw="0" Pitch="0" Roll="0" />
+
+    <PlanetProperties>
+      <AtmosphereIntensityMultiplier>30</AtmosphereIntensityMultiplier>
+    </PlanetProperties>
+
+    <SunProperties>
+      <EnvironmentLight>
+        <SkyboxBrightness>3</SkyboxBrightness>
+        <EnvSkyboxBrightness>10.0</EnvSkyboxBrightness>
+        <EnvAtmosphereBrightness>0.18</EnvAtmosphereBrightness>
+        <SunDiscIntensity>2.3</SunDiscIntensity>
+        <SunColor>
+          <X>1</X>
+          <Y>1</Y>
+          <Z>1</Z>
+        </SunColor>
+        <SunDiscColor>
+          <X>1.0</X>
+          <Y>0.55</Y>
+          <Z>0.35</Z>
+        </SunDiscColor>
+        <SunDiscColor2>
+          <X>1.0</X>
+          <Y>1.0</Y>
+          <Z>1.0</Z>
+        </SunDiscColor2>
+        <SunDiscInnerDot>0.9997</SunDiscInnerDot>
+        <SunDiscOuterDot>0.9999</SunDiscOuterDot>
+      </EnvironmentLight>
+    </SunProperties>
+
+  </Environment>
+</Definitions>
