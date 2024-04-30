@@ -15,6 +15,7 @@ A mod containing various assets that are used by multiple other A Galaxy Far Awa
 [*]GFA Standard Font
 [*]GFA Aurabesh Font
 [*]Various sound effects
+[*]Various particles
 [/list]
 
 
