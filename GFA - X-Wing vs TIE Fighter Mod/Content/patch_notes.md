@@ -1,4 +1,4 @@
-[h1]Patch 1.1[/h1]
+[h1]Patch 1.2[/h1]
 [list]
-[*]Added a modified version of the Star Wars Squadrons Desevro skybox.
+[*]Added a X-Wing and a TIE Fighter LCD Poster.
 [/list]

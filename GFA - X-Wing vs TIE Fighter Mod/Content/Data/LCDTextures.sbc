@@ -22,6 +22,26 @@
       <TexturePath>Textures\LCD\GFA_LCD_Poster_PvPMap.dds</TexturePath>
       <SpritePath>Textures\Sprites\GFA_LCD_Poster_PvPMap.dds</SpritePath>
     </LCDTextureDefinition>
+    
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>GFA_LCD_Poster_XWing</SubtypeId>
+      </Id>
+      <LocalizationId>DisplayName_GFA_LCD_Poster_XWing</LocalizationId>
+      <TexturePath>Textures\LCD\GFA_LCD_Poster_XWing.dds</TexturePath>
+      <SpritePath>Textures\Sprites\GFA_LCD_Poster_XWing.dds</SpritePath>
+    </LCDTextureDefinition>
+
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>GFA_LCD_Poster_TIEFighter</SubtypeId>
+      </Id>
+      <LocalizationId>DisplayName_GFA_LCD_Poster_TIEFighter</LocalizationId>
+      <TexturePath>Textures\LCD\GFA_LCD_Poster_TIEFighter.dds</TexturePath>
+      <SpritePath>Textures\Sprites\GFA_LCD_Poster_TIEFighter.dds</SpritePath>
+    </LCDTextureDefinition>
 
   </LCDTextures>
 </Definitions>

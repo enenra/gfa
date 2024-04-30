@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3234466893]1.1[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3234466893]1.2[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
@@ -14,6 +14,8 @@ A small mod adding assets for the X-Wing vs. TIE Fighter PvP Map.
 [list]
 [*]A X-Wing vs. TIE Fighter Logo LCD image.
 [*]A X-Wing vs. TIE Fighter Poster LCD image.
+[*]A X-Wing Poster LCD image.
+[*]A TIE Fighter Poster LCD image.
 [*]A unique skybox.
 [/list]
 
