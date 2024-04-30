@@ -37,13 +37,15 @@
       <BlockPairName>GFA_LG_TIEFighter_DockingTube</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>20</BuildTimeSeconds>
 
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
       <TieredUpdateTimes>
         <unsignedInt>80</unsignedInt>
         <unsignedInt>160</unsignedInt>
         <unsignedInt>320</unsignedInt>
       </TieredUpdateTimes>
+      <IsAirTight>false</IsAirTight>
       <PCU>125</PCU>
 
       <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
