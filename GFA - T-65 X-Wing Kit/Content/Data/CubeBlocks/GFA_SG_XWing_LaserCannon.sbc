@@ -19,12 +19,12 @@
       <Center x="0" y="0" z="1"/>
       <Model>Models\Cubes\small\GFA_SG_XWing_LaserCannon.mwm</Model>
       <Components>
-          <Component Subtype="SteelPlate" Count="10" />
-          <Component Subtype="Construction" Count="5" />
-          <Component Subtype="MetalGrid" Count="5" />
-          <Component Subtype="LargeTube" Count="5" />
-          <Component Subtype="Computer" Count="1" />
-          <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="LargeTube" Count="5" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="10" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
       <MountPoints>
@@ -38,8 +38,10 @@
       <BlockPairName>GFA_SG_XWing_LaserCannon</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
+
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
       <PCU>25</PCU>
 
       <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
@@ -56,6 +58,6 @@
       </InventorySize>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
     </Definition>
-    
+
   </CubeBlocks>
 </Definitions>
