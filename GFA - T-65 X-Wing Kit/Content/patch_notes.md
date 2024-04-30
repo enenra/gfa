@@ -1,8 +1,6 @@
-[h1]Patch 1.1[/h1]
+[h1]Patch 1.1a[/h1]
 [list]
-[*]Added KX9 Laser Cannon as a standalone block - perfect, among other things, for custom turrets.
-[*]Added MG7 Proton Torpedo Rack - can hold one magazine and is available in both large and small grid.
-[*]Fixed Hyperdrive overloading the default X-Wing blueprint's systems on charge.
-[*]Fixed cockpit LCDs briefly being seethrough when turning the grid on.
-[*]Fixed engine intake LOD issues (decals were clipping in and out at certain distances).
+[*]Rebalanced Hyperdrive power use. It will now require less, charge faster and be more efficient. However, the mass it can move was reduced. It's still enough for an X-Wing, even fully loaded, but this will hopefully discourage using it on non-X-Wing builds.
+[*]Rebalanced Intakes. This is to be seen in context of my change of how repulsors work in general as the old method lead to much higher power consumption than intended. The new intake will now appear differently stat-wise but largely have the same actual effect when in use. 
+A side effect of this change will, however, be that all X-Wing thrusters no longer have an abnormally strong ability to stop the craft down.
 [/list]
