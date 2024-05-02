@@ -70,9 +70,9 @@ namespace Scripts {
                     MagsToLoad = 0, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 5, // Heat generated per shot.
-                    MaxHeat = 100, // Max heat before weapon enters cooldown (70% of max heat).
-                    Cooldown = 0.5f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate= 15, // Amount of heat lost per second.
+                    MaxHeat = 125, // Max heat before weapon enters cooldown (70% of max heat).
+                    Cooldown = 0.75f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
+                    HeatSinkRate= 35, // Amount of heat lost per second.
                     ShotsInBurst = 0, // Use this if you don't want the weapon to fire an entire physical magazine in one go. Should not be more than your magazine capacity.
                     StayCharged = true, // Will start recharging whenever power cap is not full.
                 },
