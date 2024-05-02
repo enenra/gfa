@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Definition xsi:type="AnimationControllerDefinition">
+    <Id Type="MyObjectBuilder_AnimationControllerDefinition" Subtype="Default_Astronaut" />
+    <Layers>
+      <Layer>
+        <Name>RebelVisor</Name>
+        <Mode>Replace</Mode>
+        <StateMachine>SMRebelVisor</StateMachine>
+        <InitialSMNode>RebelVisorClose</InitialSMNode>
+        <BoneMask>XWingVisor</BoneMask>
+      </Layer>
+    </Layers>
+    <StateMachines>
+      <StateMachine>
+        <Name>SMRebelVisor</Name>
+        <Nodes>
+          <Node>
+            <Name>RebelVisorClose</Name>
+            <AnimationTree>
+              <EdPos>
+                <X>0</X>
+                <Y>0</Y>
+              </EdPos>
+              <EventNames />
+              <EventTimes />
+              <Child xsi:type="MyObjectBuilder_AnimationTreeNodeTrack">
+                <EdPos>
+                  <X>258</X>
+                  <Y>-8</Y>
+                </EdPos>
+                <EventNames />
+                <EventTimes />
+                <Key />
+                <PathToModel>Models\Characters\Animation\GFA_XWing_PilotVisor.mwm</PathToModel>
+                <AnimationName>SE_main_root|SE_main_rootAction</AnimationName>
+                <Loop>false</Loop>
+                <Speed>-1</Speed>
+                <Interpolate>true</Interpolate>
+              </Child>
+            </AnimationTree>
+            <EdPos>
+              <X>-388</X>
+              <Y>-37</Y>
+            </EdPos>
+            <Type>Normal</Type>
+            <Variables />
+          </Node>
+          <Node>
+            <Name>RebelVisorOpen</Name>
+            <AnimationTree>
+              <EdPos>
+                <X>0</X>
+                <Y>0</Y>
+              </EdPos>
+              <EventNames />
+              <EventTimes />
+              <Child xsi:type="MyObjectBuilder_AnimationTreeNodeTrack">
+                <EdPos>
+                  <X>349</X>
+                  <Y>19</Y>
+                </EdPos>
+                <EventNames />
+                <EventTimes />
+                <Key />
+                <PathToModel>Models\Characters\Animation\GFA_XWing_PilotVisor.mwm</PathToModel>
+                <AnimationName>SE_main_root|SE_main_rootAction</AnimationName>
+                <Loop>false</Loop>
+                <Speed>5</Speed>
+                <Interpolate>true</Interpolate>
+              </Child>
+            </AnimationTree>
+            <EdPos>
+              <X>-74</X>
+              <Y>-43</Y>
+            </EdPos>
+            <Type>Normal</Type>
+            <Variables />
+          </Node>
+        </Nodes>
+        <Transitions>
+          <Transition From="HelmetClosed" To="RebelVisorOpen" TimeInSec="0.1" Sync="Restart" Curve="Smooth">
+            <Conditions>
+              <Conjunction>
+                <Condition Lhs="helmetopen" Op="Equal" Rhs="1" />
+              </Conjunction>
+            </Conditions>
+            <Priority xsi:nil="true" />
+          </Transition>
+          <Transition From="RebelVisorOpen" To="HelmetClosed" TimeInSec="0.1" Sync="Restart" Curve="Smooth">
+            <Conditions>
+              <Conjunction>
+                <Condition Lhs="helmetopen" Op="Equal" Rhs="0" />
+              </Conjunction>
+            </Conditions>
+            <Priority xsi:nil="true" />
+          </Transition>
+          <Transition From="RebelVisorClose" To="RebelVisorOpen" TimeInSec="0.1" Sync="Restart" Curve="Smooth">
+            <Conditions>
+              <Conjunction>
+                <Condition Lhs="helmetopen" Op="Equal" Rhs="1" />
+              </Conjunction>
+            </Conditions>
+            <Priority xsi:nil="true" />
+          </Transition>
+          <Transition From="RebelVisorOpen" To="RebelVisorClose" TimeInSec="0.1" Sync="Restart" Curve="Smooth">
+            <Conditions>
+              <Conjunction>
+                <Condition Lhs="helmetopen" Op="Equal" Rhs="0" />
+              </Conjunction>
+            </Conditions>
+            <Priority xsi:nil="true" />
+          </Transition>
+        </Transitions>
+      </StateMachine>
+    </StateMachines>
+  </Definition>
+</Definitions>
