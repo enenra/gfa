@@ -33,10 +33,9 @@ namespace YourModNamespace
             Vector3D directionToOrigin = CalculateDirectionToOrigin(playerPosition.Value);
             double distanceToOrigin = playerPosition.Value.Length();
             double remainingDistance = BoundaryRadius - distanceToOrigin; // Calculate remaining distance
-            float boxSpacing = CalculateBoxSpacing(distanceToOrigin);
             MatrixD rotationMatrix = CalculateRotationMatrix(directionToOrigin);
 
-            if (remainingDistance <= 1000) // Adjust this value as needed
+            if (remainingDistance <= 150) // Adjust this value as needed
             {
                 ShowDistanceNotification(remainingDistance);
             }
@@ -45,11 +44,6 @@ namespace YourModNamespace
             {
                 return; // If rotationMatrix is null, exit the method
             }
-
-            DrawBlueBoxes(distanceToOrigin, directionToOrigin, rotationMatrix);
-            // DrawRedBoxes(playerPosition.Value, directionToOrigin, rotationMatrix.Value, boxSpacing);
-            DrawGreenLine(distanceToOrigin, playerPosition.Value, directionToOrigin);
-
 
         }
 
@@ -77,134 +71,7 @@ namespace YourModNamespace
 
         private static Vector3D CalculateDirectionToOrigin(Vector3D playerPosition) => Vector3D.Normalize(Vector3D.Zero - playerPosition);
 
-        private static float CalculateBoxSpacing(double distanceToOrigin) => Math.Max((float)(distanceToOrigin / NumberOfBoxes), 10f);
-
         private static MatrixD CalculateRotationMatrix(Vector3D directionToOrigin) => MatrixD.CreateWorld(Vector3D.Zero, directionToOrigin, Vector3D.Up);
-
-
-        private static void DrawBlueBoxes(double distanceToOrigin, Vector3D directionToOrigin, MatrixD rotationMatrix)
-        {
-            Vector3 halfExtents = new Vector3(2.5f, 2.5f, 2.5f);
-            BoundingBoxD blueBox = new BoundingBoxD(-halfExtents, halfExtents);
-            Color specialLineColor = CalculateSpecialLineColor(distanceToOrigin); // Calculate the special line color
-
-            // Check if the player is within 10km. If so, skip drawing the special line.
-            if (distanceToOrigin < 2500)
-            {
-                return;
-            }
-
-            // Draw the less transparent panel if the player is beyond 10km but within 12.5km.
-            if (distanceToOrigin >= 2500 && distanceToOrigin < 5000)
-            {
-                Vector3D specialWallPosition = Vector3D.Zero - (directionToOrigin * 2500);
-                DrawBox(blueBox, specialWallPosition, BlueBoxColor, rotationMatrix);
-                DrawPerpendicularPlane(specialWallPosition, rotationMatrix, 500, 0.1, specialLineColor);
-            }
-
-            // General distance check for other boxes
-            if (distanceToOrigin <= 2000) return;
-
-            foreach (int multiplier in DistanceMultipliers)
-            {
-                if (distanceToOrigin <= multiplier) continue;
-
-                Vector3D blueWallPosition = Vector3D.Zero - (directionToOrigin * multiplier);
-                DrawBox(blueBox, blueWallPosition, BlueBoxColor, rotationMatrix);
-
-                if (multiplier == 2500)
-                {
-                    continue; // Already drawn above
-                }
-                else
-                {
-                    DrawPerpendicularLine(blueWallPosition, rotationMatrix, 50);
-                }
-            }
-        }
-
-
-        private static Color CalculateSpecialLineColor(double distanceToOrigin)
-        {
-            byte alpha;
-
-            if (distanceToOrigin >= 2000 && distanceToOrigin < 2500)
-            {
-                // Scale alpha from 0 (100% transparent) to 179 (about 30% transparent) as distance approaches 10km
-                // This makes the plane go from invisible to slightly visible
-                alpha = (byte)((distanceToOrigin - 2000) / 1000 * 179);
-            }
-            else if (distanceToOrigin >= 2500)
-            {
-                // Set alpha to 25 (about 90% transparent) beyond 10km
-                // This makes it slightly visible from outside
-                alpha = 1;
-            }
-            else
-            {
-                // If distance is less than 9000m, make it completely transparent
-                alpha = 0; // Completely transparent
-            }
-
-            return new Color(255, 0, 0, alpha); // Red color with calculated alpha
-        }
-
-
-
-
-
-
-
-        private static void DrawPerpendicularPlane(Vector3D boxPosition, MatrixD rotationMatrix, double planeWidth = 500, double planeThickness = 0.1, Color? color = null)
-        {
-            Vector3D perpendicularDir = Vector3D.CalculatePerpendicularVector(rotationMatrix.Forward);
-            Vector3D planeNormal = rotationMatrix.Forward;
-            Vector3 halfExtents = new Vector3((float)planeWidth, (float)planeWidth, (float)planeThickness);
-            BoundingBoxD planeBox = new BoundingBoxD(-halfExtents, halfExtents);
-
-            // Create a variable for the plane matrix
-            MatrixD planeMatrix = MatrixD.CreateWorld(boxPosition, planeNormal, perpendicularDir);
-
-            // Create variables for other parameters
-            Color planeColor = color ?? LineColor;
-
-            // Draw the plane
-            MySimpleObjectDraw.DrawTransparentBox(ref planeMatrix, ref planeBox, ref planeColor, MySimpleObjectRasterizer.Solid, 1, 0.1f, MyStringId.GetOrCompute("Square"));
-        }
-
-        private static void DrawBox(BoundingBoxD box, Vector3D position, Color color, MatrixD rotationMatrix)
-        {
-            BoundingBoxD transformedBox = box.TransformFast(rotationMatrix);
-            transformedBox.Translate(position);
-            MySimpleObjectDraw.DrawTransparentBox(ref MatrixD.Identity, ref transformedBox, ref color, MySimpleObjectRasterizer.Solid, 1, 0.1f, MyStringId.GetOrCompute("Square"));
-        }
-
-        private static void DrawGreenLine(double distanceToOrigin, Vector3D playerPosition, Vector3D directionToOrigin)
-        {
-            if (distanceToOrigin <= 2000) return;
-
-            Color lineColor = LineColor; // Default to Green
-            if (distanceToOrigin > 2500)
-            {
-                lineColor = Color.Red;  // Change color to Red if the distance is greater than 7500
-            }
-            Vector4 lineColorVector4 = lineColor.ToVector4();
-
-            Vector3D lineEndPoint = playerPosition + (directionToOrigin * 200);
-            MySimpleObjectDraw.DrawLine(playerPosition, lineEndPoint, MyStringId.GetOrCompute("Square"), ref lineColorVector4, 1f);
-        }
-
-
-
-        private static void DrawPerpendicularLine(Vector3D boxPosition, MatrixD rotationMatrix, double lineLength = 50, Color? color = null)
-        {
-
-            Vector3D perpendicularDir = Vector3D.CalculatePerpendicularVector(rotationMatrix.Forward);
-            Vector3D lineStart = boxPosition - (perpendicularDir * (lineLength / 2));
-            Vector3D lineEnd = boxPosition + (perpendicularDir * (lineLength / 2));
-            Vector4 lineColorVector4 = (color ?? LineColor).ToVector4();
-            MySimpleObjectDraw.DrawLine(lineStart, lineEnd, MyStringId.GetOrCompute("Square"), ref lineColorVector4, 1f);
-        }
 
         protected override void UnloadData() { }
     }

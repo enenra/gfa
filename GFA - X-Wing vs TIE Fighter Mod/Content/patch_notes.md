@@ -1,4 +1,4 @@
-[h1]Patch 1.3[/h1]
+[h1]Patch 1.3a[/h1]
 [list]
-[*]Added a bounce sphere preventing players from leaving the play area.
+[*]Removed visuals from bounce sphere, reduced distance from which notification is shown.
 [/list]
