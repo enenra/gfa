@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityContainers>
+
+    <Container>
+      <Id>
+        <TypeId>MyObjectBuilder_Character</TypeId>
+        <SubtypeId>GFA_TIEFighter_Pilot</SubtypeId>
+      </Id>
+      <DefaultComponents>
+        <Component BuilderType="MyObjectBuilder_CharacterStatComponent" SubtypeId="Default_Astronaut" ForceCreate="true"/>
+        <Component BuilderType="MyObjectBuilder_AssetModifierComponent" SubtypeId="Default_Astronaut" ForceCreate="true"/>
+        <Component BuilderType="MyObjectBuilder_CharacterDiscoveryComponent" ForceCreate="true"/>
+        <Component BuilderType="MyObjectBuilder_TargetFocusComponent" SubtypeId="Character" ForceCreate="true"/>
+        <Component BuilderType="MyObjectBuilder_TargetLockingComponent" SubtypeId="Character" ForceCreate="true"/>
+      </DefaultComponents>
+    </Container>
+
+
+  </EntityContainers>
+</Definitions>
