@@ -28,6 +28,7 @@
       <CriticalComponent Subtype="RadioCommunication" Index="0" />
       <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" Default="true"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
       </MountPoints>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Antenna_BS1.mwm"/>
