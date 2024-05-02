@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3234466893]1.2[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3234466893]1.3[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
@@ -17,6 +17,13 @@ A small mod adding assets for the X-Wing vs. TIE Fighter PvP Map.
 [*]A X-Wing Poster LCD image.
 [*]A TIE Fighter Poster LCD image.
 [*]A unique skybox.
+[*]A sphere of 2.5km radius around 0,0,0 that prevents grids & players from leaving it.
+[/list]
+
+
+[img]https://i.imgur.com/Ky5F2bo.png[/img]
+[list]
+[*][b]Invalid[/b] - For providing me with the script to prevent players from leaving the play area.
 [/list]
 
 

@@ -1,4 +1,4 @@
-[h1]Patch 1.2[/h1]
+[h1]Patch 1.3[/h1]
 [list]
-[*]Added a X-Wing and a TIE Fighter LCD Poster.
+[*]Added a bounce sphere preventing players from leaving the play area.
 [/list]
