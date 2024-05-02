@@ -94,7 +94,7 @@ namespace Scripts
                     TrackingDelay = 20, // Measured in Shape diameter units traveled.
                     AccelClearance = false, // Setting this to true will prevent smart acceleration until it is clear of the grid and tracking delay has been met (free fall).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     KeepAliveAfterTargetLoss = true, // Whether to stop early death of projectile on target loss
                     OffsetRatio = 0.0f, // The ratio to offset the random direction (0 to 1) 
