@@ -43,7 +43,7 @@ namespace Neighbouring_Block_Damage
             block.GetNeighbours(_blocks);
             foreach (var slim in _blocks)
             {
-                slim.DoDamage(10000, MyDamageType.Explosion, true);
+                slim.DoDamage(20000, MyDamageType.Explosion, true);
             }
             _blocks.Clear();
         }

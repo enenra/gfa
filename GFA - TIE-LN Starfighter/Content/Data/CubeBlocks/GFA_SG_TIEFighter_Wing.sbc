@@ -25,6 +25,7 @@
         <Component Subtype="SolarCell" Count="20" />
         <Component Subtype="Construction" Count="1" />
         <Component Subtype="BulletproofGlass" Count="1" />
+        <Component Subtype="SteelPlate" Count="30" />
       </Components>
       <CriticalComponent Subtype="SolarCell" Index="0" />
       <MountPoints>
@@ -39,6 +40,7 @@
       <MirroringX>Y</MirroringX>
       <MirroringZ>Y</MirroringZ>
 
+      <GeneralDamageModifier>0.5</GeneralDamageModifier>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>30</BuildTimeSeconds>
       <IsAirTight>false</IsAirTight>
