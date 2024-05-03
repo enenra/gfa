@@ -1,4 +1,4 @@
-[h1]Patch 1.4[/h1]
+[h1]Patch 1.4a[/h1]
 [list]
-[*]Added X-Wing and TIE Prefabs.
+[*]Added IsMainCockpit tag to prefab cockpits.
 [/list]
