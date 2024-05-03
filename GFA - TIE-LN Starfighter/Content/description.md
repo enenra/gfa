@@ -1,10 +1,10 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/]1.0[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3238158579]1.0[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
-The standard starfighter of the Imperial Navy, the TIE (Twin Ion Engine) was known for its fast acceleration, poweful weapons systems and advantage in maneuvrability over its rebel X-Wing counterpart. This block kit contains all blocks necessary to build your very own TIE/ln Starfighter. The blocks have custom sounds and some have animations. All of them have full build stages and LoDs. I've spent quite some time working on these blocks and they assemble to probably the most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=]TIE/ln replica[/url] to date, with some adjustments to make them work better in Space Engineers.
+The standard starfighter of the Imperial Navy, the TIE (Twin Ion Engine) was known for its fast acceleration, poweful weapons systems and advantage in maneuvrability over its rebel X-Wing counterpart. This block kit contains all blocks necessary to build your very own TIE/ln Starfighter. The blocks have custom sounds and some have animations. All of them have full build stages and LoDs. I've spent quite some time working on these blocks and they assemble to probably the most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3238166978]TIE/ln replica[/url] to date, with some adjustments to make them work better in Space Engineers.
 [/quote]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]
