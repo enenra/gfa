@@ -35,6 +35,9 @@ No. This mod requires various scripts to work, none of which work on consoles.
 [b]Q: Can you make X Star Wars mod?[/b]
 The next GFA mod I'll be working on is a set of turrets. What comes after that is not set yet.
 
+[b]Q: Will you make more TIE variants?[/b]
+Yes! I'm planning on doing the interceptor and mining guild variants first of all, since those are similar enough to the base TIE to share most blocks. They will be released as expansion packs to this mod.
+
 [b]Q: Can you fix the balance of these blocks?[/b]
 Balance is gonna be somewhat iffy until I finish collecting feedback and information on its matchup against the X-Wing, but feedback is generally welcome.
 
