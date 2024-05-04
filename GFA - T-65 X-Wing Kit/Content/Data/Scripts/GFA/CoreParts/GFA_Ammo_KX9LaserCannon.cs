@@ -68,7 +68,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 25f, // Multiplier for damage against shields.
+                    Modifier = 20f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
