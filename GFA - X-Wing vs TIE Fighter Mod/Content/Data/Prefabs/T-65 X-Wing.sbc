@@ -6,18 +6,18 @@
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>118637652007492468</EntityId>
+          <EntityId>143281608457483363</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
-          <Name>118637652007492468</Name>
+          <Name>143281608457483363</Name>
           <PositionAndOrientation>
             <Position x="0" y="0" z="0" />
-            <Forward x="-0.00362924021" y="0.0182101727" z="-0.999827564" />
-            <Up x="-0.0124928709" y="-0.9997567" z="-0.01816354" />
+            <Forward x="-0.0271593239" y="-0.0152301714" z="-0.9995151" />
+            <Up x="-0.05017211" y="0.9986445" z="-0.013853604" />
             <Orientation>
-              <X>0.00187139108</X>
-              <Y>-0.009093997</Y>
-              <Z>0.9999375</Z>
-              <W>0.00622980855</W>
+              <X>-0.00727409869</X>
+              <Y>0.0137674622</Y>
+              <Z>0.0249967519</Z>
+              <W>0.999566257</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
@@ -34,7 +34,7 @@
                       </item>
                       <item>
                         <Key>75bbb4f5-4fb9-4230-beef-bb79c9811503</Key>
-                        <Value>Eg0IABAAIAAtAAAAADAA</Value>
+                        <Value>EhYIABD///////////8BIAAtAAAAADAA</Value>
                       </item>
                     </dictionary>
                   </Storage>
@@ -79,7 +79,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_UpgradeModule">
               <SubtypeName>DSControlSmall</SubtypeName>
-              <EntityId>84226331539421658</EntityId>
+              <EntityId>94603553359068582</EntityId>
               <Min x="0" y="-1" z="5" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -94,7 +94,7 @@
                         <dictionary>
                           <item>
                             <Key>85bbb4f5-4fb9-4230-beef-bb79c9811508</Key>
-                            <Value>FQAA8EEdAADwQSUAAPBBKAAwAD0AAEhCQABIAVAAcAB4AogBAJIBBggAIAA4AJgBKqABALABALoBBggAIAA4AMABAMgBANUBAMB5RA==</Value>
+                            <Value>FQAA8EEdAADwQSUAAPBBKAAwAD0AAEhCQABIAVAAeAKIAQCSAQYIACAAOACYASKgAQCwAQC6AQYIACAAOADAAQDIAQDVAQDAeUQ=</Value>
                           </item>
                           <item>
                             <Key>85bbb4f5-4fb9-4230-beef-bb79c9811511</Key>
@@ -102,7 +102,7 @@
                           </item>
                           <item>
                             <Key>85bbb4f5-4fb9-4230-beef-bb79c9811505</Key>
-                            <Value>DdOcmEQ4AEAASABQAVgAYABoAHAAeACAAQGQAQCYAQChAQAAAAAAAPA/qgEbCQAAAAAAABhAIQAAAAAAABhAOQAAAAAAABhAsAECuAEBxQEAACBA0AEA3QEAAMhC9QGrqmg/+AEAgALXjtz30sSF8QGIAh+QAgGdAs/zBEGlAquqaD+qAg8NAADgPyUAAKA/PQAAwEC9AgAAAADyAgcNxHtLQxAB8gIHDcR7S0MQAfICBw3Ee0tDEAHyAgcNxHtLQxAB8gIHDcR7S0MQAfICBw3Ee0tDEAE=</Value>
+                            <Value>DdOcmEQ4AUAASABQAFgAYABoAHAAeACAAQGQAQCYAQChAQAAAAAAAPA/qgEbCQAAAAAAABhAIQAAAAAAABhAOQAAAAAAABhAsAECuAEBxQEAACBA0AEA3QEAAMhC9QGrqmg/+AEAgAKDz4X9lNjN1wGIAhaQAgGdAs/zBEGlAquqaD+qAg8NAADgPyUAAKA/PQAAwEC9AgAAAADyAgcNxHtLQxAB8gIHDcR7S0MQAfICBw3Ee0tDEAHyAgcNxHtLQxAB8gIHDcR7S0MQAfICBw3Ee0tDEAE=</Value>
                           </item>
                         </dictionary>
                       </Storage>
@@ -120,7 +120,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
               <SubtypeName>GFA_SG_XWing_Wing</SubtypeName>
-              <EntityId>130966205075183246</EntityId>
+              <EntityId>110254213847612564</EntityId>
               <Min x="-1" y="0" z="5" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -132,6 +132,7 @@
               <NumberInGrid>1</NumberInGrid>
               <Enabled>true</Enabled>
               <AnyoneCanUse>false</AnyoneCanUse>
+              <Open>true</Open>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>HalfArmorBlock</SubtypeName>
@@ -191,14 +192,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>94985062691162719</EntityId>
+              <EntityId>95239273126840874</EntityId>
               <Min x="0" y="0" z="-3" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>ConveyorTubeDuctSmallT</SubtypeName>
-              <EntityId>93832682194673798</EntityId>
+              <EntityId>143102170904953027</EntityId>
               <Min x="0" y="-1" z="-3" />
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -206,7 +207,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
               <SubtypeName>ConnectorSmall</SubtypeName>
-              <EntityId>73443236052652870</EntityId>
+              <EntityId>91452320253699076</EntityId>
               <Min x="-1" y="-1" z="1" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -237,7 +238,7 @@
                       <TimerEnabled>true</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame10</TimerType>
-                      <FramesFromLastTrigger>50</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>30</FramesFromLastTrigger>
                       <TimerTickInFrames>80</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -268,7 +269,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LandingGear">
               <SubtypeName>GFA_SG_XWing_FrontGear</SubtypeName>
-              <EntityId>127430883395788136</EntityId>
+              <EntityId>100069158560439044</EntityId>
               <Min x="0" y="-1" z="-8" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -306,7 +307,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
-              <EntityId>141966534141593289</EntityId>
+              <EntityId>133341780492133868</EntityId>
               <Min x="0" y="-1" z="1" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -345,7 +346,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>SmallBlockGyro</SubtypeName>
-              <EntityId>100031035029704936</EntityId>
+              <EntityId>117588069585376170</EntityId>
               <Min x="0" y="0" z="6" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -361,7 +362,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
               <SubtypeName>GFA_SG_XWing_WingMirror</SubtypeName>
-              <EntityId>135922964193202441</EntityId>
+              <EntityId>137623775487077760</EntityId>
               <Min x="1" y="0" z="5" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -372,6 +373,7 @@
               <NumberInGrid>1</NumberInGrid>
               <Enabled>true</Enabled>
               <AnyoneCanUse>false</AnyoneCanUse>
+              <Open>true</Open>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
@@ -407,7 +409,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>116731005076772806</EntityId>
+              <EntityId>90558401926321925</EntityId>
               <Min x="-1" y="0" z="7" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -447,7 +449,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>105209916368641628</EntityId>
+              <EntityId>112142979155800092</EntityId>
               <Min x="-1" y="-1" z="7" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -486,7 +488,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>136162933368728538</EntityId>
+              <EntityId>131826434408402827</EntityId>
               <Min x="1" y="-1" z="7" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -525,7 +527,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>140603540750010362</EntityId>
+              <EntityId>114606448571894265</EntityId>
               <Min x="0" y="-1" z="7" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -558,7 +560,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>84421038456114659</EntityId>
+              <EntityId>137595611557834684</EntityId>
               <Min x="0" y="-1" z="8" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -597,7 +599,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>SmallBlockRadioAntenna</SubtypeName>
-              <EntityId>96218676271294513</EntityId>
+              <EntityId>124865067493701009</EntityId>
               <Min x="0" y="0" z="-5" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -619,15 +621,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>GFA_SG_XWing_FrontCowlingMirror</SubtypeName>
-              <EntityId>142839623782212699</EntityId>
+              <EntityId>131261917693887391</EntityId>
               <Min x="1" y="0" z="-9" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
               <SubtypeName>GFA_SG_XWing_Cockpit</SubtypeName>
-              <EntityId>117298259261708595</EntityId>
-              <IsMainCockpit>true</IsMainCockpit>
+              <EntityId>92624657387682562</EntityId>
               <Min x="-1" y="0" z="-2" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -833,7 +834,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>ActionFire</Action>
-                      <BlockEntityId>102663637535628394</BlockEntityId>
+                      <BlockEntityId>130816434988688921</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -841,7 +842,17 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>View</Action>
-                      <BlockEntityId>118659117940855424</BlockEntityId>
+                      <BlockEntityId>82695941257231207</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>2</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>ActionFire</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>92624657387682562</BlockEntityId>
+                      <GroupName>Torpedo Launchers</GroupName>
                     </Data>
                   </Slot>
                   <Slot>
@@ -850,7 +861,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>Open</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>117298259261708595</BlockEntityId>
+                      <BlockEntityId>92624657387682562</BlockEntityId>
                       <GroupName>S-Foils</GroupName>
                     </Data>
                   </Slot>
@@ -859,7 +870,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>DS-C_ToggleShield_Toggle</Action>
-                      <BlockEntityId>84226331539421658</BlockEntityId>
+                      <BlockEntityId>94603553359068582</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -868,7 +879,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>OnOff</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>117298259261708595</BlockEntityId>
+                      <BlockEntityId>92624657387682562</BlockEntityId>
                       <GroupName>Landing Gear</GroupName>
                     </Data>
                   </Slot>
@@ -877,7 +888,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>EnableBroadCast</Action>
-                      <BlockEntityId>96218676271294513</BlockEntityId>
+                      <BlockEntityId>124865067493701009</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -885,7 +896,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Jump</Action>
-                      <BlockEntityId>73016520791838641</BlockEntityId>
+                      <BlockEntityId>141527468980896013</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -893,7 +904,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>ActionFire</Action>
-                      <BlockEntityId>102663637535628394</BlockEntityId>
+                      <BlockEntityId>130816434988688921</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -901,7 +912,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>SwitchLock</Action>
-                      <BlockEntityId>73443236052652870</BlockEntityId>
+                      <BlockEntityId>91452320253699076</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -909,7 +920,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>OnOff</Action>
-                      <BlockEntityId>73443236052652870</BlockEntityId>
+                      <BlockEntityId>91452320253699076</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -918,7 +929,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>Recharge</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>117298259261708595</BlockEntityId>
+                      <BlockEntityId>92624657387682562</BlockEntityId>
                       <GroupName>Batteries</GroupName>
                     </Data>
                   </Slot>
@@ -927,7 +938,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>OnOff</Action>
-                      <BlockEntityId>75426341495093265</BlockEntityId>
+                      <BlockEntityId>93817816058879965</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -935,7 +946,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>OnOff</Action>
-                      <BlockEntityId>87967721721500168</BlockEntityId>
+                      <BlockEntityId>88938758848634604</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -943,7 +954,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>OnOff</Action>
-                      <BlockEntityId>85618133171860791</BlockEntityId>
+                      <BlockEntityId>83481885080156530</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -951,7 +962,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Jump</Action>
-                      <BlockEntityId>73016520791838641</BlockEntityId>
+                      <BlockEntityId>141527468980896013</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -959,7 +970,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>ActionFire</Action>
-                      <BlockEntityId>102663637535628394</BlockEntityId>
+                      <BlockEntityId>130816434988688921</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -967,7 +978,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>View</Action>
-                      <BlockEntityId>118659117940855424</BlockEntityId>
+                      <BlockEntityId>82695941257231207</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -976,7 +987,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>IncreaseOverride</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>117298259261708595</BlockEntityId>
+                      <BlockEntityId>92624657387682562</BlockEntityId>
                       <GroupName>Main Thrusters</GroupName>
                     </Data>
                   </Slot>
@@ -986,7 +997,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>DecreaseOverride</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>117298259261708595</BlockEntityId>
+                      <BlockEntityId>92624657387682562</BlockEntityId>
                       <GroupName>Main Thrusters</GroupName>
                     </Data>
                   </Slot>
@@ -998,7 +1009,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>Open</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>117298259261708595</BlockEntityId>
+                      <BlockEntityId>92624657387682562</BlockEntityId>
                       <GroupName>Wings</GroupName>
                     </Data>
                   </Slot>
@@ -1019,18 +1030,18 @@
                 <SlotsGamepad />
               </OnLockedToolbar>
               <PilotRelativeWorld>
-                <Position x="-0.14607203006744385" y="0.51524865627288818" z="-3.5948083400726318" />
-                <Forward x="0.06999089" y="-0.50260216" z="0.86168" />
-                <Up x="-0.0479207225" y="0.861107" z="0.5061604" />
+                <Position x="-2.7146549224853516" y="1.1142534017562866" z="1.5174676179885864" />
+                <Forward x="0.596369147" y="-0.759916663" z="-0.2585934" />
+                <Up x="0.418807834" y="0.569390535" z="-0.707385659" />
                 <Orientation>
-                  <X>-0.032314878</X>
-                  <Y>0.964259148</Y>
-                  <Z>0.261538237</Z>
-                  <W>-0.0275277328</W>
+                  <X>-0.462820381</X>
+                  <Y>-0.395601541</Y>
+                  <Z>-0.0331969149</Z>
+                  <W>0.79258734</W>
                 </Orientation>
               </PilotRelativeWorld>
-              <PilotGunDefinition xsi:nil="true" />
-              <IsInFirstPersonView>true</IsInFirstPersonView>
+              <PilotGunDefinition Type="MyObjectBuilder_Welder" Subtype="Welder" />
+              <IsInFirstPersonView>false</IsInFirstPersonView>
               <OxygenLevel>0</OxygenLevel>
               <PilotJetpackEnabled xsi:nil="true" />
               <TargetData>
@@ -1038,11 +1049,11 @@
                 <IsTargetLocked>false</IsTargetLocked>
                 <LockingProgress>0</LockingProgress>
               </TargetData>
-              <SitAnimation>0</SitAnimation>
+              <SitAnimation>512113</SitAnimation>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
               <SubtypeName>GFA_SG_XWing_TorpLauncher</SubtypeName>
-              <EntityId>122186742223793203</EntityId>
+              <EntityId>105719690693487318</EntityId>
               <Min x="-1" y="-1" z="-8" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -1053,7 +1064,7 @@
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items />
-                      <nextItemId>0</nextItemId>
+                      <nextItemId>1</nextItemId>
                       <Volume>1.5</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
@@ -1069,7 +1080,7 @@
                         <dictionary>
                           <item>
                             <Key>75bbb4f5-4fb9-4230-beef-bb79c9811501</Key>
-                            <Value>+nzYAQoJCAAQAh0AAAAAEsoBCAASQS0AAHpEMjoIARAAGAAgACgAMAA4AkgAUABYAHgAgAEAkAEAoAEAsAEAwAEA0AEA2AEA4AED6AEA8AEA+AEBkAIAGkQSCQ0AAAAAEAAgAhgAIJeAgICAgICAAjAAOABAAEgAUiMaGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACAAKAAwACIrCAAQACAAKgYg8P///wcyGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACoQCAAgASgAMAA4AEABSABQAAgi</Value>
+                            <Value>+nzYAQoJCAAQAx0AAAAAEsoBCAASQS0AAHpEMjoIARAAGAAgACgAMAA4AUgAUABYAHgAgAEAkAEAoAEAsAEAwAEA0AEA2AEC4AED6AEA8AEA+AEBkAIAGkQSCQ0AAAAAEAAgABgAIJeAgICAgICAAjAAOABAAEgAUiMaGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACAAKAAwACIrCAAQACAAKgYg+v///wcyGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACoQCAAgASgAMAA4AUABSABQAAgi</Value>
                           </item>
                         </dictionary>
                       </Storage>
@@ -1091,7 +1102,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
               <SubtypeName>GFA_SG_XWing_TorpLauncherMirror</SubtypeName>
-              <EntityId>77063908056906776</EntityId>
+              <EntityId>136886959911330224</EntityId>
               <Min x="1" y="-1" z="-8" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -1102,7 +1113,7 @@
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items />
-                      <nextItemId>0</nextItemId>
+                      <nextItemId>1</nextItemId>
                       <Volume>1.5</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
@@ -1118,7 +1129,7 @@
                         <dictionary>
                           <item>
                             <Key>75bbb4f5-4fb9-4230-beef-bb79c9811501</Key>
-                            <Value>+nzYAQoJCAAQAh0AAAAAEsoBCAASQS0AAHpEMjoIARAAGAAgACgAMAA4AkgAUABYAHgAgAEAkAEAoAEAsAEAwAEA0AEA2AEA4AED6AEA8AEA+AEBkAIAGkQSCQ0AAAAAEAAgBRgAIJeAgICAgICAAjAAOABAAEgAUiMaGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACAAKAAwACIrCAAQACAAKgYg4f///wcyGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACoQCAAgASgAMAA4AEABSABQAAgi</Value>
+                            <Value>+nzYAQoJCAAQAx0AAAAAEsoBCAASQS0AAHpEMjoIARAAGAAgACgAMAA4AUgAUABYAHgAgAEAkAEAoAEAsAEAwAEA0AEA2AEC4AED6AEA8AEA+AEBkAIAGkQSCQ0AAAAAEAAgARgAIJeAgICAgICAAjAAOABAAEgAUiMaGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACAAKAAwACIrCAAQACAAKgYg9f///wcyGwkAAAAAAAAAACEAAAAAAAAAADkAAAAAAAAAACoQCAAgASgAMAA4AUABSABQAAgi</Value>
                           </item>
                         </dictionary>
                       </Storage>
@@ -1139,7 +1150,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CameraBlock">
               <SubtypeName>GFA_SG_XWing_NoseCone</SubtypeName>
-              <EntityId>118659117940855424</EntityId>
+              <EntityId>82695941257231207</EntityId>
               <Min x="-1" y="-1" z="-12" />
               <ColorMaskHSV x="0.122222222" y="-0.59" z="-0.02" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -1154,7 +1165,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Collector">
               <SubtypeName>GFA_SG_XWing_CargoScoop</SubtypeName>
-              <EntityId>87967721721500168</EntityId>
+              <EntityId>88938758848634604</EntityId>
               <Min x="-1" y="-2" z="2" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -1186,7 +1197,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipWelder">
               <SubtypeName>GFA_SG_XWing_AstroBay</SubtypeName>
-              <EntityId>75426341495093265</EntityId>
+              <EntityId>93817816058879965</EntityId>
               <Min x="-1" y="0" z="3" />
               <ColorMaskHSV x="0.627777755" y="0.01" z="-0.08" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -1231,7 +1242,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>141689282162442950</EntityId>
+              <EntityId>74782032039739565</EntityId>
               <Min x="0" y="0" z="8" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1264,7 +1275,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>85274126143514902</EntityId>
+              <EntityId>77103723234440133</EntityId>
               <Min x="0" y="0" z="7" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1297,7 +1308,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-              <EntityId>91538143780528519</EntityId>
+              <EntityId>72529018836587447</EntityId>
               <Min x="1" y="0" z="7" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1330,7 +1341,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
               <SubtypeName>SmallBlockRemoteControl</SubtypeName>
-              <EntityId>101305474949572448</EntityId>
+              <EntityId>137430245204010343</EntityId>
               <Min x="0" y="0" z="5" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -1413,7 +1424,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-              <EntityId>143389954851438947</EntityId>
+              <EntityId>97813958145820690</EntityId>
               <Min x="-3" y="0" z="7" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -1453,7 +1464,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LandingGear">
               <SubtypeName>GFA_SG_XWing_RearGear</SubtypeName>
-              <EntityId>118506219143911413</EntityId>
+              <EntityId>134251846362232992</EntityId>
               <Min x="-1" y="-2" z="5" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -1479,7 +1490,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LandingGear">
               <SubtypeName>GFA_SG_XWing_RearGear</SubtypeName>
-              <EntityId>77724864970544910</EntityId>
+              <EntityId>96479570022342095</EntityId>
               <Min x="1" y="-2" z="5" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
@@ -1520,7 +1531,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Projector">
               <SubtypeName>SmallProjector</SubtypeName>
-              <EntityId>85618133171860791</EntityId>
+              <EntityId>83481885080156530</EntityId>
               <Min x="0" y="0" z="4" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -1534,17 +1545,17 @@
               <ProjectedGrids>
                 <MyObjectBuilder_CubeGrid>
                   <SubtypeName />
-                  <EntityId>99086019716175229</EntityId>
+                  <EntityId>72224604768238462</EntityId>
                   <PersistentFlags>CastShadows InScene</PersistentFlags>
-                  <Name>99086019716175229</Name>
+                  <Name>72224604768238462</Name>
                   <PositionAndOrientation>
                     <Position x="0" y="0" z="0" />
-                    <Forward x="-0.624888" y="-0.7564745" z="0.193031788" />
-                    <Up x="-0.7292222" y="0.477244467" z="-0.490380079" />
+                    <Forward x="-0.6248879" y="-0.7564744" z="0.193031847" />
+                    <Up x="-0.7292222" y="0.477244437" z="-0.490380079" />
                     <Orientation>
                       <X>-0.4986542</X>
                       <Y>0.5897965</Y>
-                      <Z>0.112790778</Z>
+                      <Z>0.112790763</Z>
                       <W>0.625109851</W>
                     </Orientation>
                   </PositionAndOrientation>
@@ -1607,7 +1618,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_UpgradeModule">
                       <SubtypeName>DSControlSmall</SubtypeName>
-                      <EntityId>107158050439881090</EntityId>
+                      <EntityId>72124188117114571</EntityId>
                       <Min x="0" y="-1" z="5" />
                       <BlockOrientation Forward="Backward" Up="Up" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1647,7 +1658,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
                       <SubtypeName>GFA_SG_XWing_Wing</SubtypeName>
-                      <EntityId>83596372073946339</EntityId>
+                      <EntityId>143047357376921655</EntityId>
                       <Min x="-1" y="0" z="5" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -1718,14 +1729,14 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
                       <SubtypeName>SmallBlockConveyor</SubtypeName>
-                      <EntityId>77704827272038209</EntityId>
+                      <EntityId>105980815395128520</EntityId>
                       <Min x="0" y="0" z="-3" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
                       <SubtypeName>ConveyorTubeDuctSmallT</SubtypeName>
-                      <EntityId>116317376223295084</EntityId>
+                      <EntityId>90956280332966642</EntityId>
                       <Min x="0" y="-1" z="-3" />
                       <BlockOrientation Forward="Right" Up="Down" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1733,7 +1744,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
                       <SubtypeName>ConnectorSmall</SubtypeName>
-                      <EntityId>105774920839238134</EntityId>
+                      <EntityId>85771275246590071</EntityId>
                       <Min x="-1" y="-1" z="1" />
                       <BlockOrientation Forward="Left" Up="Up" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1781,7 +1792,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LandingGear">
                       <SubtypeName>GFA_SG_XWing_FrontGear</SubtypeName>
-                      <EntityId>79929172758343002</EntityId>
+                      <EntityId>85862238059695517</EntityId>
                       <Min x="0" y="-1" z="-8" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -1819,7 +1830,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
                       <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
-                      <EntityId>75837870412990380</EntityId>
+                      <EntityId>109928025259167486</EntityId>
                       <Min x="0" y="-1" z="1" />
                       <BlockOrientation Forward="Forward" Up="Right" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1858,7 +1869,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
                       <SubtypeName>SmallBlockGyro</SubtypeName>
-                      <EntityId>77100735886461388</EntityId>
+                      <EntityId>141218963705110693</EntityId>
                       <Min x="0" y="0" z="6" />
                       <BlockOrientation Forward="Down" Up="Backward" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1873,7 +1884,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
                       <SubtypeName>GFA_SG_XWing_WingMirror</SubtypeName>
-                      <EntityId>117447881696611583</EntityId>
+                      <EntityId>138700314379450429</EntityId>
                       <Min x="1" y="0" z="5" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -1919,7 +1930,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>79190802199709584</EntityId>
+                      <EntityId>76086590934945748</EntityId>
                       <Min x="-1" y="0" z="7" />
                       <BlockOrientation Forward="Left" Up="Up" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1959,7 +1970,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>128755839613173658</EntityId>
+                      <EntityId>78077100011883305</EntityId>
                       <Min x="-1" y="-1" z="7" />
                       <BlockOrientation Forward="Left" Up="Up" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -1998,7 +2009,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>118642092201824900</EntityId>
+                      <EntityId>121027120633986001</EntityId>
                       <Min x="1" y="-1" z="7" />
                       <BlockOrientation Forward="Right" Up="Up" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -2037,7 +2048,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>91540734389112475</EntityId>
+                      <EntityId>78734076808927256</EntityId>
                       <Min x="0" y="-1" z="7" />
                       <BlockOrientation Forward="Down" Up="Backward" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -2070,7 +2081,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>131900535658579046</EntityId>
+                      <EntityId>138651379337813729</EntityId>
                       <Min x="0" y="-1" z="8" />
                       <BlockOrientation Forward="Down" Up="Backward" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -2109,7 +2120,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
                       <SubtypeName>SmallBlockRadioAntenna</SubtypeName>
-                      <EntityId>135968920222628335</EntityId>
+                      <EntityId>98377054206970385</EntityId>
                       <Min x="0" y="0" z="-5" />
                       <BlockOrientation Forward="Forward" Up="Down" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -2130,14 +2141,14 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
                       <SubtypeName>GFA_SG_XWing_FrontCowlingMirror</SubtypeName>
-                      <EntityId>80765906088599106</EntityId>
+                      <EntityId>110767208588043363</EntityId>
                       <Min x="1" y="0" z="-9" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
                       <SubtypeName>GFA_SG_XWing_Cockpit</SubtypeName>
-                      <EntityId>118779802253993697</EntityId>
+                      <EntityId>120830170014151009</EntityId>
                       <Min x="-1" y="0" z="-2" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -2329,7 +2340,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>ActionFire</Action>
-                              <BlockEntityId>122208315426765881</BlockEntityId>
+                              <BlockEntityId>88998136228418548</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2337,7 +2348,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>View</Action>
-                              <BlockEntityId>102579093555487614</BlockEntityId>
+                              <BlockEntityId>108037923346267854</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2346,7 +2357,7 @@
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                               <Action>ActionFire</Action>
                               <GridEntityId>0</GridEntityId>
-                              <BlockEntityId>118779802253993697</BlockEntityId>
+                              <BlockEntityId>120830170014151009</BlockEntityId>
                               <GroupName>Torpedo Launchers</GroupName>
                             </Data>
                           </Slot>
@@ -2356,7 +2367,7 @@
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                               <Action>Open</Action>
                               <GridEntityId>0</GridEntityId>
-                              <BlockEntityId>118779802253993697</BlockEntityId>
+                              <BlockEntityId>120830170014151009</BlockEntityId>
                               <GroupName>S-Foils</GroupName>
                             </Data>
                           </Slot>
@@ -2365,7 +2376,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>DS-C_ToggleShield_Toggle</Action>
-                              <BlockEntityId>107158050439881090</BlockEntityId>
+                              <BlockEntityId>72124188117114571</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2374,7 +2385,7 @@
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                               <Action>OnOff</Action>
                               <GridEntityId>0</GridEntityId>
-                              <BlockEntityId>118779802253993697</BlockEntityId>
+                              <BlockEntityId>120830170014151009</BlockEntityId>
                               <GroupName>Landing Gear</GroupName>
                             </Data>
                           </Slot>
@@ -2383,7 +2394,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>EnableBroadCast</Action>
-                              <BlockEntityId>135968920222628335</BlockEntityId>
+                              <BlockEntityId>98377054206970385</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2391,7 +2402,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>Jump</Action>
-                              <BlockEntityId>90176270911483115</BlockEntityId>
+                              <BlockEntityId>74765765607428026</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2399,7 +2410,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>ActionFire</Action>
-                              <BlockEntityId>122208315426765881</BlockEntityId>
+                              <BlockEntityId>88998136228418548</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2407,7 +2418,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>SwitchLock</Action>
-                              <BlockEntityId>105774920839238134</BlockEntityId>
+                              <BlockEntityId>85771275246590071</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2415,7 +2426,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>OnOff</Action>
-                              <BlockEntityId>105774920839238134</BlockEntityId>
+                              <BlockEntityId>85771275246590071</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2424,7 +2435,7 @@
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                               <Action>Recharge</Action>
                               <GridEntityId>0</GridEntityId>
-                              <BlockEntityId>118779802253993697</BlockEntityId>
+                              <BlockEntityId>120830170014151009</BlockEntityId>
                               <GroupName>Batteries</GroupName>
                             </Data>
                           </Slot>
@@ -2433,7 +2444,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>OnOff</Action>
-                              <BlockEntityId>133988426939404005</BlockEntityId>
+                              <BlockEntityId>139237478535213780</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2441,7 +2452,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>OnOff</Action>
-                              <BlockEntityId>125861592234260820</BlockEntityId>
+                              <BlockEntityId>109501395226697116</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2449,7 +2460,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>OnOff</Action>
-                              <BlockEntityId>138412221069293291</BlockEntityId>
+                              <BlockEntityId>139416094198295720</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2457,7 +2468,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>Jump</Action>
-                              <BlockEntityId>90176270911483115</BlockEntityId>
+                              <BlockEntityId>74765765607428026</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2465,7 +2476,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>ActionFire</Action>
-                              <BlockEntityId>122208315426765881</BlockEntityId>
+                              <BlockEntityId>88998136228418548</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2473,7 +2484,7 @@
                             <Item />
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                               <Action>View</Action>
-                              <BlockEntityId>102579093555487614</BlockEntityId>
+                              <BlockEntityId>108037923346267854</BlockEntityId>
                             </Data>
                           </Slot>
                           <Slot>
@@ -2482,7 +2493,7 @@
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                               <Action>IncreaseOverride</Action>
                               <GridEntityId>0</GridEntityId>
-                              <BlockEntityId>118779802253993697</BlockEntityId>
+                              <BlockEntityId>120830170014151009</BlockEntityId>
                               <GroupName>Main Thrusters</GroupName>
                             </Data>
                           </Slot>
@@ -2492,7 +2503,7 @@
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                               <Action>DecreaseOverride</Action>
                               <GridEntityId>0</GridEntityId>
-                              <BlockEntityId>118779802253993697</BlockEntityId>
+                              <BlockEntityId>120830170014151009</BlockEntityId>
                               <GroupName>Main Thrusters</GroupName>
                             </Data>
                           </Slot>
@@ -2504,7 +2515,7 @@
                             <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                               <Action>Open</Action>
                               <GridEntityId>0</GridEntityId>
-                              <BlockEntityId>118779802253993697</BlockEntityId>
+                              <BlockEntityId>120830170014151009</BlockEntityId>
                               <GroupName>Wings</GroupName>
                             </Data>
                           </Slot>
@@ -2526,12 +2537,12 @@
                       </OnLockedToolbar>
                       <PilotRelativeWorld>
                         <Position x="-2.7053341865539551" y="1.433763861656189" z="-2.1790127754211426" />
-                        <Forward x="0.5238957" y="-0.7522258" z="0.3996118" />
-                        <Up x="0.5355088" y="0.6557071" z="0.532239139" />
+                        <Forward x="0.5238957" y="-0.752225757" z="0.39961192" />
+                        <Up x="0.535508752" y="0.6557072" z="0.5322391" />
                         <Orientation>
                           <X>0.142751873</X>
                           <Y>0.8242741</Y>
-                          <Z>0.3895746</Z>
+                          <Z>0.389574558</Z>
                           <W>-0.3852606</W>
                         </Orientation>
                       </PilotRelativeWorld>
@@ -2548,7 +2559,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
                       <SubtypeName>GFA_SG_XWing_TorpLauncher</SubtypeName>
-                      <EntityId>111308116571999162</EntityId>
+                      <EntityId>98615070497849713</EntityId>
                       <Min x="-1" y="-1" z="-8" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -2583,7 +2594,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
                       <SubtypeName>GFA_SG_XWing_TorpLauncherMirror</SubtypeName>
-                      <EntityId>82756320038954299</EntityId>
+                      <EntityId>106816094945293577</EntityId>
                       <Min x="1" y="-1" z="-8" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -2617,7 +2628,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CameraBlock">
                       <SubtypeName>GFA_SG_XWing_NoseCone</SubtypeName>
-                      <EntityId>102579093555487614</EntityId>
+                      <EntityId>108037923346267854</EntityId>
                       <Min x="-1" y="-1" z="-12" />
                       <ColorMaskHSV x="0.122222222" y="-0.59" z="-0.02" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -2632,7 +2643,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Collector">
                       <SubtypeName>GFA_SG_XWing_CargoScoop</SubtypeName>
-                      <EntityId>125861592234260820</EntityId>
+                      <EntityId>109501395226697116</EntityId>
                       <Min x="-1" y="-2" z="2" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -2646,7 +2657,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipWelder">
                       <SubtypeName>GFA_SG_XWing_AstroBay</SubtypeName>
-                      <EntityId>133988426939404005</EntityId>
+                      <EntityId>139237478535213780</EntityId>
                       <Min x="-1" y="0" z="3" />
                       <ColorMaskHSV x="0.627777755" y="0.01" z="-0.08" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -2674,7 +2685,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>79065276285243335</EntityId>
+                      <EntityId>118548168188004431</EntityId>
                       <Min x="0" y="0" z="8" />
                       <BlockOrientation Forward="Up" Up="Forward" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -2707,7 +2718,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>92247884741132908</EntityId>
+                      <EntityId>83342936920240265</EntityId>
                       <Min x="0" y="0" z="7" />
                       <BlockOrientation Forward="Up" Up="Forward" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -2740,7 +2751,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_RepulsorSmall</SubtypeName>
-                      <EntityId>130163624499301026</EntityId>
+                      <EntityId>137525971611678018</EntityId>
                       <Min x="1" y="0" z="7" />
                       <BlockOrientation Forward="Right" Up="Up" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -2773,7 +2784,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
                       <SubtypeName>SmallBlockRemoteControl</SubtypeName>
-                      <EntityId>119201690406297965</EntityId>
+                      <EntityId>110165033799618367</EntityId>
                       <Min x="0" y="0" z="5" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -2855,7 +2866,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-                      <EntityId>143764106170527312</EntityId>
+                      <EntityId>117272465660610289</EntityId>
                       <Min x="-3" y="0" z="7" />
                       <BlockOrientation Forward="Backward" Up="Up" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -2895,7 +2906,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LandingGear">
                       <SubtypeName>GFA_SG_XWing_RearGear</SubtypeName>
-                      <EntityId>136280258822283058</EntityId>
+                      <EntityId>99282247970837147</EntityId>
                       <Min x="-1" y="-2" z="5" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -2921,7 +2932,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LandingGear">
                       <SubtypeName>GFA_SG_XWing_RearGear</SubtypeName>
-                      <EntityId>97017663949156318</EntityId>
+                      <EntityId>143830615217798157</EntityId>
                       <Min x="1" y="-2" z="5" />
                       <BlockOrientation Forward="Backward" Up="Up" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
@@ -2962,7 +2973,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Projector">
                       <SubtypeName>SmallProjector</SubtypeName>
-                      <EntityId>138412221069293291</EntityId>
+                      <EntityId>139416094198295720</EntityId>
                       <Min x="0" y="0" z="4" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -2993,7 +3004,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
                       <SubtypeName>GFA_SG_XWing_FireControl</SubtypeName>
-                      <EntityId>122208315426765881</EntityId>
+                      <EntityId>88998136228418548</EntityId>
                       <Min x="-1" y="1" z="4" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3027,7 +3038,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
                       <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-                      <EntityId>105495504963316224</EntityId>
+                      <EntityId>85826637996579744</EntityId>
                       <Min x="-3" y="0" z="4" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -3047,7 +3058,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-                      <EntityId>105527810437766426</EntityId>
+                      <EntityId>132432281904382121</EntityId>
                       <Min x="-3" y="-2" z="3" />
                       <BlockOrientation Forward="Forward" Up="Down" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -3080,7 +3091,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-                      <EntityId>123123788841033803</EntityId>
+                      <EntityId>114057608169653845</EntityId>
                       <Min x="2" y="0" z="3" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3112,7 +3123,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-                      <EntityId>134127076800186940</EntityId>
+                      <EntityId>143218542914656558</EntityId>
                       <Min x="2" y="-2" z="3" />
                       <BlockOrientation Forward="Forward" Up="Down" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -3145,7 +3156,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-                      <EntityId>88572269531391382</EntityId>
+                      <EntityId>101121621943249288</EntityId>
                       <Min x="-3" y="0" z="3" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3177,7 +3188,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
                       <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-                      <EntityId>109455393885196457</EntityId>
+                      <EntityId>107225491387819425</EntityId>
                       <Min x="2" y="0" z="4" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -3197,7 +3208,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
                       <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-                      <EntityId>137736272261725497</EntityId>
+                      <EntityId>139237871136620837</EntityId>
                       <Min x="2" y="-2" z="4" />
                       <BlockOrientation Forward="Forward" Up="Down" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3218,7 +3229,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
                       <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-                      <EntityId>77359833423444597</EntityId>
+                      <EntityId>118968521864546246</EntityId>
                       <Min x="-3" y="-2" z="4" />
                       <BlockOrientation Forward="Forward" Up="Down" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3239,7 +3250,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-                      <EntityId>135089888057912961</EntityId>
+                      <EntityId>75016884686667907</EntityId>
                       <Min x="-3" y="-2" z="7" />
                       <BlockOrientation Forward="Backward" Up="Down" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3272,7 +3283,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-                      <EntityId>84131487424241381</EntityId>
+                      <EntityId>108481309620318623</EntityId>
                       <Min x="2" y="-2" z="7" />
                       <BlockOrientation Forward="Backward" Up="Down" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3305,7 +3316,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_UpgradeModule">
                       <SubtypeName>EmitterSA</SubtypeName>
-                      <EntityId>88646656637434182</EntityId>
+                      <EntityId>133089758982250204</EntityId>
                       <Min x="0" y="1" z="5" />
                       <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3336,7 +3347,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
                       <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-                      <EntityId>75272113053878908</EntityId>
+                      <EntityId>104674679717666811</EntityId>
                       <Min x="2" y="0" z="7" />
                       <BlockOrientation Forward="Backward" Up="Up" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3369,7 +3380,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_JumpDrive">
                       <SubtypeName>GFA_SG_XWing_Hyperdrive</SubtypeName>
-                      <EntityId>90176270911483115</EntityId>
+                      <EntityId>74765765607428026</EntityId>
                       <Min x="-1" y="-2" z="9" />
                       <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
                       <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3388,7 +3399,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
                       <SubtypeName>GFA_SG_XWing_Wing</SubtypeName>
-                      <EntityId>102717942492213502</EntityId>
+                      <EntityId>79359494842888447</EntityId>
                       <Min x="1" y="-1" z="5" />
                       <BlockOrientation Forward="Forward" Up="Down" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3403,7 +3414,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
                       <SubtypeName>GFA_SG_XWing_WingMirror</SubtypeName>
-                      <EntityId>103454137983121886</EntityId>
+                      <EntityId>89449651409276214</EntityId>
                       <Min x="-1" y="-1" z="5" />
                       <BlockOrientation Forward="Forward" Up="Down" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3419,7 +3430,7 @@
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
                       <SubtypeName>GFA_SG_XWing_FrontCowling</SubtypeName>
-                      <EntityId>138752255192577872</EntityId>
+                      <EntityId>102006401507389957</EntityId>
                       <Min x="-1" y="0" z="-9" />
                       <ColorMaskHSV x="0" y="0.2" z="0.06" />
                       <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -3664,7 +3675,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
               <SubtypeName>GFA_SG_XWing_FireControl</SubtypeName>
-              <EntityId>102663637535628394</EntityId>
+              <EntityId>130816434988688921</EntityId>
               <Min x="-1" y="1" z="4" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3690,7 +3701,7 @@
                         <dictionary>
                           <item>
                             <Key>75bbb4f5-4fb9-4230-beef-bb79c9811501</Key>
-                            <Value>+nzWAQoJCAAQAB0AAABAEsgBCAASPy0AAHpEMjgIARAAGAAgACgAMABIAFAAWAB4AIABAJABAKABALABAMABANABANgBAeABAegBAPABAPgBAZACABpEEgkNAAAAABAAIA8YACCXgICAgICAgAIwADgAQABIAFIjGhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAgACgAMAAiKwgAEAAgACoGIK////8HMhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAqEAgAIAEoADAAOABAAEgAUAAIIg==</Value>
+                            <Value>+nzWAQoJCAAQAB0AAABAEsgBCAASPy0AAHpEMjgIARAAGAAgACgAMABIAFAAWAB4AIABAJABAKABALABAMABANABANgBAOABAegBAPABAPgBAZACABpEEgkNAAAAABAAIAIYACCXgICAgICAgAIwADgAQABIAFIjGhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAgACgAMAAiKwgAEAAgACoGIPD///8HMhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAqEAgAIAEoADAAOABAAEgAUAAIIg==</Value>
                           </item>
                         </dictionary>
                       </Storage>
@@ -3711,7 +3722,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-              <EntityId>74687483028844596</EntityId>
+              <EntityId>73181255554829288</EntityId>
               <Min x="-3" y="0" z="4" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -3732,7 +3743,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-              <EntityId>140315926366029523</EntityId>
+              <EntityId>86481803550243006</EntityId>
               <Min x="-3" y="-2" z="3" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -3765,7 +3776,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-              <EntityId>90829450584857612</EntityId>
+              <EntityId>135371094776987141</EntityId>
               <Min x="2" y="0" z="3" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3797,7 +3808,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-              <EntityId>99405617339859290</EntityId>
+              <EntityId>121408314960981090</EntityId>
               <Min x="2" y="-2" z="3" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
@@ -3830,7 +3841,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Intake</SubtypeName>
-              <EntityId>102365435486649540</EntityId>
+              <EntityId>120263898918812614</EntityId>
               <Min x="-3" y="0" z="3" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -3862,7 +3873,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-              <EntityId>142139548077820976</EntityId>
+              <EntityId>117727614510746442</EntityId>
               <Min x="2" y="0" z="4" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -3882,7 +3893,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-              <EntityId>120044341641425093</EntityId>
+              <EntityId>100003179006639550</EntityId>
               <Min x="2" y="-2" z="4" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3903,7 +3914,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>GFA_SG_XWing_Engine</SubtypeName>
-              <EntityId>115169579673856238</EntityId>
+              <EntityId>109464035261636139</EntityId>
               <Min x="-3" y="-2" z="4" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3924,7 +3935,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-              <EntityId>109693923692074020</EntityId>
+              <EntityId>110959289349540872</EntityId>
               <Min x="-3" y="-2" z="7" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3957,7 +3968,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-              <EntityId>128294291008240304</EntityId>
+              <EntityId>111917933543215123</EntityId>
               <Min x="2" y="-2" z="7" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -3990,7 +4001,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_UpgradeModule">
               <SubtypeName>EmitterSA</SubtypeName>
-              <EntityId>97404995029788552</EntityId>
+              <EntityId>88988129555333258</EntityId>
               <Min x="0" y="1" z="5" />
               <ColorMaskHSV x="0.7888889" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -4004,7 +4015,7 @@
                         <dictionary>
                           <item>
                             <Key>85bbb4f5-4fb9-4230-beef-bb79c9811506</Key>
-                            <Value>GAAgACgAMAE4AkEAAAAAAAAAAFDXjtz30sSF8QFYHw==</Value>
+                            <Value>GAEgACgAMAE4AkEAAAAAAAAhQFCDz4X9lNjN1wFYFg==</Value>
                           </item>
                         </dictionary>
                       </Storage>
@@ -4022,7 +4033,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_XWing_Thruster</SubtypeName>
-              <EntityId>101065217601761298</EntityId>
+              <EntityId>90883226017686167</EntityId>
               <Min x="2" y="0" z="7" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -4055,7 +4066,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_JumpDrive">
               <SubtypeName>GFA_SG_XWing_Hyperdrive</SubtypeName>
-              <EntityId>73016520791838641</EntityId>
+              <EntityId>141527468980896013</EntityId>
               <Min x="-1" y="-2" z="9" />
               <ColorMaskHSV x="0.75" y="-0.78" z="-0.08" />
               <SkinSubtypeId>Weldless</SkinSubtypeId>
@@ -4074,7 +4085,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
               <SubtypeName>GFA_SG_XWing_Wing</SubtypeName>
-              <EntityId>127539280771943667</EntityId>
+              <EntityId>136480222688755782</EntityId>
               <Min x="1" y="-1" z="5" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -4086,10 +4097,11 @@
               <NumberInGrid>2</NumberInGrid>
               <Enabled>true</Enabled>
               <AnyoneCanUse>false</AnyoneCanUse>
+              <Open>true</Open>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AdvancedDoor">
               <SubtypeName>GFA_SG_XWing_WingMirror</SubtypeName>
-              <EntityId>110988255488669098</EntityId>
+              <EntityId>86944373932447538</EntityId>
               <Min x="-1" y="-1" z="5" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
@@ -4102,10 +4114,11 @@
               <NumberInGrid>2</NumberInGrid>
               <Enabled>true</Enabled>
               <AnyoneCanUse>false</AnyoneCanUse>
+              <Open>true</Open>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>GFA_SG_XWing_FrontCowling</SubtypeName>
-              <EntityId>96519600536290912</EntityId>
+              <EntityId>85015908547776976</EntityId>
               <Min x="-1" y="0" z="-9" />
               <ColorMaskHSV x="0" y="0.2" z="0.06" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
