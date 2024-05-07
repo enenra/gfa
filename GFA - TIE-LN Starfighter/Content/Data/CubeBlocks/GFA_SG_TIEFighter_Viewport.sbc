@@ -55,5 +55,59 @@
       <EnableBuilderCockpit>false</EnableBuilderCockpit>
     </Definition>
 
+    <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition">
+      <Id>
+        <TypeId>RemoteControl</TypeId>
+        <SubtypeId>GFA_SG_TIEFighter_Viewpor_RivalAI</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Viewport_RivalAI}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_TIEFighter_Viewport}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Viewport.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Public>false</Public>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\small\GFA_SG_TIEFighter_Viewport.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="5" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="BulletproofGlass" Count="10" />
+        <Component Subtype="InteriorPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.15" StartY="0.15" EndX="2.85" EndY="2.85" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Viewport_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_Viewport_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_Viewport_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_SG_TIEFighter_Viewport_RivalAI</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>14</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
+      <PCU>25</PCU>
+
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.01</RequiredPowerInput>
+      <EnableFirstPerson>false</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>false</EnableBuilderCockpit>
+    </Definition>
+
   </CubeBlocks>
 </Definitions>
