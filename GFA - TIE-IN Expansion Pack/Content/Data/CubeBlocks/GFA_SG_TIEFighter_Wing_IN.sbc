@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+    
+    <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+      <Id>
+        <TypeId>SolarPanel</TypeId>
+				<SubtypeId>GFA_SG_TIEFighter_Wing_IN</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Wing_IN}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_TIEFighter_Wing_IN}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Wing_IN.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="16" y="9" z="2"/>
+			<Center x="11" y="4" z="0"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_TIEFighter_Wing_IN.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Girder" Count="4" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SolarCell" Count="20" />
+        <Component Subtype="Superconductor" Count="10" />
+        <Component Subtype="BulletproofGlass" Count="5" />
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="SolarCell" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="11.00" StartY="4.50" EndX="12.00" EndY="5.50" Default="true"/>
+				<MountPoint Side="Back" StartX="2.50" StartY="6.00" EndX="3.00" EndY="6.50" CouplingTag="tiein_weapons"/>
+				<MountPoint Side="Back" StartX="2.50" StartY="2.50" EndX="3.00" EndY="3.00" CouplingTag="tiein_weapons"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_IN_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_IN_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_IN_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_TIEFighter_Wing_IN</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringZ>X</MirroringZ>
+
+      <GeneralDamageModifier>0.85</GeneralDamageModifier>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <PCU>55</PCU>
+
+      <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <PhysicalMaterial>GlassOpaque</PhysicalMaterial>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+      <DestroySound>PoofExplosionCat3</DestroySound>
+
+      <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+      <MaxPowerOutput>0.06</MaxPowerOutput>
+      <PanelOrientation>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>-1</Z>
+      </PanelOrientation>
+      <TwoSidedPanel>true</TwoSidedPanel>
+      <PanelOffset>1.0</PanelOffset>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>
