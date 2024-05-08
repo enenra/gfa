@@ -1,51 +1,92 @@
+using Sandbox.Game.Entities;
 using Sandbox.ModAPI;
 using System.Collections.Generic;
 using VRage.Game;
 using VRage.Game.Components;
+using VRage.Game.Entity;
 using VRage.Game.ModAPI;
 using VRage.Utils;
+using VRageMath;
 
-namespace Neighbouring_Block_Damage
+namespace NeighbouringBlockDamage
 {
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
     internal class BlockDamageSession : MySessionComponentBase
     {
-        private readonly List<IMySlimBlock> _blocks = new List<IMySlimBlock>();
+        internal readonly HashSet<IMySlimBlock> Grinded = new HashSet<IMySlimBlock>();
 
-        private readonly HashSet<MyStringHash> _subtypes = new HashSet<MyStringHash>()
+        internal readonly HashSet<MyStringHash> Subtypes = new HashSet<MyStringHash>()
         { 
             MyStringHash.GetOrCompute("GFA_SG_TIEFighter_Wing"),
         };
+
+        public override void LoadData()
+        {
+            if (!MyAPIGateway.Multiplayer.IsServer)
+                return;
+
+            MyEntities.OnEntityCreate += OnEntityCreate;
+        }
+
+        private void OnEntityCreate(MyEntity entity)
+        {
+            var block = entity as MyCubeBlock;
+            if (block == null || !Subtypes.Contains(block.BlockDefinition.Id.SubtypeId))
+                return;
+
+            block.OnClose += OnClose;
+        }
+
+        private void OnClose(MyEntity entity)
+        {
+            var block = entity as IMyCubeBlock;
+            if (!block.SlimBlock.IsDestroyed)
+                return;
+
+            if (Grinded.Remove(block.SlimBlock))
+                return;
+
+            var grid = block.CubeGrid as MyCubeGrid;
+            var pos = block.SlimBlock.Position;
+            pos += 2 * (Vector3I)block.PositionComp.LocalMatrixRef.Backward;
+
+            MyCube cube;
+            if (!grid.TryGetCube(pos, out cube))
+                return;
+
+            var slim = (IMySlimBlock)cube.CubeBlock;
+            slim.DoDamage(10000f, MyDamageType.Explosion, true);
+        }
 
         public override void BeforeStart()
         {
             if (!MyAPIGateway.Multiplayer.IsServer)
                 return;
 
-            MyAPIGateway.Session.DamageSystem.RegisterBeforeDamageHandler(0, OnDestroy);
+            MyAPIGateway.Session.DamageSystem.RegisterDestroyHandler(0, OnDestroy);
         }
 
-        internal void OnDestroy(object target, ref MyDamageInformation info)
+        internal void OnDestroy(object target, MyDamageInformation info)
         {
             var block = target as IMySlimBlock;
-            if (block == null) 
+            if (block == null)
                 return;
 
-            if (!_subtypes.Contains(block.BlockDefinition.Id.SubtypeId))
+            if (info.Type != MyDamageType.Grind)
                 return;
 
-            if (info.Type == MyDamageType.Grind)
+            if (!Subtypes.Contains(block.BlockDefinition.Id.SubtypeId))
                 return;
 
-            if (info.Amount < block.Integrity)
+            Grinded.Add(block);
+        }
+
+        protected override void UnloadData()
+        {
+            if (!MyAPIGateway.Multiplayer.IsServer)
                 return;
 
-            block.GetNeighbours(_blocks);
-            foreach (var slim in _blocks)
-            {
-                slim.DoDamage(20000, MyDamageType.Explosion, true);
-            }
-            _blocks.Clear();
+            MyEntities.OnEntityCreate -= OnEntityCreate;
         }
     }
 }

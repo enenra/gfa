@@ -1,4 +1,4 @@
-[h1]Patch 1.0b[/h1]
+[h1]Patch 1.0c[/h1]
 [list]
-[*]Ls-1 Laser Cannon increase in AOE range and AOE damage.
+[*]Fix for wing explosion not taking off the batteries in all cases (specifically collisions).
 [/list]
