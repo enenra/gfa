@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
+      <Name>GFA_Category</Name>
+      <ItemIds>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG</string>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG_Mirror</string>
+        <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category_TIEFighter_MG}</DisplayName>
+      <Name>GFA_Category_TIEFighter_MG</Name>
+      <ItemIds>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG</string>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG_Mirror</string>
+        <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
+        
+        <string>RadioAntenna/GFA_SG_TIEFighter_Antenna</string>
+        <string>BatteryBlock/GFA_SG_TIEFighter_Battery</string>
+        <string>Gyro/GFA_SG_TIEFighter_Gyro</string>
+        <string>Thrust/GFA_SG_TIEFighter_RepulsorBack</string>
+        <string>Thrust/GFA_SG_TIEFighter_RepulsorSide</string>
+        <string>Thrust/GFA_SG_TIEFighter_RepulsorVertical</string>
+        <string>Thrust/GFA_SG_TIEFighter_Thruster</string>
+        <string>RemoteControl/GFA_SG_TIEFighter_Viewport</string>
+        <string>ShipConnector/GFA_SG_TIEFighter_Hatch</string>
+        <string>ShipConnector/GFA_SG_TIEFighter_Port</string>
+        <string>ConveyorSorter/GFA_SG_TIEFighter_Lasers</string>
+        <string>Cockpit/GFA_SG_TIEFighter_Cockpit</string>
+        <string>AdvancedDoor/GFA_LG_TIEFighter_DockingTube_Door</string>
+        <string>ShipConnector/GFA_LG_TIEFighter_DockingTube</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
+      <Name>SmallBlocks</Name>
+      <ItemIds>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG</string>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG_Mirror</string>
+        <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>

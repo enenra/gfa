@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+    
+    <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+      <Id>
+        <TypeId>SolarPanel</TypeId>
+				<SubtypeId>GFA_SG_TIEFighter_Wing_MG</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Wing_MG}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_TIEFighter_Wing_MG}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Wing_MG.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="13" y="17" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Girder" Count="4" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SolarCell" Count="20" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="BulletproofGlass" Count="1" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="SolarCell" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="6.00" StartY="8.00" EndX="7.00" EndY="9.00" Default="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_TIEFighter_Wing_MG</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+			<MirroringBlock>GFA_SG_TIEFighter_Wing_MG_Mirror</MirroringBlock>
+
+      <GeneralDamageModifier>0.85</GeneralDamageModifier>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <PCU>55</PCU>
+
+      <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <PhysicalMaterial>GlassOpaque</PhysicalMaterial>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+      <DestroySound>PoofExplosionCat3</DestroySound>
+
+      <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+      <MaxPowerOutput>0.03</MaxPowerOutput>
+      <PanelOrientation>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>-1</Z>
+      </PanelOrientation>
+      <TwoSidedPanel>true</TwoSidedPanel>
+      <PanelOffset>1.0</PanelOffset>
+		</Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+      <Id>
+        <TypeId>SolarPanel</TypeId>
+				<SubtypeId>GFA_SG_TIEFighter_Wing_MG_Mirror</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Wing_MG_Mirror}</DisplayName>
+			<Description>{LOC:Description_GFA_SG_TIEFighter_Wing_MG}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Wing_MG.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Mirror_Single.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="13" y="17" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG_Mirror.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Girder" Count="4" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SolarCell" Count="20" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="BulletproofGlass" Count="1" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="SolarCell" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="6.00" StartY="8.00" EndX="7.00" EndY="9.00" Default="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG_Mirror_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG_Mirror_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_Wing_MG_Mirror_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_SG_TIEFighter_Wing_MG_Mirror</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+			<MirroringBlock>GFA_SG_TIEFighter_Wing_MG</MirroringBlock>
+
+      <GeneralDamageModifier>0.85</GeneralDamageModifier>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
+      <TargetingGroups>
+        <string>PowerSystems</string>
+      </TargetingGroups>
+      <PCU>55</PCU>
+
+      <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <PhysicalMaterial>GlassOpaque</PhysicalMaterial>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+      <DestroySound>PoofExplosionCat3</DestroySound>
+
+      <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+      <MaxPowerOutput>0.03</MaxPowerOutput>
+      <PanelOrientation>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>-1</Z>
+      </PanelOrientation>
+      <TwoSidedPanel>true</TwoSidedPanel>
+      <PanelOffset>1.0</PanelOffset>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

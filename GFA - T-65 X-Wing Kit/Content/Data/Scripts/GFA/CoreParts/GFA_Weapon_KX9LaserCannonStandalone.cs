@@ -44,7 +44,7 @@ namespace Scripts {
             },
             HardPoint = new HardPointDef
             {
-                PartName = "KX9 Laser Cannon",
+                PartName = "KX9 Laser Cannon SA",
                 DeviateShotAngle = 0.2f, // Projectile inaccuracy in degrees.
                 AimingTolerance = 1f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
                 AimLeadingPrediction = Accurate, // Level of turret aim prediction; Off, Basic, Accurate, Advanced

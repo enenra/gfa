@@ -1,4 +1,4 @@
-[h1]Patch 1.3a[/h1]
+[h1]Patch 1.4d[/h1]
 [list]
-[*]Removed visuals from bounce sphere, reduced distance from which notification is shown.
+[*]Attempt to fix X-Wing spawn rotation.
 [/list]
