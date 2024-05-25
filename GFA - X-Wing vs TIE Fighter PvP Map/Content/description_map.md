@@ -44,7 +44,7 @@ That being said, balance is also not necessarily supposed to be equal. An X-Wing
 [h2]Configuration[/h2]
 [list]
 [*]A configuration file will be created in the world's folder on first load. This config file can be used to customize certain aspects of the experience. It can be found in [b]/WorldName/Storage/<GFABattle>/[/b]. The main thing it will allow you to do is to alter the amount of tokens per faction.
-Note that the current distribution of 40:60 is intended to take into account the X-Wing's edge in combat power over the TIE Fighter.
+Note that the current distribution of 30:60 is intended to take into account the X-Wing's edge in combat power over the TIE Fighter.
 [*]If you want to experiment with balance, note that the [url=https://github.com/Ash-LikeSnow/WeaponCore/wiki/CoreSystems-Server-Config-Options]WeaponCore server configs[/url], which you will find inside your savegame, allow you to overwrite weapon parameters.
 [/list]
 
