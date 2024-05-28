@@ -21,6 +21,13 @@
 			<BlockPairName>GFA_LG_ActionVI_Thrusters</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="4.00" StartY="0.00" EndX="6.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="4.00" EndX="5.00" EndY="6.00" Default="true"/>
+			</MountPoints>
 		</Definition>
 	</CubeBlocks>
 </Definitions>

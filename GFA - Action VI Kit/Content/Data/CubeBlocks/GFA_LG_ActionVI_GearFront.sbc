@@ -11,7 +11,7 @@
 			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="6" y="4" z="2"/>
+			<Size x="4" y="2" z="2"/>
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\GFA_LG_ActionVI_GearFront.mwm</Model>
 			<Components>
@@ -19,10 +19,10 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0"/>
 			<MountPoints>
-				<MountPoint Side="Front" StartX="1.00" StartY="1.50" EndX="3.00" EndY="4.00"/>
-				<MountPoint Side="Back" StartX="3.00" StartY="1.50" EndX="5.00" EndY="4.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="1.50" EndX="2.00" EndY="4.00" Default="true"/>
-				<MountPoint Side="Top" StartX="3.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.50" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="2.00" StartY="0.50" EndX="4.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.50" EndX="2.00" EndY="2.00" Default="true"/>
+				<MountPoint Side="Top" StartX="2.00" StartY="0.00" EndX="4.00" EndY="2.00"/>
 			</MountPoints>
 			<BlockPairName>GFA_LG_ActionVI_GearFront</BlockPairName>
 			<MirroringX>Y</MirroringX>
