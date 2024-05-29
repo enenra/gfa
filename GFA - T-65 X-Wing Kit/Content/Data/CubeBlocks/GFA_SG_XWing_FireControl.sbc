@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CubeBlocks>
 
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
@@ -18,12 +17,12 @@
       <ModelOffset x="0" y="0" z="0"/>
       <Model>Models\Cubes\small\GFA_SG_XWing_FireControl.mwm</Model>
       <Components>
-          <Component Subtype="SteelPlate" Count="20" />
-          <Component Subtype="Construction" Count="10" />
-          <Component Subtype="MetalGrid" Count="5" />
-          <Component Subtype="LargeTube" Count="10" />
-          <Component Subtype="Computer" Count="1" />
-          <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="15" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
       <MountPoints>
