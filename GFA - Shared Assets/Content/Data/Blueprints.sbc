@@ -8,7 +8,8 @@
         <SubtypeId>GFA_BP_AmmoMag_Sidearm_Red</SubtypeId>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Sidearm_Red}</DisplayName>
-      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Sidearm_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Sidearm.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Sidearm_Red.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="1.0" TypeId="Ingot" SubtypeId="Iron" />
@@ -25,7 +26,8 @@
         <SubtypeId>GFA_BP_AmmoMag_Sidearm_Green</SubtypeId>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Sidearm_Green}</DisplayName>
-      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Sidearm_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Sidearm.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Sidearm_Green.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="1.0" TypeId="Ingot" SubtypeId="Iron" />
@@ -43,6 +45,7 @@
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Small_Red}</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Small_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Small_Red.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="15" TypeId="Ingot" SubtypeId="Iron" />
@@ -60,6 +63,7 @@
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Small_Green}</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Small_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Small_Green.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="15" TypeId="Ingot" SubtypeId="Iron" />
@@ -77,6 +81,7 @@
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Medium_Red}</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Medium_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Medium_Red.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
@@ -94,6 +99,7 @@
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Medium_Green}</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Medium_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Medium_Green.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
@@ -111,6 +117,7 @@
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Large_Red}</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Large_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Large_Red.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
@@ -129,6 +136,7 @@
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Large_Green}</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Large_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Marker_Large_Green.dds</Icon>
       <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
       <Prerequisites>
         <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
