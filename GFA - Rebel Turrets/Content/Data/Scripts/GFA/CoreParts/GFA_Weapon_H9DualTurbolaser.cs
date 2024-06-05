@@ -25,6 +25,7 @@ namespace Scripts {
                         AzimuthPartId = "azimuth",
                         ElevationPartId = "elevation",
                         DurabilityMod = 0.25f,
+                        IconName = "GFA_Filter_AmmoMag_Medium.dds"
                     },
                     
                  },
@@ -82,13 +83,13 @@ namespace Scripts {
                     BarrelsPerShot = 1, // How many muzzles will fire a projectile per fire event.
                     TrajectilesPerBarrel = 1, // Number of projectiles per muzzle per fire event.
                     SkipBarrels = 0, // Number of muzzles to skip after each fire event.
-                    ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    MagsToLoad = 0, // Number of physical magazines to consume on reload.
+                    ReloadTime = 60*3, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    MagsToLoad = 1, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 5, // Heat generated per shot.
-                    MaxHeat = 400, // Max heat before weapon enters cooldown (70% of max heat).
-                    Cooldown = 0.5f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate= 60, // Amount of heat lost per second.
+                    MaxHeat = 800, // Max heat before weapon enters cooldown (70% of max heat).
+                    Cooldown = 0.8f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
+                    HeatSinkRate= 40, // Amount of heat lost per second.
                     ShotsInBurst = 0, // Use this if you don't want the weapon to fire an entire physical magazine in one go. Should not be more than your magazine capacity.
                     StayCharged = true, // Will start recharging whenever power cap is not full.
                 },
@@ -104,7 +105,7 @@ namespace Scripts {
                 {
                     Effect1 = new ParticleDef
                     {
-                        Name = "GFA_Particle_XWing_LaserCannon_Muzzle", // SubtypeId of muzzle particle effect.
+                        Name = "GFA_Particle_LaserCannon_Muzzle_Red", // SubtypeId of muzzle particle effect.
                         Offset = Vector(x: 0, y: 0, z: 0), // Offsets the effect from the muzzle empty.
                         DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
                         Extras = new ParticleOptionDef
@@ -119,7 +120,8 @@ namespace Scripts {
                 },
             },
             Ammos = new[] {
-                GFA_Ammo_H9Turbolaser,
+                GFA_Ammo_H9Turbolaser_Red,
+                GFA_Ammo_H9Turbolaser_Green
             },
             Animations = GFA_Animation_H9DualTurbolaser,
         };

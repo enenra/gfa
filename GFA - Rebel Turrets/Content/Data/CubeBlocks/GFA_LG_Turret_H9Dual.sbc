@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="https://storage.googleapis.com/unofficial-keen-schemas/latest/space-vanilla.xsd">
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CubeBlocks>
 		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
@@ -9,15 +9,23 @@
 			<DisplayName>{LOC:DisplayName_GFA_LG_Turret_H9Dual}</DisplayName>
 			<Description>{LOC:Description_GFA_LG_Turret_H9Dual}</Description>
 			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_Turret_H9Dual.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="5" y="2" z="5"/>
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\GFA_LG_Turret_H9Dual.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
+				<Component Subtype="SteelPlate" Count="10" />
+				<Component Subtype="Construction" Count="30" />
+				<Component Subtype="MetalGrid" Count="6" />
+				<Component Subtype="SmallTube" Count="4" />
+				<Component Subtype="Motor" Count="4" />
+				<Component Subtype="Computer" Count="10" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="SteelPlate" Count="20" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<CriticalComponent Subtype="Computer" Index="0" />
 			<BlockPairName>GFA_Turret_H9Dual</BlockPairName>
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="1.00" StartY="1.00" EndX="4.00" EndY="4.00" Default="true"/>
@@ -37,7 +45,7 @@
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 			<ResourceSinkGroup>Defense</ResourceSinkGroup>
-			<PowerInput>0.00025</PowerInput>
+			<PowerInput>0.0025</PowerInput>
 			<InventorySize>
 				<X>1</X>
 				<Y>1</Y>
