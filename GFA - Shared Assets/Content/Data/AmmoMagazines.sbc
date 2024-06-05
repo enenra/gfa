@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AmmoMagazines>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Sidearm_Red</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Sidearm_Red}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Sidearm.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>0.2</X>
+        <Y>0.05</Y>
+        <Z>0.02</Z>
+      </Size>
+      <Mass>0.6</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Sidearm.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>80</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Sidearm_Red" />
+
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>100</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Sidearm_Green</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Sidearm_Green}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Sidearm.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>0.2</X>
+        <Y>0.05</Y>
+        <Z>0.02</Z>
+      </Size>
+      <Mass>0.6</Mass>
+      <Volume>0.2</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Sidearm.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>80</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Sidearm_Green" />
+
+      <MinimumOfferAmount>10</MinimumOfferAmount>
+      <MaximumOfferAmount>100</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Small_Red</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Small_Red}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Small_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>40</Mass>
+      <Volume>24</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Small_Red.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>60</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Small_Red" />
+
+      <MinimumOfferAmount>50</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Small_Green</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Small_Green}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Small_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>40</Mass>
+      <Volume>24</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Small_Green.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>60</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Small_Green" />
+
+      <MinimumOfferAmount>50</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Medium_Red</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Medium_Red}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Medium_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>60</Mass>
+      <Volume>30</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Medium_Red.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>10</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Medium_Red" />
+
+      <MinimumOfferAmount>50</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Medium_Green</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Medium_Green}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Medium_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>60</Mass>
+      <Volume>30</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Medium_Green.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>10</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Medium_Green" />
+
+      <MinimumOfferAmount>50</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Large_Red</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Large_Red}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Large_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>1.2</X>
+        <Y>0.3</Y>
+        <Z>0.3</Z>
+      </Size>
+      <Mass>100</Mass>
+      <Volume>100</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Large_Red.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>10</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Large_Red" />
+
+      <MinimumOfferAmount>50</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>GFA_AmmoMag_Large_Green</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_AmmoMag_Large_Green}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_AmmoMag_Large_Red.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Size>
+        <X>1.2</X>
+        <Y>0.3</Y>
+        <Z>0.3</Z>
+      </Size>
+      <Mass>100</Mass>
+      <Volume>100</Volume>
+      <Model>Models\Items\GFA_AmmoMag_Large_Green.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>10</Capacity>
+      <AmmoDefinitionId Subtype="GFA_Ammo_Large_Green" />
+
+      <MinimumOfferAmount>50</MinimumOfferAmount>
+      <MaximumOfferAmount>500</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>2000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+    </AmmoMagazine>
+
+  </AmmoMagazines>
+</Definitions>
