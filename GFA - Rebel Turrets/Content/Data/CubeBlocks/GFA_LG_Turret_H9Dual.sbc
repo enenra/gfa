@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CubeBlocks>
+
 		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
@@ -40,10 +41,12 @@
 			<EdgeType>Light</EdgeType>
 			<BuildTimeSeconds>12</BuildTimeSeconds>
 			<PCU>25</PCU>
+
 			<DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
 			<DamagedSound>ParticleHeavyMech</DamagedSound>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      
 			<ResourceSinkGroup>Defense</ResourceSinkGroup>
 			<PowerInput>0.0025</PowerInput>
 			<InventorySize>
@@ -53,5 +56,6 @@
 			</InventorySize>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>
 		</Definition>
+
 	</CubeBlocks>
 </Definitions>

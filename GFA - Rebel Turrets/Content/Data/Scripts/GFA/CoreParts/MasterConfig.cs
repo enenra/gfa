@@ -6,7 +6,8 @@ namespace Scripts
         internal Parts()
         {
             PartDefinitions(
-                GFA_Weapon_H9DualTurbolaser
+                GFA_Weapon_H9DualTurbolaser,
+                GFA_Weapon_H9Turbolaser
                 );
         }
     }

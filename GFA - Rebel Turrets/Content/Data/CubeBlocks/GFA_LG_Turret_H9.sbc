@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>GFA_LG_Turret_H9</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_LG_Turret_H9}</DisplayName>
+			<Description>{LOC:Description_GFA_LG_Turret_H9}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_Turret_H9.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\GFA_LG_Turret_H9.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10" />
+				<Component Subtype="Construction" Count="20" />
+				<Component Subtype="MetalGrid" Count="3" />
+				<Component Subtype="SmallTube" Count="2" />
+				<Component Subtype="Motor" Count="2" />
+				<Component Subtype="Computer" Count="5" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="SteelPlate" Count="10" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" Default="true"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_Turret_H9_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_Turret_H9_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_Turret_H9_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GFA_LG_Turret_H9</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>12</BuildTimeSeconds>
+			<PCU>25</PCU>
+
+			<DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<PowerInput>0.0025</PowerInput>
+			<InventorySize>
+				<X>1</X>
+				<Y>1</Y>
+				<Z>1</Z>
+			</InventorySize>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>GFA_LG_Turret_H9_Slanted</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_GFA_LG_Turret_H9_Slanted}</DisplayName>
+			<Description>{LOC:Description_GFA_LG_Turret_H9}</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_Turret_H9_Slanted.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\GFA_LG_Turret_H9_Slanted.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10"/>
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.50"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" Default="true"/>
+			</MountPoints>
+			<BlockPairName>GFA_LG_Turret_H9_Slanted</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>12</BuildTimeSeconds>
+			<PCU>25</PCU>
+
+			<DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+      
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<PowerInput>0.0025</PowerInput>
+			<InventorySize>
+				<X>1</X>
+				<Y>1</Y>
+				<Z>1</Z>
+			</InventorySize>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>
