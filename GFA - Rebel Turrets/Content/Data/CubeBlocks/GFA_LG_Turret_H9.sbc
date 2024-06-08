@@ -126,9 +126,16 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\GFA_LG_Turret_H9_Slanted.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
+				<Component Subtype="SteelPlate" Count="100" />
+				<Component Subtype="Construction" Count="20" />
+				<Component Subtype="MetalGrid" Count="20" />
+				<Component Subtype="SmallTube" Count="2" />
+				<Component Subtype="Motor" Count="2" />
+				<Component Subtype="Computer" Count="5" />
+				<Component Subtype="Construction" Count="50" />
+				<Component Subtype="SteelPlate" Count="250" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
@@ -140,7 +147,7 @@
 			<MirroringX>Y</MirroringX>
 			<MirroringY>X</MirroringY>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>12</BuildTimeSeconds>
+			<BuildTimeSeconds>22</BuildTimeSeconds>
 			<PCU>25</PCU>
 
 			<DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
