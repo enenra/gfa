@@ -28,6 +28,14 @@ namespace Scripts {
                         IconName = "GFA_Filter_AmmoMag_Medium.dds"
                     },
                     new MountPointDef {
+                        SubtypeId = "GFA_SG_Turret_H9",
+                        MuzzlePartId = "elevation",
+                        AzimuthPartId = "azimuth",
+                        ElevationPartId = "elevation",
+                        DurabilityMod = 0.25f,
+                        IconName = "GFA_Filter_AmmoMag_Medium.dds"
+                    },
+                    new MountPointDef {
                         SubtypeId = "GFA_LG_Turret_H9_Slanted",
                         MuzzlePartId = "elevation",
                         AzimuthPartId = "azimuth",

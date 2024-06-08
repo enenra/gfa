@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CategoryClasses>
 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -28,6 +27,32 @@
         <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
         <string>ConveyorSorter/GFA_LG_Turret_H9</string>
         <string>ConveyorSorter/GFA_LG_Turret_H9_Slanted</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9_Slanted</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
+      <Name>SmallBlocks</Name>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_SG_Turret_H9</string>
       </ItemIds>
     </Category>
 
