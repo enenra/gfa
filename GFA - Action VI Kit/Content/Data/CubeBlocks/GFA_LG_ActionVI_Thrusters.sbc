@@ -1,33 +1,99 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<CubeBlocks>
-		<Definition>
-			<Id>
-				<TypeId>CubeBlock</TypeId>
-				<SubtypeId>GFA_LG_ActionVI_Thrusters</SubtypeId>
-			</Id>
-			<DisplayName>{LOC:DisplayName_GFA_LG_ActionVI_Thrusters}</DisplayName>
-			<Description>{LOC:Description_GFA_LG_ActionVI_Thrusters}</Description>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
-			<CubeSize>Large</CubeSize>
-			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="5" y="2" z="6"/>
-			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\large\GFA_LG_ActionVI_Thrusters.mwm</Model>
-			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
-			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
-			<BlockPairName>GFA_LG_ActionVI_Thrusters</BlockPairName>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-			<MountPoints>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
-				<MountPoint Side="Left" StartX="4.00" StartY="0.00" EndX="6.00" EndY="2.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
-				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
-				<MountPoint Side="Bottom" StartX="0.00" StartY="4.00" EndX="5.00" EndY="6.00" Default="true"/>
-			</MountPoints>
-		</Definition>
-	</CubeBlocks>
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>GFA_LG_ActionVI_Thrusters</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_ActionVI_Thrusters}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_ActionVI_Thrusters}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_ActionVI_Thrusters.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="2" z="6"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_ActionVI_Thrusters.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="400" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="LargeTube" Count="60" />
+        <Component Subtype="Thrust" Count="1000" />
+        <Component Subtype="Construction" Count="80" />
+        <Component Subtype="SteelPlate" Count="150" />
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+        <MountPoint Side="Left" StartX="4.00" StartY="0.00" EndX="6.00" EndY="2.00"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="4.00" EndX="5.00" EndY="6.00" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_ActionVI_Thrusters_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_ActionVI_Thrusters_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_ActionVI_Thrusters_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_LG_ActionVI_Thrusters</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+      <PCU>15</PCU>
+
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <PrimarySound>_GFA_XWing_Thruster</PrimarySound>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <SilenceableByShipSoundSystem>false</SilenceableByShipSoundSystem>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>10000000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <MaxPowerConsumption>0.2</MaxPowerConsumption>
+      <MinPowerConsumption>0.00002</MinPowerConsumption>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>0.1</FlameLengthScale>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>SmallGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>0.1</FlameGlareQuerySize>
+      <FlameIdleColor>
+        <X>0.75</X>
+        <Y>0.0</Y>
+        <Z>0.1</Z>
+        <W>0.1</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1.5</X>
+        <Y>0.0</Y>
+        <Z>0.2</Z>
+        <W>0.5</W>
+      </FlameFullColor>
+    </Definition>
+
+  </CubeBlocks>
 </Definitions>
