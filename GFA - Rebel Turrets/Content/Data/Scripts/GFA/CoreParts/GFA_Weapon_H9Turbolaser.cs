@@ -84,7 +84,7 @@ namespace Scripts {
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -10,
-                    MaxElevation = 90,
+                    MaxElevation = 45,
                     InventorySize = 0.6f,
                     Type = BlockWeapon,
                 },
