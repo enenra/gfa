@@ -32,7 +32,6 @@ That's not really a question but let's address this anyway: I made all models in
 [img]https://i.imgur.com/Ky5F2bo.png[/img]
 [list]
 [*][b]Mexpex[/b] - For hooking me up with the script to reduce the sound delay on thrusters.
-[*][b]PrimoSuperT[/b] - For allowing me to use his many amazing Star Wars builds in the screenshots.
 [/list]
 
 
