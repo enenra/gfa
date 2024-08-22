@@ -12,8 +12,10 @@ using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef;
 using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef.HardwareType;
 using System.Collections.Generic;
 
-namespace Scripts {   
-    partial class Parts {
+namespace Scripts
+{
+    partial class Parts
+    {
         WeaponDefinition GFA_Weapon_Ls1LaserCannon => new WeaponDefinition
         {
             Assignments = new ModelAssignmentsDef
@@ -26,7 +28,7 @@ namespace Scripts {
                         ElevationPartId = "None",
                         DurabilityMod = 0.25f,
                     },
-                    
+
                  },
                 Muzzles = new[] {
                     "muzzle_barrel_001",
@@ -72,7 +74,7 @@ namespace Scripts {
                     HeatPerShot = 5, // Heat generated per shot.
                     MaxHeat = 125, // Max heat before weapon enters cooldown (70% of max heat).
                     Cooldown = 0.75f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate= 35, // Amount of heat lost per second.
+                    HeatSinkRate = 35, // Amount of heat lost per second.
                     ShotsInBurst = 0, // Use this if you don't want the weapon to fire an entire physical magazine in one go. Should not be more than your magazine capacity.
                     StayCharged = true, // Will start recharging whenever power cap is not full.
                 },
@@ -101,6 +103,59 @@ namespace Scripts {
                         },
                     },
                 },
+            },
+            Ammos = new[] {
+                GFA_Ammo_Ls1LaserCannon,
+            },
+        };
+        WeaponDefinition GFA_Weapon_Ls1LaserCannon_RivalAI => new WeaponDefinition
+        {
+            Assignments = new ModelAssignmentsDef
+            {
+                MountPoints = new[] {
+                    new MountPointDef {
+                        SubtypeId = "GFA_SG_TIEFighter_Lasers_RivalAI",
+                        MuzzlePartId = "elevation",
+                        AzimuthPartId = "azimuth",
+                        ElevationPartId = "elevation",
+                        DurabilityMod = 0.25f,
+                    },
+                 },
+                Muzzles = new[] {
+                    "muzzle_barrel_1",
+                    "muzzle_barrel_2",
+                },
+                Scope = "muzzle_barrel_1",
+            },
+            Targeting = GFA_Weapon_Ls1LaserCannon.Targeting,
+            HardPoint = new HardPointDef
+            {
+                PartName = "L-s1 Laser Cannon RivalAI",
+                DeviateShotAngle = GFA_Weapon_Ls1LaserCannon.HardPoint.DeviateShotAngle,
+                AimingTolerance = GFA_Weapon_Ls1LaserCannon.HardPoint.AimingTolerance,
+                AimLeadingPrediction = GFA_Weapon_Ls1LaserCannon.HardPoint.AimLeadingPrediction,
+                AddToleranceToTracking = GFA_Weapon_Ls1LaserCannon.HardPoint.AddToleranceToTracking,
+                Ai = new AiDef
+                {
+                    DefaultLeadGroup = 0, // Default LeadGroup setting, range 0-5, 0 is disables lead group.  Only useful for fixed weapons or weapons set to OverrideLeads.
+                    TrackTargets = true,
+                    TurretAttached = true,
+                    TurretController = true,
+                },
+                HardWare = new HardwareDef
+                {
+                    RotateRate = 1.0f,
+                    ElevateRate = 1.0f,
+                    MinAzimuth = -10,
+                    MaxAzimuth = 10,
+                    MinElevation = -10,
+                    MaxElevation = 10,
+                    InventorySize = 0.6f,
+                    Type = BlockWeapon,
+                },
+                Loading = GFA_Weapon_Ls1LaserCannon.HardPoint.Loading,
+                Audio = GFA_Weapon_Ls1LaserCannon.HardPoint.Audio,
+                Graphics = GFA_Weapon_Ls1LaserCannon.HardPoint.Graphics,
             },
             Ammos = new[] {
                 GFA_Ammo_Ls1LaserCannon,

@@ -1,4 +1,5 @@
-[h1]Patch 1.0e[/h1]
+[h1]Patch 1.1[/h1]
 [list]
-[*]Improved Block Damage script by Ash Like Snow that supports the expansion pack wing types too.
+[*]Added NPC-restricted version of the L-s1.
+[*]Removed RivalAI viewport version because it's not actually needed.
 [/list]
