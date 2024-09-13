@@ -11,7 +11,7 @@
 			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="1" y="3" z="4"/>
+			<Size x="1" y="2" z="2"/>
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\GFA_LG_ActionVI_RampFront.mwm</Model>
 			<Components>
@@ -19,11 +19,11 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0"/>
 			<MountPoints>
-				<MountPoint Side="Front" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00"/>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00" Default="true"/>
-				<MountPoint Side="Left" StartX="0.00" StartY="0.50" EndX="4.00" EndY="3.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.50" EndX="4.00" EndY="3.00"/>
-				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="1.50" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00" Default="true"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
 			</MountPoints>
 			<BlockPairName>GFA_LG_ActionVI_RampFront</BlockPairName>
 			<MirroringY>Z</MirroringY>
