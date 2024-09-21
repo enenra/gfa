@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_IMP_BridgeWindow" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_BridgeWindow.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_BridgeWindow</DisplayName>
+      <Description>Description_GFA_LG_IMP_BridgeWindow</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_End" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_End_Mirror" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Single" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Corner" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope2x1" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>

@@ -12,6 +12,15 @@
       <ItemIds>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall2</string>
+
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End_Mirror</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Single</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Corner</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror</string>
       </ItemIds>
     </Category>
 
@@ -25,6 +34,35 @@
       <ItemIds>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall2</string>
+
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End_Mirror</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Single</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Corner</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_WindowBlocks</DisplayName>
+      <Name>WindowBlocks</Name>
+      <IsShipCategory>true</IsShipCategory>
+      <ItemIds>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End_Mirror</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Single</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Corner</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror</string>
       </ItemIds>
     </Category>
 
