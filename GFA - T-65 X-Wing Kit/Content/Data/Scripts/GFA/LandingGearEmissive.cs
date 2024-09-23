@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using VRage.Game.Entity;
 using System;
 using VRage.Utils;
+using Sandbox.Game.Entities;
 
 namespace enenra.LandingGearEmissive
 {
@@ -18,6 +19,7 @@ namespace enenra.LandingGearEmissive
     public class Container : MyGameLogicComponent
     {
         IMyLandingGear m_block;
+        MyCubeBlock m_block_internal;
         List<MyEntitySubpart> subparts = new List<MyEntitySubpart>();
         bool autoLockEnabled;
 
@@ -40,6 +42,7 @@ namespace enenra.LandingGearEmissive
                 return;
 
             m_block = Entity as IMyLandingGear;
+            m_block_internal = (MyCubeBlock)Entity;
             autoLockEnabled = m_block.AutoLock;
 
             var subtype = m_block.BlockDefinition.SubtypeName;
@@ -51,6 +54,7 @@ namespace enenra.LandingGearEmissive
 
             NeedsUpdate |= MyEntityUpdateEnum.BEFORE_NEXT_FRAME;
 
+            m_block_internal.OnModelRefresh += OnModelRefreshed;
             m_block.IsWorkingChanged += OnIsWorkingChanged;
             m_block.LockModeChanged += OnLockModeChanged;
             m_block.PropertiesChanged += OnPropertiesChanged;
@@ -62,12 +66,7 @@ namespace enenra.LandingGearEmissive
             bool aqdVisualsPresent = false;
             bool emissiveColorsPresent = false;
 
-            GetSubpartsRecursive((MyEntity)m_block, subparts);
-            if (subparts.Count < 1)
-            {
-                m_block = null;
-                return;
-            }
+            OnModelRefreshed(null);
 
             foreach (var mod in MyAPIGateway.Session.Mods)
             {
@@ -170,15 +169,25 @@ namespace enenra.LandingGearEmissive
         {
             if (m_block != null)
             {
+                m_block_internal.OnModelRefresh -= OnModelRefreshed;
                 m_block.IsWorkingChanged -= OnIsWorkingChanged;
                 m_block.LockModeChanged -= OnLockModeChanged;
                 m_block.PropertiesChanged -= OnPropertiesChanged;
                 m_block = null;
+                m_block_internal = null;
             }
 
             base.Close();
         }
 
+        private void OnModelRefreshed(MyEntity dontmindme)
+        {
+            subparts.Clear();
+            if (m_block_internal.IsBuilt)
+            {
+                GetSubpartsRecursive((MyEntity)m_block, subparts);
+            }
+        }
         private void OnIsWorkingChanged(VRage.Game.ModAPI.IMyCubeBlock obj)
         {
             UpdateEmissives();

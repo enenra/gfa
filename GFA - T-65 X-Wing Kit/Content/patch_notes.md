@@ -1,4 +1,4 @@
-[h1]Patch 1.2a[/h1]
+[h1]Patch 1.2b[/h1]
 [list]
-[*]Laser Cannon shield modifier from 25 to 20.
+[*]Fixed crash when welding a landing gear in survival mode.
 [/list]
