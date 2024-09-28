@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ChatProfileId>GFA_Chat_Default</ChatProfileId>
+
+  <DialogueCue>
+    <DialogueCueId>EnemyDestroyed</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Got one!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>Enemy destroyed.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>DamageByFriendlyOrNeutral</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Friendly, friendly! Stop shooting!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>Watch where you point that!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>UnderFire</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Taking fire!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>I'm taking fire, evading!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>UnderFireHealthLow</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Taking heavy fire!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>Taking heavy fire - I can't keep taking hits like this!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>UnderFireGoingDown</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Going down! Aaaaah!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>They got me, they got me! Going down!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>EnemyDestroyedwithPlayerHelp</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Got them! Thanks for the assist.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>Target destroyed. Thanks for the help.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>EnemyDestroyedwithPlayerMadeFinalShot</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Good shot!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>You got them!</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>Despawn</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>That's it. Pulling out.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>Returning to base.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>HasTarget</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Target sighted. Engaging.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>Enemy spotted.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+  <DialogueCue>
+    <DialogueCueId>SwitchToPatrol</DialogueCueId>
+    <Entries>
+      <Entry>
+        <Message>Target lost. Returning to patrol.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+      <Entry>
+        <Message>No more eyes on target. Continuing patrol.</Message>
+        <AudioId></AudioId>
+        <Weights>1</Weights>
+      </Entry>
+    </Entries>
+  </DialogueCue>
+
+</DialogueBank>

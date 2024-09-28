@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_SpawnGroup_PatrolWing</SubtypeId>
+      </Id>
+      <Description>
+		    [Modular Encounters SpawnGroup]
+		    [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_PatrolWing_SpawnConditions]
+        [ManipulationProfiles:GFA_MG_Manipulation]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="TIEmg Starfighter MES Squad Leader">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>50</Speed>
+          <Behaviour>GFA_MG_PatrolWing_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolWing_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+        [AtmosphericCargoShip:true]
+
+        [RivalAiAnySpawn:true]
+        [FactionOwner:MG]
+        [ReplenishSystems:false]
+
+        [SkipVoxelSpawnChecks:true]
+        [SkipGridSpawnChecks:true]
+        [IgnoreCombatPhase:true]
+
+        [CheckCustomSandboxCounters:true]
+        [CustomSandboxCounters:{Faction}_Resource_Counter]
+        [CustomSandboxCountersTargets:5]
+        [SandboxCounterCompareTypes:GreaterOrEqual]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolWing_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+        [BehaviorName:Patrol]
+
+        [TargetData:MSB_TargetProfile_ShortRange]
+        [AutopilotData:MSB_Patrol_Autopilot]
+        [SecondaryAutopilotData:GFA_Autopilot_Fighter]
+
+        [DialogueBanks:MG_DialogueBank_Dynamic.xml]
+
+        [UseRetreatTimer:true]
+        [RetreatTimerTrigger:600]
+
+        [EscortOffsets:{X:100 Y:0 Z:0}]
+        [EscortOffsets:{X:-100 Y:0 Z:0}]
+
+        [Triggers:GFA_MG_PatrolWing_Trigger_SpawnSetup]
+        [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
+        [Triggers:GFA_MG_Trigger_PatrolWing_Despawn]
+
+        [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
+        <!-- TODO: This is where squad-logic trigger groups go. -->
+        [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
+
+        [TriggerGroups:MSB_Patrol_TriggerGroup]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolWing_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:2]
+        [Actions:GFA_MG_Action_PatrolWing_Rename]
+        [Actions:GFA_MG_Action_PatrolWing_DialogueOverride]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Action_PatrolWing_Rename</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAntennaHudText:true]
+        [AntennaHudText:Long Range Patrol Leader]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Action_PatrolWing_DialogueOverride</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DialogueBanks:DialogueOverride_MG_Patrol.xml]
+      </Description>
+    </EntityComponent>
+
+    <!-- Refund points on despawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Trigger_PatrolWing_Despawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Despawn]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_MG_Action_PatrolWing_Despawn]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Action_PatrolWing_Despawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:5]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
