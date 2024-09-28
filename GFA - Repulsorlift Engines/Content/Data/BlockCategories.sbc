@@ -40,5 +40,32 @@
       </ItemIds>
     </Category>
 
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Nonarmor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Nonarmor</DisplayName>
+      <Name>Section1_Position2_Nonarmor</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>Thrust/GFA_LG_RepulsorSmall</string>
+        <string>Thrust/GFA_SG_RepulsorSmall</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Propulsion</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Propulsion</DisplayName>
+      <Name>Section1_Position3_Propulsion</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>Thrust/GFA_LG_RepulsorSmall</string>
+        <string>Thrust/GFA_SG_RepulsorSmall</string>
+      </ItemIds>
+    </Category>
+
   </CategoryClasses>
 </Definitions>
