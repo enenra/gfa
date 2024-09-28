@@ -8,7 +8,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
-      <Name>GFA_Category</Name>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>SolarPanel/GFA_SG_TIEFighter_Wing_IN</string>
         <string>ConveyorSorter/GFA_SG_TIEFighter_Lasers_IN</string>
@@ -22,7 +23,7 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category_TIEFighter_IN}</DisplayName>
-      <Name>GFA_Category_TIEFighter_IN</Name>
+      <Name>Section15_GFA_Category_TIEFighter_IN</Name>
       <ItemIds>
         <string>SolarPanel/GFA_SG_TIEFighter_Wing_IN</string>
         <string>ConveyorSorter/GFA_SG_TIEFighter_Lasers_IN</string>
@@ -37,6 +38,7 @@
       </Id>
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
       <Name>Section1_Position1_SmallBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>SolarPanel/GFA_SG_TIEFighter_Wing_IN</string>
         <string>ConveyorSorter/GFA_SG_TIEFighter_Lasers_IN</string>

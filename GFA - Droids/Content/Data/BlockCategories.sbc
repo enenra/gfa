@@ -8,7 +8,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
-      <Name>GFA_Category</Name>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_Droids_R2</string>
         <string>CubeBlock/GFA_SG_Droids_R2</string>
@@ -20,7 +21,7 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category_Droids}</DisplayName>
-      <Name>GFA_Category_Droids</Name>
+      <Name>Section15_GFA_Category_Droids</Name>
       <ItemIds>
         <string>CubeBlock/GFA_LG_Droids_R2</string>
         <string>CubeBlock/GFA_SG_Droids_R2</string>
@@ -34,6 +35,7 @@
       </Id>
       <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
       <Name>Section1_Position1_LargeBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_Droids_R2</string>
       </ItemIds>
@@ -46,6 +48,7 @@
       </Id>
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
       <Name>Section1_Position1_SmallBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_SG_Droids_R2</string>
       </ItemIds>

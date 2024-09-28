@@ -8,7 +8,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
-      <Name>GFA_Category</Name>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall2</string>
@@ -32,6 +33,7 @@
       </Id>
       <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
       <Name>Section1_Position1_LargeBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall2</string>

@@ -8,7 +8,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
-      <Name>GFA_Category</Name>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
         <string>ConveyorSorter/GFA_LG_Turret_H9</string>
@@ -21,7 +22,7 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category_Turrets}</DisplayName>
-      <Name>GFA_Category_Turrets</Name>
+      <Name>Section15_GFA_Category_Turrets</Name>
       <ItemIds>
         <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
         <string>ConveyorSorter/GFA_LG_Turret_H9</string>
@@ -36,6 +37,7 @@
       </Id>
       <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
       <Name>Section1_Position1_LargeBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
         <string>ConveyorSorter/GFA_LG_Turret_H9</string>
@@ -50,6 +52,7 @@
       </Id>
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
       <Name>Section1_Position1_SmallBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>ConveyorSorter/GFA_SG_Turret_H9</string>
       </ItemIds>

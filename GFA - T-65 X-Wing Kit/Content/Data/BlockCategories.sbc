@@ -8,7 +8,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
-      <Name>GFA_Category</Name>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
@@ -40,7 +41,7 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category_XWing}</DisplayName>
-      <Name>GFA_Category_XWing</Name>
+      <Name>Section15_GFA_Category_XWing</Name>
       <ItemIds>
         <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
@@ -74,6 +75,7 @@
       </Id>
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
       <Name>Section1_Position1_SmallBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>

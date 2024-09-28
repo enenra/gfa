@@ -8,7 +8,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
-      <Name>GFA_Category</Name>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>TerminalBlock/GFA_LG_Holo_Empire</string>
         <string>TerminalBlock/GFA_LG_Holo_Empire_5x5</string>
@@ -24,6 +25,7 @@
       </Id>
       <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
       <Name>Section1_Position1_LargeBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>TerminalBlock/GFA_LG_Holo_Empire</string>
         <string>TerminalBlock/GFA_LG_Holo_Empire_5x5</string>
