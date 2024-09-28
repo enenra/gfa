@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>	
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Autopilot_Fighter</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [IdealMinSpeed:60]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+		    [MinimumPlanetAltitude:250]
+		    [IdealPlanetAltitude:450]
+        
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.25]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2500]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinimumTargetDistance:250]
+        [StrafeSpeedCutOff:50]
+        [StrafeDistanceCutOff:100]
+		
+        [FlyLevelWithGravity:false]
+        [LevelWithGravityWhenIdle:true]
+        [DisableInertiaDampeners:false]
+
+        [WaypointTolerance:150]
+        [SlowDownOnWaypointApproach:false]
+
+        [UseProjectileLeadPrediction:true]
+        [UseVelocityCollisionEvasion:true]
+        
+        [EngageDistancePlanet:1000]
+        [DisengageDistancePlanet:200]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

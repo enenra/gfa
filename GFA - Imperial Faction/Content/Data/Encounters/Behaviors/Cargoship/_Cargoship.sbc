@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+    This is a sample cargoship behavior.
+    This ship can be set up to spawn on planets or in space, and will simply fly in a straight line for a set amount of time, after which it will move to despawn.
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Behavior_Sample</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+        [BehaviorName:Cargoship]
+
+        [AutopilotData:MSB_Cargoship_Autopilot]
+        [SecondaryAutopilotData:MSB_Cargoship_Autopilot_B]
+
+        [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
+        [TriggerGroups:MSB_Cargoship_TriggerGroup]
+      </Description>
+    </EntityComponent>
+
+    <!-- Add Autopilot Profile and the below TriggerGroup to your behavior to make use of the MSB patrol presets. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Autopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:true]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:25]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:1000]
+        [IdealPlanetAltitude:1200]
+
+        [WaypointTolerance:50]
+        [WaypointWaitTimeTrigger:120]
+
+        [MinAngleForLeveledDescent:135]
+        [MaxAngleForLeveledAscent:90]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.2]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Autopilot_B</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:true]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:25]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:50]
+        [IdealPlanetAltitude:100]
+
+        [WaypointTolerance:50]
+        [WaypointWaitTimeTrigger:60]
+
+        [MinAngleForLeveledDescent:135]
+        [MaxAngleForLeveledAscent:90]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.2]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_TriggerGroup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:MSB_Cargoship_Trigger_ReturnToSpeed]
+        [Triggers:MSB_Cargoship_Trigger_ReturnToDespawn]
+
+        [Triggers:MSB_Cargoship_Trigger_PlayerTooClose]
+      </Description>
+    </EntityComponent>
+
+    <!-- ReturnToSpeed -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Trigger_ReturnToSpeed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [StartsReady:true]
+
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:60001]
+
+        [Actions:MSB_Cargoship_Action_ReturnToSpeed]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Action_ReturnToSpeed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
+
+        [CancelWaitingAtWaypoint:true]
+        [SwitchToNextWaypoint:true]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:MSB_Cargoship_Trigger_ReturnToSpeed]
+      </Description>
+    </EntityComponent>
+
+    <!-- ReturnToDespawn -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Trigger_ReturnToDespawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:BehaviorTriggerD]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:MSB_Cargoship_Action_ReturnToDespawn]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Action_ReturnToDespawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+      </Description>
+    </EntityComponent>
+
+    <!-- PlayerTooClose -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Trigger_PlayerTooClose</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerNear]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [TargetDistance:100]
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [Conditions:FAC-Context-Condition-NormalNeutral]
+
+        [Actions:MSB_Cargoship_Action_PlayerTooClose]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Cargoship_Action_PlayerTooClose</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeReputationWithPlayers:true]
+        [ReputationChangeFactions:{Self}]
+        [ReputationChangeRadius:800]
+        [ReputationChangeAmount:-10]
+        [ReputationChangesForAllRadiusPlayerFactionMembers:true]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:MSB_TriggerEvent_PlayerTooClose]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+
+    Morale System
+    * A morale value is assigned at spawn, normally 100.
+    * When in high alert (in a fight) morale ticks down continuously.
+    * Various events have an effect on morale, such as a nearby friendly being destroyed.
+    * Certain behaviors are associated with certain morale value ranges, such as retreating when morale is low.
+
+    To use:
+    * Assign starting morale value via CustomCounter.
+    * Assign the morale system's trigger group to the behavior.
+
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_TriggerGroup_MoraleSystem</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_Trigger_MoraleSystem_CombatDecay]
+        [Triggers:GFA_Trigger_MoraleSystem_Flee]
+      </Description>
+    </EntityComponent>
+
+    <!-- Decay in Combat -->
+    <!-- Current cooldowns result in battle ending after 15min if morale is 100 to start with and nothing else decreases it. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Condition_MoraleSystem_CombatDecay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:true]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:SettingBattle]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_MoraleSystem_CombatDecay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [Conditions:GFA_Condition_MoraleSystem_CombatDecay]
+
+        [MinCooldownMs:9000]
+        [MaxCooldownMs:9001]
+
+        [Actions:GFA_Action_MoraleSystem_CombatDecay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_MoraleSystem_CombatDecay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseCounters:Morale]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_TriggerEvent_MoraleChange]
+      </Description>
+    </EntityComponent>
+
+    <!-- Fleeing battle when morale is zero. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Condition_MoraleSystem_Flee</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:true]
+
+        [CheckCustomCounters:true]
+        [CustomCounters:Morale]
+        [CustomCountersTargets:0]
+        [CounterCompareTypes:LessOrEqual]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_MoraleSystem_Flee</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_TriggerEvent_MoraleChange]
+
+        [Conditions:GFA_Condition_MoraleSystem_Flee]
+
+        [Actions:GFA_Action_MoraleSystem_Flee]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_MoraleSystem_Flee</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_TriggerEvent_Flee]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Trigger_MoraleSystem_Flee]
+
+        [Retreat:true]
+      </Description>
+    </EntityComponent>
+
+    <!-- Attempting to ram when morale is high but grid is heavily damaged. -->
+
+  </EntityComponents>
+</Definitions>

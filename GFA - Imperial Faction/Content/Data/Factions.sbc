@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+
+    <Faction Tag="IMP" Founder="Emperor Palpatine">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>GFA_Faction_Empire</SubtypeId>
+      </Id>
+      <DisplayName>Galactic Empire</DisplayName>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Neutral</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <DiscoveredByDefault>false</DiscoveredByDefault>
+      <StartingBalance>1000000000</StartingBalance>
+      <FactionIcon>Textures\FactionLogo\GFA_FactionLogo_Empire.dds</FactionIcon>
+      <Description>Description Here.</Description>
+    </Faction>
+
+  </Factions>
+</Definitions>

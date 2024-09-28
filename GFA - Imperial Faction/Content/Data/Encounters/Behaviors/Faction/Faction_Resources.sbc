@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- A faction's resources are a point pool used to spawn encounters with. -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_1</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_1]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_1</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:1]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_3</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_3]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_3</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:3]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_5</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_5]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_5</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:5]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_10</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_10]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_10</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:10]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_15</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_15]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_15</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:15]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_25</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_25]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_25</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:25]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_50</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_50]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_50</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:50]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_75</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_75]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_75</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:75]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_100</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_100]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_100</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Decrease_150</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Faction_Resources_Action_Decrease_150]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Decrease_150</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DecreaseSandboxCounters:{Faction}_Resource_Counter]
+        [DecreaseSandboxCountersAmount:150]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

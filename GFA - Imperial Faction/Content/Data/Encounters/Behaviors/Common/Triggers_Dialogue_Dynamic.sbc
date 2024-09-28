@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- TODO: Figure out cooldowns in between voice lines, prevent overlaps. -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_TriggerGroup_Dialogue_Dynamic</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_Trigger_Dialogue_EnemyDestroyed]
+        [Triggers:GFA_Trigger_Dialogue_DamageByFriendly]
+        [Triggers:GFA_Trigger_Dialogue_UnderFire]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Chat_Default</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [Chance:100]
+        [MaxChats:-1]
+        [BroadcastRandomly:false]
+
+        [Author:{AntennaName}]
+        [Color:{PlayerRelation}]
+
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:FromXML FILE]
+        [ChatAudio:FromXML FILE]
+      </Description>
+    </EntityComponent>
+
+    <!-- EnemyDestroyed -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_EnemyDestroyed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:MSB_EnemyDestroyed]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_EnemyDestroyed]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_EnemyDestroyed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:EnemyDestroyed]
+      </Description>
+    </EntityComponent>
+
+    <!-- EnemyDestroyedwithPlayerHelp -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_EnemyDestroyedwithPlayerHelp</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:MSB_EnemyDestroyedwithPlayerHelp]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_EnemyDestroyedwithPlayerHelp]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_EnemyDestroyedwithPlayerHelp</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:EnemyDestroyedwithPlayerHelp]
+      </Description>
+    </EntityComponent>
+
+    <!-- EnemyDestroyedwithPlayerMadeFinalShot -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_EnemyDestroyedwithPlayerMadeFinalShot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:MSB_EnemyDestroyedwithPlayerMadeFinalShot]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_EnemyDestroyedwithPlayerMadeFinalShot]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_EnemyDestroyedwithPlayerMadeFinalShot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:EnemyDestroyedwithPlayerMadeFinalShot]
+      </Description>
+    </EntityComponent>
+
+    <!-- DamageByFriendlyOrNeutral -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_DamageByFriendlyOrNeutral</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_DamageByFriendly]
+        [Tags:MSB_TriggerEvent_DamageByNeutral]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_DamageByFriendlyOrNeutral]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_DamageByFriendlyOrNeutral</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:DamageByFriendlyOrNeutral]
+      </Description>
+    </EntityComponent>
+
+    <!-- UnderFire -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_UnderFire</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_UnderFire]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_UnderFire]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_UnderFire</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:UnderFire]
+      </Description>
+    </EntityComponent>
+
+    <!-- UnderFireHealthLow -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_UnderFireHealthLow</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_UnderFireHealthLow]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_UnderFireHealthLow]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_UnderFireHealthLow</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:UnderFireHealthLow]
+      </Description>
+    </EntityComponent>
+
+    <!-- UnderFireGoingDown -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_UnderFireGoingDown</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_UnderFireGoingDown]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_UnderFireGoingDown]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_UnderFireGoingDown</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:UnderFireGoingDown]
+      </Description>
+    </EntityComponent>
+
+    <!-- Despawn -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_Despawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Despawn]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_Despawn]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_Despawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Despawn]
+      </Description>
+    </EntityComponent>
+
+    <!-- HasTarget -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_HasTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_HasTarget]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_HasTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_HasTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:HasTarget]
+      </Description>
+    </EntityComponent>
+
+    <!-- SwitchToPatrol -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Trigger_Dialogue_SwitchToPatrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_SwitchToPatrol]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Action_Dialogue_SwitchToPatrol]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Action_Dialogue_SwitchToPatrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:SwitchToPatrol]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

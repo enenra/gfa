@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+    TODO:
+      * Hook in the despawn stuff to patrol.
+      * Also properly cancel the despawn action when timer should be paused.
+      * Does despawn logic need to be cancelled when rivalAi RC is taken out?
+    -->
+
+    <!-- StartDespawnTimer -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Condition_StartDespawnTimer_Dynamic</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:true]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:MSB_Despawn]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Trigger_StartDespawnTimer_Dynamic</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [ConditionCheckResetsTimer:true]
+        [Conditions:MSB_Condition_StartDespawnTimer_Dynamic]
+
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:90000]
+
+        [Actions:MSB_Action_StartDespawnTimer_Dynamic]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Action_StartDespawnTimer_Dynamic</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Retreat:true]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:MSB_TriggerEvent_Despawn]
+      </Description>
+    </EntityComponent>
+
+    <!-- ResetDespawnTimer -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Condition_ResetDespawnTimer_Dynamic</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:true]
+
+        [CheckTrueBooleans:false]
+        [TrueBooleans:MSB_Despawn]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Trigger_ResetDespawnTimer_Dynamic</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [Conditions:MSB_Condition_ResetDespawnTimer_Dynamic]
+
+        [Actions:MSB_Action_ResetDespawnTimer_Dynamic]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_Action_ResetDespawnTimer_Dynamic</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Retreat:false]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
