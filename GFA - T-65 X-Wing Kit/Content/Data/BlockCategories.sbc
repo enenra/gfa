@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CategoryClasses>
 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -35,7 +34,6 @@
         <string>CubeBlock/GFA_SG_XWing_ProtonTorpedoRack_Mirror</string>
       </ItemIds>
     </Category>
-
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
@@ -75,7 +73,7 @@
         <SubtypeId/>
       </Id>
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
-      <Name>SmallBlocks</Name>
+      <Name>Section1_Position1_SmallBlocks</Name>
       <ItemIds>
         <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
         <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
@@ -105,10 +103,54 @@
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
-        <SubtypeId/>
+        <SubtypeId>Nonarmor</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Category_ConveyorBlocks</DisplayName>
-      <Name>Conveyors</Name>
+      <DisplayName>DisplayName_Category_Nonarmor</DisplayName>
+      <Name>Section1_Position2_Nonarmor</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>LandingGear/GFA_SG_XWing_FrontGear</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncher</string>
+        <string>ConveyorSorter/GFA_SG_XWing_TorpLauncherMirror</string>
+        <string>Cockpit/GFA_SG_XWing_Cockpit</string>
+        <string>Collector/GFA_SG_XWing_CargoScoop</string>
+        <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
+        <string>ConveyorSorter/GFA_SG_XWing_FireControl</string>
+        <string>LandingGear/GFA_SG_XWing_RearGear</string>
+        <string>AdvancedDoor/GFA_SG_XWing_Wing</string>
+        <string>AdvancedDoor/GFA_SG_XWing_WingMirror</string>
+        <string>Thrust/GFA_SG_XWing_Intake</string>
+        <string>BatteryBlock/GFA_SG_XWing_Engine</string>
+        <string>Thrust/GFA_SG_XWing_Thruster</string>
+        <string>JumpDrive/GFA_SG_XWing_Hyperdrive</string>
+        <string>ConveyorSorter/GFA_SG_XWing_LaserCannon</string>
+        <string>CubeBlock/GFA_LG_XWing_ProtonTorpedoRack</string>
+        <string>CubeBlock/GFA_SG_XWing_ProtonTorpedoRack</string>
+        <string>CubeBlock/GFA_LG_XWing_ProtonTorpedoRack_Mirror</string>
+        <string>CubeBlock/GFA_SG_XWing_ProtonTorpedoRack_Mirror</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Control</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Control</DisplayName>
+      <Name>Section1_Position3_Control</Name>
+      <ItemIds>
+        <string>Cockpit/GFA_SG_XWing_Cockpit</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Logistics</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Logistics</DisplayName>
+      <Name>Section1_Position3_Logistics</Name>
       <ItemIds>
         <string>Collector/GFA_SG_XWing_CargoScoop</string>
         <string>CubeBlock/GFA_LG_XWing_ProtonTorpedoRack</string>
@@ -117,26 +159,80 @@
         <string>CubeBlock/GFA_SG_XWing_ProtonTorpedoRack_Mirror</string>
       </ItemIds>
     </Category>
-
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
-        <SubtypeId/>
+        <SubtypeId>Power</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Category_Cockpit</DisplayName>
-      <Name>Cockpits</Name>
+      <DisplayName>DisplayName_Category_Power</DisplayName>
+      <Name>Section1_Position3_Power</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
-        <string>Cockpit/GFA_SG_XWing_Cockpit</string>
+        <string>BatteryBlock/GFA_SG_XWing_Engine</string>
       </ItemIds>
     </Category>
-
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
-        <SubtypeId/>
+        <SubtypeId>Propulsion</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
-      <Name>Weapons</Name>
+      <DisplayName>DisplayName_Category_Propulsion</DisplayName>
+      <Name>Section1_Position3_Propulsion</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>Thrust/GFA_SG_XWing_Intake</string>
+        <string>Thrust/GFA_SG_XWing_Thruster</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Structure</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Structure</DisplayName>
+      <Name>Section1_Position3_ShipStructure</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowling</string>
+        <string>CubeBlock/GFA_SG_XWing_FrontCowlingMirror</string>
+        <string>AdvancedDoor/GFA_SG_XWing_Wing</string>
+        <string>AdvancedDoor/GFA_SG_XWing_WingMirror</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Tools</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Tools</DisplayName>
+      <Name>Section1_Position3_ShipTools</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>ShipWelder/GFA_SG_XWing_AstroBay</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Utility</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Utility</DisplayName>
+      <Name>Section1_Position3_Utility</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>CameraBlock/GFA_SG_XWing_NoseCone</string>
+        <string>JumpDrive/GFA_SG_XWing_Hyperdrive</string>
+        <string>LandingGear/GFA_SG_XWing_FrontGear</string>
+        <string>LandingGear/GFA_SG_XWing_RearGear</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Weapons</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Weapons</DisplayName>
+      <Name>Section1_Position3_Weapons</Name>
       <ItemIds>
         <string>ConveyorSorter/GFA_SG_XWing_TorpLauncher</string>
         <string>ConveyorSorter/GFA_SG_XWing_TorpLauncherMirror</string>

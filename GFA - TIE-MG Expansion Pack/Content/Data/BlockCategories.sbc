@@ -16,7 +16,6 @@
         <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
       </ItemIds>
     </Category>
-
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
@@ -28,21 +27,6 @@
         <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG</string>
         <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG_Mirror</string>
         <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
-        
-        <string>RadioAntenna/GFA_SG_TIEFighter_Antenna</string>
-        <string>BatteryBlock/GFA_SG_TIEFighter_Battery</string>
-        <string>Gyro/GFA_SG_TIEFighter_Gyro</string>
-        <string>Thrust/GFA_SG_TIEFighter_RepulsorBack</string>
-        <string>Thrust/GFA_SG_TIEFighter_RepulsorSide</string>
-        <string>Thrust/GFA_SG_TIEFighter_RepulsorVertical</string>
-        <string>Thrust/GFA_SG_TIEFighter_Thruster</string>
-        <string>RemoteControl/GFA_SG_TIEFighter_Viewport</string>
-        <string>ShipConnector/GFA_SG_TIEFighter_Hatch</string>
-        <string>ShipConnector/GFA_SG_TIEFighter_Port</string>
-        <string>ConveyorSorter/GFA_SG_TIEFighter_Lasers</string>
-        <string>Cockpit/GFA_SG_TIEFighter_Cockpit</string>
-        <string>AdvancedDoor/GFA_LG_TIEFighter_DockingTube_Door</string>
-        <string>ShipConnector/GFA_LG_TIEFighter_DockingTube</string>
       </ItemIds>
     </Category>
 
@@ -52,10 +36,50 @@
         <SubtypeId/>
       </Id>
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
-      <Name>SmallBlocks</Name>
+      <Name>Section1_Position1_SmallBlocks</Name>
       <ItemIds>
         <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG</string>
         <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG_Mirror</string>
+        <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Nonarmor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Nonarmor</DisplayName>
+      <Name>Section1_Position2_Nonarmor</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG</string>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG_Mirror</string>
+        <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Power</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Power</DisplayName>
+      <Name>Section1_Position3_Power</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG</string>
+        <string>SolarPanel/GFA_SG_TIEFighter_Wing_MG_Mirror</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Utility</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Utility</DisplayName>
+      <Name>Section1_Position3_Utility</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
         <string>OreDetector/GFA_SG_TIEFighter_OreSensor</string>
       </ItemIds>
     </Category>
