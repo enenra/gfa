@@ -43,7 +43,7 @@ namespace Scripts {
                         DurabilityMod = 0.25f,
                         IconName = "GFA_Filter_AmmoMag_Medium.dds"
                     },
-                    
+
                  },
                 Muzzles = new[] {
                     "muzzle_barrel",
