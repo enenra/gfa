@@ -3,7 +3,7 @@
   <BlockVariantGroups>
 
     <BlockVariantGroup>
-      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_IMP_BridgeWindow" />
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_BridgeWindow" />
       <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_BridgeWindow.dds</Icon>
       <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
       <DisplayName>DisplayName_GFA_LG_IMP_BridgeWindow</DisplayName>
@@ -17,6 +17,25 @@
         <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope" />
         <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope2x1" />
         <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_Deco" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_InteriorWall.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_InteriorWall</DisplayName>
+      <Description>Description_InteriorWall</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall_Mirror" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall2" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall2_Mirror" />
+
+        <Block Type="MyObjectBuilder_LightingBlock" Subtype="GFA_LG_IMP_FakeLight" />
+
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_HangarFloor" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_HangarFloor_Mirror" />
       </Blocks>
     </BlockVariantGroup>
 
