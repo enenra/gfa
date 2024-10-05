@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
+      <Id>
+        <TypeId>InteriorLight</TypeId>
+        <SubtypeId>GFA_LG_IMP_FakeLight</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_FakeLight}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_IMP_FakeLight}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_FakeLight.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_IMP_FakeLight.mwm</Model>
+      <Components>
+          <Component Subtype="Construction" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.48" StartY="0.48" EndX="0.52" EndY="0.52" Default="true" CouplingTag="imp_fakelight"/>
+      </MountPoints>
+      <BlockPairName>GFA_LG_IMP_FakeLight</BlockPairName>
+      <MirroringX>Y</MirroringX>
+      <MirroringY>X</MirroringY>
+
+      <IsStandAlone>false</IsStandAlone>
+      <HasPhysics>false</HasPhysics>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <PCU>25</PCU>
+      <IsAirTight>false</IsAirTight>
+
+      <LightRadius Min="1" Max="60" Default="3.6" />
+      <LightFalloff Min="0" Max="3" Default="1.3" />
+      <LightIntensity Min="0.5" Max="10" Default="5" />
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.00006</RequiredPowerInput>
+      <Flare></Flare>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
