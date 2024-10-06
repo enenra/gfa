@@ -4,6 +4,7 @@
 
     <!-- A faction's resources are a point pool used to spawn encounters with. -->
 
+    <!-- Decrease -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -12,11 +13,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_1]
       </Description>
     </EntityComponent>
@@ -41,11 +43,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_3]
       </Description>
     </EntityComponent>
@@ -70,11 +73,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_5]
       </Description>
     </EntityComponent>
@@ -99,11 +103,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_10]
       </Description>
     </EntityComponent>
@@ -128,11 +133,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_15]
       </Description>
     </EntityComponent>
@@ -157,11 +163,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_25]
       </Description>
     </EntityComponent>
@@ -186,11 +193,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_50]
       </Description>
     </EntityComponent>
@@ -215,11 +223,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_75]
       </Description>
     </EntityComponent>
@@ -244,11 +253,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_100]
       </Description>
     </EntityComponent>
@@ -273,11 +283,12 @@
       <Description>
         [RivalAI Trigger]
 
-        [Type:Compromised]
+        [Type:Timer]
 
         [UseTrigger:true]
         [StartsReady:true]
 
+        [MaxActions:1]
         [Actions:GFA_Faction_Resources_Action_Decrease_150]
       </Description>
     </EntityComponent>
@@ -291,6 +302,307 @@
 
         [DecreaseSandboxCounters:{Faction}_Resource_Counter]
         [DecreaseSandboxCountersAmount:150]
+      </Description>
+    </EntityComponent>
+
+    <!-- Increase -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_1</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_1]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_1</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:1]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_3</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_3]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_3</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:3]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_5</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_5]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_5</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:5]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_10</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_10]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_10</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:10]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_15</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_15]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_15</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:15]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_25</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_25]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_25</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:25]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_50</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_50]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_50</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:50]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_75</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_75]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_75</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:75]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_100</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_100]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_100</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Trigger_Increase_150</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Faction_Resources_Action_Increase_150]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Faction_Resources_Action_Increase_150</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
+        [IncreaseSandboxCountersAmount:150]
       </Description>
     </EntityComponent>
 
