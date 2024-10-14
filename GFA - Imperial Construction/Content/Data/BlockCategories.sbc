@@ -8,7 +8,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
-      <Name>GFA_Category</Name>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall_Mirror</string>
@@ -40,7 +41,8 @@
         <SubtypeId/>
       </Id>
       <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
-      <Name>LargeBlocks</Name>
+      <Name>Section1_Position1_LargeBlocks</Name>
+      <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
         <string>CubeBlock/GFA_LG_IMP_InteriorWall_Mirror</string>
@@ -69,12 +71,39 @@
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
-        <SubtypeId/>
+        <SubtypeId>Nonarmor</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Category_WindowBlocks</DisplayName>
-      <Name>WindowBlocks</Name>
+      <DisplayName>DisplayName_Category_Nonarmor</DisplayName>
+      <Name>Section1_Position2_Nonarmor</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
+        <string>CubeBlock/GFA_LG_IMP_InteriorWall2</string>
+        <string>CubeBlock/GFA_LG_IMP_HangarFloor</string>
+
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End_Mirror</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Single</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Corner</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1</string>
+        <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Structure</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Structure</DisplayName>
+      <Name>Section1_Position3_ShipStructure</Name>
       <IsShipCategory>true</IsShipCategory>
       <ItemIds>
+        <string>CubeBlock/GFA_LG_IMP_InteriorWall</string>
+        <string>CubeBlock/GFA_LG_IMP_InteriorWall2</string>
+        <string>CubeBlock/GFA_LG_IMP_HangarFloor</string>
+
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow</string>
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End</string>
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_End_Mirror</string>
