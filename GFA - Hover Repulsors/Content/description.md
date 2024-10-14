@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3252302489]1.0[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3252302489]1.0a[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
@@ -21,7 +21,7 @@ Place this mod above either [url=https://steamcommunity.com/sharedfiles/filedeta
 
 [img]https://i.imgur.com/Ky5F2bo.png[/img]
 [*][b]Takeshi[/b] - It's completely based on his mod and without it wouldn't be possible.
-[*][b]Digi[/b] - For his excellent script examples, one of which I'm using to disable the original BlockCategory. 
+[*][b]Digi[/b] - For his excellent script examples, one of which I'm using to disable the original BlockCategory.
 [/list]
 
 

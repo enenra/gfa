@@ -1,5 +1,4 @@
-[h1]Patch 1.1[/h1]
+[h1]Patch 1.1a[/h1]
 [list]
-[*]Added NPC-restricted version of the L-s1.
-[*]Removed RivalAI viewport version because it's not actually needed.
+[*]SE 1.205 Contact Patch compatibility. (BlockCategories)
 [/list]

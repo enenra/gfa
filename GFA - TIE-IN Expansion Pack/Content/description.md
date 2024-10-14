@@ -1,10 +1,10 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3252740114]1.0[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3252740114]1.0a[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
-The TIE/in Starfighter is identifiable by its arrow-shaped solar collection panels, a distinct difference from the hexagonal solar arrays of its predecessor, the TIE/ln Fighter. The Interceptor is one of the fastest starfighters in the galaxy, nearly rivaling the Rebel RZ-1 A-Wing. This block kit contains all blocks necessary to build your very own TIE/in Starfighter. The blocks have custom sounds, full build stages and LoDs. This is an expansion pack to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3238158579]TIE/ln Starfighter Block Kit[/url], as the interceptor shares a lot of blocks with it. They assemble the probably most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3252738171]TIE/in replica[/url] to date, with some adjustments to make them work better in Space Engineers. 
+The TIE/in Starfighter is identifiable by its arrow-shaped solar collection panels, a distinct difference from the hexagonal solar arrays of its predecessor, the TIE/ln Fighter. The Interceptor is one of the fastest starfighters in the galaxy, nearly rivaling the Rebel RZ-1 A-Wing. This block kit contains all blocks necessary to build your very own TIE/in Starfighter. The blocks have custom sounds, full build stages and LoDs. This is an expansion pack to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3238158579]TIE/ln Starfighter Block Kit[/url], as the interceptor shares a lot of blocks with it. They assemble the probably most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3252738171]TIE/in replica[/url] to date, with some adjustments to make them work better in Space Engineers.
 [/quote]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]

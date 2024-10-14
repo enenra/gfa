@@ -1,10 +1,10 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3297107279]1.0[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3297107279]1.0a[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
-The TIE/mg Starfighter is identifieable by its cutout hexagonal solar collector panels and yellow paint. They offer better visibility and a sensor package able to identify ore deposits but sacrifice maneuvrability and combat performance. Exclusively in use by the Mining Guild, it can be found patrolling remote facilities and systems. This block kit contains all blocks necessary to build your very own TIE/mg Starfighter. The blocks have custom sounds, full build stages and LoDs. This is an expansion pack to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3238158579]TIE/ln Starfighter Block Kit[/url], as the Mining Guild TIE shares a lot of blocks with it. They assemble the probably most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3297099092]TIE/mg replica[/url] to date, with some adjustments to make them work better in Space Engineers. 
+The TIE/mg Starfighter is identifieable by its cutout hexagonal solar collector panels and yellow paint. They offer better visibility and a sensor package able to identify ore deposits but sacrifice maneuvrability and combat performance. Exclusively in use by the Mining Guild, it can be found patrolling remote facilities and systems. This block kit contains all blocks necessary to build your very own TIE/mg Starfighter. The blocks have custom sounds, full build stages and LoDs. This is an expansion pack to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3238158579]TIE/ln Starfighter Block Kit[/url], as the Mining Guild TIE shares a lot of blocks with it. They assemble the probably most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3297099092]TIE/mg replica[/url] to date, with some adjustments to make them work better in Space Engineers.
 [/quote]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]

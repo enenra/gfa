@@ -1,4 +1,4 @@
-[h1]Patch 1.2b[/h1]
+[h1]Patch 1.2c[/h1]
 [list]
-[*]Fixed crash when welding a landing gear in survival mode.
+[*]SE 1.205 Contact Patch compatibility. (BlockCategories)
 [/list]
