@@ -1,4 +1,4 @@
-[h1]Patch 1.1a[/h1]
+[h1]Patch 1.1b[/h1]
 [list]
-[*]SE 1.205 Contact Patch compatibility. (BlockCategories)
+[*]Fixed TIE Hatch, TIE Port and TIE Docking Tube connector functionalities. They should now fully work again.
 [/list]
