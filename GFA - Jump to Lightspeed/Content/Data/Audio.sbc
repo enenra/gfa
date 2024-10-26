@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Hyperspace_Charging</SubtypeId>
+      </Id>
+      <Category>SHIP</Category>
+      <MaxDistance>500</MaxDistance>
+      <PitchVariation>30</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_Hyperspace_Charging.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_Hyperspace_Enter</SubtypeId>
+      </Id>
+      <Category>SHIP</Category>
+      <MaxDistance>5000</MaxDistance>
+      <PitchVariation>30</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_Hyperspace_Enter_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_Hyperspace_Enter_2.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_LG_Hyperspace_Exit</SubtypeId>
+      </Id>
+      <Category>SHIP</Category>
+      <MaxDistance>5000</MaxDistance>
+      <PitchVariation>30</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_LG_Hyperspace_Exit_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_LG_Hyperspace_Exit_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_LG_Hyperspace_Exit_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc_GFA_SG_Hyperspace_Exit</SubtypeId>
+      </Id>
+      <Category>SHIP</Category>
+      <MaxDistance>5000</MaxDistance>
+      <PitchVariation>30</PitchVariation>
+      <PreventSynchronization>1</PreventSynchronization>
+      <Volume>1.0</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_SG_Hyperspace_Exit_1.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_SG_Hyperspace_Exit_2.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Hyperspace\Arc_GFA_SG_Hyperspace_Exit_3.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+
+  </Sounds>
+</Definitions>
