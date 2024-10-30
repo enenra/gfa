@@ -61,6 +61,7 @@
       </Description>
     </EntityComponent>
 
+    <!-- TODO: Add squad-logic trigger groups. -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -87,7 +88,6 @@
         [Triggers:GFA_MG_Trigger_PatrolWing_Despawn]
 
         [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
-        <!-- TODO: This is where squad-logic trigger groups go. -->
         [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
 
         [TriggerGroups:MSB_Patrol_TriggerGroup]
