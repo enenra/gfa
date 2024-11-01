@@ -2,6 +2,12 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpawnGroups>
 
+    <!--
+    TODO:
+      * Implement spawning from static grids.
+      * Use toggle to switch to plane-like flying.
+    -->
+
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
@@ -86,6 +92,8 @@
         [Triggers:GFA_MG_Trigger_Patrol_Despawn]
 
         [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
+        [AutopilotData:MSB_Patrol_Autopilot]
+        [TriggerGroups:MSB_Fighter_TriggerGroup]
         [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
 
         [TriggerGroups:MSB_Patrol_TriggerGroup]
