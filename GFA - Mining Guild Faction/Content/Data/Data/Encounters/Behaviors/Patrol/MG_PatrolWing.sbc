@@ -74,7 +74,7 @@
         [BehaviorName:Patrol]
 
         [TargetData:MSB_TargetProfile_ShortRange]
-        [AutopilotData:MSB_Patrol_Autopilot]
+        [AutopilotData:MSB_PatrolArea_Autopilot]
         [SecondaryAutopilotData:GFA_Autopilot_Fighter]
 
         [DialogueBanks:MG_DialogueBank_Dynamic.xml]
@@ -92,7 +92,7 @@
         [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
         [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
 
-        [TriggerGroups:MSB_Patrol_TriggerGroup]
+        [TriggerGroups:MSB_PatrolArea_TriggerGroup]
       </Description>
     </EntityComponent>
 
