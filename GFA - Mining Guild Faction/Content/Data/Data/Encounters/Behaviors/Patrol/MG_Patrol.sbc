@@ -5,7 +5,6 @@
     <!--
     TODO:
       * Implement spawning from static grids.
-      * Use toggle to switch to plane-like flying.
     -->
 
     <SpawnGroup>
@@ -14,9 +13,9 @@
         <SubtypeId>GFA_MG_SpawnGroup_Patrol</SubtypeId>
       </Id>
       <Description>
-		    [Modular Encounters SpawnGroup]
+        [Modular Encounters SpawnGroup]
 
-		    [UseRivalAi:true]
+        [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
         [SpawnConditionsProfiles:GFA_MG_Patrol_SpawnConditions]
@@ -79,8 +78,9 @@
         [BehaviorName:Patrol]
 
         [TargetData:MSB_TargetProfile_ShortRange]
-        [AutopilotData:MSB_Patrol_Autopilot]
+        [AutopilotData:GFA_Patrol_Autopilot]
         [SecondaryAutopilotData:GFA_Autopilot_Fighter]
+        [TertiaryAutopilotData:GFA_Fighter_Autopilot_LowAltitude]
 
         [DialogueBanks:MG_DialogueBank_Dynamic.xml]
 
