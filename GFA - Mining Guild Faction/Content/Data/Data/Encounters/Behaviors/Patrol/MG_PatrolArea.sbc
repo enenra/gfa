@@ -83,16 +83,20 @@
 
         [DialogueBanks:MG_DialogueBank_Dynamic.xml]
 
-        [UseRetreatTimer:true]
-        [RetreatTimerTrigger:600]
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
 
         [Triggers:GFA_MG_PatrolArea_Trigger_SpawnSetup]
         [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
         [Triggers:GFA_MG_Trigger_PatrolArea_Despawn]
 
-        [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
+        [TriggerGroups:MSB_Dynamic_CommonTriggerGroup]
         [TriggerGroups:MSB_PatrolArea_TriggerGroup]
         [TriggerGroups:MSB_Fighter_TriggerGroup]
+        [TriggerGroups:MSB_CommSystem_TriggerGroup]
 
         [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
       </Description>
