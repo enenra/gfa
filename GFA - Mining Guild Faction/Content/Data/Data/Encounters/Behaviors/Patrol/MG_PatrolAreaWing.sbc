@@ -74,13 +74,16 @@
         [BehaviorName:Patrol]
 
         [TargetData:MSB_TargetProfile_ShortRange]
-        [AutopilotData:MSB_PatrolArea_Autopilot]
+        [AutopilotData:GFA_PatrolArea_Autopilot]
         [SecondaryAutopilotData:GFA_Autopilot_Fighter]
 
         [DialogueBanks:MG_DialogueBank_Dynamic.xml]
 
-        [UseRetreatTimer:true]
-        [RetreatTimerTrigger:600]
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
 
         [EscortOffsets:{X:100 Y:0 Z:0}]
         [EscortOffsets:{X:-100 Y:0 Z:0}]
@@ -89,10 +92,12 @@
         [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
         [Triggers:GFA_MG_Trigger_PatrolWing_Despawn]
 
-        [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
         [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
 
+        [TriggerGroups:MSB_Dynamic_CommonTriggersGroup]
         [TriggerGroups:MSB_PatrolArea_TriggerGroup]
+        [TriggerGroups:MSB_Fighter_TriggerGroup]
+        [TriggerGroups:MSB_CommSystem_TriggerGroup]
       </Description>
     </EntityComponent>
 
