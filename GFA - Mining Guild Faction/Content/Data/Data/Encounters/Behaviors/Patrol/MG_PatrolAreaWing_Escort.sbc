@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_SpawnGroup_PatrolWing_Escort</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_SpawnGroup</SubtypeId>
       </Id>
       <Description>
 		    [Modular Encounters SpawnGroup]
@@ -13,7 +13,7 @@
 		    [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_PatrolWing_Escort_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_PatrolAreaWing_Escort_SpawnConditions]
         [ManipulationProfiles:GFA_MG_Manipulation]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
@@ -27,7 +27,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>50</Speed>
-          <Behaviour>GFA_MG_PatrolWing_Escort_Behavior</Behaviour>
+          <Behaviour>GFA_MG_PatrolAreaWing_Escort_Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="TIEmg Starfighter MES Grunt">
           <Position>
@@ -36,7 +36,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>50</Speed>
-          <Behaviour>GFA_MG_PatrolWing_Escort_Behavior</Behaviour>
+          <Behaviour>GFA_MG_PatrolAreaWing_Escort_Behavior</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -47,7 +47,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolWing_Escort_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
@@ -75,7 +75,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolWing_Escort_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -94,9 +94,9 @@
 
         [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
 
-        [Triggers:GFA_MG_PatrolWing_Escort_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_PatrolAreaWing_Escort_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_PatrolAreaWing_Escort_Trigger_Despawn]
         [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
-        [Triggers:GFA_MG_Trigger_PatrolWing_Escort_Despawn]
 
         [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
 
@@ -109,7 +109,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolWing_Escort_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -119,14 +119,15 @@
         [StartsReady:true]
 
         [MaxActions:2]
-        [Actions:GFA_MG_Action_PatrolWing_Escort_Rename]
-        [Actions:GFA_MG_Action_PatrolWing_Escort_DialogueOverride]
+        [Actions:GFA_MG_PatrolAreaWing_Escort_Action_Rename]
+        [Actions:GFA_MG_PatrolAreaWing_Escort_Action_DialogueOverride]
+        [Actions:GFA_MG_PatrolAreaWing_Escort_Action_SetDespawnType]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Action_PatrolWing_Escort_Rename</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_Action_Rename</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -146,12 +147,23 @@
         [DialogueBanks:DialogueOverride_MG_Patrol.xml]
       </Description>
     </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_Action_SetDespawnType</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
+      </Description>
+    </EntityComponent>
 
     <!-- Refund points on despawn. -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Trigger_PatrolWing_Escort_Despawn</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_Trigger_Despawn</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -162,13 +174,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_MG_Action_PatrolWing_Escort_Despawn]
+        [Actions:GFA_MG_PatrolAreaWing_Escort_Action_Despawn]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Action_PatrolWing_Escort_Despawn</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolAreaWing_Escort_Action_Despawn</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]

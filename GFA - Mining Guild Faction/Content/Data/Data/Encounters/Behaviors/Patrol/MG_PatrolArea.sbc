@@ -10,7 +10,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_SpawnGroup_Patrol</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolArea_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -87,11 +87,9 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
-
         [Triggers:GFA_MG_PatrolArea_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_PatrolArea_Trigger_Despawn]
         [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
-        [Triggers:GFA_MG_Trigger_PatrolArea_Despawn]
 
         [TriggerGroups:GFA_TriggerGroup_Dialogue_Dynamic]
 
@@ -116,14 +114,15 @@
         [StartsReady:true]
 
         [MaxActions:2]
-        [Actions:GFA_MG_Action_PatrolArea_Rename]
-        [Actions:GFA_MG_Action_PatrolArea_DialogueOverride]
+        [Actions:GFA_MG_PatrolArea_Action_Rename]
+        [Actions:GFA_MG_PatrolArea_Action_DialogueOverride]
+        [Actions:GFA_MG_PatrolArea_Action_SetDespawnType]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Action_PatrolArea_Rename</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Action_Rename</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -135,7 +134,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Action_PatrolArea_DialogueOverride</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Action_DialogueOverride</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -143,12 +142,23 @@
         [DialogueBanks:DialogueOverride_MG_Patrol.xml]
       </Description>
     </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Action_SetDespawnType</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
+      </Description>
+    </EntityComponent>
 
     <!-- Refund points on despawn. -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Trigger_PatrolArea_Despawn</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Trigger_Despawn</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -159,13 +169,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_MG_Action_PatrolArea_Despawn]
+        [Actions:GFA_MG_PatrolArea_Action_Despawn]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Action_PatrolArea_Despawn</SubtypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Action_Despawn</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
