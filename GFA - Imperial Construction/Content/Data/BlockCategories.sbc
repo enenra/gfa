@@ -32,6 +32,7 @@
 
         <string>TerminalBlock/GFA_LG_IMP_ControlPanel</string>
         <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
+        <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
       </ItemIds>
     </Category>
 
@@ -65,6 +66,7 @@
 
         <string>TerminalBlock/GFA_LG_IMP_ControlPanel</string>
         <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
+        <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
       </ItemIds>
     </Category>
 
@@ -89,6 +91,13 @@
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope</string>
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1</string>
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror</string>
+
+        <string>CubeBlock/GFA_LG_IMP_HangarPylon</string>
+        <string>CubeBlock/GFA_LG_IMP_HangarPylonBottom</string>
+
+        <string>TerminalBlock/GFA_LG_IMP_ControlPanel</string>
+        <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
+        <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
       </ItemIds>
     </Category>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -112,6 +121,27 @@
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope</string>
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1</string>
         <string>CubeBlock/GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror</string>
+
+        <string>CubeBlock/GFA_LG_IMP_HangarPylon</string>
+        <string>CubeBlock/GFA_LG_IMP_HangarPylonBottom</string>
+
+        <string>TerminalBlock/GFA_LG_IMP_ControlPanel</string>
+        <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
+        <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">      <!-- Utility -->
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Utility</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Utility</DisplayName>
+      <Name>Section1_Position3_Utility</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
+        <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
       </ItemIds>
     </Category>
 
