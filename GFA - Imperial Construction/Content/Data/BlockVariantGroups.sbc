@@ -39,5 +39,18 @@
       </Blocks>
     </BlockVariantGroup>
 
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_Crate" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_SquareCrate.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_SquareCrate</DisplayName>
+      <Description>Description_GFA_LG_IMP_SquareCrate</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SquareCrate" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SquareCrate2" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SquareCrate3" />
+      </Blocks>
+    </BlockVariantGroup>
+
   </BlockVariantGroups>
 </Definitions>

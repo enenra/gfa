@@ -34,6 +34,10 @@
         <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
         <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
         <string>InteriorLight/GFA_LG_IMP_FloorLamp</string>
+
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate2</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate3</string>
       </ItemIds>
     </Category>
 
@@ -69,6 +73,10 @@
         <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
         <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
         <string>InteriorLight/GFA_LG_IMP_FloorLamp</string>
+
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate2</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate3</string>
       </ItemIds>
     </Category>
 
@@ -101,6 +109,10 @@
         <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
         <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
         <string>InteriorLight/GFA_LG_IMP_FloorLamp</string>
+
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate2</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate3</string>
       </ItemIds>
     </Category>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -147,6 +159,20 @@
         <string>InteriorLight/GFA_LG_IMP_FakeLight</string>
         <string>InteriorLight/GFA_LG_IMP_StandingLamp</string>
         <string>InteriorLight/GFA_LG_IMP_FloorLamp</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Logistics</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Logistics</DisplayName>
+      <Name>Section1_Position3_Logistics</Name>
+      <ItemIds>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate2</string>
+        <string>CubeBlock/GFA_LG_IMP_SquareCrate3</string>
       </ItemIds>
     </Category>
 
