@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_AdvancedDoorDefinition">
+      <Id>
+        <TypeId>AdvancedDoor</TypeId>
+        <SubtypeId>GFA_LG_IMP_FieldSmall</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_FieldSmall}</DisplayName>
+      <Description>{LOC:Description_GFA_HangarForceFields}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_FieldSmall.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="6" y="4" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_IMP_FieldSmall.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1250" />
+        <Component Subtype="Construction" Count="515" />
+        <Component Subtype="SmallTube" Count="340" />
+        <Component Subtype="Motor" Count="210" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="Construction" Count="225" />
+        <Component Subtype="SteelPlate" Count="500" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="5.00" StartY="0.00" EndX="6.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="5.00" EndY="4.00" Enabled="false" PressurizedWhenOpen="false"/>
+        <MountPoint Side="Back" StartX="5.00" StartY="0.00" EndX="6.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="5.00" EndY="4.00" Enabled="false" PressurizedWhenOpen="false"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="6.00" EndY="1.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="6.00" EndY="1.00" Default="true" PressurizedWhenOpen="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_FieldSmall_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_IMP_FieldSmall_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_FieldSmall_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_LG_IMP_FieldSmall</BlockPairName>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <PCU>100</PCU>
+
+      <PowerConsumptionIdle>0.01</PowerConsumptionIdle>
+      <PowerConsumptionMoving>0.01</PowerConsumptionMoving>
+
+      <Subparts>
+        <SubpartDefinition>
+          <Name>field</Name>
+        </SubpartDefinition>
+      </Subparts>
+      <OpeningSequence>
+        <Opening>
+          <IDs>0</IDs>
+          <Move>Rotate</Move>
+          <RotationAxis>Z</RotationAxis>
+          <PivotPosition x="0.0" y="0.0" z="0.0" />
+          <MaxOpen>0</MaxOpen>
+          <Speed>5</Speed>
+        </Opening>
+      </OpeningSequence>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

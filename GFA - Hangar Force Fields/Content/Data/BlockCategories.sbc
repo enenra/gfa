@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>AdvancedDoor/GFA_LG_IMP_FieldSmall</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>Section1_Position1_LargeBlocks</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>AdvancedDoor/GFA_LG_IMP_FieldSmall</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Nonarmor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Nonarmor</DisplayName>
+      <Name>Section1_Position2_Nonarmor</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>AdvancedDoor/GFA_LG_IMP_FieldSmall</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Structure</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Structure</DisplayName>
+      <Name>Section1_Position3_ShipStructure</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>AdvancedDoor/GFA_LG_IMP_FieldSmall</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>

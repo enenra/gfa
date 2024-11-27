@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<TransparentMaterials>
+
+		<TransparentMaterial>
+			<Id>
+				<TypeId>TransparentMaterialDefinition</TypeId>
+				<SubtypeId>FieldEdge</SubtypeId>
+			</Id>
+      <AlphaMistingEnable>false</AlphaMistingEnable>
+      <CanBeAffectedByOtherLights>false</CanBeAffectedByOtherLights>
+      <SoftParticleDistanceScale>10</SoftParticleDistanceScale>
+      <Texture>Textures\Particles\ReflectorCone.dds</Texture>
+      <UVOffset>
+        <X>0</X>
+        <Y>0</Y>
+      </UVOffset>
+      <UVSize>
+        <X>1</X>
+        <Y>1</Y>
+      </UVSize>
+      <Color>
+        <X>0.8</X>
+        <Y>2.2</Y>
+        <Z>3.55</Z>
+        <W>0.025</W>
+      </Color>
+    </TransparentMaterial>
+
+	</TransparentMaterials>
+</Definitions>
