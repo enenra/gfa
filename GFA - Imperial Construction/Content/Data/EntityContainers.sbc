@@ -32,5 +32,35 @@
       </DefaultComponents>
     </Container>
 
+    <Container>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>GFA_LG_IMP_SimpleCrate</SubtypeId>
+      </Id>
+      <DefaultComponents>
+        <Component BuilderType="MyObjectBuilder_Inventory" SubtypeId="GFA_LG_IMP_SimpleCrate" ForceCreate="true"/>
+      </DefaultComponents>
+    </Container>
+
+    <Container>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>GFA_LG_IMP_SimpleCrate2</SubtypeId>
+      </Id>
+      <DefaultComponents>
+        <Component BuilderType="MyObjectBuilder_Inventory" SubtypeId="GFA_LG_IMP_SimpleCrate2" ForceCreate="true"/>
+      </DefaultComponents>
+    </Container>
+
+    <Container>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>GFA_LG_IMP_SimpleCrate3</SubtypeId>
+      </Id>
+      <DefaultComponents>
+        <Component BuilderType="MyObjectBuilder_Inventory" SubtypeId="GFA_LG_IMP_SimpleCrate3" ForceCreate="true"/>
+      </DefaultComponents>
+    </Container>
+
   </EntityContainers>
 </Definitions>

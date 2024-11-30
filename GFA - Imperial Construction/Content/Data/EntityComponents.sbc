@@ -26,5 +26,29 @@
       <Size x="2" y="2" z="2" />
     </EntityComponent>
 
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_LG_IMP_SimpleCrate</SubtypeId>
+      </Id>
+      <Size x="1" y="1" z="1.5" />
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_LG_IMP_SimpleCrate2</SubtypeId>
+      </Id>
+      <Size x="2" y="1" z="1.5" />
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_LG_IMP_SimpleCrate3</SubtypeId>
+      </Id>
+      <Size x="2" y="2" z="1.5" />
+    </EntityComponent>
+
   </EntityComponents>
 </Definitions>
