@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>GFA_LG_IMP_CorridorArc</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_CorridorArc}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_IMP_CorridorArc}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_CorridorArc.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_IMP_CorridorArc.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="225" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="SmallTube" Count="150" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="2.40" StartY="0.00" EndX="3.00" EndY="1.00"/>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="0.60" EndY="1.00"/>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="0.50" EndY="1.00"/>
+        <MountPoint Side="Back" StartX="2.50" StartY="0.00" EndX="3.00" EndY="1.00"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.50" EndX="3.00" EndY="1.00"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="0.50" EndY="0.50"/>
+        <MountPoint Side="Top" StartX="2.50" StartY="0.00" EndX="3.00" EndY="0.50"/>
+        <MountPoint Side="Bottom" StartX="2.50" StartY="0.00" EndX="3.00" EndY="1.00"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="0.50" EndY="1.00" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_CorridorArc_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_IMP_CorridorArc_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_CorridorArc_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_LG_IMP_CorridorArc</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>45</BuildTimeSeconds>
+      <PCU>1</PCU>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
