@@ -43,6 +43,8 @@
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate2</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate3</string>
+
+        <string>BatteryBlock/GFA_LG_IMP_Battery</string>
       </ItemIds>
     </Category>
 
@@ -87,6 +89,8 @@
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate2</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate3</string>
+
+        <string>BatteryBlock/GFA_LG_IMP_Battery</string>
       </ItemIds>
     </Category>
 
@@ -128,6 +132,8 @@
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate2</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate3</string>
+
+        <string>BatteryBlock/GFA_LG_IMP_Battery</string>
       </ItemIds>
     </Category>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -164,7 +170,7 @@
       </ItemIds>
     </Category>
 
-    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">      <!-- Utility -->
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
       <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId>Utility</SubtypeId>
@@ -193,6 +199,19 @@
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate2</string>
         <string>CubeBlock/GFA_LG_IMP_SimpleCrate3</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Power</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Power</DisplayName>
+      <Name>Section1_Position3_Power</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>BatteryBlock/GFA_LG_IMP_Battery</string>
       </ItemIds>
     </Category>
 
