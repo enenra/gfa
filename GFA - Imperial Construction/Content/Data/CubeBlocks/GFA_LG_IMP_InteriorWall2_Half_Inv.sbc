@@ -5,24 +5,25 @@
 		<Definition>
 			<Id>
 				<TypeId>CubeBlock</TypeId>
-				<SubtypeId>GFA_LG_IMP_InteriorWall_Half_Inv</SubtypeId>
+				<SubtypeId>GFA_LG_IMP_InteriorWall2_Half_Inv</SubtypeId>
 			</Id>
-			<DisplayName>{LOC:DisplayName_GFA_LG_IMP_InteriorWall_Half_Inv}</DisplayName>
-      <Description>Description_InteriorWall</Description>
-			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_InteriorWall_Half_Inv.dds</Icon>
+			<DisplayName>{LOC:DisplayName_GFA_LG_IMP_InteriorWall2_Half_Inv}</DisplayName>
+			<Description>Description_InteriorWall</Description>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_InteriorWall2_Half_Inv.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_Offset_Single.dds</Icon>
 			<Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1"/>
 			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\large\GFA_LG_IMP_InteriorWall_Half_Inv.mwm</Model>
-      <Components>
-        <Component Subtype="InteriorPlate" Count="10" />
-        <Component Subtype="Construction" Count="4" />
-        <Component Subtype="InteriorPlate" Count="3" />
-        <Component Subtype="Construction" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="Construction" Index="0" />
+			<Model>Models\Cubes\large\GFA_LG_IMP_InteriorWall2_Half_Inv.mwm</Model>
+			<Components>
+				<Component Subtype="InteriorPlate" Count="10" />
+				<Component Subtype="Construction" Count="4" />
+				<Component Subtype="InteriorPlate" Count="3" />
+				<Component Subtype="Construction" Count="1" />
+			</Components>
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
 				<MountPoint Side="Back" StartX="0.45" StartY="0.45" EndX="0.55" EndY="0.55" CouplingTag="imp_fakelight"/>
@@ -32,11 +33,11 @@
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.50" EndX="1.00" EndY="1.00" Default="true"/>
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_InteriorWall_Half_Inv_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_IMP_InteriorWall_Half_Inv_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_InteriorWall_Half_Inv_BS3.mwm"/>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_InteriorWall2_Half_Inv_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_IMP_InteriorWall2_Half_Inv_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_InteriorWall2_Half_Inv_BS3.mwm"/>
 			</BuildProgressModels>
-			<BlockPairName>GFA_LG_IMP_InteriorWall_Half_Inv</BlockPairName>
+			<BlockPairName>GFA_LG_IMP_InteriorWall2_Half_Inv</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>
