@@ -1,0 +1,156 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>GFA_LG_IMP_TankStanding</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_TankStanding}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_IMP_TankStanding}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_TankStanding.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="4" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_IMP_TankStanding.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="120" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="SmallTube" Count="120" />
+        <Component Subtype="Computer" Count="16" />
+        <Component Subtype="Construction" Count="80" />
+        <Component Subtype="SteelPlate" Count="40" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_TankStanding_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_IMP_TankStanding_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_TankStanding_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_IMP_TankStanding</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>2000000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Hydrogen</SubtypeId>
+      </StoredGasId>
+      <BlueprintClasses>
+        <Class>HydrogenBottles</Class>
+      </BlueprintClasses>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <PCU>25</PCU>
+      <LeakPercent>0.005</LeakPercent>
+      <GasExplosionMaxRadius>15</GasExplosionMaxRadius>
+      <GasExplosionNeededVolumeToReachMaxRadius>2000000</GasExplosionNeededVolumeToReachMaxRadius>
+      <GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+      <GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+      <GasExplosionEffect>Explosion_Warhead_15</GasExplosionEffect>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>300</unsignedInt>
+        <unsignedInt>600</unsignedInt>
+      </TieredUpdateTimes>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>GFA_LG_IMP_TankStandingO2</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_TankStandingO2}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_IMP_TankStanding}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_TankStanding.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="4" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_IMP_TankStanding.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="120" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="SmallTube" Count="120" />
+        <Component Subtype="Computer" Count="16" />
+        <Component Subtype="Construction" Count="80" />
+        <Component Subtype="SteelPlate" Count="40" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.24" EndX="1.00" EndY="0.61"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_TankStanding_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_IMP_TankStanding_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_TankStanding_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_IMP_TankStandingO2</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>100000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Oxygen</SubtypeId>
+      </StoredGasId>
+      <BlueprintClasses>
+        <Class>OxygenBottles</Class>
+      </BlueprintClasses>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <PCU>25</PCU>
+      <LeakPercent>0.0125</LeakPercent>
+      <GasExplosionMaxRadius>15</GasExplosionMaxRadius>
+      <GasExplosionNeededVolumeToReachMaxRadius>100000</GasExplosionNeededVolumeToReachMaxRadius>
+      <GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+      <GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+      <GasExplosionEffect>Explosion_Warhead_15</GasExplosionEffect>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>300</unsignedInt>
+        <unsignedInt>600</unsignedInt>
+      </TieredUpdateTimes>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
