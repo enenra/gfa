@@ -13,7 +13,35 @@
         [ClearAuthorship:true]
 
         [UseRandomNameGenerator:true]
-        [RandomGridNamePrefix:(NPC-GFA)]        
+        [RandomGridNamePrefix:(NPC-GFA)]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Manipulation_Fighter</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_MG_LootProfile_Fighter]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Manipulation_Freighter</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_MG_LootProfile_Freight]
+        [LootProfiles:GFA_MG_LootProfile_BasicContainers]
+        [LootProfiles:MES-Loot-Corpses]
       </Description>
     </EntityComponent>
 

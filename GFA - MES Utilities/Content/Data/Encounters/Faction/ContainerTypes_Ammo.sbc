@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ContainerTypes>
+
+    <!-- Sidearm -->
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SidearmAmmo_Red_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Sidearm_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SidearmAmmo_Red_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Sidearm_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SidearmAmmo_Red_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Sidearm_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SidearmAmmo_Green_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Sidearm_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SidearmAmmo_Green_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Sidearm_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SidearmAmmo_Green_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Sidearm_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
+  </ContainerTypes>
+</Definitions>
