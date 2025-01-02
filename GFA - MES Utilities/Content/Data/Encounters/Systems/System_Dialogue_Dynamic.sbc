@@ -7,14 +7,14 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_TriggerGroup_Dialogue_Dynamic</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_TriggerGroup_Dynamic</SubtypeId>
       </Id>
       <Description>
         [RivalAI TriggerGroup]
 
-        [Triggers:GFA_Trigger_Dialogue_EnemyDestroyed]
-        [Triggers:GFA_Trigger_Dialogue_DamageByFriendly]
-        [Triggers:GFA_Trigger_Dialogue_UnderFire]
+        [Triggers:GFA_DialogueSystem_Trigger_EnemyDestroyed]
+        [Triggers:GFA_DialogueSystem_Trigger_DamageByFriendly]
+        [Triggers:GFA_DialogueSystem_Trigger_UnderFire]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -45,7 +45,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_EnemyDestroyed</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_EnemyDestroyed</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -56,13 +56,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_EnemyDestroyed]
+        [Actions:GFA_DialogueSystem_Action_EnemyDestroyed]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_EnemyDestroyed</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_EnemyDestroyed</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -78,7 +78,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_EnemyDestroyedwithPlayerHelp</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_EnemyDestroyedwithPlayerHelp</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -89,13 +89,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_EnemyDestroyedwithPlayerHelp]
+        [Actions:GFA_DialogueSystem_Action_EnemyDestroyedwithPlayerHelp]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_EnemyDestroyedwithPlayerHelp</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_EnemyDestroyedwithPlayerHelp</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -111,7 +111,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_EnemyDestroyedwithPlayerMadeFinalShot</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_EnemyDestroyedwithPlayerMadeFinalShot</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -122,13 +122,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_EnemyDestroyedwithPlayerMadeFinalShot]
+        [Actions:GFA_DialogueSystem_Action_EnemyDestroyedwithPlayerMadeFinalShot]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_EnemyDestroyedwithPlayerMadeFinalShot</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_EnemyDestroyedwithPlayerMadeFinalShot</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -144,7 +144,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_DamageByFriendlyOrNeutral</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_DamageByFriendlyOrNeutral</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -156,13 +156,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_DamageByFriendlyOrNeutral]
+        [Actions:GFA_DialogueSystem_Action_DamageByFriendlyOrNeutral]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_DamageByFriendlyOrNeutral</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_DamageByFriendlyOrNeutral</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -178,7 +178,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_UnderFire</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_UnderFire</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -189,13 +189,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_UnderFire]
+        [Actions:GFA_DialogueSystem_Action_UnderFire]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_UnderFire</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_UnderFire</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -211,7 +211,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_UnderFireHealthLow</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_UnderFireHealthLow</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -222,13 +222,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_UnderFireHealthLow]
+        [Actions:GFA_DialogueSystem_Action_UnderFireHealthLow]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_UnderFireHealthLow</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_UnderFireHealthLow</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -244,7 +244,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_UnderFireGoingDown</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_UnderFireGoingDown</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -255,13 +255,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_UnderFireGoingDown]
+        [Actions:GFA_DialogueSystem_Action_UnderFireGoingDown]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_UnderFireGoingDown</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_UnderFireGoingDown</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -277,7 +277,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_Despawn</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_Despawn</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -288,13 +288,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_Despawn]
+        [Actions:GFA_DialogueSystem_Action_Despawn]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_Despawn</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_Despawn</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -310,7 +310,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_HasTarget</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_HasTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -321,13 +321,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_HasTarget]
+        [Actions:GFA_DialogueSystem_Action_HasTarget]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_HasTarget</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_HasTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -343,7 +343,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Trigger_Dialogue_SwitchToPatrol</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_SwitchToPatrol</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -354,13 +354,13 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Action_Dialogue_SwitchToPatrol]
+        [Actions:GFA_DialogueSystem_Action_SwitchToPatrol]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Action_Dialogue_SwitchToPatrol</SubtypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_SwitchToPatrol</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
