@@ -4,13 +4,13 @@
 
     <!--
     TODO:
-      * Implement spawning from static grids.
+      *
     -->
 
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -18,22 +18,23 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_PatrolArea_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_CampLandedBroken_SpawnConditions]
         [ManipulationProfiles:GFA_MG_Manipulation]
-        [ManipulationProfiles:GFA_MG_Manipulation_Fighter]
+        [ManipulationProfiles:GFA_MG_Manipulation_Camp]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
       <Frequency>5.0</Frequency>
       <Prefabs>
-        <Prefab SubtypeId="TIEmg Starfighter MES Grunt">
+        <Prefab SubtypeId="YV-865 Aurore-Class MES Broken and Landed">
           <Position>
             <X>0.0</X>
             <Y>0.0</Y>
             <Z>0.0</Z>
           </Position>
-          <Speed>50</Speed>
-          <Behaviour>GFA_MG_PatrolArea_Behavior</Behaviour>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_CampLandedBroken_Behavior</Behaviour>
+          <PlaceToGridOrigin>true</PlaceToGridOrigin>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -44,26 +45,22 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
 
-        [SpaceCargoShip:true]
-        [LunarCargoShip:true]
-        [AtmosphericCargoShip:true]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [ForceStaticGrid:true]
 
         [RivalAiAnySpawn:true]
         [FactionOwner:MG]
-        [ReplenishSystems:false]
-
-        [SkipVoxelSpawnChecks:true]
-        [SkipGridSpawnChecks:true]
-        [IgnoreCombatPhase:true]
+        [ReplenishSystems:true]
 
         [CheckCustomSandboxCounters:true]
         [CustomSandboxCounters:{Faction}_Resource_Counter]
-        [CustomSandboxCountersTargets:5]
+        [CustomSandboxCountersTargets:25]
         [SandboxCounterCompareTypes:GreaterOrEqual]
       </Description>
     </EntityComponent>
@@ -71,32 +68,32 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
 
-        [BehaviorName:Patrol]
+	      [BehaviorName:Passive]
 
         [TargetData:MSB_TargetProfile_ShortRange]
-        [AutopilotData:MSB_PatrolArea_Autopilot]
-        [SecondaryAutopilotData:MSB_Fighter_Autopilot_Fighter]
 
-        [DialogueBanks:MG_DialogueBank_Dynamic.xml]
+        [DialogueBanks:MG_DialogueBank_Static.xml]
 
         [UsePlayerDistanceTimer:true]
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_PatrolArea_Trigger_SpawnSetup]
-        [Triggers:GFA_MG_PatrolArea_Trigger_Despawn]
-        [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
+        [Triggers:GFA_MG_CampLandedBroken_Trigger_SpawnSetup]
+        [Triggers:GFA_Faction_Resources_Trigger_Decrease_25]
 
-        [TriggerGroups:GFA_DialogueSystem_TriggerGroup_Dynamic]
+        [Triggers:MSB_Environment_Trigger_IsOnDarkSide]
+        [Triggers:MSB_Environment_Trigger_IsOnLightSide]
 
-        [TriggerGroups:MSB_Dynamic_CommonTriggerGroup]
-        [TriggerGroups:MSB_PatrolArea_TriggerGroup]
-        [TriggerGroups:MSB_Fighter_TriggerGroup]
+        [Triggers:GFA_MG_CampLandedBroken_Trigger_PlaceCrew]
+
+        [TriggerGroups:GFA_DialogueSystem_TriggerGroup_Static]
+
+        [TriggerGroups:MSB_Static_CommonTriggerGroup]
         [TriggerGroups:MSB_CommSystem_TriggerGroup]
       </Description>
     </EntityComponent>
@@ -105,7 +102,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -114,75 +111,85 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [MaxActions:2]
-        [Actions:GFA_MG_PatrolArea_Action_Rename]
-        [Actions:GFA_MG_PatrolArea_Action_DialogueOverride]
-        [Actions:GFA_MG_PatrolArea_Action_SetDespawnType]
+        [MaxActions:3]
+        [Actions:GFA_MG_CampLandedBroken_Action_Rename]
+        [Actions:GFA_MG_CampLandedBroken_Action_DialogueOverride]
+        [Actions:GFA_MG_CampLandedBroken_Action_PlaceDatapads]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Action_Rename</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_Action_Rename</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [ChangeAntennaHudText:true]
-        [AntennaHudText:Long Range Patrol]
+        [AntennaHudText:Freighter Camp]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Action_DialogueOverride</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_Action_DialogueOverride</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [DialogueBanks:DialogueOverride_MG_Patrol.xml]
+        [DialogueBanks:DialogueOverride_MG_CampLandedBroken.xml]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Action_SetDespawnType</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_Action_PlaceDatapads</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
+        [AddDatapadsToSeats:true]
+        [DatapadCountToAdd:1]
+
+        [DatapadNamesToAdd:Datapad_GFA_MG_CampLandedBroken_Log_1]
+        [DatapadNamesToAdd:Datapad_GFA_MG_CampLandedBroken_Log_2]
+        [DatapadNamesToAdd:Datapad_GFA_MG_CampLandedBroken_Log_3]
       </Description>
     </EntityComponent>
 
-    <!-- Refund points on despawn. -->
+    <!-- PlaceCrew -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Trigger_Despawn</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_Trigger_PlaceCrew</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
 
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Despawn]
-
+        [Type:PlayerNear]
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_MG_PatrolArea_Action_Despawn]
+        [TargetDistance:1000]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_CampLandedBroken_Action_PlaceCrew]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Action_Despawn</SubtypeId>
+        <SubtypeId>GFA_MG_CampLandedBroken_Action_PlaceCrew</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
-        [IncreaseSandboxCountersAmount:5]
+        [AddBotsToGrid:true]
+        [OnlySpawnBotsInPressurizedRooms:false]
+
+        [BotCount:3]
+
+        [BotSpawnProfileNames:GFA_MG_BotProfile_Crew]
       </Description>
     </EntityComponent>
 

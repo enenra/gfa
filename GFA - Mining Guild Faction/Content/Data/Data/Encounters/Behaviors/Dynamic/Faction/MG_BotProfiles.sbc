@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_BotProfile_Crew</SubtypeId>
+      </Id>
+      <Description>
+        [MES Bot Spawn]
+
+        [BotType:Astronaut]
+        [BotBehavior:SOLDIER]
+
+        [UseAiEnabled:true]
+        [UseGroundNodesFirst:true]
+        [CanUseLadders:true]
+        [CanUseSeats:true]
+        [CanDamageGrids:true]
+
+        [BotDisplayName:Mining Guild Crew Member]
+        [Color:{X:234 Y:214 Z:63}]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
