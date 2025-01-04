@@ -20,7 +20,7 @@
 
         [SpawnConditionsProfiles:GFA_MG_CampLandedBroken_SpawnConditions]
         [ManipulationProfiles:GFA_MG_Manipulation]
-        [ManipulationProfiles:GFA_MG_Manipulation_Camp]
+        [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -28,8 +28,8 @@
       <Prefabs>
         <Prefab SubtypeId="YV-865 Aurore-Class MES Broken and Landed">
           <Position>
-            <X>0.0</X>
-            <Y>0.0</Y>
+            <X>20.0</X>
+            <Y>1.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
