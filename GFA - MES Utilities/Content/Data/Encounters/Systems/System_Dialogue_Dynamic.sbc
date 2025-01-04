@@ -2,7 +2,11 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
 
-    <!-- TODO: Figure out cooldowns in between voice lines, prevent overlaps. -->
+    <!--
+      TODO:
+        * Figure out cooldowns in between voice lines, prevent overlaps.
+        * Implement chance to not play line (and make it higher for less important ones) using [Chance:xx] in actions.
+    -->
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
@@ -13,8 +17,18 @@
         [RivalAI TriggerGroup]
 
         [Triggers:GFA_DialogueSystem_Trigger_EnemyDestroyed]
-        [Triggers:GFA_DialogueSystem_Trigger_DamageByFriendly]
+        [Triggers:GFA_DialogueSystem_Trigger_EnemyDestroyedwithPlayerHelp]
+        [Triggers:GFA_DialogueSystem_Trigger_EnemyDestroyedwithPlayerMadeFinalShot]
+
+        [Triggers:GFA_DialogueSystem_Trigger_DamageByFriendlyOrNeutral]
         [Triggers:GFA_DialogueSystem_Trigger_UnderFire]
+        [Triggers:GFA_DialogueSystem_Trigger_UnderFireHealthLow]
+        [Triggers:GFA_DialogueSystem_Trigger_UnderFireGoingDown]
+
+        [Triggers:GFA_DialogueSystem_Trigger_HasTarget]
+        [Triggers:GFA_DialogueSystem_Trigger_SwitchToPatrol]
+
+        [Triggers:GFA_DialogueSystem_Trigger_Despawn]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
