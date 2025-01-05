@@ -30,12 +30,27 @@
           <Speed>50</Speed>
           <Behaviour>GFA_MG_PatrolAreaWing_Behavior</Behaviour>
         </Prefab>
+        <Prefab SubtypeId="TIEmg Starfighter MES Ace Leader">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>50</Speed>
+          <Behaviour>GFA_MG_Patrol_Behavior</Behaviour>
+        </Prefab>
       </Prefabs>
     </SpawnGroup>
 
   </SpawnGroups>
   <EntityComponents>
 
+    <!--
+        [CheckCustomSandboxCounters:true]
+        [CustomSandboxCounters:{Faction}_Resource_Counter]
+        [CustomSandboxCountersTargets:5]
+        [SandboxCounterCompareTypes:GreaterOrEqual]
+    -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -55,11 +70,6 @@
         [SkipVoxelSpawnChecks:true]
         [SkipGridSpawnChecks:true]
         [IgnoreCombatPhase:true]
-
-        [CheckCustomSandboxCounters:true]
-        [CustomSandboxCounters:{Faction}_Resource_Counter]
-        [CustomSandboxCountersTargets:5]
-        [SandboxCounterCompareTypes:GreaterOrEqual]
       </Description>
     </EntityComponent>
 
@@ -115,9 +125,8 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [MaxActions:3]
+        [MaxActions:1]
         [Actions:GFA_MG_PatrolAreaWing_Action_Rename]
-        [Actions:GFA_MG_PatrolAreaWing_Action_DialogueOverride]
         [Actions:GFA_MG_PatrolAreaWing_Action_SetDespawnType]
       </Description>
     </EntityComponent>
@@ -130,18 +139,7 @@
         [RivalAI Action]
 
         [ChangeAntennaHudText:true]
-        [AntennaHudText:Long Range Patrol Leader]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolAreaWing_Action_DialogueOverride</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [DialogueBanks:DialogueOverride_MG_Patrol.xml]
+        [AntennaHudText:Sector Patrol Leader]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">

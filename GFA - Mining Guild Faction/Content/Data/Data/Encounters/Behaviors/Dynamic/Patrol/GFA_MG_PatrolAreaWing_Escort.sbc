@@ -119,7 +119,7 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [MaxActions:3]
+        [MaxActions:1]
         [Actions:GFA_MG_PatrolAreaWing_Escort_Action_Rename]
         [Actions:GFA_MG_PatrolAreaWing_Escort_Action_SetDespawnType]
       </Description>
@@ -133,18 +133,7 @@
         [RivalAI Action]
 
         [ChangeAntennaHudText:true]
-        [AntennaHudText:Escort]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Action_Escort_DialogueOverride</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [DialogueBanks:DialogueOverride_MG_Patrol.xml]
+        [AntennaHudText:Sector Patrol]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
