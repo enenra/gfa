@@ -4,7 +4,7 @@
 
     <!--
     TODO:
-      *
+      * re-enable faction resources
     -->
 
     <SpawnGroup>
@@ -189,9 +189,9 @@
         [RivalAI Action]
 
         [AddBotsToGrid:true]
-        [OnlySpawnBotsInPressurizedRooms:false]
-
         [BotCount:3]
+
+        [OnlySpawnBotsInPressurizedRooms:false]
 
         [BotSpawnProfileNames:GFA_MG_BotProfile_Crew]
       </Description>
