@@ -19,6 +19,8 @@
         [RivalAiReplaceRemoteControl:true]
 
         [SpawnConditionsProfiles:GFA_MG_CampLandedBroken_SpawnConditions]
+        [SpawnConditionGroups:GFA_EnvironmentSystem_SpawnConditionsGroup]
+
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
       </Description>
@@ -29,7 +31,7 @@
         <Prefab SubtypeId="YV-865 Aurore-Class MES Broken and Landed">
           <Position>
             <X>20.0</X>
-            <Y>1.0</Y>
+            <Y>14.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
@@ -42,6 +44,12 @@
   </SpawnGroups>
   <EntityComponents>
 
+    <!--
+        [CheckCustomSandboxCounters:true]
+        [CustomSandboxCounters:{Faction}_Resource_Counter]
+        [CustomSandboxCountersTargets:25]
+        [SandboxCounterCompareTypes:GreaterOrEqual]
+    -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -57,11 +65,6 @@
         [RivalAiAnySpawn:true]
         [FactionOwner:MG]
         [ReplenishSystems:true]
-
-        [CheckCustomSandboxCounters:true]
-        [CustomSandboxCounters:{Faction}_Resource_Counter]
-        [CustomSandboxCountersTargets:25]
-        [SandboxCounterCompareTypes:GreaterOrEqual]
       </Description>
     </EntityComponent>
 
@@ -90,6 +93,8 @@
         [Triggers:MSB_Environment_Trigger_IsOnLightSide]
 
         [Triggers:GFA_MG_CampLandedBroken_Trigger_PlaceCrew]
+
+        [TriggerGroups:GFA_EnvironmentSystem_TriggerGroup]
 
         [TriggerGroups:GFA_DialogueSystem_TriggerGroup_Static]
 
