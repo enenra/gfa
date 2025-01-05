@@ -19,7 +19,6 @@
         [RivalAiReplaceRemoteControl:true]
 
         [SpawnConditionsProfiles:GFA_MG_CampLandedBroken_SpawnConditions]
-        [SpawnConditionGroups:GFA_EnvironmentSystem_SpawnConditionsGroup]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
@@ -60,6 +59,7 @@
 
         [PlanetaryInstallation:true]
         [PlanetaryInstallationType:Small]
+        [InstallationTerrainValidation:true]
         [ForceStaticGrid:true]
 
         [RivalAiAnySpawn:true]
@@ -89,12 +89,11 @@
         [Triggers:GFA_MG_CampLandedBroken_Trigger_SpawnSetup]
         [Triggers:GFA_Faction_Resources_Trigger_Decrease_25]
 
-        [Triggers:MSB_Environment_Trigger_IsOnDarkSide]
-        [Triggers:MSB_Environment_Trigger_IsOnLightSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]
+        [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
 
         [Triggers:GFA_MG_CampLandedBroken_Trigger_PlaceCrew]
-
-        [TriggerGroups:GFA_EnvironmentSystem_TriggerGroup]
 
         [TriggerGroups:GFA_DialogueSystem_TriggerGroup_Static]
 
