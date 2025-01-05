@@ -2,12 +2,6 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpawnGroups>
 
-    <!--
-    TODO:
-      * Implement spawning from static grids.
-      * re-enable resource cost
-    -->
-
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
@@ -37,27 +31,12 @@
           <Speed>50</Speed>
           <Behaviour>GFA_MG_Patrol_Behavior</Behaviour>
         </Prefab>
-        <Prefab SubtypeId="TIEmg Starfighter MES Ace">
-          <Position>
-            <X>0.0</X>
-            <Y>0.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>50</Speed>
-          <Behaviour>GFA_MG_Patrol_Behavior</Behaviour>
-        </Prefab>
       </Prefabs>
     </SpawnGroup>
 
   </SpawnGroups>
   <EntityComponents>
 
-    <!--
-        [CheckCustomSandboxCounters:true]
-        [CustomSandboxCounters:{Faction}_Resource_Counter]
-        [CustomSandboxCountersTargets:5]
-        [SandboxCounterCompareTypes:GreaterOrEqual]
-    -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -67,6 +46,7 @@
         [MES Spawn Conditions]
 
         [SpaceCargoShip:true]
+        [GravityCargoShip:true]
         [LunarCargoShip:true]
         [AtmosphericCargoShip:true]
 
@@ -77,8 +57,6 @@
         [SkipVoxelSpawnChecks:true]
         [SkipGridSpawnChecks:true]
         [IgnoreCombatPhase:true]
-
-        [PrefabSpawningMode:Random]
       </Description>
     </EntityComponent>
 
@@ -103,8 +81,6 @@
         [PlayerDistanceTimerTrigger:30000]
 
         [Triggers:GFA_MG_Patrol_Trigger_SpawnSetup]
-        [Triggers:GFA_MG_Patrol_Trigger_Despawn]
-        [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
 
         [TriggerGroups:GFA_DialogueSystem_TriggerGroup_Dynamic]
 
@@ -155,37 +131,6 @@
         [RivalAI Action]
 
         [SetBooleansTrue:MSB_Despawn_Use_Simple]
-      </Description>
-    </EntityComponent>
-
-    <!-- Refund points on despawn. -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Patrol_Trigger_Despawn</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Despawn]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_MG_Patrol_Action_Despawn]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Patrol_Action_Despawn</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
-        [IncreaseSandboxCountersAmount:5]
       </Description>
     </EntityComponent>
 

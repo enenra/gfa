@@ -2,12 +2,6 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpawnGroups>
 
-    <!--
-    TODO:
-      * Implement spawning from static grids.
-      * re-enable resource cost
-    -->
-
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
@@ -52,12 +46,6 @@
   </SpawnGroups>
   <EntityComponents>
 
-    <!--
-        [CheckCustomSandboxCounters:true]
-        [CustomSandboxCounters:{Faction}_Resource_Counter]
-        [CustomSandboxCountersTargets:5]
-        [SandboxCounterCompareTypes:GreaterOrEqual]
-    -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -67,6 +55,7 @@
         [MES Spawn Conditions]
 
         [SpaceCargoShip:true]
+        [GravityCargoShip:true]
         [LunarCargoShip:true]
         [AtmosphericCargoShip:true]
 
@@ -103,8 +92,6 @@
         [PlayerDistanceTimerTrigger:30000]
 
         [Triggers:GFA_MG_PatrolArea_Trigger_SpawnSetup]
-        [Triggers:GFA_MG_PatrolArea_Trigger_Despawn]
-        [Triggers:GFA_Faction_Resources_Trigger_Decrease_5]
 
         [TriggerGroups:GFA_DialogueSystem_TriggerGroup_Dynamic]
 
@@ -153,38 +140,7 @@
       <Description>
         [RivalAI Action]
 
-        [SetBooleansTrue:MSB_Despawn_Use_FlyToClosestFactionStatic]
-      </Description>
-    </EntityComponent>
-
-    <!-- Refund points on despawn. -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Trigger_Despawn</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Despawn]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_MG_PatrolArea_Action_Despawn]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Action_Despawn</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [IncreaseSandboxCounters:{Faction}_Resource_Counter]
-        [IncreaseSandboxCountersAmount:5]
+        [SetBooleansTrue:MSB_Despawn_Use_Simple]
       </Description>
     </EntityComponent>
 
