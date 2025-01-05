@@ -20,6 +20,7 @@
         [RivalAiReplaceRemoteControl:true]
 
         [SpawnConditionsProfiles:GFA_MG_PatrolArea_SpawnConditions]
+
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Fighter]
       </Description>
@@ -43,7 +44,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>50</Speed>
-          <Behaviour>GFA_MG_Patrol_Behavior</Behaviour>
+          <Behaviour>GFA_MG_PatrolArea_Behavior</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>

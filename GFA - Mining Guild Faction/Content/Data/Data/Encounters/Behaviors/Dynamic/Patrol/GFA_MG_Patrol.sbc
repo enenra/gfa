@@ -20,6 +20,7 @@
         [RivalAiReplaceRemoteControl:true]
 
         [SpawnConditionsProfiles:GFA_MG_Patrol_SpawnConditions]
+
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Fighter]
       </Description>
@@ -50,6 +51,7 @@
 
   </SpawnGroups>
   <EntityComponents>
+
     <!--
         [CheckCustomSandboxCounters:true]
         [CustomSandboxCounters:{Faction}_Resource_Counter]
@@ -123,6 +125,7 @@
         [RivalAI Trigger]
 
         [Type:Timer]
+
         [UseTrigger:true]
         [StartsReady:true]
 
@@ -139,6 +142,8 @@
       <Description>
         [RivalAI Action]
 
+        [DebugMessage:Setting Antenna name]
+
         [ChangeAntennaHudText:true]
         [AntennaHudText:Long Range Patrol]
       </Description>
@@ -150,6 +155,8 @@
       </Id>
       <Description>
         [RivalAI Action]
+
+        [DebugMessage:Setting despawn type]
 
         [SetBooleansTrue:MSB_Despawn_Use_Simple]
       </Description>
