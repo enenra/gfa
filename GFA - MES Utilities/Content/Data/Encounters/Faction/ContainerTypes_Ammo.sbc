@@ -95,5 +95,284 @@
       </Items>
     </ContainerType>
 
+    <!-- Small -->
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SmallAmmo_Red_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Small_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SmallAmmo_Red_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Small_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SmallAmmo_Red_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Small_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SmallAmmo_Green_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Small_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SmallAmmo_Green_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Small_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_SmallAmmo_Green_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Small_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
+    <!-- Medium -->
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_MediumAmmo_Red_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Medium_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_MediumAmmo_Red_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Medium_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_MediumAmmo_Red_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Medium_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_MediumAmmo_Green_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Medium_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_MediumAmmo_Green_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Medium_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_MediumAmmo_Green_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Medium_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
+    <!-- Large -->
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_LargeAmmo_Red_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Large_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_LargeAmmo_Red_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Large_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_LargeAmmo_Red_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Large_Red</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_LargeAmmo_Green_1</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="10" AmountMax="50">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Large_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_LargeAmmo_Green_2</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="25" AmountMax="100">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Large_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+    <ContainerType CountMin="0" CountMax="1">
+      <Id>
+        <TypeId>ContainerTypeDefinition</TypeId>
+        <SubtypeId>GFA_ContainerTypes_LargeAmmo_Green_3</SubtypeId>
+      </Id>
+      <Items>
+        <Item AmountMin="250" AmountMax="500">
+          <Frequency>1.0</Frequency>
+          <Id>
+            <TypeId>AmmoMagazine</TypeId>
+            <SubtypeId>GFA_AmmoMag_Large_Green</SubtypeId>
+          </Id>
+        </Item>
+      </Items>
+    </ContainerType>
+
   </ContainerTypes>
 </Definitions>
