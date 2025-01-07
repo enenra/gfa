@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- Imperial -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Sidearm</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Sidearm_Red]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Sidearm_Green]
+        [MaxItemAmount:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Small</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Small_Red]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Small_Green]
+        [MaxItemAmount:50]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Medium</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Medium_Red]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Medium_Green]
+        [MaxItemAmount:25]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Large</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Large_Red]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Large_Green]
+        [MaxItemAmount:10]
+      </Description>
+    </EntityComponent>
+
+    <!-- Rebel -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Sidearm</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Sidearm_Green]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Sidearm_Red]
+        [MaxItemAmount:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Small</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Small_Green]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Small_Red]
+        [MaxItemAmount:50]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Medium</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Medium_Green]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Medium_Red]
+        [MaxItemAmount:25]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Replenishment_Imperial_Large</SubtypeId>
+      </Id>
+      <Description>
+        [MES Replenishment]
+
+        [RestrictedItems:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Large_Green]
+
+        [MaxItemId:MyObjectBuilder_AmmoMagazine/GFA_AmmoMag_Large_Red]
+        [MaxItemAmount:10]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

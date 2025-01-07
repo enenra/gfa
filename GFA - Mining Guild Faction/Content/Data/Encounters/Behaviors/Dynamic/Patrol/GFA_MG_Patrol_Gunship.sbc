@@ -17,6 +17,10 @@
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Gunship]
+
+        [ReplenishSystems:true]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Small]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
