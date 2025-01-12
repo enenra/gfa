@@ -1,33 +1,50 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<CubeBlocks>
-		<Definition>
-			<Id>
-				<TypeId>CubeBlock</TypeId>
-				<SubtypeId>GFA_LG_CR90_BridgeWindow</SubtypeId>
-			</Id>
-			<DisplayName>{LOC:DisplayName_GFA_LG_CR90_BridgeWindow}</DisplayName>
-			<Description>{LOC:Description_GFA_LG_CR90_BridgeWindow}</Description>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
-			<CubeSize>Large</CubeSize>
-			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="3" y="1" z="1"/>
-			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\large\GFA_LG_CR90_BridgeWindow.mwm</Model>
-			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
-			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
-			<MountPoints>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
-				<MountPoint Side="Left" StartX="0.50" StartY="0.00" EndX="1.00" EndY="1.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="0.50" EndY="1.00"/>
-				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.05"/>
-				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00" Default="true"/>
-			</MountPoints>
-			<BlockPairName>GFA_LG_CR90_BridgeWindow</BlockPairName>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-		</Definition>
-	</CubeBlocks>
+  <CubeBlocks>
+
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>GFA_LG_CR90_BridgeWindow</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_CR90_BridgeWindow}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_CR90_BridgeWindow}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_CR90_BridgeWindow.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_CR90_BridgeWindow.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="BulletproofGlass" Count="40" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="Construction" Count="15" />
+        <Component Subtype="SteelPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+        <MountPoint Side="Left" StartX="0.50" StartY="0.00" EndX="1.00" EndY="1.00"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="0.50" EndY="1.00"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.05"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00" Default="true"/>
+      </MountPoints>
+      <BlockPairName>GFA_LG_CR90_BridgeWindow</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_CR90_BridgeWindow_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_CR90_BridgeWindow_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_CR90_BridgeWindow_BS3.mwm"/>
+      </BuildProgressModels>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PCU>1</PCU>
+    </Definition>
+
+  </CubeBlocks>
 </Definitions>
