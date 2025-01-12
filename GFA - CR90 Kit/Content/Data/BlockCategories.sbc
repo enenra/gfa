@@ -12,6 +12,7 @@
       <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_CR90_BridgeWindow</string>
+        <string>RadioAntenna/GFA_LG_CR90_Radar</string>
       </ItemIds>
     </Category>
 
@@ -25,6 +26,7 @@
       <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_CR90_BridgeWindow</string>
+        <string>RadioAntenna/GFA_LG_CR90_Radar</string>
       </ItemIds>
     </Category>
 
@@ -38,6 +40,7 @@
       <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_CR90_BridgeWindow</string>
+        <string>RadioAntenna/GFA_LG_CR90_Radar</string>
       </ItemIds>
     </Category>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -50,6 +53,18 @@
       <StrictSearch>true</StrictSearch>
       <ItemIds>
         <string>CubeBlock/GFA_LG_CR90_BridgeWindow</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Utility</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Utility</DisplayName>
+      <Name>Section1_Position3_Utility</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>RadioAntenna/GFA_LG_CR90_Radar</string>
       </ItemIds>
     </Category>
 
