@@ -14,6 +14,7 @@
 [img]https://i.imgur.com/XoYAWwP.gif[/img]
 [list]
 [*]Imperial Hangar Force Field 6x4
+[*]Imperial Hangar Force Field 7x4
 [/list]
 [img]https://i.imgur.com/y3VyaKA.gif[/img]
 
