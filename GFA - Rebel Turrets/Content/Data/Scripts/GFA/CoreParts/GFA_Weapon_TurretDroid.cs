@@ -114,7 +114,7 @@ namespace Scripts {
                             Restart = true, // Whether to end a looping effect instantly when firing stops.
                             MaxDistance = 800,
                             MaxDuration = 0.1f,
-                            Scale = 0.75f, // Scale of effect.
+                            Scale = 0.25f, // Scale of effect.
                         },
                     },
                 },

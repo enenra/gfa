@@ -41,7 +41,7 @@ namespace Scripts
     {
         private AmmoDef GFA_Ammo_TurretDroid_Red => new AmmoDef
         {
-            AmmoMagazine = "GFA_AmmoMag_Medium_Red", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoMagazine = "GFA_AmmoMag_Sidearm_Red", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "Turret Droid Bolt Red", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             TerminalName = "Red Blaster Cartridge", // Optional terminal name for this ammo type, used when picking ammo/cycling consumables.  Safe to have duplicates across different ammo defs.
             HybridRound = true, // Use both a physical ammo magazine and energy per shot.
@@ -144,7 +144,7 @@ namespace Scripts
                         DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
                         Extras = new ParticleOptionDef
                         {
-                            Scale = 2,
+                            Scale = 1,
                             HitPlayChance = 1f,
                         },
                     },
@@ -158,8 +158,8 @@ namespace Scripts
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 10f,
-                        Width = 0.2f,
+                        Length = 3f,
+                        Width = 0.05f,
                         Color = Color(red: 13, green: 3, blue: 2, alpha: 1),
                         FactionColor = DontUse,
                         VisualFadeStart = 0,
@@ -250,7 +250,7 @@ namespace Scripts
                             Restart = true,
                             MaxDistance = 800,
                             MaxDuration = 0.1f,
-                            Scale = 0.75f,
+                            Scale = 0.25f,
                         },
                     },
                 },

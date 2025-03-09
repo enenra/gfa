@@ -33,7 +33,7 @@ namespace Scripts
                                     MovementType = ExpoDecay, //Linear,ExpoDecay,ExpoGrowth,Delay,Show, //instant or fade Hide, //instant or fade
                                     LinearPoints = new[]
                                     {
-                                        Transformation(0, 0, 0.85), //linear movement
+                                        Transformation(0, 0, 0.15), //linear movement
                                     },
                                     Rotation = Transformation(0, 0, 0), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees
@@ -54,7 +54,7 @@ namespace Scripts
                                     MovementType = Linear, //Linear,ExpoDecay,ExpoGrowth,Delay,Show, //instant or fade Hide, //instant or fade
                                     LinearPoints = new[]
                                     {
-                                        Transformation(0, 0, -0.85), //linear movement
+                                        Transformation(0, 0, -0.15), //linear movement
                                     },
                                     Rotation = Transformation(0, 0, 0), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees
@@ -84,7 +84,7 @@ namespace Scripts
                                     MovementType = ExpoDecay, //Linear,ExpoDecay,ExpoGrowth,Delay,Show, //instant or fade Hide, //instant or fade
                                     LinearPoints = new[]
                                     {
-                                        Transformation(0, 0, 0.85), //linear movement
+                                        Transformation(0, 0, 0.15), //linear movement
                                     },
                                     Rotation = Transformation(0, 0, 0), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees
@@ -105,7 +105,7 @@ namespace Scripts
                                     MovementType = Linear, //Linear,ExpoDecay,ExpoGrowth,Delay,Show, //instant or fade Hide, //instant or fade
                                     LinearPoints = new[]
                                     {
-                                        Transformation(0, 0, -0.85), //linear movement
+                                        Transformation(0, 0, -0.15), //linear movement
                                     },
                                     Rotation = Transformation(0, 0, 0), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees
