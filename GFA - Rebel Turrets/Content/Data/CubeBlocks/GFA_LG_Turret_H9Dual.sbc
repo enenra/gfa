@@ -17,14 +17,14 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\GFA_LG_Turret_H9Dual.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="10" />
-				<Component Subtype="Construction" Count="30" />
-				<Component Subtype="MetalGrid" Count="6" />
-				<Component Subtype="SmallTube" Count="4" />
-				<Component Subtype="Motor" Count="4" />
-				<Component Subtype="Computer" Count="10" />
-				<Component Subtype="Construction" Count="10" />
-				<Component Subtype="SteelPlate" Count="20" />
+				<Component Subtype="SteelPlate" Count="600" />
+				<Component Subtype="Construction" Count="600" />
+				<Component Subtype="MetalGrid" Count="120" />
+				<Component Subtype="SmallTube" Count="40" />
+				<Component Subtype="Motor" Count="40" />
+				<Component Subtype="Computer" Count="100" />
+				<Component Subtype="Construction" Count="300" />
+				<Component Subtype="SteelPlate" Count="200" />
 			</Components>
 			<CriticalComponent Subtype="Computer" Index="0" />
 			<BlockPairName>GFA_Turret_H9Dual</BlockPairName>
@@ -46,7 +46,7 @@
 			<DamagedSound>ParticleHeavyMech</DamagedSound>
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
-      
+
 			<ResourceSinkGroup>Defense</ResourceSinkGroup>
 			<PowerInput>0.0025</PowerInput>
 			<InventorySize>

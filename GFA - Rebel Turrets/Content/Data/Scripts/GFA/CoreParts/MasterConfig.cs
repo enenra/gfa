@@ -7,7 +7,8 @@ namespace Scripts
         {
             PartDefinitions(
                 GFA_Weapon_H9DualTurbolaser,
-                GFA_Weapon_H9Turbolaser
+                GFA_Weapon_H9Turbolaser,
+                GFA_Weapon_TurretDroid
                 );
         }
     }
