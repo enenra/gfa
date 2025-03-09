@@ -18,13 +18,12 @@ A small and lightweight mod replacing the visuals and audio of jumpdrives to mak
 [*]Unique sounds for large and small grids exiting hyperspace.
 [*]Entering hyperspace and exiting hyperspace is audible from 5km out, making it more obvious when a jump happens.
 [/list]
-[img].gif[/img]
 
 
 [img]https://i.imgur.com/Ky5F2bo.png[/img]
 [list]
-[*][b]AryxCami[/b] - For creating the particle effect.
-[*][b]MTGraves[/b] - For creating the jump out and charging sounds.
+[*][b][url=https://steamcommunity.com/id/Aryx3D/myworkshopfiles/?appid=244850]AryxCami[/url][/b] - For creating the particle effect.
+[*][b][url=https://steamcommunity.com/profiles/76561198037071942/myworkshopfiles/?appid=244850]MTGraves[/url][/b] - For creating the jump out and charging sounds.
 [/list]
 
 
