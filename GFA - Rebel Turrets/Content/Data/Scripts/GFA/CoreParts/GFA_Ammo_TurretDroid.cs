@@ -166,7 +166,7 @@ namespace Scripts
                         VisualFadeEnd = 0,
                         AlwaysDraw = false,
                         Textures = new[] {
-                            "GFA_Turret_H9_Bullet",
+                            "GFA_TurretDroid_Bullet",
                         },
                     },
                 },
