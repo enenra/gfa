@@ -11,7 +11,7 @@ A small and lightweight mod replacing the visuals and audio of jumpdrives to mak
 
 
 [img]https://i.imgur.com/TGu2yer.png[/img]
-[img].gif[/img]
+[img]https://i.imgur.com/oheqyEs.gif[/img]
 [list]
 [*]New jump particle effect.
 [*]New jump sounds.
