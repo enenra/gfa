@@ -12,7 +12,7 @@ using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef;
 using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef.HardwareType;
 using System.Collections.Generic;
 
-namespace Scripts {   
+namespace Scripts {
     partial class Parts {
         WeaponDefinition GFA_Weapon_H9DualTurbolaser => new WeaponDefinition
         {
@@ -27,7 +27,7 @@ namespace Scripts {
                         DurabilityMod = 0.25f,
                         IconName = "GFA_Filter_AmmoMag_Medium.dds"
                     },
-                    
+
                  },
                 Muzzles = new[] {
                     "muzzle_barrel_1",
@@ -64,8 +64,8 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.005f,
-                    ElevateRate = 0.005f,
+                    RotateRate = 0.0025f,
+                    ElevateRate = 0.0025f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -10,
