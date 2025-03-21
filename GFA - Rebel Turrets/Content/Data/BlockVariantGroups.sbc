@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_REB_Turret_H9" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_Turret_H9Dual.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_Turret_H9Dual</DisplayName>
+      <Description>Description_GFA_LG_Turret_H9Dual</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_ConveyorSorter" Subtype="GFA_LG_Turret_H9Dual" />
+        <Block Type="MyObjectBuilder_ConveyorSorter" Subtype="GFA_LG_Turret_H9" />
+        <Block Type="MyObjectBuilder_ConveyorSorter" Subtype="GFA_SG_Turret_H9" />
+        <Block Type="MyObjectBuilder_ConveyorSorter" Subtype="GFA_LG_Turret_H9_Slanted" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>
