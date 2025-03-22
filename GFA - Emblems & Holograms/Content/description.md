@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3234446815]1.0b[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3234446815]1.1[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
@@ -19,8 +19,10 @@ A small mod that adds Rebel Alliance and Galactic Empire faction logos, LCD imag
 [*]Holoprojector Emblem Rebel Alliance 5x5
 [*]Galactic Empire Faction Logo
 [*]Rebel Alliance Faction Logo
+[*]Mining Guild Faction Logo
 [*]Galactic Empire LCD Image
 [*]Rebel Alliance LCD Image
+[*]Mining Guild LCD Image
 [*]A Galaxy Far Away LCD Image
 [/list]
 [img]https://i.imgur.com/y3VyaKA.gif[/img]

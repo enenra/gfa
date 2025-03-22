@@ -1,4 +1,4 @@
-[h1]Patch 1.0b[/h1]
+[h1]Patch 1.1[/h1]
 [list]
-[*]SE 1.205 Contact Patch compatibility. (BlockCategories)
+[*]Added Mining Guild faction logo & LCD image.
 [/list]
