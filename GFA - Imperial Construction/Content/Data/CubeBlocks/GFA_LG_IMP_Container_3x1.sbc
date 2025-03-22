@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+      <Id>
+        <TypeId>CargoContainer</TypeId>
+        <SubtypeId>GFA_LG_IMP_Container_3x1</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_Container_3x1}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_IMP_Container_3x1}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_Container_3x1.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="3"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_IMP_Container_3x1.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="60" />
+        <Component Subtype="Construction" Count="45" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Display" Count="2" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="InteriorPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.08" StartY="0.54" EndX="2.92" EndY="0.79"/>
+        <MountPoint Side="Right" StartX="0.08" StartY="0.54" EndX="2.92" EndY="0.79"/>
+        <MountPoint Side="Top" StartX="0.14" StartY="0.08" EndX="0.86" EndY="2.92"/>
+        <MountPoint Side="Bottom" StartX="0.10" StartY="0.11" EndX="0.90" EndY="2.89" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_Container_3x1_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_IMP_Container_3x1_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_Container_3x1_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_LG_IMP_Container_3x1</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>10</PCU>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

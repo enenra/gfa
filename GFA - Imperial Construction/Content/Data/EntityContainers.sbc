@@ -62,5 +62,15 @@
       </DefaultComponents>
     </Container>
 
+    <Container>
+      <Id>
+        <TypeId>CargoContainer</TypeId>
+        <SubtypeId>GFA_LG_IMP_Container_3x1</SubtypeId>
+      </Id>
+      <DefaultComponents>
+        <Component BuilderType="MyObjectBuilder_Inventory"/>
+      </DefaultComponents>
+    </Container>
+
   </EntityContainers>
 </Definitions>

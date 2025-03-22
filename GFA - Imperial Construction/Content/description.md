@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3439059469]1.0[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3439059469]1.1[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
@@ -23,6 +23,7 @@ The mod contains the following purely decorative blocks:
 [*]Imperial Hangar Floor
 [*]Imperial Square Crate Set (Single, Double, Stack)
 [*]Imperial Simple Crate Set (Single, Double, Stack)
+[*]Imperial Cargo Container 3x1
 [/list]
 
 The mod furthermore contains the following functional blocks:
