@@ -1,4 +1,4 @@
-[h1]Patch 1.1b[/h1]
+[h1]Patch 1.1c[/h1]
 [list]
-[*]Fixed TIE Hatch, TIE Port and TIE Docking Tube connector functionalities. They should now fully work again.
+[*]Increased range of cannons but kept targeting distance the same. (1300 vs 1000)
 [/list]
