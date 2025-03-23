@@ -1,4 +1,4 @@
-[h1]Patch 1.0a[/h1]
+[h1]Patch 1.0b[/h1]
 [list]
-[*]SE 1.205 Contact Patch compatibility. (BlockCategories)
+[*]Increase bolt travel distance but kept lock distance the same.
 [/list]

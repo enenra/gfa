@@ -12,7 +12,7 @@ using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef;
 using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef.HardwareType;
 using System.Collections.Generic;
 
-namespace Scripts {   
+namespace Scripts {
     partial class Parts {
         WeaponDefinition GFA_Weapon_Ls93LaserCannon => new WeaponDefinition
         {
@@ -26,7 +26,7 @@ namespace Scripts {
                         ElevationPartId = "None",
                         DurabilityMod = 0.25f,
                     },
-                    
+
                  },
                 Muzzles = new[] {
                     "muzzle_barrel_001",
@@ -42,6 +42,7 @@ namespace Scripts {
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any, // Subsystem targeting priority: Offense, Utility, Power, Production, Thrust, Jumping, Steering, Any
                 },
+                MaxTargetDistance = 1000,
             },
             HardPoint = new HardPointDef
             {
