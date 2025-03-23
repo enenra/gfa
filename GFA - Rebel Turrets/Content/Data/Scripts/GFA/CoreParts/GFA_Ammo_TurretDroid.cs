@@ -46,8 +46,8 @@ namespace Scripts
             TerminalName = "Red Blaster Cartridge", // Optional terminal name for this ammo type, used when picking ammo/cycling consumables.  Safe to have duplicates across different ammo defs.
             HybridRound = true, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 100f, // Direct damage; one steel plate is worth 100.
-            Mass = 1f, // In kilograms; how much force the impact will apply to the target.
+            BaseDamage = 30f, // Direct damage; one steel plate is worth 100.
+            Mass = 0.1f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             EnergyMagazineSize = 1000, // For energy weapons, how many shots to fire before reloading.
             HeatModifier = 4f, // Allows this ammo to modify the amount of heat the weapon produces per shot.
@@ -86,30 +86,12 @@ namespace Scripts
                     DeformDelay = 30,
                 },
             },
-            AreaOfDamage = new AreaOfDamageDef // Note AOE is only applied to the Player/Grid it hit (and nearby projectiles) not nearby grids/players.
-            {
-                EndOfLife = new EndOfLifeDef
-                {
-                    Enable = true,
-                    Radius = 1f, // Radius of AOE effect, in meters.
-                    Damage = 100f,
-                    Depth = 3f, // Max depth of AOE effect, in meters. 0=disabled, and AOE effect will reach to a depth of the radius value
-                    MaxAbsorb = 320f, // Soft cutoff for damage, except for pooled falloff.  If pooled falloff, limits max damage per block.
-                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
-                    ParticleScale = 1,
-                    CustomParticle = "", // Particle SubtypeID, from your Particle SBC
-                    CustomSound = "", // SubtypeID from your Audio SBC, not a filename
-                    NoVisuals = true,
-                    NoSound = true,
-                    Shape = Diamond, // Round or Diamond shape.  Diamond is more performance friendly.
-                },
-            },
             Trajectory = new TrajectoryDef
             {
                 Guidance = None, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 MaxLifeTime = 900, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..). time begins at 0 and time must EXCEED this value to trigger "time > maxValue". Please have a value for this, It stops Bad things.
                 DesiredSpeed = 400, // voxel phasing if you go above 5100
-                MaxTrajectory = 1200f, // Max Distance the projectile or beam can Travel.
+                MaxTrajectory = 600f, // Max Distance the projectile or beam can Travel.
                 TotalAcceleration = 1234.5, // 0 means no limit, something to do due with a thing called delta and something called v.
             },
             AmmoGraphics = new GraphicDef

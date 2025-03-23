@@ -43,7 +43,7 @@ namespace Scripts {
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any, // Subsystem targeting priority: Offense, Utility, Power, Production, Thrust, Jumping, Steering, Any
                 },
-                MaxTargetDistance = 1000,
+                MaxTargetDistance = 800,
             },
             HardPoint = new HardPointDef
             {
