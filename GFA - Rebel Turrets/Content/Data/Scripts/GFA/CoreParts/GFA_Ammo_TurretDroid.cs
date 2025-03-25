@@ -51,6 +51,7 @@ namespace Scripts
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             EnergyMagazineSize = 1000, // For energy weapons, how many shots to fire before reloading.
             HeatModifier = 4f, // Allows this ammo to modify the amount of heat the weapon produces per shot.
+            BackKickForce = 1f, // Recoil. This is applied to the Parent Grid.
             NoGridOrArmorScaling = true, // If you enable this you can remove the damagescale section entirely.
             HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             Shape = new ShapeDef // Defines the collision shape of the projectile, defaults to LineShape and uses the visual Line Length if set to 0.
@@ -178,6 +179,7 @@ namespace Scripts
             Health = GFA_Ammo_TurretDroid_Red.Health,
             EnergyMagazineSize = GFA_Ammo_TurretDroid_Red.EnergyMagazineSize,
             HeatModifier = GFA_Ammo_TurretDroid_Red.HeatModifier,
+            BackKickForce = GFA_Ammo_TurretDroid_Red.BackKickForce,
             NoGridOrArmorScaling = GFA_Ammo_TurretDroid_Red.NoGridOrArmorScaling,
             HardPointUsable = GFA_Ammo_TurretDroid_Red.HardPointUsable,
             Shape = new ShapeDef
