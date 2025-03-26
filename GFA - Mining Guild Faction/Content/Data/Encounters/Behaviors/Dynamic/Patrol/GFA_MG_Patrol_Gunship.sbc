@@ -61,6 +61,11 @@
         [SkipGridSpawnChecks:true]
         [IgnoreCombatPhase:true]
 
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatIncludeOtherNpcOwners:true]
+        [ThreatScoreMinimum:50]
+
         [SpaceCargoShipChance:20]
         [LunarCargoShipChance:20]
         [AtmosphericCargoShipChance:20]
