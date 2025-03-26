@@ -31,15 +31,6 @@
           <Speed>50</Speed>
           <Behaviour>GFA_MG_PatrolArea_Behavior</Behaviour>
         </Prefab>
-        <Prefab SubtypeId="TIEmg Starfighter MES Ace">
-          <Position>
-            <X>0.0</X>
-            <Y>0.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>50</Speed>
-          <Behaviour>GFA_MG_PatrolArea_Behavior</Behaviour>
-        </Prefab>
       </Prefabs>
     </SpawnGroup>
 
@@ -67,7 +58,10 @@
         [SkipGridSpawnChecks:true]
         [IgnoreCombatPhase:true]
 
-        [PrefabSpawningMode:Random]
+        [SpaceCargoShipChance:50]
+        [LunarCargoShipChance:50]
+        [AtmosphericCargoShipChance:50]
+        [GravityCargoShipChance:50]
       </Description>
     </EntityComponent>
 

@@ -57,6 +57,11 @@
         [SkipVoxelSpawnChecks:true]
         [SkipGridSpawnChecks:true]
         [IgnoreCombatPhase:true]
+
+        [SpaceCargoShipChance:50]
+        [LunarCargoShipChance:50]
+        [AtmosphericCargoShipChance:50]
+        [GravityCargoShipChance:50]
       </Description>
     </EntityComponent>
 

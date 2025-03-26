@@ -25,7 +25,7 @@
 
         [ReplenishSystems:true]
         [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
-        [ReplenishProfiles:GFA_Replenishment_Imperial_Small]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Sidearm]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -72,6 +72,9 @@
       </Description>
     </EntityComponent>
 
+    <!--
+        [Triggers:GFA_Faction_Resources_Trigger_Decrease_25]
+    -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -91,7 +94,6 @@
         [PlayerDistanceTimerTrigger:30000]
 
         [Triggers:GFA_MG_CampLandedBroken_Trigger_SpawnSetup]
-        [Triggers:GFA_Faction_Resources_Trigger_Decrease_25]
 
         [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
         [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]

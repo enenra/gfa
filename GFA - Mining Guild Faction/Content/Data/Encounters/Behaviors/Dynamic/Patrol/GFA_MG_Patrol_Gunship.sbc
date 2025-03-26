@@ -20,7 +20,6 @@
 
         [ReplenishSystems:true]
         [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
-        [ReplenishProfiles:GFA_Replenishment_Imperial_Small]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -62,10 +61,10 @@
         [SkipGridSpawnChecks:true]
         [IgnoreCombatPhase:true]
 
-        [SpaceCargoShipChance:25]
-        [LunarCargoShipChance:25]
-        [AtmosphericCargoShipChance:25]
-        [GravityCargoShipChance:25]
+        [SpaceCargoShipChance:20]
+        [LunarCargoShipChance:20]
+        [AtmosphericCargoShipChance:20]
+        [GravityCargoShipChance:20]
       </Description>
     </EntityComponent>
 
