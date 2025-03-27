@@ -54,74 +54,6 @@
       </Description>
     </EntityComponent>
 
-    <!-- Channel Logic -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_DialogueSystem_EventTrigger_Channel</SubtypeId>
-      </Id>
-      <Description>
-        [MES Event]
-
-        [UseEvent:true]
-        [StartsReady:false]
-
-        [MinCooldownMs:5000]
-        [MaxCooldownMs:5001]
-
-        [OnFailResetCooldown:true]
-        [ConditionIds:GFA_DialogueSystem_EventCondition_Channel]
-
-        [ActionIds:GFA_DialogueSystem_EventAction_Channel]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_DialogueSystem_EventCondition_Channel</SubtypeId>
-      </Id>
-      <Description>
-        [MES Event Condition]
-
-        [MatchAnyCondition:false]
-
-        [CheckTrueBooleans:true]
-        [TrueBooleans:GFA_DialogueSystem_Channel_OnCooldown]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_DialogueSystem_EventAction_Channel</SubtypeId>
-      </Id>
-      <Description>
-        [MES Event Action]
-
-        [ChangeBooleans:true]
-        [SetBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:false]
-      </Description>
-    </EntityComponent>
-
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_DialogueSystem_Condition_Channel_OnCooldown</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Condition]
-
-        [UseConditions:true]
-        [MatchAnyCondition:false]
-
-        [CheckTrueSandboxBooleans:true]
-        [TrueSandboxBooleans:GFA_DialogueSystem_Channel_OnCooldown]
-      </Description>
-    </EntityComponent>
-
     <!-- Events -->
     <!-- EnemyDestroyed -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -138,8 +70,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_EnemyDestroyed]
       </Description>
     </EntityComponent>
@@ -155,15 +85,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:EnemyDestroyed]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
       </Description>
     </EntityComponent>
 
@@ -182,8 +103,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_EnemyDestroyedwithPlayerHelp]
       </Description>
     </EntityComponent>
@@ -199,15 +118,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:EnemyDestroyedwithPlayerHelp]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
       </Description>
     </EntityComponent>
 
@@ -226,8 +136,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_EnemyDestroyedwithPlayerMadeFinalShot]
       </Description>
     </EntityComponent>
@@ -243,15 +151,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:EnemyDestroyedwithPlayerMadeFinalShot]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
       </Description>
     </EntityComponent>
 
@@ -271,8 +170,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_DamageByFriendlyOrNeutral]
       </Description>
     </EntityComponent>
@@ -288,15 +185,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:DamageByFriendlyOrNeutral]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_DialogueSystem_Trigger_DamageByFriendlyOrNeutral_Cooldown]
@@ -356,8 +244,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_UnderFire]
       </Description>
     </EntityComponent>
@@ -373,15 +259,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:UnderFire]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_DialogueSystem_Trigger_UnderFire_Cooldown]
@@ -441,8 +318,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_UnderFireHealthLow]
       </Description>
     </EntityComponent>
@@ -458,15 +333,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:UnderFireHealthLow]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_DialogueSystem_Trigger_UnderFireHealthLow_Cooldown]
@@ -526,8 +392,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_UnderFireGoingDown]
       </Description>
     </EntityComponent>
@@ -543,15 +407,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:UnderFireGoingDown]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_DialogueSystem_Trigger_UnderFireGoingDown_Cooldown]
@@ -611,8 +466,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_Despawn]
       </Description>
     </EntityComponent>
@@ -628,15 +481,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:Despawn]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
       </Description>
     </EntityComponent>
 
@@ -655,8 +499,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_HasTarget]
       </Description>
     </EntityComponent>
@@ -672,15 +514,158 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:HasTarget]
+      </Description>
+    </EntityComponent>
 
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
+    <!-- PlayerNearFriendly -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_PlayerNearFriendly</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
 
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_PlayerNear]
 
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_PlayerFriendly]
+
+        [Actions:GFA_DialogueSystem_Action_PlayerNearFriendly]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_PlayerNearFriendly</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:75]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:PlayerNearFriendly]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_DialogueSystem_Trigger_PlayerNearFriendly_Cooldown]
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearFriendly_Cooldown]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearFriendly]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_PlayerNearFriendly_Cooldown</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:60001]
+
+        [Actions:GFA_DialogueSystem_Action_PlayerNearFriendly_Cooldown]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_PlayerNearFriendly_Cooldown</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearFriendly]
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearFriendly_Cooldown]
+      </Description>
+    </EntityComponent>
+
+    <!-- PlayerNearNeutral -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_PlayerNearNeutral</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_PlayerNear]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_PlayerNeutral]
+
+        [Actions:GFA_DialogueSystem_Action_PlayerNearNeutral]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_PlayerNearNeutral</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:75]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:PlayerNearNeutral]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_DialogueSystem_Trigger_PlayerNearNeutral_Cooldown]
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearNeutral_Cooldown]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearNeutral]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Trigger_PlayerNearNeutral_Cooldown</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:60001]
+
+        [Actions:GFA_DialogueSystem_Action_PlayerNearNeutral_Cooldown]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DialogueSystem_Action_PlayerNearNeutral_Cooldown</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearNeutral]
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_DialogueSystem_Trigger_PlayerNearNeutral_Cooldown]
       </Description>
     </EntityComponent>
 
@@ -699,8 +684,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:GFA_DialogueSystem_Condition_Channel_OnCooldown]
-
         [Actions:GFA_DialogueSystem_Action_SwitchToPatrol]
       </Description>
     </EntityComponent>
@@ -716,15 +699,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:SwitchToPatrol]
-
-        [SetSandboxBooleansTrue:GFA_DialogueSystem_Channel_OnCooldown]
-
-        [ResetCooldownTimeOfEvents:true]
-        [ResetEventCooldownIds:GFA_DialogueSystem_EventTrigger_Channel]
-
-        [ToggleEvents:true]
-        [ToggleEventIds:GFA_DialogueSystem_EventTrigger_Channel]
-        [ToggleEventIdModes:true]
       </Description>
     </EntityComponent>
 
