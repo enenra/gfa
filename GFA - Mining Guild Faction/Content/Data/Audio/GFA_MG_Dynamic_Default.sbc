@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
-<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Sounds>
 
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>Arc_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1</SubtypeId>
+        <SubtypeId>Arc_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1_1</SubtypeId>
       </Id>
       <Category>PLAYER</Category>
       <MaxDistance>500</MaxDistance>
@@ -17,14 +16,14 @@
       <Volume>0.5</Volume>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\Dynamic\Arc_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1.wav</Start>
+          <Start>Audio\Dynamic\Arc_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1_1.wav</Start>
         </Wave>
       </Waves>
     </Sound>
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>Real_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1</SubtypeId>
+        <SubtypeId>Real_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1_1</SubtypeId>
       </Id>
       <Category>PLAYER_R</Category>
       <MaxDistance>250</MaxDistance>
@@ -36,7 +35,7 @@
       <Volume>1.0</Volume>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\Dynamic\Arc_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1.wav</Start>
+          <Start>Audio\Dynamic\Arc_GFA_MG_Dialogue_Dynamic_Default_EnemyDestroyed_1_1.wav</Start>
         </Wave>
       </Waves>
     </Sound>
