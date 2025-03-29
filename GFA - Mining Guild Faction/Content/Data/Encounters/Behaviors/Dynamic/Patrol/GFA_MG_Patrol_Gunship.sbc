@@ -99,7 +99,8 @@
 
         [Triggers:GFA_MG_Patrol_Gunship_Trigger_SpawnSetup]
 
-        [TriggerGroups:GFA_DialogueSystem_TriggerGroup_Dynamic]
+        [TriggerGroups:GFA_System_Dialogue_TriggerGroup_Dynamic]
+        [TriggerGroups:GFA_System_Reuptation_TriggerGroup]
 
         [TriggerGroups:MSB_DynamicCommon_TriggerGroup]
         [TriggerGroups:MSB_Patrol_TriggerGroup]
