@@ -135,7 +135,7 @@
         [ForceStaticGrid:true]
 
         [RivalAiAnySpawn:true]
-        [FactionOwner:UNKN]
+        [FactionOwner:MG]
         [ReplenishSystems:true]
 
         [PrefabSpawningMode:Random]
@@ -160,6 +160,8 @@
         [PlayerDistanceTimerTrigger:30000]
 
         [Triggers:GFA_MG_AbandonnedAurore_MostlyFine_Trigger_SpawnSetup]
+
+        [Triggers:GFA_MG_AbandonnedAurore_MostlyFine_Trigger_PlaceCrew]
 
         [TriggerGroups:MSB_Static_CommonTriggerGroup]
         [TriggerGroups:MSB_CommSystem_TriggerGroup]
@@ -192,7 +194,42 @@
         [RivalAI Action]
 
         [ChangeAntennaHudText:true]
-        [AntennaHudText:Old Emergency Signal]
+        [AntennaHudText:Emergency Signal]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_Trigger_PlaceCrew</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerNear]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [TargetDistance:1000]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_AbandonnedAurore_MostlyFine_Action_PlaceCrew]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_Action_PlaceCrew</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [AddBotsToGrid:true]
+        [BotCount:2]
+
+        [OnlySpawnBotsInPressurizedRooms:false]
+
+        [BotSpawnProfileNames:GFA_MG_BotProfile_Crew]
       </Description>
     </EntityComponent>
 
