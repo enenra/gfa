@@ -93,6 +93,7 @@
         [PlayerDistanceTimerTrigger:30000]
 
         [Triggers:GFA_MG_Cargoship_Aurore_Slave_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_Cargoship_Aurore_Slave_Trigger_PlaceCrew]
 
         [TriggerGroups:GFA_System_Dialogue_TriggerGroup_Dynamic]
         [TriggerGroups:GFA_System_Reuptation_TriggerGroup]
@@ -144,6 +145,42 @@
         [RivalAI Action]
 
         [SetBooleansTrue:MSB_Despawn_Use_Simple]
+      </Description>
+    </EntityComponent>
+
+    <!-- PlaceCrew -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Cargoship_Aurore_Slave_Trigger_PlaceCrew</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerNear]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [TargetDistance:1000]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_Cargoship_Aurore_Slave_Action_PlaceCrew]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Cargoship_Aurore_Slave_Action_PlaceCrew</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [AddBotsToGrid:true]
+        [BotCount:2]
+
+        [OnlySpawnBotsInPressurizedRooms:true]
+
+        [BotSpawnProfileNames:GFA_MG_BotProfile_Crew]
       </Description>
     </EntityComponent>
 
