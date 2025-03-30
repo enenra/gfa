@@ -194,6 +194,11 @@
 
         [ChangeAntennaHudText:true]
         [AntennaHudText:Old Emergency Signal]
+
+        [ChangeAntennaRanges:true]
+        [AntennaNamesForRangeChange:Antenna]
+        [AntennaRangeChangeType:Set]
+        [AntennaRangeChangeAmount:5000]
       </Description>
     </EntityComponent>
 
