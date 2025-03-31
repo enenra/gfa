@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- No SpawnGroup because they're spawned in the leader one. -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Escort]
+
+        [TargetData:MSB_TargetProfile_LowRange]
+        [OverrideTargetData:MSB_TargetProfile_LongRange]
+        [AutopilotData:MSB_Escort_Autopilot]
+        [SecondaryAutopilotData:MSB_Fighter_Autopilot_Fighter]
+
+        [DialogueBanks:GFA_MG_DialogueBank_Dynamic.xml]
+
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [Triggers:GFA_MG_Escort_Fighter_Trigger_SpawnSetup]
+
+        [TriggerGroups:GFA_System_Dialogue_TriggerGroup_Dynamic]
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+
+        [TriggerGroups:MSB_DynamicCommon_TriggerGroup]
+        [TriggerGroups:MSB_System_Communication_TriggerGroup]
+        [TriggerGroups:MSB_System_CommandChain_Escort_TriggerGroup]
+
+        [TriggerGroups:MSB_OffensiveEscort_TriggerGroup]
+        [TriggerGroups:MSB_Fighter_TriggerGroup]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_Escort_Fighter_Action_Rename]
+        [Actions:GFA_MG_Escort_Fighter_Action_SetDespawnType]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Action_Rename</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAntennaHudText:true]
+        [AntennaHudText:Sector Patrol Escort]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Action_SetDespawnType</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetBooleansTrue:MSB_Despawn_Use_Simple]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
