@@ -7,7 +7,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Escort_Fighter_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Ace_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -25,7 +25,7 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_Escort_Fighter_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_Escort_Fighter_Ace_Trigger_SpawnSetup]
 
         [TriggerGroups:GFA_System_Dialogue_TriggerGroup_Dynamic]
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
@@ -43,7 +43,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Escort_Fighter_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Ace_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -53,26 +53,26 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_Escort_Fighter_Action_Rename]
-        [Actions:GFA_MG_Escort_Fighter_Action_SetDespawnType]
+        [Actions:GFA_MG_Escort_Fighter_Ace_Action_Rename]
+        [Actions:GFA_MG_Escort_Fighter_Ace_Action_SetDespawnType]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Escort_Fighter_Action_Rename</SubtypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Ace_Action_Rename</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [ChangeAntennaHudText:true]
-        [AntennaHudText:Escort]
+        [AntennaHudText:Escort (Ace)]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Escort_Fighter_Action_SetDespawnType</SubtypeId>
+        <SubtypeId>GFA_MG_Escort_Fighter_Ace_Action_SetDespawnType</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
