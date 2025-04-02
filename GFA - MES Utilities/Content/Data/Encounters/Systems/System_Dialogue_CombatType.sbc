@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- ApproachingTarget -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Dropship_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_ApproachingTarget]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Dropship]
+
+        [Actions:GFA_System_Dialogue_Action_Dropship_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Dropship_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Dropship_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Fighter_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_ApproachingTarget]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Fighter]
+
+        [Actions:GFA_System_Dialogue_Action_Fighter_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Fighter_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Fighter_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Freighter_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_ApproachingTarget]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Freighter]
+
+        [Actions:GFA_System_Dialogue_Action_Freighter_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Freighter_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Freighter_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Gunship_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_ApproachingTarget]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Gunship]
+
+        [Actions:GFA_System_Dialogue_Action_Gunship_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Gunship_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Gunship_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Rover_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_ApproachingTarget]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Rover]
+
+        [Actions:GFA_System_Dialogue_Action_Rover_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Rover_ApproachingTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Rover_ApproachingTarget]
+      </Description>
+    </EntityComponent>
+
+    <!-- TargetIsApproaching -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Dropship_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_TargetIsApproaching]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Dropship]
+
+        [Actions:GFA_System_Dialogue_Action_Dropship_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Dropship_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Dropship_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Fighter_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_TargetIsApproaching]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Fighter]
+
+        [Actions:GFA_System_Dialogue_Action_Fighter_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Fighter_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Fighter_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Freighter_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_TargetIsApproaching]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Freighter]
+
+        [Actions:GFA_System_Dialogue_Action_Freighter_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Freighter_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Freighter_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Gunship_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_TargetIsApproaching]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Gunship]
+
+        [Actions:GFA_System_Dialogue_Action_Gunship_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Gunship_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Gunship_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Rover_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_TargetIsApproaching]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Rover]
+
+        [Actions:GFA_System_Dialogue_Action_Rover_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Rover_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Rover_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Static_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_TargetIsApproaching]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:MSB_Context_Condition_CombatType_Static]
+
+        [Actions:GFA_System_Dialogue_Action_Static_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Static_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Static_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

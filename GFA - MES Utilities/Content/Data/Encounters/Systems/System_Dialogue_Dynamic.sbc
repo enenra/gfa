@@ -28,6 +28,19 @@
         [Triggers:GFA_System_Dialogue_Trigger_SwitchToPatrol]
 
         [Triggers:GFA_System_Dialogue_Trigger_Despawn]
+
+        [Triggers:GFA_System_Dialogue_Trigger_Dropship_ApproachingTarget]
+        [Triggers:GFA_System_Dialogue_Trigger_Fighter_ApproachingTarget]
+        [Triggers:GFA_System_Dialogue_Trigger_Freighter_ApproachingTarget]
+        [Triggers:GFA_System_Dialogue_Trigger_Gunship_ApproachingTarget]
+        [Triggers:GFA_System_Dialogue_Trigger_Rover_ApproachingTarget]
+
+        [Triggers:GFA_System_Dialogue_Trigger_Dropship_TargetIsApproaching]
+        [Triggers:GFA_System_Dialogue_Trigger_Fighter_TargetIsApproaching]
+        [Triggers:GFA_System_Dialogue_Trigger_Freighter_TargetIsApproaching]
+        [Triggers:GFA_System_Dialogue_Trigger_Gunship_TargetIsApproaching]
+        [Triggers:GFA_System_Dialogue_Trigger_Rover_TargetIsApproaching]
+        [Triggers:GFA_System_Dialogue_Trigger_Static_TargetIsApproaching]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
