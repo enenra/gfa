@@ -108,7 +108,7 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_HealthSystem_Condition_HasAntennaForBroadcast]
+        [Conditions:MSB_System_Health_Condition_HasAntennaForBroadcast]
 
 		    [MinCooldownMs:20000]
         [MaxCooldownMs:20001]
@@ -147,7 +147,7 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_HealthSystem_Condition_HasAntennaForBroadcast]
+        [Conditions:MSB_System_Health_Condition_HasAntennaForBroadcast]
 
 		    [MinCooldownMs:20000]
         [MaxCooldownMs:20001]
@@ -186,7 +186,7 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_HealthSystem_Condition_HasAntennaForBroadcast]
+        [Conditions:MSB_System_Health_Condition_HasAntennaForBroadcast]
 
 		    [MinCooldownMs:20000]
         [MaxCooldownMs:20001]
