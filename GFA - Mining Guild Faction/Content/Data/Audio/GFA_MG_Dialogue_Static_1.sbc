@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<!-- Generated from DialogueBanks on 2025-04-05 12:30:08.619439 -->
+<!-- Generated from DialogueBanks on 2025-04-05 14:05:39.865295 -->
 
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Sounds>
@@ -75,6 +75,80 @@
 			<Waves>
 				<Wave Type="D3">
 					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_DamageByFriendlyOrNeutral_1_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Arc_GFA_MG_Dialogue_Static_Dropship_ApproachingTarget_1_2</SubtypeId>
+			</Id>
+			<Category>PLAYER</Category>
+			<MaxDistance>500</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<Volume>0.5</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Dropship_ApproachingTarget_1_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Real_GFA_MG_Dialogue_Static_Dropship_ApproachingTarget_1_2</SubtypeId>
+			</Id>
+			<Category>PLAYER_R</Category>
+			<MaxDistance>250</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<RealisticFilter>realShipFilter</RealisticFilter>
+			<Volume>1.0</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Dropship_ApproachingTarget_1_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Arc_GFA_MG_Dialogue_Static_Dropship_TargetIsApproaching_1_2</SubtypeId>
+			</Id>
+			<Category>PLAYER</Category>
+			<MaxDistance>500</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<Volume>0.5</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Dropship_TargetIsApproaching_1_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Real_GFA_MG_Dialogue_Static_Dropship_TargetIsApproaching_1_2</SubtypeId>
+			</Id>
+			<Category>PLAYER_R</Category>
+			<MaxDistance>250</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<RealisticFilter>realShipFilter</RealisticFilter>
+			<Volume>1.0</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Dropship_TargetIsApproaching_1_2.wav</Start>
 				</Wave>
 			</Waves>
 		</Sound>
@@ -192,43 +266,6 @@
 		<Sound>
 			<Id>
 				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Arc_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerHelp_1_2</SubtypeId>
-			</Id>
-			<Category>PLAYER</Category>
-			<MaxDistance>500</MaxDistance>
-			<PitchVariation>100</PitchVariation>
-			<VolumeVariation>0.1</VolumeVariation>
-			<PreventSynchronization>600</PreventSynchronization>
-			<SoundLimit>1</SoundLimit>
-			<Volume>0.5</Volume>
-			<Waves>
-				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerHelp_1_2.wav</Start>
-				</Wave>
-			</Waves>
-		</Sound>
-		<Sound>
-			<Id>
-				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Real_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerHelp_1_2</SubtypeId>
-			</Id>
-			<Category>PLAYER_R</Category>
-			<MaxDistance>250</MaxDistance>
-			<PitchVariation>100</PitchVariation>
-			<VolumeVariation>0.1</VolumeVariation>
-			<PreventSynchronization>600</PreventSynchronization>
-			<SoundLimit>1</SoundLimit>
-			<RealisticFilter>realShipFilter</RealisticFilter>
-			<Volume>1.0</Volume>
-			<Waves>
-				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerHelp_1_2.wav</Start>
-				</Wave>
-			</Waves>
-		</Sound>
-		<Sound>
-			<Id>
-				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
 				<SubtypeId>Arc_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerMadeFinalShot_1_1</SubtypeId>
 			</Id>
 			<Category>PLAYER</Category>
@@ -266,7 +303,7 @@
 		<Sound>
 			<Id>
 				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Arc_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerMadeFinalShot_1_2</SubtypeId>
+				<SubtypeId>Arc_GFA_MG_Dialogue_Static_Freighter_InitCombatType_1_2</SubtypeId>
 			</Id>
 			<Category>PLAYER</Category>
 			<MaxDistance>500</MaxDistance>
@@ -277,14 +314,14 @@
 			<Volume>0.5</Volume>
 			<Waves>
 				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerMadeFinalShot_1_2.wav</Start>
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Freighter_InitCombatType_1_2.wav</Start>
 				</Wave>
 			</Waves>
 		</Sound>
 		<Sound>
 			<Id>
 				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Real_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerMadeFinalShot_1_2</SubtypeId>
+				<SubtypeId>Real_GFA_MG_Dialogue_Static_Freighter_InitCombatType_1_2</SubtypeId>
 			</Id>
 			<Category>PLAYER_R</Category>
 			<MaxDistance>250</MaxDistance>
@@ -296,7 +333,44 @@
 			<Volume>1.0</Volume>
 			<Waves>
 				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerMadeFinalShot_1_2.wav</Start>
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Freighter_InitCombatType_1_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Arc_GFA_MG_Dialogue_Static_Gunship_ApproachingTarget_1_2</SubtypeId>
+			</Id>
+			<Category>PLAYER</Category>
+			<MaxDistance>500</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<Volume>0.5</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Gunship_ApproachingTarget_1_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Real_GFA_MG_Dialogue_Static_Gunship_ApproachingTarget_1_2</SubtypeId>
+			</Id>
+			<Category>PLAYER_R</Category>
+			<MaxDistance>250</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<RealisticFilter>realShipFilter</RealisticFilter>
+			<Volume>1.0</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_Gunship_ApproachingTarget_1_2.wav</Start>
 				</Wave>
 			</Waves>
 		</Sound>
@@ -340,43 +414,6 @@
 		<Sound>
 			<Id>
 				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Arc_GFA_MG_Dialogue_Static_UnderFire_1_2</SubtypeId>
-			</Id>
-			<Category>PLAYER</Category>
-			<MaxDistance>500</MaxDistance>
-			<PitchVariation>100</PitchVariation>
-			<VolumeVariation>0.1</VolumeVariation>
-			<PreventSynchronization>600</PreventSynchronization>
-			<SoundLimit>1</SoundLimit>
-			<Volume>0.5</Volume>
-			<Waves>
-				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_UnderFire_1_2.wav</Start>
-				</Wave>
-			</Waves>
-		</Sound>
-		<Sound>
-			<Id>
-				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Real_GFA_MG_Dialogue_Static_UnderFire_1_2</SubtypeId>
-			</Id>
-			<Category>PLAYER_R</Category>
-			<MaxDistance>250</MaxDistance>
-			<PitchVariation>100</PitchVariation>
-			<VolumeVariation>0.1</VolumeVariation>
-			<PreventSynchronization>600</PreventSynchronization>
-			<SoundLimit>1</SoundLimit>
-			<RealisticFilter>realShipFilter</RealisticFilter>
-			<Volume>1.0</Volume>
-			<Waves>
-				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_UnderFire_1_2.wav</Start>
-				</Wave>
-			</Waves>
-		</Sound>
-		<Sound>
-			<Id>
-				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
 				<SubtypeId>Arc_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_1</SubtypeId>
 			</Id>
 			<Category>PLAYER</Category>
@@ -408,43 +445,6 @@
 			<Waves>
 				<Wave Type="D3">
 					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_1.wav</Start>
-				</Wave>
-			</Waves>
-		</Sound>
-		<Sound>
-			<Id>
-				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Arc_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_2</SubtypeId>
-			</Id>
-			<Category>PLAYER</Category>
-			<MaxDistance>500</MaxDistance>
-			<PitchVariation>100</PitchVariation>
-			<VolumeVariation>0.1</VolumeVariation>
-			<PreventSynchronization>600</PreventSynchronization>
-			<SoundLimit>1</SoundLimit>
-			<Volume>0.5</Volume>
-			<Waves>
-				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_2.wav</Start>
-				</Wave>
-			</Waves>
-		</Sound>
-		<Sound>
-			<Id>
-				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-				<SubtypeId>Real_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_2</SubtypeId>
-			</Id>
-			<Category>PLAYER_R</Category>
-			<MaxDistance>250</MaxDistance>
-			<PitchVariation>100</PitchVariation>
-			<VolumeVariation>0.1</VolumeVariation>
-			<PreventSynchronization>600</PreventSynchronization>
-			<SoundLimit>1</SoundLimit>
-			<RealisticFilter>realShipFilter</RealisticFilter>
-			<Volume>1.0</Volume>
-			<Waves>
-				<Wave Type="D3">
-					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_2.wav</Start>
 				</Wave>
 			</Waves>
 		</Sound>

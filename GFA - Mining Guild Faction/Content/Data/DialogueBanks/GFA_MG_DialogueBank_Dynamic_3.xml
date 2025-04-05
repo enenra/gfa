@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-05 11:22:07.062302 -->
+<!-- Created from GSheet export on 2025-04-05 14:05:20.599182 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -10,6 +10,11 @@
 			<Entry>
 				<Message>Close one. Turning back onto original course.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_BackToCourse_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Course realigned. Cargo's not gonna haul itself.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_BackToCourse_3_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -40,6 +45,36 @@
 			<Entry>
 				<Message>Returning to base.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Despawn_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Dropship_ApproachingTarget</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Inbound to site. Ready to deploy assets.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Dropship_ApproachingTarget_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Approaching drop zone. Keep it tight.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Dropship_ApproachingTarget_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Dropship_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Looks like someone wants trouble.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Dropship_TargetIsApproaching_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Contact incoming.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Dropship_TargetIsApproaching_3_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -90,6 +125,21 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
+		<DialogueCueId>Fighter_ApproachingTarget</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Closing in on target. Stay sharp.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_ApproachingTarget_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Approach vector locked. Moving in.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_ApproachingTarget_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
 		<DialogueCueId>Fighter_InitCombatType</DialogueCueId>
 		<Entries>
 			<Entry>
@@ -105,11 +155,76 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
+		<DialogueCueId>Fighter_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>They’re coming to us. Saves fuel.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_TargetIsApproaching_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Target closing fast. Ready weapons.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_TargetIsApproaching_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Freighter_ApproachingTarget</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Heading to target coordinates. Stay clear.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_ApproachingTarget_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Approaching target. Systems nominal.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_ApproachingTarget_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
 		<DialogueCueId>Freighter_InitCombatType</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Enemy in range. Red alert.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_InitCombatType_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Engaging threat. No delays tolerated.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_InitCombatType_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Freighter_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We’ve got movement. Looks hostile.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_TargetIsApproaching_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Approach detected. Readying defenses.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_TargetIsApproaching_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Gunship_ApproachingTarget</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Target locked. Closing distance.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_ApproachingTarget_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Target detected. We're on approach.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_ApproachingTarget_3_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -118,8 +233,28 @@
 		<DialogueCueId>Gunship_InitCombatType</DialogueCueId>
 		<Entries>
 			<Entry>
-				<Message>Target spotted - moving to engage.</Message>
+				<Message>Weapons live. Let’s clean this up.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_InitCombatType_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Engaging the enemy.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_InitCombatType_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Gunship_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Threat incoming. All systems online.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_TargetIsApproaching_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Looks like they’re coming to us.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_TargetIsApproaching_3_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -147,6 +282,11 @@
 				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNearFriendly_3_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
+			<Entry>
+				<Message>Friendly contact. Stay in line.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNearFriendly_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
@@ -155,6 +295,11 @@
 			<Entry>
 				<Message>Keep your distance.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNearNeutral_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Stay out of our lanes.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNearNeutral_3_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
