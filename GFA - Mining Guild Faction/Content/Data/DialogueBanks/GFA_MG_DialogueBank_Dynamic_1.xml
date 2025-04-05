@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-05 14:39:58.340044 -->
+<!-- Created from GSheet export on 2025-04-05 21:43:39.497412 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -300,6 +300,96 @@
 			<Entry>
 				<Message>Stay out of our lanes.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNearNeutral_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Received_Compromised</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Friendly down.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Received_Compromised_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Poodoo!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Received_Compromised_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Receiving_AllGood</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Situation resolved? Understood.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_AllGood_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Received the all green.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_AllGood_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Receiving_SOS</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Receiving call for help. Responding.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_SOS_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>SOS received - firing up thrusters!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_SOS_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Sending_AllGood</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Situation has been resolved. Thanks for the help.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Sending_AllGood_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>All green - all green.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Sending_AllGood_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Sending_SOS</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy contact! Requesting assistance!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Sending_SOS_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Hostiles on approach! Need help!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Sending_SOS_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>SOS_Response_Timeout</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're too far. Aborting.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_SOS_Response_Timeout_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Aborting.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_SOS_Response_Timeout_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
