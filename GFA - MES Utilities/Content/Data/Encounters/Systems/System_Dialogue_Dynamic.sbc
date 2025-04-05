@@ -228,11 +228,15 @@
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral_Cooldown]
+        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_UnderFire_Cooldown]
+
         [EnableTriggers:true]
         [EnableTriggerNames:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral_Cooldown]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_UnderFire_Cooldown]
 
         [DisableTriggers:true]
         [DisableTriggerNames:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_UnderFire]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -301,11 +305,15 @@
         [DialogueCueId:UnderFire]
 
         [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral_Cooldown]
         [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_UnderFire_Cooldown]
+
         [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral_Cooldown]
         [EnableTriggerNames:GFA_System_Dialogue_Trigger_UnderFire_Cooldown]
 
         [DisableTriggers:true]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral]
         [DisableTriggerNames:GFA_System_Dialogue_Trigger_UnderFire]
       </Description>
     </EntityComponent>
