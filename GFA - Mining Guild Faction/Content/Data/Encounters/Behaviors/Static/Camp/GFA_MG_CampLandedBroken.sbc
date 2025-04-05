@@ -83,7 +83,9 @@
 
         [TargetData:MSB_TargetProfile_ShortRange]
 
-        [DialogueBanks:GFA_MG_DialogueBank_Static.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Static_1.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Static_2.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Static_3.xml]
 
         [UsePlayerDistanceTimer:true]
         [PlayerDistanceTrigger:50000]
@@ -118,7 +120,6 @@
 
         [MaxActions:1]
         [Actions:GFA_MG_CampLandedBroken_Action_Rename]
-        [Actions:GFA_MG_CampLandedBroken_Action_DialogueOverride]
         [Actions:GFA_MG_CampLandedBroken_Action_PlaceDatapads]
       </Description>
     </EntityComponent>
@@ -132,17 +133,6 @@
 
         [ChangeAntennaHudText:true]
         [AntennaHudText:Freighter Camp]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CampLandedBroken_Action_DialogueOverride</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [DialogueBanks:DialogueOverride_MG_CampLandedBroken.xml]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">

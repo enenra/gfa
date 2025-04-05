@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<!-- Created from GSheet export on 2025-04-05 11:22:07.062302 -->
+
+<DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
+	<DialogueCue>
+		<DialogueCueId>Cargoship_BackToCourse</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Close one. Turning back onto original course.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_BackToCourse_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>DamageByFriendlyOrNeutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Friendly, friendly! Stop shooting!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_DamageByFriendlyOrNeutral_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Watch where you point that!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_DamageByFriendlyOrNeutral_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Despawn</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>That's it. Pulling out.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Despawn_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Returning to base.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Despawn_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyed</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Got one!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_EnemyDestroyed_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy destroyed.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_EnemyDestroyed_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyedwithPlayerHelp</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Got them! Thanks for the assist.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_EnemyDestroyedwithPlayerHelp_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Target destroyed. Thanks for the help.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_EnemyDestroyedwithPlayerHelp_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyedwithPlayerMadeFinalShot</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Good shot!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_EnemyDestroyedwithPlayerMadeFinalShot_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>You got them!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_EnemyDestroyedwithPlayerMadeFinalShot_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Fighter_InitCombatType</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Target sighted. Engaging.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_InitCombatType_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy spotted.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_InitCombatType_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Freighter_InitCombatType</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy in range. Red alert.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_InitCombatType_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Gunship_InitCombatType</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Target spotted - moving to engage.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_InitCombatType_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Patrol_SwitchToPatrol</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Target lost. Returning to patrol.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Patrol_SwitchToPatrol_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No more eyes on target. Continuing patrol.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Patrol_SwitchToPatrol_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>PlayerNearFriendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Greetings.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNearFriendly_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>PlayerNearNeutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Keep your distance.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNearNeutral_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFire</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Taking fire!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_UnderFire_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>I'm taking fire, evading!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_UnderFire_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFireGoingDown</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Going down! Aaaaah!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_UnderFireGoingDown_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>They got me, they got me! Going down!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_UnderFireGoingDown_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFireHealthLow</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Taking heavy fire!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_UnderFireHealthLow_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Taking heavy fire - I can't keep going like this!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_UnderFireHealthLow_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+</DialogueBank>

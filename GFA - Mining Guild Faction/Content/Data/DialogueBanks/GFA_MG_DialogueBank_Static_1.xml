@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<!-- Created from GSheet export on 2025-04-05 11:22:07.063569 -->
+
+<DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
+	<DialogueCue>
+		<DialogueCueId>DamageByFriendlyOrNeutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Watch out! We're on your side!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_DamageByFriendlyOrNeutral_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Learn to aim - we're friendly!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_DamageByFriendlyOrNeutral_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyed</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy downed!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_EnemyDestroyed_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy down!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_EnemyDestroyed_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyedwithPlayerHelp</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Another one bites the dust - thanks!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerHelp_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Thanks for the assist - that's another one down.</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerHelp_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyedwithPlayerMadeFinalShot</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Nice!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerMadeFinalShot_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy down - good shot!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_EnemyDestroyedwithPlayerMadeFinalShot_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFire</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're taking fire!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_UnderFire_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We're being attacked!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_UnderFire_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFireHealthLow</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're taking a lot of damange here!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Taking heavy fire - systems failing!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_UnderFireHealthLow_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+</DialogueBank>
