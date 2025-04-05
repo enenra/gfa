@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Factions>
 
-    <Faction Tag="MG" Founder="Unknown">
+    <Faction Tag="MG" Founder="Mining Guild Elders">
       <Id>
         <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
         <SubtypeId>GFA_Faction_MiningGuild</SubtypeId>
@@ -15,6 +15,11 @@
       <DiscoveredByDefault>false</DiscoveredByDefault>
       <StartingBalance>1000000000</StartingBalance>
       <FactionIcon>Textures\FactionLogo\GFA_FactionLogo_MiningGuild.dds</FactionIcon>
+      <FactionIconWorkshopId>
+        <Id>3234446815</Id>
+        <ServiceName>Steam</ServiceName>
+      </FactionIconWorkshopId>
+      <IconColor R="255" G="255" B="255" A="255" />
       <Description>Description Here.</Description>
     </Faction>
 
