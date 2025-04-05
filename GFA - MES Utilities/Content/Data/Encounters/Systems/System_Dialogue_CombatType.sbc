@@ -188,9 +188,27 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_Context_Condition_CombatType_Dropship]
+        [Conditions:GFA_System_Dialogue_Condition_Dropship_TargetIsApproaching]
 
         [Actions:GFA_System_Dialogue_Action_Dropship_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Condition_Dropship_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:MSB_CombatType_Dropship]
+
+        [CheckFalseBooleans:true]
+        [FalseBooleans:SettingBattle]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -222,9 +240,27 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_Context_Condition_CombatType_Fighter]
+        [Conditions:GFA_System_Dialogue_Condition_Fighter_TargetIsApproaching]
 
         [Actions:GFA_System_Dialogue_Action_Fighter_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Condition_Fighter_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:MSB_CombatType_Fighter]
+
+        [CheckFalseBooleans:true]
+        [FalseBooleans:SettingBattle]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -256,9 +292,27 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_Context_Condition_CombatType_Freighter]
+        [Conditions:GFA_System_Dialogue_Condition_Freighter_TargetIsApproaching]
 
         [Actions:GFA_System_Dialogue_Action_Freighter_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Condition_Freighter_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:MSB_CombatType_Freighter]
+
+        [CheckFalseBooleans:true]
+        [FalseBooleans:SettingBattle]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -290,9 +344,27 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_Context_Condition_CombatType_Gunship]
+        [Conditions:GFA_System_Dialogue_Condition_Gunship_TargetIsApproaching]
 
         [Actions:GFA_System_Dialogue_Action_Gunship_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Condition_Gunship_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:MSB_CombatType_Gunship]
+
+        [CheckFalseBooleans:true]
+        [FalseBooleans:SettingBattle]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -324,9 +396,27 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_Context_Condition_CombatType_Rover]
+        [Conditions:GFA_System_Dialogue_Condition_Rover_TargetIsApproaching]
 
         [Actions:GFA_System_Dialogue_Action_Rover_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Condition_Rover_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:MSB_CombatType_Rover]
+
+        [CheckFalseBooleans:true]
+        [FalseBooleans:SettingBattle]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -358,9 +448,27 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Conditions:MSB_Context_Condition_CombatType_Static]
+        [Conditions:GFA_System_Dialogue_Condition_Static_TargetIsApproaching]
 
         [Actions:GFA_System_Dialogue_Action_Static_TargetIsApproaching]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Condition_Static_TargetIsApproaching</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:MSB_CombatType_Static]
+
+        [CheckFalseBooleans:true]
+        [FalseBooleans:SettingBattle]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
