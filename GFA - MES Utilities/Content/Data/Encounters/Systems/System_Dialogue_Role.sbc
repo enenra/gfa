@@ -17,6 +17,40 @@
         [UseTrigger:true]
         [StartsReady:true]
 
+        [Actions:GFA_System_Dialogue_Action_InitRole_Cargoship_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_InitRole_Cargoship_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_InitRole_Cargoship_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_InitRole_Cargoship_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_InitRole_Cargoship_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
         [Actions:GFA_System_Dialogue_Action_InitRole_Cargoship]
       </Description>
     </EntityComponent>
@@ -27,6 +61,9 @@
       </Id>
       <Description>
         [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_InitRole_Cargoship_Delay]
 
         [Chance:100]
 
@@ -49,6 +86,40 @@
         [UseTrigger:true]
         [StartsReady:true]
 
+        [Actions:GFA_System_Dialogue_Action_InitRole_Patrol_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_InitRole_Patrol_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_InitRole_Patrol_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_InitRole_Patrol_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_InitRole_Patrol_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
         [Actions:GFA_System_Dialogue_Action_InitRole_Patrol]
       </Description>
     </EntityComponent>
@@ -59,6 +130,9 @@
       </Id>
       <Description>
         [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_InitRole_Patrol_Delay]
 
         [Chance:100]
 
