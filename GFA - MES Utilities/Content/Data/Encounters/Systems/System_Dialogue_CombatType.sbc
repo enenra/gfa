@@ -434,7 +434,7 @@
         [TrueBooleans:MSB_CombatType_Dropship]
 
         [CheckFalseBooleans:true]
-        [FalseBooleans:SettingBattle]
+        [FalseBooleans:MSB_State_Combat]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -489,7 +489,7 @@
         [TrueBooleans:MSB_CombatType_Fighter]
 
         [CheckFalseBooleans:true]
-        [FalseBooleans:SettingBattle]
+        [FalseBooleans:MSB_State_Combat]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -544,7 +544,7 @@
         [TrueBooleans:MSB_CombatType_Freighter]
 
         [CheckFalseBooleans:true]
-        [FalseBooleans:SettingBattle]
+        [FalseBooleans:MSB_State_Combat]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -599,7 +599,7 @@
         [TrueBooleans:MSB_CombatType_Gunship]
 
         [CheckFalseBooleans:true]
-        [FalseBooleans:SettingBattle]
+        [FalseBooleans:MSB_State_Combat]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -654,7 +654,7 @@
         [TrueBooleans:MSB_CombatType_Rover]
 
         [CheckFalseBooleans:true]
-        [FalseBooleans:SettingBattle]
+        [FalseBooleans:MSB_State_Combat]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -709,7 +709,7 @@
         [TrueBooleans:MSB_CombatType_Static]
 
         [CheckFalseBooleans:true]
-        [FalseBooleans:SettingBattle]
+        [FalseBooleans:MSB_State_Combat]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
