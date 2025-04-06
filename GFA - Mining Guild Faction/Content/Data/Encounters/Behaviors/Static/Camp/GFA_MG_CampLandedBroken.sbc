@@ -2,11 +2,6 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SpawnGroups>
 
-    <!--
-    TODO:
-      * re-enable faction resources
-    -->
-
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
@@ -46,12 +41,6 @@
   </SpawnGroups>
   <EntityComponents>
 
-    <!--
-        [CheckCustomSandboxCounters:true]
-        [CustomSandboxCounters:{Faction}_Resource_Counter]
-        [CustomSandboxCountersTargets:25]
-        [SandboxCounterCompareTypes:GreaterOrEqual]
-    -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
