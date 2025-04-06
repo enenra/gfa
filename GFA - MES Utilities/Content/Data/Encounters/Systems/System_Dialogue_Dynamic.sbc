@@ -809,7 +809,7 @@
         [RivalAI Trigger]
 
         [Type:Manual]
-        [Tags:MSB_TriggerEvent_Receiving_AllGood]
+        [Tags:MSB_TriggerEvent_Received_AllGood]
 
         [UseTrigger:true]
         [StartsReady:true]
@@ -828,7 +828,7 @@
         [Chance:100]
 
         [PlayDialogueCue:true]
-        [DialogueCueId:Receiving_AllGood]
+        [DialogueCueId:Received_AllGood]
       </Description>
     </EntityComponent>
 
@@ -875,7 +875,7 @@
         [RivalAI Trigger]
 
         [Type:Manual]
-        [Tags:MSB_TriggerEvent_Receiving_SOS]
+        [Tags:MSB_TriggerEvent_Received_SOS]
 
         [UseTrigger:true]
         [StartsReady:true]
@@ -894,7 +894,7 @@
         [Chance:100]
 
         [PlayDialogueCue:true]
-        [DialogueCueId:Receiving_SOS]
+        [DialogueCueId:Received_SOS]
       </Description>
     </EntityComponent>
 

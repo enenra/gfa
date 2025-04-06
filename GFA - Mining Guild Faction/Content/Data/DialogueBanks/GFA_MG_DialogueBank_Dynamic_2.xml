@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-06 15:19:20.723848 -->
+<!-- Created from GSheet export on 2025-04-06 18:23:30.330699 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -60,21 +60,6 @@
 			<Entry>
 				<Message>Returning to base.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Despawn_2_2</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-		</Entries>
-	</DialogueCue>
-	<DialogueCue>
-		<DialogueCueId>Dropship_ApproachingTarget</DialogueCueId>
-		<Entries>
-			<Entry>
-				<Message>Inbound to site. Ready to deploy assets.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Dropship_ApproachingTarget_2_1</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-			<Entry>
-				<Message>Approaching drop zone. Keep it tight.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Dropship_ApproachingTarget_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -140,21 +125,6 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>Fighter_ApproachingTarget</DialogueCueId>
-		<Entries>
-			<Entry>
-				<Message>Closing in on target. Stay sharp.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_ApproachingTarget_2_1</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-			<Entry>
-				<Message>Approach vector locked. Moving in.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_ApproachingTarget_2_2</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-		</Entries>
-	</DialogueCue>
-	<DialogueCue>
 		<DialogueCueId>Fighter_InitCombatType</DialogueCueId>
 		<Entries>
 			<Entry>
@@ -185,21 +155,6 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>Freighter_ApproachingTarget</DialogueCueId>
-		<Entries>
-			<Entry>
-				<Message>Heading to target coordinates. Stay clear.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_ApproachingTarget_2_1</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-			<Entry>
-				<Message>Approaching target. Systems nominal.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_ApproachingTarget_2_2</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-		</Entries>
-	</DialogueCue>
-	<DialogueCue>
 		<DialogueCueId>Freighter_InitCombatType</DialogueCueId>
 		<Entries>
 			<Entry>
@@ -225,21 +180,6 @@
 			<Entry>
 				<Message>Approach detected. Readying defenses.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Freighter_TargetIsApproaching_2_2</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-		</Entries>
-	</DialogueCue>
-	<DialogueCue>
-		<DialogueCueId>Gunship_ApproachingTarget</DialogueCueId>
-		<Entries>
-			<Entry>
-				<Message>Target locked. Closing distance.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_ApproachingTarget_2_1</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-			<Entry>
-				<Message>Target detected. We're on approach.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_ApproachingTarget_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -345,31 +285,31 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>Receiving_AllGood</DialogueCueId>
+		<DialogueCueId>Received_AllGood</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Situation resolved? Understood.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_AllGood_2_1</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Received_AllGood_2_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
 				<Message>Received the all green.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_AllGood_2_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Received_AllGood_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>Receiving_SOS</DialogueCueId>
+		<DialogueCueId>Received_SOS</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Receiving call for help. Responding.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_SOS_2_1</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Received_SOS_2_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
 				<Message>SOS received - firing up thrusters!</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Receiving_SOS_2_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Received_SOS_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -398,7 +338,7 @@
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
-				<Message>Hostiles! Need help!</Message>
+				<Message>Hostiles! Need support!</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Sending_SOS_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
