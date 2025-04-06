@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-06 12:40:23.301037 -->
+<!-- Created from GSheet export on 2025-04-06 15:19:20.723848 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
 	<DialogueCue>
-		<DialogueCueId>Cargoship_BackToCourse</DialogueCueId>
+		<DialogueCueId>Cargoship_InitRole</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Close one. Turning back onto original course.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_BackToCourse_2_1</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_InitRole_2_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
 				<Message>Course realigned. Cargo's not gonna haul itself.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_BackToCourse_2_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_InitRole_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -285,16 +285,16 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>Patrol_SwitchToPatrol</DialogueCueId>
+		<DialogueCueId>Patrol_InitRole</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Target lost. Returning to patrol.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Patrol_SwitchToPatrol_2_1</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Patrol_InitRole_2_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
 				<Message>No more eyes on target. Continuing patrol.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_Patrol_SwitchToPatrol_2_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Patrol_InitRole_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
