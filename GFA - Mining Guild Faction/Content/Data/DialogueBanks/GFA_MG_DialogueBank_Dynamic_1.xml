@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-05 21:43:39.497412 -->
+<!-- Created from GSheet export on 2025-04-06 12:19:15.739489 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -260,6 +260,16 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
+		<DialogueCueId>IdleSounds</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>I wonder if... no. Probably not.</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_IdleSounds_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
 		<DialogueCueId>Patrol_SwitchToPatrol</DialogueCueId>
 		<Entries>
 			<Entry>
@@ -373,7 +383,7 @@
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
-				<Message>Hostiles on approach! Need help!</Message>
+				<Message>Hostiles! Need help!</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Sending_SOS_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
