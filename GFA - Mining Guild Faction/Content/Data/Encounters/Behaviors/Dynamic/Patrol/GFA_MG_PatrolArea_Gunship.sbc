@@ -24,6 +24,12 @@
 
         [ReplenishSystems:true]
         [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
+
+        [UseRandomNameGenerator:true]
+        [RenameGrid:false]
+        [ReplaceAntennaHudTextInsteadOfName:true]
+        [ReplaceAntennaNameWithRandomizedName:Antenna]
+        [RandomGridNamePattern:Sector Patrol (Heavy) GreekLetter-RandomNumber]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -130,21 +136,8 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_PatrolArea_Gunship_Action_Rename]
         [Actions:GFA_MG_PatrolArea_Gunship_Action_SetDespawnType]
         [Actions:MSB_System_Communication_Action_Enable_SOS_Response_Dynamic]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolArea_Gunship_Action_Rename</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [ChangeAntennaHudText:true]
-        [AntennaHudText:Sector Patrol (Heavy)]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">

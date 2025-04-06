@@ -24,6 +24,12 @@
 
         [ReplenishSystems:true]
         [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
+
+        [UseRandomNameGenerator:true]
+        [RenameGrid:false]
+        [ReplaceAntennaHudTextInsteadOfName:true]
+        [ReplaceAntennaNameWithRandomizedName:Antenna]
+        [RandomGridNamePattern:Cargo Ship GreekLetter-RandomNumber]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -125,20 +131,7 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_Cargoship_Aurore_Cargo_Action_Rename]
         [Actions:GFA_MG_Cargoship_Aurore_Cargo_Action_SetDespawnType]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Cargoship_Aurore_Cargo_Action_Rename</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [ChangeAntennaHudText:true]
-        [AntennaHudText:Cargo Ship]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
