@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-06 12:19:15.741276 -->
+<!-- Created from GSheet export on 2025-04-06 12:40:23.302566 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
 	<DialogueCue>
+		<DialogueCueId>Compromised</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Learn to aim - we're friendly!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_Compromised_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
 		<DialogueCueId>DamageByFriendlyOrNeutral</DialogueCueId>
 		<Entries>
 			<Entry>
-				<Message>Watch out! We're on your side!</Message>
+				<Message/>
 				<AudioId>_GFA_MG_Dialogue_Static_DamageByFriendlyOrNeutral_1_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>DeathSound</DialogueCueId>
+		<Entries>
 			<Entry>
-				<Message>Learn to aim - we're friendly!</Message>
-				<AudioId>_GFA_MG_Dialogue_Static_DamageByFriendlyOrNeutral_1_2</AudioId>
+				<Message>Enemy down!</Message>
+				<AudioId>_GFA_MG_Dialogue_Static_DeathSound_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -23,7 +38,7 @@
 		<DialogueCueId>Despawn</DialogueCueId>
 		<Entries>
 			<Entry>
-				<Message>Enemy down!</Message>
+				<Message>Thanks for the assist - that's another one down.</Message>
 				<AudioId>_GFA_MG_Dialogue_Static_Despawn_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
@@ -33,18 +48,8 @@
 		<DialogueCueId>Dropship_ApproachingTarget</DialogueCueId>
 		<Entries>
 			<Entry>
-				<Message>Thanks for the assist - that's another one down.</Message>
-				<AudioId>_GFA_MG_Dialogue_Static_Dropship_ApproachingTarget_1_2</AudioId>
-				<Weights>1</Weights>
-			</Entry>
-		</Entries>
-	</DialogueCue>
-	<DialogueCue>
-		<DialogueCueId>Dropship_TargetIsApproaching</DialogueCueId>
-		<Entries>
-			<Entry>
 				<Message>Enemy down - good shot!</Message>
-				<AudioId>_GFA_MG_Dialogue_Static_Dropship_TargetIsApproaching_1_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Static_Dropship_ApproachingTarget_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -80,21 +85,21 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>Freighter_ApproachingTarget</DialogueCueId>
+		<DialogueCueId>Fighter_TargetIsApproaching</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>We're being attacked!</Message>
-				<AudioId>_GFA_MG_Dialogue_Static_Freighter_ApproachingTarget_1_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Static_Fighter_TargetIsApproaching_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>Freighter_TargetIsApproaching</DialogueCueId>
+		<DialogueCueId>Freighter_InitCombatType</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Taking heavy fire - systems failing!</Message>
-				<AudioId>_GFA_MG_Dialogue_Static_Freighter_TargetIsApproaching_1_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Static_Freighter_InitCombatType_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>

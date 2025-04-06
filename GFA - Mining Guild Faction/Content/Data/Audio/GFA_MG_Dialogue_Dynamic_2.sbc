@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<!-- Generated from DialogueBanks on 2025-04-06 12:19:26.169165 -->
+<!-- Generated from DialogueBanks on 2025-04-06 12:40:29.113172 -->
 
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Sounds>
@@ -75,6 +75,80 @@
 			<Waves>
 				<Wave Type="D3">
 					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Dynamic_Cargoship_BackToCourse_2_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Arc_GFA_MG_Dialogue_Dynamic_Compromised_2_1</SubtypeId>
+			</Id>
+			<Category>PLAYER</Category>
+			<MaxDistance>500</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<Volume>0.5</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Dynamic_Compromised_2_1.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Real_GFA_MG_Dialogue_Dynamic_Compromised_2_1</SubtypeId>
+			</Id>
+			<Category>PLAYER_R</Category>
+			<MaxDistance>250</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<RealisticFilter>realShipFilter</RealisticFilter>
+			<Volume>1.0</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Dynamic_Compromised_2_1.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Arc_GFA_MG_Dialogue_Dynamic_Compromised_2_2</SubtypeId>
+			</Id>
+			<Category>PLAYER</Category>
+			<MaxDistance>500</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<Volume>0.5</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Dynamic_Compromised_2_2.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>Real_GFA_MG_Dialogue_Dynamic_Compromised_2_2</SubtypeId>
+			</Id>
+			<Category>PLAYER_R</Category>
+			<MaxDistance>250</MaxDistance>
+			<PitchVariation>100</PitchVariation>
+			<VolumeVariation>0.1</VolumeVariation>
+			<PreventSynchronization>600</PreventSynchronization>
+			<SoundLimit>1</SoundLimit>
+			<RealisticFilter>realShipFilter</RealisticFilter>
+			<Volume>1.0</Volume>
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Dialogue\Arc_GFA_MG_Dialogue_Dynamic_Compromised_2_2.wav</Start>
 				</Wave>
 			</Waves>
 		</Sound>

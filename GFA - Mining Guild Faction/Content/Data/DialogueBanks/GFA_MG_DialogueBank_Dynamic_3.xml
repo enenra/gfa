@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-06 12:19:15.739489 -->
+<!-- Created from GSheet export on 2025-04-06 12:40:23.301037 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -15,6 +15,21 @@
 			<Entry>
 				<Message>Course realigned. Cargo's not gonna haul itself.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Cargoship_BackToCourse_3_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Compromised</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>AAAAAH!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Compromised_3_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No, no, NOOOO!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_Compromised_3_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
@@ -158,7 +173,7 @@
 		<DialogueCueId>Fighter_TargetIsApproaching</DialogueCueId>
 		<Entries>
 			<Entry>
-				<Message>They're coming to us. Saves fuel.</Message>
+				<Message>Contact is approaching us. Saves fuel.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Fighter_TargetIsApproaching_3_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
@@ -253,7 +268,7 @@
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
-				<Message>Looks like they're coming to us.</Message>
+				<Message>Looks like the target is coming to us.</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_Gunship_TargetIsApproaching_3_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>

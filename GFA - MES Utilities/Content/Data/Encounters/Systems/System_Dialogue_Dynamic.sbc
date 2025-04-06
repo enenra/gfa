@@ -18,6 +18,7 @@
         [Triggers:GFA_System_Dialogue_Trigger_UnderFire]
         [Triggers:GFA_System_Dialogue_Trigger_UnderFireHealthLow]
         [Triggers:GFA_System_Dialogue_Trigger_UnderFireGoingDown]
+        [Triggers:GFA_System_Dialogue_Trigger_Compromised]
 
         [Triggers:GFA_System_Dialogue_Trigger_InitCombatType_Fighter]
         [Triggers:GFA_System_Dialogue_Trigger_InitCombatType_Gunship]
@@ -503,6 +504,39 @@
         [EnableTriggerNames:GFA_System_Dialogue_Trigger_UnderFireGoingDown]
         [DisableTriggers:true]
         [DisableTriggerNames:GFA_System_Dialogue_Trigger_UnderFireGoingDown_Cooldown]
+      </Description>
+    </EntityComponent>
+
+    <!-- Compromised -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_Compromised</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_System_Dialogue_Action_Compromised]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_Compromised</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Compromised]
       </Description>
     </EntityComponent>
 
