@@ -24,6 +24,9 @@
         [Triggers:GFA_System_Dialogue_Trigger_InitCombatType_Gunship]
         [Triggers:GFA_System_Dialogue_Trigger_InitCombatType_Freighter]
 
+        [Triggers:GFA_System_Dialogue_Trigger_InitRole_Cargoship]
+        [Triggers:GFA_System_Dialogue_Trigger_InitRole_Patrol]
+
         [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseFriendly]
         [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseNeutral]
         [Triggers:GFA_System_Dialogue_Trigger_SwitchToPatrol]
@@ -573,103 +576,6 @@
       </Description>
     </EntityComponent>
 
-    <!-- InitCombatType -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_InitCombatType_Freighter</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Freighter_InitCombatType]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_System_Dialogue_Action_InitCombatType_Freighter]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_InitCombatType_Freighter</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [Chance:100]
-
-        [PlayDialogueCue:true]
-        [DialogueCueId:Freighter_InitCombatType]
-      </Description>
-    </EntityComponent>
-
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_InitCombatType_Gunship</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Gunship_InitCombatType]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_System_Dialogue_Action_InitCombatType_Gunship]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_InitCombatType_Gunship</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [Chance:100]
-
-        [PlayDialogueCue:true]
-        [DialogueCueId:Gunship_InitCombatType]
-      </Description>
-    </EntityComponent>
-
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_InitCombatType_Freighter</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Freighter_InitCombatType]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_System_Dialogue_Action_InitCombatType_Freighter]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_InitCombatType_Freighter</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [Chance:100]
-
-        [PlayDialogueCue:true]
-        [DialogueCueId:Freighter_InitCombatType]
-      </Description>
-    </EntityComponent>
-
     <!-- PlayerCloseFriendly -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
@@ -852,39 +758,6 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:Patrol_SwitchToPatrol]
-      </Description>
-    </EntityComponent>
-
-    <!-- BackToCourse -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_BackToCourse</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Patrol_BackToCourse]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_System_Dialogue_Action_BackToCourse]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_BackToCourse</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [Chance:100]
-
-        [PlayDialogueCue:true]
-        [DialogueCueId:Cargoship_BackToCourse]
       </Description>
     </EntityComponent>
 

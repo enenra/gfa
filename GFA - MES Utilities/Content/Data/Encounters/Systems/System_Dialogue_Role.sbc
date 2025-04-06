@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- InitRole -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_InitRole_Cargoship</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Cargoship_InitRole]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_System_Dialogue_Action_InitRole_Cargoship]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_InitRole_Cargoship</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Cargoship_InitRole]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_InitRole_Patrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Patrol_InitRole]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_System_Dialogue_Action_InitRole_Patrol]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_InitRole_Patrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Patrol_InitRole]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

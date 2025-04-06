@@ -2,6 +2,103 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
 
+    <!-- InitCombatType -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_InitCombatType_Fighter</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Fighter_InitCombatType]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_System_Dialogue_Action_InitCombatType_Fighter]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_InitCombatType_Fighter</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Fighter_InitCombatType]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_InitCombatType_Gunship</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Gunship_InitCombatType]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_System_Dialogue_Action_InitCombatType_Gunship]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_InitCombatType_Gunship</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Gunship_InitCombatType]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_InitCombatType_Freighter</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Freighter_InitCombatType]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_System_Dialogue_Action_InitCombatType_Freighter]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_InitCombatType_Freighter</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Freighter_InitCombatType]
+      </Description>
+    </EntityComponent>
+
     <!-- ApproachingTarget -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
