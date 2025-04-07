@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_MostlyFine_Aurore_Gunship_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -13,7 +13,7 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_AbandonnedAurore_MostlyFine_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_MostlyFine_Aurore_Gunship_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
@@ -27,34 +27,6 @@
       <Frequency>5.0</Frequency>
       <Prefabs>
 
-        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Cargo Ship]">
-          <Position>
-            <X>0.0</X>
-            <Y>0.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedAurore_MostlyFine_Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Cargo Ship]">
-          <Position>
-            <X>0.0</X>
-            <Y>10.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedAurore_MostlyFine_Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Cargo Ship]">
-          <Position>
-            <X>0.0</X>
-            <Y>20.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedAurore_MostlyFine_Behavior</Behaviour>
-        </Prefab>
-
         <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Gunship]">
           <Position>
             <X>0.0</X>
@@ -62,7 +34,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedGunship_Behavior</Behaviour>
+          <Behaviour>GFA_MG_MostlyFine_Aurore_Gunship_Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Gunship]">
           <Position>
@@ -71,7 +43,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedGunship_Behavior</Behaviour>
+          <Behaviour>GFA_MG_MostlyFine_Aurore_Gunship_Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Gunship]">
           <Position>
@@ -80,35 +52,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedGunship_Behavior</Behaviour>
-        </Prefab>
-
-        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Slave Ship]">
-          <Position>
-            <X>0.0</X>
-            <Y>0.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedSlaveShip_Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Slave Ship]">
-          <Position>
-            <X>0.0</X>
-            <Y>10.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedSlaveShip_Behavior</Behaviour>
-        </Prefab>
-        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Slave Ship]">
-          <Position>
-            <X>0.0</X>
-            <Y>20.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>0</Speed>
-          <Behaviour>GFA_MG_AbandonnedSlaveShip_Behavior</Behaviour>
+          <Behaviour>GFA_MG_MostlyFine_Aurore_Gunship_Behavior</Behaviour>
         </Prefab>
 
       </Prefabs>
@@ -119,7 +63,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_MostlyFine_Aurore_Gunship_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
@@ -138,14 +82,14 @@
         [ReplenishSystems:true]
 
         [PrefabSpawningMode:Random]
-        [RotateInstallations:{X:5 Y:0 Z:-5},{X:15 Y:-5 Z:5},{X:-10 Y:0 Z:30},{X:5 Y:0 Z:-5},{X:15 Y:-5 Z:5},{X:-10 Y:0 Z:30},{X:5 Y:0 Z:-5},{X:15 Y:-5 Z:5},{X:-10 Y:0 Z:30}]
+        [RotateInstallations:{X:5 Y:0 Z:-5},{X:15 Y:-5 Z:5},{X:-10 Y:0 Z:30}]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_MostlyFine_Aurore_Gunship_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -162,9 +106,9 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_AbandonnedAurore_MostlyFine_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_MostlyFine_Aurore_Gunship_Trigger_SpawnSetup]
 
-        [Triggers:GFA_MG_AbandonnedAurore_MostlyFine_Trigger_PlaceCrew]
+        [Triggers:GFA_MG_MostlyFine_Aurore_Gunship_Trigger_PlaceCrew]
 
         [TriggerGroups:MSB_System_Communication_TriggerGroup]
       </Description>
@@ -174,7 +118,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_MostlyFine_Aurore_Gunship_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -184,13 +128,13 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_AbandonnedAurore_MostlyFine_Action_Rename]
+        [Actions:GFA_MG_MostlyFine_Aurore_Gunship_Action_Rename]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_Action_Rename</SubtypeId>
+        <SubtypeId>GFA_MG_MostlyFine_Aurore_Gunship_Action_Rename</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -203,7 +147,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_Trigger_PlaceCrew</SubtypeId>
+        <SubtypeId>GFA_MG_MostlyFine_Aurore_Gunship_Trigger_PlaceCrew</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -215,13 +159,13 @@
         [TargetDistance:1000]
 
         [MaxActions:1]
-        [Actions:GFA_MG_AbandonnedAurore_MostlyFine_Action_PlaceCrew]
+        [Actions:GFA_MG_MostlyFine_Aurore_Gunship_Action_PlaceCrew]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_AbandonnedAurore_MostlyFine_Action_PlaceCrew</SubtypeId>
+        <SubtypeId>GFA_MG_MostlyFine_Aurore_Gunship_Action_PlaceCrew</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]

@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_Aurore_Gunship_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_Wrecked_Aurore_Gunship_SpawnConditions]
+
+        [ManipulationProfiles:GFA_MG_Manipulation]
+        [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
+        [ManipulationProfiles:MSB_Manipulation_Wrecked_Heavy]
+
+        [ReplenishSystems:true]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+
+        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Gunship]">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_Wrecked_Aurore_Gunship_Behavior</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Gunship]">
+          <Position>
+            <X>0.0</X>
+            <Y>10.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_Wrecked_Aurore_Gunship_Behavior</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[MES-MG]YV-865 Aurore-Class[Gunship]">
+          <Position>
+            <X>0.0</X>
+            <Y>20.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_Wrecked_Aurore_Gunship_Behavior</Behaviour>
+        </Prefab>
+
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_Aurore_Gunship_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [SpaceRandomEncounter:true]
+        [PlanetaryInstallation:true]
+
+        [RandomEncounterChance:50]
+        [PlanetaryInstallationChance:50]
+
+        [PlanetaryInstallationType:Small]
+        [InstallationTerrainValidation:true]
+
+        [RivalAiAnySpawn:true]
+        [FactionOwner:UNKN]
+        [ReplenishSystems:true]
+
+        [PrefabSpawningMode:Random]
+        [RotateInstallations:{X:5 Y:0 Z:-5},{X:15 Y:-5 Z:5},{X:-10 Y:0 Z:30}]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_Aurore_Gunship_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+	      [BehaviorName:Passive]
+
+        [TargetData:MSB_TargetProfile_ShortRange]
+
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [Triggers:GFA_MG_Wrecked_Aurore_Gunship_Trigger_SpawnSetup]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_Aurore_Gunship_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_Wrecked_Aurore_Gunship_Action_Rename]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_Aurore_Gunship_Action_Rename</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAntennaHudText:true]
+        [AntennaHudText:Old Emergency Signal]
+
+        [ChangeAntennaRanges:true]
+        [AntennaNamesForRangeChange:Antenna]
+        [AntennaRangeChangeType:Set]
+        [AntennaRangeChangeAmount:5000]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
