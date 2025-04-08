@@ -15,10 +15,21 @@
         [Triggers:GFA_System_Dialogue_Trigger_EnemyDestroyedwithPlayerMadeFinalShot]
 
         [Triggers:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral]
+        [Triggers:GFA_System_Dialogue_Trigger_DamageByFriendlyOrNeutral_Cooldown]
         [Triggers:GFA_System_Dialogue_Trigger_UnderFire]
+        [Triggers:GFA_System_Dialogue_Trigger_UnderFire_Cooldown]
         [Triggers:GFA_System_Dialogue_Trigger_UnderFireHealthLow]
+        [Triggers:GFA_System_Dialogue_Trigger_UnderFireHealthLow_Cooldown]
         [Triggers:GFA_System_Dialogue_Trigger_UnderFireGoingDown]
+        [Triggers:GFA_System_Dialogue_Trigger_UnderFireGoingDown_Cooldown]
         [Triggers:GFA_System_Dialogue_Trigger_Compromised]
+
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseFriendly]
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseNeutral]
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
+
+        [Triggers:GFA_System_Dialogue_Trigger_Despawn]
 
         [Triggers:GFA_System_Dialogue_Trigger_InitCombatType_Fighter]
         [Triggers:GFA_System_Dialogue_Trigger_InitCombatType_Fighter_Delay]
@@ -31,12 +42,6 @@
         [Triggers:GFA_System_Dialogue_Trigger_InitRole_Cargoship_Delay]
         [Triggers:GFA_System_Dialogue_Trigger_InitRole_Patrol]
         [Triggers:GFA_System_Dialogue_Trigger_InitRole_Patrol_Delay]
-
-        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseFriendly]
-        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseNeutral]
-        [Triggers:GFA_System_Dialogue_Trigger_SwitchToPatrol]
-
-        [Triggers:GFA_System_Dialogue_Trigger_Despawn]
 
         [//Triggers:GFA_System_Dialogue_Trigger_Dropship_ApproachingTarget]
         [//Triggers:GFA_System_Dialogue_Trigger_Fighter_ApproachingTarget]
@@ -608,13 +613,12 @@
       <Description>
         [RivalAI Action]
 
-        [Chance:75]
-
         [PlayDialogueCue:true]
         [DialogueCueId:PlayerCloseFriendly]
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
+
         [EnableTriggers:true]
         [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
 
@@ -651,6 +655,7 @@
 
         [EnableTriggers:true]
         [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly]
+
         [DisableTriggers:true]
         [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
       </Description>
@@ -684,13 +689,12 @@
       <Description>
         [RivalAI Action]
 
-        [Chance:75]
-
         [PlayDialogueCue:true]
         [DialogueCueId:PlayerCloseNeutral]
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
+
         [EnableTriggers:true]
         [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
 
@@ -729,39 +733,6 @@
         [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral]
         [DisableTriggers:true]
         [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
-      </Description>
-    </EntityComponent>
-
-    <!-- SwitchToPatrol -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_SwitchToPatrol</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:MSB_TriggerEvent_Patrol_SwitchToPatrol]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_System_Dialogue_Action_SwitchToPatrol]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_SwitchToPatrol</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [Chance:100]
-
-        [PlayDialogueCue:true]
-        [DialogueCueId:Patrol_SwitchToPatrol]
       </Description>
     </EntityComponent>
 
