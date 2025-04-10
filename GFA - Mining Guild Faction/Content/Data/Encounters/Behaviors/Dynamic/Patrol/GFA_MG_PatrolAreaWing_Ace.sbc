@@ -129,6 +129,7 @@
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
 
         [TriggerGroups:MSB_DynamicCommon_TriggerGroup]
+        [TriggerGroups:MSB_System_Despawn_TriggerGroup_Simple]
         [TriggerGroups:MSB_System_Communication_TriggerGroup]
         [TriggerGroups:MSB_System_Crash_TriggerGroup]
         [Triggers:MSB_System_EngagementRange_Trigger_2000]
@@ -153,19 +154,7 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_PatrolAreaWing_Ace_Action_SetDespawnType]
         [Actions:MSB_System_Communication_Action_Enable_SOS_Response_Dynamic]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_PatrolAreaWing_Ace_Action_SetDespawnType</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [SetBooleansTrue:MSB_Despawn_Use_Simple]
       </Description>
     </EntityComponent>
 
