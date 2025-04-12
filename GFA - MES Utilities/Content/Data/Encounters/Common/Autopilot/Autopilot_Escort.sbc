@@ -11,22 +11,22 @@
         [RivalAI Autopilot]
 
         [DisableInertiaDampeners:false]
-        [SlowDownOnWaypointApproach:true]
-        [FlyLevelWithGravity:false]
+        [SlowDownOnWaypointApproach:false]
+        [FlyLevelWithGravity:true]
+
         [MinimumPlanetAltitude:75]
         [IdealPlanetAltitude:150]
-        [WaypointTolerance:5]
-        [UseVelocityCollisionEvasion:true]
-        [WaypointWaitTimeTrigger:20]
 
-        [IdealMinSpeed:12]
+        [WaypointTolerance:10]
+
+        [UseVelocityCollisionEvasion:true]
+
+        [IdealMinSpeed:50]
         [IdealMaxSpeed:100]
         [MaxSpeedTolerance:3]
 
         [LimitRotationSpeed:true]
-        [MaxRotationMagnitude:0.75]
-
-        [EscortSpeedMatchMinDistance:5]
+        [MaxRotationMagnitude:1]
       </Description>
     </EntityComponent>
 
@@ -39,22 +39,22 @@
         [RivalAI Autopilot]
 
         [DisableInertiaDampeners:false]
-        [SlowDownOnWaypointApproach:true]
-        [FlyLevelWithGravity:false]
+        [SlowDownOnWaypointApproach:false]
+        [FlyLevelWithGravity:true]
+
         [MinimumPlanetAltitude:75]
         [IdealPlanetAltitude:150]
-        [WaypointTolerance:5]
+
+        [WaypointTolerance:10]
+
         [UseVelocityCollisionEvasion:true]
-        [WaypointWaitTimeTrigger:20]
 
         [IdealMinSpeed:12]
         [IdealMaxSpeed:100]
         [MaxSpeedTolerance:3]
 
         [LimitRotationSpeed:true]
-        [MaxRotationMagnitude:0.75]
-
-        [EscortSpeedMatchMinDistance:5]
+        [MaxRotationMagnitude:1]
       </Description>
     </EntityComponent>
 

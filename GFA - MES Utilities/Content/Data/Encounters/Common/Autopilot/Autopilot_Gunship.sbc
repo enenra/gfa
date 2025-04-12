@@ -13,6 +13,7 @@
         [DisableInertiaDampeners:false]
         [SlowDownOnWaypointApproach:false]
         [FlyLevelWithGravity:false]
+        [LevelWithGravityWhenIdle:true]
 
         [MinimumPlanetAltitude:400]
         [IdealPlanetAltitude:500]
@@ -21,6 +22,9 @@
 
         [IdealMaxSpeed:50]
         [MaxSpeedTolerance:5]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1]
 
         [OffsetSpaceMinDistFromTarget:150]
         [OffsetSpaceMaxDistFromTarget:300]
