@@ -87,7 +87,8 @@
         [TargetData:MSB_TargetProfile_LowRange]
         [OverrideTargetData:MSB_TargetProfile_LongRange]
         [AutopilotData:GFA_PatrolArea_Autopilot]
-        [SecondaryAutopilotData:MSB_Fighter_Autopilot]
+        [SecondaryAutopilotData:GFA_Fighter_Autopilot]
+        [TertiaryAutopilotData:GFA_Fighter_Autopilot_Fighter_LowAltitude]
 
         [DialogueBanks:GFA_MG_DialogueBank_Dynamic_1.xml]
         [DialogueBanks:GFA_MG_DialogueBank_Dynamic_2.xml]

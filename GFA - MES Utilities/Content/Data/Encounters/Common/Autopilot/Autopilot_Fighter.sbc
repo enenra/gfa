@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Fighter_Autopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:true]
+        [FlyLevelWithGravity:false]
+        [LevelWithGravityWhenIdle:false]
+        [UseVelocityCollisionEvasion:true]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:100]
+        [WaypointTolerance:150]
+
+        [IdealMinSpeed:55]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+        [MinimumPlanetAltitude:100]
+        [AltitudeTolerance:20]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1]
+        [AngleAllowedForForwardThrust:35]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:3000]
+        [StrafeMaxDurationMs:6000]
+
+        [UseProjectileLeadPrediction:true]
+        [StrikeBeginPlanetAttackRunDistance:600]
+        [StrikeBreakawayDistance:100]
+        [StrikeEngageUseSafePlanetPathing:true]
+        [StrikeEngageUseCollisionEvasion:true]
+
+        [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+
+        [OffsetPlanetMinDistFromTarget:800]
+        [OffsetPlanetMaxDistFromTarget:1200]
+        [OffsetPlanetMinTargetAltitude:450]
+        [OffsetPlanetMaxTargetAltitude:700]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Fighter_Autopilot_Fighter_LowAltitude</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [IdealPlanetAltitude:50]
+        [MinimumPlanetAltitude:5]
+
+        [TryToLevelWithTarget:true]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:15]
+        [IdealMaxSpeed:35]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:250]
+
+        [AllowStrafing:false]
+
+        [EngageDistanceSpace:50]
+        [EngageDistancePlanet:50]
+        [DisengageDistanceSpace:100]
+        [DisengageDistancePlanet:100]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
