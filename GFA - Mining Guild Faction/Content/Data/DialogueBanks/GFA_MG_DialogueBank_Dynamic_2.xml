@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-08 21:20:09.310082 -->
+<!-- Created from GSheet export on 2025-04-12 09:35:53.262681 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -240,31 +240,31 @@
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>PlayerCloseFriendly</DialogueCueId>
+		<DialogueCueId>PlayerNear1000Friendly</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Greetings.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerCloseFriendly_2_1</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNear1000Friendly_2_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
 				<Message>Friendly contact. Stay in line.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerCloseFriendly_2_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNear1000Friendly_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
 	</DialogueCue>
 	<DialogueCue>
-		<DialogueCueId>PlayerCloseNeutral</DialogueCueId>
+		<DialogueCueId>PlayerNear1000Neutral</DialogueCueId>
 		<Entries>
 			<Entry>
 				<Message>Keep your distance.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerCloseNeutral_2_1</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNear1000Neutral_2_1</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 			<Entry>
 				<Message>Stay out of our lanes.</Message>
-				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerCloseNeutral_2_2</AudioId>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_PlayerNear1000Neutral_2_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>

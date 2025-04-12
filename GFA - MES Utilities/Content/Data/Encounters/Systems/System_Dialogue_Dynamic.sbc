@@ -24,10 +24,10 @@
         [Triggers:GFA_System_Dialogue_Trigger_UnderFireGoingDown_Cooldown]
         [Triggers:GFA_System_Dialogue_Trigger_Compromised]
 
-        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseFriendly]
-        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
-        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseNeutral]
-        [Triggers:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerNear1000Friendly]
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerNear1000Friendly_Cooldown]
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerNear1000Neutral]
+        [Triggers:GFA_System_Dialogue_Trigger_PlayerNear1000Neutral_Cooldown]
 
         [Triggers:GFA_System_Dialogue_Trigger_Despawn]
 
@@ -585,51 +585,51 @@
       </Description>
     </EntityComponent>
 
-    <!-- PlayerCloseFriendly -->
+    <!-- PlayerNear1000Friendly -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerCloseFriendly</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerNear1000Friendly</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
 
         [Type:Manual]
-        [Tags:MSB_TriggerEvent_PlayerClose]
+        [Tags:MSB_TriggerEvent_PlayerNear1000]
 
         [UseTrigger:true]
         [StartsReady:true]
 
         [Conditions:MSB_Context_Condition_PlayerFriendly]
 
-        [Actions:GFA_System_Dialogue_Action_PlayerCloseFriendly]
+        [Actions:GFA_System_Dialogue_Action_PlayerNear1000Friendly]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_PlayerCloseFriendly</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_PlayerNear1000Friendly</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [PlayDialogueCue:true]
-        [DialogueCueId:PlayerCloseFriendly]
+        [DialogueCueId:PlayerNear1000Friendly]
 
         [ResetCooldownTimeOfTriggers:true]
-        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
+        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_PlayerNear1000Friendly_Cooldown]
 
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Friendly_Cooldown]
 
         [DisableTriggers:true]
-        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Friendly]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerNear1000Friendly_Cooldown</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -642,70 +642,70 @@
         [MinCooldownMs:60000]
         [MaxCooldownMs:60001]
 
-        [Actions:GFA_System_Dialogue_Action_PlayerCloseFriendly_Cooldown]
+        [Actions:GFA_System_Dialogue_Action_PlayerNear1000Friendly_Cooldown]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_PlayerCloseFriendly_Cooldown</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_PlayerNear1000Friendly_Cooldown</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Friendly]
 
         [DisableTriggers:true]
-        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseFriendly_Cooldown]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Friendly_Cooldown]
       </Description>
     </EntityComponent>
 
-    <!-- PlayerCloseNeutral -->
+    <!-- PlayerNear1000Neutral -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerCloseNeutral</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerNear1000Neutral</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
 
         [Type:Manual]
-        [Tags:MSB_TriggerEvent_PlayerClose]
+        [Tags:MSB_TriggerEvent_PlayerNear1000]
 
         [UseTrigger:true]
         [StartsReady:true]
 
         [Conditions:MSB_Context_Condition_PlayerNeutral]
 
-        [Actions:GFA_System_Dialogue_Action_PlayerCloseNeutral]
+        [Actions:GFA_System_Dialogue_Action_PlayerNear1000Neutral]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_PlayerCloseNeutral</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_PlayerNear1000Neutral</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [PlayDialogueCue:true]
-        [DialogueCueId:PlayerCloseNeutral]
+        [DialogueCueId:PlayerNear1000Neutral]
 
         [ResetCooldownTimeOfTriggers:true]
-        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
+        [ResetTriggerCooldownNames:GFA_System_Dialogue_Trigger_PlayerNear1000Neutral_Cooldown]
 
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Neutral_Cooldown]
 
         [DisableTriggers:true]
-        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Neutral]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_PlayerNear1000Neutral_Cooldown</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -718,21 +718,21 @@
         [MinCooldownMs:60000]
         [MaxCooldownMs:60001]
 
-        [Actions:GFA_System_Dialogue_Action_PlayerCloseNeutral_Cooldown]
+        [Actions:GFA_System_Dialogue_Action_PlayerNear1000Neutral_Cooldown]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Dialogue_Action_PlayerCloseNeutral_Cooldown</SubtypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_PlayerNear1000Neutral_Cooldown</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral]
+        [EnableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Neutral]
         [DisableTriggers:true]
-        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerCloseNeutral_Cooldown]
+        [DisableTriggerNames:GFA_System_Dialogue_Trigger_PlayerNear1000Neutral_Cooldown]
       </Description>
     </EntityComponent>
 
