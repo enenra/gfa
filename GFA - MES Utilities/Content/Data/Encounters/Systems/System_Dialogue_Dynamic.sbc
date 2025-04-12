@@ -62,6 +62,8 @@
         [Triggers:GFA_System_Dialogue_Trigger_Receiving_SOS]
         [Triggers:GFA_System_Dialogue_Trigger_SOS_Response_Timeout]
         [Triggers:GFA_System_Dialogue_Trigger_Received_Compromised]
+
+        [Triggers:GFA_System_Dialogue_Trigger_AreaRestriction_Warning]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -931,6 +933,39 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:Received_Compromised]
+      </Description>
+    </EntityComponent>
+
+    <!-- AreaRestriction - Warning -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Trigger_AreaRestriction_Warning</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_AreaRestriction_Warning]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_System_Dialogue_Action_AreaRestriction_Warning]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Dialogue_Action_AreaRestriction_Warning</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:AreaRestriction_Warning]
       </Description>
     </EntityComponent>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-04-12 09:35:53.262681 -->
+<!-- Created from GSheet export on 2025-04-12 15:16:01.903849 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -400,6 +400,21 @@
 			<Entry>
 				<Message>Taking heavy fire - I can't keep going like this!</Message>
 				<AudioId>_GFA_MG_Dialogue_Dynamic_UnderFireHealthLow_1_2</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>AreaRestriction_Warning</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>This is a restricted area. Back off!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_AreaRestriction_Warning_1_1</AudioId>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Leave this area immediately - it is restricted!</Message>
+				<AudioId>_GFA_MG_Dialogue_Dynamic_AreaRestriction_Warning_1_2</AudioId>
 				<Weights>1</Weights>
 			</Entry>
 		</Entries>
