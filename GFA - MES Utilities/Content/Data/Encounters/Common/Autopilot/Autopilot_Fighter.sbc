@@ -12,10 +12,10 @@
 
         [DisableInertiaDampeners:true]
         [FlyLevelWithGravity:false]
-        [LevelWithGravityWhenIdle:true]
+        [LevelWithGravityWhenIdle:false]
         [UseVelocityCollisionEvasion:true]
 
-        [SlowDownOnWaypointApproach:true]
+        [SlowDownOnWaypointApproach:false]
         [ExtraSlowDownDistance:100]
         [WaypointTolerance:150]
 
@@ -27,14 +27,15 @@
         [AltitudeTolerance:20]
 
         [LimitRotationSpeed:true]
-        [MaxRotationMagnitude:1]
+        [MaxRotationMagnitude:0.5]
         [AngleAllowedForForwardThrust:35]
 
         [AllowStrafing:true]
         [StrafeMinDurationMs:3000]
         [StrafeMaxDurationMs:6000]
+        [//StrafeSpeedCutOff:25]
 
-        [UseProjectileLeadPrediction:true]
+        [UseProjectileLeadPrediction:false]
         [StrikeBeginPlanetAttackRunDistance:600]
         [StrikeBreakawayDistance:100]
         [StrikeEngageUseSafePlanetPathing:true]
@@ -57,21 +58,26 @@
       <Description>
         [RivalAI Autopilot]
 
+        [DisableInertiaDampeners:true]
+        [FlyLevelWithGravity:false]
+        [LevelWithGravityWhenIdle:false]
+        [UseVelocityCollisionEvasion:true]
+        [TryToLevelWithTarget:true]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:250]
+        [WaypointTolerance:40]
+
         [IdealPlanetAltitude:50]
         [MinimumPlanetAltitude:5]
 
-        [TryToLevelWithTarget:true]
-
-        [DisableInertiaDampeners:false]
-        [FlyLevelWithGravity:false]
-        [WaypointTolerance:40]
         [IdealMinSpeed:15]
         [IdealMaxSpeed:35]
         [MaxSpeedTolerance:5]
-        [SlowDownOnWaypointApproach:true]
-        [ExtraSlowDownDistance:250]
 
         [AllowStrafing:false]
+
+        [UseProjectileLeadPrediction:true]
 
         [EngageDistanceSpace:50]
         [EngageDistancePlanet:50]
