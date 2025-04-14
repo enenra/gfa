@@ -65,11 +65,11 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.01f,
-                    ElevateRate = 0.01f,
+                    RotateRate = 0.02f,
+                    ElevateRate = 0.02f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
-                    MinElevation = -10,
+                    MinElevation = -20,
                     MaxElevation = 50,
                     InventorySize = 0.6f,
                     Type = BlockWeapon,

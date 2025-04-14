@@ -127,7 +127,7 @@ namespace Scripts
                         DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
                         Extras = new ParticleOptionDef
                         {
-                            Scale = 1,
+                            Scale = 0.15f,
                             HitPlayChance = 1f,
                         },
                     },

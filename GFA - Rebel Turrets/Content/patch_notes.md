@@ -1,5 +1,5 @@
-[h1]Patch 1.0a[/h1]
+[h1]Patch 1.0b[/h1]
 [list]
-[*]Added targeting for projectiles, characters, meteors.
-[*]Adjusted accuracy of H9s.
+[*]Adjusted turn rate and degree of depression of Turret Droid.
+[*]Adjusted impact particle size of Turret Droid.
 [/list]
