@@ -13,6 +13,8 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
+        [FactionOverride:MG]
+
         [SpawnConditionsProfiles:GFA_MG_DefenseSatellite_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
@@ -29,7 +31,7 @@
         [RenameGrid:false]
         [ReplaceAntennaHudTextInsteadOfName:true]
         [ReplaceAntennaNameWithRandomizedName:Antenna]
-        [RandomGridNamePattern:Defense Satellite RandomLetteRandomLetterr-RandomNumberRandomNumber]
+        [RandomGridNamePattern:Defense Satellite RandomLetterRandomLetter-RandomNumberRandomNumber]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>

@@ -96,8 +96,7 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [MaxActions:1]
-        [Actions:GFA_MG_CommunicationsSatellite_Action_SpawnDefense]
+        [MaxActions:2]
         [Actions:GFA_MG_CommunicationsSatellite_Action_SpawnDefense]
       </Description>
     </EntityComponent>
@@ -134,7 +133,7 @@
         [SpawnGroups:GFA_MG_DefenseSatellite_SpawnGroup]
 
         [MinDistance:50]
-        [MaxDistance:150]
+        [MaxDistance:100]
       </Description>
     </EntityComponent>
 
