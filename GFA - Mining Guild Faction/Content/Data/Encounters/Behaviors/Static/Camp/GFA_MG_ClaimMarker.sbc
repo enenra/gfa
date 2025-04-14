@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_ClaimMarker_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_ClaimMarker_SpawnConditions]
+
+        [ManipulationProfiles:GFA_MG_Manipulation]
+        [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
+
+        [ReplenishSystems:true]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Sidearm]
+
+        [UseRandomNameGenerator:true]
+        [RenameGrid:false]
+        [ReplaceAntennaHudTextInsteadOfName:true]
+        [ReplaceAntennaNameWithRandomizedName:Antenna]
+        [RandomGridNamePattern:Claim Marker RandomNumberRandomLetter-RandomNumberRandomNumber]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="[MES-MG]Claim Marker[Planetary]">
+          <Position>
+            <X>0.0</X>
+            <Y>15.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_ClaimMarker_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_ClaimMarker_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationChance:75]
+        [PlanetaryInstallationType:Small]
+        [InstallationTerrainValidation:true]
+
+        [RivalAiAnySpawn:true]
+        [FactionOwner:MG]
+        [ReplenishSystems:true]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_ClaimMarker_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+	      [BehaviorName:Passive]
+
+        [TargetData:MSB_TargetProfile_ShortRange]
+
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [Triggers:GFA_MG_ClaimMarker_Trigger_SpawnSetup]
+
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_ClaimMarker_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [//Actions:]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
