@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_Wrecked_ClaimMarker_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_SurveyMarker_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -13,40 +13,30 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_Wrecked_ClaimMarker_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_SurveyMarker_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
-        [ManipulationProfiles:MSB_Manipulation_Wrecked_Heavy]
 
-        [ReplenishSystems:true]
-        [ReplenishProfiles:GFA_Replenishment_Imperial_Sidearm]
+        [UseRandomNameGenerator:true]
+        [RenameGrid:false]
+        [ReplaceAntennaHudTextInsteadOfName:true]
+        [ReplaceAntennaNameWithRandomizedName:Antenna]
+        [RandomGridNamePattern:Survey Marker RandomNumberRandomNumberRandomNumber]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
       <Frequency>5.0</Frequency>
       <Prefabs>
-
-        <Prefab SubtypeId="[MES-MG]Claim Marker[Planetary]">
+        <Prefab SubtypeId="[MES-MG]Survey Marker[Planetary]">
           <Position>
             <X>0.0</X>
-            <Y>15.0</Y>
+            <Y>5.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_Wrecked_ClaimMarker_Behavior</Behaviour>
+          <Behaviour>GFA_MG_SurveyMarker_Behavior</Behaviour>
         </Prefab>
-
-        <Prefab SubtypeId="[MES-MG]Claim Marker[Planetary]">
-          <Position>
-            <X>0.0</X>
-            <Y>10.0</Y>
-            <Z>0.0</Z>
-          </Position>
-          <Speed>0</Speed>
-          <Behaviour>GFA_MG_Wrecked_ClaimMarker_Behavior</Behaviour>
-        </Prefab>
-
       </Prefabs>
     </SpawnGroup>
 
@@ -56,29 +46,25 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Wrecked_ClaimMarker_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_SurveyMarker_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
 
         [PlanetaryInstallation:true]
-        [PlanetaryInstallationChance:50]
+        [PlanetaryInstallationChance:100]
         [PlanetaryInstallationType:Small]
         [InstallationTerrainValidation:true]
 
         [RivalAiAnySpawn:true]
-        [FactionOwner:UNKN]
-        [ReplenishSystems:true]
-
-        [PrefabSpawningMode:Random]
-        [RotateInstallations:{X:0 Y:0 Z:0},{X:2 Y:0 Z:-3}]
+        [FactionOwner:MG]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Wrecked_ClaimMarker_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_SurveyMarker_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -91,7 +77,9 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_Wrecked_ClaimMarker_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_SurveyMarker_Trigger_SpawnSetup]
+
+        [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
       </Description>
     </EntityComponent>
 
@@ -99,7 +87,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Wrecked_ClaimMarker_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_SurveyMarker_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -109,24 +97,7 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_Wrecked_ClaimMarker_Action_Rename]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Wrecked_ClaimMarker_Action_Rename</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [ChangeAntennaHudText:true]
-        [AntennaHudText:Old Signal]
-
-        [ChangeAntennaRanges:true]
-        [AntennaNamesForRangeChange:Antenna]
-        [AntennaRangeChangeType:Set]
-        [AntennaRangeChangeAmount:5000]
+        [//Actions:]
       </Description>
     </EntityComponent>
 
