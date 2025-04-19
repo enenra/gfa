@@ -120,5 +120,68 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
     </Definition>
 
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>GFA_SG_TIEFighter_Lasers_RivalAI_Ace</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Lasers_RivalAI}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_TIEFighter_Lasers_RivalAI}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Lasers.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Public>false</Public>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="1" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\small\GFA_SG_TIEFighter_Lasers_RivalAI.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="MetalGrid" Count="5" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="GFA_Comp_BlockRestriction" Count="1">
+          <DeconstructId>
+            <TypeId>Ore</TypeId>
+            <SubtypeId>Scrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="GFA_Comp_BlockRestriction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.75" StartY="0.50" EndX="2.25" EndY="1.00" Default="true" CouplingTag="tieln_weapons"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\GFA_SG_TIEFighter_Lasers_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\small\GFA_SG_TIEFighter_Lasers_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\GFA_SG_TIEFighter_Lasers_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_SG_TIEFighter_Lasers_RivalAI_Ace</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>12</BuildTimeSeconds>
+      <IsAirTight>false</IsAirTight>
+      <PCU>25</PCU>
+
+      <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <PowerInput>0.00025</PowerInput>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </InventorySize>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+    </Definition>
+
   </CubeBlocks>
 </Definitions>

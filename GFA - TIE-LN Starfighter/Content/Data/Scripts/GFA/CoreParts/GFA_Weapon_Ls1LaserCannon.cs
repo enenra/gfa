@@ -162,5 +162,58 @@ namespace Scripts
                 GFA_Ammo_Ls1LaserCannon,
             },
         };
+        WeaponDefinition GFA_Weapon_Ls1LaserCannon_RivalAI_Ace => new WeaponDefinition
+        {
+            Assignments = new ModelAssignmentsDef
+            {
+                MountPoints = new[] {
+                    new MountPointDef {
+                        SubtypeId = "GFA_SG_TIEFighter_Lasers_RivalAI_Ace",
+                        MuzzlePartId = "elevation",
+                        AzimuthPartId = "azimuth",
+                        ElevationPartId = "elevation",
+                        DurabilityMod = 0.25f,
+                    },
+                 },
+                Muzzles = new[] {
+                    "muzzle_barrel_1",
+                    "muzzle_barrel_2",
+                },
+                Scope = "muzzle_barrel_1",
+            },
+            Targeting = GFA_Weapon_Ls1LaserCannon.Targeting,
+            HardPoint = new HardPointDef
+            {
+                PartName = "L-s1 Laser Cannon RivalAI Ace",
+                DeviateShotAngle = GFA_Weapon_Ls1LaserCannon.HardPoint.DeviateShotAngle,
+                AimingTolerance = GFA_Weapon_Ls1LaserCannon.HardPoint.AimingTolerance,
+                AimLeadingPrediction = GFA_Weapon_Ls1LaserCannon.HardPoint.AimLeadingPrediction,
+                AddToleranceToTracking = GFA_Weapon_Ls1LaserCannon.HardPoint.AddToleranceToTracking,
+                Ai = new AiDef
+                {
+                    DefaultLeadGroup = 0, // Default LeadGroup setting, range 0-5, 0 is disables lead group.  Only useful for fixed weapons or weapons set to OverrideLeads.
+                    TrackTargets = true,
+                    TurretAttached = true,
+                    TurretController = true,
+                },
+                HardWare = new HardwareDef
+                {
+                    RotateRate = 1.0f,
+                    ElevateRate = 1.0f,
+                    MinAzimuth = -20,
+                    MaxAzimuth = 20,
+                    MinElevation = -20,
+                    MaxElevation = 20,
+                    InventorySize = 0.6f,
+                    Type = BlockWeapon,
+                },
+                Loading = GFA_Weapon_Ls1LaserCannon.HardPoint.Loading,
+                Audio = GFA_Weapon_Ls1LaserCannon.HardPoint.Audio,
+                Graphics = GFA_Weapon_Ls1LaserCannon.HardPoint.Graphics,
+            },
+            Ammos = new[] {
+                GFA_Ammo_Ls1LaserCannon,
+            },
+        };
     }
 }
