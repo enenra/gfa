@@ -3,7 +3,7 @@
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
       <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[MES-MG]TIEmg Starfighter[Ace Leader]" />
-      <DisplayName>enenra</DisplayName>
+      <DisplayName>TIE/mg Starfighter</DisplayName>
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
@@ -642,7 +642,7 @@
               <IsConnecting>false</IsConnecting>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
-              <SubtypeName>GFA_SG_TIEFighter_Lasers_RivalAI</SubtypeName>
+              <SubtypeName>GFA_SG_TIEFighter_Lasers_RivalAI_Ace</SubtypeName>
               <EntityId>112498493754968817</EntityId>
               <Min x="-1" y="-2" z="-2" />
               <ColorMaskHSV x="0.130555555" y="-0.03" z="0.24" />
