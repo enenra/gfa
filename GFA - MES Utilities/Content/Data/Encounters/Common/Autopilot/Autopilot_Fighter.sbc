@@ -12,10 +12,10 @@
 
         [DisableInertiaDampeners:true]
         [FlyLevelWithGravity:false]
-        [LevelWithGravityWhenIdle:false]
+        [LevelWithGravityWhenIdle:true]
         [UseVelocityCollisionEvasion:true]
 
-        [SlowDownOnWaypointApproach:false]
+        [SlowDownOnWaypointApproach:true]
         [ExtraSlowDownDistance:100]
         [WaypointTolerance:150]
 
@@ -23,7 +23,7 @@
         [IdealMaxSpeed:100]
         [MaxSpeedTolerance:5]
 
-        [MinimumPlanetAltitude:100]
+        [MinimumPlanetAltitude:50]
         [AltitudeTolerance:20]
 
         [LimitRotationSpeed:true]
@@ -60,7 +60,7 @@
 
         [DisableInertiaDampeners:true]
         [FlyLevelWithGravity:false]
-        [LevelWithGravityWhenIdle:false]
+        [LevelWithGravityWhenIdle:true]
         [UseVelocityCollisionEvasion:true]
         [TryToLevelWithTarget:true]
 
