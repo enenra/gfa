@@ -12,10 +12,10 @@
 
         [DisableInertiaDampeners:true]
         [FlyLevelWithGravity:false]
-        [LevelWithGravityWhenIdle:true]
+        [LevelWithGravityWhenIdle:false]
         [UseVelocityCollisionEvasion:true]
 
-        [SlowDownOnWaypointApproach:true]
+        [SlowDownOnWaypointApproach:false]
         [ExtraSlowDownDistance:100]
         [WaypointTolerance:150]
 
@@ -28,7 +28,7 @@
 
         [LimitRotationSpeed:true]
         [MaxRotationMagnitude:0.5]
-        [AngleAllowedForForwardThrust:35]
+        [AngleAllowedForForwardThrust:180]
 
         [AllowStrafing:true]
         [StrafeMinDurationMs:3000]
@@ -42,6 +42,9 @@
         [StrikeEngageUseCollisionEvasion:true]
 
         [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+
+        [OffsetSpaceMinDistFromTarget:500]
+        [OffsetSpaceMaxDistFromTarget:800]
 
         [OffsetPlanetMinDistFromTarget:800]
         [OffsetPlanetMaxDistFromTarget:1200]
@@ -65,15 +68,15 @@
 
         [DisableInertiaDampeners:true]
         [FlyLevelWithGravity:false]
-        [LevelWithGravityWhenIdle:true]
+        [LevelWithGravityWhenIdle:false]
         [UseVelocityCollisionEvasion:true]
 
-        [SlowDownOnWaypointApproach:true]
+        [SlowDownOnWaypointApproach:false]
         [ExtraSlowDownDistance:150]
         [WaypointTolerance:50]
 
         [IdealMinSpeed:12]
-        [IdealMaxSpeed:75]
+        [IdealMaxSpeed:50]
         [MaxSpeedTolerance:3]
 
         [MinimumPlanetAltitude:150]
@@ -81,7 +84,7 @@
 
         [LimitRotationSpeed:true]
         [MaxRotationMagnitude:0.5]
-        [AngleAllowedForForwardThrust:35]
+        [AngleAllowedForForwardThrust:180]
 
         [AllowStrafing:true]
         [StrafeMinDurationMs:3000]
