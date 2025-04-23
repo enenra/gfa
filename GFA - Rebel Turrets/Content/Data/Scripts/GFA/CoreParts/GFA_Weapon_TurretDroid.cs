@@ -27,6 +27,14 @@ namespace Scripts {
                         DurabilityMod = 0.25f,
                         IconName = "GFA_Filter_AmmoMag_Sidearm.dds"
                     },
+                    new MountPointDef {
+                        SubtypeId = "GFA_LG_TurretDroid_Mounted",
+                        MuzzlePartId = "elevation",
+                        AzimuthPartId = "azimuth",
+                        ElevationPartId = "elevation",
+                        DurabilityMod = 0.25f,
+                        IconName = "GFA_Filter_AmmoMag_Sidearm.dds"
+                    },
 
                  },
                 Muzzles = new[] {

@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3452472766]1.0b[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3452472766]1.1[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
@@ -11,12 +11,13 @@ This mod adds a number of turrets from star wars to the game. They are currently
 
 
 [img]https://i.imgur.com/TGu2yer.png[/img]
-The pack currently contains 4 turrets:
+The pack currently contains 5 turrets:
 [list]
 [*]H9 Dual Laser Cannon (LG)
 [*]H9 Laser Cannon (SG & LG)
 [*]H9 Laser Cannon Slanted (LG)
 [*]Anti-Infantry Turret Droid (LG)
+[*]Anti-Infantry Turret Droid Mounted (LG)
 [/list]
 
 

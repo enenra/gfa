@@ -16,5 +16,17 @@
       </Blocks>
     </BlockVariantGroup>
 
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_REB_TurretDroid" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_TurretDroid.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_TurretDroid</DisplayName>
+      <Description>Description_GFA_LG_TurretDroid</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_ConveyorSorter" Subtype="GFA_LG_TurretDroid" />
+        <Block Type="MyObjectBuilder_ConveyorSorter" Subtype="GFA_LG_TurretDroid_Mounted" />
+      </Blocks>
+    </BlockVariantGroup>
+
   </BlockVariantGroups>
 </Definitions>
