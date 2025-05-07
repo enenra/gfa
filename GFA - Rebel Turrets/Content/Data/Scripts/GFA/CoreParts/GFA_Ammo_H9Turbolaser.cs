@@ -140,13 +140,23 @@ namespace Scripts
                     Hit = new ParticleDef
                     {
                         Name = "GFA_Particle_LaserCannon_Impact",
-                        ApplyToShield = true,
+                        ApplyToShield = false,
                         Offset = Vector(x: 0, y: 0, z: 0),
                         DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
                         Extras = new ParticleOptionDef
                         {
                             Scale = 2,
                             HitPlayChance = 1f,
+                        },
+                    },
+                    ShieldHit = new ParticleDef
+                    {
+                        Name = "GFA_Particle_Shield_Impact",
+                        DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
+                        Extras = new ParticleOptionDef
+                        {
+                            Scale = 15,
+                            HitPlayChance = 1f, // 0-1% chance the particle is shown
                         },
                     },
                 },
@@ -241,6 +251,7 @@ namespace Scripts
                 Particles = new AmmoParticleDef
                 {
                     Hit = GFA_Ammo_H9Turbolaser_Red.AmmoGraphics.Particles.Hit,
+                    ShieldHit = GFA_Ammo_H9Turbolaser_Red.AmmoGraphics.Particles.ShieldHit,
                     WeaponEffect1Override = new ParticleDef
                     {
                         Name = "GFA_Particle_LaserCannon_Muzzle_Green",

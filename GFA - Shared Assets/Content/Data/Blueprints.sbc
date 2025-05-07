@@ -148,5 +148,20 @@
       <BaseProductionTimeInSeconds>14</BaseProductionTimeInSeconds>
     </Blueprint>
 
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GFA_BP_Comp_BlockRestriction</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Comp_BlockRestriction}</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\computer_component.dds</Icon>
+      <Icon>Textures\GUI\Icons\Items\GFA_Logo.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GFA_BP_Comp_BlockRestriction" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+
   </Blueprints>
 </Definitions>

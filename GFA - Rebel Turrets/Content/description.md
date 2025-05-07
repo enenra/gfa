@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3452472766]1.1[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3452472766]1.2[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]

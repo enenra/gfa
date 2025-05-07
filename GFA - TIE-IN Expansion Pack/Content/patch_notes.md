@@ -1,5 +1,4 @@
-[h1]Patch 1.0b[/h1]
+[h1]Patch 1.1[/h1]
 [list]
-[*]Increase bolt travel distance but kept lock distance the same.
-[*]Added targeting for projectiles, characters, meteors.
+[*]Added shield hit particle.
 [/list]

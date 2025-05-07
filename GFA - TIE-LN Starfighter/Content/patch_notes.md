@@ -1,4 +1,4 @@
-[h1]Patch 1.1d[/h1]
+[h1]Patch 1.2[/h1]
 [list]
-[*]Added second NPC-only laser version.
+[*]Added shield hit particle.
 [/list]
