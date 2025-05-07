@@ -130,10 +130,14 @@
         [RivalAI Trigger]
 
         [Type:PlayerNear]
+
         [UseTrigger:true]
         [StartsReady:true]
 
         [TargetDistance:1000]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
 
         [MaxActions:1]
         [Actions:GFA_MG_MostlyFine_Aurore_SlaveShip_Action_PlaceCrew]
