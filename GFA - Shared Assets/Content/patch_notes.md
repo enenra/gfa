@@ -1,4 +1,4 @@
-[h1]Patch 1.3[/h1]
+[h1]Patch 1.3a[/h1]
 [list]
-[*]Added shield impact particle.
+[*]Fixed an error where a blueprint icon path was incorrect.
 [/list]
