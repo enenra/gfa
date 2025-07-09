@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/]1.0[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3521116913]1.0[/url]
 
 [img]https://i.imgur.com/oITMHYh.png[/img]
 [quote]
@@ -36,7 +36,7 @@ This mod includes support for spawning [url=https://steamcommunity.com/sharedfil
 No.
 
 [b]Q: This is a lot of mods...[/b]
-Yes, it is. And in order for these to work and look as they do, these mods are needed. I will not be reducing the amount of mods. In fact, chances are that the amount of dependencies will increase as I add more encounters.
+Yes, it is. And in order for the encounters to work and look as they do, these mods are needed. I will not be reducing the amount of mods. In fact, chances are that the amount of dependencies will increase as I add more encounters.
 
 [b]Q: Will there be a mod.io version?[/b]
 No. This mod requires various scripts to work, none of which work on consoles.
