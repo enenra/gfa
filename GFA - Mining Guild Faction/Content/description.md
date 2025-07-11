@@ -47,6 +47,7 @@ No. This mod requires various scripts to work, none of which work on consoles.
 [*][b][url=https://steamcommunity.com/profiles/76561198058958866/myworkshopfiles/?appid=244850]CptArthur[/url][/b] - For teaching me MES configs and working on MSB together with me, on which this and our future encounter mods will be based on.
 [*][b][url=https://steamcommunity.com/profiles/76561198040267879/myworkshopfiles/?appid=244850]Rotal[/url][/b] - For her work on building the first C-ROC Gozanti prototype, as well as the YV-929 Armed Transport prototype.
 [*][b][url=https://steamcommunity.com/id/thedefaulttrashbag/myworkshopfiles/?appid=244850]Default Trash Bag[/url][/b] - For building the YV-865 Aurore base grid.
+[*][b][url=https://steamcommunity.com/profiles/76561197990685941/myworkshopfiles/?appid=244850]Mexpex[/url][/b] - I used his [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2215904786]Hydrogen Thrusters Visuals[/url] mod in my screenshots.
 [/list]
 
 
