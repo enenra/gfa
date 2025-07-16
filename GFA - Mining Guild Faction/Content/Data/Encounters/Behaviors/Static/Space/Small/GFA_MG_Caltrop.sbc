@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_Caltrop_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -13,32 +13,28 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_CommunicationsSatellite_SpawnConditions]
+        [FactionOverride:MG]
+
+        [SpawnConditionsProfiles:GFA_MG_Caltrop_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
 
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Heavy_Chance]
-
-        [UseRandomNameGenerator:true]
-        [RenameGrid:false]
-        [ReplaceAntennaHudTextInsteadOfName:true]
-        [ReplaceAntennaNameWithRandomizedName:Antenna]
-        [RandomGridNamePattern:Communications Satellite RandomLetter-RandomNumberRandomNumberRandomNumber]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
       <Frequency>5.0</Frequency>
       <Prefabs>
-        <Prefab SubtypeId="[MES-MG]Communications Satellite">
+        <Prefab SubtypeId="[MES-MG]Caltrop[Armed]">
           <Position>
             <X>0.0</X>
             <Y>0.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_CommunicationsSatellite_Behavior</Behaviour>
+          <Behaviour>GFA_MG_Caltrop_Behavior</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -49,26 +45,21 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_Caltrop_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
 
-        [SpaceRandomEncounter:true]
-        [RandomEncounterChance:80]
-
-        [StaticEncounter:true]
-
         [RivalAiSpaceSpawn:true]
+
         [FactionOwner:MG]
-        [ReplenishSystems:true]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_Caltrop_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -79,7 +70,10 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_CommunicationsSatellite_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_Caltrop_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_Caltrop_Trigger_LaunchMissiles]
+
+        [TriggerGroups:MSB_DynamicCommon_TriggerGroup]
 
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
       </Description>
@@ -89,7 +83,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_Caltrop_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -98,83 +92,63 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [MaxActions:2]
-        [Actions:GFA_MG_CommunicationsSatellite_Action_SpawnDefensePlatform]
-        [Actions:GFA_MG_CommunicationsSatellite_Action_SpawnDefenseCaltrop]
+        [MaxActions:1]
+        [Actions:GFA_MG_Caltrop_Action_AntennaSetup]
       </Description>
     </EntityComponent>
-
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Action_SpawnDefensePlatform</SubtypeId>
+        <SubtypeId>GFA_MG_Caltrop_Action_AntennaSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [Chance:25]
+        [ChangeAntennaRanges:true]
+        [AntennaNamesForRangeChange:Antenna]
+        [AntennaRangeChangeType:Set]
+        [AntennaRangeChangeAmount:500]
 
-        [SpawnEncounter:true]
-        [Spawner:GFA_MG_CommunicationsSatellite_Spawn_SpawnDefensePlatform]
+        [ChangeAntennaHudText:true]
+        [UseRandomNameGenerator:true]
+        [AntennaHudText:Caltrop RandomLetterRandomLetter-RandomNumberRandomNumber]
       </Description>
     </EntityComponent>
+
+    <!-- Launch logic -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Spawn_SpawnDefensePlatform</SubtypeId>
+        <SubtypeId>GFA_MG_Caltrop_Trigger_LaunchMissiles</SubtypeId>
       </Id>
       <Description>
-        [RivalAI Spawn]
+        [RivalAI Trigger]
 
-        [UseSpawn:true]
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_PlayerNear1000]
+
+        [UseTrigger:true]
         [StartsReady:true]
 
-        [SpawningType:CustomSpawn]
-        [UseRelativeSpawnPosition:false]
-        [IgnoreSafetyChecks:false]
-
-        [MaxSpawns:2]
-        [SpawnGroups:GFA_MG_DefenseSatellite_SpawnGroup]
-
-        [MinDistance:50]
-        [MaxDistance:100]
+        [MaxActions:1]
+        [Actions:GFA_MG_Caltrop_Action_LaunchMissiles]
       </Description>
     </EntityComponent>
-
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Action_SpawnDefenseCaltrop</SubtypeId>
+        <SubtypeId>GFA_MG_Caltrop_Action_LaunchMissiles</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [Chance:25]
-
-        [SpawnEncounter:true]
-        [Spawner:GFA_MG_CommunicationsSatellite_Spawn_SpawnDefenseCaltrop]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Spawn_SpawnDefenseCaltrop</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Spawn]
-
-        [UseSpawn:true]
-        [StartsReady:true]
-
-        [SpawningType:CustomSpawn]
-        [UseRelativeSpawnPosition:false]
-        [IgnoreSafetyChecks:false]
-
-        [MaxSpawns:2]
-        [SpawnGroups:GFA_MG_Caltrop_SpawnGroup]
-
-        [MinDistance:50]
-        [MaxDistance:100]
+        [TriggerTimerBlocks:true]
+        [TimerBlockNames:Timer Up]
+        [TimerBlockNames:Timer Down]
+        [TimerBlockNames:Timer Forward]
+        [TimerBlockNames:Timer Back]
+        [TimerBlockNames:Timer Left]
+        [TimerBlockNames:Timer Right]
       </Description>
     </EntityComponent>
 
