@@ -104,6 +104,10 @@
       <Description>
         [RivalAI Action]
 
+        [EnableBlocks:true]
+        [EnableBlockNames:Antenna]
+        [EnableBlockStates:Off]
+
         [ChangeAntennaRanges:true]
         [AntennaNamesForRangeChange:Antenna]
         [AntennaRangeChangeType:Set]
