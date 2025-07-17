@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_Container_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_Wrecked_Container_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -13,14 +13,12 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_Container_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_Wrecked_Container_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Container]
 
-        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
-        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
-        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Heavy_Chance]
+        [ManipulationProfiles:MSB_Manipulation_Wrecked_Heavy]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -33,7 +31,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_Container_Behavior</Behaviour>
+          <Behaviour>GFA_MG_Wrecked_Container_Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[MES-MG]Container[Teal]">
           <Position>
@@ -42,7 +40,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_Container_Behavior</Behaviour>
+          <Behaviour>GFA_MG_Wrecked_Container_Behavior</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -53,7 +51,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Container_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_Wrecked_Container_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
@@ -61,7 +59,7 @@
         [StaticEncounter:true]
 
         [RivalAiSpaceSpawn:true]
-        [FactionOwner:MG]
+        [FactionOwner:UNKN]
 
         [PrefabSpawningMode:Random]
       </Description>
@@ -70,7 +68,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Container_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_Wrecked_Container_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -81,7 +79,7 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_Container_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_Wrecked_Container_Trigger_SpawnSetup]
 
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
       </Description>
@@ -91,7 +89,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Container_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_Wrecked_Container_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -101,13 +99,13 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_Container_Action_AntennaSetup]
+        [Actions:GFA_MG_Wrecked_Container_Action_AntennaSetup]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Container_Action_AntennaSetup</SubtypeId>
+        <SubtypeId>GFA_MG_Wrecked_Container_Action_AntennaSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]

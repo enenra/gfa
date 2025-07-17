@@ -73,5 +73,18 @@
       </Description>
     </EntityComponent>
 
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Manipulation_Container</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_MG_LootProfile_Container]
+      </Description>
+    </EntityComponent>
+
   </EntityComponents>
 </Definitions>

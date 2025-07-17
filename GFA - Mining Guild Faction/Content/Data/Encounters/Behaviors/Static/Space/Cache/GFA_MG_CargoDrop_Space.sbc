@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -13,10 +13,10 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_CargoDrop_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_CargoDrop_Space_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
-        [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
+        [ManipulationProfiles:GFA_MG_Manipulation_Container]
 
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
@@ -39,7 +39,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_CargoDrop_Behavior</Behaviour>
+          <Behaviour>GFA_MG_CargoDrop_Space_Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[MES-MG]Container[Teal]">
           <Position>
@@ -48,7 +48,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_CargoDrop_Behavior</Behaviour>
+          <Behaviour>GFA_MG_CargoDrop_Space_Behavior</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -59,7 +59,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
@@ -79,7 +79,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -90,7 +90,7 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_CargoDrop_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_CargoDrop_Space_Trigger_SpawnSetup]
 
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
       </Description>
@@ -100,7 +100,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -110,15 +110,15 @@
         [StartsReady:true]
 
         [MaxActions:3]
-        [Actions:GFA_MG_CargoDrop_Action_SpawnContainer]
-        [Actions:GFA_MG_CargoDrop_Action_SpawnDefenseCaltrop]
+        [Actions:GFA_MG_CargoDrop_Space_Action_SpawnContainer]
+        [Actions:GFA_MG_CargoDrop_Space_Action_SpawnDefenseCaltrop]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_Action_SpawnContainer</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_Action_SpawnContainer</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -126,13 +126,13 @@
         [Chance:30]
 
         [SpawnEncounter:true]
-        [Spawner:GFA_MG_CargoDrop_Spawn_SpawnContainer]
+        [Spawner:GFA_MG_CargoDrop_Space_Spawn_SpawnContainer]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_Spawn_SpawnContainer</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_Spawn_SpawnContainer</SubtypeId>
       </Id>
       <Description>
         [RivalAI Spawn]
@@ -155,7 +155,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_Action_SpawnDefenseCaltrop</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_Action_SpawnDefenseCaltrop</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -163,13 +163,13 @@
         [Chance:60]
 
         [SpawnEncounter:true]
-        [Spawner:GFA_MG_CargoDrop_Spawn_SpawnDefenseCaltrop]
+        [Spawner:GFA_MG_CargoDrop_Space_Spawn_SpawnDefenseCaltrop]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CargoDrop_Spawn_SpawnDefenseCaltrop</SubtypeId>
+        <SubtypeId>GFA_MG_CargoDrop_Space_Spawn_SpawnDefenseCaltrop</SubtypeId>
       </Id>
       <Description>
         [RivalAI Spawn]

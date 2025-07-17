@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_Wrecked_CargoDrop_Space_SpawnConditions]
+
+        [ManipulationProfiles:GFA_MG_Manipulation]
+        [ManipulationProfiles:GFA_MG_Manipulation_Container]
+
+        [ManipulationProfiles:MSB_Manipulation_Wrecked_Heavy]
+
+        [UseRandomNameGenerator:true]
+        [RenameGrid:false]
+        [ReplaceAntennaHudTextInsteadOfName:true]
+        [ReplaceAntennaNameWithRandomizedName:Antenna]
+        [RandomGridNamePattern:Old Signal]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="[MES-MG]Container[Yellow]">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_Wrecked_CargoDrop_Space_Behavior</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[MES-MG]Container[Teal]">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_Wrecked_CargoDrop_Space_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [SpaceRandomEncounter:true]
+        [RandomEncounterChance:50]
+
+        [StaticEncounter:true]
+
+        [RivalAiSpaceSpawn:true]
+        [FactionOwner:UNKN]
+
+        [PrefabSpawningMode:Random]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+	      [BehaviorName:Passive]
+
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [Triggers:GFA_MG_Wrecked_CargoDrop_Space_Trigger_SpawnSetup]
+
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:2]
+        [Actions:GFA_MG_Wrecked_CargoDrop_Space_Action_SpawnContainer]
+        [Actions:GFA_MG_Wrecked_CargoDrop_Space_Action_SpawnDefenseCaltrop]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_Action_SpawnContainer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:20]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Wrecked_CargoDrop_Space_Spawn_SpawnContainer]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_Spawn_SpawnContainer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [MaxSpawns:1]
+        [SpawnGroups:GFA_MG_Wrecked_Container_SpawnGroup]
+
+        [MinDistance:50]
+        [MaxDistance:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_Action_SpawnDefenseCaltrop</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:40]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Wrecked_CargoDrop_Space_Spawn_SpawnDefenseCaltrop]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Wrecked_CargoDrop_Space_Spawn_SpawnDefenseCaltrop</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_Caltrop_SpawnGroup]
+
+        [MinDistance:50]
+        [MaxDistance:100]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
