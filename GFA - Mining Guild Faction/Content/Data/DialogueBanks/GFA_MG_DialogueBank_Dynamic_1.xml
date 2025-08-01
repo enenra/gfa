@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-07-31 18:05:46.798097 -->
+<!-- Created from GSheet export on 2025-08-01 16:11:16.628021 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>GFA_Chat_Default</ChatProfileId>
@@ -694,6 +694,46 @@
 			</Entry>
 			<Entry>
 				<Message>Enemy presence confirmed and... transmitted.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Raider_ClearKPA</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>No enemy bases in this area. Updating database...</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Could not find enemy statics in this area. This area is marked as clear.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No enemy static contacts here. Reporting area clear.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Raider_DetectedEnemy</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy contact - just as reported.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy in target area as reported.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirming enemy contacts in target area.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>
