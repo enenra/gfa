@@ -102,6 +102,9 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
+        [Triggers:GFA_MG_Scout_Trigger_SpawnSpaceRelay]
+        [Triggers:GFA_MG_Scout_Trigger_SpawnGravityRelay]
+
         [TriggerGroups:GFA_System_Dialogue_TriggerGroup_Dynamic]
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
         [TriggerGroups:GFA_SpawnEffects_TriggerGroup]
@@ -113,6 +116,117 @@
         [TriggerGroups:MSB_Fighter_TriggerGroup]
         [TriggerGroups:MSB_Scout_TriggerGroup]
         [TriggerGroups:MSB_System_Despawn_TriggerGroup_Simple]
+      </Description>
+    </EntityComponent>
+
+    <!-- Space Relay Spawn -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Scout_Trigger_SpawnSpaceRelay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Scout_SpawnRelay_Space]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_Scout_Action_SpawnSpaceRelay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Scout_Action_SpawnSpaceRelay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Scout_Spawn_SpawnSpaceRelay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Scout_Spawn_SpawnSpaceRelay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [MaxSpawns:1]
+        [SpawnGroups:GFA_MG_CommunicationsSatellite_Relay_SpawnGroup]
+
+        [MinDistance:5000]
+        [MaxDistance:7500]
+      </Description>
+    </EntityComponent>
+
+    <!-- Gravity Relay Spawn -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Scout_Trigger_SpawnGravityRelay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Scout_SpawnRelay_Gravity]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_Scout_Action_SpawnGravityRelay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Scout_Action_SpawnGravityRelay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Scout_Spawn_SpawnGravityRelay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Scout_Spawn_SpawnGravityRelay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [MaxSpawns:1]
+        [SpawnGroups:]
+
+        [MinDistance:5000]
+        [MaxDistance:7500]
+
+        [MinAltitude:0]
+        [MaxAltitude:1]
       </Description>
     </EntityComponent>
 

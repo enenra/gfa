@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_RaiderWing_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_RaiderBigWing_SpawnGroup</SubtypeId>
       </Id>
       <Description>
 		    [Modular Encounters SpawnGroup]
@@ -13,7 +13,7 @@
 		    [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_RaiderWing_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_RaiderBigWing_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Fighter]
@@ -38,7 +38,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>50</Speed>
-          <Behaviour>GFA_MG_RaiderWing_Behavior</Behaviour>
+          <Behaviour>GFA_MG_RaiderBigWing_Behavior</Behaviour>
         </Prefab>
         <Prefab SubtypeId="[MES-MG]TIEmg Starfighter[Grunt]">
           <Position>
@@ -58,6 +58,24 @@
           <Speed>50</Speed>
           <Behaviour>GFA_MG_Escort_Fighter_Behavior</Behaviour>
         </Prefab>
+        <Prefab SubtypeId="[MES-MG]TIEmg Starfighter[Grunt]">
+          <Position>
+            <X>-200.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>50</Speed>
+          <Behaviour>GFA_MG_Escort_Fighter_Behavior</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="[MES-MG]TIEmg Starfighter[Grunt]">
+          <Position>
+            <X>200.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>50</Speed>
+          <Behaviour>GFA_MG_Escort_Fighter_Behavior</Behaviour>
+        </Prefab>
       </Prefabs>
     </SpawnGroup>
 
@@ -67,7 +85,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_RaiderWing_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_RaiderBigWing_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
@@ -96,15 +114,15 @@
         [UseThreatLevelCheck:true]
         [ThreatLevelCheckRange:15000]
         [ThreatIncludeOtherNpcOwners:false]
-        [ThreatScoreMinimum:250]
-        [ThreatScoreMaximum:450]
+        [ThreatScoreMinimum:350]
+        [ThreatScoreMaximum:500]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_RaiderWing_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_RaiderBigWing_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -126,8 +144,10 @@
 
         [EscortOffsets:{X:50 Y:0 Z:0}]
         [EscortOffsets:{X:-50 Y:0 Z:0}]
+        [EscortOffsets:{X:100 Y:0 Z:0}]
+        [EscortOffsets:{X:-100 Y:0 Z:0}]
 
-        [//Triggers:GFA_MG_RaiderWing_Trigger_SpawnSetup]
+        [//Triggers:GFA_MG_RaiderBigWing_Trigger_SpawnSetup]
 
         [TriggerGroups:GFA_System_Dialogue_TriggerGroup_Dynamic]
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
