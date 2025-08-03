@@ -72,6 +72,10 @@
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
 
         [TriggerGroups:MSB_Relay_TriggerGroup]
+
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]
+        [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
       </Description>
     </EntityComponent>
 
@@ -105,7 +109,7 @@
         [ChangeAntennaRanges:true]
         [AntennaNamesForRangeChange:Antenna]
         [AntennaRangeChangeType:Set]
-        [AntennaRangeChangeAmount:25000]
+        [AntennaRangeChangeAmount:35000]
 
         [ChangeAntennaHudText:true]
         [UseRandomNameGenerator:true]
@@ -140,12 +144,12 @@
 
         [SpawningType:CustomSpawn]
         [UseRelativeSpawnPosition:false]
-        [IgnoreSafetyChecks:false]
+        [IgnoreSafetyChecks:true]
 
         [MaxSpawns:2]
         [SpawnGroups:GFA_MG_DefenseTurret_Light_SpawnGroup]
 
-        [MinDistance:50]
+        [MinDistance:25]
         [MaxDistance:100]
 
         [MinAltitude:0]
@@ -180,12 +184,12 @@
 
         [SpawningType:CustomSpawn]
         [UseRelativeSpawnPosition:false]
-        [IgnoreSafetyChecks:false]
+        [IgnoreSafetyChecks:true]
 
         [MaxSpawns:1]
         [SpawnGroups:GFA_MG_DefenseTurret_Heavy_SpawnGroup]
 
-        [MinDistance:50]
+        [MinDistance:25]
         [MaxDistance:100]
 
         [MinAltitude:0]

@@ -13,17 +13,19 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
+        [FactionOverride:MG]
+
         [SpawnConditionsProfiles:GFA_MG_DefenseTurret_Light_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_DefenseInstallation]
 
-        [ReplenishSystems:true]
-        [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
-
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Heavy_Chance]
+
+        [ReplenishSystems:true]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Medium]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -54,7 +56,7 @@
 
         [StaticEncounter:true]
 
-        [RivalAiSpaceSpawn:true]
+        [RivalAiAnySpawn:true]
         [FactionOwner:MG]
         [ReplenishSystems:true]
       </Description>
@@ -75,6 +77,8 @@
         [PlayerDistanceTimerTrigger:30000]
 
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+
+        [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
       </Description>
     </EntityComponent>
 
