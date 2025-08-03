@@ -3,7 +3,7 @@
 [*]Added a Mining Guild Caltrop Mine as an option to spawn around Communications Satellites.
 [*]Added Scout, Strike Fighter and Strike Squadron encounters.
 [*]Added Communications Relay (planetary) encounter, as well as Light and Heavy Defense Turret emplacements to defend them.
-[*]Reduced chance to spawn the mostly intact static versions of various ships.
+[*]Reduced chance to spawn the mostly intact landed versions of various ships.
 [*]Adjusted all encounter loot down as it was too high in general.
 [*]Fixed encounters not pulling from all dialogue variations.
 [/list]
