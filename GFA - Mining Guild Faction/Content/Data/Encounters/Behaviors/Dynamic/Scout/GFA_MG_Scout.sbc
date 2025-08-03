@@ -215,7 +215,7 @@
         [UseSpawn:true]
         [StartsReady:true]
 
-        [SpawningType:CustomSpawn]
+        [SpawningType:PlanetaryInstallation]
         [UseRelativeSpawnPosition:false]
         [IgnoreSafetyChecks:false]
 
@@ -223,7 +223,7 @@
         [SpawnGroups:GFA_MG_CommunicationsRelay_SpawnGroup]
 
         [MinDistance:5000]
-        [MaxDistance:7500]
+        [MaxDistance:10000]
 
         [MinAltitude:0]
         [MaxAltitude:1]
