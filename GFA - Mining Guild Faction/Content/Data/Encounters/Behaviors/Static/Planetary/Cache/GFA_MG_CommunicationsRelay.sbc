@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Relay_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -13,7 +13,7 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_CommunicationsSatellite_Relay_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_CommunicationsRelay_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
         [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
@@ -25,14 +25,14 @@
       <IsPirate>true</IsPirate>
       <Frequency>5.0</Frequency>
       <Prefabs>
-        <Prefab SubtypeId="[MES-MG]Communications Satellite">
+        <Prefab SubtypeId="[MES-MG]Communications Relay">
           <Position>
             <X>0.0</X>
-            <Y>0.0</Y>
+            <Y>8.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
-          <Behaviour>GFA_MG_CommunicationsSatellite_Relay_Behavior</Behaviour>
+          <Behaviour>GFA_MG_CommunicationsRelay_Behavior</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -43,13 +43,13 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Relay_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
 
         [StaticEncounter:true]
-        [MaxGravity:0]
+        [MinGravity:0.01]
 
         [RivalAiSpaceSpawn:true]
         [FactionOwner:MG]
@@ -60,14 +60,14 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Relay_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
 
 	      [BehaviorName:Passive]
 
-        [Triggers:GFA_MG_CommunicationsSatellite_Relay_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_CommunicationsRelay_Trigger_SpawnSetup]
 
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
 
@@ -79,7 +79,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Relay_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -89,14 +89,15 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_MG_CommunicationsSatellite_Relay_Action_SpawnSetup]
-        [Actions:GFA_MG_CommunicationsSatellite_Relay_Action_SpawnDefenseCaltrop]
+        [Actions:GFA_MG_CommunicationsRelay_Action_SpawnSetup]
+        [Actions:GFA_MG_CommunicationsRelay_Action_DefenseTurretLight]
+        [Actions:GFA_MG_CommunicationsRelay_Action_DefenseTurretHeavy]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Relay_Action_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Action_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -108,14 +109,14 @@
 
         [ChangeAntennaHudText:true]
         [UseRandomNameGenerator:true]
-        [AntennaHudText:Communications Satellite RandomLetter-RandomNumberRandomNumberRandomNumber]
+        [AntennaHudText:Communications Relay RandomLetter-RandomNumberRandomNumberRandomNumber]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Relay_Action_SpawnDefenseCaltrop</SubtypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Action_DefenseTurretLight</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -123,13 +124,13 @@
         [Chance:75]
 
         [SpawnEncounter:true]
-        [Spawner:GFA_MG_CommunicationsSatellite_Relay_Spawn_SpawnDefenseCaltrop]
+        [Spawner:GFA_MG_CommunicationsRelay_Spawn_DefenseTurretLight]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_CommunicationsSatellite_Relay_Spawn_SpawnDefenseCaltrop</SubtypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Spawn_DefenseTurretLight</SubtypeId>
       </Id>
       <Description>
         [RivalAI Spawn]
@@ -142,10 +143,53 @@
         [IgnoreSafetyChecks:false]
 
         [MaxSpawns:2]
-        [SpawnGroups:GFA_MG_Caltrop_SpawnGroup]
+        [SpawnGroups:GFA_MG_DefenseTurret_Light_SpawnGroup]
 
         [MinDistance:50]
         [MaxDistance:100]
+
+        [MinAltitude:0]
+        [MaxAltitude:1]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Action_DefenseTurretHeavy</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:25]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_CommunicationsRelay_Spawn_DefenseTurretHeavy]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Spawn_DefenseTurretHeavy</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [MaxSpawns:1]
+        [SpawnGroups:GFA_MG_DefenseTurret_Heavy_SpawnGroup]
+
+        [MinDistance:50]
+        [MaxDistance:100]
+
+        [MinAltitude:0]
+        [MaxAltitude:1]
       </Description>
     </EntityComponent>
 
