@@ -3,7 +3,7 @@
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
       <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[MES-MG]C-ROC Gozanti-Class" />
-      
+
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
@@ -7689,7 +7689,7 @@
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_UpgradeModule">
-              <SubtypeName>DSControlLarge</SubtypeName>
+              <SubtypeName>NPCControlLB</SubtypeName>
               <EntityId>104378378018269324</EntityId>
               <Min x="11" y="5" z="-1" />
               <BlockOrientation Forward="Backward" Up="Up" />
