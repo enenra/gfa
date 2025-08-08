@@ -10,4 +10,5 @@
 [*]Reduced chance to spawn the mostly intact landed versions of various ships.
 [*]Adjusted all encounter loot down as it was too high in general.
 [*]Fixed encounters not pulling from all dialogue variations.
+[*]Fixed MG dynamic encounters not spawning on planets if air density was not high enough.
 [/list]
