@@ -1,4 +1,4 @@
-[h1]Patch 1.0b[/h1]
+[h1]Patch 1.0c[/h1]
 [list]
-[*]Replaced Gravity Components with Thrust Components in the recipe.
+[*]Fixed airtightness.
 [/list]
