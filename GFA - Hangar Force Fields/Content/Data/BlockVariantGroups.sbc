@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_ForceFields" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_FieldSmall_Uneven.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_FieldSmall_Uneven}</DisplayName>
+      <Description>{LOC:Description_GFA_HangarForceFields}</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_AdvancedDoor" Subtype="GFA_LG_IMP_FieldSmall_Uneven" />
+        <Block Type="MyObjectBuilder_AdvancedDoor" Subtype="GFA_LG_IMP_FieldSmall" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>
