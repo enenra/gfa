@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_Emblems" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_Holo_Empire.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>{LOC:DisplayName_GFA_LG_Holo_Empire}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_Holo_Empire}</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_TerminalBlock" Subtype="GFA_LG_Holo_Empire" />
+        <Block Type="MyObjectBuilder_TerminalBlock" Subtype="GFA_LG_Holo_Empire_5x5" />
+        <Block Type="MyObjectBuilder_TerminalBlock" Subtype="GFA_LG_Holo_Rebels" />
+        <Block Type="MyObjectBuilder_TerminalBlock" Subtype="GFA_LG_Holo_Rebels_5x5" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>
