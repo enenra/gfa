@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_TIEFighter_MG" />
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Wing_MG.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>{LOC:DisplayName_GFA_SG_TIEFighter_Wing_MG}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_TIEFighter_Wing_MG}</Description>
+      <Blocks>
+        <Block Type="SolarPanel" Subtype="GFA_SG_TIEFighter_Wing_MG" />
+        <Block Type="SolarPanel" Subtype="GFA_SG_TIEFighter_Wing_MG_Mirror" />
+        <Block Type="OreDetector" Subtype="GFA_SG_TIEFighter_OreSensor" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>

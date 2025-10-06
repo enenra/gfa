@@ -1,4 +1,4 @@
-[h1]Patch 1.0a[/h1]
+[h1]Patch 1.0b[/h1]
 [list]
-[*]SE 1.205 Contact Patch compatibility. (BlockCategories)
+[*]Add support for controller.
 [/list]
