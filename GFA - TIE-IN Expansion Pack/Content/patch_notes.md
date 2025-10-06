@@ -1,4 +1,5 @@
-[h1]Patch 1.1[/h1]
+[h1]Patch 1.1a[/h1]
 [list]
-[*]Added shield hit particle.
+[*]Add controller support.
+[*]Fix missing GFA icon on lasers.
 [/list]
