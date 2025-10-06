@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_XWing" />
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_XWing_Cockpit.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>{LOC:DisplayName_GFA_SG_XWing_Cockpit}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_XWing_Cockpit}</Description>
+      <Blocks>
+        <Block Type="Cockpit" Subtype="GFA_SG_XWing_Cockpit" />
+        <Block Type="CubeBlock" Subtype="GFA_SG_XWing_FrontCowling" />
+        <Block Type="CubeBlock" Subtype="GFA_SG_XWing_FrontCowlingMirror" />
+        <Block Type="CameraBlock" Subtype="GFA_SG_XWing_NoseCone" />
+        <Block Type="LandingGear" Subtype="GFA_SG_XWing_FrontGear" />
+        <Block Type="ConveyorSorter" Subtype="GFA_SG_XWing_TorpLauncher" />
+        <Block Type="ConveyorSorter" Subtype="GFA_SG_XWing_TorpLauncherMirror" />
+        <Block Type="Collector" Subtype="GFA_SG_XWing_CargoScoop" />
+        <Block Type="ShipWelder" Subtype="GFA_SG_XWing_AstroBay" />
+        <Block Type="ConveyorSorter" Subtype="GFA_SG_XWing_FireControl" />
+        <Block Type="LandingGear" Subtype="GFA_SG_XWing_RearGear" />
+        <Block Type="AdvancedDoor" Subtype="GFA_SG_XWing_Wing" />
+        <Block Type="AdvancedDoor" Subtype="GFA_SG_XWing_WingMirror" />
+        <Block Type="Thrust" Subtype="GFA_SG_XWing_Intake" />
+        <Block Type="BatteryBlock" Subtype="GFA_SG_XWing_Engine" />
+        <Block Type="Thrust" Subtype="GFA_SG_XWing_Thruster" />
+        <Block Type="JumpDrive" Subtype="GFA_SG_XWing_Hyperdrive" />
+        <Block Type="ConveyorSorter" Subtype="GFA_SG_XWing_LaserCannon" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_XWing_TorpedoRack" />
+			<Icon>Textures\GUI\Icons\Cubes\GFA_Ammo_ProtonTorpedo.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>{LOC:DisplayName_GFA_SG_XWing_ProtonTorpedoRack}</DisplayName>
+      <Description>{LOC:Description_GFA_SG_XWing_ProtonTorpedoRack}</Description>
+      <Blocks>
+        <Block Type="CubeBlock" Subtype="GFA_LG_XWing_ProtonTorpedoRack" />
+        <Block Type="CubeBlock" Subtype="GFA_SG_XWing_ProtonTorpedoRack" />
+        <Block Type="CubeBlock" Subtype="GFA_LG_XWing_ProtonTorpedoRack_Mirror" />
+        <Block Type="CubeBlock" Subtype="GFA_SG_XWing_ProtonTorpedoRack_Mirror" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>
