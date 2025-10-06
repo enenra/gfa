@@ -1,4 +1,4 @@
-[h1]Patch 1.0c[/h1]
+[h1]Patch 1.0d[/h1]
 [list]
-[*]Fixed airtightness.
+[*]Added controller support.
 [/list]
