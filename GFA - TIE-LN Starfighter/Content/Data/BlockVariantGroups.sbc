@@ -4,6 +4,29 @@
   <BlockVariantGroups>
 
     <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_TIEFighter" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_SG_TIEFighter_Cockpit.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_SG_TIEFighter_Cockpit</DisplayName>
+      <Description>Description_GFA_SG_TIEFighter_Cockpit</Description>
+      <Blocks>
+        <Block Type="Cockpit" Subtype="GFA_SG_TIEFighter_Cockpit" />
+        <Block Type="ShipConnector" Subtype="GFA_SG_TIEFighter_Hatch" />
+        <Block Type="ShipConnector" Subtype="GFA_SG_TIEFighter_Port" />
+        <Block Type="ConveyorSorter" Subtype="GFA_SG_TIEFighter_Lasers" />
+        <Block Type="RemoteControl" Subtype="GFA_SG_TIEFighter_Viewport" />
+        <Block Type="Gyro" Subtype="GFA_SG_TIEFighter_Gyro" />
+        <Block Type="RadioAntenna" Subtype="GFA_SG_TIEFighter_Antenna" />
+        <Block Type="Thrust" Subtype="GFA_SG_TIEFighter_RepulsorBack" />
+        <Block Type="Thrust" Subtype="GFA_SG_TIEFighter_RepulsorSide" />
+        <Block Type="Thrust" Subtype="GFA_SG_TIEFighter_RepulsorVertical" />
+        <Block Type="Thrust" Subtype="GFA_SG_TIEFighter_Thruster" />
+        <Block Type="BatteryBlock" Subtype="GFA_SG_TIEFighter_Battery" />
+        <Block Type="SolarPanel" Subtype="GFA_SG_TIEFighter_Wing" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
       <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_TIE_DockingTube" />
       <Icon>Textures\GUI\Icons\Cubes\GFA_LG_TIEFighter_DockingTube_Door.dds</Icon>
       <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
