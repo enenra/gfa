@@ -1,4 +1,4 @@
-[h1]Patch 1.3a[/h1]
+[h1]Patch 1.3b[/h1]
 [list]
-[*]Add controller support.
+[*]Fix for Proton Torpedo Rack group icon.
 [/list]
