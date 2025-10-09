@@ -36,12 +36,14 @@ action Block() {
 action Door() {
 	Open() {
 		Field.setvisible(false)
+		Light.lightoff()
 		Emissive.setcolor(0, 0, 0, 0.0, false)
 		EmissiveSecondary.setcolor(0, 0, 0, 0.0, false)
 		Emitter.playSound("BlockProjectorOff")
 	}
 	Close() {
 		Field.setvisible(true)
+		Light.lighton()
 		Emissive.setcolor(61, 132, 201, 10.0, false)
 		EmissiveSecondary.setcolor(255, 255, 255, 1.0, false)
 		Emitter.playSound("BlockProjectorOn")

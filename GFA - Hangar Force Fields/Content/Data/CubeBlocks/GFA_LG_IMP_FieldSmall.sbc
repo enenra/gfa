@@ -27,16 +27,16 @@
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
       <MountPoints>
-        <MountPoint Side="Front" StartX="5.00" StartY="0.00" EndX="6.00" EndY="4.00" PressurizedWhenOpen="true"/>
-        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Front" StartX="5.00" StartY="0.00" EndX="6.00" EndY="4.00"/>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
         <MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="5.00" EndY="4.00" Enabled="false" PressurizedWhenOpen="false"/>
-        <MountPoint Side="Back" StartX="5.00" StartY="0.00" EndX="6.00" EndY="4.00" PressurizedWhenOpen="true"/>
-        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Back" StartX="5.00" StartY="0.00" EndX="6.00" EndY="4.00"/>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
         <MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="5.00" EndY="4.00" Enabled="false" PressurizedWhenOpen="false"/>
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
-        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
-        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="6.00" EndY="1.00" PressurizedWhenOpen="true"/>
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="6.00" EndY="1.00" Default="true" PressurizedWhenOpen="true"/>
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="6.00" EndY="1.00"/>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="6.00" EndY="1.00" Default="true"/>
       </MountPoints>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_IMP_FieldSmall_BS1.mwm"/>

@@ -27,16 +27,16 @@
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
-				<MountPoint Side="Front" StartX="12.00" StartY="0.00" EndX="13.00" EndY="4.00" PressurizedWhenOpen="true"/>
-				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
-				<MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="12.00" EndY="4.00" Enabled="false"/>
-				<MountPoint Side="Back" StartX="12.00" StartY="0.00" EndX="13.00" EndY="4.00" PressurizedWhenOpen="true"/>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
-				<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="12.00" EndY="4.00" Enabled="false"/>
-				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00" PressurizedWhenOpen="true"/>
-				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="13.00" EndY="0.50" PressurizedWhenOpen="true"/>
-				<MountPoint Side="Bottom" StartX="0.00" StartY="0.50" EndX="13.00" EndY="1.00" Default="true" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Front" StartX="12.00" StartY="0.00" EndX="13.00" EndY="4.00"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
+				<MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="12.00" EndY="4.00" Enabled="false" PressurizedWhenOpen="false"/>
+				<MountPoint Side="Back" StartX="12.00" StartY="0.00" EndX="13.00" EndY="4.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
+				<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="12.00" EndY="4.00" Enabled="false" PressurizedWhenOpen="false"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="4.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="13.00" EndY="0.50"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.50" EndX="13.00" EndY="1.00" Default="true"/>
 			</MountPoints>
 			<BlockPairName>GFA_LG_REB_Field13</BlockPairName>
 			<BuildProgressModels>
