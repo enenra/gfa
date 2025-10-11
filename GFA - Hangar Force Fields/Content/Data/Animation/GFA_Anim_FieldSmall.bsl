@@ -3,7 +3,7 @@
 @Author enenra
 
 using Field as Subpart("field")
-using Light as Light("light", 15.0, false, 1.3, 5.0)
+using Light as Light("light", 15.0, false, 1.3, 2.0)
 using Emitter as Emitter("light")
 using Emissive as Emissive("EmissiveAtlas")
 using EmissiveSecondary as Emissive("Emissive0")

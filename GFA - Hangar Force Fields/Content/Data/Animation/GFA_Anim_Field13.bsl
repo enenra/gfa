@@ -3,9 +3,9 @@
 @Author enenra
 
 using Field as Subpart("field")
-using Light1 as Light("light_1", 15.0, false, 1.3, 5.0)
-using Light2 as Light("light_2", 15.0, false, 1.3, 5.0)
-using Light3 as Light("light_3", 15.0, false, 1.3, 5.0)
+using Light1 as Light("light_1", 15.0, false, 1.3, 2.0)
+using Light2 as Light("light_2", 15.0, false, 1.3, 2.0)
+using Light3 as Light("light_3", 15.0, false, 1.3, 2.0)
 using Emitter as Emitter("light_1")
 using Emissive as Emissive("EmissiveAtlas")
 using EmissiveSecondary as Emissive("Emissive0")
