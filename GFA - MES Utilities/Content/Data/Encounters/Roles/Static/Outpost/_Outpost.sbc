@@ -3,11 +3,7 @@
   <EntityComponents>
 
     <!--
-    A static encounter that functions as a relay "storing" the coordinates of a Known Player Area. Players can destroy these relays in order to remove the Known Player Areas.
-
-    To use:
-      * Reference MSB_Scout_TriggerGroup in your behavior.
-      * Spawn a spawngroup with this role from an encounter using the scout role.
+      Outpost
     -->
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -56,6 +52,9 @@
         [RivalAI Action]
 
         [SetBooleansTrue:GFA_Role_Outpost]
+
+        [SetCounters:GFA_Resources_Counter]
+        [SetCountersValues:25]
       </Description>
     </EntityComponent>
 
@@ -170,7 +169,7 @@
 
         [CheckCustomCounters:true]
         [CustomCounters:GFA_Resources_Counter]
-        [CustomCountersTargets:25]
+        [CustomCountersTargets:50]
         [CounterCompareTypes:GreaterOrEqual]
       </Description>
     </EntityComponent>
@@ -260,213 +259,6 @@
 
         [SetCounters:GFA_Resources_Counter]
         [SetCountersValues:50]
-      </Description>
-    </EntityComponent>
-
-
-    <!-- Encounter Def ************************************************************************************************************* -->
-
-    <!-- Waypoint -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Waypoint_ExchangePoint</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Waypoint]
-
-        [Waypoint:EntityOffset]
-        [RelativeEntity:Self]
-
-        [MinDistance:50]
-        [MaxDistance:100]
-
-        [MinAltitude:50]
-
-        [InheritRelativeAltitude:false]
-      </Description>
-    </EntityComponent>
-
-
-    <!-- Resources Low-->
-    <!-- Spawn Tender -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Trigger_Spawning_Tender</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
-        [Tags:GFA_System_Resources_Spawning_Tick_Low]
-        [Tags:GFA_System_Resources_Spawning_Tick_Low_1]
-        [Tags:GFA_System_Resources_Spawning_Tick_Low_2]
-        [Tags:GFA_System_Resources_Spawning_Tick_Low_3]
-        [Tags:GFA_System_Resources_Spawning_Tick_Low_4]
-        [Tags:GFA_System_Resources_Spawning_Tick_Low_5]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Actions:GFA_MG_Outpost_Action_Spawning_Tender]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Action_Spawning_Tender</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [DisableTriggers:true]
-        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_Low]
-
-        [EnableTriggers:true]
-        [EnableTriggerTags:GFA_MG_Outpost_Trigger_Spawning_Tender_SendTarget]
-
-        [SpawnEncounter:true]
-        [Spawner:GFA_MG_Outpost_Spawn_Tender]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Spawn_Tender</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Spawn]
-
-        [UseSpawn:true]
-        [StartsReady:true]
-
-        [SpawningType:CustomSpawn]
-        [UseRelativeSpawnPosition:false]
-        [IgnoreSafetyChecks:false]
-
-        [MinDistance:12500]
-        [MaxDistance:15000]
-
-        [MinAltitude:3000]
-
-        [SpawnGroups:GFA_MG_Tender_SpawnGroup]
-      </Description>
-    </EntityComponent>
-
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Trigger_Spawning_Tender_SendTarget</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Timer]
-
-        [UseTrigger:false]
-        [StartsReady:false]
-
-        [MinCooldownMs:200]
-        [MaxCooldownMs:201]
-
-        [MaxActions:1]
-        [Actions:GFA_MG_Outpost_Action_Spawning_Tender_SendTarget]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Action_Spawning_Tender_SendTarget</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [BroadcastCommandProfiles:true]
-        [CommandProfileIds:GFA_Tender_Trigger_ReceiveTarget]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Command_Tender_ReceiveTarget</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Command]
-
-        [CommandCode:GFA_Tender_Target]
-
-        [MatchSenderReceiverOwners:true]
-
-        [SendWaypoint:true]
-        [Waypoint:GFA_MG_Outpost_Waypoint_ExchangePoint]
-
-        [CommandDelayTicks:60]
-      </Description>
-    </EntityComponent>
-
-
-    <!-- Resources NotLow -->
-    <!-- Spawn Patrol -->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Trigger_Spawning_Patrol</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [Type:Manual]
-        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
-        [Tags:GFA_System_Resources_Spawning_Tick_NotLow]
-        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_1]
-        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_2]
-
-        [UseTrigger:true]
-        [StartsReady:true]
-
-        [Conditions:GFA_System_Resources_Condition_BasicFighter_Available]
-
-        [Actions:GFA_MG_Outpost_Action_Spawning_Patrol]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Action_Spawning_Patrol</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Action]
-
-        [DisableTriggers:true]
-        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
-
-        [ManuallyActivateTrigger:true]
-        [ManuallyActivatedTriggerTags:GFA_System_Resources_BasicFighter_Decrease]
-
-        [SpawnEncounter:true]
-        [Spawner:GFA_Outpost_Spawn_Patrol]
-      </Description>
-    </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Spawn_Patrol</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Spawn]
-
-        [UseSpawn:true]
-        [StartsReady:true]
-
-        [SpawningType:CustomSpawn]
-        [UseRelativeSpawnPosition:true]
-        [IgnoreSafetyChecks:false]
-
-        [RelativeSpawnOffset:{X:# Y:# Z:#}]
-
-        [SpawnGroups:GFA_MG_Patrol_SpawnGroup]
       </Description>
     </EntityComponent>
 

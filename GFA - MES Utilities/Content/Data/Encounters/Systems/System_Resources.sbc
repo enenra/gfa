@@ -20,7 +20,7 @@
 
         [Triggers:GFA_System_Resources_Trigger_Start]
 
-        [Triggers:GFA_System_Resources_Trigger_Tick]
+        [Triggers:GFA_System_Resources_Trigger_Resource_Tick]
         [Triggers:GFA_System_Resources_Trigger_ReceivedResupply]
 
         [Triggers:GFA_System_Resources_Trigger_Spawning_Tick]
@@ -110,7 +110,7 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Resources - State - ResourcesNotLow]
+        [DebugMessage:Resources - State - Resources_NotLow]
 
         [EnableTriggers:true]
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
@@ -144,7 +144,7 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Resources - State - ResourcesFull]
+        [DebugMessage:Resources - State - Resources_Full]
 
         [EnableTriggers:true]
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_Full]
