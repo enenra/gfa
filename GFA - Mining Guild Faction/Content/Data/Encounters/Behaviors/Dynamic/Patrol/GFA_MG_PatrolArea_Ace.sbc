@@ -72,6 +72,11 @@
         [LunarCargoShipChance:60]
         [AtmosphericCargoShipChance:60]
         [GravityCargoShipChance:60]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:15000]
+        [ThreatIncludeOtherNpcOwners:false]
+        [ThreatScoreMinimum:25]
       </Description>
     </EntityComponent>
 
