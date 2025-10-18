@@ -73,11 +73,14 @@
         [Tags:GFA_System_Resources_Update]
 
         [UseTrigger:true]
-        [StartsReady:true]
+        [StartsReady:false]
 
         [Conditions:GFA_Outpost_Condition_State_Resources_Low]
 
-        [Actions:GFA_System_Resources_Action_State_Resources_Low]
+        [Actions:GFA_System_Resources_Action_State_Resources_Low_True]
+
+        [UseElseActions:true]
+        [ElseActions:GFA_System_Resources_Action_State_Resources_Low_False]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -93,7 +96,7 @@
 
         [CheckCustomCounters:true]
         [CustomCounters:GFA_Resources_Counter]
-        [CustomCountersTargets:10]
+        [CustomCountersTargets:15]
         [CounterCompareTypes:Less]
       </Description>
     </EntityComponent>
@@ -111,11 +114,14 @@
         [Tags:GFA_System_Resources_Update]
 
         [UseTrigger:true]
-        [StartsReady:true]
+        [StartsReady:false]
 
         [Conditions:GFA_Outpost_Condition_State_Resources_NotLow]
 
-        [Actions:GFA_System_Resources_Action_State_Resources_NotLow]
+        [Actions:GFA_System_Resources_Action_State_Resources_NotLow_True]
+
+        [UseElseActions:true]
+        [ElseActions:GFA_System_Resources_Action_State_Resources_NotLow_False]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -131,7 +137,7 @@
 
         [CheckCustomCounters:true]
         [CustomCounters:GFA_Resources_Counter]
-        [CustomCountersTargets:10]
+        [CustomCountersTargets:15]
         [CounterCompareTypes:GreaterOrEqual]
       </Description>
     </EntityComponent>
@@ -149,11 +155,14 @@
         [Tags:GFA_System_Resources_Update]
 
         [UseTrigger:true]
-        [StartsReady:true]
+        [StartsReady:false]
 
         [Conditions:GFA_Outpost_Condition_State_Resources_Full]
 
-        [Actions:GFA_System_Resources_Action_State_Resources_Full]
+        [Actions:GFA_System_Resources_Action_State_Resources_Full_True]
+
+        [UseElseActions:true]
+        [ElseActions:GFA_System_Resources_Action_State_Resources_Full_False]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -200,7 +209,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Outpost_Condition_State_Resources_NotLow</SubtypeId>
+        <SubtypeId>GFA_Outpost_Condition_Resource_Tick</SubtypeId>
       </Id>
       <Description>
         [RivalAI Condition]
@@ -222,10 +231,16 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Outpost - Resources - Resource_Tick]
+        [//DebugMessage:Outpost - Resources - Resource_Tick]
 
         [IncreaseCounters:GFA_Resources_Counter]
         [IncreaseCountersAmount:1]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
       </Description>
     </EntityComponent>
 
