@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-08-01 16:11:16.628021 -->
+<!-- Created from GSheet export on 2025-10-17 21:49:22.696541 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -734,6 +734,246 @@
 			</Entry>
 			<Entry>
 				<Message>Confirming enemy contacts in target area.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_RadioCheck_Friendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Receiving you well, friend.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirming radio check. Good to hear from friendlies in the area.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Always good to hear from friendlies. Well received.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_RadioCheck_Neutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Received.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirming radio check. </Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Receiving.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_RadioCheck_Hostile</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>E chu ta!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sithspawn! I'll blast you soon enough!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>I'll turn you into bantha fodder!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_Friendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Apologies, friend, we can't make the time to trade right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Unfortunately we can't trade now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Tempting! But we have places to be.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_Neutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We are not in a place to stop for you right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No can do. Got places to be.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Don't have the time right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_Hostile</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Ha! Absolutely not.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Not with the kind of reputation you have.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>What? No!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Received_Friendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>For a friend - always. Stopping engines.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Of course! Engage trading protocols.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Music to my ears. Slowing down so you can pull up alongside.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Received_Neutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Received. Stopping to trade.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Yes, we can arrange that.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Trading? Agreed, we do have some time to spare.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_SignalLeaving</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We'll need to resume course again soon. Let's finish this up.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Alright, that's all we have time for. We're packing up.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Nice trading with you. We need to prepare to resume course now though.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_ResumeCourse</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Resuming course. Farewell.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>That's that. Firing up engines.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Accelerating to cruise speed.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_CombatMode</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Hostiles! Accelerate to combat speed!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Hostiles in range. Aborting trade.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Incoming! Let's go, let's go!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_InCombat</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Are you blind? Kind of busy right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>What?</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>This isn't the time!</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>
