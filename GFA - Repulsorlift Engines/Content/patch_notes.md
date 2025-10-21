@@ -1,4 +1,4 @@
-[h1]Patch 1.1b[/h1]
+[h1]Patch 1.1c[/h1]
 [list]
-[*]SE 1.205 Contact Patch compatibility. (BlockCategories)
+[*]Added repulsors to ion thruster group for controller users.
 [/list]
