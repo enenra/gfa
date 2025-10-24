@@ -9,6 +9,7 @@ namespace Digi.Experiments
         public override void LoadData()
         {
             RemoveCategory("z-mod-Takeshi");
+            RemoveCategory("LargeBlocks");
             // can repeat the above line to remove more
         }
 
