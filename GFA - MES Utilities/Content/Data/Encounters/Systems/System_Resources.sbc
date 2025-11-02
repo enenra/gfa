@@ -20,6 +20,10 @@
 
         [Triggers:GFA_System_Resources_Trigger_Start]
 
+        [Triggers:GFA_System_Resources_Trigger_State_Resources_Low]
+        [Triggers:GFA_System_Resources_Trigger_State_Resources_NotLow]
+        [Triggers:GFA_System_Resources_Trigger_State_Resources_Full]
+
         [Triggers:GFA_System_Resources_Trigger_Resource_Tick]
         [Triggers:GFA_System_Resources_Trigger_Resource_Update_Delay]
         [Triggers:GFA_System_Resources_Trigger_ReceivedResupply]
@@ -69,6 +73,46 @@
     </EntityComponent>
 
     <!-- State Booleans -->
+    <!-- Low -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_State_Resources_Low</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Update]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Conditions:GFA_System_Resources_Condition_State_Resources_Low]
+
+        [Actions:GFA_System_Resources_Action_State_Resources_Low_True]
+
+        [UseElseActions:true]
+        [ElseActions:GFA_System_Resources_Action_State_Resources_Low_False]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Condition_State_Resources_Low</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Resources_Threshold_Low}]
+        [CounterCompareTypes:Less]
+      </Description>
+    </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -101,10 +145,34 @@
         [SetBooleansFalse:GFA_State_Resources_Low]
       </Description>
     </EntityComponent>
+
+    <!-- NotLow -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Resources_Condition_State_Resources_Low</SubtypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_State_Resources_NotLow</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Update]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Conditions:GFA_System_Resources_Condition_State_Resources_NotLow]
+
+        [Actions:GFA_System_Resources_Action_State_Resources_NotLow_True]
+
+        [UseElseActions:true]
+        [ElseActions:GFA_System_Resources_Action_State_Resources_NotLow_False]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Condition_State_Resources_NotLow</SubtypeId>
       </Id>
       <Description>
         [RivalAI Condition]
@@ -112,11 +180,12 @@
         [UseConditions:true]
         [MatchAnyCondition:false]
 
-        [CheckTrueBooleans:true]
-        [TrueBooleans:GFA_State_Resources_Low]
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Resources_Threshold_Low}]
+        [CounterCompareTypes:GreaterOrEqual]
       </Description>
     </EntityComponent>
-
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -149,10 +218,34 @@
         [SetBooleansFalse:GFA_State_Resources_NotLow]
       </Description>
     </EntityComponent>
+
+    <!-- Full -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Resources_Condition_State_Resources_NotLow</SubtypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_State_Resources_Full</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Update]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Conditions:GFA_System_Resources_Condition_State_Resources_Full]
+
+        [Actions:GFA_System_Resources_Action_State_Resources_Full_True]
+
+        [UseElseActions:true]
+        [ElseActions:GFA_System_Resources_Action_State_Resources_Full_False]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Condition_State_Resources_Full</SubtypeId>
       </Id>
       <Description>
         [RivalAI Condition]
@@ -160,11 +253,12 @@
         [UseConditions:true]
         [MatchAnyCondition:false]
 
-        [CheckTrueBooleans:true]
-        [TrueBooleans:GFA_State_Resources_NotLow]
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Resources_Threshold_Full}]
+        [CounterCompareTypes:GreaterOrEqual]
       </Description>
     </EntityComponent>
-
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -197,21 +291,6 @@
         [SetBooleansFalse:GFA_State_Resources_Full]
       </Description>
     </EntityComponent>
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Resources_Condition_State_Resources_Full</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Condition]
-
-        [UseConditions:true]
-        [MatchAnyCondition:false]
-
-        [CheckTrueBooleans:true]
-        [TrueBooleans:GFA_State_Resources_Full]
-      </Description>
-    </EntityComponent>
 
     <!-- Resource Gain / Loss -->
     <!-- Tick every 50min-1h & increase / decrease encounter resource stock (amount defined by role). -->
@@ -229,10 +308,29 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [MinCooldownMs:3000000]
-        [MaxCooldownMs:3600001]
+        [MinCooldownMs:30000]
+        [MaxCooldownMs:36001]
+
+        [Conditions:GFA_System_Resources_Condition_Resource_Tick]
 
         [Actions:GFA_System_Resources_Action_Resource_Tick]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Condition_Resource_Tick</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Resources_Threshold_Full}]
+        [CounterCompareTypes:LessOrEqual]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -247,6 +345,17 @@
 
         [ManuallyActivateTrigger:true]
         [ManuallyActivatedTriggerTags:GFA_System_Resources_Resource_Tick]
+
+        [IncreaseCounters:GFA_Resources_Counter]
+
+        [IncreaseCountersUseAmountVariable:true]
+        [IncreaseCountersAmountVariable:{GFA_Resources_Production_Amount}]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
       </Description>
     </EntityComponent>
 
@@ -338,6 +447,11 @@
 
         [ManuallyActivateTrigger:true]
         [ManuallyActivatedTriggerTags:GFA_System_Resources_ReceivedResupply]
+
+        [SetCounters:GFA_Resources_Counter]
+
+        [SetCountersUseAmountVariable:true]
+        [SetCountersAmountVariable:{GFA_Resources_Threshold_Full}]
       </Description>
     </EntityComponent>
 
@@ -357,8 +471,8 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [MinCooldownMs:1200000]
-        [MaxCooldownMs:1800001]
+        [MinCooldownMs:12000]
+        [MaxCooldownMs:18001]
 
         [Actions:GFA_System_Resources_Action_Spawning_Tick]
       </Description>
