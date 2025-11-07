@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Common_Tender_Responses_Trigger_SendTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:200]
+        [MaxCooldownMs:201]
+
+        [MaxActions:1]
+        [Actions:GFA_Common_Tender_Responses_Action_SendTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Common_Tender_Responses_Action_SendTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DebugMessage:Common - Tender Responses - SendTarget]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:GFA_Common_Tender_Responses_Command_SendTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Common_Tender_Responses_Command_SendTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:GFA_Tender_Target]
+
+        [MatchSenderReceiverOwners:true]
+
+        [SendWaypoint:true]
+        [Waypoint:{SpawnGroupNameTruncated}_Waypoint_ExchangePoint]
+
+        [CommandDelayTicks:60]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

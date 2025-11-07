@@ -404,7 +404,7 @@
       <Description>
         [RivalAI Command]
 
-        [CommandCode:MSB_ReceivedResupply]
+        [CommandCode:GFA_ReceivedResupply]
 
         [IgnoreAntennaRequirement:true]
         [IgnoreReceiverAntennaRequirement:true]
@@ -424,7 +424,7 @@
         [RivalAI Trigger]
 
         [Type:CommandReceived]
-        [CommandReceiveCode:MSB_ReceivedResupply]
+        [CommandReceiveCode:GFA_ReceivedResupply]
 
         [UseTrigger:true]
         [StartsReady:true]
