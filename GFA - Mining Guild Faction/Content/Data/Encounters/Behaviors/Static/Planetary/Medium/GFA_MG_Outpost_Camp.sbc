@@ -125,6 +125,7 @@
 
         [MaxActions:1]
         [Actions:GFA_MG_Outpost_Camp_Action_Rename]
+        [Actions:GFA_MG_Outpost_Camp_Action_SpawningSetup]
         [Actions:GFA_MG_Outpost_Camp_Action_CampAntenna]
       </Description>
     </EntityComponent>
@@ -139,6 +140,22 @@
         [ChangeAntennaHudText:true]
         [UseRandomNameGenerator:true]
         [AntennaHudText:Patrol Outpost RandomNumberRandomLetter-RandomNumberRandomNumber]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_SpawningSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetCustomStrings:true]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Tender,]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Patrol,GFA_MG_Patrol_SpawnGroup]
+
+        [SetCustomCountersVariables:true]
+        [CustomCountersVariables:GFA_Outpost_Resources_Cost_Patrol,10]
       </Description>
     </EntityComponent>
 
@@ -220,6 +237,51 @@
         [OnlySpawnBotsInPressurizedRooms:false]
 
         [BotSpawnProfileNames:GFA_MG_BotProfile_Crew]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Waypoints -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Waypoint_Spawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Waypoint]
+
+        [Waypoint:EntityOffset]
+        [RelativeEntity:Self]
+
+        [Offset:{X:0 Y:15 Z:0}]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Waypoint_ExchangePoint</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Waypoint]
+
+        [Waypoint:EntityOffset]
+        [RelativeEntity:Self]
+
+        [Offset:{X:0 Y:35 Z:0}]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Waypoint_Despawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Waypoint]
+
+        [Waypoint:EntityOffset]
+        [RelativeEntity:Self]
+
+        [Offset:{X:0 Y:25 Z:0}]
       </Description>
     </EntityComponent>
 
