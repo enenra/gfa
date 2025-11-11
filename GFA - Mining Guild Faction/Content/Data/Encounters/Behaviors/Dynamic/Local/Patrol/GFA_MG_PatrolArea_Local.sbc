@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Local_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_PatrolArea_Local_SpawnConditions]
+
+        [ManipulationProfiles:GFA_MG_Manipulation]
+        [ManipulationProfiles:GFA_MG_Manipulation_Fighter]
+
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
+
+        [UseRandomNameGenerator:true]
+        [RenameGrid:false]
+        [ReplaceAntennaHudTextInsteadOfName:true]
+        [ReplaceAntennaNameWithRandomizedName:Antenna]
+        [RandomGridNamePattern:Sector Patrol AurebeshLetter-RandomNumberRandomNumber]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="[MES-MG]TIEmg Starfighter[Grunt]">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>50</Speed>
+          <Behaviour>GFA_MG_PatrolArea_Local_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Local_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [RivalAiAnySpawn:true]
+        [FactionOwner:MG]
+        [ReplenishSystems:false]
+
+        [SkipVoxelSpawnChecks:true]
+        [SkipGridSpawnChecks:true]
+        [IgnoreCombatPhase:true]
+        [SkipAirDensityCheck:true]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Local_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [TargetData:MSB_TargetProfile_LowRange]
+        [OverrideTargetData:MSB_TargetProfile_LongRange]
+        [AutopilotData:MSB_PatrolArea_Autopilot]
+        [SecondaryAutopilotData:GFA_Fighter_Autopilot]
+        [TertiaryAutopilotData:GFA_Fighter_Autopilot_Strike]
+
+        [DialogueBanks:GFA_MG_DialogueBank_Dynamic_1.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Dynamic_2.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Dynamic_3.xml]
+
+        [Triggers:GFA_MG_PatrolArea_Local_Trigger_SpawnSetup]
+
+        [TriggerGroups:MSB_Interaction_RadioCheck_TriggerGroup]
+
+        [TriggerGroups:MSB_System_Dialogue_TriggerGroup_Dynamic]
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+
+        [TriggerGroups:MSB_DynamicCommon_TriggerGroup]
+        [TriggerGroups:MSB_System_Despawn_TriggerGroup_FlyToHomebase]
+        [TriggerGroups:MSB_System_Communication_TriggerGroup]
+        [//TriggerGroups:MSB_System_Crash_TriggerGroup]
+        [Triggers:MSB_System_EngagementRange_Trigger_2000]
+
+        [TriggerGroups:MSB_PatrolArea_TriggerGroup]
+        [TriggerGroups:MSB_Fighter_TriggerGroup]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_PatrolArea_Local_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:MSB_System_Communication_Action_Enable_SOS_Response_Dynamic]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

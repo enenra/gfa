@@ -98,6 +98,7 @@
 
         [TriggerGroups:MSB_StaticCommon_TriggerGroup]
         [TriggerGroups:MSB_System_AreaRestriction_TriggerGroup_1000]
+        [TriggerGroups:MSB_System_Despawn_TriggerGroup_DespawnPoint]
         [//TriggerGroups:MSB_System_Communication_TriggerGroup]
 
         [TriggerGroups:GFA_Outpost_TriggerGroup]
@@ -152,10 +153,12 @@
 
         [SetCustomStrings:true]
         [CustomStrings:GFA_Outpost_SpawnGroup_Tender,]
-        [CustomStrings:GFA_Outpost_SpawnGroup_Patrol,GFA_MG_Patrol_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Patrol,GFA_MG_Patrol_Local_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_PatrolArea,GFA_MG_PatrolArea_Local_SpawnGroup]
 
         [SetCustomCountersVariables:true]
         [CustomCountersVariables:GFA_Outpost_Resources_Cost_Patrol,10]
+        [CustomCountersVariables:GFA_Outpost_Resources_Cost_PatrolArea,10]
       </Description>
     </EntityComponent>
 
@@ -250,10 +253,10 @@
       <Description>
         [RivalAI Waypoint]
 
-        [Waypoint:EntityOffset]
+        [Waypoint:RelativeOffset]
         [RelativeEntity:Self]
 
-        [Offset:{X:0 Y:15 Z:0}]
+        [Offset:{X:0 Y:10 Z:0}]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -264,7 +267,7 @@
       <Description>
         [RivalAI Waypoint]
 
-        [Waypoint:EntityOffset]
+        [Waypoint:RelativeOffset]
         [RelativeEntity:Self]
 
         [Offset:{X:0 Y:35 Z:0}]
@@ -278,7 +281,7 @@
       <Description>
         [RivalAI Waypoint]
 
-        [Waypoint:EntityOffset]
+        [Waypoint:RelativeOffset]
         [RelativeEntity:Self]
 
         [Offset:{X:0 Y:25 Z:0}]
