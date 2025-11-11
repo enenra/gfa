@@ -17,6 +17,7 @@
         [Triggers:GFA_Outpost_Trigger_Setup]
 
         [Triggers:GFA_Outpost_Trigger_Spawn_Patrol]
+        [Triggers:GFA_Outpost_Trigger_Spawn_PatrolArea]
 
         [Triggers:GFA_Outpost_Trigger_Spawn_Tender]
         [Triggers:GFA_Common_Tender_Responses_Trigger_SendTarget]
@@ -107,8 +108,8 @@
         [DecreaseCountersUseAmountVariable:true]
         [DecreaseCountersAmountVariable:{GFA_Outpost_Resources_Cost_Tender}]
 
-        [SpawnEncounter:true]
-        [Spawner:GFA_Outpost_Spawn_Tender]
+        [//SpawnEncounter:true]
+        [//Spawner:GFA_Outpost_Spawn_Tender]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -123,7 +124,7 @@
         [StartsReady:true]
 
         [SpawningType:CustomSpawn]
-        [UseRelativeSpawnPosition:true]
+        [UseRelativeSpawnPosition:false]
         [IgnoreSafetyChecks:false]
 
         [UseWaypoint:true]
@@ -149,6 +150,8 @@
         [Tags:GFA_System_Resources_Spawning_Tick_NotLow]
         [Tags:GFA_System_Resources_Spawning_Tick_NotLow_1]
         [Tags:GFA_System_Resources_Spawning_Tick_NotLow_2]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_3]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_4]
 
         [UseTrigger:true]
         [StartsReady:true]
@@ -208,13 +211,96 @@
         [StartsReady:true]
 
         [SpawningType:CustomSpawn]
-        [UseRelativeSpawnPosition:true]
+        [UseRelativeSpawnPosition:false]
         [IgnoreSafetyChecks:false]
 
         [UseWaypoint:true]
         [Waypoint:{SpawnGroupNameTruncated}_Waypoint_Spawn]
 
         [SpawnGroups:{GFA_Outpost_SpawnGroup_Patrol}]
+      </Description>
+    </EntityComponent>
+
+    <!-- Spawn PatrolArea -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_5]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_6]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:GFA_Outpost_Condition_Spawn_PatrolArea]
+
+        [Actions:GFA_Outpost_Action_Spawn_PatrolArea]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Condition_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Outpost_Resources_Cost_PatrolArea}]
+        [CounterCompareTypes:GreaterOrEqual]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DebugMessage:Outpost - Spawn - PatrolArea]
+
+        [DisableTriggers:true]
+        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
+
+        [DecreaseCounters:GFA_Resources_Counter]
+        [DecreaseCountersUseAmountVariable:true]
+        [DecreaseCountersAmountVariable:{GFA_Outpost_Resources_Cost_PatrolArea}]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_Outpost_Spawn_PatrolArea]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:{SpawnGroupNameTruncated}_Waypoint_Spawn]
+
+        [SpawnGroups:{GFA_Outpost_SpawnGroup_PatrolArea}]
       </Description>
     </EntityComponent>
 

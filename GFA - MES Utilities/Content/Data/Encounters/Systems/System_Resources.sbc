@@ -26,6 +26,7 @@
 
         [Triggers:GFA_System_Resources_Trigger_Resource_Tick]
         [Triggers:GFA_System_Resources_Trigger_Resource_Update_Delay]
+        [Triggers:GFA_System_Resources_Trigger_Store_Tick]
         [Triggers:GFA_System_Resources_Trigger_ReceivedResupply]
 
         [Triggers:GFA_System_Resources_Trigger_Spawning_Tick]
@@ -33,11 +34,8 @@
         [Triggers:GFA_System_Resources_Trigger_Spawning_NotLow]
         [Triggers:GFA_System_Resources_Trigger_Spawning_Full]
 
-        [Triggers:GFA_System_Resources_Trigger_BasicFighter_Decrease]
-        [Triggers:GFA_System_Resources_Trigger_BasicFighterAce_Decrease]
-        [Triggers:GFA_System_Resources_Trigger_AdvancedFighter_Decrease]
-        [Triggers:GFA_System_Resources_Trigger_AdvancedFighterAce_Decrease]
-        [Triggers:GFA_System_Resources_Trigger_Gunship_Decrease]
+        [Triggers:GFA_System_Resources_Trigger_PlayerFar]
+        [Triggers:GFA_System_Resources_Trigger_PlayerNear]
       </Description>
     </EntityComponent>
 
@@ -127,6 +125,24 @@
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_Low]
 
         [SetBooleansTrue:GFA_State_Resources_Low]
+
+        [ApplyStoreProfiles:true]
+        [ClearStoreContentsFirst:true]
+
+        [StoreBlocks:{GFA_Resources_Store_1_Name}]
+        [StoreProfiles:{GFA_Resources_Store_1_Profile}_Low]
+
+        [StoreBlocks:{GFA_Resources_Store_2_Name}]
+        [StoreProfiles:{GFA_Resources_Store_2_Profile}_Low]
+
+        [StoreBlocks:{GFA_Resources_Store_3_Name}]
+        [StoreProfiles:{GFA_Resources_Store_3_Profile}_Low]
+
+        [StoreBlocks:{GFA_Resources_Store_4_Name}]
+        [StoreProfiles:{GFA_Resources_Store_4_Profile}_Low]
+
+        [StoreBlocks:{GFA_Resources_Store_5_Name}]
+        [StoreProfiles:{GFA_Resources_Store_5_Profile}_Low]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -200,6 +216,24 @@
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
 
         [SetBooleansTrue:GFA_State_Resources_NotLow]
+
+        [ApplyStoreProfiles:true]
+        [ClearStoreContentsFirst:true]
+
+        [StoreBlocks:{GFA_Resources_Store_1_Name}]
+        [StoreProfiles:{GFA_Resources_Store_1_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_2_Name}]
+        [StoreProfiles:{GFA_Resources_Store_2_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_3_Name}]
+        [StoreProfiles:{GFA_Resources_Store_3_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_4_Name}]
+        [StoreProfiles:{GFA_Resources_Store_4_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_5_Name}]
+        [StoreProfiles:{GFA_Resources_Store_5_Profile}_NotLow]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -273,6 +307,24 @@
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_Full]
 
         [SetBooleansTrue:GFA_State_Resources_Full]
+
+        [ApplyStoreProfiles:true]
+        [ClearStoreContentsFirst:true]
+
+        [StoreBlocks:{GFA_Resources_Store_1_Name}]
+        [StoreProfiles:{GFA_Resources_Store_1_Profile}_Full]
+
+        [StoreBlocks:{GFA_Resources_Store_2_Name}]
+        [StoreProfiles:{GFA_Resources_Store_2_Profile}_Full]
+
+        [StoreBlocks:{GFA_Resources_Store_3_Name}]
+        [StoreProfiles:{GFA_Resources_Store_3_Profile}_Full]
+
+        [StoreBlocks:{GFA_Resources_Store_4_Name}]
+        [StoreProfiles:{GFA_Resources_Store_4_Profile}_Full]
+
+        [StoreBlocks:{GFA_Resources_Store_5_Name}]
+        [StoreProfiles:{GFA_Resources_Store_5_Profile}_Full]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -455,6 +507,60 @@
       </Description>
     </EntityComponent>
 
+    <!-- Store Refresh - Every 3.5-4h if state is NotLow -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_Store_Tick</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [Tags:GFA_System_Resources_Resource_Tick_Loop]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [MinCooldownMs:12600000]
+        [MaxCooldownMs:14400000]
+
+        [Conditions:GFA_System_Resources_Condition_State_Resources_NotLow]
+
+        [Actions:GFA_System_Resources_Action_Store_Tick]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_Store_Tick</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - Store_Tick]
+
+        [ApplyStoreProfiles:true]
+        [ClearStoreContentsFirst:true]
+
+        [StoreBlocks:{GFA_Resources_Store_1_Name}]
+        [StoreProfiles:{GFA_Resources_Store_1_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_2_Name}]
+        [StoreProfiles:{GFA_Resources_Store_2_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_3_Name}]
+        [StoreProfiles:{GFA_Resources_Store_3_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_4_Name}]
+        [StoreProfiles:{GFA_Resources_Store_4_Profile}_NotLow]
+
+        [StoreBlocks:{GFA_Resources_Store_5_Name}]
+        [StoreProfiles:{GFA_Resources_Store_5_Profile}_NotLow]
+      </Description>
+    </EntityComponent>
+
+
     <!-- Encounter Spawning -->
     <!-- Tick every 20-30min and propose the spawn of an encounter (defined in role). -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -516,6 +622,11 @@
         [Actions:GFA_System_Resources_Action_Spawning_Low_3]
         [Actions:GFA_System_Resources_Action_Spawning_Low_4]
         [Actions:GFA_System_Resources_Action_Spawning_Low_5]
+        [Actions:GFA_System_Resources_Action_Spawning_Low_6]
+        [Actions:GFA_System_Resources_Action_Spawning_Low_7]
+        [Actions:GFA_System_Resources_Action_Spawning_Low_8]
+        [Actions:GFA_System_Resources_Action_Spawning_Low_9]
+        [Actions:GFA_System_Resources_Action_Spawning_Low_10]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -586,6 +697,76 @@
 
         [ManuallyActivateTrigger:true]
         [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick_Low_5]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_Spawning_Low_6</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - Spawning_Low_6]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick_Low_6]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_Spawning_Low_7</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - Spawning_Low_7]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick_Low_7]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_Spawning_Low_8</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - Spawning_Low_8]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick_Low_8]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_Spawning_Low_9</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - Spawning_Low_9]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick_Low_9]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_Spawning_Low_10</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - Spawning_Low_10]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick_Low_10]
       </Description>
     </EntityComponent>
 
@@ -780,6 +961,82 @@
 
         [ManuallyActivateTrigger:true]
         [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick_Full_5]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Player Distance -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_PlayerFar</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerFar]
+
+        [TargetDistance:25001]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [MinCooldownMs:30000]
+        [MaxCooldownMs:30001]
+
+        [Actions:GFA_System_Resources_Action_PlayerFar]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_PlayerFar</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - PlayerFar]
+
+        [DisableTriggers:true]
+        [DisableTriggerTags:GFA_System_Resources_Resource_Tick_Loop]
+        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_Loop]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerNear]
+
+        [TargetDistance:25000]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [MinCooldownMs:30000]
+        [MaxCooldownMs:30001]
+
+        [Actions:GFA_System_Resources_Action_PlayerNear]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - PlayerNear]
+
+        [EnableTriggers:true]
+        [EnableTriggerTags:GFA_System_Resources_Resource_Tick_Loop]
+        [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_Loop]
       </Description>
     </EntityComponent>
 
