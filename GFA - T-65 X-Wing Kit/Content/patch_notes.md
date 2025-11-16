@@ -1,4 +1,4 @@
-[h1]Patch 1.3b[/h1]
+[h1]Patch 1.3c[/h1]
 [list]
-[*]Fix for Proton Torpedo Rack group icon.
+[*]Increase range at which thrusters can be heard.
 [/list]
