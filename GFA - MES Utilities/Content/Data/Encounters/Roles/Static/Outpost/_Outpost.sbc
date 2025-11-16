@@ -108,8 +108,8 @@
         [DecreaseCountersUseAmountVariable:true]
         [DecreaseCountersAmountVariable:{GFA_Outpost_Resources_Cost_Tender}]
 
-        [//SpawnEncounter:true]
-        [//Spawner:GFA_Outpost_Spawn_Tender]
+        [SpawnEncounter:true]
+        [Spawner:GFA_Outpost_Spawn_Tender]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -217,6 +217,8 @@
         [UseWaypoint:true]
         [Waypoint:{SpawnGroupNameTruncated}_Waypoint_Spawn]
 
+        [CustomCountersVariablesReferences:GFA_Resources_Cost,GFA_Outpost_Resources_Cost_Patrol]
+
         [SpawnGroups:{GFA_Outpost_SpawnGroup_Patrol}]
       </Description>
     </EntityComponent>
@@ -299,6 +301,8 @@
 
         [UseWaypoint:true]
         [Waypoint:{SpawnGroupNameTruncated}_Waypoint_Spawn]
+
+        [CustomCountersVariablesReferences:GFA_Resources_Cost,GFA_Outpost_Resources_Cost_PatrolArea]
 
         [SpawnGroups:{GFA_Outpost_SpawnGroup_PatrolArea}]
       </Description>

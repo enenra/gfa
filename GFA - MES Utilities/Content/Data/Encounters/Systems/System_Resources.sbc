@@ -28,6 +28,7 @@
         [Triggers:GFA_System_Resources_Trigger_Resource_Update_Delay]
         [Triggers:GFA_System_Resources_Trigger_Store_Tick]
         [Triggers:GFA_System_Resources_Trigger_ReceivedResupply]
+        [Triggers:GFA_System_Resources_Trigger_ReceivedRefund]
 
         [Triggers:GFA_System_Resources_Trigger_Spawning_Tick]
         [Triggers:GFA_System_Resources_Trigger_Spawning_Low]
@@ -447,7 +448,7 @@
       </Description>
     </EntityComponent>
 
-    <!-- Resupply -->
+    <!-- Receive Resupply -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -504,6 +505,49 @@
 
         [SetCountersUseAmountVariable:true]
         [SetCountersAmountVariable:{GFA_Resources_Threshold_Full}]
+      </Description>
+    </EntityComponent>
+
+    <!-- Receive Refund -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_ReceivedRefund</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:MSB_System_Resources_Request_Refund_Cost]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Actions:GFA_System_Resources_Action_ReceivedRefund]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_ReceivedRefund</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - ReceivedRefund]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_ReceivedRefund]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_ReceivedRefund]
+
+        [AddCustomCountersVariablesFromCommand:true]
+
+        [IncreaseCounters:GFA_Resources_Counter]
+
+        [IncreaseCountersUseAmountVariable:true]
+        [IncreaseCountersAmountVariable:{GFA_Resources_Refund}]
       </Description>
     </EntityComponent>
 
@@ -1037,6 +1081,74 @@
         [EnableTriggers:true]
         [EnableTriggerTags:GFA_System_Resources_Resource_Tick_Loop]
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_Loop]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Refund TriggerGroup-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_TriggerGroup_Refund</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_System_Resources_Trigger_Refund_HomebaseDespawn]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_Refund_HomebaseDespawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_TriggerEvent_Despawn_ArriveAtHomebase]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [MaxActions:1]
+        [Actions:GFA_System_Resources_Action_Refund_HomebaseDespawn]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_Refund_HomebaseDespawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - Refund resources to homebase.]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:MSB_System_Resources_Command_Refund_Cost]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MSB_System_Resources_Command_Refund_Cost</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:MSB_System_Resources_Request_Refund_Cost]
+
+        [CustomCountersVariablesReferences:GFA_Resources_Refund,GFA_Resources_Cost]
+
+        [MatchSenderReceiverOwners:true]
+        [SingleRecipient:true]
+
+        [IgnoreAntennaRequirement:true]
+        [Radius:1000]
+
+        [CommandDelayTicks:50]
       </Description>
     </EntityComponent>
 
