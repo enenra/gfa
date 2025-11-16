@@ -480,7 +480,7 @@
         [CommandReceiveCode:GFA_ReceivedResupply]
 
         [UseTrigger:true]
-        [StartsReady:true]
+        [StartsReady:false]
 
         [Actions:GFA_System_Resources_Action_ReceivedResupply]
       </Description>

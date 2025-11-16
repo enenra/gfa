@@ -85,6 +85,10 @@
         [DialogueBanks:GFA_MG_DialogueBank_Dynamic_2.xml]
         [DialogueBanks:GFA_MG_DialogueBank_Dynamic_3.xml]
 
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
         [Triggers:GFA_MG_PatrolArea_Local_Trigger_SpawnSetup]
 
         [TriggerGroups:MSB_Interaction_RadioCheck_TriggerGroup]
