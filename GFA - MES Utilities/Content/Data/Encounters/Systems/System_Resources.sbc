@@ -394,7 +394,7 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Resources - Resource_Tick]
+        [//DebugMessage:Resources - Resource_Tick]
 
         [ManuallyActivateTrigger:true]
         [ManuallyActivatedTriggerTags:GFA_System_Resources_Resource_Tick]
@@ -635,7 +635,7 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Resources - Spawning_Tick]
+        [//DebugMessage:Resources - Spawning_Tick]
 
         [ManuallyActivateTrigger:true]
         [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick]
@@ -1107,7 +1107,7 @@
         [RivalAI Trigger]
 
         [Type:Manual]
-        [Tags:MSB_TriggerEvent_Despawn_ArriveAtHomebase]
+        [Tags:MSB_TriggerEvent_Despawn_ArriveAtDespawnPoint]
 
         [UseTrigger:true]
         [StartsReady:false]

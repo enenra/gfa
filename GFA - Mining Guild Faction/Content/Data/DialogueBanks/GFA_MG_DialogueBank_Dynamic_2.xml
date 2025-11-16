@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-16 11:21:48.622319 -->
+<!-- Created from GSheet export on 2025-11-16 12:51:58.045644 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -1039,6 +1039,26 @@
 			</Entry>
 			<Entry>
 				<Message>On landing approach.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_SpawnShip</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Cleared for take-off. Good luck out there.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Clear pad for take-off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>You're clear for take-off.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>

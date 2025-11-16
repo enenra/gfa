@@ -53,11 +53,11 @@
         [SetBooleansTrue:GFA_Role_Outpost]
 
         [SetCounters:GFA_Resources_Counter]
-        [SetCountersValues:25]
+        [SetCountersValues:35]
 
         [SetCustomCountersVariables:true]
         [CustomCountersVariables:GFA_Resources_Production_Amount,1]
-        [CustomCountersVariables:GFA_Resources_Threshold_Low,15]
+        [CustomCountersVariables:GFA_Resources_Threshold_Low,20]
         [CustomCountersVariables:GFA_Resources_Threshold_Full,50]
       </Description>
     </EntityComponent>
@@ -186,7 +186,10 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Outpost - Spawn - Patrol]
+        [//DebugMessage:Outpost - Spawn - Patrol]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_SpawnShip]
 
         [DisableTriggers:true]
         [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
@@ -271,7 +274,10 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Outpost - Spawn - PatrolArea]
+        [//DebugMessage:Outpost - Spawn - PatrolArea]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_SpawnShip]
 
         [DisableTriggers:true]
         [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]

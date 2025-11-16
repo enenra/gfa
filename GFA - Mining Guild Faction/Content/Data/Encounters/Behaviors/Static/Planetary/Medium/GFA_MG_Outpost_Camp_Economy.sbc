@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- Store -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Store_NotLow</SubtypeId>
+      </Id>
+      <Description>
+        [MES Store]
+
+        [FileSource:GFA_MG_Outpost_StoreItems_NotLow.xml]
+
+        [ItemsRequireInventory:false]
+
+        [MinOfferItems:2]
+        [MaxOfferItems:9]
+
+        [Offers:BasicComponents]
+        [Offers:SimpleComponents]
+        [Offers:BasicTools]
+        [Offers:EnhancedTools]
+        [Offers:BasicAmmo]
+        [Offers:MGFood]
+        [Offers:BasicConsumables]
+
+        [RequiredOffers:HydrogenOffer]
+        [RequiredOffers:OxygenOffer]
+
+        [MinOrderItems:2]
+        [MaxOrderItems:7]
+
+        [Orders:BasicComponents]
+        [Orders:SimpleComponents]
+        [Orders:BasicTools]
+        [Orders:EnhancedTools]
+        [Orders:BasicAmmo]
+        [Orders:MGFood]
+        [Orders:BasicConsumables]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Store_Low</SubtypeId>
+      </Id>
+      <Description>
+        [MES Store]
+
+        [FileSource:GFA_MG_Outpost_StoreItems_Low.xml]
+
+        [ItemsRequireInventory:false]
+
+        [MinOfferItems:2]
+        [MaxOfferItems:7]
+
+        [Offers:BasicComponents]
+        [Offers:SimpleComponents]
+        [Offers:BasicTools]
+        [Offers:EnhancedTools]
+        [Offers:BasicAmmo]
+        [Offers:MGFood]
+        [Offers:BasicConsumables]
+
+        [RequiredOffers:HydrogenOffer]
+        [RequiredOffers:OxygenOffer]
+
+        [MinOrderItems:3]
+        [MaxOrderItems:7]
+
+        [Orders:BasicComponents]
+        [Orders:SimpleComponents]
+        [Orders:BasicTools]
+        [Orders:EnhancedTools]
+
+        [RequiredOrders:BasicAmmo]
+        [RequiredOrders:MGFood]
+        [RequiredOrders:BasicConsumables]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Store_Full</SubtypeId>
+      </Id>
+      <Description>
+        [MES Store]
+
+        [FileSource:GFA_MG_Outpost_StoreItems_Full.xml]
+
+        [ItemsRequireInventory:false]
+
+        [MinOfferItems:7]
+        [MaxOfferItems:9]
+
+        [Offers:BasicComponents]
+        [Offers:SimpleComponents]
+        [Offers:BasicTools]
+        [Offers:EnhancedTools]
+        [Offers:BasicAmmo]
+        [Offers:MGFood]
+        [Offers:BasicConsumables]
+
+        [RequiredOffers:HydrogenOffer]
+        [RequiredOffers:OxygenOffer]
+
+        [MinOrderItems:2]
+        [MaxOrderItems:5]
+
+        [Orders:BasicComponents]
+        [Orders:SimpleComponents]
+        [Orders:BasicTools]
+        [Orders:EnhancedTools]
+        [Orders:BasicAmmo]
+        [Orders:MGFood]
+        [Orders:BasicConsumables]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
