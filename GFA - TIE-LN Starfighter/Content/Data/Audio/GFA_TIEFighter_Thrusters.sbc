@@ -9,13 +9,13 @@
         <SubtypeId>Arc_GFA_TIEFighter_Thruster</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>100</MaxDistance>
+      <MaxDistance>250</MaxDistance>
       <PitchVariation>10</PitchVariation>
       <PreventSynchronization>1</PreventSynchronization>
       <Volume>0.5</Volume>
       <Loopable>true</Loopable>
       <DistantSounds>
-        <DistantSound DistanceCrossfade="20" Distance="100" Sound="Arc_GFA_TIEFighter_Thruster_Distant" />
+        <DistantSound DistanceCrossfade="20" Distance="250" Sound="Arc_GFA_TIEFighter_Thruster_Distant" />
       </DistantSounds>
       <Waves>
         <Wave Type="D3">
@@ -31,7 +31,7 @@
         <SubtypeId>Arc_GFA_TIEFighter_Thruster_Distant</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>800</MaxDistance>
+      <MaxDistance>1000</MaxDistance>
       <PitchVariation>10</PitchVariation>
       <PreventSynchronization>1</PreventSynchronization>
       <Volume>0.5</Volume>
@@ -49,14 +49,14 @@
         <SubtypeId>Real_GFA_TIEFighter_Thruster</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>50</MaxDistance>
+      <MaxDistance>150</MaxDistance>
       <PitchVariation>10</PitchVariation>
       <PreventSynchronization>1</PreventSynchronization>
       <RealisticFilter>realShipFilter</RealisticFilter>
       <Volume>0.75</Volume>
       <Loopable>true</Loopable>
       <DistantSounds>
-        <DistantSound DistanceCrossfade="20" Distance="50" Sound="Real_GFA_TIEFighter_Thruster_Distant" />
+        <DistantSound DistanceCrossfade="20" Distance="150" Sound="Real_GFA_TIEFighter_Thruster_Distant" />
       </DistantSounds>
       <Waves>
         <Wave Type="D3">
@@ -72,7 +72,7 @@
         <SubtypeId>Real_GFA_TIEFighter_Thruster_Distant</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>600</MaxDistance>
+      <MaxDistance>750</MaxDistance>
       <PitchVariation>10</PitchVariation>
       <PreventSynchronization>1</PreventSynchronization>
       <Volume>0.5</Volume>
