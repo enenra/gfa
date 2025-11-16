@@ -1,4 +1,4 @@
-[h1]Patch 1.2a[/h1]
+[h1]Patch 1.2b[/h1]
 [list]
-[*]Add controller support.
+[*]Increase range at which thruster sound can be heard.
 [/list]
