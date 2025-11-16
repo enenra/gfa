@@ -129,6 +129,7 @@
         [Actions:GFA_MG_Outpost_Camp_Action_Rename]
         [Actions:GFA_MG_Outpost_Camp_Action_SpawningSetup]
         [Actions:GFA_MG_Outpost_Camp_Action_CampAntenna]
+        [Actions:GFA_MG_Outpost_Camp_Action_DefenseTurretLight]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -195,6 +196,46 @@
 
         [MaxSpawns:1]
         [SpawnGroups:]
+
+        [MinDistance:25]
+        [MaxDistance:100]
+
+        [MinAltitude:0]
+        [MaxAltitude:1]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_DefenseTurretLight</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:50]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_DefenseTurretLight]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_DefenseTurretLight</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_DefenseTurret_Light_SpawnGroup]
 
         [MinDistance:25]
         [MaxDistance:100]

@@ -122,6 +122,9 @@
 
         [//DebugMessage:Resources - State - Resources_Low - True]
 
+		    [SetAntennaThoughtBubble:true]
+        [SetAntennaThoughtBubbleName:Resource Storage Low]
+
         [EnableTriggers:true]
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_Low]
 
@@ -213,6 +216,8 @@
 
         [//DebugMessage:Resources - State - Resources_NotLow - True]
 
+		    [ClearAntennaThoughtBubble:true]
+
         [EnableTriggers:true]
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
 
@@ -303,6 +308,9 @@
         [RivalAI Action]
 
         [//DebugMessage:Resources - State - Resources_Full - True]
+
+		    [SetAntennaThoughtBubble:true]
+        [SetAntennaThoughtBubbleName:Resource Storage Full]
 
         [EnableTriggers:true]
         [EnableTriggerTags:GFA_System_Resources_Spawning_Tick_Full]
