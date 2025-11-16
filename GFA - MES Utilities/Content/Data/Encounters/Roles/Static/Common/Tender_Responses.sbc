@@ -51,6 +51,9 @@
         [SendWaypoint:true]
         [Waypoint:{SpawnGroupNameTruncated}_Waypoint_ExchangePoint]
 
+        [IgnoreAntennaRequirement:true]
+        [Radius:50000]
+
         [CommandDelayTicks:60]
       </Description>
     </EntityComponent>

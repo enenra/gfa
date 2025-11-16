@@ -135,7 +135,7 @@
         [MinDistance:12500]
         [MaxDistance:15000]
 
-        [MinAltitude:3000]
+        [MinAltitude:5000]
 
         [InheritRelativeAltitude:true]
       </Description>
@@ -152,7 +152,7 @@
         [CommandReceiveCode:GFA_Tender_Target]
 
         [UseTrigger:true]
-        [StartsReady:true]
+        [StartsReady:false]
 
         [Conditions:GFA_Tender_Condition_ReceiveTarget]
 
@@ -204,7 +204,7 @@
         [Type:BehaviorTriggerA]
 
         [UseTrigger:false]
-        [StartsReady:true]
+        [StartsReady:false]
 
         [MaxActions:1]
         [Actions:GFA_Tender_Action_ArriveTarget]
@@ -232,6 +232,9 @@
 
         [EnableTriggers:true]
         [EnableTriggerNames:GFA_Tender_Trigger_LeaveTarget]
+
+        [DisableTriggers:true]
+        [DisableTriggerTags:MSB_System_AreaRestriction]
       </Description>
     </EntityComponent>
 
@@ -268,14 +271,19 @@
         [DebugMessage:Tender - LeaveTarget]
 
         [EnableAutopilot:true]
+        [StopAllRotation:false]
+        [StopAllThrust:false]
 
         [ClearAntennaThoughtBubble:true]
 
         [PlayDialogueCue:true]
         [DialogueCueId:Tender_Departing]
 
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:GFA_Resources_Command_ReceivedResupply]
+
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_Tender_Trigger_LeaveTarget]
+        [EnableTriggerTags:MSB_System_AreaRestriction]
       </Description>
     </EntityComponent>
 

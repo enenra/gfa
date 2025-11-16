@@ -65,10 +65,11 @@
 
     <!-- Resources Low-->
     <!-- Spawn Tender -->
+    <!-- TODO: Remove MaxActions after testing-->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Outpost_Trigger_Spawning_Tender</SubtypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_Tender</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -85,7 +86,8 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [Actions:GFA_Outpost_Action_Spawning_Tender]
+        [MaxActions:1]
+        [Actions:GFA_Outpost_Action_Spawn_Tender]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -102,11 +104,7 @@
         [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
 
         [EnableTriggers:true]
-        [EnableTriggerTags:GFA_Common_Tender_Responses_Trigger_SendTarget]
-
-        [DecreaseCounters:GFA_Resources_Counter]
-        [DecreaseCountersUseAmountVariable:true]
-        [DecreaseCountersAmountVariable:{GFA_Outpost_Resources_Cost_Tender}]
+        [EnableTriggerNames:GFA_Common_Tender_Responses_Trigger_SendTarget]
 
         [SpawnEncounter:true]
         [Spawner:GFA_Outpost_Spawn_Tender]
@@ -152,6 +150,8 @@
         [Tags:GFA_System_Resources_Spawning_Tick_NotLow_2]
         [Tags:GFA_System_Resources_Spawning_Tick_NotLow_3]
         [Tags:GFA_System_Resources_Spawning_Tick_NotLow_4]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_5]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_6]
 
         [UseTrigger:true]
         [StartsReady:true]
@@ -238,8 +238,10 @@
         [Type:Manual]
         [Tags:GFA_System_Resources_Spawning_Tick_Loop]
         [Tags:GFA_System_Resources_Spawning_Tick_NotLow]
-        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_5]
-        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_6]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_7]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_8]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_9]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_10]
 
         [UseTrigger:true]
         [StartsReady:true]

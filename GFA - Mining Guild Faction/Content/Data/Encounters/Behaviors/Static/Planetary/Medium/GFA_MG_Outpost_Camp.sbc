@@ -31,7 +31,7 @@
         <Prefab SubtypeId="[MES-MG]Landing Platform">
           <Position>
             <X>0.0</X>
-            <Y>2.0</Y>
+            <Y>-2.0</Y>
             <Z>0.0</Z>
           </Position>
           <Speed>0</Speed>
@@ -103,7 +103,6 @@
 
         [TriggerGroups:GFA_Outpost_TriggerGroup]
         [TriggerGroups:GFA_System_Resources_TriggerGroup]
-        [TriggerGroups:GFA_MG_Outpost_Camp_Spawning_TriggerGroup]
 
         [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
         [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]
@@ -154,7 +153,7 @@
         [RivalAI Action]
 
         [SetCustomStrings:true]
-        [CustomStrings:GFA_Outpost_SpawnGroup_Tender,]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Tender,GFA_MG_Tender_Aurore_Cargo_SpawnGroup]
         [CustomStrings:GFA_Outpost_SpawnGroup_Patrol,GFA_MG_Patrol_Local_SpawnGroup]
         [CustomStrings:GFA_Outpost_SpawnGroup_PatrolArea,GFA_MG_PatrolArea_Local_SpawnGroup]
 
