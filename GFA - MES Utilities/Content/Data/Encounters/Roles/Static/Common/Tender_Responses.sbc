@@ -30,7 +30,7 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Common - Tender Responses - SendTarget]
+        [//DebugMessage:Common - Tender Responses - SendTarget]
 
         [BroadcastCommandProfiles:true]
         [CommandProfileIds:GFA_Common_Tender_Responses_Command_SendTarget]
@@ -54,7 +54,7 @@
         [IgnoreAntennaRequirement:true]
         [Radius:50000]
 
-        [CommandDelayTicks:60]
+        [CommandDelayTicks:360]
       </Description>
     </EntityComponent>
 

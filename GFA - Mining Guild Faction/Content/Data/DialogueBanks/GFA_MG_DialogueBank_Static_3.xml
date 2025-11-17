@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-16 13:50:55.859834 -->
+<!-- Created from GSheet export on 2025-11-17 10:58:36.561856 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -539,6 +539,26 @@
 			</Entry>
 			<Entry>
 				<Message>You're clear for take-off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_RequestTender</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're running low. Requesting resupply.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Storage nearly empty. We'll need to be resupplied - and soon.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Requesting delivery - supplies running dangerously low.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>

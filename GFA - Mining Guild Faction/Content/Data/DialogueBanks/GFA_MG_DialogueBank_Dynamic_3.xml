@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-16 13:50:55.856832 -->
+<!-- Created from GSheet export on 2025-11-17 10:58:36.557508 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -1059,6 +1059,86 @@
 			</Entry>
 			<Entry>
 				<Message>You're clear for take-off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_RequestTender</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're running low. Requesting resupply.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Storage nearly empty. We'll need to be resupplied - and soon.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Requesting delivery - supplies running dangerously low.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_Unloading</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Ready the hoversleds - starting to unload.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Position reached. Resupply initiated.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Starting to unload supplies. Be ready to receive.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_Departing</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Resupply completed. Setting new course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>That's the last of it. Proceeding to next destination.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Cargo hold has been emptied - that should last you a while. Setting course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_Incoming</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're delivering supplies as requested. Clear the exchange zone.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Supplies incoming as requested. Prepare to receive.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Supply ship on approach. Be ready to receive goods.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>

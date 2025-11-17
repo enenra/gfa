@@ -53,7 +53,7 @@
         [SetBooleansTrue:GFA_Role_Outpost]
 
         [SetCounters:GFA_Resources_Counter]
-        [SetCountersValues:35]
+        [SetCountersValues:5]
 
         [SetCustomCountersVariables:true]
         [CustomCountersVariables:GFA_Resources_Production_Amount,1]
@@ -98,7 +98,10 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Outpost - Spawn - Tender]
+        [//DebugMessage:Outpost - Spawn - Tender]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_RequestTender]
 
         [DisableTriggers:true]
         [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]

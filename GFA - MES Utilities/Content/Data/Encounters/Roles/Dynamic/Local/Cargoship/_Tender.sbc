@@ -21,6 +21,8 @@
         [Triggers:GFA_Tender_Trigger_CloseRole]
 
         [Triggers:GFA_Tender_Trigger_ReceiveTarget]
+        [Triggers:GFA_Tender_Trigger_PrepareForLanding]
+        [Triggers:GFA_Tender_Trigger_PrepareForLanding_Delay]
         [Triggers:GFA_Tender_Trigger_ArriveTarget]
         [Triggers:GFA_Tender_Trigger_LeaveTarget]
       </Description>
@@ -183,12 +185,94 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Tender - ReceiveTarget]
+        [//DebugMessage:Tender - ReceiveTarget]
 
         [AddWaypointFromCommand:true]
 
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_PrepareForLanding]
+
         [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_PrepareForLanding]
         [EnableTriggerNames:GFA_Tender_Trigger_ArriveTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_PrepareForLanding</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_PrepareForLanding_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_PrepareForLanding_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_PrepareForLanding_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_PrepareForLanding_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_PrepareForLanding_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:WaypointNear]
+
+        [TargetDistance:1500]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_PrepareForLanding]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_PrepareForLanding</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Tender - Reducing Speed and MinAltitude]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Tender_Incoming]
+
+        [ChangeAutopilotMinAltitude:true]
+        [NewAutopilotMinAltitude:15]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:25]
       </Description>
     </EntityComponent>
 
@@ -218,7 +302,7 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Tender - ArriveTarget]
+        [//DebugMessage:Tender - ArriveTarget]
 
         [DisableAutopilot:true]
         [StopAllRotation:true]
@@ -229,6 +313,9 @@
 
         [PlayDialogueCue:true]
         [DialogueCueId:Tender_Unloading]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_LeaveTarget]
 
         [EnableTriggers:true]
         [EnableTriggerNames:GFA_Tender_Trigger_LeaveTarget]
@@ -248,7 +335,6 @@
         [RivalAI Trigger]
 
         [Type:Timer]
-        [Tags:MSB_TradingModeDuration]
 
         [UseTrigger:false]
         [StartsReady:false]
@@ -268,11 +354,17 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Tender - LeaveTarget]
+        [//DebugMessage:Tender - LeaveTarget]
 
         [EnableAutopilot:true]
         [StopAllRotation:false]
         [StopAllThrust:false]
+
+        [ChangeAutopilotMinAltitude:true]
+        [NewAutopilotMinAltitude:-1]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
 
         [ClearAntennaThoughtBubble:true]
 
@@ -280,7 +372,7 @@
         [DialogueCueId:Tender_Departing]
 
         [BroadcastCommandProfiles:true]
-        [CommandProfileIds:GFA_Resources_Command_ReceivedResupply]
+        [CommandProfileIds:GFA_System_Resources_Command_ReceivedResupply]
 
         [EnableTriggers:true]
         [EnableTriggerTags:MSB_System_AreaRestriction]

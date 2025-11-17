@@ -485,7 +485,7 @@
         [RivalAI Trigger]
 
         [Type:CommandReceived]
-        [CommandReceiveCode:GFA_ReceivedResupply]
+        [CommandReceiveCode:GFA_Resources_Command_ReceivedResupply]
 
         [UseTrigger:true]
         [StartsReady:false]
@@ -501,7 +501,7 @@
       <Description>
         [RivalAI Action]
 
-        [DebugMessage:Resources - ReceivedResupply]
+        [//DebugMessage:Resources - ReceivedResupply]
 
         [PlayDialogueCue:true]
         [DialogueCueId:Resources_ReceivedResupply]

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Autopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [FlyLevelWithGravity:true]
+        [UseVelocityCollisionEvasion:false]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [WaypointTolerance:25]
+        [WaypointWaitTimeTrigger:120]
+
+        [DespawnCoordsMinDistance:15000]
+        [DespawnCoordsMaxDistance:20000]
+
+        [IdealMinSpeed:75]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:500]
+        [IdealPlanetAltitude:750]
+
+        [MinAngleForLeveledDescent:65]
+        [MaxAngleForLeveledAscent:90]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.2]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
