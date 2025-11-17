@@ -55,7 +55,7 @@
         [SetBooleansTrue:GFA_Role_Outpost]
 
         [SetCounters:GFA_Resources_Counter]
-        [SetCountersValues:100]
+        [SetCountersValues:35]
 
         [SetCustomCountersVariables:true]
         [CustomCountersVariables:GFA_Resources_Production_Amount,1]
@@ -67,7 +67,6 @@
 
     <!-- Resources Low-->
     <!-- Spawn Tender -->
-    <!-- TODO: Remove MaxActions after testing-->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -88,7 +87,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [MaxActions:1]
         [Actions:GFA_Outpost_Action_Spawn_Tender]
       </Description>
     </EntityComponent>
@@ -321,9 +319,9 @@
       </Description>
     </EntityComponent>
 
+
     <!-- Resources Full-->
     <!-- Spawn Courier -->
-    <!-- TODO: Remove MaxActions after testing-->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -344,7 +342,6 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [MaxActions:1]
         [Actions:GFA_Outpost_Action_Spawn_Courier]
       </Description>
     </EntityComponent>
