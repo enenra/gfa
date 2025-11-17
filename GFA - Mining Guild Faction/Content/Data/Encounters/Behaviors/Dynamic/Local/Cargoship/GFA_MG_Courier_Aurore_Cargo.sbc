@@ -5,7 +5,7 @@
     <SpawnGroup>
       <Id>
         <TypeId>SpawnGroupDefinition</TypeId>
-        <SubtypeId>GFA_MG_Tender_Aurore_Cargo_SpawnGroup</SubtypeId>
+        <SubtypeId>GFA_MG_Courier_Aurore_Cargo_SpawnGroup</SubtypeId>
       </Id>
       <Description>
         [Modular Encounters SpawnGroup]
@@ -13,10 +13,10 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_MG_Tender_Aurore_Cargo_SpawnConditions]
+        [SpawnConditionsProfiles:GFA_MG_Courier_Aurore_Cargo_SpawnConditions]
 
         [ManipulationProfiles:GFA_MG_Manipulation]
-        [ManipulationProfiles:GFA_MG_Manipulation_Freighter_Tender]
+        [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
 
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
         [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
@@ -29,7 +29,7 @@
         [RenameGrid:false]
         [ReplaceAntennaHudTextInsteadOfName:true]
         [ReplaceAntennaNameWithRandomizedName:Antenna]
-        [RandomGridNamePattern:Supply Ship RandomLetterRandomNumber-RandomLetterRandomNumber]
+        [RandomGridNamePattern:Cargo Freighter RandomLetterRandomNumber-RandomLetterRandomNumber]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <IsPirate>true</IsPirate>
@@ -42,7 +42,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>50</Speed>
-          <Behaviour>GFA_MG_Tender_Aurore_Cargo_Behavior</Behaviour>
+          <Behaviour>GFA_MG_Courier_Aurore_Cargo_Behavior</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -53,7 +53,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Tender_Aurore_Cargo_SpawnConditions</SubtypeId>
+        <SubtypeId>GFA_MG_Courier_Aurore_Cargo_SpawnConditions</SubtypeId>
       </Id>
       <Description>
         [MES Spawn Conditions]
@@ -69,7 +69,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Tender_Aurore_Cargo_Behavior</SubtypeId>
+        <SubtypeId>GFA_MG_Courier_Aurore_Cargo_Behavior</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -78,7 +78,7 @@
 
         [TargetData:MSB_TargetProfile_LowRange]
         [OverrideTargetData:MSB_TargetProfile_LongRange]
-        [AutopilotData:GFA_Tender_Autopilot]
+        [AutopilotData:GFA_Courier_Autopilot]
         [SecondaryAutopilotData:MSB_Freighter_Autopilot]
 
         [DialogueBanks:GFA_MG_DialogueBank_Dynamic_1.xml]
@@ -89,8 +89,8 @@
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
-        [Triggers:GFA_MG_Tender_Aurore_Cargo_Trigger_SpawnSetup]
-        [Triggers:GFA_MG_Tender_Aurore_Cargo_Trigger_PlaceCrew]
+        [Triggers:GFA_MG_Courier_Aurore_Cargo_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_Courier_Aurore_Cargo_Trigger_PlaceCrew]
 
         [TriggerGroups:MSB_Interaction_RadioCheck_TriggerGroup]
         [TriggerGroups:MSB_Interaction_TradeRequest_TriggerGroup_Decline]
@@ -105,7 +105,7 @@
         [//TriggerGroups:MSB_System_Crash_TriggerGroup]
 
         [TriggerGroups:MSB_Freighter_TriggerGroup]
-        [TriggerGroups:GFA_Tender_TriggerGroup]
+        [TriggerGroups:GFA_Courier_TriggerGroup]
         [TriggerGroups:MSB_System_Despawn_TriggerGroup_Simple]
       </Description>
     </EntityComponent>
@@ -114,7 +114,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Tender_Aurore_Cargo_Trigger_SpawnSetup</SubtypeId>
+        <SubtypeId>GFA_MG_Courier_Aurore_Cargo_Trigger_SpawnSetup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -133,7 +133,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Tender_Aurore_Cargo_Trigger_PlaceCrew</SubtypeId>
+        <SubtypeId>GFA_MG_Courier_Aurore_Cargo_Trigger_PlaceCrew</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -149,13 +149,13 @@
         [MaxCooldownMs:5001]
 
         [MaxActions:1]
-        [Actions:GFA_MG_Tender_Aurore_Cargo_Action_PlaceCrew]
+        [Actions:GFA_MG_Courier_Aurore_Cargo_Action_PlaceCrew]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Tender_Aurore_Cargo_Action_PlaceCrew</SubtypeId>
+        <SubtypeId>GFA_MG_Courier_Aurore_Cargo_Action_PlaceCrew</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]

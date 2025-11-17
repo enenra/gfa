@@ -3,28 +3,28 @@
   <EntityComponents>
 
     <!--
-    Tender
-    The encounter is spawned by a parent static encounter. It is spawned roughly 15km away from its parent and then sets a course to the parent. After arriving at the parent it resupplies the parent's resource stock and then moves to despawn.
+    Courier
+    The encounter is spawned by a parent static encounter. It is spawned roughly 10km away from its parent and then sets a course to the parent. After arriving at the parent it picks up the parent's resource stock and then moves to despawn.
     -->
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_TriggerGroup</SubtypeId>
+        <SubtypeId>GFA_Courier_TriggerGroup</SubtypeId>
       </Id>
       <Description>
         [RivalAI TriggerGroup]
 
-        [Triggers:GFA_Tender_Trigger_Setup]
+        [Triggers:GFA_Courier_Trigger_Setup]
 
-        [Triggers:GFA_Tender_Trigger_InitRole]
-        [Triggers:GFA_Tender_Trigger_CloseRole]
+        [Triggers:GFA_Courier_Trigger_InitRole]
+        [Triggers:GFA_Courier_Trigger_CloseRole]
 
-        [Triggers:GFA_Tender_Trigger_ReceiveTarget]
-        [Triggers:GFA_Tender_Trigger_PrepareForLanding]
-        [Triggers:GFA_Tender_Trigger_PrepareForLanding_Delay]
-        [Triggers:GFA_Tender_Trigger_ArriveTarget]
-        [Triggers:GFA_Tender_Trigger_LeaveTarget]
+        [Triggers:GFA_Courier_Trigger_ReceiveTarget]
+        [Triggers:GFA_Courier_Trigger_PrepareForLanding]
+        [Triggers:GFA_Courier_Trigger_PrepareForLanding_Delay]
+        [Triggers:GFA_Courier_Trigger_ArriveTarget]
+        [Triggers:GFA_Courier_Trigger_LeaveTarget]
       </Description>
     </EntityComponent>
 
@@ -32,7 +32,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_Setup</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_Setup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -43,25 +43,25 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [Actions:GFA_Tender_Action_Setup]
+        [Actions:GFA_Courier_Action_Setup]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_Setup</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_Setup</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [SetBooleansTrue:GFA_Role_Tender]
+        [SetBooleansTrue:GFA_Role_Courier]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_InitRole</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_InitRole</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -72,19 +72,19 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [Actions:GFA_Tender_Action_InitRole]
+        [Actions:GFA_Courier_Action_InitRole]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_InitRole</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_InitRole</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [ManuallyActivateTrigger:true]
-        [ManuallyActivatedTriggerTags:GFA_TriggerEvent_Tender_InitRole]
+        [ManuallyActivatedTriggerTags:GFA_TriggerEvent_Courier_InitRole]
 
         [ChangeBehaviorSubclass:true]
         [NewBehaviorSubclass:CargoShip]
@@ -97,7 +97,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_CloseRole</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_CloseRole</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -108,13 +108,13 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [Actions:GFA_Tender_Action_CloseRole]
+        [Actions:GFA_Courier_Action_CloseRole]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_CloseRole</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_CloseRole</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
@@ -126,7 +126,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Waypoint_StartingPoint</SubtypeId>
+        <SubtypeId>GFA_Courier_Waypoint_StartingPoint</SubtypeId>
       </Id>
       <Description>
         [RivalAI Waypoint]
@@ -134,8 +134,8 @@
         [Waypoint:EntityRandom]
         [RelativeEntity:Self]
 
-        [MinDistance:12500]
-        [MaxDistance:15000]
+        [MinDistance:7500]
+        [MaxDistance:10000]
 
         [MinAltitude:5000]
 
@@ -145,7 +145,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_ReceiveTarget</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_ReceiveTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -156,16 +156,16 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [Conditions:GFA_Tender_Condition_ReceiveTarget]
+        [Conditions:GFA_Courier_Condition_ReceiveTarget]
 
         [MaxActions:1]
-        [Actions:GFA_Tender_Action_ReceiveTarget]
+        [Actions:GFA_Courier_Action_ReceiveTarget]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Condition_ReceiveTarget</SubtypeId>
+        <SubtypeId>GFA_Courier_Condition_ReceiveTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Condition]
@@ -180,28 +180,28 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_ReceiveTarget</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_ReceiveTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:Tender - ReceiveTarget]
+        [//DebugMessage:Courier - ReceiveTarget]
 
         [AddWaypointFromCommand:true]
 
         [ResetCooldownTimeOfTriggers:true]
-        [ResetTriggerCooldownNames:GFA_Tender_Trigger_PrepareForLanding]
+        [ResetTriggerCooldownNames:GFA_Courier_Trigger_PrepareForLanding]
 
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_Tender_Trigger_PrepareForLanding]
-        [EnableTriggerNames:GFA_Tender_Trigger_ArriveTarget]
+        [EnableTriggerNames:GFA_Courier_Trigger_PrepareForLanding]
+        [EnableTriggerNames:GFA_Courier_Trigger_ArriveTarget]
       </Description>
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_PrepareForLanding</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_PrepareForLanding</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -215,28 +215,28 @@
         [MaxCooldownMs:2001]
 
         [MaxActions:1]
-        [Actions:GFA_Tender_Action_PrepareForLanding_Delay]
+        [Actions:GFA_Courier_Action_PrepareForLanding_Delay]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_PrepareForLanding_Delay</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_PrepareForLanding_Delay</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [ResetCooldownTimeOfTriggers:true]
-        [ResetTriggerCooldownNames:GFA_Tender_Trigger_PrepareForLanding_Delay]
+        [ResetTriggerCooldownNames:GFA_Courier_Trigger_PrepareForLanding_Delay]
 
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_Tender_Trigger_PrepareForLanding_Delay]
+        [EnableTriggerNames:GFA_Courier_Trigger_PrepareForLanding_Delay]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_PrepareForLanding_Delay</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_PrepareForLanding_Delay</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -252,21 +252,21 @@
         [MaxCooldownMs:5001]
 
         [MaxActions:1]
-        [Actions:GFA_Tender_Action_PrepareForLanding]
+        [Actions:GFA_Courier_Action_PrepareForLanding]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_PrepareForLanding</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_PrepareForLanding</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:Tender - Reducing Speed and MinAltitude]
+        [//DebugMessage:Courier - Reducing Speed and MinAltitude]
 
         [PlayDialogueCue:true]
-        [DialogueCueId:Tender_Incoming]
+        [DialogueCueId:Courier_Incoming]
 
         [ChangeAutopilotMinAltitude:true]
         [NewAutopilotMinAltitude:15]
@@ -280,7 +280,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_ArriveTarget</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_ArriveTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -291,34 +291,34 @@
         [StartsReady:false]
 
         [MaxActions:1]
-        [Actions:GFA_Tender_Action_ArriveTarget]
+        [Actions:GFA_Courier_Action_ArriveTarget]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_ArriveTarget</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_ArriveTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:Tender - ArriveTarget]
+        [//DebugMessage:Courier - ArriveTarget]
 
         [DisableAutopilot:true]
         [StopAllRotation:true]
         [StopAllThrust:true]
 
         [SetAntennaThoughtBubble:true]
-        [SetAntennaThoughtBubbleName:Unloading]
+        [SetAntennaThoughtBubbleName:Loading]
 
         [PlayDialogueCue:true]
-        [DialogueCueId:Tender_Unloading]
+        [DialogueCueId:Courier_Loading]
 
         [ResetCooldownTimeOfTriggers:true]
-        [ResetTriggerCooldownNames:GFA_Tender_Trigger_LeaveTarget]
+        [ResetTriggerCooldownNames:GFA_Courier_Trigger_LeaveTarget]
 
         [EnableTriggers:true]
-        [EnableTriggerNames:GFA_Tender_Trigger_LeaveTarget]
+        [EnableTriggerNames:GFA_Courier_Trigger_LeaveTarget]
 
         [DisableTriggers:true]
         [DisableTriggerTags:MSB_System_AreaRestriction]
@@ -330,7 +330,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Trigger_LeaveTarget</SubtypeId>
+        <SubtypeId>GFA_Courier_Trigger_LeaveTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -344,18 +344,18 @@
         [MaxCooldownMs:180001]
 
         [MaxActions:1]
-        [Actions:GFA_Tender_Action_LeaveTarget]
+        [Actions:GFA_Courier_Action_LeaveTarget]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Tender_Action_LeaveTarget</SubtypeId>
+        <SubtypeId>GFA_Courier_Action_LeaveTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:Tender - LeaveTarget]
+        [//DebugMessage:Courier - LeaveTarget]
 
         [EnableAutopilot:true]
         [StopAllRotation:false]
@@ -370,10 +370,10 @@
         [ClearAntennaThoughtBubble:true]
 
         [PlayDialogueCue:true]
-        [DialogueCueId:Tender_Departing]
+        [DialogueCueId:Courier_Departing]
 
         [BroadcastCommandProfiles:true]
-        [CommandProfileIds:GFA_System_Resources_Command_ReceivedResupply]
+        [CommandProfileIds:GFA_System_Resources_Command_ResourcePickup]
 
         [EnableTriggers:true]
         [EnableTriggerTags:MSB_System_AreaRestriction]

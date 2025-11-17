@@ -59,6 +59,19 @@
         [LootProfiles:MES-Loot-Corpses]
       </Description>
     </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Manipulation_Freighter_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_MG_LootProfile_Freight_HighValue]
+        [LootProfiles:GFA_MG_LootProfile_BasicContainers_HighValue]
+      </Description>
+    </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>

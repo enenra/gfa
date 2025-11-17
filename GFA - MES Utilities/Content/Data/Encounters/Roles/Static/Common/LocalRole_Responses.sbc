@@ -5,7 +5,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Common_Tender_Responses_Trigger_SendTarget</SubtypeId>
+        <SubtypeId>GFA_Common_LocalRole_Responses_Trigger_SendTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -19,32 +19,32 @@
         [MaxCooldownMs:201]
 
         [MaxActions:1]
-        [Actions:GFA_Common_Tender_Responses_Action_SendTarget]
+        [Actions:GFA_Common_LocalRole_Responses_Action_SendTarget]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Common_Tender_Responses_Action_SendTarget</SubtypeId>
+        <SubtypeId>GFA_Common_LocalRole_Responses_Action_SendTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:Common - Tender Responses - SendTarget]
+        [//DebugMessage:Common - LocalRole Responses - SendTarget]
 
         [BroadcastCommandProfiles:true]
-        [CommandProfileIds:GFA_Common_Tender_Responses_Command_SendTarget]
+        [CommandProfileIds:GFA_Common_LocalRole_Responses_Command_SendTarget]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_Common_Tender_Responses_Command_SendTarget</SubtypeId>
+        <SubtypeId>GFA_Common_LocalRole_Responses_Command_SendTarget</SubtypeId>
       </Id>
       <Description>
         [RivalAI Command]
 
-        [CommandCode:GFA_Tender_Target]
+        [CommandCode:GFA_Parent_ExchangePoint]
 
         [MatchSenderReceiverOwners:true]
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-17 10:58:36.561856 -->
+<!-- Created from GSheet export on 2025-11-17 14:24:26.005586 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -559,6 +559,26 @@
 			</Entry>
 			<Entry>
 				<Message>Requesting delivery - supplies running dangerously low.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_RequestCourier</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Storage capacity is reaching its limits. Requesting pickup.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Requesting transport. Our storage is full.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We are at capacity. Requesting a transport to ship this cargo to its destination.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-17 10:58:36.557508 -->
+<!-- Created from GSheet export on 2025-11-17 14:24:26.002177 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -1139,6 +1139,86 @@
 			</Entry>
 			<Entry>
 				<Message>Supply ship on approach. Be ready to receive goods.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_RequestCourier</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Storage capacity is reaching its limits. Requesting pickup.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Requesting transport. Our storage is full.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We are at capacity. Requesting a transport to ship this cargo to its destination.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_Incoming</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Responding to pickup notice as requested. Clear the loading area.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Transport incoming as per your request. Prepare to deliver the cargo.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Transport on approach. Be ready to deliver the goods.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_Loading</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Get that cargo moving - transport in position.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Position reached. Initiate cargo loading.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Cargo hold is open and ready for your goods.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_Departing</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Cargo hold is at capacity. We're off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We're full. Heading off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Setting course - we're full.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>

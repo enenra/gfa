@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_LootProfile_Freight_HighValue</SubtypeId>
+      </Id>
+      <Description>
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/Freight1]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/Freight2]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/Freight3]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/LargeBarrel]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/LargeBarrelThree]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/LargeBarrelStack]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/SmallBarrel]
+        [ContainerBlockTypes:MyObjectBuilder_TerminalBlock/LargeCrate]
+
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/AQD_SG_Freight_I]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/AQD_SG_Freight_II]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/AQD_SG_Freight_III]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/AQD_SG_SecureStorageBox]
+
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/GFA_LG_IMP_SimpleCrate]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/GFA_LG_IMP_SimpleCrate2]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/GFA_LG_IMP_SimpleCrate3]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/GFA_LG_IMP_SquareCrate]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/GFA_LG_IMP_SquareCrate2]
+        [ContainerBlockTypes:MyObjectBuilder_CubeBlock/GFA_LG_IMP_SquareCrate3]
+
+        [ContainerTypes:GFA_ContainerTypes_SidearmAmmo_Green_2]
+        [ContainerTypes:GFA_ContainerTypes_SidearmAmmo_Green_3]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicOres_2]
+
+        [ContainerTypes:GFA_ContainerTypes_Credits_2]
+
+        [ContainerTypes:GFA_ContainerTypes_Explosives_2]
+
+        [MinBlocks:3]
+        [MaxBlocks:6]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_LootProfile_BasicContainers_HighValue</SubtypeId>
+      </Id>
+      <Description>
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockModularContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/AQD_LG_Container]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/AQD_SG_Container]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/GFA_LG_IMP_Container_3x1]
+
+        [ContainerTypes:GFA_ContainerTypes_SidearmAmmo_Green_2]
+        [ContainerTypes:GFA_ContainerTypes_SidearmAmmo_Green_3]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicComponents_2]
+        [ContainerTypes:GFA_ContainerTypes_BasicComponents_3]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicIngots_2]
+        [ContainerTypes:GFA_ContainerTypes_BasicIngots_3]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicOres_2]
+        [ContainerTypes:GFA_ContainerTypes_BasicOres_3]
+
+        [ContainerTypes:GFA_ContainerTypes_Credits_3]
+
+        [ContainerTypes:GFA_ContainerTypes_Explosives_2]
+        [ContainerTypes:GFA_ContainerTypes_Explosives_3]
+
+        [MinBlocks:3]
+        [MaxBlocks:5]
+      </Description>
+    </EntityComponent>
+
+    <!-- Ship Types -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_LootProfile_Fighter_HighValue</SubtypeId>
+      </Id>
+      <Description>
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/GFA_SG_TIEFighter_Cockpit]
+        [ContainerBlockTypes:MyObjectBuilder_ShipConnector/GFA_SG_TIEFighter_Port]
+
+        [ContainerTypes:GFA_ContainerTypes_SidearmAmmo_Green_2]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicIngots_2]
+
+        [ContainerTypes:GFA_ContainerTypes_Credits_2]
+
+        [ContainerTypes:MES-ContainerTypes-Consumables-2]
+
+        [MinBlocks:0]
+        [MaxBlocks:2]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_LootProfile_Gunship_HighValue</SubtypeId>
+      </Id>
+      <Description>
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockModularContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/AQD_LG_Container]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/AQD_SG_Container]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/GFA_LG_IMP_Container_3x1]
+
+        [ContainerTypes:GFA_ContainerTypes_SmallAmmo_Green_2]
+        [ContainerTypes:GFA_ContainerTypes_SmallAmmo_Green_3]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicComponents_2]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicIngots_2]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicOres_2]
+
+        [ContainerTypes:GFA_ContainerTypes_Credits_2]
+        [ContainerTypes:GFA_ContainerTypes_Credits_3]
+
+        [ContainerTypes:GFA_ContainerTypes_Explosives_2]
+
+        [MinBlocks:1]
+        [MaxBlocks:3]
+      </Description>
+    </EntityComponent>
+
+    <!-- This is for lone containers like in the CargoDrop encounter -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_LootProfile_Container_HighValue</SubtypeId>
+      </Id>
+      <Description>
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockMediumContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockModularContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/AQD_LG_Container]
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/AQD_SG_Container]
+
+        [ContainerBlockTypes:MyObjectBuilder_CargoContainer/GFA_LG_IMP_Container_3x1]
+
+        [ContainerTypes:GFA_ContainerTypes_SidearmAmmo_Green_2]
+        [ContainerTypes:GFA_ContainerTypes_SidearmAmmo_Green_3]
+
+        [ContainerTypes:GFA_ContainerTypes_SmallAmmo_Green_2]
+        [ContainerTypes:GFA_ContainerTypes_SmallAmmo_Green_3]
+
+        [ContainerTypes:GFA_ContainerTypes_MediumAmmo_Green_2]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicComponents_2]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicIngots_2]
+
+        [ContainerTypes:GFA_ContainerTypes_BasicOres_2]
+
+        [ContainerTypes:GFA_ContainerTypes_Credits_2]
+        [ContainerTypes:GFA_ContainerTypes_Credits_3]
+
+        [ContainerTypes:GFA_ContainerTypes_Explosives_2]
+
+        [MinBlocks:0]
+        [MaxBlocks:3]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
