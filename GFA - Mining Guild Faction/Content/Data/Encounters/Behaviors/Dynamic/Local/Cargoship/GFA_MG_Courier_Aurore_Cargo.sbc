@@ -125,7 +125,19 @@
         [StartsReady:true]
 
         [MaxActions:1]
-        [//Actions:]
+        [Actions:GFA_MG_Courier_Aurore_Cargo_Action_SpawnSetup]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Courier_Aurore_Cargo_Action_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetCustomCountersVariables:true]
+        [CustomCountersVariables:GFA_Resources_Pickup_Amount,20]
       </Description>
     </EntityComponent>
 

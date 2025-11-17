@@ -29,6 +29,7 @@
         [Triggers:GFA_System_Resources_Trigger_Store_Tick]
         [Triggers:GFA_System_Resources_Trigger_ReceivedResupply]
         [Triggers:GFA_System_Resources_Trigger_ReceivedRefund]
+        [Triggers:GFA_System_Resources_Trigger_ResourcePickup]
 
         [Triggers:GFA_System_Resources_Trigger_Spawning_Tick]
         [Triggers:GFA_System_Resources_Trigger_Spawning_Low]
@@ -526,7 +527,7 @@
         [RivalAI Trigger]
 
         [Type:CommandReceived]
-        [CommandReceiveCode:MSB_System_Resources_Request_Refund_Cost]
+        [CommandReceiveCode:GFA_System_Resources_Request_Refund_Cost]
 
         [UseTrigger:true]
         [StartsReady:false]
@@ -556,6 +557,67 @@
 
         [IncreaseCountersUseAmountVariable:true]
         [IncreaseCountersAmountVariable:{GFA_Resources_Refund}]
+      </Description>
+    </EntityComponent>
+
+    <!-- Resource Pickup -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Command_ResourcePickup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:GFA_System_Resources_Request_ResourcePickup]
+
+        [CustomCountersVariablesReferences:GFA_Resources_Pickup,GFA_Resources_Pickup_Amount]
+
+        [MatchSenderReceiverOwners:true]
+        [SingleRecipient:true]
+
+        [IgnoreAntennaRequirement:true]
+        [Radius:1000]
+
+        [CommandDelayTicks:50]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_ResourcePickup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:GFA_System_Resources_Request_ResourcePickup]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Actions:GFA_System_Resources_Action_ResourcePickup]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_ResourcePickup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - ResourcePickup]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_ResourcePickup]
+
+        [AddCustomCountersVariablesFromCommand:true]
+
+        [DecreaseCounters:GFA_Resources_Counter]
+
+        [DecreaseCountersUseAmountVariable:true]
+        [DecreaseCountersAmountVariable:{GFA_Resources_Pickup}]
       </Description>
     </EntityComponent>
 
@@ -1135,18 +1197,18 @@
         [//DebugMessage:Resources - Refund resources to homebase.]
 
         [BroadcastCommandProfiles:true]
-        [CommandProfileIds:MSB_System_Resources_Command_Refund_Cost]
+        [CommandProfileIds:GFA_System_Resources_Request_Refund_Cost]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>MSB_System_Resources_Command_Refund_Cost</SubtypeId>
+        <SubtypeId>GFA_System_Resources_Request_Refund_Cost</SubtypeId>
       </Id>
       <Description>
         [RivalAI Command]
 
-        [CommandCode:MSB_System_Resources_Request_Refund_Cost]
+        [CommandCode:GFA_System_Resources_Request_Refund_Cost]
 
         [CustomCountersVariablesReferences:GFA_Resources_Refund,GFA_Resources_Cost]
 
