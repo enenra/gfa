@@ -24,6 +24,7 @@
         [Triggers:GFA_Tender_Trigger_PrepareForLanding]
         [Triggers:GFA_Tender_Trigger_PrepareForLanding_Delay]
         [Triggers:GFA_Tender_Trigger_ArriveTarget]
+        [Triggers:GFA_Tender_Trigger_LandingTimeout]
         [Triggers:GFA_Tender_Trigger_LeaveTarget]
       </Description>
     </EntityComponent>
@@ -273,6 +274,12 @@
 
         [ChangeAutopilotSpeed:true]
         [NewAutopilotSpeed:25]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_LandingTimeout]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_LandingTimeout]
       </Description>
     </EntityComponent>
 
@@ -321,8 +328,57 @@
         [EnableTriggerNames:GFA_Tender_Trigger_LeaveTarget]
 
         [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Tender_Trigger_LandingTimeout]
+
         [DisableTriggerTags:MSB_System_AreaRestriction]
         [DisableTriggerTags:MSB_CombatType_InitCombatType]
+      </Description>
+    </EntityComponent>
+
+    <!-- Timeout & abort after attempting landing for 5min. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_LandingTimeout</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:300000]
+        [MaxCooldownMs:300001]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_LandingTimeout]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_LandingTimeout</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Tender - Falling back to Simple Despawn]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Despawn_LandingTimeout]
+
+        [ChangeAutopilotMinAltitude:true]
+        [NewAutopilotMinAltitude:-1]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Tender_Trigger_ArriveTarget]
+
+        [Retreat:true]
       </Description>
     </EntityComponent>
 

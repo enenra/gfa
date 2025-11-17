@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-17 14:24:26.002177 -->
+<!-- Created from GSheet export on 2025-11-17 17:46:01.696612 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -1219,6 +1219,26 @@
 			</Entry>
 			<Entry>
 				<Message>Setting course - we're full.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Despawn_LandingTimeout</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Landing aborted. Something's wrong here.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Aborting landing attempts. Area is not clear.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We're aborting. Can't land here safely.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>

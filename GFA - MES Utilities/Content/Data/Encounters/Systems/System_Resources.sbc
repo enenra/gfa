@@ -370,8 +370,8 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [MinCooldownMs:30000]
-        [MaxCooldownMs:36001]
+        [MinCooldownMs:3000000]
+        [MaxCooldownMs:3600001]
 
         [Conditions:GFA_System_Resources_Condition_Resource_Tick]
 
@@ -691,8 +691,8 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [MinCooldownMs:12000]
-        [MaxCooldownMs:18001]
+        [MinCooldownMs:1200000]
+        [MaxCooldownMs:1800001]
 
         [Actions:GFA_System_Resources_Action_Spawning_Tick]
       </Description>
