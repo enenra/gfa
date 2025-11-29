@@ -153,14 +153,16 @@
         [RivalAI Action]
 
         [SetCustomStrings:true]
-        [CustomStrings:GFA_Outpost_SpawnGroup_Courier,GFA_MG_Courier_Aurore_Cargo_SpawnGroup]
         [CustomStrings:GFA_Outpost_SpawnGroup_Tender,GFA_MG_Tender_Aurore_Cargo_SpawnGroup]
         [CustomStrings:GFA_Outpost_SpawnGroup_Patrol,GFA_MG_Patrol_Local_SpawnGroup]
         [CustomStrings:GFA_Outpost_SpawnGroup_PatrolArea,GFA_MG_PatrolArea_Local_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Courier,GFA_MG_Courier_Aurore_Cargo_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Guards,GFA_MG_Guard_SpawnGroup]
 
         [SetCustomCountersVariables:true]
         [CustomCountersVariables:GFA_Outpost_Resources_Cost_Patrol,10]
         [CustomCountersVariables:GFA_Outpost_Resources_Cost_PatrolArea,10]
+        [CustomCountersVariables:GFA_Outpost_Resources_Cost_Guards,10]
       </Description>
     </EntityComponent>
 

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Guard_Autopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:true]
+        [UseVelocityCollisionEvasion:true]
+
+        [MinimumPlanetAltitude:200]
+        [IdealPlanetAltitude:300]
+
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:75]
+
+        [SlowDownOnWaypointApproach:true]
+        [WaypointTolerance:30]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.2]
+        [//AngleAllowedForForwardThrust:35]
+
+        [MinAngleForLeveledDescent:90]
+        [MaxAngleForLeveledAscent:90]
+
+        [OffsetSpaceMinDistFromTarget:1000]
+        [OffsetSpaceMaxDistFromTarget:3500]
+        [OffsetPlanetMinDistFromTarget:500]
+        [OffsetPlanetMaxDistFromTarget:2500]
+        [OffsetPlanetMinTargetAltitude:250]
+        [OffsetPlanetMaxTargetAltitude:1500]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
