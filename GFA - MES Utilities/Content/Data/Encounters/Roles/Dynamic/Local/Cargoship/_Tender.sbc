@@ -18,6 +18,7 @@
         [Triggers:GFA_Tender_Trigger_Setup]
 
         [Triggers:GFA_Tender_Trigger_InitRole]
+        [Triggers:GFA_Tender_Trigger_InitRole_Dialogue]
         [Triggers:GFA_Tender_Trigger_CloseRole]
 
         [Triggers:GFA_Tender_Trigger_ReceiveTarget]
@@ -92,6 +93,49 @@
 
         [ChangeAutopilotProfile:true]
         [AutopilotProfile:Primary]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_InitRole_Dialogue]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_InitRole_Dialogue]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_InitRole_Dialogue</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
+        [Actions:GFA_Tender_Action_InitRole_Dialogue]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_InitRole_Dialogue</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Tender_Trigger_InitRole_Dialogue]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Tender_InitRole]
       </Description>
     </EntityComponent>
 

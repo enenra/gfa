@@ -18,6 +18,7 @@
         [Triggers:GFA_Courier_Trigger_Setup]
 
         [Triggers:GFA_Courier_Trigger_InitRole]
+        [Triggers:GFA_Courier_Trigger_InitRole_Dialogue]
         [Triggers:GFA_Courier_Trigger_CloseRole]
 
         [Triggers:GFA_Courier_Trigger_ReceiveTarget]
@@ -59,6 +60,7 @@
       </Description>
     </EntityComponent>
 
+    <!-- InitRole -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -92,9 +94,53 @@
 
         [ChangeAutopilotProfile:true]
         [AutopilotProfile:Primary]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Courier_Trigger_InitRole_Dialogue]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Courier_Trigger_InitRole_Dialogue]
       </Description>
     </EntityComponent>
 
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Courier_Trigger_InitRole_Dialogue</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
+        [Actions:GFA_Courier_Action_InitRole_Dialogue]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Courier_Action_InitRole_Dialogue</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Courier_Trigger_InitRole_Dialogue]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Courier_InitRole]
+      </Description>
+    </EntityComponent>
+
+    <!-- CloseRole -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>

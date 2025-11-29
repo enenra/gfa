@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-17 17:46:01.701628 -->
+<!-- Created from GSheet export on 2025-11-29 13:42:27.101948 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -579,6 +579,86 @@
 			</Entry>
 			<Entry>
 				<Message>We are at capacity. Requesting a transport to ship this cargo to its destination.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Static_InitCombat</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy contact. Engage defense protocols.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy spotted! Power up defenses!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Hostile approaching. Ready defenses.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Static_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>All targets have left engagement range. Resuming normal operations.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sensors show green. Back to work.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Area clear. Back to normal operation.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Outpost_InitCombat</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Launch all defensive craft!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Strike wing - you are clear for takeoff!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Deploying defensive craft.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Outpost_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Defensive craft - you're clear to return to base.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Strike wing - return to base. Sensors clear.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Return to base - area clear.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>

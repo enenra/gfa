@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 
-<!-- Created from GSheet export on 2025-11-17 17:46:01.696612 -->
+<!-- Created from GSheet export on 2025-11-29 13:42:27.096524 -->
 
 <DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
@@ -1239,6 +1239,66 @@
 			</Entry>
 			<Entry>
 				<Message>We're aborting. Can't land here safely.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>That was close. Turning back to original course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sensors clear. Back to the delivery route.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Realigning to original destination.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Close one! But now back to delivering these supplies.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sensors green - realigning onto original course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Supply ship realigning to original course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Guard_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Sensors clear of hostiles. Proceed with search &amp; destroy.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No further hostiles in sensor range. Return to CAP.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sensors green. Return to patrolling the area to make sure it stays that way.</Message>
 				<AudioId/>
 				<Weights>1</Weights>
 			</Entry>
