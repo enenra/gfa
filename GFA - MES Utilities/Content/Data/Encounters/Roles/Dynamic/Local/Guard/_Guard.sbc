@@ -52,6 +52,7 @@
         [Triggers:GFA_Guard_Trigger_CloseRole]
 
         [Triggers:GFA_Guard_Trigger_ReadyForDespawn]
+        [Triggers:GFA_Guard_Trigger_ReadyForDespawn_Recall]
         [Triggers:GFA_Guard_Trigger_Despawn]
       </Description>
     </EntityComponent>
@@ -113,7 +114,7 @@
         [RivalAI Action]
 
         [ManuallyActivateTrigger:true]
-        [ManuallyActivatedTriggerTags:MSB_TriggerEvent_Patrol_InitRole]
+        [ManuallyActivatedTriggerTags:GFA_TriggerEvent_Guard_InitRole]
 
         [ChangeBehaviorSubclass:true]
         [NewBehaviorSubclass:Patrol]
@@ -144,6 +145,9 @@
 
         [MinCooldownMs:2000]
         [MaxCooldownMs:2001]
+
+        [UseFailCondition:true]
+        [Conditions:MSB_System_Despawn_Condition_Active]
 
         [Actions:GFA_Guard_Action_InitRole_Dialogue]
       </Description>
@@ -216,6 +220,28 @@
         [Actions:GFA_Guard_Action_ReadyForDespawn]
       </Description>
     </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Guard_Trigger_ReadyForDespawn_Recall</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:GFA_System_Resources_Request_Guards_Recall]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Conditions:MSB_System_Despawn_Condition_Receive_Homebase]
+
+        [MaxActions:1]
+        [Actions:GFA_Guard_Action_ReadyForDespawn]
+      </Description>
+    </EntityComponent>
+
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -225,6 +251,13 @@
         [RivalAI Action]
 
         [//DebugMessage:Guard - ReadyForDespawn]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Guard_Trigger_ReadyForDespawn]
+        [DisableTriggerNames:GFA_Guard_Trigger_ReadyForDespawn_Recall]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Guard_Trigger_Despawn]
 
         [EnableTriggers:true]
         [EnableTriggerNames:GFA_Guard_Trigger_Despawn]
@@ -241,10 +274,10 @@
         [Type:Timer]
 
         [UseTrigger:false]
-        [StartsReady:true]
+        [StartsReady:false]
 
-        [MinCooldownMs:60000]
-        [MaxCooldownMs:90000]
+        [MinCooldownMs:10000]
+        [MaxCooldownMs:15000]
 
         [Conditions:MSB_Utility_State_Condition_Check_State_Role]
 
