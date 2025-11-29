@@ -39,6 +39,9 @@
         [Triggers:GFA_System_Resources_Trigger_Spawning_NotLow]
         [Triggers:GFA_System_Resources_Trigger_Spawning_Full]
 
+        [Triggers:GFA_System_Resources_Trigger_InitCombat]
+        [Triggers:GFA_System_Resources_Trigger_InitRole]
+
         [Triggers:GFA_System_Resources_Trigger_PlayerFar]
         [Triggers:GFA_System_Resources_Trigger_PlayerNear]
       </Description>
@@ -882,13 +885,13 @@
         [//DebugMessage:Resources - Refund resources to homebase.]
 
         [BroadcastCommandProfiles:true]
-        [CommandProfileIds:GFA_System_Resources_Request_Refund_Cost]
+        [CommandProfileIds:GFA_System_Resources_Command_Request_Refund_Cost]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Resources_Request_Refund_Cost</SubtypeId>
+        <SubtypeId>GFA_System_Resources_Command_Request_Refund_Cost</SubtypeId>
       </Id>
       <Description>
         [RivalAI Command]

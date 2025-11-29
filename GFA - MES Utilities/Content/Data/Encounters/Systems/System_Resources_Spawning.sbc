@@ -18,8 +18,8 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [MinCooldownMs:1200000]
-        [MaxCooldownMs:1800001]
+        [MinCooldownMs:12000]
+        [MaxCooldownMs:18001]
 
         [Actions:GFA_System_Resources_Action_Spawning_Tick]
       </Description>
@@ -410,7 +410,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Resources_Trigger_CombatMode</SubtypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_InitCombat</SubtypeId>
       </Id>
       <Description>
         [RivalAI Trigger]
@@ -418,28 +418,93 @@
         [Type:Manual]
         [Tags:MSB_CombatType_InitCombatType]
 
-        [UseTrigger:false]
-        [StartsReady:true]
+        [UseTrigger:true]
+        [StartsReady:false]
 
         [MinCooldownMs:600]
         [MaxCooldownMs:601]
 
-        [Actions:GFA_System_Resources_Action_CombatMode]
+        [Actions:GFA_System_Resources_Action_InitCombat]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_System_Resources_Action_CombatMode</SubtypeId>
+        <SubtypeId>GFA_System_Resources_Action_InitCombat</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
+        [//DebugMessage:Resources - InitCombat]
+
         [PlayDialogueCue:true]
-        [//DialogueCueId:]
+        [DialogueCueId:Static_InitCombat]
 
         [DisableTriggers:true]
-        [//DisableTriggerTags:]
+        [DisableTriggerTags:GFA_System_Resources_Resource_Production]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_InitCombat]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Trigger_InitRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_Role_InitRole]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [MinCooldownMs:600]
+        [MaxCooldownMs:601]
+
+        [Actions:GFA_System_Resources_Action_InitRole]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Action_InitRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Resources - InitRole]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Static_InitRole]
+
+        [EnableTriggers:true]
+        [EnableTriggerTags:GFA_System_Resources_Resource_Production]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_System_Resources_InitRole]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_System_Resources_Command_Request_Guards_Recall</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:GFA_System_Resources_Request_Guards_Recall]
+
+        [MatchSenderReceiverOwners:true]
+
+        [IgnoreAntennaRequirement:true]
+        [Radius:5000]
+
+        [CommandDelayTicks:120]
       </Description>
     </EntityComponent>
 
