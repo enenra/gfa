@@ -36,6 +36,12 @@
 
         [ManuallyActivateTrigger:true]
         [ManuallyActivatedTriggerTags:GFA_System_Resources_Spawning_Tick]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
       </Description>
     </EntityComponent>
 

@@ -603,9 +603,14 @@
         [ManuallyActivatedTriggerTags:GFA_System_Resources_ReceivedResupply]
 
         [SetCounters:GFA_Resources_Counter]
-
         [SetCountersUseAmountVariable:true]
         [SetCountersAmountVariable:{GFA_Resources_Threshold_Full}]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
       </Description>
     </EntityComponent>
 
@@ -646,9 +651,14 @@
         [AddCustomCountersVariablesFromCommand:true]
 
         [IncreaseCounters:GFA_Resources_Counter]
-
         [IncreaseCountersUseAmountVariable:true]
         [IncreaseCountersAmountVariable:{GFA_Resources_Refund}]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
       </Description>
     </EntityComponent>
 
@@ -707,9 +717,14 @@
         [AddCustomCountersVariablesFromCommand:true]
 
         [DecreaseCounters:GFA_Resources_Counter]
-
         [DecreaseCountersUseAmountVariable:true]
         [DecreaseCountersAmountVariable:{GFA_Resources_Pickup}]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_System_Resources_Trigger_Resource_Update_Delay]
       </Description>
     </EntityComponent>
 
