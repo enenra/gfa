@@ -129,7 +129,9 @@
         [MaxActions:1]
         [Actions:GFA_MG_Outpost_Camp_Action_Rename]
         [Actions:GFA_MG_Outpost_Camp_Action_SpawningSetup]
-        [Actions:GFA_MG_Outpost_Camp_Action_CampAntenna]
+        [Actions:GFA_MG_Outpost_Camp_Action_BroadcastTower]
+        [Actions:GFA_MG_Outpost_Camp_Action_SilosOxygen]
+        [Actions:GFA_MG_Outpost_Camp_Action_SilosHydrogen]
         [Actions:GFA_MG_Outpost_Camp_Action_DefenseTurretLight]
       </Description>
     </EntityComponent>
@@ -172,21 +174,21 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Camp_Action_CampAntenna</SubtypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_BroadcastTower</SubtypeId>
       </Id>
       <Description>
         [RivalAI Action]
 
         [Chance:100]
 
-        [//SpawnEncounter:true]
-        [//Spawner:GFA_MG_Outpost_Camp_Spawn_CampAntenna]
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_BroadcastTower]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_CampAntenna</SubtypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_BroadcastTower</SubtypeId>
       </Id>
       <Description>
         [RivalAI Spawn]
@@ -199,13 +201,86 @@
         [IgnoreSafetyChecks:true]
 
         [MaxSpawns:1]
-        [SpawnGroups:]
+        [SpawnGroups:GFA_MG_BroadcastTower_SpawnGroup]
+
+        [MinDistance:50]
+        [MaxDistance:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_SilosOxygen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:50]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_SilosOxygen]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_SilosOxygen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_SiloOxygen_SpawnGroup]
+        [SpawnGroups:GFA_MG_SiloOxygen_Double_SpawnGroup]
 
         [MinDistance:25]
         [MaxDistance:100]
+      </Description>
+    </EntityComponent>
 
-        [MinAltitude:0]
-        [MaxAltitude:1]
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_SilosHydrogen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:50]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_SilosHydrogen]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_SilosHydrogen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_SiloHydrogen_SpawnGroup]
+        [SpawnGroups:GFA_MG_SiloHydrogen_Double_SpawnGroup]
+
+        [MinDistance:25]
+        [MaxDistance:100]
       </Description>
     </EntityComponent>
 
