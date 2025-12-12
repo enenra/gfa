@@ -17,7 +17,7 @@
       </Description>
     </EntityComponent>
 
-    <!-- Ship Types -->
+    <!-- Encounter Types -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
         <TypeId>Inventory</TypeId>
@@ -96,6 +96,21 @@
 
         [UseLootProfiles:true]
         [LootProfiles:GFA_MG_LootProfile_Container]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Manipulation_StorageBuilding</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_MG_LootProfile_Freight_HighValue]
+        [LootProfiles:GFA_MG_LootProfile_BasicContainers]
+        [LootProfiles:MES-Loot-Corpses]
       </Description>
     </EntityComponent>
 
