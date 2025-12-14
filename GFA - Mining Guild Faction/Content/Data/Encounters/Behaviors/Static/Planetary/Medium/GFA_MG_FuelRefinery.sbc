@@ -74,19 +74,34 @@
 
         [TargetData:MSB_TargetProfile_ShortRange]
 
+        [DialogueBanks:GFA_MG_DialogueBank_Static_1.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Static_2.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Static_3.xml]
+
         [UsePlayerDistanceTimer:true]
         [PlayerDistanceTrigger:50000]
         [PlayerDistanceTimerTrigger:30000]
 
         [Triggers:GFA_MG_FuelRefinery_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_FuelRefinery_Trigger_PlaceCrew]
 
+        [TriggerGroups:MSB_Interaction_RadioCheck_TriggerGroup]
+        [TriggerGroups:MSB_Interaction_TradeRequest_TriggerGroup]
+
+        [TriggerGroups:MSB_System_Dialogue_TriggerGroup_Static]
         [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+
+        [TriggerGroups:MSB_StaticCommon_TriggerGroup]
+        [TriggerGroups:MSB_System_AreaRestriction_TriggerGroup_1000]
+        [TriggerGroups:MSB_System_Despawn_TriggerGroup_DespawnPoint]
+
+        [TriggerGroups:GFA_FuelRefinery_TriggerGroup]
+        [TriggerGroups:GFA_System_Resources_TriggerGroup]
 
         [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
         [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_ShipLanding]
         [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
-
-        [Triggers:GFA_MG_FuelRefinery_Trigger_PlaceCrew]
       </Description>
     </EntityComponent>
 
@@ -105,6 +120,7 @@
 
         [MaxActions:1]
         [Actions:GFA_MG_FuelRefinery_Action_Rename]
+        [Actions:GFA_MG_FuelRefinery_Action_SpawningSetup]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -117,6 +133,22 @@
 
         [ChangeAntennaHudText:true]
         [AntennaHudText:Fuel Refinery]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_FuelRefinery_Action_SpawningSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetCustomStrings:true]
+        [CustomStrings:GFA_FuelRefinery_SpawnGroup_Tender,GFA_MG_Tender_Aurore_Cargo_SpawnGroup]
+        [CustomStrings:GFA_FuelRefinery_SpawnGroup_Courier,GFA_MG_Courier_Aurore_Cargo_SpawnGroup]
+
+        [CustomStrings:GFA_Resources_Store_1_Name,Store]
+        [CustomStrings:GFA_Resources_Store_1_Profile,GFA_MG_FuelRefinery_Store]
       </Description>
     </EntityComponent>
 
