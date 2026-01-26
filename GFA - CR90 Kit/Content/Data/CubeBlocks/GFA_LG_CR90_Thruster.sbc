@@ -1,29 +1,94 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<CubeBlocks>
-		<Definition>
-			<Id>
-				<TypeId>CubeBlock</TypeId>
-				<SubtypeId>GFA_LG_CR90_Thruster</SubtypeId>
-			</Id>
-			<DisplayName>{LOC:DisplayName_GFA_LG_CR90_Thruster}</DisplayName>
-			<Description>{LOC:Description_GFA_LG_CR90_Thruster}</Description>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
-			<CubeSize>Large</CubeSize>
-			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="5" y="3" z="10"/>
-			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\large\GFA_LG_CR90_Thruster.mwm</Model>
-			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
-			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
-			<MountPoints>
-				<MountPoint Side="Back" StartX="0.50" StartY="0.50" EndX="4.50" EndY="2.50" Default="true"/>
-			</MountPoints>
-			<BlockPairName>GFA_LG_CR90_Thruster</BlockPairName>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-		</Definition>
-	</CubeBlocks>
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>GFA_LG_CR90_Thruster</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_CR90_Thruster}</DisplayName>
+      <Description>{LOC:Description_GFA_LG_CR90_Thruster}</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_CR90_Thruster.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="10"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_CR90_Thruster.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1000" />
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="LargeTube" Count="150" />
+        <Component Subtype="Thrust" Count="1500" />
+        <Component Subtype="Construction" Count="250" />
+        <Component Subtype="SteelPlate" Count="450" />
+      </Components>
+      <CriticalComponent Subtype="Thrust" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.50" StartY="0.50" EndX="4.50" EndY="2.50" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\GFA_LG_CR90_Thruster_BS1.mwm"/>
+        <Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\GFA_LG_CR90_Thruster_BS2.mwm"/>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_CR90_Thruster_BS3.mwm"/>
+      </BuildProgressModels>
+      <BlockPairName>GFA_LG_CR90_Thruster</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <TieredUpdateTimes>
+        <unsignedInt>100</unsignedInt>
+        <unsignedInt>3600</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+        <string>Propulsion</string>
+      </TargetingGroups>
+      <PCU>15</PCU>
+
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <PrimarySound>_GFA_CR90_Thruster</PrimarySound>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+      <SilenceableByShipSoundSystem>false</SilenceableByShipSoundSystem>
+
+      <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <ForceMagnitude>10000000</ForceMagnitude>
+      <SlowdownFactor>1</SlowdownFactor>
+      <MaxPowerConsumption>0.2</MaxPowerConsumption>
+      <MinPowerConsumption>0.00002</MinPowerConsumption>
+
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>1</EffectivenessAtMaxInfluence>
+
+      <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>0.1</FlameLengthScale>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameFlare>SmallGridSmallThruster</FlameFlare>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareQuerySize>0.1</FlameGlareQuerySize>
+      <FlameIdleColor>
+        <X>0.75</X>
+        <Y>0.0</Y>
+        <Z>0.1</Z>
+        <W>0.1</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>1.5</X>
+        <Y>0.0</Y>
+        <Z>0.2</Z>
+        <W>0.5</W>
+      </FlameFullColor>
+    </Definition>
+
+  </CubeBlocks>
 </Definitions>
