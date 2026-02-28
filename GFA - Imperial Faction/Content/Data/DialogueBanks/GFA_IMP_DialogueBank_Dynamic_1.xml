@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<!-- Created from GSheet export on 2026-02-28 13:13:18.113287 -->
+
+<DialogueBank xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ChatProfileId>MSB_Chat_Default</ChatProfileId>
+	<DialogueCue>
+		<DialogueCueId>AreaRestriction_Warning</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>This is a restricted area. Back off!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Leave this area immediately!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>This is a restricted area. Leave. Now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Cargoship_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Close one. Turning back onto original course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Course realigned. Cargo's not gonna haul itself.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Realigning to original destination. This delay was expensive.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Compromised</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>AAAAAH!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No, no, NOOOO!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>(screams)</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>DamageByFriendlyOrNeutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Friendly, friendly! Stop shooting!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Watch where you point that!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Check your fire, you blasted amateur!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Despawn</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>That's it. Pulling out.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Returning to base.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We're done here. Heading out.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Dropship_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Looks like someone wants trouble.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Contact incoming.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Trouble incoming.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyed</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Got one!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy destroyed.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Another pest off the scanners.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyedwithPlayerHelp</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Got them! Thanks for the assist.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Target destroyed. Thanks for the help.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>You pulled your weight. Noted.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>EnemyDestroyedwithPlayerMadeFinalShot</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Good shot!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>You got them!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Nice shot. Efficient.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Fighter_InitCombatType</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Target sighted. Engaging.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy spotted.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Engaging. Accelerate to combat speed.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Fighter_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Contact is approaching us. Saves fuel.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Target closing fast. Ready weapons.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Target closing in. Let's greet them.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Freighter_InitCombatType</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy in range. Red alert.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Engaging threat. No delays tolerated.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Hostile in range. Initiating combat protocol.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Freighter_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We've got movement. Looks hostile.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Approach detected. Readying defenses.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Eyes on incoming. Be ready.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Gunship_InitCombatType</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Weapons live. Let's clean this up.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Engaging the enemy.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Combat protocols engaged. Wipe them out.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Gunship_TargetIsApproaching</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Threat incoming. All systems online.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Looks like the target is coming to us.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Let them come. They'll regret it.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_RadioCheck_Friendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Receiving you well, friend.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirming radio check. Good to hear from friendlies in the area.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Always good to hear from friendlies. Well received.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_RadioCheck_Hostile</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>E chu ta!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sithspawn! I'll blast you soon enough!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>I'll turn you into bantha fodder!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_RadioCheck_Neutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Received.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirming radio check. </Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Receiving.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_CombatMode</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Hostiles! Accelerate to combat speed!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Hostiles in range. Aborting trade.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Incoming! Let's go, let's go!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_Friendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Apologies, friend, we can't make the time to trade right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Unfortunately we can't trade now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Tempting! But we have places to be.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_Hostile</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Ha! Absolutely not.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Not with the kind of reputation you have.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>What? No!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_InCombat</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Are you blind? Kind of busy right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>What?</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>This isn't the time!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Decline_Neutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We are not in a place to stop for you right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No can do. Got places to be.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Don't have the time right now.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Received_Friendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>For a friend - always. Stopping engines.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Of course! Engage trading protocols.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Music to my ears. Slowing down so you can pull up alongside.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_Received_Neutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Received. Stopping to trade.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Yes, we can arrange that.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Trading? Positive, we do have some time to spare.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_ResumeCourse</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Resuming course. Farewell.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>That's that. Firing up engines.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Accelerating to cruise speed.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Interaction_TradeRequest_SignalLeaving</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We'll need to resume course again soon. Let's finish this up.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Alright, that's all we have time for. We're packing up.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Nice trading with you. We need to prepare to resume course now though.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Patrol_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Target lost. Returning to patrol.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No more eyes on target. Continuing patrol.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>That's that. Returning to patrol route.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>PlayerNear1000Friendly</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Greetings.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Friendly contact. Stay in line.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Friendly presence acknowledged.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>PlayerNear1000Neutral</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Keep your distance.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Stay out of our lanes.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>State your business.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Raider_ClearKPA</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>No enemy bases in this area. Updating database...</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Could not find enemy statics in this area. This area is marked as clear.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No enemy static contacts here. Reporting area clear.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Raider_DetectedEnemy</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy contact - just as reported.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy in target area as reported.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirming enemy contacts in target area.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Received_AllGood</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Situation resolved? Understood.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Received the all green.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirming situation resolved.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Received_Compromised</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Friendly down.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Poodoo!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>It's too late, they're gone.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Received_SOS</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Receiving call for help. Responding.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>SOS received - firing up thrusters!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We hear you. Accelerating to combat speed.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Scout_FoundTarget</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Scanners have picked up a potential enemy base. Approach to confirm.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Target on sensors. Approaching for visual confirmation.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Possible response for an enemy static. Investigating...</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Scout_InitiateScan</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Initiating scheduled long-range scan. Set sensors to 5 clicks.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Initiate 5-click long-range scan.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Time for a scan - tune sensor strength for 5 clicks.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Scout_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Target lost. Returning to scouting duties.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No more eyes on target. Continuing pre-designated route.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>All clear. Returning to previous course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Scout_NearTarget</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Scanner response confirmed - enemy spotted. Continue to data transmission point.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy presence confirmed. Proceeding to deliver coordinates.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy spotted. Returning to base to deliver the coordinates.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Scout_NearTarget_Timeout</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Must've been the wind...</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Cannot confirm enemy static presence. Moving on.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Negative on static enemy position. Continuing course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Scout_NotFoundTarget</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>No relevant response in this area. Continuing on.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No enemy base in this vicinity. Firing up thrusters.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Negative on the response. Moving to next target area.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Scout_TransmitLocation</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Transmitting location data... successful.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy static position found. Data transmission to relay successful.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Enemy presence confirmed and... transmitted.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Sending_AllGood</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Situation has been resolved. Thanks for the help.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>All green - all green.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We made it through. All green.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Sending_SOS</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Enemy contact! Requesting assistance!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Hostiles! Need support!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Engaging hostiles! Need backup!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>SOS_Response_Timeout</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're too far. Aborting.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Aborting.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>This is getting us nowhere... forget it.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFire</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Taking fire!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>I'm taking fire, evading!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Taking hits!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFireGoingDown</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Going down! Aaaaah!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>They got me, they got me! Going down!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Hull's breached! We're done!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>UnderFireHealthLow</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Taking heavy fire!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Taking heavy fire - I can't keep going like this!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>This crate won't last much longer!</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_ReceivedRefund</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Welcome back, pilot.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Return confirmed.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Welcome home.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_ReceivedResupply</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Confirming resupply. That was overdue.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Resupply completed.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We're back at operating capacity. Resupply successful.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>ShipLanding</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Landing clearance granted. Reduce speed and approach.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Landing approach confirmed. Clearing the pad.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Confirmed. We've got your approach locked in.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Despawn_PrepareForLanding</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Coming in to land.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Be advised - ship on landing vector.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>On landing approach.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_SpawnShip</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Cleared for take-off. Good luck out there.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Clear pad for take-off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>You're clear for take-off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_RequestTender</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're running low. Requesting resupply.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Storage nearly empty. We'll need to be resupplied - and soon.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Requesting delivery - supplies running dangerously low.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_Unloading</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Ready the hoversleds - starting to unload.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Position reached. Resupply initiated.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Starting to unload supplies. Be ready to receive.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_Departing</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Resupply completed. Setting new course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>That's the last of it. Proceeding to next destination.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Cargo hold has been emptied - that should last you a while. Setting course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_Incoming</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>We're delivering supplies as requested. Clear the exchange zone.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Supplies incoming as requested. Prepare to receive.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Supply ship on approach. Be ready to receive goods.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Resources_RequestCourier</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Storage capacity is reaching its limits. Requesting pickup.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Requesting transport. Our storage is full.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We are at capacity. Requesting a transport to ship this cargo to its destination.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_Incoming</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Responding to pickup notice as requested. Clear the loading area.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Transport incoming as per your request. Prepare to deliver the cargo.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Transport on approach. Be ready to deliver the goods.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_Loading</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Get that cargo moving - transport in position.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Position reached. Initiate cargo loading.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Cargo hold is open and ready for your goods.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_Departing</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Cargo hold is at capacity. We're off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We're full. Heading off.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Setting course - we're full.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Despawn_LandingTimeout</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Landing aborted. Something's wrong here.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Aborting landing attempts. Area is not clear.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>We're aborting. Can't land here safely.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Courier_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>That was close. Turning back to original course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sensors clear. Back to the delivery route.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Realigning to original destination.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Tender_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Close one! But now back to delivering these supplies.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sensors green - realigning onto original course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Supply ship realigning to original course.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+	<DialogueCue>
+		<DialogueCueId>Guard_InitRole</DialogueCueId>
+		<Entries>
+			<Entry>
+				<Message>Sensors clear of hostiles. Proceed with search &amp; destroy.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>No further hostiles in sensor range. Return to CAP.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+			<Entry>
+				<Message>Sensors green. Return to patrolling the area to make sure it stays that way.</Message>
+				<AudioId/>
+				<Weights>1</Weights>
+			</Entry>
+		</Entries>
+	</DialogueCue>
+</DialogueBank>
