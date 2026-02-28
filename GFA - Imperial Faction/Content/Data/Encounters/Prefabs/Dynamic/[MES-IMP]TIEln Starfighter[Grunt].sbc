@@ -2,22 +2,22 @@
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
-      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="TIEln Starfighter MES Ace" />
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[MES-IMP]TIEln Starfighter[Grunt]" />
+      <DisplayName>TIE/ln Starfighter</DisplayName>
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>73318507906313311</EntityId>
+          <EntityId>110712196609369269</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
-          <Name>73318507906313311</Name>
           <PositionAndOrientation>
-            <Position x="0" y="0" z="0" />
-            <Forward x="1.12880235E-11" y="3.85460441E-10" z="-1" />
-            <Up x="-5.506951E-10" y="1" z="3.85460441E-10" />
+            <Position x="96.032931536861724" y="21.834932960391598" z="-220.59861464308597" />
+            <Forward x="9.715354E-07" y="-2.435784E-09" z="0.999999762" />
+            <Up x="-1.29267386E-09" y="1" z="2.43578535E-09" />
             <Orientation>
-              <X>1.92730221E-10</X>
-              <Y>-5.64401173E-12</Y>
-              <Z>2.7534755E-10</Z>
-              <W>1</W>
+              <X>-6.46337539E-10</X>
+              <Y>1</Y>
+              <Z>1.21789256E-09</Z>
+              <W>-4.857678E-07</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
@@ -46,10 +46,12 @@
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
               <SubtypeName>GFA_SG_TIEFighter_Cockpit</SubtypeName>
-              <EntityId>142971976337096292</EntityId>
+              <EntityId>92734862387869431</EntityId>
               <Min x="-1" y="-1" z="-1" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
@@ -361,7 +363,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>ActionFire</Action>
-                      <BlockEntityId>84983569443061080</BlockEntityId>
+                      <BlockEntityId>83423514330609439</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -370,7 +372,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>DecreaseOverride</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>142971976337096292</BlockEntityId>
+                      <BlockEntityId>92734862387869431</BlockEntityId>
                       <GroupName>TIE/ln Thrusters Forward</GroupName>
                     </Data>
                   </Slot>
@@ -380,7 +382,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>IncreaseOverride</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>142971976337096292</BlockEntityId>
+                      <BlockEntityId>92734862387869431</BlockEntityId>
                       <GroupName>TIE/ln Thrusters Forward</GroupName>
                     </Data>
                   </Slot>
@@ -390,7 +392,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>Recharge</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>142971976337096292</BlockEntityId>
+                      <BlockEntityId>92734862387869431</BlockEntityId>
                       <GroupName>TIE/ln Batteries</GroupName>
                     </Data>
                   </Slot>
@@ -399,7 +401,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>SwitchLock</Action>
-                      <BlockEntityId>74264344808661314</BlockEntityId>
+                      <BlockEntityId>108787621792591664</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -407,7 +409,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>SwitchLock</Action>
-                      <BlockEntityId>131161143993771547</BlockEntityId>
+                      <BlockEntityId>115763986254749834</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -415,7 +417,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>EnableBroadCast</Action>
-                      <BlockEntityId>116278910213197437</BlockEntityId>
+                      <BlockEntityId>75433448248713354</BlockEntityId>
                     </Data>
                   </Slot>
                 </Slots>
@@ -425,12 +427,13 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>ActionFire</Action>
-                      <BlockEntityId>84983569443061080</BlockEntityId>
+                      <BlockEntityId>83423514330609439</BlockEntityId>
                     </Data>
                   </Slot>
                 </SlotsGamepad>
               </Toolbar>
               <SelectedGunId xsi:nil="true" />
+              <IsMainCockpit>true</IsMainCockpit>
               <BuildToolbar>
                 <ToolbarType>Character</ToolbarType>
                 <SelectedSlot xsi:nil="true" />
@@ -444,14 +447,14 @@
                 <SlotsGamepad />
               </OnLockedToolbar>
               <PilotRelativeWorld>
-                <Position x="0.076860591769218445" y="1.481000542640686" z="-2.488433837890625" />
-                <Forward x="0.0160780922" y="-0.8164782" z="0.5771524" />
-                <Up x="-0.0290115029" y="0.576603" z="0.816509247" />
+                <Position x="0.51672565937042236" y="2.5473172664642334" z="-2.5838794708251953" />
+                <Forward x="-0.129162923" y="-0.8842175" z="0.448861241" />
+                <Up x="0.01358011" y="0.451033115" z="0.8924041" />
                 <Orientation>
-                  <X>-0.0165801067</X>
-                  <Y>0.887863338</Y>
-                  <Z>0.45980823</Z>
-                  <W>-0.0004678392</W>
+                  <X>0.03967881</X>
+                  <Y>0.850209534</Y>
+                  <Z>0.5224069</Z>
+                  <W>0.0515790172</W>
                 </Orientation>
               </PilotRelativeWorld>
               <PilotGunDefinition xsi:nil="true" />
@@ -463,18 +466,20 @@
                 <IsTargetLocked>false</IsTargetLocked>
                 <LockingProgress>0</LockingProgress>
               </TargetData>
-              <SitAnimation>0</SitAnimation>
+              <SitAnimation>967744</SitAnimation>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>GFA_SG_TIEFighter_Gyro</SubtypeName>
-              <EntityId>101607323498118331</EntityId>
+              <EntityId>87435220093735977</EntityId>
               <Min x="-1" y="1" z="2" />
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -482,14 +487,16 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>GFA_SG_TIEFighter_Gyro</SubtypeName>
-              <EntityId>74821416937105790</EntityId>
+              <EntityId>113584412931644988</EntityId>
               <Min x="-1" y="-1" z="2" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>2</NumberInGrid>
@@ -497,11 +504,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>GFA_SG_TIEFighter_Antenna</SubtypeName>
-              <EntityId>116278910213197437</EntityId>
+              <EntityId>75433448248713354</EntityId>
               <Min x="0" y="0" z="2" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
+              <CustomName>Antenna</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
@@ -514,14 +524,16 @@
               <AttachedPB>0</AttachedPB>
               <IgnoreAllied>false</IgnoreAllied>
               <IgnoreOther>true</IgnoreOther>
-              <HudText>Antenna</HudText>
+              <HudText />
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
               <SubtypeName>GFA_SG_TIEFighter_Hatch</SubtypeName>
-              <EntityId>74264344808661314</EntityId>
+              <EntityId>108787621792591664</EntityId>
               <Min x="-1" y="2" z="-1" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <DeformationRatio>0.5</DeformationRatio>
               <ComponentContainer>
@@ -549,7 +561,7 @@
                       <TimerEnabled>true</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame10</TimerType>
-                      <FramesFromLastTrigger>30</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>10</FramesFromLastTrigger>
                       <TimerTickInFrames>80</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -557,7 +569,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -575,10 +587,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
               <SubtypeName>GFA_SG_TIEFighter_Port</SubtypeName>
-              <EntityId>131161143993771547</EntityId>
+              <EntityId>115763986254749834</EntityId>
               <Min x="-1" y="-2" z="-1" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <DeformationRatio>0.5</DeformationRatio>
               <ComponentContainer>
@@ -606,7 +620,7 @@
                       <TimerEnabled>true</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame10</TimerType>
-                      <FramesFromLastTrigger>30</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
                       <TimerTickInFrames>80</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -614,7 +628,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -632,10 +646,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
               <SubtypeName>GFA_SG_TIEFighter_Lasers_RivalAI</SubtypeName>
-              <EntityId>84983569443061080</EntityId>
+              <EntityId>83423514330609439</EntityId>
               <Min x="-1" y="-2" z="-2" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
@@ -660,7 +676,7 @@
                         <dictionary>
                           <item>
                             <Key>75bbb4f5-4fb9-4230-beef-bb79c9811501</Key>
-                            <Value>+nzWAQoJCAAQAB0AAIBAEsgBCAASPy0AAHpEMjgIARAAGAAgACgAMABIAFAAWAB4AIABAJABAKABALABAMABANABANgBAeABAegBAPABAPgBAZACABpEEgkNAAAAABAAIC0YACCXgICAgICAgAIwADgAQABIAFIjGhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAgACgAMAAiKwgAEAAgACoGIJn+//8HMhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAqEAgAIAEoADAAOABAAEgAUAAIIg==</Value>
+                            <Value>+nzTAQoJCAAQAB0AAIBAEsUBCAASPC0AAHpEMjUIARAAGAAgACgAMABIAFAAWAB4AIABAJABAKABALABAMABANABANgBAegBAPABAPgBAZACABpEEgkNAAAAABAAIEoYACCXgICAgICAgAIwADgAQABIAFIjGhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAgACgAMAAiKwgAEAAgACoGIJD8//8HMhsJAAAAAAAAAAAhAAAAAAAAAAA5AAAAAAAAAAAqEAgAIAEoADAAOABAAEgAUAAIIg==</Value>
                           </item>
                         </dictionary>
                       </Storage>
@@ -681,10 +697,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorBack</SubtypeName>
-              <EntityId>82022309445670263</EntityId>
+              <EntityId>99882889657247475</EntityId>
               <Min x="2" y="0" z="-1" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -704,7 +721,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -712,11 +729,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorBack</SubtypeName>
-              <EntityId>108275281783816491</EntityId>
+              <EntityId>73140974271765915</EntityId>
               <Min x="-2" y="0" z="-1" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -736,7 +754,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>2</NumberInGrid>
@@ -744,11 +762,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorSide</SubtypeName>
-              <EntityId>108226205319638915</EntityId>
+              <EntityId>83300041104953891</EntityId>
               <Min x="-3" y="-1" z="-1" />
               <BlockOrientation Forward="Left" Up="Down" />
-              <ColorMaskHSV x="0.99444443" y="0.04" z="0.29" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -768,7 +787,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -776,11 +795,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorSide</SubtypeName>
-              <EntityId>123328756270408126</EntityId>
+              <EntityId>112205676426636074</EntityId>
               <Min x="3" y="-1" z="-1" />
               <BlockOrientation Forward="Right" Up="Up" />
-              <ColorMaskHSV x="0.99444443" y="0.04" z="0.29" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -800,7 +820,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>2</NumberInGrid>
@@ -808,14 +828,16 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>GFA_SG_TIEFighter_Battery</SubtypeName>
-              <EntityId>126526233844028549</EntityId>
+              <EntityId>135546515389911693</EntityId>
               <Min x="4" y="-1" z="-1" />
               <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -829,14 +851,16 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>GFA_SG_TIEFighter_Battery</SubtypeName>
-              <EntityId>119305035960766681</EntityId>
+              <EntityId>143861897781228337</EntityId>
               <Min x="-4" y="-1" z="-1" />
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>2</NumberInGrid>
@@ -850,11 +874,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
-              <EntityId>100203277071087912</EntityId>
+              <EntityId>110166329261333978</EntityId>
               <Min x="-2" y="1" z="-1" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -874,7 +899,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -882,11 +907,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
-              <EntityId>109333577507539477</EntityId>
+              <EntityId>99226156075794366</EntityId>
               <Min x="2" y="1" z="-1" />
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -906,7 +932,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>2</NumberInGrid>
@@ -914,11 +940,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
-              <EntityId>87266726991299146</EntityId>
+              <EntityId>97837283797892110</EntityId>
               <Min x="2" y="-1" z="-1" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -938,7 +965,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>3</NumberInGrid>
@@ -946,11 +973,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
-              <EntityId>131219170144625517</EntityId>
+              <EntityId>91733329903978544</EntityId>
               <Min x="-2" y="-1" z="-1" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -970,7 +998,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>4</NumberInGrid>
@@ -978,11 +1006,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_Thruster</SubtypeName>
-              <EntityId>95200114251613177</EntityId>
+              <EntityId>94353275440254508</EntityId>
               <Min x="-2" y="0" z="2" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1003,7 +1032,7 @@
               </ComponentContainer>
               <CustomName>TIE/ln P-s4 Ion Engine 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>4</NumberInGrid>
@@ -1011,11 +1040,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>GFA_SG_TIEFighter_Thruster</SubtypeName>
-              <EntityId>73333194600092208</EntityId>
+              <EntityId>118526509893703946</EntityId>
               <Min x="1" y="0" z="2" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1036,7 +1066,7 @@
               </ComponentContainer>
               <CustomName>TIE/ln P-s4 Ion Engine</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>3</NumberInGrid>
@@ -1044,10 +1074,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
               <SubtypeName>GFA_SG_TIEFighter_Viewport</SubtypeName>
-              <EntityId>86255399950702284</EntityId>
+              <EntityId>136863400577924434</EntityId>
               <Min x="-1" y="-1" z="-2" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
@@ -1082,7 +1114,7 @@
                 </Components>
               </ComponentContainer>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -1125,14 +1157,16 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SolarPanel">
               <SubtypeName>GFA_SG_TIEFighter_Wing</SubtypeName>
-              <EntityId>131883998297269698</EntityId>
+              <EntityId>74388993171013441</EntityId>
               <Min x="-6" y="-8" z="-6" />
               <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>1</NumberInGrid>
@@ -1140,14 +1174,16 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SolarPanel">
               <SubtypeName>GFA_SG_TIEFighter_Wing</SubtypeName>
-              <EntityId>73646263974721847</EntityId>
+              <EntityId>84308918903063289</EntityId>
               <Min x="5" y="-8" z="-6" />
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
               <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
               <ShareMode>Faction</ShareMode>
               <ShowOnHUD>false</ShowOnHUD>
-              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInTerminal>false</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <NumberInGrid>2</NumberInGrid>
@@ -1204,10 +1240,8 @@
               </Blocks>
             </MyObjectBuilder_BlockGroup>
           </BlockGroups>
-          <DisplayName>TIEln Starfighter</DisplayName>
+          <DisplayName>TIE/ln Starfighter</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
-          <CreatePhysics>false</CreatePhysics>
-          <EnableSmallToLargeConnections>false</EnableSmallToLargeConnections>
           <IsRespawnGrid>false</IsRespawnGrid>
           <LocalCoordSys>0</LocalCoordSys>
           <TargetingTargets />
@@ -1215,6 +1249,9 @@
         </CubeGrid>
       </CubeGrids>
       <EnvironmentType>None</EnvironmentType>
+      <WorkshopId>0</WorkshopId>
+      <OwnerSteamId>76561198022171391</OwnerSteamId>
+      <Points>0</Points>
     </Prefab>
   </Prefabs>
 </Definitions>
