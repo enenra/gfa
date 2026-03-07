@@ -1,29 +1,23 @@
-[img]https://i.imgur.com/fVVaDCS.gif[/img]
+![](https://i.imgur.com/fVVaDCS.gif)
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/]1.0[/url]
+**Current version:** [1.0](https://steamcommunity.com/sharedfiles/filedetails/changelog/3680348514)
 
-[img]https://i.imgur.com/3D6U1Br.png[/img]
-[quote]
+![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_description.png)
 
-[/quote]
+> Hangar force fields allow for pressurization while still letting solid objects, such as spaceships, pass through. They are in use all over the galaxy in both large space ships as well as space stations. The force fields can be toggled on or off, and will affect pressurization accordingly.
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]
+[![](https://raw.githubusercontent.com/enenra/gfa/master/assets/mod_banner.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816)
 
+![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_features.png)
+The mod currently contains three large grid hangar force field blocks:
 
-[img]https://i.imgur.com/TGu2yer.png[/img]
-[img]https://i.imgur.com/XoYAWwP.gif[/img]
-[list]
-[*]Hangar Force Field 6x4
-[*]Hangar Force Field 7x4
-[*]Hangar Force Field 13x4
-[/list]
-[img]https://i.imgur.com/y3VyaKA.gif[/img]
+* Hangar Force Field 6x4
+* Hangar Force Field 7x4
+* Hangar Force Field 13x4
 
+![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_notes.png)
 
-[img]https://i.imgur.com/bKN1G3e.png[/img]
-[list]
-[*]
-[/list]
+* I will be adding more hangar force fields in the future, in various sizes. But the criteria for whether I add one or not will be if I need it for a Star Wars build I'm working on.
+* I decided to take this approach with hangar force fields because there was no other alternative I liked. This approach is limited in that these cannot be assembled in any custom size as a result. I have no plans of making them in formats that leave one side open.
 
-
-[url=https://steamcommunity.com/workshop/discussions/18446744073709551615/2793874853443195941/?appid=244850][img]https://raw.githubusercontent.com/enenra/aqdse/master/usage_guidelines.png[/img][/url]
+[![](https://raw.githubusercontent.com/enenra/aqdse/master/usage_guidelines.png)](https://steamcommunity.com/workshop/discussions/18446744073709551615/2793874853443195941/?appid=244850)
