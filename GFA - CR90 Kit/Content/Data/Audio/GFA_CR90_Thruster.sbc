@@ -9,36 +9,16 @@
         <SubtypeId>Arc_GFA_CR90_Thruster</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>250</MaxDistance>
+      <MaxDistance>1000</MaxDistance>
       <PitchVariation>10</PitchVariation>
-      <PreventSynchronization>1</PreventSynchronization>
+      <PreventSynchronization>0</PreventSynchronization>
       <Volume>0.5</Volume>
       <Loopable>true</Loopable>
-      <DistantSounds>
-        <DistantSound DistanceCrossfade="20" Distance="250" Sound="Arc_GFA_CR90_Thruster_Distant" />
-      </DistantSounds>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\CR90\Arc_GFA_CR90_Thruster_Start.wav</Start>
           <Loop>Audio\CR90\Arc_GFA_CR90_Thruster_Loop.wav</Loop>
           <End>Audio\CR90\Arc_GFA_CR90_Thruster_End.wav</End>
-        </Wave>
-      </Waves>
-    </Sound>
-    <Sound>
-      <Id>
-        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>Arc_GFA_CR90_Thruster_Distant</SubtypeId>
-      </Id>
-      <Category>SHIP_JET</Category>
-      <MaxDistance>1000</MaxDistance>
-      <PitchVariation>10</PitchVariation>
-      <PreventSynchronization>1</PreventSynchronization>
-      <Volume>0.5</Volume>
-      <Loopable>true</Loopable>
-      <Waves>
-        <Wave Type="D3">
-          <Loop>Audio\CR90\Arc_GFA_CR90_Thruster_Loop_Distant.wav</Loop>
         </Wave>
       </Waves>
     </Sound>
@@ -49,37 +29,17 @@
         <SubtypeId>Real_GFA_CR90_Thruster</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>150</MaxDistance>
+      <MaxDistance>750</MaxDistance>
       <PitchVariation>10</PitchVariation>
-      <PreventSynchronization>1</PreventSynchronization>
+      <PreventSynchronization>0</PreventSynchronization>
       <RealisticFilter>realShipFilter</RealisticFilter>
       <Volume>0.75</Volume>
       <Loopable>true</Loopable>
-      <DistantSounds>
-        <DistantSound DistanceCrossfade="20" Distance="150" Sound="Real_GFA_CR90_Thruster_Distant" />
-      </DistantSounds>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\CR90\Arc_GFA_CR90_Thruster_Start.wav</Start>
           <Loop>Audio\CR90\Arc_GFA_CR90_Thruster_Loop.wav</Loop>
           <End>Audio\CR90\Arc_GFA_CR90_Thruster_End.wav</End>
-        </Wave>
-      </Waves>
-    </Sound>
-    <Sound>
-      <Id>
-        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>Real_GFA_CR90_Thruster_Distant</SubtypeId>
-      </Id>
-      <Category>SHIP_JET</Category>
-      <MaxDistance>750</MaxDistance>
-      <PitchVariation>10</PitchVariation>
-      <PreventSynchronization>1</PreventSynchronization>
-      <Volume>0.5</Volume>
-      <Loopable>true</Loopable>
-      <Waves>
-        <Wave Type="D3">
-          <Loop>Audio\CR90\Arc_GFA_CR90_Thruster_Loop_Distant.wav</Loop>
         </Wave>
       </Waves>
     </Sound>
