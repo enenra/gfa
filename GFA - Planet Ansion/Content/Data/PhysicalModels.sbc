@@ -33,6 +33,23 @@
     <StopForceMultiplier>5.0</StopForceMultiplier>
   </Definition>
 
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>PhysicalModelDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeHerb_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeHerb_1_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>PhysicalModelDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeHerb_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeHerb_1_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+  </Definition>
+
   <!-- Volcanic Biomes -->
   <Definition xsi:type="MyObjectBuilder_TreeDefinition">
     <Id>

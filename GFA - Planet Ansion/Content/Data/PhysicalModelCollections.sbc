@@ -10,8 +10,10 @@
     <Items>
       <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushSmall_var1" Weight="1.5"/>
       <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushMedium_var1" Weight="2.0"/>
-      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushSmall" Weight="1.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushSmall" Weight="0.5"/>
       <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushMedium" Weight="0.5"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="GFA_EnvItem_SteppeHerb_1_1" Weight="10.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="GFA_EnvItem_SteppeHerb_1_2" Weight="10.0"/>
     </Items>
   </Definition>
   <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
@@ -34,6 +36,32 @@
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_SteppeRock_1_1" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_SteppeRock_1_2" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_SteppeRock_1_3" Weight="0.1"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_SteppeForageables</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="ForageableDefinition" SubtypeId="FruitPlant" Weight="0.5"/>
+      <Item TypeId="ForageableDefinition" SubtypeId="GrainPlant" Weight="1"/>
+      <Item TypeId="ForageableDefinition" SubtypeId="VegetablePlant" Weight="1"/>
+    </Items>
+  </Definition>
+
+  <!-- Dry Plains -->
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_DryPlainsBushes</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DesertBushSmall" Weight="1"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DesertBushMedium" Weight="1"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushSmall" Weight="0.1"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushMedium" Weight="0.1"/>
     </Items>
   </Definition>
 
@@ -94,6 +122,16 @@
     <Items>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_1_Moss" Weight="1.0"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_2_Moss" Weight="1.0"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_VolcanicForageables</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="ForageableDefinition" SubtypeId="MushroomPlant" Weight="0.5"/>
     </Items>
   </Definition>
 

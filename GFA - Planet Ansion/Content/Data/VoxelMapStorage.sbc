@@ -2,5 +2,13 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <VoxelMapStorages>
 
+    <VoxelMapStorage>
+      <Id>
+        <TypeId>VoxelMapStorageDefinition</TypeId>
+        <SubtypeId>GFA_VoxelMap_OreBurst</SubtypeId>
+      </Id>
+      <StorageFile>VoxelMaps\GFA_VoxelMap_OreBurst.vx2</StorageFile>
+    </VoxelMapStorage>
+
   </VoxelMapStorages>
 </Definitions>

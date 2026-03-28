@@ -169,7 +169,7 @@
 					<Rule>
 						<Layers>
 							<Layer Material="DustyRocks3" Depth="5.0"/>
-							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
 						</Layers>
 						<Height Min="0.0" Max="1.0"/>
 						<Latitude Min="0.0" Max="90.0"/>
@@ -178,7 +178,7 @@
 					<Rule>
 						<Layers>
 							<Layer Material="DustyRocks" Depth="5.0"/>
-							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
 						</Layers>
 						<Height Min="0.0" Max="1.0"/>
 						<Latitude Min="0.0" Max="90.0"/>
@@ -186,8 +186,83 @@
 					</Rule>
 					<Rule>
 						<Layers>
-							<Layer Material="DustyRocks2" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Dry Rocky Plains - Grass Patches" Value="11">
+					<Rule>
+						<Layers>
+							<Layer Material="Grass_old" Depth="5.0"/>
 							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Dry Rocky Plains - Hilltops" Value="12">
+					<Rule>
+						<Layers>
+							<Layer Material="Gravel" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="20.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Dry Rocky Plains - Sand Patches" Value="13">
+					<Rule>
+						<Layers>
+							<Layer Material="CrackedSoil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
 						</Layers>
 						<Height Min="0.0" Max="1.0"/>
 						<Latitude Min="0.0" Max="90.0"/>
@@ -560,6 +635,8 @@
 					</Materials>
 					<Items>
 						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_VolcanicBoulders_Moss" Density="0.05"/>
+						<Item TypeId="MyObjectBuilder_Forageable" SubtypeId="GFA_Collection_VolcanicForageables" Density="0.002"/>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_VolcanicMossBoulders" Density="0.005"/>
 					</Items>
 					<Rule>
 						<Height Min="0.0" Max="1.0"/>
@@ -575,8 +652,9 @@
 						<Material>Woods_grass</Material>
 					</Materials>
 					<Items>
-						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_SteppeBushes" Density="2.0"/>
-						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_SteppeTrees" Density="0.5"/>
+						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_SteppeBushes" Density="5.0"/>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_SteppeTrees" Density="0.75"/>
+						<Item TypeId="MyObjectBuilder_Forageable" SubtypeId="GFA_Collection_SteppeForageables" Density="0.05"/>
 					</Items>
 					<Rule>
 						<Height Min="0.0" Max="1.0"/>
@@ -610,6 +688,7 @@
 					</Materials>
 					<Items>
 						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_SteppeBoulders" Density="0.1"/>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_Steppe_OreBursts" Density="0.1"/>
 					</Items>
 					<Rule>
 						<Height Min="0.0" Max="0.2"/>
@@ -625,13 +704,46 @@
 						<Material>DustyRocks</Material>
 					</Materials>
 					<Items>
-						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_SteppeBoulders" Density="0.5"/>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_SteppeBoulders" Density="0.25"/>
 						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_SteppeBoulders" Density="0.25"/>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_SteppeHilltops_OreBursts" Density="0.05"/>
 					</Items>
 					<Rule>
 						<Height Min="0.0" Max="1.0"/>
 						<Latitude Min="0.0" Max="90.0"/>
 						<Slope Min="0.0" Max="10.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>11</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Grass_old</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_DryPlainsBushes" Density="3.0"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>12</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Gravel</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_DryPlainsRocks" Density="0.5"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
 					</Rule>
 				</Item>
 			</EnvironmentItems>

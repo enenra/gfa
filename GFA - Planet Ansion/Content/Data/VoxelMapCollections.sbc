@@ -6,10 +6,48 @@
       <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
       <SubtypeId>GFA_VoxelCollections_SteppeBoulders</SubtypeId>
     </Id>
-    <Modifier>GFA_VoxelModifier_Steppe_BasicResources</Modifier>
-    <Storage Storage="stone_smallstone" Probability="1"/>
-    <Storage Storage="stone_mediumstone" Probability="1"/>
+    <Modifier>GFA_VoxelModifier_Steppe_Stone</Modifier>
+    <Storage Storage="stone_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_mediumstone" Probability="1.0"/>
     <Storage Storage="stone_largestone" Probability="0.5"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_Steppe_OreBursts</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_Steppe_BasicResources</Modifier>
+    <Storage Storage="GFA_VoxelMap_OreBurst" Probability="0.5"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_SteppeHilltops_OreBursts</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_SteppeHilltops_BasicResources</Modifier>
+    <Storage Storage="GFA_VoxelMap_OreBurst" Probability="0.5"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_DryPlainsRocks</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_DryPlains_BasicResources</Modifier>
+    <Storage Storage="stone_smallstone" Probability="1.0"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_VolcanicMossBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_VolcanicMoss_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="1.0"/>
   </Definition>
 
 </Definitions>

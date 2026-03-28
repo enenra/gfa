@@ -347,5 +347,68 @@
       <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
     </VoxelMaterial>
 
+    <!-- Gravel -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Gravel</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+      <Friction>1.0</Friction>
+      <DamagedMaterial>Gravel</DamagedMaterial>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\Gravel_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\Gravel_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\Gravel_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\Gravel_add.dds</ExtXZnY>
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>2</ScaleMultiplier>
+      <InitialDistance>80</InitialDistance>
+      <DistanceMultiplier>2</DistanceMultiplier>
+      <TilingScale>80</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\Gravel_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\Gravel_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\Gravel_add.dds</ExtXZnYFar1>
+      <Far1Distance>80</Far1Distance>
+      <Far1Scale>25</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\Gravel_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\Gravel_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\Gravel_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>100</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.78</X>
+        <Y>0.71</Y>
+        <Z>0.60</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Voxels\Ansion\Gravel_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Voxels\Ansion\Gravel_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+      <FoliageDensity>2.5</FoliageDensity>
+      <FoliageScale>
+        <X>1.6</X>
+        <Y>1.6</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.6</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+    </VoxelMaterial>
+
   </VoxelMaterials>
 </Definitions>
