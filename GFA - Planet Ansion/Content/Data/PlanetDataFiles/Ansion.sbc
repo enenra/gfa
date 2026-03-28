@@ -1,0 +1,650 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<PlanetGeneratorDefinitions>
+		<PlanetGeneratorDefinition>
+			<Id>
+				<TypeId>PlanetGeneratorDefinition</TypeId>
+				<SubtypeId>Ansion</SubtypeId>
+			</Id>
+			<PlanetMaps Material="true" Ores="true" Biome="true" Occlusion="true"/>
+			<MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">
+				<PostprocessingSteps>
+					<Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
+						<LodSettings>
+							<Settings FromLod="0">
+								<FeatureAngle>15</FeatureAngle>
+								<EdgeThreshold>0.04</EdgeThreshold>
+								<PlaneThreshold>0.02</PlaneThreshold>
+							</Settings>
+							<Settings FromLod="1">
+								<FeatureAngle>15</FeatureAngle>
+								<EdgeThreshold>0.04</EdgeThreshold>
+								<PlaneThreshold>0.04</PlaneThreshold>
+							</Settings>
+							<Settings FromLod="2">
+								<FeatureAngle>15</FeatureAngle>
+								<EdgeThreshold>0.06</EdgeThreshold>
+								<PlaneThreshold>0.06</PlaneThreshold>
+							</Settings>
+						</LodSettings>
+					</Step>
+				</PostprocessingSteps>
+			</MesherPostprocessing>
+			<HillParams Min="-0.08" Max="0.05"/>
+			<DefaultSurfaceMaterial Material="AlienIce" MaxDepth="5"/>
+			<DefaultSubSurfaceMaterial Material="AlienIce"/>
+			<DefaultSurfaceTemperature>Hot</DefaultSurfaceTemperature>
+			<MinimumSurfaceLayerDepth>5</MinimumSurfaceLayerDepth>
+			<SurfaceDetail>
+				<Texture>Data\PlanetDataFiles\Extra\material_detail_4</Texture>
+				<Size>300</Size>
+				<Scale>3</Scale>
+				<Slope Min="20" Max="90"/>
+				<Transition>15</Transition>
+			</SurfaceDetail>
+			<OreMappings>
+				<Ore Value="210" Type="Iron_01" Start="0" Depth="1" TargetColor="#000000" ColorInfluence="256"/>
+			</OreMappings>
+			<ComplexMaterials>
+				<MaterialGroup Name="Windswept Hills" Value="1">
+					<Rule>
+						<Layers>
+							<Layer Material="SteppeGrass" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="25.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="25.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Windswept Hills - Grass Patches" Value="2">
+					<Rule>
+						<Layers>
+							<Layer Material="Woods_grass" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="25.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="25.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Windswept Hills - Thickets" Value="3">
+					<Rule>
+						<Layers>
+							<Layer Material="Woods_grass" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="25.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="25.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Windswept Hills - Hilltops" Value="4">
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="10.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Dry Rocky Plains" Value="10">
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks3" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks2" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Rocky Hills" Value="20">
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks2" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="AlienRockyMountain" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Volcanic Plains" Value="30">
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicAsh" Depth="5.0"/>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.11" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="20.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.11"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Volcanic Plains - Lava Lakes" Value="31">
+					<Rule>
+						<Layers>
+							<Layer Material="Lava" Depth="15.0"/>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.11"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.11" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Volcanic Mountains" Value="50">
+					<Rule>
+						<Layers>
+							<Layer Material="Moss" Depth="5.0"/>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.15"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Moss" Depth="5.0"/>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.15"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="20.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicAsh" Depth="5.0"/>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.15" Max="0.35"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicAsh" Depth="5.0"/>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.15" Max="0.35"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="20.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Lava" Depth="5.0"/>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.35" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="VolcanicRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.35" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Canyon Foothills" Value="60">
+					<Rule>
+						<Layers>
+							<Layer Material="PertamSand" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Deep Canyons" Value="70">
+					<Rule>
+						<Layers>
+							<Layer Material="PertamSand" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DustyRocks" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Forested Mountains" Value="80">
+					<Rule>
+						<Layers>
+							<Layer Material="Woods_grass" Depth="5.0"/>
+							<Layer Material="Soil" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Coastal Beach" Value="100">
+					<Rule>
+						<Layers>
+							<Layer Material="AlienSand" Depth="15.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DebugMaterial" Depth="1.0"/>
+							<Layer Material="AlienSand" Depth="14.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Seaweed Plains" Value="150">
+					<Rule>
+						<Layers>
+							<Layer Material="AlienSand" Depth="10.0"/>
+						</Layers>
+						<Height Min="0.12" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="AlienSand" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.12" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Stone" Depth="5.0"/>
+						</Layers>
+						<Height Min="0.12" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Height Min="0.0" Max="0.12"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Height Min="0.0" Max="0.12"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Height Min="0.0" Max="0.12"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+			</ComplexMaterials>
+			<EnvironmentItems>
+				<Item>
+					<Biomes>
+						<Biome>30</Biome>
+						<Biome>31</Biome>
+						<Biome>50</Biome>
+					</Biomes>
+					<Materials>
+						<Material>VolcanicRock</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_VolcanicBoulders" Density="0.15"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="0.2"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="10.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>30</Biome>
+						<Biome>31</Biome>
+						<Biome>50</Biome>
+					</Biomes>
+					<Materials>
+						<Material>VolcanicRock</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_VolcanicSpouts" Density="0.01"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>30</Biome>
+					</Biomes>
+					<Materials>
+						<Material>VolcanicAsh</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_VolcanicBoulders_Ash" Density="0.05"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="0.2"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="10.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>50</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Moss</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_VolcanicBoulders_Moss" Density="0.05"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="10.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>3</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Woods_grass</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_SteppeBushes" Density="2.0"/>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_SteppeTrees" Density="0.5"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>2</Biome>
+					</Biomes>
+					<Materials>
+						<Material>SteppeGrass</Material>
+						<Material>Woods_grass</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_SteppeBoulders" Density="0.01"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="10.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>3</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Woods_grass</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_SteppeBoulders" Density="0.1"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="0.2"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="10.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>4</Biome>
+					</Biomes>
+					<Materials>
+						<Material>DustyRocks</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_SteppeBoulders" Density="0.5"/>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_SteppeBoulders" Density="0.25"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="10.0"/>
+					</Rule>
+				</Item>
+			</EnvironmentItems>
+			<SurfaceGravity>1.0</SurfaceGravity>
+			<GravityFalloffPower>7.0</GravityFalloffPower>
+			<HasAtmosphere>true</HasAtmosphere>
+			<Atmosphere>
+				<Breathable>true</Breathable>
+				<OxygenDensity>1.0</OxygenDensity>
+				<Density>1.0</Density>
+				<LimitAltitude>3.5</LimitAltitude>
+				<MaxWindSpeed>80.0</MaxWindSpeed>
+			</Atmosphere>
+		</PlanetGeneratorDefinition>
+	</PlanetGeneratorDefinitions>
+</Definitions>

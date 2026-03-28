@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Windswept Hills -->
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_SteppeBushes</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushSmall_var1" Weight="1.5"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushMedium_var1" Weight="2.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushSmall" Weight="1.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushMedium" Weight="0.5"/>
+    </Items>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_SteppeTrees</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DesertTreeMedium" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="DesertTree" Weight="1.0"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_SteppeBoulders</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_SteppeRock_1_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_SteppeRock_1_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_SteppeRock_1_3" Weight="0.1"/>
+    </Items>
+  </Definition>
+
+  <!-- Volcanic Biomes -->
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_VolcanicBoulders</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_1_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_1_2" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_1_3" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_2" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_3" Weight="1.0"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_VolcanicPebbles</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_3_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_3_2" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_3_3" Weight="1.0"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_VolcanicSpouts</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicSpout_1_1" Weight="0.5"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_VolcanicBoulders_Ash</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_1_Ash" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_2_Ash" Weight="1.0"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_VolcanicBoulders_Moss</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_1_Moss" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_VolcanicRock_2_2_Moss" Weight="1.0"/>
+    </Items>
+  </Definition>
+
+</Definitions>
