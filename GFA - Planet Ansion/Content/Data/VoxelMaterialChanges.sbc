@@ -77,6 +77,28 @@
   </Definition>
 
   <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="GFA_VoxelModifier_RockyHills_BasicResources" />
+    <Options>
+      <Option Chance="0.50">
+        <Change From="Stone" To="DesertRocks" />
+        <Change From="Snow" To="DustyRocks" />
+      </Option>
+      <Option Chance="0.20">
+        <Change From="Stone" To="DesertRocks" />
+        <Change From="Snow" To="DustyRocks" />
+        <Change From="Iron_01" To="Nickel_01" />
+        <Change From="Iron_02" To="Nickel_01" />
+      </Option>
+      <Option Chance="0.30">
+        <Change From="Stone" To="DesertRocks" />
+        <Change From="Snow" To="DustyRocks" />
+        <Change From="Iron_01" To="Silicon_01" />
+        <Change From="Iron_02" To="Silicon_01" />
+      </Option>
+    </Options>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
     <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="GFA_VoxelModifier_VolcanicMoss_BasicResources" />
     <Options>
       <Option Chance="0.50">

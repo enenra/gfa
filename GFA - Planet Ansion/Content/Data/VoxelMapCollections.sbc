@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
+  <!-- Steppe Biomes -->
   <Definition xsi:type="VR.EI.VoxelMapCollection">
     <Id>
       <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
@@ -8,8 +9,8 @@
     </Id>
     <Modifier>GFA_VoxelModifier_Steppe_Stone</Modifier>
     <Storage Storage="stone_smallstone" Probability="1.0"/>
-    <Storage Storage="stone_mediumstone" Probability="1.0"/>
-    <Storage Storage="stone_largestone" Probability="0.5"/>
+    <Storage Storage="stone_mediumstone" Probability="0.75"/>
+    <Storage Storage="stone_largestone" Probability="0.05"/>
   </Definition>
 
   <Definition xsi:type="VR.EI.VoxelMapCollection">
@@ -42,12 +43,35 @@
   <Definition xsi:type="VR.EI.VoxelMapCollection">
     <Id>
       <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_RockyHillsRocks</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_RockyHills_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+    <Storage Storage="GFA_VoxelMap_GroundCrack" Probability="0.75"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_CanyonFoothillsRocks</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_RockyHills_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
       <SubtypeId>GFA_VoxelCollections_VolcanicMossBoulders</SubtypeId>
     </Id>
     <Modifier>GFA_VoxelModifier_VolcanicMoss_BasicResources</Modifier>
     <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
-    <Storage Storage="stone_snowtop_mediumstone" Probability="1.0"/>
-    <Storage Storage="stone_snowtop_largestone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.5"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.25"/>
   </Definition>
 
 </Definitions>

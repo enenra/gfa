@@ -33,6 +33,37 @@
     <StopForceMultiplier>5.0</StopForceMultiplier>
   </Definition>
 
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_2_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_2_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_2_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_2_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
   <Definition xsi:type="VR.PhysicalModelDefinition">
     <Id>
       <TypeId>PhysicalModelDefinition</TypeId>
@@ -49,6 +80,71 @@
     <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeHerb_1_2.mwm</Model>
     <PhysicalMaterial>Wood</PhysicalMaterial>
   </Definition>
+
+
+  <!-- Desert Biomes -->
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_1_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_1_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_1_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RedDesertRock_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RedDesertRock_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RedDesertRock_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RedDesertRock_1_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RedDesertRock_1_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RedDesertRock_1_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
 
   <!-- Volcanic Biomes -->
   <Definition xsi:type="MyObjectBuilder_TreeDefinition">
