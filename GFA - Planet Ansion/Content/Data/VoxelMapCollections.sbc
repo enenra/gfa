@@ -74,4 +74,16 @@
     <Storage Storage="stone_snowtop_largestone" Probability="0.25"/>
   </Definition>
 
+  <!-- Forested Mountains -->
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_ForestedMountainsBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_ForestedMountains_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+  </Definition>
+
 </Definitions>

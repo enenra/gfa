@@ -293,4 +293,69 @@
     <StopForceMultiplier>5.0</StopForceMultiplier>
   </Definition>
 
+
+  <!-- Coastal Beach -->
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_1_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_1_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_2_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_2_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_3_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_3_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_3_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+
 </Definitions>
