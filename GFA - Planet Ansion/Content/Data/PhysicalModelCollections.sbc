@@ -81,6 +81,12 @@
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_1" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_2" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_3" Weight="0.1"/>
     </Items>
   </Definition>
   <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
@@ -249,6 +255,12 @@
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_1" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_2" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_3" Weight="0.1"/>
     </Items>
   </Definition>
 
@@ -271,12 +283,12 @@
       <SubtypeId>GFA_Collection_CoastalBeachBushes</SubtypeId>
     </Id>
     <Items>
-      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_1_1" Weight="10.0"/>
-      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_1_2" Weight="10.0"/>
-      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_2_1" Weight="10.75"/>
-      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_2_2" Weight="10.75"/>
-      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_3_1" Weight="10.5"/>
-      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_3_2" Weight="10.5"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_1_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_1_2" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_2_1" Weight="0.75"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_2_2" Weight="0.75"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_3_1" Weight="0.5"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_BeachBush_3_2" Weight="0.5"/>
     </Items>
   </Definition>
 
@@ -289,6 +301,75 @@
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_1" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_2" Weight="0.1"/>
       <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_3" Weight="0.1"/>
+    </Items>
+  </Definition>
+
+  <!-- Wetlands -->
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_WetlandsTrees</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsOak_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsOak_2" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsOak_3" Weight="0.75"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsOak_4" Weight="0.75"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsOak_5" Weight="0.5"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsOak_6" Weight="0.5"/>
+    </Items>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_WetlandsShrubbery</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsFern_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsFern_2" Weight="0.75"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_WetlandsRoots" Weight="0.75"/>
+    </Items>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_WetlandsBushes</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushMedium_var1" Weight="1.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushSmall_var1" Weight="0.5"/>
+    </Items>
+  </Definition>
+
+
+  <!-- Cliff Islands -->
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_CliffIslandsTrees</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="LeafTreeMedium" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="LeafTree" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="LeafTree" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="LeafTree" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="LeafTree" Weight="1.0"/>
+    </Items>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_CliffIslandsBushes</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushMedium_var1" Weight="1.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushSmall_var1" Weight="0.5"/>
     </Items>
   </Definition>
 

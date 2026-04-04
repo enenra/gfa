@@ -117,6 +117,68 @@
   <Definition xsi:type="MyObjectBuilder_TreeDefinition">
     <Id>
       <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_2_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_2_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_2_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_2_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_3_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_3_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_3_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_3_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_3_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
       <SubtypeId>GFA_EnvItem_RedDesertRock_1_1</SubtypeId>
     </Id>
     <Model>Models\EnvironmentItems\GFA_EnvItem_RedDesertRock_1_1.mwm</Model>
@@ -356,6 +418,100 @@
     <PhysicalMaterial>Wood</PhysicalMaterial>
     <Resilence>500000</Resilence>
     <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+
+  <!-- Wetlands -->
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_3.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>50000</Resilence>
+    <StopForceMultiplier>0.5</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_4</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_4.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>50000</Resilence>
+    <StopForceMultiplier>0.5</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_5</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_5.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5000</Resilence>
+    <StopForceMultiplier>0.25</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_6</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_6.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsFern_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsFern_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsFern_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsFern_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsRoots</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsRoots.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
   </Definition>
 
 </Definitions>
