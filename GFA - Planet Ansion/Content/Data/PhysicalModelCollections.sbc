@@ -404,4 +404,77 @@
     </Items>
   </Definition>
 
+  <!-- River -->
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_RiverRocksSmooth</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_1_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_1_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_1_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_2_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_2_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_2_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_3_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_3_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_RiverRock_3_3" Weight="0.1"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_RiverBushes</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushSmall_var1" Weight="1.5"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="LeafBushMedium_var1" Weight="2.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="GFA_EnvItem_SteppeHerb_1_1" Weight="10.0"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="GFA_EnvItem_SteppeHerb_1_2" Weight="10.0"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_RiverTrees</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DesertTreeMedium" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="DesertTree" Weight="1.0"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_RiverForageables</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="ForageableDefinition" SubtypeId="FruitPlant" Weight="0.5"/>
+      <Item TypeId="ForageableDefinition" SubtypeId="GrainPlant" Weight="1"/>
+      <Item TypeId="ForageableDefinition" SubtypeId="VegetablePlant" Weight="1"/>
+    </Items>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_RiverRocks</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_1_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_2_3" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_1" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_2" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_DesertRock_3_3" Weight="0.1"/>
+    </Items>
+  </Definition>
+
 </Definitions>

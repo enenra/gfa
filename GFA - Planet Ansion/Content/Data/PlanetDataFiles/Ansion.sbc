@@ -1611,6 +1611,122 @@
 						<Slope Min="40.0" Max="90.0"/>
 					</Rule>
 				</MaterialGroup>
+				<MaterialGroup Name="Rivers" Value="201">
+					<Rule>
+						<Layers>
+							<Layer Material="Grass" Depth="2.0"/>
+							<Layer Material="Soil" Depth="3.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.064" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Gravel" Depth="2.0"/>
+							<Layer Material="Soil" Depth="3.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.064" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="45.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="45.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="AlienSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="0.64"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="45.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Seafloor" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Rivers - River Patches" Value="202">
+					<Rule>
+						<Layers>
+							<Layer Material="Woods_grass" Depth="2.0"/>
+							<Layer Material="Soil" Depth="3.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.064" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Gravel" Depth="2.0"/>
+							<Layer Material="Soil" Depth="3.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.064" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="45.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="45.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="AlienSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="0.064"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="45.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="BeachWetSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
 			</ComplexMaterials>
 			<EnvironmentItems>
 				<Item>
@@ -2209,6 +2325,61 @@
 						<Slope Min="0.0" Max="20.0"/>
 					</Rule>
 				</Item>
+				<Item>
+					<Biomes>
+						<Biome>201</Biome>
+						<Biome>202</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Gravel</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_RiverRocks" Density="0.1"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>201</Biome>
+						<Biome>202</Biome>
+					</Biomes>
+					<Materials>
+						<Material>BeachWetSand</Material>
+						<Material>Seafloor</Material>
+						<Material>AlienSand</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_RiverRocksSmooth" Density="0.1"/>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_RiverBoulders" Density="0.05"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>202</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Woods_grass</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_RiverBushes" Density="0.25"/>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_RiverTrees" Density="0.5"/>
+						<Item TypeId="MyObjectBuilder_Forageable" SubtypeId="GFA_Collection_RiverForageables" Density="0.05"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+				</Item>
 			</EnvironmentItems>
 			<SurfaceGravity>1.0</SurfaceGravity>
 			<GravityFalloffPower>7.0</GravityFalloffPower>
@@ -2220,6 +2391,14 @@
 				<LimitAltitude>3.5</LimitAltitude>
 				<MaxWindSpeed>80.0</MaxWindSpeed>
 			</Atmosphere>
+			<WeatherFrequencyMin>0</WeatherFrequencyMin>
+			<WeatherFrequencyMax>0</WeatherFrequencyMax>
+			<WeatherGenerators>
+				<WeatherGenerator>
+					<Voxel/>
+					<Weathers/>
+				</WeatherGenerator>
+			</WeatherGenerators>
 		</PlanetGeneratorDefinition>
 	</PlanetGeneratorDefinitions>
 </Definitions>
