@@ -74,6 +74,7 @@
     <Storage Storage="stone_snowtop_largestone" Probability="0.25"/>
   </Definition>
 
+
   <!-- Forested Mountains -->
   <Definition xsi:type="VR.EI.VoxelMapCollection">
     <Id>
@@ -86,6 +87,7 @@
     <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
   </Definition>
 
+
   <!-- Seaweed Plains -->
   <Definition xsi:type="VR.EI.VoxelMapCollection">
     <Id>
@@ -93,6 +95,19 @@
       <SubtypeId>GFA_VoxelCollections_SeaweedPlainsBoulders</SubtypeId>
     </Id>
     <Modifier>GFA_VoxelModifier_SeaweedPlains_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+  </Definition>
+
+
+  <!-- Wetlands -->
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_WetlandsBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_Wetlands_BasicResources</Modifier>
     <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
     <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
     <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>

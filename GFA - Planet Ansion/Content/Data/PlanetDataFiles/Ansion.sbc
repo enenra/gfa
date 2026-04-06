@@ -1140,7 +1140,7 @@
 						<Slope Min="60.0" Max="90.0"/>
 					</Rule>
 				</MaterialGroup>
-				<MaterialGroup Name="Wetlands - Wetlands Patches" Value="121">
+				<MaterialGroup Name="Wetlands - Dense Grass" Value="121">
 					<Rule>
 						<Layers>
 							<Layer Material="WetlandsGrass" Depth="2.0"/>
@@ -1194,6 +1194,81 @@
 						<Height Min="0.0" Max="0.0637"/>
 						<Latitude Min="0.0" Max="90.0"/>
 						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Wetlands - Sand Banks" Value="122">
+					<Rule>
+						<Layers>
+							<Layer Material="AlienSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="BeachWetSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Wetlands - Soil Patches" Value="123">
+					<Rule>
+						<Layers>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="BeachWetSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
 					</Rule>
 				</MaterialGroup>
 				<MaterialGroup Name="Seaweed Plains" Value="150">
@@ -1276,6 +1351,44 @@
 							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
 						</Layers>
 						<Height Min="0.0" Max="0.02"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Seaweed Plains - Plains Sand Patches" Value="151">
+					<Rule>
+						<Layers>
+							<Layer Material="AlienSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0637" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="BeachWetSand" Depth="5.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocksUnderwater" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="0.0637"/>
 						<Latitude Min="0.0" Max="90.0"/>
 						<Slope Min="40.0" Max="90.0"/>
 					</Rule>
@@ -1959,8 +2072,8 @@
 						<Material>Grass</Material>
 					</Materials>
 					<Items>
-						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_CliffIslandsTrees" Density="1.0"/>
-						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_CliffIslandsBushes" Density="1.0"/>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_CliffIslandsTrees" Density="0.5"/>
+						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_CliffIslandsBushes" Density="0.25"/>
 					</Items>
 					<Rule>
 						<Height Min="0.0" Max="1.0"/>
@@ -2015,6 +2128,7 @@
 						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_WetlandsTrees" Density="0.75"/>
 						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_WetlandsShrubbery" Density="1.0"/>
 						<Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="GFA_Collection_WetlandsBushes" Density="0.75"/>
+						<Item TypeId="MyObjectBuilder_Forageable" SubtypeId="GFA_Collection_WetlandsForageables" Density="1.0"/>
 					</Items>
 					<Rule>
 						<Height Min="0.0" Max="1.0"/>
@@ -2039,6 +2153,60 @@
 						<Height Min="0.0636" Max="0.065"/>
 						<Latitude Min="0.0" Max="90.0"/>
 						<Slope Min="0.0" Max="90.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>120</Biome>
+						<Biome>121</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Seafloor</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_SeaweedPlainsBoulders" Density="0.15"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>120</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Grass</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_VoxelMapStorageDefinition" SubtypeId="GFA_VoxelCollections_WetlandsBoulders" Density="0.15"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
+						<Biome>120</Biome>
+						<Biome>121</Biome>
+						<Biome>122</Biome>
+						<Biome>123</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Soil</Material>
+						<Material>AlienSand</Material>
+						<Material>BeachWetSand</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_WetlandsRocks" Density="0.25"/>
+					</Items>
+					<Rule>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
 					</Rule>
 				</Item>
 			</EnvironmentItems>
