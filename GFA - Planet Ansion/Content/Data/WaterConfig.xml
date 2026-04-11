@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<WaterConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PlanetConfig TypeId="MyObjectBuilder_PlanetGeneratorDefinition" SubtypeId="Ansion">
+    <WaterSettings>
+      <Radius>1.009</Radius>
+      <WaveHeight>1</WaveHeight>
+      <WaveSpeed>0.04</WaveSpeed>
+      <Buoyancy>1</Buoyancy>
+      <WaveScale>3</WaveScale>
+      <EnableFish>true</EnableFish>
+      <EnableSeagulls>true</EnableSeagulls>
+      <Texture>
+        <String>JWaterLight</String>
+      </Texture>
+      <Transparent>true</Transparent>
+      <Lit>true</Lit>
+      <FogColor>
+        <X>0.05</X>
+        <Y>0.18</Y>
+        <Z>0.25</Z>
+      </FogColor>
+      <CollectionRate>1</CollectionRate>
+      <TideHeight>2</TideHeight>
+      <TideSpeed>0.05</TideSpeed>
+      <EnableFoam>true</EnableFoam>
+      <CrushDamage>0.5</CrushDamage>
+      <PlayerDrag>true</PlayerDrag>
+      <CurrentSpeed>0.5</CurrentSpeed>
+      <CurrentScale>0.005</CurrentScale>
+      <Volumetric>false</Volumetric>
+      <MaterialId>Water</MaterialId>
+    </WaterSettings>
+    <ColorIntensity>1</ColorIntensity>
+    <Specularity>4</Specularity>
+    <SpecularIntensity>1</SpecularIntensity>
+    <AmbientColorIntensity>0.2</AmbientColorIntensity>
+    <DistantRadiusOffset>0.021</DistantRadiusOffset>
+    <DistantRadiusScaler>2</DistantRadiusScaler>
+    <DistantSoftnessOffset>0.003</DistantSoftnessOffset>
+    <DistantSoftnessScaler>2</DistantSoftnessScaler>
+    <DistantSoftnessMultiplier>5</DistantSoftnessMultiplier>
+  </PlanetConfig>
+</WaterConfig>
