@@ -609,4 +609,37 @@
     <StopForceMultiplier>5.0</StopForceMultiplier>
   </Definition>
 
+
+  <!-- Ocean -->
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_Seaweed_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_Seaweed_1_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_Seaweed_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_Seaweed_2_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_Seaweed_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_Seaweed_3_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+
 </Definitions>

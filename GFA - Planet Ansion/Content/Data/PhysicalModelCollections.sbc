@@ -477,4 +477,18 @@
     </Items>
   </Definition>
 
+
+  <!-- Ocean -->
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition">
+    <Id>
+      <TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>GFA_Collection_Seaweed</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_Seaweed_1_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_Seaweed_2_1" Weight="1.0"/>
+      <Item TypeId="TreeDefinition" SubtypeId="GFA_EnvItem_Seaweed_3_1" Weight="1.0"/>
+    </Items>
+  </Definition>
+
 </Definitions>

@@ -2347,6 +2347,22 @@
 				</Item>
 				<Item>
 					<Biomes>
+						<Biome>150</Biome>
+					</Biomes>
+					<Materials>
+						<Material>Seafloor</Material>
+					</Materials>
+					<Items>
+						<Item TypeId="MyObjectBuilder_Trees" SubtypeId="GFA_Collection_Seaweed" Density="1.0"/>
+					</Items>
+					<Rule>
+						<Height Min="0.03" Max="0.06"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="20.0"/>
+					</Rule>
+				</Item>
+				<Item>
+					<Biomes>
 						<Biome>121</Biome>
 					</Biomes>
 					<Materials>
@@ -2501,7 +2517,7 @@
 				<OxygenDensity>1.0</OxygenDensity>
 				<Density>1.0</Density>
 				<LimitAltitude>3.5</LimitAltitude>
-				<MaxWindSpeed>80.0</MaxWindSpeed>
+				<MaxWindSpeed>100.0</MaxWindSpeed>
 			</Atmosphere>
 			<WeatherFrequencyMin>0</WeatherFrequencyMin>
 			<WeatherFrequencyMax>0</WeatherFrequencyMax>
@@ -2511,6 +2527,76 @@
 					<Weathers/>
 				</WeatherGenerator>
 			</WeatherGenerators>
+			<CloudLayers>
+				<CloudLayer>
+					<Model>Models\Environment\Sky\CloudSphere.mwm</Model>
+					<Textures>
+						<Texture>Textures\Models\Environment\Sky\EarthFarClouds.dds</Texture>
+					</Textures>
+					<RelativeAltitude>0.7</RelativeAltitude>
+					<ScalingEnabled>false</ScalingEnabled>
+					<InitialRotation>1.2</InitialRotation>
+					<AngularVelocity>0.0002</AngularVelocity>
+					<RotationAxis>
+						<X>-0.2</X>
+						<Y>1.0</Y>
+						<Z>0.2</Z>
+					</RotationAxis>
+					<FadeOutRelativeAltitudeStart>2.0</FadeOutRelativeAltitudeStart>
+					<FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+				</CloudLayer>
+				<CloudLayer>
+					<Model>Models\Environment\Sky\CloudSphere.mwm</Model>
+					<Textures>
+						<Texture>Textures\Models\Environment\Sky\Landsky_texture.dds</Texture>
+					</Textures>
+					<RelativeAltitude>1.0</RelativeAltitude>
+					<ScalingEnabled>false</ScalingEnabled>
+					<InitialRotation>0.15</InitialRotation>
+					<AngularVelocity>0.0006</AngularVelocity>
+					<RotationAxis>
+						<X>0.0</X>
+						<Y>1.0</Y>
+						<Z>0.0</Z>
+					</RotationAxis>
+					<FadeOutRelativeAltitudeStart>0.5</FadeOutRelativeAltitudeStart>
+					<FadeOutRelativeAltitudeEnd>1.6</FadeOutRelativeAltitudeEnd>
+				</CloudLayer>
+				<CloudLayer>
+					<Model>Models\Environment\Sky\CloudSphere.mwm</Model>
+					<Textures>
+						<Texture>Textures\Models\Environment\Sky\Landsky_texture.dds</Texture>
+					</Textures>
+					<RelativeAltitude>2.0</RelativeAltitude>
+					<ScalingEnabled>false</ScalingEnabled>
+					<InitialRotation>0.5</InitialRotation>
+					<AngularVelocity>0.0006</AngularVelocity>
+					<RotationAxis>
+						<X>0.2</X>
+						<Y>1.0</Y>
+						<Z>-0.2</Z>
+					</RotationAxis>
+					<FadeOutRelativeAltitudeStart>0.7</FadeOutRelativeAltitudeStart>
+					<FadeOutRelativeAltitudeEnd>1.5</FadeOutRelativeAltitudeEnd>
+				</CloudLayer>
+				<CloudLayer>
+					<Model>Models\Environment\Sky\CloudSphere.mwm</Model>
+					<Textures>
+						<Texture>Textures\Models\Environment\Sky\Landsky_texture.dds</Texture>
+					</Textures>
+					<RelativeAltitude>3.0</RelativeAltitude>
+					<ScalingEnabled>false</ScalingEnabled>
+					<InitialRotation>1.2</InitialRotation>
+					<AngularVelocity>0.0006</AngularVelocity>
+					<RotationAxis>
+						<X>-0.2</X>
+						<Y>1.0</Y>
+						<Z>0.2</Z>
+					</RotationAxis>
+					<FadeOutRelativeAltitudeStart>0.8</FadeOutRelativeAltitudeStart>
+					<FadeOutRelativeAltitudeEnd>1.4</FadeOutRelativeAltitudeEnd>
+				</CloudLayer>
+			</CloudLayers>
 		</PlanetGeneratorDefinition>
 	</PlanetGeneratorDefinitions>
 </Definitions>
