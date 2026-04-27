@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<BlockVariantGroups>
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_LettersLightAZ"/>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_SymbolLight_A.dds</Icon>
+			<DisplayName>DisplayName_GFA_LG_SymbolLight_A</DisplayName>
+			<Description>Description_Letters</Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_A"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_B"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_C"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_D"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_E"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_F"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_G"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_H"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_I"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_J"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_K"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_L"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_M"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_N"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_O"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_P"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Q"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_R"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_S"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_T"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_U"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_V"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_W"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_X"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Y"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Z"/>
+			</Blocks>
+		</BlockVariantGroup>
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_NumbersLight1"/>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_SymbolLight_0.dds</Icon>
+			<DisplayName>DisplayName_GFA_LG_SymbolLight_0</DisplayName>
+			<Description>Description_Numbers</Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_0"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_1"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_2"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_3"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_4"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_5"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_6"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_7"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_8"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_9"/>
+			</Blocks>
+		</BlockVariantGroup>
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_SymbolsLight"/>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_SymbolLight_And.dds</Icon>
+			<DisplayName>DisplayName_GFA_LG_SymbolLight_And</DisplayName>
+			<Description>Description_Symbols</Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_And"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Apostrophe"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Colon"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Dot"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_ExclammationMark"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Hyphen"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_QuestionMark"/>
+				<Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_SymbolLight_Underscore"/>
+			</Blocks>
+		</BlockVariantGroup>
+	</BlockVariantGroups>
+</Definitions>
