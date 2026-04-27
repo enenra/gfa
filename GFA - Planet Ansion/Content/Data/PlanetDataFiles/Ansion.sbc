@@ -1839,6 +1839,91 @@
 						<Slope Min="40.0" Max="90.0"/>
 					</Rule>
 				</MaterialGroup>
+				<MaterialGroup Name="Settlements and Roads" Value="200">
+					<Rule>
+						<Layers>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="25.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="25.0" Max="40.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="MossyRock" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="40.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Wheatfields" Value="205">
+					<Rule>
+						<Layers>
+							<Layer Material="Wheatfields" Depth="2.0"/>
+							<Layer Material="Soil" Depth="3.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
+				<MaterialGroup Name="Wheatfields - Roads" Value="206">
+					<Rule>
+						<Layers>
+							<Layer Material="Soil" Depth="5.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="0.0" Max="30.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="Gravel" Depth="3.0"/>
+							<Layer Material="Soil" Depth="2.0"/>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="30.0" Max="60.0"/>
+					</Rule>
+					<Rule>
+						<Layers>
+							<Layer Material="DesertRocks" Depth="50.0"/>
+						</Layers>
+						<Height Min="0.0" Max="1.0"/>
+						<Latitude Min="0.0" Max="90.0"/>
+						<Slope Min="60.0" Max="90.0"/>
+					</Rule>
+				</MaterialGroup>
 			</ComplexMaterials>
 			<EnvironmentItems>
 				<Item>
@@ -2533,7 +2618,7 @@
 					<Textures>
 						<Texture>Textures\Models\Environment\Sky\EarthFarClouds.dds</Texture>
 					</Textures>
-					<RelativeAltitude>0.7</RelativeAltitude>
+					<RelativeAltitude>0.5</RelativeAltitude>
 					<ScalingEnabled>false</ScalingEnabled>
 					<InitialRotation>1.2</InitialRotation>
 					<AngularVelocity>0.0002</AngularVelocity>
