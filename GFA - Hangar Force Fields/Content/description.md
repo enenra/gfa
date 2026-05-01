@@ -1,14 +1,12 @@
 ![](https://i.imgur.com/fVVaDCS.gif)
 
-**Current version:** [1.0](https://steamcommunity.com/sharedfiles/filedetails/changelog/3680348514)
-
+**Current version:** [1.0a](https://steamcommunity.com/sharedfiles/filedetails/changelog/3680348514)
 
 ![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_description.png)
 
 > Hangar force fields allow for pressurization while still letting solid objects, such as spaceships, pass through. They are in use all over the galaxy in both large space ships as well as space stations. The force fields can be toggled on or off, and will affect pressurization accordingly.
 
 [![](https://raw.githubusercontent.com/enenra/gfa/master/assets/mod_banner.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816)
-
 
 ![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_features.png)
 The mod currently contains three large grid hangar force field blocks:
@@ -17,12 +15,10 @@ The mod currently contains three large grid hangar force field blocks:
 * Hangar Force Field 7x4
 * Hangar Force Field 13x4
 
-
 ![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_notes.png)
 
 * I will be adding more hangar force fields in the future, in various sizes. But the criteria for whether I add one or not will be if I need it for a Star Wars build I'm working on.
 * I decided to take this approach with hangar force fields because there was no other alternative I liked. This approach is limited in that these cannot be assembled in any custom size as a result. I have no plans of making them in formats that leave one side open.
-
 
 ![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_credits.png)
 
