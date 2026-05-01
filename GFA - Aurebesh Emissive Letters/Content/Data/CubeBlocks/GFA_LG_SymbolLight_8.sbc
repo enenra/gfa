@@ -7,17 +7,20 @@
 				<SubtypeId>GFA_LG_SymbolLight_8</SubtypeId>
 			</Id>
 			<DisplayName>{LOC:DisplayName_GFA_LG_SymbolLight_8}</DisplayName>
-			<Description>{LOC:Description_GFA_LG_SymbolLight_8}</Description>
+			<Description>Description_Numbers</Description>
 			<Icon>Textures\GUI\Icons\Cubes\GFA_LG_SymbolLight_8.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1"/>
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\GFA_LG_SymbolLight_8.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
+				<Component Subtype="InteriorPlate" Count="12" />
+				<Component Subtype="SmallTube" Count="12" />
+				<Component Subtype="Construction" Count="4" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<CriticalComponent Subtype="SmallTube" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.03"/>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.03"/>
@@ -29,9 +32,14 @@
 				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\large\GFA_LG_SymbolLight_8_BS1.mwm"/>
 				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_SymbolLight_8_BS2.mwm"/>
 			</BuildProgressModels>
-			<BlockPairName>GFASymbolLight_8</BlockPairName>
+			<BlockPairName>GFA_SymbolLight_8</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>4</BuildTimeSeconds>
+			<IsAirTight>false</IsAirTight>
+			<IsStandAlone>false</IsStandAlone>
+			<PCU>1</PCU>
 		</Definition>
 	</CubeBlocks>
 </Definitions>
