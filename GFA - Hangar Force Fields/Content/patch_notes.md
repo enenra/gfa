@@ -1,3 +1,3 @@
-# Update 1.0a
+# Update 1.0b
 
-* Fixed issue with Hangar Force Field 13x4 where boxes would appear in the center of the block if the block was in its build stage.
+* Fixed issue with Hangar Force Field 13x4 where the force field was offset from where it should display.
