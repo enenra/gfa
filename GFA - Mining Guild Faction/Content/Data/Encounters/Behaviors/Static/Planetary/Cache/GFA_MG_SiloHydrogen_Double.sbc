@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_SiloHydrogen_Double_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_SiloHydrogen_Double_SpawnConditions]
+
+        [ManipulationProfiles:GFA_MG_Manipulation]
+
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Heavy_Chance]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="[MES-MG]Silo[Hydrogen Double]">
+          <Position>
+            <X>0.0</X>
+            <Y>10.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_SiloHydrogen_Double_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_SiloHydrogen_Double_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [StaticEncounter:true]
+
+        [RivalAiAnySpawn:true]
+        [FactionOwner:MG]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_SiloHydrogen_Double_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+	      [BehaviorName:Passive]
+
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+        [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

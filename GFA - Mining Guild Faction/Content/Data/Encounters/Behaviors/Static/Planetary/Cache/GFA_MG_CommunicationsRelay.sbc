@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_CommunicationsRelay_SpawnConditions]
+
+        [ManipulationProfiles:GFA_MG_Manipulation]
+        [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
+
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="[MES-MG]Communications Relay">
+          <Position>
+            <X>0.0</X>
+            <Y>8.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_CommunicationsRelay_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [StaticEncounter:true]
+        [MinGravity:0.01]
+
+        [RivalAiSpaceSpawn:true]
+        [FactionOwner:MG]
+        [ReplenishSystems:true]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+	      [BehaviorName:Passive]
+
+        [Triggers:GFA_MG_CommunicationsRelay_Trigger_SpawnSetup]
+
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+
+        [TriggerGroups:MSB_Relay_TriggerGroup]
+
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]
+        [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_CommunicationsRelay_Action_SpawnSetup]
+        [Actions:GFA_MG_CommunicationsRelay_Action_DefenseTurretLight]
+        [Actions:GFA_MG_CommunicationsRelay_Action_DefenseTurretHeavy]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Action_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAntennaRanges:true]
+        [AntennaNamesForRangeChange:Antenna]
+        [AntennaRangeChangeType:Set]
+        [AntennaRangeChangeAmount:35000]
+
+        [ChangeAntennaHudText:true]
+        [UseRandomNameGenerator:true]
+        [AntennaHudText:Communications Relay RandomLetter-RandomNumberRandomNumberRandomNumber]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Action_DefenseTurretLight</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:75]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_CommunicationsRelay_Spawn_DefenseTurretLight]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Spawn_DefenseTurretLight</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_DefenseTurret_Light_SpawnGroup]
+
+        [MinDistance:25]
+        [MaxDistance:100]
+
+        [MinAltitude:0]
+        [MaxAltitude:1]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Action_DefenseTurretHeavy</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:25]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_CommunicationsRelay_Spawn_DefenseTurretHeavy]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_CommunicationsRelay_Spawn_DefenseTurretHeavy</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:1]
+        [SpawnGroups:GFA_MG_DefenseTurret_Heavy_SpawnGroup]
+
+        [MinDistance:25]
+        [MaxDistance:100]
+
+        [MinAltitude:0]
+        [MaxAltitude:1]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

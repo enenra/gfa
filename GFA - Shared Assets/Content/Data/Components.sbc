@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Components>
+
+    <!-- Used to restrict blocks to only be usable by NPCs. -->
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Comp_BlockRestriction</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Comp_BlockRestriction}</DisplayName>
+      <Icon>Textures\GUI\Icons\component\computer_component.dds</Icon>
+      <Size>
+        <X>0.1</X>
+        <Y>0.1</Y>
+        <Z>0.02</Z>
+      </Size>
+      <Mass>0.2</Mass>
+      <Volume>1</Volume>
+      <Model>Models\Components\computer_component.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>1</MaxIntegrity>
+      <DropProbability>0</DropProbability>
+      <Health>11</Health>
+      <MinimumOfferAmount>1000</MinimumOfferAmount>
+      <MaximumOfferAmount>5000</MaximumOfferAmount>
+      <MinimumOrderAmount>300</MinimumOrderAmount>
+      <MaximumOrderAmount>1000</MaximumOrderAmount>
+      <CanPlayerOrder>false</CanPlayerOrder>
+      <MinimumAcquisitionAmount>300</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>1000</MaximumAcquisitionAmount>
+    </Component>
+
+  </Components>
+</Definitions>

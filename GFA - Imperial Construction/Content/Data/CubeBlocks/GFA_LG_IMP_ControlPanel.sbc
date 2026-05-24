@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition>
+      <Id>
+        <TypeId>TerminalBlock</TypeId>
+        <SubtypeId>GFA_LG_IMP_ControlPanel</SubtypeId>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_LG_IMP_ControlPanel}</DisplayName>
+      <Description>Description_ControlPanel</Description>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_ControlPanel.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1"/>
+      <ModelOffset x="0" y="0" z="0"/>
+      <Model>Models\Cubes\large\GFA_LG_IMP_ControlPanel.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="Display" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <BlockPairName>GFA_LG_IMP_ControlPanel</BlockPairName>
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.45" StartY="0.45" EndX="0.55" EndY="0.55" Default="true"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\GFA_LG_IMP_ControlPanel_BS1.mwm"/>
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>6</BuildTimeSeconds>
+      <DestroyEffectOffset>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>1.1</Z>
+      </DestroyEffectOffset>
+      <PCU>5</PCU>
+      <IsAirTight>false</IsAirTight>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

@@ -1,0 +1,1257 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Prefabs>
+    <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[MES-IMP]TIEln Starfighter[Ace]" />
+      <DisplayName>TIE/ln Starfighter</DisplayName>
+      <CubeGrids>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>79892752545523722</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <PositionAndOrientation>
+            <Position x="53.032931536861724" y="-16.665067039608402" z="-222.09861464308597" />
+            <Forward x="0.295519561" y="-1.76951289E-08" z="0.9553366" />
+            <Up x="-0.0278953668" y="0.9995736" z="0.008629046" />
+            <Orientation>
+              <X>-0.0144373588</X>
+              <Y>0.9886657</Y>
+              <Z>0.00218199752</Z>
+              <W>-0.149421886</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <ComponentContainer>
+            <Components>
+              <ComponentData>
+                <TypeId>MyModStorageComponent</TypeId>
+                <Component xsi:type="MyObjectBuilder_ModStorageComponent">
+                  <Storage>
+                    <dictionary>
+                      <item>
+                        <Key>75bbb4f5-4fb9-4230-beef-bb79c9811502</Key>
+                        <Value>GAA=</Value>
+                      </item>
+                      <item>
+                        <Key>75bbb4f5-4fb9-4230-beef-bb79c9811503</Key>
+                        <Value>Eg0IABAAIAAtAAAAADAA</Value>
+                      </item>
+                    </dictionary>
+                  </Storage>
+                </Component>
+              </ComponentData>
+            </Components>
+          </ComponentContainer>
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
+              <SubtypeName>GFA_SG_TIEFighter_Cockpit</SubtypeName>
+              <EntityId>109139247595809830</EntityId>
+              <Min x="-1" y="-1" z="-1" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyMultiTextPanelComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_MultiTextPanelComponent">
+                      <TextPanelsContents>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_TargetingInfo</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294940230</PackedValue>
+                            <X>70</X>
+                            <Y>150</Y>
+                            <Z>255</Z>
+                            <R>70</R>
+                            <G>150</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_ArtificialHorizon</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4284743880</PackedValue>
+                            <X>200</X>
+                            <Y>0</Y>
+                            <Z>100</Z>
+                            <R>200</R>
+                            <G>0</G>
+                            <B>100</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_EnergyHydrogen</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294940230</PackedValue>
+                            <X>70</X>
+                            <Y>150</Y>
+                            <Z>255</Z>
+                            <R>70</R>
+                            <G>150</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_Gravity</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294940230</PackedValue>
+                            <X>70</X>
+                            <Y>150</Y>
+                            <Z>255</Z>
+                            <R>70</R>
+                            <G>150</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_Velocity</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294940230</PackedValue>
+                            <X>70</X>
+                            <Y>150</Y>
+                            <Z>255</Z>
+                            <R>70</R>
+                            <G>150</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                        </MySerializedTextPanelData>
+                      </TextPanelsContents>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>ActionFire</Action>
+                      <BlockEntityId>92834268195547615</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>2</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>DecreaseOverride</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>109139247595809830</BlockEntityId>
+                      <GroupName>TIE/ln Thrusters Forward</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>3</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>IncreaseOverride</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>109139247595809830</BlockEntityId>
+                      <GroupName>TIE/ln Thrusters Forward</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>4</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>Recharge</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>109139247595809830</BlockEntityId>
+                      <GroupName>TIE/ln Batteries</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>5</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>SwitchLock</Action>
+                      <BlockEntityId>110774279514593126</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>6</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>SwitchLock</Action>
+                      <BlockEntityId>122227060750832094</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>8</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>EnableBroadCast</Action>
+                      <BlockEntityId>76952492173019871</BlockEntityId>
+                    </Data>
+                  </Slot>
+                </Slots>
+                <SlotsGamepad>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>ActionFire</Action>
+                      <BlockEntityId>92834268195547615</BlockEntityId>
+                    </Data>
+                  </Slot>
+                </SlotsGamepad>
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <IsMainCockpit>true</IsMainCockpit>
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </BuildToolbar>
+              <OnLockedToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </OnLockedToolbar>
+              <PilotRelativeWorld>
+                <Position x="-0.098450087010860443" y="-0.22517336905002594" z="-1.9030930995941162" />
+                <Forward x="0.120527729" y="-0.443574965" z="0.888096035" />
+                <Up x="-0.0247460362" y="0.892997265" z="0.449381441" />
+                <Orientation>
+                  <X>-0.0259673856</X>
+                  <Y>0.971274257</Y>
+                  <Z>0.229841441</Z>
+                  <W>-0.0559012853</W>
+                </Orientation>
+              </PilotRelativeWorld>
+              <PilotGunDefinition xsi:nil="true" />
+              <IsInFirstPersonView>true</IsInFirstPersonView>
+              <OxygenLevel>0</OxygenLevel>
+              <PilotJetpackEnabled xsi:nil="true" />
+              <TargetData>
+                <TargetId>0</TargetId>
+                <IsTargetLocked>false</IsTargetLocked>
+                <LockingProgress>0</LockingProgress>
+              </TargetData>
+              <SitAnimation>859694</SitAnimation>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>GFA_SG_TIEFighter_Gyro</SubtypeName>
+              <EntityId>102031986595246285</EntityId>
+              <Min x="-1" y="1" z="2" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>GFA_SG_TIEFighter_Gyro</SubtypeName>
+              <EntityId>134632035336175454</EntityId>
+              <Min x="-1" y="-1" z="2" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
+              <SubtypeName>GFA_SG_TIEFighter_Antenna</SubtypeName>
+              <EntityId>76952492173019871</EntityId>
+              <Min x="0" y="0" z="2" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Antenna</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <BroadcastRadius>9999.997</BroadcastRadius>
+              <ShowShipName>false</ShowShipName>
+              <EnableBroadcasting>true</EnableBroadcasting>
+              <AttachedPB>0</AttachedPB>
+              <IgnoreAllied>false</IgnoreAllied>
+              <IgnoreOther>true</IgnoreOther>
+              <HudText />
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
+              <SubtypeName>GFA_SG_TIEFighter_Hatch</SubtypeName>
+              <EntityId>110774279514593126</EntityId>
+              <Min x="-1" y="2" z="-1" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <DeformationRatio>0.5</DeformationRatio>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.576</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame10</TimerType>
+                      <FramesFromLastTrigger>20</FramesFromLastTrigger>
+                      <TimerTickInFrames>80</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <MasterToSlaveTransform xsi:nil="true" />
+              <MasterToSlaveGrid xsi:nil="true" />
+              <IsMaster>true</IsMaster>
+              <TradingEnabled>false</TradingEnabled>
+              <AutoUnlockTime>0</AutoUnlockTime>
+              <TimeOfConnection>0</TimeOfConnection>
+              <IsParkingEnabled>true</IsParkingEnabled>
+              <IsPowerTransferOverrideEnabled>false</IsPowerTransferOverrideEnabled>
+              <IsApproaching>false</IsApproaching>
+              <IsConnecting>false</IsConnecting>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
+              <SubtypeName>GFA_SG_TIEFighter_Port</SubtypeName>
+              <EntityId>122227060750832094</EntityId>
+              <Min x="-1" y="-2" z="-1" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <DeformationRatio>0.5</DeformationRatio>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.576</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame10</TimerType>
+                      <FramesFromLastTrigger>20</FramesFromLastTrigger>
+                      <TimerTickInFrames>80</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <MasterToSlaveTransform xsi:nil="true" />
+              <MasterToSlaveGrid xsi:nil="true" />
+              <IsMaster>true</IsMaster>
+              <TradingEnabled>false</TradingEnabled>
+              <AutoUnlockTime>0</AutoUnlockTime>
+              <TimeOfConnection>0</TimeOfConnection>
+              <IsParkingEnabled>true</IsParkingEnabled>
+              <IsPowerTransferOverrideEnabled>false</IsPowerTransferOverrideEnabled>
+              <IsApproaching>false</IsApproaching>
+              <IsConnecting>false</IsConnecting>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorSorter">
+              <SubtypeName>GFA_SG_TIEFighter_Lasers_RivalAI_Ace</SubtypeName>
+              <EntityId>92834268195547615</EntityId>
+              <Min x="-1" y="-2" z="-2" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyModStorageComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_ModStorageComponent">
+                      <Storage>
+                        <dictionary>
+                          <item>
+                            <Key>75bbb4f5-4fb9-4230-beef-bb79c9811501</Key>
+                            <Value>+nzRAQoJCAAQAB0AAIBAEsMBCAASOi0AAHpEMjMIARAAGAAgACgAMABIAFgAeACAAQCQAQCgAQCwAQDAAQDQAQDYAQHoAQDwAQD4AQGQAgAaRBIJDQAAAAAQACBMGAAgl4CAgICAgIACMAA4AEAASABSIxobCQAAAAAAAAAAIQAAAAAAAAAAOQAAAAAAAAAAIAAoADAAIisIABAAIAAqBiCG/P//BzIbCQAAAAAAAAAAIQAAAAAAAAAAOQAAAAAAAAAAKhAIACABKAAwADgAQABIAFAACCI=</Value>
+                          </item>
+                        </dictionary>
+                      </Storage>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <IsWhiteList>false</IsWhiteList>
+              <DefinitionIds />
+              <DefinitionTypes />
+              <DrainAll>false</DrainAll>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorBack</SubtypeName>
+              <EntityId>109857421901827298</EntityId>
+              <Min x="2" y="0" z="-1" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorBack</SubtypeName>
+              <EntityId>141863678097644982</EntityId>
+              <Min x="-2" y="0" z="-1" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorSide</SubtypeName>
+              <EntityId>100607306504317318</EntityId>
+              <Min x="-3" y="-1" z="-1" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0.99444443" y="0.04" z="0.29" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorSide</SubtypeName>
+              <EntityId>92958911150867687</EntityId>
+              <Min x="3" y="-1" z="-1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.99444443" y="0.04" z="0.29" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>GFA_SG_TIEFighter_Battery</SubtypeName>
+              <EntityId>94523905823601388</EntityId>
+              <Min x="4" y="-1" z="-1" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>1</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>GFA_SG_TIEFighter_Battery</SubtypeName>
+              <EntityId>141564261781805610</EntityId>
+              <Min x="-4" y="-1" z="-1" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>1</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
+              <EntityId>129461238381582023</EntityId>
+              <Min x="-2" y="1" z="-1" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
+              <EntityId>143949647056471462</EntityId>
+              <Min x="2" y="1" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
+              <EntityId>73503019388369427</EntityId>
+              <Min x="2" y="-1" z="-1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_RepulsorVertical</SubtypeName>
+              <EntityId>103078148689853530</EntityId>
+              <Min x="-2" y="-1" z="-1" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>4</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_Thruster</SubtypeName>
+              <EntityId>90305458586614989</EntityId>
+              <Min x="-2" y="0" z="2" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>TIE/ln P-s4 Ion Engine 2</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>4</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>GFA_SG_TIEFighter_Thruster</SubtypeName>
+              <EntityId>77217022138576934</EntityId>
+              <Min x="1" y="0" z="2" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>TIE/ln P-s4 Ion Engine</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
+              <SubtypeName>GFA_SG_TIEFighter_Viewport</SubtypeName>
+              <EntityId>126846670634545178</EntityId>
+              <Min x="-1" y="-1" z="-2" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyAutopilotComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_AutopilotComponent">
+                      <AutoPilotEnabled>false</AutoPilotEnabled>
+                      <FlightMode>0</FlightMode>
+                      <CurrentWaypointIndex>-1</CurrentWaypointIndex>
+                      <Waypoints />
+                      <DockingModeEnabled>false</DockingModeEnabled>
+                      <CollisionAvoidance>true</CollisionAvoidance>
+                      <Direction>0</Direction>
+                      <WaitForFreeWay>false</WaitForFreeWay>
+                      <WaypointThresholdDistance>0</WaypointThresholdDistance>
+                      <Coords />
+                      <Names />
+                      <LookAtPosition xsi:nil="true" />
+                      <FacingDirection>Forward</FacingDirection>
+                      <AlignToGravity>true</AlignToGravity>
+                      <MinHeightAboveTerrain>25</MinHeightAboveTerrain>
+                      <IsWorkAreaReturningToStart>false</IsWorkAreaReturningToStart>
+                      <WorkAreaStartForward>
+                        <X>0</X>
+                        <Y>0</Y>
+                        <Z>0</Z>
+                      </WorkAreaStartForward>
+                      <PitchAngle>0</PitchAngle>
+                      <RollAngle>0</RollAngle>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </BuildToolbar>
+              <OnLockedToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </OnLockedToolbar>
+              <IsTargetLockingEnabled>false</IsTargetLockingEnabled>
+              <PreviousControlledEntityId xsi:nil="true" />
+              <AutoPilotEnabled>false</AutoPilotEnabled>
+              <FlightMode>0</FlightMode>
+              <BindedCamera>0</BindedCamera>
+              <CurrentWaypointIndex>-1</CurrentWaypointIndex>
+              <Waypoints />
+              <Direction>0</Direction>
+              <DockingModeEnabled>false</DockingModeEnabled>
+              <CollisionAvoidance>false</CollisionAvoidance>
+              <Coords />
+              <Names />
+              <WaypointThresholdDistance>0</WaypointThresholdDistance>
+              <IsMainRemoteControl>false</IsMainRemoteControl>
+              <WaitForFreeWay>false</WaitForFreeWay>
+              <IsUpdatedSave>true</IsUpdatedSave>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SolarPanel">
+              <SubtypeName>GFA_SG_TIEFighter_Wing</SubtypeName>
+              <EntityId>102762748275537296</EntityId>
+              <Min x="-6" y="-8" z="-6" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SolarPanel">
+              <SubtypeName>GFA_SG_TIEFighter_Wing</SubtypeName>
+              <EntityId>80768010837385367</EntityId>
+              <Min x="5" y="-8" z="-6" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0.572222233" y="-0.72" z="0.3" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <Owner>144115188075855895</Owner>
+              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <ConveyorLines>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="1" z="0" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="0" y="2" z="0" />
+              <EndDirection>Down</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="-1" z="0" />
+              <StartDirection>Down</StartDirection>
+              <EndPosition x="0" y="-2" z="0" />
+              <EndDirection>Up</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+          </ConveyorLines>
+          <BlockGroups>
+            <MyObjectBuilder_BlockGroup>
+              <Name>TIE/ln Thrusters Forward</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>0</Y>
+                  <Z>2</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>0</Y>
+                  <Z>2</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+            <MyObjectBuilder_BlockGroup>
+              <Name>TIE/ln Batteries</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>4</X>
+                  <Y>0</Y>
+                  <Z>0</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-4</X>
+                  <Y>0</Y>
+                  <Z>0</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+          </BlockGroups>
+          <DisplayName>TIE/ln Starfighter</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+      </CubeGrids>
+      <EnvironmentType>None</EnvironmentType>
+      <WorkshopId>0</WorkshopId>
+      <OwnerSteamId>76561198022171391</OwnerSteamId>
+      <Points>0</Points>
+    </Prefab>
+  </Prefabs>
+</Definitions>

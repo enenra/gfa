@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_OffensiveEscort_AutoPilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:false]
+        [FlyLevelWithGravity:true]
+
+        [MinimumPlanetAltitude:75]
+        [IdealPlanetAltitude:150]
+
+        [WaypointTolerance:10]
+
+        [UseVelocityCollisionEvasion:true]
+
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_DefensiveEscort_AutoPilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:false]
+        [FlyLevelWithGravity:true]
+
+        [MinimumPlanetAltitude:75]
+        [IdealPlanetAltitude:150]
+
+        [WaypointTolerance:10]
+
+        [UseVelocityCollisionEvasion:true]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

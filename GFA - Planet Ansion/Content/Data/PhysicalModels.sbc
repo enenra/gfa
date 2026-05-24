@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Steppe Biomes -->
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_1_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_1_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_1_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_2_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_2_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeRock_2_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeRock_2_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>PhysicalModelDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeHerb_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeHerb_1_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>PhysicalModelDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_SteppeHerb_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_SteppeHerb_1_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+  </Definition>
+
+
+  <!-- Desert Biomes -->
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_1_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_1_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_1_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_2_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_2_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_2_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_2_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_3_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_3_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_3_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_DesertRock_3_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_DesertRock_3_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RedDesertRock_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RedDesertRock_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RedDesertRock_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RedDesertRock_1_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RedDesertRock_1_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RedDesertRock_1_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+
+  <!-- Volcanic Biomes -->
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_1_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_1_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_1_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_2_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_2_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_2_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_2_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_2_1_Ash</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_2_1_Ash.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_2_2_Ash</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_2_2_Ash.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_2_1_Moss</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_2_1_Moss.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_2_2_Moss</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_2_2_Moss.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_3_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_3_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_3_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicRock_3_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicRock_3_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_VolcanicSpout_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_VolcanicSpout_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+
+  <!-- Coastal Beach -->
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_1_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_1_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_2_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_2_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_3_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_BeachBush_3_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_BeachBush_3_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+
+  <!-- Wetlands -->
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500000</Resilence>
+    <StopForceMultiplier>1.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_3.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>50000</Resilence>
+    <StopForceMultiplier>0.5</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_4</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_4.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>50000</Resilence>
+    <StopForceMultiplier>0.5</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_5</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_5.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5000</Resilence>
+    <StopForceMultiplier>0.25</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsOak_6</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsOak_6.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsFern_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsFern_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsFern_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsFern_2.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_WetlandsRoots</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_WetlandsRoots.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>500</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+
+
+  <!-- River -->
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_1_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_1_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_1_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_1_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_1_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_2_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_2_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_2_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_2_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_2_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_3_1.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_3_2</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_3_2.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_TreeDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_RiverRock_3_3</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_RiverRock_3_3.mwm</Model>
+    <PhysicalMaterial>Rock</PhysicalMaterial>
+    <Resilence>50000000</Resilence>
+    <StopForceMultiplier>5.0</StopForceMultiplier>
+  </Definition>
+
+
+  <!-- Ocean -->
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_Seaweed_1_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_Seaweed_1_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_Seaweed_2_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_Seaweed_2_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+  <Definition xsi:type="VR.PhysicalModelDefinition">
+    <Id>
+      <TypeId>TreeDefinition</TypeId>
+      <SubtypeId>GFA_EnvItem_Seaweed_3_1</SubtypeId>
+    </Id>
+    <Model>Models\EnvironmentItems\GFA_EnvItem_Seaweed_3_1.mwm</Model>
+    <PhysicalMaterial>Wood</PhysicalMaterial>
+    <Resilence>5</Resilence>
+    <StopForceMultiplier>0.05</StopForceMultiplier>
+  </Definition>
+
+</Definitions>

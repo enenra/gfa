@@ -107,7 +107,7 @@ namespace Scripts
                 Guidance = None, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 MaxLifeTime = 900, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..). time begins at 0 and time must EXCEED this value to trigger "time > maxValue". Please have a value for this, It stops Bad things.
                 DesiredSpeed = 500, // voxel phasing if you go above 5100
-                MaxTrajectory = 1000f, // Max Distance the projectile or beam can Travel.
+                MaxTrajectory = 1300f, // Max Distance the projectile or beam can Travel.
                 TotalAcceleration = 1234.5, // 0 means no limit, something to do due with a thing called delta and something called v.
             },
             AmmoGraphics = new GraphicDef
@@ -137,13 +137,23 @@ namespace Scripts
                     Hit = new ParticleDef
                     {
                         Name = "GFA_Particle_LaserCannon_Impact",
-                        ApplyToShield = true,
+                        ApplyToShield = false,
                         Offset = Vector(x: 0, y: 0, z: 0),
                         DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
                         Extras = new ParticleOptionDef
                         {
                             Scale = 2,
                             HitPlayChance = 1f,
+                        },
+                    },
+                    ShieldHit = new ParticleDef
+                    {
+                        Name = "GFA_Particle_Shield_Impact",
+                        DisableCameraCulling = false, // If not true will not cull when not in view of camera, be careful with this and only use if you know you need it
+                        Extras = new ParticleOptionDef
+                        {
+                            Scale = 10,
+                            HitPlayChance = 1f, // 0-1% chance the particle is shown
                         },
                     },
                 },
@@ -184,4 +194,3 @@ namespace Scripts
         };
     }
 }
-

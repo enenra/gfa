@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+      FuelRefinery
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_TriggerGroup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_FuelRefinery_Trigger_Setup]
+
+        [Triggers:GFA_FuelRefinery_Trigger_Spawn_Tender]
+        [Triggers:GFA_Common_LocalRole_Responses_Trigger_SendTarget]
+
+        [Triggers:GFA_FuelRefinery_Trigger_Spawn_Courier]
+
+        [Triggers:GFA_FuelRefinery_Trigger_InitCombat]
+        [Triggers:GFA_FuelRefinery_Trigger_InitRole]
+      </Description>
+    </EntityComponent>
+
+    <!-- Setup -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Trigger_Setup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_FuelRefinery_Action_Setup]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Action_Setup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetBooleansTrue:GFA_Role_FuelRefinery]
+
+        [SetCounters:GFA_Resources_Counter]
+        [SetCountersValues:25]
+
+        [SetCustomCountersVariables:true]
+        [CustomCountersVariables:GFA_Resources_Production_Amount,2]
+        [CustomCountersVariables:GFA_Resources_Upkeep_Amount,1]
+        [CustomCountersVariables:GFA_Resources_Threshold_Low,20]
+        [CustomCountersVariables:GFA_Resources_Threshold_Full,50]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Resources Low-->
+    <!-- Spawn Tender -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Trigger_Spawn_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_1]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_2]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_3]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_4]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_5]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_FuelRefinery_Action_Spawn_Tender]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Action_Spawn_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:FuelRefinery - Spawn - Tender]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_RequestTender]
+
+        [DisableTriggers:true]
+        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Common_LocalRole_Responses_Trigger_SendTarget]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_FuelRefinery_Spawn_Tender]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Spawn_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:GFA_Tender_Waypoint_StartingPoint]
+
+        [SpawnGroups:{GFA_FuelRefinery_SpawnGroup_Tender}]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Resources NotLow -->
+
+
+    <!-- Resources Full-->
+    <!-- Spawn Courier -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Trigger_Spawn_Courier</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_1]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_2]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_3]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_4]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_5]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_FuelRefinery_Action_Spawn_Courier]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Action_Spawn_Courier</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:FuelRefinery - Spawn - Courier]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_RequestCourier]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Common_LocalRole_Responses_Trigger_SendTarget]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_FuelRefinery_Spawn_Courier]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Spawn_Courier</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:GFA_Courier_Waypoint_StartingPoint]
+
+        [SpawnGroups:{GFA_FuelRefinery_SpawnGroup_Courier}]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- InitCombat -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Trigger_InitCombat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_InitCombat]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_FuelRefinery_Action_InitCombat]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Action_InitCombat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:FuelRefinery - InitCombat]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Static_InitCombat]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- InitRole -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Trigger_InitRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_InitRole]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_FuelRefinery_Action_InitRole]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_FuelRefinery_Action_InitRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:FuelRefinery - InitRole]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Static_InitRole]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

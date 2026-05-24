@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Steppe Biomes -->
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_SteppeBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_Steppe_Stone</Modifier>
+    <Storage Storage="stone_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_mediumstone" Probability="0.75"/>
+    <Storage Storage="stone_largestone" Probability="0.05"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_Steppe_OreBursts</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_Steppe_BasicResources</Modifier>
+    <Storage Storage="GFA_VoxelMap_OreBurst" Probability="0.5"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_SteppeHilltops_OreBursts</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_SteppeHilltops_BasicResources</Modifier>
+    <Storage Storage="GFA_VoxelMap_OreBurst" Probability="0.5"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_DryPlainsRocks</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_DryPlains_BasicResources</Modifier>
+    <Storage Storage="stone_smallstone" Probability="1.0"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_RockyHillsRocks</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_RockyHills_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+    <Storage Storage="GFA_VoxelMap_GroundCrack" Probability="0.75"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_CanyonFoothillsRocks</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_RockyHills_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+  </Definition>
+
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_VolcanicMossBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_VolcanicMoss_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.5"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.25"/>
+  </Definition>
+
+
+  <!-- Forested Mountains -->
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_ForestedMountainsBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_ForestedMountains_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+  </Definition>
+
+
+  <!-- Seaweed Plains -->
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_SeaweedPlainsBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_SeaweedPlains_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+  </Definition>
+
+
+  <!-- Wetlands -->
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_WetlandsBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_Wetlands_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.25"/>
+    <Storage Storage="stone_snowtop_largestone" Probability="0.05"/>
+  </Definition>
+
+
+  <!-- River -->
+  <Definition xsi:type="VR.EI.VoxelMapCollection">
+    <Id>
+      <TypeId>MyObjectBuilder_VoxelMapCollectionDefinition</TypeId>
+      <SubtypeId>GFA_VoxelCollections_RiverBoulders</SubtypeId>
+    </Id>
+    <Modifier>GFA_VoxelModifier_SeaweedPlains_BasicResources</Modifier>
+    <Storage Storage="stone_snowtop_smallstone" Probability="1.0"/>
+    <Storage Storage="stone_snowtop_mediumstone" Probability="0.5"/>
+  </Definition>
+
+</Definitions>

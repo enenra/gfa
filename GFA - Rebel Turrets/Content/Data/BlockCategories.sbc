@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9_Slanted</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid_Mounted</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category_Turrets}</DisplayName>
+      <Name>Section15_GFA_Category_Turrets</Name>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9_Slanted</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid_Mounted</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>Section1_Position1_LargeBlocks</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9_Slanted</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid_Mounted</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
+      <Name>Section1_Position1_SmallBlocks</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_SG_Turret_H9</string>
+      </ItemIds>
+    </Category>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Nonarmor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Nonarmor</DisplayName>
+      <Name>Section1_Position2_Nonarmor</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9_Slanted</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid_Mounted</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>Weapons</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Category_Weapons</DisplayName>
+      <Name>Section1_Position3_Weapons</Name>
+      <ItemIds>
+        <string>ConveyorSorter/GFA_LG_Turret_H9Dual</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9</string>
+        <string>ConveyorSorter/GFA_LG_Turret_H9_Slanted</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid</string>
+        <string>ConveyorSorter/GFA_LG_TurretDroid_Mounted</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>

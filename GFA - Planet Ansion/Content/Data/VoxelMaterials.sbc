@@ -1,0 +1,970 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+
+    <!-- VolcanicAsh -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>VolcanicAsh</SubtypeId>
+      </Id>
+      <MaterialTypeName>Snow</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Grid_Large</LandingEffect>
+      <Friction>0.75</Friction>
+      <DamagedMaterial>VolcanicAsh</DamagedMaterial>
+      <BareVariant>VolcanicAsh</BareVariant>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>0.5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\VolcanicAsh_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\VolcanicAsh_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\VolcanicAsh_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\VolcanicAsh_add.dds</ExtXZnY>
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>1</ScaleMultiplier>
+      <InitialDistance>50</InitialDistance>
+      <DistanceMultiplier>1</DistanceMultiplier>
+      <TilingScale>40</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\VolcanicAsh_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\VolcanicAsh_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\VolcanicAsh_add.dds</ExtXZnYFar1>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>100</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\VolcanicAsh_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\VolcanicAsh_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\VolcanicAsh_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>400</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.43</X>
+        <Y>0.42</Y>
+        <Z>0.42</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Voxels\Ansion\VolcanicAsh_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Voxels\Ansion\VolcanicAsh_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+      <FoliageDensity>1.5</FoliageDensity>
+      <FoliageScale>
+        <X>0.6</X>
+        <Y>0.6</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.6</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+    </VoxelMaterial>
+
+    <!-- VolcanicRock -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>VolcanicRock</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+      <Friction>1.00</Friction>
+      <DamagedMaterial>VolcanicRock</DamagedMaterial>
+      <BareVariant>VolcanicRock</BareVariant>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>2</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\VolcanicRock_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\VolcanicRock_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\VolcanicRock_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\VolcanicRock_add.dds</ExtXZnY>
+      <InitialScale>4</InitialScale>
+      <ScaleMultiplier>1</ScaleMultiplier>
+      <InitialDistance>50</InitialDistance>
+      <DistanceMultiplier>1</DistanceMultiplier>
+      <TilingScale>40</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\VolcanicRock_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\VolcanicRock_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\VolcanicRock_add.dds</ExtXZnYFar1>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>100</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\VolcanicRock_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\VolcanicRock_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\VolcanicRock_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>400</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.10</X>
+        <Y>0.10</Y>
+        <Z>0.09</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+    <!-- Moss -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Moss</SubtypeId>
+      </Id>
+      <MaterialTypeName>Grass</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+      <Friction>0.75</Friction>
+      <DamagedMaterial>Moss</DamagedMaterial>
+      <BareVariant>Moss</BareVariant>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\Moss_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\Moss_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\Moss_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\Moss_add.dds</ExtXZnY>
+      <InitialScale>1</InitialScale>
+      <ScaleMultiplier>1</ScaleMultiplier>
+      <InitialDistance>80</InitialDistance>
+      <DistanceMultiplier>1</DistanceMultiplier>
+      <TilingScale>20</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\Moss_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\Moss_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\Moss_add.dds</ExtXZnYFar1>
+      <Far1Distance>80</Far1Distance>
+      <Far1Scale>100</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\Moss_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\Moss_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\Moss_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>400</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.23</X>
+        <Y>0.22</Y>
+        <Z>0.02</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Voxels\Ansion\Moss_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Voxels\Ansion\Moss_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+      <FoliageDensity>4.0</FoliageDensity>
+      <FoliageScale>
+        <X>1.0</X>
+        <Y>1.0</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.6</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+    </VoxelMaterial>
+
+    <!-- Lava -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Lava</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+      <Friction>2.00</Friction>
+      <DamagedMaterial>Lava</DamagedMaterial>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\Lava_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\Lava_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\Lava_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\Lava_add.dds</ExtXZnY>
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>1</ScaleMultiplier>
+      <InitialDistance>50</InitialDistance>
+      <DistanceMultiplier>1</DistanceMultiplier>
+      <TilingScale>20</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\Lava_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\Lava_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\Lava_add.dds</ExtXZnYFar1>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>100</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\Lava_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\Lava_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\Lava_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>400</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.88</X>
+        <Y>0.34</Y>
+        <Z>0.00</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+    <!-- MossyRock -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>MossyRock</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+      <Friction>0.85</Friction>
+      <DamagedMaterial>MossyRock</DamagedMaterial>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>2</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\MossyRock_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\MossyRock_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\MossyRock_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\MossyRock_add.dds</ExtXZnY>
+      <InitialScale>4</InitialScale>
+      <ScaleMultiplier>1</ScaleMultiplier>
+      <InitialDistance>60</InitialDistance>
+      <DistanceMultiplier>1</DistanceMultiplier>
+      <TilingScale>40</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\MossyRock_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\MossyRock_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\MossyRock_add.dds</ExtXZnYFar1>
+      <Far1Distance>60</Far1Distance>
+      <Far1Scale>100</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\MossyRock_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\MossyRock_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\MossyRock_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>400</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.89</X>
+        <Y>0.81</Y>
+        <Z>0.69</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+    <!-- SteppeGrass -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>SteppeGrass</SubtypeId>
+      </Id>
+      <MaterialTypeName>Grass</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+      <Friction>1.00</Friction>
+      <DamagedMaterial>SteppeGrass</DamagedMaterial>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\SteppeGrass_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\SteppeGrass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\SteppeGrass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\SteppeGrass_add.dds</ExtXZnY>
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>1</ScaleMultiplier>
+      <InitialDistance>80</InitialDistance>
+      <DistanceMultiplier>1</DistanceMultiplier>
+      <TilingScale>20</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\SteppeGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\SteppeGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\SteppeGrass_Far1_add.dds</ExtXZnYFar1>
+      <Far1Distance>80</Far1Distance>
+      <Far1Scale>100</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\SteppeGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\SteppeGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\SteppeGrass_Far2_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>400</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.43</X>
+        <Y>0.43</Y>
+        <Z>0.22</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Environment\Grass\SteppeGrass_1_cm.dds</Color>
+        <Color>Textures\Environment\Grass\SteppeGrass_2_cm.dds</Color>
+        <Color>Textures\Environment\Grass\SteppeGrass_3_cm.dds</Color>
+        <Color>Textures\Environment\Grass\SteppeGrass_4_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Environment\Grass\SteppeGrass_1_ng.dds</Normal>
+        <Normal>Textures\Environment\Grass\SteppeGrass_2_ng.dds</Normal>
+        <Normal>Textures\Environment\Grass\SteppeGrass_3_ng.dds</Normal>
+        <Normal>Textures\Environment\Grass\SteppeGrass_4_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>5</FoliageDensity>
+      <FoliageScale>
+        <X>0.65</X>
+        <Y>0.65</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+    </VoxelMaterial>
+
+    <!-- Gravel -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Gravel</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+      <Friction>1.0</Friction>
+      <DamagedMaterial>Gravel</DamagedMaterial>
+
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\Gravel_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\Gravel_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\Gravel_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Ansion\Gravel_add.dds</ExtXZnY>
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>2</ScaleMultiplier>
+      <InitialDistance>80</InitialDistance>
+      <DistanceMultiplier>2</DistanceMultiplier>
+      <TilingScale>80</TilingScale>
+      <ExtDetailScale>0.005</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\Gravel_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\Gravel_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Ansion\Gravel_add.dds</ExtXZnYFar1>
+      <Far1Distance>80</Far1Distance>
+      <Far1Scale>25</Far1Scale>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\Gravel_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\Gravel_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Ansion\Gravel_add.dds</ExtXZnYFar2>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>100</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.74</X>
+        <Y>0.67</Y>
+        <Z>0.42</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Voxels\Ansion\Gravel_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Voxels\Ansion\Gravel_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+      <FoliageDensity>2.5</FoliageDensity>
+      <FoliageScale>
+        <X>1.6</X>
+        <Y>1.6</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.6</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- DesertRocks -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>DesertRocksRed</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\RocksDesertRed_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\RocksDesertRed_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\RocksDesertRed_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\RocksDesertRed_Far1_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <ExtDetailScale>0.005</ExtDetailScale>
+        <InitialDistance>3</InitialDistance>
+        <InitialScale>2.5</InitialScale>
+        <ScaleMultiplier>4</ScaleMultiplier>
+        <Far1Distance>50</Far1Distance>
+        <Far1Scale>200</Far1Scale>
+        <Far2Distance>200</Far2Distance>
+        <Far2Scale>500</Far2Scale>
+        <Far3Distance>10000</Far3Distance>
+      </SimpleTilingSetup>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <InitialDistance>3</InitialDistance>
+      <InitialScale>2.5</InitialScale>
+      <ScaleMultiplier>12</ScaleMultiplier>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Distance>200</Far2Distance>
+      <Far2Scale>800</Far2Scale>
+      <TilingScale>64</TilingScale>
+      <Far3Distance>10000</Far3Distance>
+      <Far3Color>
+        <X>0.52</X>
+        <Y>0.32</Y>
+        <Z>0.29</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- DesertRocks -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>DesertRocksOrange</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\RocksDesertOrange_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\RocksDesertOrange_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\RocksDesertOrange_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\RocksDesertOrange_Far1_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <ExtDetailScale>0.005</ExtDetailScale>
+        <InitialDistance>3</InitialDistance>
+        <InitialScale>2.5</InitialScale>
+        <ScaleMultiplier>4</ScaleMultiplier>
+        <Far1Distance>50</Far1Distance>
+        <Far1Scale>200</Far1Scale>
+        <Far2Distance>200</Far2Distance>
+        <Far2Scale>500</Far2Scale>
+        <Far3Distance>10000</Far3Distance>
+      </SimpleTilingSetup>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <InitialDistance>3</InitialDistance>
+      <InitialScale>2.5</InitialScale>
+      <ScaleMultiplier>12</ScaleMultiplier>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Distance>200</Far2Distance>
+      <Far2Scale>800</Far2Scale>
+      <TilingScale>64</TilingScale>
+      <Far3Distance>10000</Far3Distance>
+      <Far3Color>
+        <X>0.67</X>
+        <Y>0.38</Y>
+        <Z>0.28</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- DesertRocks -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>DesertRocksBrown</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\Ansion\DesertRocksBrown_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\DesertRocksBrown_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\DesertRocksBrown_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\DesertRocksBrown_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\DesertRocksBrown_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\DesertRocksBrown_Far1_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\DesertRocksBrown_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <ExtDetailScale>0.005</ExtDetailScale>
+        <InitialDistance>3</InitialDistance>
+        <InitialScale>2.5</InitialScale>
+        <ScaleMultiplier>4</ScaleMultiplier>
+        <Far1Distance>50</Far1Distance>
+        <Far1Scale>200</Far1Scale>
+        <Far2Distance>200</Far2Distance>
+        <Far2Scale>500</Far2Scale>
+        <Far3Distance>10000</Far3Distance>
+      </SimpleTilingSetup>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <InitialDistance>3</InitialDistance>
+      <InitialScale>2.5</InitialScale>
+      <ScaleMultiplier>12</ScaleMultiplier>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Distance>200</Far2Distance>
+      <Far2Scale>800</Far2Scale>
+      <TilingScale>64</TilingScale>
+      <Far3Distance>10000</Far3Distance>
+      <Far3Color>
+        <X>0.21</X>
+        <Y>0.16</Y>
+        <Z>0.11</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>BeachPurpleGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Sand</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\AlienSand_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\AlienSand_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AlienSand_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\AlienSand_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\AlienSand_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\AlienSand_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\AlienSand_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Far1Distance>22</Far1Distance>
+      <Far2Distance>500</Far2Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Scale>3000</Far2Scale>
+      <Far3Distance>2000</Far3Distance>
+      <Far3Color>
+        <X>0.44</X>
+        <Y>0.38</Y>
+        <Z>0.25</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Environment\Grass\BeachPurpleGrass_1_cm.dds</Color>
+        <Color>Textures\Environment\Grass\BeachPurpleGrass_2_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes01_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>2</FoliageDensity>
+      <FoliageScale>
+        <X>0.6</X>
+        <Y>0.6</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>BeachGreenGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Sand</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\AlienSand_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\AlienSand_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AlienSand_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\AlienSand_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\AlienSand_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\AlienSand_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\AlienSand_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Far1Distance>22</Far1Distance>
+      <Far2Distance>500</Far2Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Scale>3000</Far2Scale>
+      <Far3Distance>2000</Far3Distance>
+      <Far3Color>
+        <X>0.44</X>
+        <Y>0.38</Y>
+        <Z>0.25</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Environment\Grass\BeachGreenGrass_1_cm.dds</Color>
+        <Color>Textures\Environment\Grass\BeachGreenGrass_2_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\AlienGreenGrass_Tubes01_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>2</FoliageDensity>
+      <FoliageScale>
+        <X>1.0</X>
+        <Y>1.0</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>BeachWetSand</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Sand</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\AlienSand_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Ansion\BeachWetSand_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AlienSand_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Ansion\BeachWetSand_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\AlienSand_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Ansion\BeachWetSand_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\AlienSand_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Far1Distance>22</Far1Distance>
+      <Far2Distance>500</Far2Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Scale>3000</Far2Scale>
+      <Far3Distance>2500</Far3Distance>
+      <Far3Color>
+        <X>0.07</X>
+        <Y>0.26</Y>
+        <Z>0.29</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <Friction>0.85</Friction>
+      <Restitution>0.3</Restitution>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Seafloor</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Soil</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\AlienSoil_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\AlienSoil_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Ansion\Seafloor_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\AlienSoil_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Ansion\Seafloor_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\AlienSoil_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Ansion\Seafloor_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Far1Distance>100</Far1Distance>
+      <Far2Distance>500</Far2Distance>
+      <Far1Scale>500</Far1Scale>
+      <Far2Scale>2000</Far2Scale>
+      <Far3Distance>2500</Far3Distance>
+      <Far3Color>
+        <X>0.07</X>
+        <Y>0.26</Y>
+        <Z>0.29</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\Grass_01_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_02_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\Grass_01_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_02_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>2</FoliageDensity>
+      <FoliageScale>
+        <X>2.0</X>
+        <Y>2.0</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>DesertRocksUnderwater</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\RocksDesert_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <ExtDetailScale>0.005</ExtDetailScale>
+        <InitialDistance>3</InitialDistance>
+        <InitialScale>2.5</InitialScale>
+        <ScaleMultiplier>4</ScaleMultiplier>
+        <Far1Distance>50</Far1Distance>
+        <Far1Scale>200</Far1Scale>
+        <Far2Distance>200</Far2Distance>
+        <Far2Scale>500</Far2Scale>
+        <Far3Distance>10000</Far3Distance>
+      </SimpleTilingSetup>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <InitialDistance>3</InitialDistance>
+      <InitialScale>2.5</InitialScale>
+      <ScaleMultiplier>12</ScaleMultiplier>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Distance>200</Far2Distance>
+      <Far2Scale>800</Far2Scale>
+      <TilingScale>64</TilingScale>
+      <Far3Distance>2500</Far3Distance>
+      <Far3Color>
+        <X>0.07</X>
+        <Y>0.26</Y>
+        <Z>0.29</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>WetlandsGrass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Grass</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <DamagedMaterial>Soil</DamagedMaterial>
+      <BareVariant>Grass bare</BareVariant>
+
+      <VoxelHandPreview>Textures\Voxels\Grass_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Grass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Grass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Green_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\EarthGreenGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\EarthGreenGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\EarthGreenGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\EarthGreenGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <ExtDetailScale>0.005</ExtDetailScale>
+        <Far1Distance>30</Far1Distance>
+        <Far2Distance>400</Far2Distance>
+        <Far1Scale>200</Far1Scale>
+        <Far2Scale>1400</Far2Scale>
+        <Far3Distance>25000</Far3Distance>
+      </SimpleTilingSetup>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <DistanceMultiplier>1.1</DistanceMultiplier>
+      <Far1Distance>30</Far1Distance>
+      <Far2Distance>400</Far2Distance>
+      <Far1Scale>70</Far1Scale>
+      <Far2Scale>1000</Far2Scale>
+      <TilingScale>24</TilingScale>
+      <Far3Distance>2500</Far3Distance>
+      <Far3Color>
+        <X>0.005</X>
+        <Y>0.02</Y>
+        <Z>0</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Models\Environment\Grass\Grass_05_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_06_cm.dds</Color>
+        <Color>Textures\Models\Environment\Grass\Grass_08_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Models\Environment\Grass\Grass_05_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_06_ng.dds</Normal>
+        <Normal>Textures\Models\Environment\Grass\Grass_08_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>4</FoliageDensity>
+      <FoliageScale>
+        <X>1.25</X>
+        <Y>1.25</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+    </VoxelMaterial>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Wheatfields</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <MaterialTypeName>Grass</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <DamagedMaterial>Soil</DamagedMaterial>
+      <BareVariant>Grass bare</BareVariant>
+
+      <VoxelHandPreview>Textures\Voxels\Grass_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Grass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Grass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Green_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\EarthGreenGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\EarthGreenGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\EarthGreenGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\EarthGreenGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Environment\Grass\Wheat_1_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Environment\Grass\Wheat_1_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+
+      <FoliageDensity>4</FoliageDensity>
+      <FoliageScale>
+        <X>1.6</X>
+        <Y>1.6</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <DistanceMultiplier>1.1</DistanceMultiplier>
+      <Far1Distance>30</Far1Distance>
+      <Far2Distance>400</Far2Distance>
+      <Far1Scale>70</Far1Scale>
+      <Far2Scale>1000</Far2Scale>
+      <TilingScale>24</TilingScale>
+      <Far3Distance>2500</Far3Distance>
+      <Far3Color>
+        <X>0.005</X>
+        <Y>0.02</Y>
+        <Z>0</Z>
+        <W>1.0</W>
+      </Far3Color>
+    </VoxelMaterial>
+
+  </VoxelMaterials>
+</Definitions>

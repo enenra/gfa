@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_BridgeWindow" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_BridgeWindow.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_BridgeWindow</DisplayName>
+      <Description>Description_GFA_LG_IMP_BridgeWindow</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_End" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_End_Mirror" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Single" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Corner" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope2x1" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_BridgeWindow_Slope2x1_Mirror" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_Wall" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_InteriorWall.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_InteriorWall</DisplayName>
+      <Description>Description_InteriorWall</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall_Mirror" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall2" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall2_Mirror" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall_Half" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall_Half_Inv" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall2_Half" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_InteriorWall2_Half_Inv" />
+
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_CorridorArc" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_Hangar" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_HangarFloor.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_HangarFloor</DisplayName>
+      <Description>Description_GFA_LG_IMP_HangarFloor</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_HangarFloor" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_HangarFloor_Mirror" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_HangarPylonBottom" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_HangarPylon" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_Lights" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_StandingLamp.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_StandingLamp</DisplayName>
+      <Description>Description_GFA_LG_IMP_StandingLamp</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_InteriorLight" Subtype="GFA_LG_IMP_StandingLamp" />
+        <Block Type="MyObjectBuilder_InteriorLight" Subtype="GFA_LG_IMP_FloorLamp" />
+        <Block Type="MyObjectBuilder_InteriorLight" Subtype="GFA_LG_IMP_FakeLight" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_Crate" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_SquareCrate.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_SquareCrate</DisplayName>
+      <Description>Description_GFA_LG_IMP_SquareCrate</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SquareCrate" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SquareCrate2" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SquareCrate3" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SimpleCrate" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SimpleCrate2" />
+        <Block Type="MyObjectBuilder_CubeBlock" Subtype="GFA_LG_IMP_SimpleCrate3" />
+      </Blocks>
+    </BlockVariantGroup>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_BVG_IMP_Misc" />
+      <Icon>Textures\GUI\Icons\Cubes\GFA_LG_IMP_Battery.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>DisplayName_GFA_LG_IMP_Battery</DisplayName>
+      <Description>Description_GFA_LG_IMP_Battery</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_BatteryBlock" Subtype="GFA_LG_IMP_Battery" />
+        <Block Type="MyObjectBuilder_TerminalBlock" Subtype="GFA_LG_IMP_ControlPanel" />
+        <Block Type="MyObjectBuilder_CargoContainer" Subtype="GFA_LG_IMP_Container_3x1" />
+        <Block Type="MyObjectBuilder_OxygenTank" Subtype="GFA_LG_IMP_TankStanding" />
+        <Block Type="MyObjectBuilder_OxygenTank" Subtype="GFA_LG_IMP_TankStandingO2" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>

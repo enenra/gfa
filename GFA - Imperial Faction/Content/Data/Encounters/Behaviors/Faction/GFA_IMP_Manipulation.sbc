@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [ClearAuthorship:true]
+
+        [UseRandomNameGenerator:true]
+        [RandomGridNamePrefix:(NPC-GFA)]
+      </Description>
+    </EntityComponent>
+
+    <!-- Encounter Types -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation_Fighter</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_IMP_LootProfile_Fighter]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation_Gunship</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_IMP_LootProfile_Gunship]
+        [LootProfiles:GFA_IMP_LootProfile_Freight]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation_Freighter</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_IMP_LootProfile_Freight]
+        [LootProfiles:GFA_IMP_LootProfile_BasicContainers]
+        [LootProfiles:MES-Loot-Corpses]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation_Freighter_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_IMP_LootProfile_Freight_HighValue]
+        [LootProfiles:GFA_IMP_LootProfile_BasicContainers_HighValue]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation_DefenseInstallation</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_IMP_LootProfile_Freight]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation_Container</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_IMP_LootProfile_Container]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Manipulation_StorageBuilding</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_IMP_LootProfile_Freight_HighValue]
+        [LootProfiles:GFA_IMP_LootProfile_BasicContainers]
+        [LootProfiles:MES-Loot-Corpses]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

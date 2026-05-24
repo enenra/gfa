@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RivalAI-Datapad_GFA_MG_CampLandedBroken_Log_1</SubtypeId>
+      </Id>
+      <DisplayName>Crewmember's Log</DisplayName>
+      <Description>
+Log Entry: Day 7 of Deployment
+
+Crewmember: Tarn Viska
+Position: Systems Technician
+Vessel: Mining Guild Freighter "Orewarden"
+
+Timestamp: 0800
+Sensors picked up a faint blip this morning ship time. Too erratic for normal traffic. Moments later, a duo of pirate starfighters and a heavily armed transport appeared, attacking from the cloud cover.
+
+Timestamp: 0815
+The ambush left us scrambling. Shields failed under the assault, and the engines took critical damage mid-flight. A lucky turret shot brought down one of their fighters and forced the transport to break off, allowing us to touch down.
+
+Timestamp: 0930
+We've set up camp around the crash site. It's exposed, but it will have to do. The Orewarden is battered, but at least it's still in one piece.
+
+Timestamp: 1100
+The Chief Engineer assessed the damage. Half the circuits are fried, and the hull's breached in three places. We've converted the cargo hold into a workshop to start repairs.
+
+Timestamp: 1300
+Started patching the repulsors and stabilizers. Progress is slow, with limited tools and a crew more familiar with ore loaders than repairing starships. Morale is shaky, but we're managing.
+
+Timestamp: 2000
+Spotted movement along the horizon. Might be local wildlife or scavengers tracking us. We've doubled the night watch to be safe.
+
+Timestamp: 2230
+Grell tried to lighten the mood with a joke about the planet's terrain looking like his mother-in-law's kitchen. It drew a few chuckles. Humor feels like a lifeline in this bleak place.
+
+Timestamp: 0030
+Night watch reports no further sightings. Without sensors, we're relying entirely on visual sweeps, which isn't ideal. Tension remains high.
+
+Timestamp: 0600
+Morning's bitter chill brought another day of repairs. Bolza thinks we can get the stabilizers and repulsors operational by tomorrow. Survival's still our top priority until then.
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RivalAI-Datapad_GFA_MG_CampLandedBroken_Log_2</SubtypeId>
+      </Id>
+      <DisplayName>Crewmember's Log</DisplayName>
+      <Description>
+Log Entry: Day 15 of Deployment
+
+Crewmember: Rana Velis
+Position: Systems Operator
+Vessel: Mining Guild Freighter "Starhauler"
+
+Timestamp: 0700
+Picked up an irregular sensor reading during routine operations. It wasn't asteroids or normal traffic. Pirates emerged from hyperspace — a fighter and a bulky transport.
+
+Timestamp: 0715
+They opened fire immediately. Shields buckled under the sustained assault, and a missile strike crippled the engines. Our gunner managed a lucky hit that disabled the fighter and forced their transport to retreat.
+
+Timestamp: 0830
+We drifted to a stop over a nearby planet and managed a controlled landing. The crew began unloading tools and supplies to assess the damage. Spirits were tense but focused.
+
+Timestamp: 1000
+Chief Engineer Jorek reported heavy damage to propulsion and power systems. The main thrusters are offline, and the main conduits are fried.
+
+Timestamp: 1230
+Work on patching the engines began. Progress is slow due to limited spare parts and limited skill. The crew is doing their best, but frustration is mounting.
+
+Timestamp: 1930
+Spotted faint movement in the distance. Could be wildlife or scavengers. The night watch has been doubled until we're sure there's no immediate threat.
+
+Timestamp: 2230
+Someone cracked a joke about our "high-tech" mining guild gear being held together with tape and prayers. The laughter was short-lived but welcome.
+
+Timestamp: 0100
+The perimeter remains secure. Repairs are ongoing, but progress is slow. Sensors remain shaky, leaving us vulnerable to surprise attacks.
+
+Timestamp: 0600
+Daylight brings another round of grueling repairs. Jorek's hopeful the thrusters will be functional by tomorrow. Until then, survival and vigilance are our priorities.
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RivalAI-Datapad_GFA_MG_CampLandedBroken_Log_3</SubtypeId>
+      </Id>
+      <DisplayName>Crewmember's Log</DisplayName>
+      <Description>
+Log Entry: Day 10 of Deployment
+
+Crewmember: Thara Jarek
+Position: Mineral Extraction Specialist
+Vessel: Mining Guild Freighter "Crystalline Voyager"
+
+Timestamp: 0700
+We'd just cleared a debris field. Were on a routine collection run when the scanners blared — Rebels, pirates or some other scum started firing, and they blew a hole in the port side.
+
+Timestamp: 0745
+Engaged in evasive maneuvers, but they tagged us again. Hull integrity dangerously low. We somehow managed to shake them off but can't risk more damage; we're landing to make repairs.
+
+Timestamp: 0800
+The crew is shaken but alive. We're setting up camp near the freighter to better assess the damage; I can hear the ship's systems sputtering ominously.
+
+Timestamp: 0830
+Bennett and I are on hull repairs while the others secure supplies. He's grumbling about leaving the engine room behind but it's not like
+
+Timestamp: 0900
+The Sentry turret is powered up. We've rigged a makeshift perimeter, but we've got to remain vigilant.
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

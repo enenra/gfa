@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Fighter_Autopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:true]
+        [FlyLevelWithGravity:false]
+        [LevelWithGravityWhenIdle:false]
+        [UseVelocityCollisionEvasion:true]
+
+        [SlowDownOnWaypointApproach:false]
+        [ExtraSlowDownDistance:100]
+        [WaypointTolerance:150]
+
+        [IdealMinSpeed:55]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+        [MinimumPlanetAltitude:50]
+        [AltitudeTolerance:20]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.5]
+        [AngleAllowedForForwardThrust:180]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:3000]
+        [StrafeMaxDurationMs:6000]
+        [//StrafeSpeedCutOff:25]
+
+        [UseProjectileLeadPrediction:true]
+        [StrikeBeginPlanetAttackRunDistance:600]
+        [StrikeBreakawayDistance:100]
+        [StrikeEngageUseSafePlanetPathing:true]
+        [StrikeEngageUseCollisionEvasion:true]
+
+        [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+
+        [OffsetSpaceMinDistFromTarget:500]
+        [OffsetSpaceMaxDistFromTarget:800]
+
+        [OffsetPlanetMinDistFromTarget:800]
+        [OffsetPlanetMaxDistFromTarget:1200]
+        [OffsetPlanetMinTargetAltitude:450]
+        [OffsetPlanetMaxTargetAltitude:700]
+
+        [BarrelRollMinDurationMs:2000]
+        [BarrelRollMaxDurationMs:3000]
+        [RamMinDurationMs:6000]
+        [RamMaxDurationMs:7000]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Fighter_Autopilot_Strike</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:true]
+        [FlyLevelWithGravity:false]
+        [LevelWithGravityWhenIdle:false]
+        [UseVelocityCollisionEvasion:true]
+
+        [SlowDownOnWaypointApproach:false]
+        [ExtraSlowDownDistance:150]
+        [WaypointTolerance:50]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:50]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:150]
+        [AltitudeTolerance:300]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.5]
+        [AngleAllowedForForwardThrust:180]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:3000]
+        [StrafeMaxDurationMs:6000]
+        [//StrafeSpeedCutOff:25]
+
+        [UseProjectileLeadPrediction:true]
+        [StrikeBeginPlanetAttackRunDistance:600]
+        [StrikeBreakawayDistance:100]
+        [StrikeEngageUseSafePlanetPathing:true]
+        [StrikeEngageUseCollisionEvasion:true]
+
+        [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+
+        [OffsetSpaceMinDistFromTarget:900]
+        [OffsetSpaceMaxDistFromTarget:1000]
+
+        [OffsetPlanetMinDistFromTarget:800]
+        [OffsetPlanetMaxDistFromTarget:1200]
+        [OffsetPlanetMinTargetAltitude:450]
+        [OffsetPlanetMaxTargetAltitude:700]
+
+        [ReverseOffsetDistAltAboveHeight:true]
+        [ReverseOffsetHeight:1300]
+
+        [BarrelRollMinDurationMs:2000]
+        [BarrelRollMaxDurationMs:3000]
+        [RamMinDurationMs:6000]
+        [RamMaxDurationMs:7000]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_MG_Outpost_Camp_SpawnConditions]
+
+        [ManipulationProfiles:GFA_MG_Manipulation]
+        [ManipulationProfiles:GFA_MG_Manipulation_Freighter]
+
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Light_Chance]
+        [ManipulationProfiles:MSB_Manipulation_WearAndTear_Medium_Chance]
+
+        [ReplenishSystems:true]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Sidearm]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="[MES-MG]Landing Platform">
+          <Position>
+            <X>0.0</X>
+            <Y>-2.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_MG_Outpost_Camp_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationChance:75]
+        [PlanetaryInstallationType:Medium]
+
+        [RivalAiAnySpawn:true]
+        [FactionOwner:MG]
+
+        [ReplenishSystems:true]
+        [ReplenishProfiles:GFA_Replenishment_Imperial_Sidearm]
+
+        [UseRemoteControlCodeRestrictions:true]
+        [RemoteControlCode:GFA_MG_Outpost_Camp]
+        [RemoteControlCodeMinDistance:15000]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+	      [BehaviorName:Passive]
+
+        [TargetData:MSB_TargetProfile_ShortRange]
+
+        [DialogueBanks:GFA_MG_DialogueBank_Static_1.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Static_2.xml]
+        [DialogueBanks:GFA_MG_DialogueBank_Static_3.xml]
+
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [Triggers:GFA_MG_Outpost_Camp_Trigger_SpawnSetup]
+        [Triggers:GFA_MG_Outpost_Camp_Trigger_PlaceCrew]
+
+        [TriggerGroups:MSB_Interaction_RadioCheck_TriggerGroup]
+        [TriggerGroups:MSB_Interaction_TradeRequest_TriggerGroup_Decline]
+
+        [TriggerGroups:MSB_System_Dialogue_TriggerGroup_Static]
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+
+        [TriggerGroups:MSB_StaticCommon_TriggerGroup]
+        [TriggerGroups:MSB_System_AreaRestriction_TriggerGroup_1000]
+        [TriggerGroups:MSB_System_Despawn_TriggerGroup_DespawnPoint]
+        [//TriggerGroups:MSB_System_Communication_TriggerGroup]
+
+        [TriggerGroups:GFA_Outpost_TriggerGroup]
+        [TriggerGroups:GFA_System_Resources_TriggerGroup]
+
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnDarkSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_IsOnLightSide]
+        [Triggers:MSB_EnvironmentSystem_Trigger_ShipLanding]
+        [TriggerGroups:MSB_EnvironmentSystem_TriggerGroup_SkinReplacement]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_Outpost_Camp_Action_Rename]
+        [Actions:GFA_MG_Outpost_Camp_Action_SpawningSetup]
+        [Actions:GFA_MG_Outpost_Camp_Action_BroadcastTower]
+        [Actions:GFA_MG_Outpost_Camp_Action_StorageShed]
+        [Actions:GFA_MG_Outpost_Camp_Action_SilosOxygen]
+        [Actions:GFA_MG_Outpost_Camp_Action_SilosHydrogen]
+        [Actions:GFA_MG_Outpost_Camp_Action_DefenseTurretLight]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_Rename</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAntennaHudText:true]
+        [UseRandomNameGenerator:true]
+        [AntennaHudText:Patrol Outpost RandomNumberRandomLetter-RandomNumberRandomNumber]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_SpawningSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetCustomStrings:true]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Tender,GFA_MG_Tender_Aurore_Cargo_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Patrol,GFA_MG_Patrol_Local_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_PatrolArea,GFA_MG_PatrolArea_Local_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Courier,GFA_MG_Courier_Aurore_Cargo_SpawnGroup]
+        [CustomStrings:GFA_Outpost_SpawnGroup_Guards,GFA_MG_Guard_SpawnGroup]
+
+        [SetCustomCountersVariables:true]
+        [CustomCountersVariables:GFA_Outpost_Resources_Cost_Patrol,10]
+        [CustomCountersVariables:GFA_Outpost_Resources_Cost_PatrolArea,10]
+        [CustomCountersVariables:GFA_Outpost_Resources_Cost_Guards,10]
+      </Description>
+    </EntityComponent>
+
+    <!-- Spawn other encounter grids -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_BroadcastTower</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_BroadcastTower]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_BroadcastTower</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:1]
+        [SpawnGroups:GFA_MG_BroadcastTower_SpawnGroup]
+
+        [MinDistance:50]
+        [MaxDistance:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_StorageShed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:50]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_StorageShed]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_StorageShed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:1]
+        [SpawnGroups:GFA_MG_StorageShed_SpawnGroup]
+
+        [MinDistance:25]
+        [MaxDistance:75]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_SilosOxygen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:35]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_SilosOxygen]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_SilosOxygen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_SiloOxygen_SpawnGroup]
+        [SpawnGroups:GFA_MG_SiloOxygen_Double_SpawnGroup]
+
+        [MinDistance:35]
+        [MaxDistance:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_SilosHydrogen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:35]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_SilosHydrogen]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_SilosHydrogen</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_SiloHydrogen_SpawnGroup]
+        [SpawnGroups:GFA_MG_SiloHydrogen_Double_SpawnGroup]
+
+        [MinDistance:35]
+        [MaxDistance:100]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_DefenseTurretLight</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:50]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_MG_Outpost_Camp_Spawn_DefenseTurretLight]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Spawn_DefenseTurretLight</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:true]
+
+        [MaxSpawns:2]
+        [SpawnGroups:GFA_MG_DefenseTurret_Light_SpawnGroup]
+
+        [MinDistance:25]
+        [MaxDistance:100]
+
+        [MinAltitude:0]
+        [MaxAltitude:1]
+      </Description>
+    </EntityComponent>
+
+    <!-- PlaceCrew -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Trigger_PlaceCrew</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerNear]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [TargetDistance:1000]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [MaxActions:1]
+        [Actions:GFA_MG_Outpost_Camp_Action_PlaceCrew]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Action_PlaceCrew</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [AddBotsToGrid:true]
+        [BotCount:4]
+
+        [OnlySpawnBotsInPressurizedRooms:false]
+
+        [BotSpawnProfileNames:GFA_MG_BotProfile_Crew]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Waypoints -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Waypoint_Spawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Waypoint]
+
+        [Waypoint:RelativeOffset]
+        [RelativeEntity:Self]
+
+        [Offset:{X:0 Y:10 Z:0}]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Waypoint_ExchangePoint</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Waypoint]
+
+        [Waypoint:RelativeOffset]
+        [RelativeEntity:Self]
+
+        [Offset:{X:0 Y:25 Z:75}]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_MG_Outpost_Camp_Waypoint_Despawn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Waypoint]
+
+        [Waypoint:RelativeOffset]
+        [RelativeEntity:Self]
+
+        [Offset:{X:0 Y:25 Z:0}]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

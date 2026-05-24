@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- No SpawnGroup because they're spawned in the leader one. -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Escort_Fighter_Ace_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Escort]
+
+        [TargetData:MSB_TargetProfile_LowRange]
+        [OverrideTargetData:MSB_TargetProfile_LongRange]
+        [AutopilotData:GFA_OffensiveEscort_AutoPilot]
+        [SecondaryAutopilotData:GFA_Fighter_Autopilot]
+        [TertiaryAutopilotData:GFA_Fighter_Autopilot_Strike]
+
+        [DialogueBanks:GFA_IMP_DialogueBank_Dynamic_1.xml]
+        [DialogueBanks:GFA_IMP_DialogueBank_Dynamic_2.xml]
+        [DialogueBanks:GFA_IMP_DialogueBank_Dynamic_3.xml]
+
+        [UsePlayerDistanceTimer:true]
+        [PlayerDistanceTrigger:50000]
+        [PlayerDistanceTimerTrigger:30000]
+
+        [Triggers:GFA_IMP_Escort_Fighter_Ace_Trigger_SpawnSetup]
+
+        [TriggerGroups:MSB_System_Dialogue_TriggerGroup_Dynamic]
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+        [TriggerGroups:GFA_SpawnEffects_TriggerGroup]
+
+        [TriggerGroups:MSB_DynamicCommon_TriggerGroup]
+        [TriggerGroups:MSB_System_Communication_TriggerGroup]
+        [//TriggerGroups:MSB_System_Crash_TriggerGroup]
+        [Triggers:MSB_System_EngagementRange_Trigger_1000]
+        [TriggerGroups:MSB_System_CommandChain_Escort_TriggerGroup]
+
+        [TriggerGroups:MSB_OffensiveEscort_TriggerGroup]
+        [TriggerGroups:MSB_Fighter_TriggerGroup]
+      </Description>
+    </EntityComponent>
+
+    <!-- Adjustments to encounter on spawn. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Escort_Fighter_Ace_Trigger_SpawnSetup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_IMP_Escort_Fighter_Ace_Action_Rename]
+        [Actions:GFA_IMP_Escort_Fighter_Ace_Action_SetDespawnType]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Escort_Fighter_Ace_Action_Rename</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAntennaHudText:true]
+        [UseRandomNameGenerator:true]
+        [AntennaHudText:Escort (Ace) AurebeshLetter-RandomNumber]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_IMP_Escort_Fighter_Ace_Action_SetDespawnType</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetBooleansTrue:MSB_Despawn_Use_Simple]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

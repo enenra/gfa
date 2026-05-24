@@ -1,7 +1,4 @@
-[h1]Patch 1.1[/h1]
+[h1]Patch 1.3a[/h1]
 [list]
-[*]Added shared impact particles for Laser Cannons.
-[*]Added shared particles for Proton Torpedoes.
-[*]Added shared sounds for Proton Torpedoes.
-[*]Added shared sounds for Astromechs.
+[*]Fixed an error where a blueprint icon path was incorrect.
 [/list]

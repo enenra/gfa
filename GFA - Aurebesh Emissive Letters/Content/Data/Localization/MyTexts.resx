@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="DisplayName_GFA_Category" xml:space="preserve">
+    <value>A Galaxy Far Away</value>
+    <comment/>
+  </data>
+
+  <data name="DisplayName_GFA_LG_SymbolLight_0" xml:space="preserve">
+    <value>Number 0</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_1" xml:space="preserve">
+    <value>Number 1</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_2" xml:space="preserve">
+    <value>Number 2</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_3" xml:space="preserve">
+    <value>Number 3</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_4" xml:space="preserve">
+    <value>Number 4</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_5" xml:space="preserve">
+    <value>Number 5</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_6" xml:space="preserve">
+    <value>Number 6</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_7" xml:space="preserve">
+    <value>Number 7</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_8" xml:space="preserve">
+    <value>Number 8</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_9" xml:space="preserve">
+    <value>Number 9</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_A" xml:space="preserve">
+    <value>Letter A</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_And" xml:space="preserve">
+    <value>And</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Apostrophe" xml:space="preserve">
+    <value>Apostrophe</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_B" xml:space="preserve">
+    <value>Letter B</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_C" xml:space="preserve">
+    <value>Letter C</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Colon" xml:space="preserve">
+    <value>Colon</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_D" xml:space="preserve">
+    <value>Letter D</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Dot" xml:space="preserve">
+    <value>Dot</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_E" xml:space="preserve">
+    <value>Letter E</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_ExclammationMark" xml:space="preserve">
+    <value>ExclammationMark</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_F" xml:space="preserve">
+    <value>Letter F</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_G" xml:space="preserve">
+    <value>Letter G</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_H" xml:space="preserve">
+    <value>Letter H</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Hyphen" xml:space="preserve">
+    <value>Hyphen</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_I" xml:space="preserve">
+    <value>Letter I</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_J" xml:space="preserve">
+    <value>Letter J</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_K" xml:space="preserve">
+    <value>Letter K</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_L" xml:space="preserve">
+    <value>Letter L</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_M" xml:space="preserve">
+    <value>Letter M</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_N" xml:space="preserve">
+    <value>Letter N</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_O" xml:space="preserve">
+    <value>Letter O</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_P" xml:space="preserve">
+    <value>Letter P</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Q" xml:space="preserve">
+    <value>Letter Q</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_QuestionMark" xml:space="preserve">
+    <value>QuestionMark</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_R" xml:space="preserve">
+    <value>Letter R</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_S" xml:space="preserve">
+    <value>Letter S</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_T" xml:space="preserve">
+    <value>Letter T</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_U" xml:space="preserve">
+    <value>Letter U</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Underscore" xml:space="preserve">
+    <value>Underscore</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_V" xml:space="preserve">
+    <value>Letter V</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_W" xml:space="preserve">
+    <value>Letter W</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_X" xml:space="preserve">
+    <value>Letter X</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Y" xml:space="preserve">
+    <value>Letter Y</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_GFA_LG_SymbolLight_Z" xml:space="preserve">
+    <value>Letter Z</value>
+    <comment/>
+  </data>
+
+</root>

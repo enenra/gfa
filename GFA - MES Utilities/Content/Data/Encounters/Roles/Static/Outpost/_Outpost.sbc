@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+      Outpost
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_TriggerGroup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_Outpost_Trigger_Setup]
+
+        [Triggers:GFA_Outpost_Trigger_Spawn_Patrol]
+        [Triggers:GFA_Outpost_Trigger_Spawn_PatrolArea]
+
+        [Triggers:GFA_Outpost_Trigger_Spawn_Tender]
+        [Triggers:GFA_Common_LocalRole_Responses_Trigger_SendTarget]
+
+        [Triggers:GFA_Outpost_Trigger_Spawn_Courier]
+
+        [Triggers:GFA_Outpost_Trigger_Spawn_Guards_Enable]
+        [Triggers:GFA_Outpost_Trigger_Spawn_Guards]
+        [Triggers:GFA_Outpost_Trigger_Guards_Recall]
+      </Description>
+    </EntityComponent>
+
+    <!-- Setup -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Setup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Outpost_Action_Setup]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Setup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetBooleansTrue:GFA_Role_Outpost]
+
+        [SetCounters:GFA_Resources_Counter]
+        [SetCountersValues:35]
+
+        [SetCustomCountersVariables:true]
+        [CustomCountersVariables:GFA_Resources_Production_Amount,2]
+        [CustomCountersVariables:GFA_Resources_Upkeep_Amount,1]
+        [CustomCountersVariables:GFA_Resources_Threshold_Low,20]
+        [CustomCountersVariables:GFA_Resources_Threshold_Full,50]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Resources Low-->
+    <!-- Spawn Tender -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_1]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_2]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_3]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_4]
+        [Tags:GFA_System_Resources_Spawning_Tick_Low_5]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Outpost_Action_Spawn_Tender]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Outpost - Spawn - Tender]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_RequestTender]
+
+        [DisableTriggers:true]
+        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Common_LocalRole_Responses_Trigger_SendTarget]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_Outpost_Spawn_Tender]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Spawn_Tender</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:GFA_Tender_Waypoint_StartingPoint]
+
+        [SpawnGroups:{GFA_Outpost_SpawnGroup_Tender}]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Resources NotLow -->
+    <!-- Spawn Patrol -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_Patrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_1]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_2]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_3]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_4]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_5]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_6]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:GFA_Outpost_Condition_Spawn_Patrol]
+
+        [Actions:GFA_Outpost_Action_Spawn_Patrol]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Condition_Spawn_Patrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Outpost_Resources_Cost_Patrol}]
+        [CounterCompareTypes:GreaterOrEqual]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_Patrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Outpost - Spawn - Patrol]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_SpawnShip]
+
+        [DisableTriggers:true]
+        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
+
+        [DecreaseCounters:GFA_Resources_Counter]
+        [DecreaseCountersUseAmountVariable:true]
+        [DecreaseCountersAmountVariable:{GFA_Outpost_Resources_Cost_Patrol}]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_Outpost_Spawn_Patrol]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Spawn_Patrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:{SpawnGroupNameTruncated}_Waypoint_Spawn]
+
+        [CustomCountersVariablesReferences:GFA_Resources_Cost,GFA_Outpost_Resources_Cost_Patrol]
+
+        [SpawnGroups:{GFA_Outpost_SpawnGroup_Patrol}]
+      </Description>
+    </EntityComponent>
+
+    <!-- Spawn PatrolArea -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_7]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_8]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_9]
+        [Tags:GFA_System_Resources_Spawning_Tick_NotLow_10]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:GFA_Outpost_Condition_Spawn_PatrolArea]
+
+        [Actions:GFA_Outpost_Action_Spawn_PatrolArea]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Condition_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Outpost_Resources_Cost_PatrolArea}]
+        [CounterCompareTypes:GreaterOrEqual]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Outpost - Spawn - PatrolArea]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_SpawnShip]
+
+        [DisableTriggers:true]
+        [DisableTriggerTags:GFA_System_Resources_Spawning_Tick_NotLow]
+
+        [DecreaseCounters:GFA_Resources_Counter]
+        [DecreaseCountersUseAmountVariable:true]
+        [DecreaseCountersAmountVariable:{GFA_Outpost_Resources_Cost_PatrolArea}]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_Outpost_Spawn_PatrolArea]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Spawn_PatrolArea</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:{SpawnGroupNameTruncated}_Waypoint_Spawn]
+
+        [CustomCountersVariablesReferences:GFA_Resources_Cost,GFA_Outpost_Resources_Cost_PatrolArea]
+
+        [SpawnGroups:{GFA_Outpost_SpawnGroup_PatrolArea}]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Resources Full-->
+    <!-- Spawn Courier -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_Courier</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_Spawning_Tick_Loop]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_1]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_2]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_3]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_4]
+        [Tags:GFA_System_Resources_Spawning_Tick_Full_5]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Outpost_Action_Spawn_Courier]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_Courier</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Outpost - Spawn - Courier]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Resources_RequestCourier]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Common_LocalRole_Responses_Trigger_SendTarget]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_Outpost_Spawn_Courier]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Spawn_Courier</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:GFA_Courier_Waypoint_StartingPoint]
+
+        [SpawnGroups:{GFA_Outpost_SpawnGroup_Courier}]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- InitCombat -->
+    <!-- Spawn Guards -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_Guards_Enable</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_InitCombat]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Outpost_Action_Spawn_Guards_Enable]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_Guards_Enable</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Outpost - Spawn - Guards Enable]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Outpost_Trigger_Spawn_Guards]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Spawn_Guards</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:true]
+
+        [MinCooldownMs:120000]
+        [MaxCooldownMs:300000]
+
+        [Conditions:GFA_Outpost_Condition_Spawn_Guards]
+
+        [Actions:GFA_Outpost_Action_Spawn_Guards]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Condition_Spawn_Guards</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CheckCustomCounters:true]
+        [CustomCounters:GFA_Resources_Counter]
+        [CustomCountersVariables:{GFA_Outpost_Resources_Cost_Guards}]
+        [CounterCompareTypes:GreaterOrEqual]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_Guards</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Outpost - Spawn - Guards]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Outpost_InitCombat]
+
+        [DecreaseCounters:GFA_Resources_Counter]
+        [DecreaseCountersUseAmountVariable:true]
+        [DecreaseCountersAmountVariable:{GFA_Outpost_Resources_Cost_Guards}]
+
+        [SpawnEncounter:true]
+        [Spawner:GFA_Outpost_Spawn_Guards]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Spawn_Guards</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+
+        [SpawningType:CustomSpawn]
+        [UseRelativeSpawnPosition:false]
+        [IgnoreSafetyChecks:false]
+
+        [UseWaypoint:true]
+        [Waypoint:{SpawnGroupNameTruncated}_Waypoint_Spawn]
+
+        [SpawnGroups:{GFA_Outpost_SpawnGroup_Guards}]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- InitRole -->
+    <!-- Guards_Recall -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Trigger_Guards_Recall</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:GFA_System_Resources_InitRole]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_Outpost_Action_Spawn_Guards_Recall]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Outpost_Action_Spawn_Guards_Recall</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Outpost - Guards_Recall]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Outpost_InitRole]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:GFA_System_Resources_Command_Request_Guards_Recall]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Outpost_Trigger_Spawn_Guards]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

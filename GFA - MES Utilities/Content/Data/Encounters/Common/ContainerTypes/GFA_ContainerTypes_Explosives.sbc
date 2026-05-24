@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!-- Created by enenra's ContainerType Editor on: 2019-08-20 17:43 -->
+<!-- https://docs.google.com/spreadsheets/d/1_s1o03enFuZxV-OrH-ufegozE_usZcfHkKI_JOXck7A/edit#gid=0 -->
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ContainerTypes>
+
+		<ContainerType CountMin="1" CountMax="1">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>GFA_ContainerTypes_Explosives_1</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="1" AmountMax="5">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Explosives</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+		<ContainerType CountMin="1" CountMax="1">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>GFA_ContainerTypes_Explosives_2</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="5" AmountMax="20">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Explosives</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+		<ContainerType CountMin="1" CountMax="1">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>GFA_ContainerTypes_Explosives_3</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="10" AmountMax="30">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Explosives</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+		<ContainerType CountMin="1" CountMax="1">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>GFA_ContainerTypes_Explosives_4</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="20" AmountMax="50">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Explosives</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+		<ContainerType CountMin="1" CountMax="1">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>GFA_ContainerTypes_Explosives_5</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="25" AmountMax="100">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Explosives</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+
+	</ContainerTypes>
+</Definitions>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>{LOC:DisplayName_GFA_Category}</DisplayName>
+      <Name>Section15_GFA_Category</Name>
+      <StrictSearch>true</StrictSearch>
+      <ItemIds>
+        <string>Thrust/SmallAtmosphericHoverEngine_LargeBlock</string>
+        <string>Thrust/LargeAtmosphericHoverEngine_LargeBlock</string>
+        <string>Thrust/SmallAtmosphericHoverEngine_SmallBlock</string>
+        <string>Thrust/LargeAtmosphericHoverEngine_SmallBlock</string>
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>

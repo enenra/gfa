@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="GFA_Group_HoverRepulsors" />
+			<Icon>Textures\GUI\Icons\Cubes\GFA_SG_HoverRepulsorSmall.dds</Icon>
+      <Icon>Textures\GUI\Icons\Cubes\GFA_Logo.dds</Icon>
+      <DisplayName>{LOC:DisplayName_GFA_HoverRepulsorSmall}</DisplayName>
+      <Description>{LOC:Description_GFA_HoverRepulsor}</Description>
+      <Blocks>
+        <Block Type="Thrust" Subtype="SmallAtmosphericHoverEngine_LargeBlock" />
+        <Block Type="Thrust" Subtype="LargeAtmosphericHoverEngine_LargeBlock" />
+        <Block Type="Thrust" Subtype="SmallAtmosphericHoverEngine_SmallBlock" />
+        <Block Type="Thrust" Subtype="LargeAtmosphericHoverEngine_SmallBlock" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>

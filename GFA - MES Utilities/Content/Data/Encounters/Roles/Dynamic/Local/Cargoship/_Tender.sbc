@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+    Tender
+    The encounter is spawned by a parent static encounter. It is spawned roughly 15km away from its parent and then sets a course to the parent. After arriving at the parent it resupplies the parent's resource stock and then moves to despawn.
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_TriggerGroup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_Tender_Trigger_Setup]
+
+        [Triggers:GFA_Tender_Trigger_InitRole]
+        [Triggers:GFA_Tender_Trigger_InitRole_Dialogue]
+        [Triggers:GFA_Tender_Trigger_CloseRole]
+
+        [Triggers:GFA_Tender_Trigger_ReceiveTarget]
+        [Triggers:GFA_Tender_Trigger_PrepareForLanding]
+        [Triggers:GFA_Tender_Trigger_PrepareForLanding_Delay]
+        [Triggers:GFA_Tender_Trigger_ArriveTarget]
+        [Triggers:GFA_Tender_Trigger_LandingTimeout]
+        [Triggers:GFA_Tender_Trigger_LeaveTarget]
+      </Description>
+    </EntityComponent>
+
+    <!-- Setup -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_Setup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_Setup]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_Setup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetBooleansTrue:GFA_Role_Tender]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_InitRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_Role_InitRole]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Actions:GFA_Tender_Action_InitRole]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_InitRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerTags:GFA_TriggerEvent_Tender_InitRole]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:CargoShip]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_InitRole_Dialogue]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_InitRole_Dialogue]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_InitRole_Dialogue</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
+        [Actions:GFA_Tender_Action_InitRole_Dialogue]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_InitRole_Dialogue</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Tender_Trigger_InitRole_Dialogue]
+
+        [Chance:100]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Tender_InitRole]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_CloseRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+        [Tags:MSB_Role_CloseRole]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Actions:GFA_Tender_Action_CloseRole]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_CloseRole</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+      </Description>
+    </EntityComponent>
+
+    <!-- ReceiveTarget -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Waypoint_StartingPoint</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Waypoint]
+
+        [Waypoint:EntityRandom]
+        [RelativeEntity:Self]
+
+        [MinDistance:12500]
+        [MaxDistance:15000]
+
+        [MinAltitude:5000]
+
+        [InheritRelativeAltitude:true]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_ReceiveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:GFA_Parent_ExchangePoint]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [Conditions:GFA_Tender_Condition_ReceiveTarget]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_ReceiveTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Condition_ReceiveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [CommandCheckFromParent:true]
+        [CommandFromParent:true]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_ReceiveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Tender - ReceiveTarget]
+
+        [AddWaypointFromCommand:true]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_PrepareForLanding]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_PrepareForLanding]
+        [EnableTriggerNames:GFA_Tender_Trigger_ArriveTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_PrepareForLanding</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_PrepareForLanding_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_PrepareForLanding_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_PrepareForLanding_Delay]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_PrepareForLanding_Delay]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_PrepareForLanding_Delay</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:WaypointNear]
+
+        [TargetDistance:1500]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_PrepareForLanding]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_PrepareForLanding</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Tender - Reducing Speed and MinAltitude]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Tender_Incoming]
+
+        [ChangeAutopilotMinAltitude:true]
+        [NewAutopilotMinAltitude:15]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:25]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_LandingTimeout]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_LandingTimeout]
+      </Description>
+    </EntityComponent>
+
+    <!-- Resupply once arrived at target -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_ArriveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:BehaviorTriggerA]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_ArriveTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_ArriveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Tender - ArriveTarget]
+
+        [DisableAutopilot:true]
+        [StopAllRotation:true]
+        [StopAllThrust:true]
+
+        [SetAntennaThoughtBubble:true]
+        [SetAntennaThoughtBubbleName:Unloading]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Tender_Unloading]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_Tender_Trigger_LeaveTarget]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:GFA_Tender_Trigger_LeaveTarget]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Tender_Trigger_LandingTimeout]
+
+        [DisableTriggerTags:MSB_System_AreaRestriction]
+        [DisableTriggerTags:MSB_CombatType_InitCombatType]
+      </Description>
+    </EntityComponent>
+
+    <!-- Timeout & abort after attempting landing for 5min. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_LandingTimeout</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:300000]
+        [MaxCooldownMs:300001]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_LandingTimeout]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_LandingTimeout</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Tender - Falling back to Simple Despawn]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Despawn_LandingTimeout]
+
+        [ChangeAutopilotMinAltitude:true]
+        [NewAutopilotMinAltitude:-1]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:GFA_Tender_Trigger_ArriveTarget]
+
+        [Retreat:true]
+      </Description>
+    </EntityComponent>
+
+    <!-- Depart back to original despawn point -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Trigger_LeaveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:false]
+        [StartsReady:false]
+
+        [MinCooldownMs:180000]
+        [MaxCooldownMs:180001]
+
+        [MaxActions:1]
+        [Actions:GFA_Tender_Action_LeaveTarget]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_Tender_Action_LeaveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Tender - LeaveTarget]
+
+        [EnableAutopilot:true]
+        [StopAllRotation:false]
+        [StopAllThrust:false]
+
+        [ChangeAutopilotMinAltitude:true]
+        [NewAutopilotMinAltitude:-1]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
+
+        [ClearAntennaThoughtBubble:true]
+
+        [PlayDialogueCue:true]
+        [DialogueCueId:Tender_Departing]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:GFA_System_Resources_Command_ReceivedResupply]
+
+        [EnableTriggers:true]
+        [EnableTriggerTags:MSB_System_AreaRestriction]
+        [EnableTriggerTags:MSB_CombatType_InitCombatType]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_TriggerGroup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_SpawnEffects_Trigger_SpawnInSpace_LG]
+        [Triggers:GFA_SpawnEffects_Trigger_SpawnInSpace_SG]
+
+        [Triggers:GFA_SpawnEffects_Trigger_DespawnInSpace]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Trigger_SpawnInSpace_LG</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:GFA_SpawnEffects_Condition_InSpace_LG]
+
+        [MaxActions:1]
+        [Actions:GFA_SpawnEffects_Action_SpawnInSpace_LG]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Condition_InSpace_LG</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [GravityCheck:true]
+        [MaxGravity:0.001]
+
+        [CheckGridSize:true]
+        [GridSizeLarge:true]
+
+        [CheckAllLoadedModIDs:true]
+        [AllModIDsToCheck:3442090596]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Action_SpawnInSpace_LG</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [PlaySoundAtPosition:true]
+        [SoundAtPosition:_GFA_LG_Hyperspace_Exit]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Trigger_SpawnInSpace_SG</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:GFA_SpawnEffects_Condition_InSpace_SG]
+
+        [MaxActions:1]
+        [Actions:GFA_SpawnEffects_Action_SpawnInSpace_SG]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Condition_InSpace_SG</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [MatchAnyCondition:false]
+
+        [GravityCheck:true]
+        [MaxGravity:0.001]
+
+        [CheckGridSize:true]
+        [GridSizeLarge:false]
+
+        [CheckAllLoadedModIDs:true]
+        [AllModIDsToCheck:3442090596]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Action_SpawnInSpace_SG</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [PlaySoundAtPosition:true]
+        [SoundAtPosition:_GFA_SG_Hyperspace_Exit]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Trigger_DespawnInSpace</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Despawn]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:GFA_SpawnEffects_Condition_InSpace]
+
+        [MaxActions:1]
+        [Actions:GFA_SpawnEffects_Action_DespawnInSpace]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Condition_InSpace</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [GravityCheck:true]
+        [MaxGravity:0.001]
+
+        [CheckAllLoadedModIDs:true]
+        [AllModIDsToCheck:3442090596]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_SpawnEffects_Action_DespawnInSpace</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [PlaySoundAtPosition:true]
+        [SoundAtPosition:_GFA_Hyperspace_Enter]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

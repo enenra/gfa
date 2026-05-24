@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlockVariantGroups>
+
+    <BlockVariantGroup>
+      <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ThrusterIonGroup" />
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large.dds</Icon>
+      <DisplayName>DisplayName_Block_LargeThrust</DisplayName>
+      <Description>Description_IonThrust</Description>
+      <Blocks>
+        <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrust" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrust" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrust" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrust" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeThrustSciFi" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallThrustSciFi" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeThrustSciFi" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallThrustSciFi" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockLargeModularThruster" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="LargeBlockSmallModularThruster" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockLargeModularThruster" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="SmallBlockSmallModularThruster" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="GFA_LG_RepulsorSmall" />
+        <Block Type="MyObjectBuilder_Thrust" Subtype="GFA_SG_RepulsorSmall" />
+      </Blocks>
+    </BlockVariantGroup>
+
+  </BlockVariantGroups>
+</Definitions>
