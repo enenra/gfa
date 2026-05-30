@@ -12,10 +12,24 @@
           <TypeId>MyObjectBuilder_EntityStat</TypeId>
           <SubtypeId>SpaceCharacterHealth</SubtypeId>
         </Stat>
-      </Stats>
-      <Scripts>
+        <Stat>
+            <TypeId>MyObjectBuilder_EntityStat</TypeId>
+            <SubtypeId>SpaceCharacterRadiation</SubtypeId>
+        </Stat>
+        <Stat>
+            <TypeId>MyObjectBuilder_EntityStat</TypeId>
+            <SubtypeId>SpaceCharacterRadiationImmunity</SubtypeId>
+        </Stat>
+        <Stat>
+            <TypeId>MyObjectBuilder_EntityStat</TypeId>
+            <SubtypeId>SpaceCharacterFood</SubtypeId>
+        </Stat>
+    </Stats>
+    <Scripts>
         <Script>SpaceStatEffect</Script>
-      </Scripts>
+        <Script>RadiationStat</Script>
+        <Script>FoodStat</Script>
+    </Scripts>
     </EntityComponent>
 
   </EntityComponents>
