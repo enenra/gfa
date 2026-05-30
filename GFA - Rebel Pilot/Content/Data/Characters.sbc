@@ -116,6 +116,7 @@
           </Id>
           <MaxCapacity>125</MaxCapacity>
           <Throughput>1000</Throughput>
+          <ReducedOnSpawn>0.2</ReducedOnSpawn>
         </Resource>
         <Resource>
           <Id>
@@ -124,6 +125,7 @@
           </Id>
           <Throughput>1000</Throughput>
           <MaxCapacity>60</MaxCapacity>
+          <ReducedOnSpawn>0.2</ReducedOnSpawn>
         </Resource>
       </SuitResourceStorage>
 
@@ -444,6 +446,7 @@
       <RecoilJetpackDampeningDegPerS>30</RecoilJetpackDampeningDegPerS>
       <CrouchHeadServerOffset>1.25</CrouchHeadServerOffset>
       <HeadServerOffset>1.4</HeadServerOffset>
+      <ReducedEnergyOnSpawn>0.2</ReducedEnergyOnSpawn>
     </Character>
 
   </Characters>
