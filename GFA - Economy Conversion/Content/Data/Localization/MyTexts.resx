@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+
+  <data name="DisplayName_GFA_Comp_HyperDriveMotivator" xml:space="preserve">
+    <value>Hyperdrive Motivator</value>
+  </data>
+
+
+  <!-- Overrides ================================================================================================================================ -->
+
+  <!-- Jumpdrive to Hyperdrive -->
+  <data name="Description_JumpDrive" xml:space="preserve">
+    <value>Hyperdrives allow ships to travel long distances instantaneously.
+
+Jumping requires the block to be fully charged and can only be initiated manually from a cockpit or control seat.</value>
+  </data>
+  <data name="DisplayName_Block_JumpDrive" xml:space="preserve">
+    <value>Hyperdrive</value>
+  </data>
+  <data name="NotificationJumpDriveNotFullyCharged" xml:space="preserve">
+    <value>Hyperdrive is only {0} charged!</value>
+  </data>
+  <data name="DisplayName_Block_PrototechJumpDrive" xml:space="preserve">
+    <value>Prototech Hyperdrive</value>
+  </data>
+  <data name="DisplayName_BlockGroup_JumpDrives" xml:space="preserve">
+    <value>Hyperdrives</value>
+  </data>
+  <data name="Description_Prototech_JumpDrive" xml:space="preserve">
+    <value>Prototech Hyperdrives allow grids to jump over incredibly large distances. They have a higher range and better efficiency than standard Hyperdrives.
+
+Prototech blocks contain advanced components that will be lost if extraction is attempted.</value>
+  </data>
+  <data name="DisplayName_Block_JumpDriveReskin" xml:space="preserve">
+    <value>Hyperdrive Type II</value>
+  </data>
+
+
+  <!-- Glass to Transparisteel -->
+
+  <data name="DisplayName_Item_BulletproofGlass" xml:space="preserve">
+    <value>Transparisteel</value>
+  </data>
+  <data name="Description_BarredWindow" xml:space="preserve">
+    <value>Barred windows have the same integrity as transparisteel windows but are not air tight. Great for keeping big spiders outside.</value>
+  </data>
+  <data name="DisplayName_Block_CenteredDoorGlass" xml:space="preserve">
+    <value>Centered Transparisteel Door</value>
+  </data>
+  <data name="DisplayName_Block_HalfCenteredDoorGlass" xml:space="preserve">
+    <value>Centered Half Transparisteel Door</value>
+  </data>
+
+
+  <!-- Steel to Durasteel -->
+
+  <data name="DisplayName_Item_SteelPlate" xml:space="preserve">
+    <value>Durasteel Plate</value>
+  </data>
+  <data name="DisplayName_Item_SmallSteelTube" xml:space="preserve">
+    <value>Small Durasteel Tube</value>
+  </data>
+  <data name="DisplayName_Item_LargeSteelTube" xml:space="preserve">
+    <value>Large Durasteel Tube</value>
+  </data>
+
+  <data name="DisplayName_Block_SteelCatwalk" xml:space="preserve">
+    <value>Durasteel Catwalk</value>
+  </data>
+  <data name="DisplayName_Block_SteelCatwalkCorner" xml:space="preserve">
+    <value>Durasteel Catwalk Corner</value>
+  </data>
+  <data name="DisplayName_Block_SteelCatwalkPlate" xml:space="preserve">
+    <value>Durasteel Catwalk Plate</value>
+  </data>
+  <data name="DisplayName_Block_SteelCatwalkTwoSides" xml:space="preserve">
+    <value>Durasteel Catwalk Two Sides</value>
+  </data>
+  <data name="Description_TargetDummy" xml:space="preserve">
+    <value>The Target Dummy block allows you to hone your skills with handheld weaponry or test their mechanics. You can set them up to perform actions when hit or destroyed. The Target Dummy requires durasteel plates to repair itself.</value>
+  </data>
+  <data name="IngameHelp_Ingots_Detail3" xml:space="preserve">
+    <value>Use a survival kit or Assembler to produce and obtain durasteel plates.</value>
+  </data>
+  <data name="NotEnoughMaterial" xml:space="preserve">
+    <value>Not enough materials to create a new block. At least one durasteel plate is required.</value>
+  </data>
+
+
+  <!-- Concrete to Duracrete -->
+
+  <data name="DisplayName_AQD_Comp_Concrete" xml:space="preserve">
+    <value>Duracrete</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_Cat_Concrete" xml:space="preserve">
+    <value>   Duracrete</value>
+    <comment/>
+  </data>
+
+  <data name="Description_AQD_Conc_Block" xml:space="preserve">
+    <value>Duracrete blocks are cheap and durable, but very heavy.</value>
+    <comment/>
+  </data>
+  <data name="Description_AQD_ReinfConc_Block" xml:space="preserve">
+    <value>Reinforced Duracrete blocks are more durable than their Duracrete counterparts.</value>
+    <comment/>
+  </data>
+
+  <data name="Description_AQD_Concrete_Block" xml:space="preserve">
+    <value>Duracrete blocks are cheap and durable, but very heavy.</value>
+    <comment/>
+  </data>
+  <data name="Description_AQD_ReinforcedConcrete_Block" xml:space="preserve">
+    <value>Reinforced Duracrete blocks are more durable than their Duracrete counterparts.</value>
+    <comment/>
+  </data>
+
+  <data name="DisplayName_AQD_LG_Concrete_Block" xml:space="preserve">
+    <value>Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Concrete_Slope" xml:space="preserve">
+    <value>Duracrete Slope</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Concrete_Corner" xml:space="preserve">
+    <value>Duracrete Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Concrete_Corner_Inv" xml:space="preserve">
+    <value>Duracrete Inverted Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Concrete_Half_Block" xml:space="preserve">
+    <value>Duracrete Half Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Concrete_Half_Block_Slope" xml:space="preserve">
+    <value>Duracrete Half Block Slope</value>
+    <comment/>
+  </data>
+
+  <data name="DisplayName_AQD_LG_ReinforcedConcrete_Block" xml:space="preserve">
+    <value>Reinforced Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinforcedConcrete_Slope" xml:space="preserve">
+    <value>Reinforced Duracrete Slope</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinforcedConcrete_Corner" xml:space="preserve">
+    <value>Reinforced Duracrete Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinforcedConcrete_Corner_Inv" xml:space="preserve">
+    <value>Reinforced Duracrete Inverted Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinforcedConcrete_Half_Block" xml:space="preserve">
+    <value>Reinforced Duracrete Half Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinforcedConcrete_Half_Block_Slope" xml:space="preserve">
+    <value>Reinforced Duracrete Half Block Slope</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_Comp_ConcreteScrap" xml:space="preserve">
+    <value>Duracrete Rubble</value>
+    <comment/>
+  </data>
+
+  <data name="DisplayName_AQD_LG_Conc_Block" xml:space="preserve">
+    <value>Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_Block" xml:space="preserve">
+    <value>Reinf. Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_Slope" xml:space="preserve">
+    <value>Duracrete Slope</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_Slope" xml:space="preserve">
+    <value>Reinf. Duracrete Slope</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_Corner" xml:space="preserve">
+    <value>Duracrete Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_Corner" xml:space="preserve">
+    <value>Reinf. Duracrete Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_CornerInv" xml:space="preserve">
+    <value>Duracrete Inv. Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_CornerInv" xml:space="preserve">
+    <value>Reinf. Duracrete Inv. Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfArmorBlock" xml:space="preserve">
+    <value>Half Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfArmorBlock" xml:space="preserve">
+    <value>Half Reinf. Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfSlopeArmorBlock" xml:space="preserve">
+    <value>Half Slope Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfSlopeArmorBlock" xml:space="preserve">
+    <value>Half Slope Reinf. Duracrete Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_RoundSlope" xml:space="preserve">
+    <value>Round Duracrete Slope</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_RoundSlope" xml:space="preserve">
+    <value>Round Reinf. Duracrete Slope</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_RoundCorner" xml:space="preserve">
+    <value>Round Duracrete Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_RoundCorner" xml:space="preserve">
+    <value>Round Reinf. Duracrete Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_RoundCornerInv" xml:space="preserve">
+    <value>Round Duracrete Inv. Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_RoundCornerInv" xml:space="preserve">
+    <value>Round Reinf. Duracrete Inv. Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_Slope2Base" xml:space="preserve">
+    <value>Duracrete Slope 2x1x1 Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_Slope2Base" xml:space="preserve">
+    <value>Reinf. Duracrete Slope 2x1x1 Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_Slope2Tip" xml:space="preserve">
+    <value>Duracrete Slope 2x1x1 Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_Slope2Tip" xml:space="preserve">
+    <value>Reinf. Duracrete Slope 2x1x1 Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_Corner2Base" xml:space="preserve">
+    <value>Duracrete Corner 2x1x1 Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_Corner2Base" xml:space="preserve">
+    <value>Reinf. Duracrete Corner 2x1x1 Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_Corner2Tip" xml:space="preserve">
+    <value>Duracrete Corner 2x1x1 Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_Corner2Tip" xml:space="preserve">
+    <value>Reinf. Duracrete Corner 2x1x1 Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_InvCorner2Base" xml:space="preserve">
+    <value>Duracrete Inv. Corner 2x1x1 Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_InvCorner2Base" xml:space="preserve">
+    <value>Reinf. Duracrete Inv. Corner 2x1x1 Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_InvCorner2Tip" xml:space="preserve">
+    <value>Duracrete Inv. Corner 2x1x1 Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_InvCorner2Tip" xml:space="preserve">
+    <value>Reinf. Duracrete Inv. Corner 2x1x1 Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_CornerSquare" xml:space="preserve">
+    <value>Duracrete Corner Square Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_CornerSquare" xml:space="preserve">
+    <value>Reinf. Duracrete Corner Square Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_CornerSquareInverted" xml:space="preserve">
+    <value>Duracrete Corner Square Inv. Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_CornerSquareInverted" xml:space="preserve">
+    <value>Reinf. Duracrete Corner Square Inv. Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfCorner" xml:space="preserve">
+    <value>Duracrete Half Corner Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfCorner" xml:space="preserve">
+    <value>Reinf. Duracrete Half Corner Block</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfSlopeCorner" xml:space="preserve">
+    <value>Half Slope Corner Duracrete</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfSlopeCorner" xml:space="preserve">
+    <value>Half Slope Corner Reinf. Duracrete</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfSlopeCornerInverted" xml:space="preserve">
+    <value>Half Slope Corner Inv. Duracrete</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfSlopeCornerInverted" xml:space="preserve">
+    <value>Half Slope Corner Inv. Reinf. Duracrete</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfSlopedCorner" xml:space="preserve">
+    <value>Duracrete Half Sloped Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfSlopedCorner" xml:space="preserve">
+    <value>Reinf. Duracrete Half Sloped Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfSlopedCornerBase" xml:space="preserve">
+    <value>Duracrete Half Sloped Corner Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfSlopedCornerBase" xml:space="preserve">
+    <value>Reinf. Duracrete Half Sloped Corner Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_HalfSlopeInverted" xml:space="preserve">
+    <value>Half Slope Inv. Duracrete</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_HalfSlopeInverted" xml:space="preserve">
+    <value>Half Slope Inv. Reinf. Duracrete</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopedCorner" xml:space="preserve">
+    <value>Duracrete Sloped Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopedCorner" xml:space="preserve">
+    <value>Reinf. Duracrete Sloped Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopedCornerBase" xml:space="preserve">
+    <value>Duracrete Sloped Corner Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopedCornerBase" xml:space="preserve">
+    <value>Reinf. Duracrete Sloped Corner Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopedCornerTip" xml:space="preserve">
+    <value>Sloped Corner Duracrete Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopedCornerTip" xml:space="preserve">
+    <value>Sloped Corner Reinf. Duracrete Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_RaisedSlopedCorner" xml:space="preserve">
+    <value>Duracrete Raised Sloped Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_RaisedSlopedCorner" xml:space="preserve">
+    <value>Reinf. Duracrete Raised Sloped Corner</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopeTransition" xml:space="preserve">
+    <value>Duracrete Slope Transition</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopeTransition" xml:space="preserve">
+    <value>Reinf. Duracrete Slope Transition</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopeTransitionBase" xml:space="preserve">
+    <value>Duracrete Slope Transition Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopeTransitionBase" xml:space="preserve">
+    <value>Reinf. Duracrete Slope Transition Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopeTransitionBaseMirrored" xml:space="preserve">
+    <value>Duracrete Slope Transition Base Mirrored</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopeTransitionBaseMirrored" xml:space="preserve">
+    <value>Reinf. Duracrete Slope Transition Base Mirrored</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopeTransitionMirrored" xml:space="preserve">
+    <value>Duracrete Slope Transition Mirrored</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopeTransitionMirrored" xml:space="preserve">
+    <value>Reinf. Duracrete Slope Transition Mirrored</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopeTransitionTip" xml:space="preserve">
+    <value>Duracrete Slope Transition Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopeTransitionTip" xml:space="preserve">
+    <value>Reinf. Duracrete Slope Transition Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SlopeTransitionTipMirrored" xml:space="preserve">
+    <value>Duracrete Slope Transition Tip Mirrored</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SlopeTransitionTipMirrored" xml:space="preserve">
+    <value>Reinf. Duracrete Slope Transition Tip Mirrored</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SquareSlopedCornerBase" xml:space="preserve">
+    <value>Duracrete Square Sloped Corner Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SquareSlopedCornerBase" xml:space="preserve">
+    <value>Reinf. Duracrete Square Sloped Corner Base</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SquareSlopedCornerTip" xml:space="preserve">
+    <value>Duracrete Square Sloped Corner Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SquareSlopedCornerTip" xml:space="preserve">
+    <value>Reinf. Duracrete Square Sloped Corner Tip</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_Conc_SquareSlopedCornerTipInv" xml:space="preserve">
+    <value>Duracrete Square Sloped Corner Tip Inv.</value>
+    <comment/>
+  </data>
+  <data name="DisplayName_AQD_LG_ReinfConc_SquareSlopedCornerTipInv" xml:space="preserve">
+    <value>Reinf. Duracrete Square Sloped Corner Tip Inv.</value>
+    <comment/>
+  </data>
+</root>

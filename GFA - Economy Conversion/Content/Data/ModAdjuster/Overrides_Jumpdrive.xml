@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <!-- AQD -->
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>AQD_SG_Jumpdrive</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="GravityGenerator" Count="10" />
+        <Component Subtype="GFA_Comp_HyperdriveMotivator" Count="20" />
+        <Component Subtype="Detector" Count="10" />
+        <Component Subtype="PowerCell" Count="60" />
+        <Component Subtype="Superconductor" Count="200" />
+        <Component Subtype="Computer" Count="100" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+
+    <!-- GFA -->
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>GFA_SG_XWing_Hyperdrive</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="MetalGrid" Count="20" />
+        <Component Subtype="GravityGenerator" Count="10" />
+        <Component Subtype="GFA_Comp_HyperdriveMotivator" Count="20" />
+        <Component Subtype="Detector" Count="10" />
+        <Component Subtype="PowerCell" Count="60" />
+        <Component Subtype="Superconductor" Count="200" />
+        <Component Subtype="Computer" Count="100" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+
+    <!-- Vanilla -->
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>LargeJumpDriveReskin</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="GFA_Comp_HyperdriveMotivator" Count="100" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="PowerCell" Count="120" />
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="Computer" Count="300" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>LargePrototechJumpDrive</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="PrototechFrame" Count="1">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="GravityGenerator" Count="30" />
+        <Component Subtype="GFA_Comp_HyperdriveMotivator" Count="150" />
+        <Component Subtype="PrototechCapacitor" Count="30">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="PrototechCircuitry" Count="20">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Superconductor" Count="1400" />
+        <Component Subtype="Computer" Count="300" />
+        <Component Subtype="Construction" Count="180" />
+        <Component Subtype="PrototechPanel" Count="200" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>SmallPrototechJumpDrive</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="PrototechFrame" Count="1">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="GravityGenerator" Count="4" />
+        <Component Subtype="GFA_Comp_HyperdriveMotivator" Count="10" />
+        <Component Subtype="PrototechCapacitor" Count="8">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="PrototechCircuitry" Count="4">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="PrototechPanel" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>LargeJumpDrive</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="MetalGrid" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />
+        <Component Subtype="GFA_Comp_HyperdriveMotivator" Count="100" />
+        <Component Subtype="Detector" Count="20" />
+        <Component Subtype="PowerCell" Count="120" />
+        <Component Subtype="Superconductor" Count="1000" />
+        <Component Subtype="Computer" Count="300" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
