@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <!-- Vanilla -->
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockLargeAtmosphericThrustSciFi</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="50" />
+        <Component Subtype="MetalGrid" Count="40" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="40" />
+        <Component Subtype="Motor" Count="1100" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="130" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockSmallAtmosphericThrustSciFi</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="10" />
+        <Component Subtype="Motor" Count="110" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeAtmosphericThrustSciFi</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="MetalGrid" Count="8" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="8" />
+        <Component Subtype="Motor" Count="90" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallAtmosphericThrustSciFi</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="MetalGrid" Count="1" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="1" />
+        <Component Subtype="Motor" Count="18" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockLargeAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="50" />
+        <Component Subtype="MetalGrid" Count="40" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="40" />
+        <Component Subtype="Motor" Count="1100" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="130" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockSmallAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="10" />
+        <Component Subtype="Motor" Count="110" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="MetalGrid" Count="8" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="8" />
+        <Component Subtype="Motor" Count="90" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="MetalGrid" Count="1" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="1" />
+        <Component Subtype="Motor" Count="18" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockLargeFlatAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="Construction" Count="15" />
+        <Component Subtype="LargeTube" Count="20" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="15" />
+        <Component Subtype="Motor" Count="400" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockLargeFlatAtmosphericThrustDShape</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="40" />
+        <Component Subtype="Construction" Count="15" />
+        <Component Subtype="LargeTube" Count="20" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="15" />
+        <Component Subtype="Motor" Count="400" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockSmallFlatAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="3" />
+        <Component Subtype="Motor" Count="30" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockSmallFlatAtmosphericThrustDShape</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="3" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="3" />
+        <Component Subtype="Motor" Count="30" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeFlatAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="4" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="3" />
+        <Component Subtype="Motor" Count="30" />
+        <Component Subtype="Construction" Count="4" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockLargeFlatAtmosphericThrustDShape</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="4" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="MetalGrid" Count="3" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="3" />
+        <Component Subtype="Motor" Count="30" />
+        <Component Subtype="Construction" Count="4" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallFlatAtmosphericThrust</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="MetalGrid" Count="1" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="1" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockSmallFlatAtmosphericThrustDShape</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="MetalGrid" Count="1" />
+        <Component Subtype="GFA_Comp_PowerConverter" Count="1" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
