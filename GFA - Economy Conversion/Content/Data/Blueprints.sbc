@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+
+    <!-- Overrides -->
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Position0050_HandDrill</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_HandDrill</DisplayName>
+      <Icon>Textures\GUI\Icons\WeaponDrill.dds</Icon>
+      <Prerequisites>
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="3" TypeId="Component" SubtypeId="GFA_Comp_MiningComponent" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="HandDrillItem" />
+      <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+      <IgnoreEfficiencyMultiplier>true</IgnoreEfficiencyMultiplier>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ReactorComponent</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_ReactorComponents</DisplayName>
+      <Icon>Textures\GUI\Icons\component\reactor_components_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Stone" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Reactor" />
+      <BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
+    <!-- New -->
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GFA_BP_Comp_HyperdriveMotivator</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Comp_HyperdriveMotivator</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Comp_HyperdriveMotivator.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GFA_Comp_HyperdriveMotivator" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GFA_BP_Comp_RepulsorCoil</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Comp_RepulsorCoil</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Comp_RepulsorCoil.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GFA_Comp_RepulsorCoil" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GFA_BP_Comp_MiningComponent</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Comp_MiningComponent</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Comp_MiningComponent.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GFA_Comp_MiningComponent" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GFA_BP_Comp_PowerConverter</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Comp_PowerConverter</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Comp_PowerConverter.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GFA_Comp_PowerConverter" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GFA_BP_Comp_CoolantInjector</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Comp_CoolantInjector</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Comp_CoolantInjector.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GFA_Comp_CoolantInjector" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+  </Blueprints>
+</Definitions>
