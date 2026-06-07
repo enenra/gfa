@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Uraninite_01</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Uranium</MinedOre>
+      <MinedOreRatio>0.3</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>true</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\Hypermatter_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Hypermatter_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Hypermatter_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Hypermatter_distance_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Uraninite_01_ForAxisXZ_distance_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Hypermatter_distance_add.dds</ExtXZnYFar1>
+
+      <SimpleTilingSetup>
+        <InitialScale>2</InitialScale>
+        <ScaleMultiplier>7</ScaleMultiplier>
+        <InitialDistance>5</InitialDistance>
+        <DistanceMultiplier>5</DistanceMultiplier>
+        <Far1Distance>10</Far1Distance>
+        <Far1Scale>10</Far1Scale>
+        <Far2Distance>90</Far2Distance>
+        <Far2Scale>35</Far2Scale>
+      </SimpleTilingSetup>
+
+      <InitialScale>1.5</InitialScale>
+      <ScaleMultiplier>5</ScaleMultiplier>
+      <InitialDistance>5</InitialDistance>
+      <DistanceMultiplier>4</DistanceMultiplier>
+      <TilingScale>24</TilingScale>
+      <Far1Distance>10</Far1Distance>
+      <Far1Scale>10</Far1Scale>
+      <Far2Distance>90</Far2Distance>
+      <Far2Scale>35</Far2Scale>
+
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+    </VoxelMaterial>
+
+  </VoxelMaterials>
+</Definitions>

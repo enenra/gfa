@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Vanilla -->
+
+  <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
+      <Id>
+        <TypeId>Drill</TypeId>
+        <SubtypeId>LargeBlockDrillReskin</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="180" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="12" />
+        <Component Subtype="Motor" Count="5" />
+        <Component Subtype="GFA_Comp_MiningComponent" Count="5" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="SteelPlate" Count="120" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
+      <Id>
+        <TypeId>Drill</TypeId>
+        <SubtypeId>SmallBlockDrillReskin</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="GFA_Comp_MiningComponent" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="12" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
+      <Id>
+        <TypeId>Drill</TypeId>
+        <SubtypeId>LargeBlockPrototechDrill</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="PrototechFrame" Count="1">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="LargeTube" Count="120" />
+        <Component Subtype="PrototechMachinery" Count="20">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="GFA_Comp_MiningComponent" Count="20" />
+        <Component Subtype="PrototechCoolingUnit" Count="3">
+          <DeconstructId>
+            <TypeId>Ingot</TypeId>
+            <SubtypeId>PrototechScrap</SubtypeId>
+          </DeconstructId>
+        </Component>
+        <Component Subtype="MetalGrid" Count="80" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="PrototechPanel" Count="200" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
+      <Id>
+        <TypeId>Drill</TypeId>
+        <SubtypeId>SmallBlockDrill</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="GFA_Comp_MiningComponent" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="12" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
+      <Id>
+        <TypeId>Drill</TypeId>
+        <SubtypeId>LargeBlockDrill</SubtypeId>
+      </Id>
+      <Components>
+        <Component Subtype="SteelPlate" Count="180" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="12" />
+        <Component Subtype="Motor" Count="5" />
+        <Component Subtype="GFA_Comp_MiningComponent" Count="5" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="SteelPlate" Count="120" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

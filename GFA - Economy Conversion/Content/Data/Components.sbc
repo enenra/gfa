@@ -10,9 +10,9 @@
       <DisplayName>DisplayName_GFA_Comp_HyperdriveMotivator</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_Comp_HyperdriveMotivator.dds</Icon>
       <Size>
-        <X>0.2</X>
-        <Y>0.2</Y>
-        <Z>0.2</Z>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.13</Z>
       </Size>
       <Mass>24</Mass>
       <Volume>8</Volume>
@@ -39,13 +39,42 @@
       <DisplayName>DisplayName_GFA_Comp_RepulsorCoil</DisplayName>
       <Icon>Textures\GUI\Icons\Items\GFA_Comp_RepulsorCoil.dds</Icon>
       <Size>
-        <X>0.2</X>
-        <Y>0.2</Y>
-        <Z>0.2</Z>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.26</Z>
       </Size>
       <Mass>24</Mass>
       <Volume>8</Volume>
       <Model>Models\Items\GFA_Comp_RepulsorCoil.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>40</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>14</Health>
+      <MinimumOfferAmount>1000</MinimumOfferAmount>
+      <MaximumOfferAmount>2000</MaximumOfferAmount>
+      <MinimumOrderAmount>100</MinimumOrderAmount>
+      <MaximumOrderAmount>1000</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
+      <MaximumAcquisitionAmount>1000</MaximumAcquisitionAmount>
+    </Component>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Comp_MiningComponent</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Comp_MiningComponent</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Comp_MiningComponent.dds</Icon>
+      <Size>
+        <X>0.5</X>
+        <Y>0.25</Y>
+        <Z>0.18</Z>
+      </Size>
+      <Mass>24</Mass>
+      <Volume>8</Volume>
+      <Model>Models\Items\GFA_Comp_MiningComponent.mwm</Model>
       <PhysicalMaterial>Metal</PhysicalMaterial>
       <MaxIntegrity>40</MaxIntegrity>
       <DropProbability>0.3</DropProbability>
