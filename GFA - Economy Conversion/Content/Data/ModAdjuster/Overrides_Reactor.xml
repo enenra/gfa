@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <!-- Vanilla -->
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockSmallGenerator</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.2</Z>
+      </InventorySize>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockLargeGenerator</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockSmallGenerator</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>1</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockLargeGenerator</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockSmallGeneratorWarfare2</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>1</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>LargeBlockLargeGeneratorWarfare2</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockSmallGeneratorWarfare2</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.2</Z>
+      </InventorySize>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+      <Id>
+        <TypeId>Reactor</TypeId>
+        <SubtypeId>SmallBlockLargeGeneratorWarfare2</SubtypeId>
+      </Id>
+      <InventorySize>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </InventorySize>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

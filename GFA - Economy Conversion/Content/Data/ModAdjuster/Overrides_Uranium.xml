@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Vanilla -->
+  <PhysicalItems>
+    <PhysicalItem>
+      <Id>
+        <TypeId>Ingot</TypeId>
+        <SubtypeId>Uranium</SubtypeId>
+      </Id>
+      <Icon>Textures\GUI\Icons\Items\GFA_Ingot_Hypermatter.dds</Icon>
+      <Model>Models\Items\GFA_Ingot_Hypermatter.mwm</Model>
+    </PhysicalItem>
+  </PhysicalItems>
+
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Uraninite_01</SubtypeId>
+      </Id>
+      <VoxelHandPreview>Textures\Voxels\Hypermatter_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Hypermatter_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Hypermatter_add.dds</ExtXZnY>
+      <ColorMetalXZnYFar1>Textures\Voxels\Hypermatter_distance_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Uraninite_01_ForAxisXZ_distance_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Hypermatter_distance_add.dds</ExtXZnYFar1>
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

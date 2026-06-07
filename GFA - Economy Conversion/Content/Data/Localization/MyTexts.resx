@@ -126,6 +126,66 @@
 
   <!-- Overrides ================================================================================================================================ -->
 
+  <!-- Uranium to Hypermatter & Reactor to Hypermatter Reactor -->
+  <data name="Description_Reactor" xml:space="preserve">
+    <value>Hypermatter Reactors generate high amounts of power at the cost of hypermatter.
+
+When damaged this block becomes a dangerous source of radiation.</value>
+  </data>
+  <data name="DisplayName_Item_UraniumIngot" xml:space="preserve">
+    <value>Hypermatter</value>
+  </data>
+  <data name="DisplayName_Item_UraniumOre" xml:space="preserve">
+    <value>Raw Hypermatter</value>
+  </data>
+  <data name="ToolTipItemFilter_UraniumIngot" xml:space="preserve">
+    <value>Hypermatter</value>
+  </data>
+  <data name="Uranium" xml:space="preserve">
+    <value>Raw Hypermatter</value>
+  </data>
+  <data name="Description_FAQ_Fuel" xml:space="preserve">
+    <value>Reactors use hypermatter for fuel. Your jetpack and hydrogen thrusters require hydrogen. </value>
+  </data>
+  <data name="Description_FAQ_Uranium" xml:space="preserve">
+    <value>Hypermatter is a rare material.</value>
+  </data>
+  <data name="ControlMenuItemLabel_Uraninite_01" xml:space="preserve">
+    <value>Raw Hypermatter</value>
+  </data>
+
+  <data name="DisplayName_Block_LargeReactor" xml:space="preserve">
+    <value>Large Hypermatter Reactor</value>
+  </data>
+  <data name="DisplayName_Block_SmallReactor" xml:space="preserve">
+    <value>Small Reactor</value>
+  </data>
+  <data name="Description_FAQ_Electricity" xml:space="preserve">
+    <value>Electricity can be produced through hypermatter reactors or solar panels and stored in batteries. It is transferred automatically through all connected blocks. Many blocks require electricity to function. </value>
+  </data>
+  <data name="Description_FAQ_RoverMovement" xml:space="preserve">
+    <value>Press {CONTROL:LANDING_GEAR} to disable the brakes and landing gears or {CONTROL:TOGGLE_REACTORS} to turn the power off and on. You can check if there is fuel in your hypermatter reactors or if your batteries are charged.</value>
+  </data>
+  <data name="Description_FAQ_ShipBuilding" xml:space="preserve">
+    <value>The minimum requirements for a ship are a cockpit, gyroscope, one thruster in each direction and some form of power supply, such as a hypermatter reactor or a battery. </value>
+  </data>
+  <data name="Description_FAQ_Ship" xml:space="preserve">
+    <value>A ship is a grid that is designed to move. It has thrusters in each direction, a gyroscope for orientation, a cockpit and some source of power like batteries or hypermatter reactors. Ships can be designed for specific tasks like building or fighting. </value>
+  </data>
+  <data name="Description_FAQ_Begin" xml:space="preserve">
+    <value>Get your production up and running. Build refineries and assemblers. Make sure you have enough power, Build solar panels, batteries and hypermatter reactors. make sure your medical room is well protected and build more to be sure!</value>
+  </data>
+  <data name="DisplayName_Block_LargeReactorWarfare2" xml:space="preserve">
+    <value>Large Warfare Hypermatter Reactor</value>
+  </data>
+  <data name="DisplayName_Block_SmallReactorWarfare2" xml:space="preserve">
+    <value>Small Warfare Hypermatter Reactor</value>
+  </data>
+  <data name="DisplayName_BlockGroup_Reactors" xml:space="preserve">
+    <value>Hypermatter Reactors</value>
+  </data>
+
+
   <!-- Jumpdrive to Hyperdrive -->
   <data name="Description_JumpDrive" xml:space="preserve">
     <value>Hyperdrives allow ships to travel long distances instantaneously.
