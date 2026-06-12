@@ -74,9 +74,9 @@ namespace MWI.ThrusterSoundSystem
             if (!MyAPIGateway.Utilities.IsDedicated && thruster.CubeGrid.Physics != null)
             {
                 soundEmitter = new MyEntity3DSoundEmitter((MyEntity)Entity);
-                thruster.m_soundEmitter.CustomVolume = 0;
+                thruster.SoundEmitter.CustomVolume = 0;
                 soundPair = (thruster as MyThrust).BlockDefinition.PrimarySound;
-                NeedsUpdate = MyEntityUpdateEnum.EACH_FRAME | MyEntityUpdateEnum.EACH_100TH_FRAME | MyEntityUpdateEnum.EACH_10TH_FRAME;                
+                NeedsUpdate = MyEntityUpdateEnum.EACH_FRAME | MyEntityUpdateEnum.EACH_100TH_FRAME | MyEntityUpdateEnum.EACH_10TH_FRAME;
             }
             if (MyAPIGateway.Utilities.IsDedicated)
             {
@@ -168,14 +168,14 @@ namespace MWI.ThrusterSoundSystem
                 if (retriggerDelay > 0) retriggerDelay -= 1;
                 if (aiThrustTimer > 0) aiThrustTimer -= 1;
                 if (!soundRunning && timeSinceStop > 0) timeSinceStop -= 1;
-                //MyAPIGateway.Utilities.ShowNotification("CustomSound: " + soundEmitter.IsPlaying+" || "+ retriggerDelay+"||", 1, MyFontEnum.Blue);                
+                //MyAPIGateway.Utilities.ShowNotification("CustomSound: " + soundEmitter.IsPlaying+" || "+ retriggerDelay+"||", 1, MyFontEnum.Blue);
             }
         }
-        public override void Close() 
+        public override void Close()
         {
             m_serverSync_thrust.ValueChanged -= serverSync_UpdateThrustData;
             soundEmitter?.StopSound(true, true);
             soundEmitter = null;
-        }        
+        }
     }
 }

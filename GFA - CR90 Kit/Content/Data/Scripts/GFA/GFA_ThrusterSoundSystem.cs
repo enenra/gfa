@@ -74,7 +74,7 @@ namespace MWI.ThrusterSoundSystem
             if (!MyAPIGateway.Utilities.IsDedicated && thruster.CubeGrid.Physics != null)
             {
                 soundEmitter = new MyEntity3DSoundEmitter((MyEntity)Entity);
-                thruster.m_soundEmitter.CustomVolume = 0;
+                thruster.SoundEmitter.CustomVolume = 0;
                 soundPair = (thruster as MyThrust).BlockDefinition.PrimarySound;
                 NeedsUpdate = MyEntityUpdateEnum.EACH_FRAME | MyEntityUpdateEnum.EACH_100TH_FRAME | MyEntityUpdateEnum.EACH_10TH_FRAME;
             }
