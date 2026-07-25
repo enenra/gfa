@@ -1,9 +1,20 @@
 # Ignore these file types
-*/OriginalContent/
+*/OriginalContent/**
 **/obj/
 **/bin/
 skybox.dds
 
+# Except for:
+!*/OriginalContent/
+!*/OriginalContent/Promo/
+!*/OriginalContent/Promo/**
+
 *.mod
 *.sbmi
 *.csproj.lscache
+*.prproj
+*.psd
+*.prin
+*.mp4
+*.eps
+*.svg
