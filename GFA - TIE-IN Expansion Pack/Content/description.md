@@ -1,39 +1,37 @@
-[img]https://i.imgur.com/fVVaDCS.gif[/img]
+![](https://i.imgur.com/fVVaDCS.gif)
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3252740114]1.1a[/url]
+**Current version:** [1.1b](https://steamcommunity.com/sharedfiles/filedetails/changelog/3252740114)
 
-[img]https://i.imgur.com/3D6U1Br.png[/img]
-[quote]
-The TIE/in Starfighter is identifiable by its arrow-shaped solar collection panels, a distinct difference from the hexagonal solar arrays of its predecessor, the TIE/ln Fighter. The Interceptor is one of the fastest starfighters in the galaxy, nearly rivaling the Rebel RZ-1 A-Wing. This block kit contains all blocks necessary to build your very own TIE/in Starfighter. The blocks have custom sounds, full build stages and LoDs. This is an expansion pack to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3238158579]TIE/ln Starfighter Block Kit[/url], as the interceptor shares a lot of blocks with it. They assemble the probably most accurate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3252738171]TIE/in replica[/url] to date, with some adjustments to make them work better in Space Engineers.
-[/quote]
+![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_description.png)
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]
+> The TIE/in Starfighter is identifiable by its arrow-shaped solar collection panels, a distinct difference from the hexagonal solar arrays of its predecessor, the TIE/ln Fighter. The Interceptor is one of the fastest starfighters in the galaxy, nearly rivaling the Rebel RZ-1 A-Wing. This block kit contains all blocks necessary to build your very own TIE/in Starfighter. The blocks have custom sounds, full build stages and LoDs. This is an expansion pack to the [TIE/ln Starfighter Block Kit](https://steamcommunity.com/sharedfiles/filedetails/?id=3238158579), as the interceptor shares a lot of blocks with it. They assemble the probably most accurate [TIE/in replica](https://steamcommunity.com/sharedfiles/filedetails/?id=3252738171) to date, with some adjustments to make them work better in Space Engineers.
 
+[![](https://raw.githubusercontent.com/enenra/gfa/master/assets/mod_banner.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816)
 
-[img]https://i.imgur.com/TGu2yer.png[/img]
-[img]https://i.imgur.com/obrk5cA.gif[/img]
+![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_features.png)
+![img](https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20TIE-IN%20Expansion%20Pack\OriginalContent\Promo\Components.gif)
 
+![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_faq.png)
 
-[img]https://i.imgur.com/4canKDu.png[/img]
-
-[b]Q: Can you make a version without WeaponCore / Animation Engine?[/b]
+**Q: Can you make a version without WeaponCore / Animation Engine?**
 No. Both mods are integral to the functionality.
 
-[b]Q: Will there be a mod.io version?[/b]
+**Q: Will there be a mod.io version?**
 No. This mod requires various scripts to work, none of which work on consoles.
 
-[b]Q: Can you make X Star Wars mod?[/b]
-The next GFA mod I'll be working on is a set of turrets. What comes after that is not set yet.
+**Q: Can you make X Star Wars mod?**
+I have a long list of Star Wars mods I intend to make and it's very unlikely I'll be adding more to it.
 
-[b]Q: How dare you steal this mod from X!?[/b]
+**Q: Can you fix the balance of these blocks?**
+Balance is gonna be somewhat iffy until I finish collecting feedback and information on its matchup against the X-Wing, but feedback is generally welcome.
+
+**Q: How dare you steal this mod from X!?**
 That's not really a question but let's address this anyway: I made all models in this mod by myself, from scratch. Other similar mods existing does not mean nobody else is allowed to make a mod like that anymore.
 
+![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_credits.png)
 
-[img]https://i.imgur.com/Ky5F2bo.png[/img]
-[list]
-[*][b]Mexpex[/b] - For hooking me up with the script to reduce the sound delay on thrusters.
-[*][b]PrimoSuperT[/b] - For allowing me to use his many amazing Star Wars builds in the screenshots.
-[/list]
+* **Ash Like Snow** - For providing me with a script to add a small AOE explosion to the TIE Solar Arrays.
+* **Mexpex** - For hooking me up with the script to reduce the sound delay on thrusters.
+  **PrimoSuperT** - For allowing me to use his many amazing Star Wars builds in the screenshots.
 
-
-[url=https://steamcommunity.com/workshop/discussions/18446744073709551615/2793874853443195941/?appid=244850][img]https://raw.githubusercontent.com/enenra/aqdse/master/usage_guidelines.png[/img][/url]
+[![](https://raw.githubusercontent.com/enenra/aqdse/master/usage_guidelines.png)](https://steamcommunity.com/workshop/discussions/18446744073709551615/2793874853443195941/?appid=244850)

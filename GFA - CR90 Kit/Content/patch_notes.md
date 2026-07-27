@@ -1,3 +1,3 @@
-# Patch 1.0a
+# Patch 1.0b
 
-* Fixed various issues with the thruster model, adjusted LOD ranges.
+* Compatibility with Space Engineers update 1.210 .
