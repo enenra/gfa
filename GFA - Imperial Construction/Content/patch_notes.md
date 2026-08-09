@@ -1,4 +1,4 @@
-[h1]Patch 1.1b[/h1]
-[list]
-[*]Add controller support.
-[/list]
+# Patch 1.2
+
+* Added Standing Lamp Offset.
+* Adjustment for airtightness of Hangar Frame
