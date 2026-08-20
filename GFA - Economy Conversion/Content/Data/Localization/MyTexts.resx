@@ -134,9 +134,36 @@
   <data name="DisplayName_GFA_Comp_CoolantInjector" xml:space="preserve">
     <value>Coolant Injector</value>
   </data>
+  <data name="DisplayName_GFA_Item_CreditSpool" xml:space="preserve">
+    <value>Credit Spool</value>
+  </data>
 
 
   <!-- Overrides ================================================================================================================================ -->
+
+  <!-- Space Credits to Credits -->
+  <data name="Description_ContractBlock" xml:space="preserve">
+    <value>A self-service contract terminal that lets users browse, accept, and complete jobs in exchange for Credits.</value>
+  </data>
+  <data name="DisplayName_Item_SpaceCredit" xml:space="preserve">
+    <value>Imperial Credit</value>
+  </data>
+  <data name="Description_SpaceCredit" xml:space="preserve">
+    <value>Imperial Credit is a currency used for trading.</value>
+  </data>
+  <data name="Description_AtmBlock" xml:space="preserve">
+    <value>A banking terminal that allows physical Credits to be deposited or withdrawn.</value>
+  </data>
+  <data name="Description_VendingMachine" xml:space="preserve">
+    <value>A storefront terminal featuring physical buttons and an integrated screen for browsing listings and completing purchases with Credits.</value>
+  </data>
+  <data name="Description_FAQ_Contracts" xml:space="preserve">
+    <value>Contracts can be accepted trough contract blocks and are a good income of credits. They can be found at trading stations or from other players with contract blocks.</value>
+  </data>
+  <data name="Description_FAQ_SpaceCredit" xml:space="preserve">
+    <value>The Credit is the universal currency used to trade with stations and other players. You can withdraw or deposit credits from store blocks.</value>
+  </data>
+
 
   <!-- Uranium to Hypermatter & Reactor to Hypermatter Reactor -->
   <data name="Description_Reactor" xml:space="preserve">
@@ -165,7 +192,6 @@ When damaged this block becomes a dangerous source of radiation.</value>
   <data name="ControlMenuItemLabel_Uraninite_01" xml:space="preserve">
     <value>Raw Hypermatter</value>
   </data>
-
   <data name="DisplayName_Block_LargeReactor" xml:space="preserve">
     <value>Large Hypermatter Reactor</value>
   </data>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Components>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Item_CreditSpool</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Item_CreditSpool</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_CreditSpool.dds</Icon>
+      <Size>
+        <X>0.55</X>
+        <Y>1.76</Y>
+        <Z>0.53</Z>
+      </Size>
+      <Mass>100</Mass>
+      <Volume>513</Volume>
+      <Model>Models\Items\GFA_Item_CreditSpool.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>100</Health>
+      <MinimumOfferAmount>0</MinimumOfferAmount>
+      <MaximumOfferAmount>0</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+    </Component>
+
+  </Components>
+</Definitions>

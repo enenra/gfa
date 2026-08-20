@@ -25,9 +25,28 @@
       <MaximumOrderAmount>1000</MaximumOrderAmount>
       <CanPlayerOrder>true</CanPlayerOrder>
       <CanPlayerOffer>true</CanPlayerOffer>
-
       <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
       <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+    </PhysicalItem>
+
+    <PhysicalItem xsi:type="MyObjectBuilder_PhysicalItemDefinition">
+      <Id>
+        <TypeId>PhysicalObject</TypeId>
+        <SubtypeId>SpaceCredit</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_SpaceCredit</DisplayName>
+      <Description>Description_SpaceCredit</Description>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_ImperialCredit.dds</Icon>
+      <Size>
+        <X>0.001</X>
+        <Y>0.001</Y>
+        <Z>0.001</Z>
+      </Size>
+      <Mass>0.001</Mass>
+      <Volume>0.001</Volume>
+      <MaxStackAmount>1000000</MaxStackAmount>
+      <Model>Models\Items\GFA_Item_ImperialCredit.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
     </PhysicalItem>
 
   </PhysicalItems>
