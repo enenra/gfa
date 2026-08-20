@@ -21,6 +21,181 @@
       <MaxIntegrity>100</MaxIntegrity>
       <DropProbability>0.3</DropProbability>
       <Health>100</Health>
+
+      <MinimumOfferAmount>0</MinimumOfferAmount>
+      <MaximumOfferAmount>0</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+    </Component>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Item_Bacta</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Item_Bacta</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_Bacta.dds</Icon>
+      <Size>
+        <X>0.18</X>
+        <Y>0.18</Y>
+        <Z>0.36</Z>
+      </Size>
+      <Mass>5</Mass>
+      <Volume>11</Volume>
+      <Model>Models\Items\GFA_Item_Bacta.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>100</Health>
+
+      <MinimumOfferAmount>0</MinimumOfferAmount>
+      <MaximumOfferAmount>0</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+    </Component>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Item_Coarseweave</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Item_Coarseweave</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_Coarseweave.dds</Icon>
+      <Size>
+        <X>0.16</X>
+        <Y>0.15</Y>
+        <Z>0.27</Z>
+      </Size>
+      <Mass>5</Mass>
+      <Volume>6</Volume>
+      <Model>Models\Items\GFA_Item_Coarseweave.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>100</Health>
+
+      <MinimumOfferAmount>0</MinimumOfferAmount>
+      <MaximumOfferAmount>0</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+    </Component>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Item_Textiles</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Item_Textiles</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_Textiles.dds</Icon>
+      <Size>
+        <X>0.16</X>
+        <Y>0.15</Y>
+        <Z>0.27</Z>
+      </Size>
+      <Mass>5</Mass>
+      <Volume>6</Volume>
+      <Model>Models\Items\GFA_Item_Textiles.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>100</Health>
+
+      <MinimumOfferAmount>0</MinimumOfferAmount>
+      <MaximumOfferAmount>0</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+    </Component>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Item_Gemstones</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Item_Gemstones</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_Gemstones.dds</Icon>
+      <Size>
+        <X>0.2</X>
+        <Y>0.2</Y>
+        <Z>0.4</Z>
+      </Size>
+      <Mass>15</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Items\GFA_Item_Gemstones.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>100</Health>
+
+      <MinimumOfferAmount>0</MinimumOfferAmount>
+      <MaximumOfferAmount>0</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+    </Component>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Item_Spice</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Item_Spice</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_Spice.dds</Icon>
+      <Size>
+        <X>0.2</X>
+        <Y>0.2</Y>
+        <Z>0.4</Z>
+      </Size>
+      <Mass>15</Mass>
+      <Volume>16</Volume>
+      <Model>Models\Items\GFA_Item_Spice.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>100</Health>
+
+      <MinimumOfferAmount>0</MinimumOfferAmount>
+      <MaximumOfferAmount>0</MaximumOfferAmount>
+      <MinimumOrderAmount>10</MinimumOrderAmount>
+      <MaximumOrderAmount>100</MaximumOrderAmount>
+      <CanPlayerOrder>true</CanPlayerOrder>
+      <CanPlayerOffer>true</CanPlayerOffer>
+      <MinimalPricePerUnit>100000</MinimalPricePerUnit>
+    </Component>
+
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GFA_Item_NovaCrystals</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_GFA_Item_NovaCrystals</DisplayName>
+      <Icon>Textures\GUI\Icons\Items\GFA_Item_NovaCrystals.dds</Icon>
+      <Size>
+        <X>0.14</X>
+        <Y>0.14</Y>
+        <Z>0.24</Z>
+      </Size>
+      <Mass>10</Mass>
+      <Volume>5</Volume>
+      <Model>Models\Items\GFA_Item_NovaCrystals.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <MaxIntegrity>100</MaxIntegrity>
+      <DropProbability>0.3</DropProbability>
+      <Health>100</Health>
+
       <MinimumOfferAmount>0</MinimumOfferAmount>
       <MaximumOfferAmount>0</MaximumOfferAmount>
       <MinimumOrderAmount>10</MinimumOrderAmount>
