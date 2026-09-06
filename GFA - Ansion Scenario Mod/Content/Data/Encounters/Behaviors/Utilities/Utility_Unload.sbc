@@ -15,7 +15,7 @@
         [UseTrigger:true]
         [StartsReady:true]
 
-        [TargetDistance:15000]
+        [TargetDistance:10000]
 
         [MinCooldownMs:3000]
         [MaxCooldownMs:3100]
@@ -31,7 +31,7 @@
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:{SpawnGroup} despawn timer was reset.]
+        [//DebugMessage:{SpawnGroupName} despawn timer was reset.]
 
         [ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:GFA_ANS_Utility_Unload_Trigger_Unload]
@@ -51,7 +51,7 @@
         [UseTrigger:true]
         [StartsReady:false]
 
-        [TargetDistance:15000]
+        [TargetDistance:10000]
 
         [MinCooldownMs:9000]
         [MaxCooldownMs:9001]
@@ -86,7 +86,7 @@
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:{SpawnGroup} despawned.]
+        [//DebugMessage:{SpawnGroupName} despawned.]
 
         [ResetThisStaticEncounter:true]
         [ForceDespawn:true]
@@ -121,7 +121,7 @@
       <Description>
         [RivalAI Action]
 
-        [//DebugMessage:{SpawnGroup} is no longer persistent.]
+        [//DebugMessage:{SpawnGroupName} is no longer persistent.]
 
         [SetBooleansTrue:GFA_ANS_Utility_Unload_Persistent]
       </Description>

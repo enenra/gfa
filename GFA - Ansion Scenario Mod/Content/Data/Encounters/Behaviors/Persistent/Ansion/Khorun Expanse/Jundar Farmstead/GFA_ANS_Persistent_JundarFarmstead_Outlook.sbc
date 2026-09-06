@@ -10,12 +10,32 @@
       <Description>
         [Modular Encounters SpawnGroup]
 
+        [FalseSandboxVariables:{SpawnGroupName}_Destroyed]
+
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [SpawnConditionsProfiles:GFA_ANS_Persistent_JundarFarmstead_Outlook_SpawnConditions]
-
         [ManipulationProfiles:GFA_ANS_Manipulation]
+
+        [FactionOwner:CIV]
+
+		    [IgnoreCleanupRules:true]
+        [GridsAreDestructable:false]
+
+			  [TriggerRadius:10000]
+
+        [StaticEncounter:true]
+        [ForceStaticGrid:true]
+        [ForceExactPositionAndOrientation:true]
+
+        [StaticEncounterCoords:{X:2981189.52648293 Y:-995850.23332309 Z:-3819015.89319587}]
+        [StaticEncounterForward:{X:-0.878752222505061 Y:-0.0367583032619185 Z:0.475860650383828}]
+        [StaticEncounterUp:{X:-0.476455495277538 Y:0.00904419342104863 Z:-0.879152070796172}]
+
+        [StaticEncounterUsePlanetDirectionAndAltitude:true]
+        [StaticEncounterPlanet:Ansion]
+        [StaticEncounterPlanetDirection:{X:-0.476398287717284 Y:0.00905302042528101 Z:-0.879182981114409}]
+        [StaticEncounterPlanetAltitude:-0.0180526737167384]
       </Description>
       <Icon>Textures\GUI\Icons\Fake.dds</Icon>
       <Frequency>1.0</Frequency>
