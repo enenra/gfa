@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Manipulation</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [ClearAuthorship:true]
+
+        [UseRandomNameGenerator:true]
+        [RandomGridNamePrefix:(NPC-GFA)]
+      </Description>
+    </EntityComponent>
+
+    <!-- Loot -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Manipulation_Freight</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [UseLootProfiles:true]
+        [LootProfiles:GFA_ANS_LootProfile_Freight]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

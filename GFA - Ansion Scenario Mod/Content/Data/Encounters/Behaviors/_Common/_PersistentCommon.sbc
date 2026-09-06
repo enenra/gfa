@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+
+      TODO:
+        - Potentially add logic to store which player destroyed a persistent encounter? See: AaW_Static_Trigger_Death_TagPlayer
+        - Figure out if the GFA_ANS_Utility_Unload_Trigger_Persistent code makes sense in the first place
+
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_PersistentCommon_TriggerGroup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_ANS_Utility_Unload_Trigger_ResetUnload]
+        [Triggers:GFA_ANS_Utility_Unload_Trigger_Unload]
+        [//Triggers:GFA_ANS_Utility_Unload_Trigger_Persistent]
+
+        [Triggers:GFA_ANS_PersistentCommon_Trigger_CanBeDestroyed]
+        [Triggers:GFA_ANS_PersistentCommon_Trigger_Compromised]
+      </Description>
+    </EntityComponent>
+
+
+    <!-- Runs on spawn, and every 10s. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_PersistentCommon_Trigger_CanBeDestroyed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Timer]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MinCooldownMs:10000]
+        [MaxCooldownMs:10001]
+
+        [Conditions:GFA_ANS_PersistentCommon_Condition_CanBeDestroyed]
+
+        [MaxActions:1]
+	      [Actions:GFA_ANS_PersistentCommon_Action_CanBeDestroyed]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_PersistentCommon_Condition_CanBeDestroyed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [UseFailCondition:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:{SpawnGroupName}_CanBeDestroyed]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_PersistentCommon_Action_CanBeDestroyed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:{SpawnGroupName} set to be destroyable.]
+
+        [GridDestructible:true]
+      </Description>
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_PersistentCommon_Trigger_Compromised</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Compromised]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Conditions:GFA_ANS_PersistentCommon_Condition_CanBeDestroyed]
+
+        [Actions:GFA_ANS_PersistentCommon_Action_Compromised]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>AaW_Static_Action_Death</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [SetSandboxBooleansTrue:{SpawnGroupName}_Destroyed]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+
+    <Faction Tag="CIV" Founder="Civilians">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>GFA_Faction_Civilian</SubtypeId>
+      </Id>
+      <DisplayName>Civilians</DisplayName>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Neutral</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <DiscoveredByDefault>false</DiscoveredByDefault>
+      <StartingBalance>1000000000</StartingBalance>
+      <FactionIcon>Textures\FactionLogo\GFA_FactionLogo_MiningGuild.dds</FactionIcon>
+      <FactionIconWorkshopId>
+        <Id>3234446815</Id>
+        <ServiceName>Steam</ServiceName>
+      </FactionIconWorkshopId>
+      <IconColor R="255" G="255" B="255" A="255" />
+      <Description>Text</Description>
+    </Faction>
+
+  </Factions>
+</Definitions>

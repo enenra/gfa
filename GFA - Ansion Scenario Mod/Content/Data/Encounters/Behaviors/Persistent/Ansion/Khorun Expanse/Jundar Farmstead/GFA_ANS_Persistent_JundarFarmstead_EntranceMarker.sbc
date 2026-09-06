@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>GFA_ANS_Persistent_JundarFarmstead_EntranceMarker_SpawnGroup</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [SpawnConditionsProfiles:GFA_ANS_Persistent_JundarFarmstead_EntranceMarker_SpawnConditions]
+
+        [ManipulationProfiles:GFA_ANS_Manipulation]
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="[MES-ANS]Entrance Marker">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>GFA_ANS_Persistent_JundarFarmstead_EntranceMarker_Behavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Persistent_JundarFarmstead_EntranceMarker_SpawnConditions</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+        [FalseSandboxVariables:{SpawnGroupName}_Destroyed]
+
+        [RivalAiAnySpawn:true]
+        [FactionOwner:CIV]
+
+		    [IgnoreCleanupRules:true]
+        [GridsAreDestructable:false]
+
+			  [TriggerRadius:10000]
+
+        [StaticEncounter:true]
+        [ForceStaticGrid:true]
+        [ForceExactPositionAndOrientation:true]
+
+        [StaticEncounterCoords:{X:2982060.01525839 Y:-994672.910579027 Z:-3819388.95018651}]
+        [StaticEncounterForward:{X:-0.724720059342932 Y:-0.589390932308041 Z:0.356930195555147}]
+        [StaticEncounterUp:{X:-0.4612407179023 Y:0.030129041916126 Z:-0.886763351172221}]
+
+        [StaticEncounterUsePlanetDirectionAndAltitude:true]
+        [StaticEncounterPlanet:Ansion]
+        [StaticEncounterPlanetDirection:{X:-0.461456115133283 Y:0.0299086931011342 Z:-0.88665874150266}]
+        [StaticEncounterPlanetAltitude:-7.38551056313008]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Persistent_JundarFarmstead_EntranceMarker_Behavior</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+	      [BehaviorName:Passive]
+
+        [TriggerGroups:GFA_ANS_PersistentCommon_TriggerGroup]
+
+        [TriggerGroups:GFA_System_Reputation_TriggerGroup]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

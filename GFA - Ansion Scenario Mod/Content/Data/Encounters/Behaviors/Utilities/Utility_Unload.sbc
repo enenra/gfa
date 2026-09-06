@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Utility_Unload_Trigger_ResetUnload</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerNear]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [TargetDistance:15000]
+
+        [MinCooldownMs:3000]
+        [MaxCooldownMs:3100]
+
+    	  [Actions:GFA_ANS_Utility_Unload_Action_ResetUnload]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Utility_Unload_Action_ResetUnload</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:{SpawnGroup} despawn timer was reset.]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:GFA_ANS_Utility_Unload_Trigger_Unload]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Utility_Unload_Trigger_Unload</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:PlayerFar]
+
+        [UseTrigger:true]
+        [StartsReady:false]
+
+        [TargetDistance:15000]
+
+        [MinCooldownMs:9000]
+        [MaxCooldownMs:9001]
+
+        [Conditions:GFA_ANS_Utility_Unload_Condition_Unload]
+
+        [MaxActions:1]
+	      [Actions:GFA_ANS_Utility_Unload_Action_Unload]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Utility_Unload_Condition_Unload</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Condition]
+
+        [UseConditions:true]
+        [UseFailCondition:true]
+        [MatchAnyCondition:false]
+
+        [CheckTrueBooleans:true]
+        [TrueBooleans:GFA_ANS_Utility_Unload_Persistent]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Utility_Unload_Action_Unload</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:{SpawnGroup} despawned.]
+
+        [ResetThisStaticEncounter:true]
+        [ForceDespawn:true]
+      </Description>
+    </EntityComponent>
+
+    <!-- The condition triggering this may have to be adjusted. -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Utility_Unload_Trigger_Persistent</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Manual]
+
+        [Tags:MSB_TriggerEvent_UnderFireHealthLow]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:GFA_ANS_Utility_Unload_Action_Persistent]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Utility_Unload_Action_Persistent</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:{SpawnGroup} is no longer persistent.]
+
+        [SetBooleansTrue:GFA_ANS_Utility_Unload_Persistent]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

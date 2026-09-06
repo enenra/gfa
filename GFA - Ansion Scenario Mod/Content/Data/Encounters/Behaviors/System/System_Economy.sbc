@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+
+      TODO:
+        - Periodic store refresh loop.
+
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_System_Economy_TriggerGroup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI TriggerGroup]
+
+        [Triggers:GFA_ANS_System_Economy_Trigger_Session]
+        [Triggers:GFA_ANS_System_Economy_Trigger_ReceivedRefresh]
+      </Description>
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_System_Economy_Trigger_Session</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [Type:Session]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Actions:GFA_ANS_System_Economy_Action_Refresh]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_System_Economy_Trigger_ReceivedRefresh</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [StartsReady:true]
+
+        [Type:CommandReceived]
+        [CommandReceiveCode:GFA_ANS_Economy_Command_ReceivedRefresh]
+
+        [Actions:GFA_ANS_System_Economy_Action_Refresh]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_System_Economy_Action_Refresh</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [//DebugMessage:Economy - Refresh]
+
+        [ApplyStoreProfiles:true]
+        [ClearStoreContentsFirst:true]
+
+        [StoreBlocks:{GFA_ANS_Economy_Store_1_Name}]
+        [StoreProfiles:{GFA_ANS_Economy_Store_1_Profile}]
+
+        [StoreBlocks:{GFA_ANS_Economy_Store_2_Name}]
+        [StoreProfiles:{GFA_ANS_Economy_Store_2_Profile}]
+
+        [StoreBlocks:{GFA_ANS_Economy_Store_3_Name}]
+        [StoreProfiles:{GFA_ANS_Economy_Store_3_Profile}]
+
+        [StoreBlocks:{GFA_ANS_Economy_Store_4_Name}]
+        [StoreProfiles:{GFA_ANS_Economy_Store_4_Profile}]
+
+        [StoreBlocks:{GFA_ANS_Economy_Store_5_Name}]
+        [StoreProfiles:{GFA_ANS_Economy_Store_5_Profile}]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
