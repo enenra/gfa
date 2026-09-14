@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--
+
+      Runs on every savegame load once. Used to define global variables that won't change through ingame logic. Allows for those variables to be udpated through mod updates.
+
+    -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_OnLoad_Event</SubtypeId>
+      </Id>
+      <Description>
+        [MES Event]
+
+        [UseEvent:true]
+        [UniqueEvent:false]
+
+        [ConditionIds:GFA_ANS_OnLoad_EventCondition]
+
+        [ActionIds:GFA_ANS_OnLoad_EventAction_SetSandboxVariables]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_OnLoad_EventCondition</SubtypeId>
+      </Id>
+      <Description>
+        [MES Event Condition]
+
+        [CheckOnSession:true]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_OnLoad_EventAction_SetSandboxVariables</SubtypeId>
+      </Id>
+      <Description>
+        [MES Event Action]
+
+        [SetSandboxVector3Ds:true]
+        [SandboxVector3Ds:MES-GFA_ANS_Location_Jundar,{X:2980847.13693645 Y:-994599.304887873 Z:-3818695.2689451}]
+
+        [DebugChatMessage: Sandbox Variables set.]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

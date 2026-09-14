@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!-- Verify Radius -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Zone_Ansion_Surface</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Ansion Surface]
+
+        [Active:true]
+        [Persistent:true]
+
+        [Radius:25000]
+
+        [PlanetaryZone:true]
+        [PlanetName:Ansion]
+        [Direction:{X:0 Y:0 Z:0}]
+        [HeightOffset:0]
+
+        [UseZoneAnnounce:true]
+        [ZoneEnterAnnounce:Entering Wilderness]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_ZoneCondition_Ansion_Surface</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone Conditions]
+
+        [ZoneName:Ansion Surface]
+      </Description>
+    </EntityComponent>
+
+    <!-- Verify Radius -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Zone_Ansion</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Ansion]
+
+        [Active:true]
+        [Persistent:true]
+
+        [Radius:45000]
+
+        [PlanetaryZone:true]
+        [PlanetName:Ansion]
+        [Direction:{X:0 Y:0 Z:0}]
+        [HeightOffset:0]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_ZoneCondition_Ansion</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone Conditions]
+
+        [ZoneName:Ansion]
+      </Description>
+    </EntityComponent>
+
+    <!-- Verify Radius -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Zone_Ansion_Orbit</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Ansion Orbit]
+
+        [Active:true]
+        [Persistent:true]
+
+        [Radius:100000]
+
+        [PlanetaryZone:true]
+        [PlanetName:Ansion]
+        [Direction:{X:0 Y:0 Z:0}]
+        [HeightOffset:0]
+
+        [UseZoneAnnounce:true]
+        [ZoneEnterAnnounce:Entering Ansion Orbit]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_ZoneCondition_Ansion_Orbit</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone Conditions]
+
+        [ZoneName:Ansion Orbit]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

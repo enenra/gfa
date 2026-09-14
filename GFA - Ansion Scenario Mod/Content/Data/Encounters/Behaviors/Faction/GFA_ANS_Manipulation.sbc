@@ -17,6 +17,21 @@
       </Description>
     </EntityComponent>
 
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Manipulation_Persistent</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [ClearAuthorship:true]
+
+        [UseRandomNameGenerator:true]
+        [RandomGridNamePrefix:(NPC-GFA-DoNotDelete)]
+      </Description>
+    </EntityComponent>
+
     <!-- Loot -->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_Zone_JundarFarmstead</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Jundar]
+
+        [Active:true]
+        [Persistent:true]
+
+        [Coordinates:{X:2980847.13693645 Y:-994599.304887873 Z:-3818695.2689451}]
+        [Radius:1500]
+
+        [UseZoneAnnounce:true]
+        [ZoneEnterAnnounce:Entering Jundar Farmstead]
+        [ZoneLeaveAnnounce:Leaving Jundar Farmstead]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>GFA_ANS_ZoneCondition_JundarFarmstead</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone Conditions]
+
+        [ZoneName:Jundar]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -15,12 +15,13 @@
         [UseRivalAi:true]
         [RivalAiReplaceRemoteControl:true]
 
-        [ManipulationProfiles:GFA_ANS_Manipulation]
+        [ManipulationProfiles:GFA_ANS_Manipulation_Persistent]
 
         [FactionOwner:CIV]
 
 		    [IgnoreCleanupRules:true]
         [GridsAreDestructable:false]
+        [ReplenishSystems:true]
 
 			  [TriggerRadius:10000]
 
