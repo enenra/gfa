@@ -1,1 +1,3 @@
-# Release Version 1.0
+# Update 1.1
+
+* Colorful icons.

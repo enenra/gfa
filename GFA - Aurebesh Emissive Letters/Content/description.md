@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/fVVaDCS.gif)
 
-**Current version:** [1.0](https://steamcommunity.com/sharedfiles/filedetails/changelog/3718267440)
+**Current version:** [1.1](https://steamcommunity.com/sharedfiles/filedetails/changelog/3718267440)
 
 ![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_description.png)
 
@@ -17,7 +17,6 @@
 ![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_notes.png)
 
 * There will be no small grid versions of these blocks.
-* Obviously inspired by the excellent [Emissive Letters & Symbols mod by Rayanth](https://steamcommunity.com/sharedfiles/filedetails/?id=3347016415). If you want these for latin letters, check it out!
-
+* Obviously inspired by the excellent [Emissive Letters &amp; Symbols mod by Rayanth](https://steamcommunity.com/sharedfiles/filedetails/?id=3347016415). If you want these for latin letters, check it out!
 
 [![](https://raw.githubusercontent.com/enenra/aqdse/master/usage_guidelines.png)](https://steamcommunity.com/workshop/discussions/18446744073709551615/2793874853443195941/?appid=244850)
