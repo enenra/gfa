@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/fVVaDCS.gif)
 
-**Current version:** [1.2c](https://steamcommunity.com/sharedfiles/filedetails/changelog/3238158579)
+**Current version:** [1.3](https://steamcommunity.com/sharedfiles/filedetails/changelog/3238158579)
 
 ![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_description.png)
 
@@ -9,9 +9,9 @@
 [![](https://raw.githubusercontent.com/enenra/gfa/master/assets/mod_banner.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816)
 
 ![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_features.png)
-![img](https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20TIE-LN%20Starfighter\OriginalContent\Promo\Base_Components.gif)
-![img](https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20TIE-LN%20Starfighter\OriginalContent\Promo\Propulsion_Components.gif)
-![img](https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20TIE-LN%20Starfighter\OriginalContent\Promo\Auxiliary_Components.gif)
+![img](<https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20TIE-LN%20Starfighter\OriginalContent\Promo\Base_Components.gif>)
+![img](<https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20TIE-LN%20Starfighter\OriginalContent\Promo\Propulsion_Components.gif>)
+![img](<https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20TIE-LN%20Starfighter\OriginalContent\Promo\Auxiliary_Components.gif>)
 
 ![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_notes.png)
 
