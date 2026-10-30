@@ -1,4 +1,4 @@
-[h1]Patch 1.0e[/h1]
+[h1]Patch 1.1[/h1]
 [list]
-[*]Removed leftover Large Blocks category in G menu.
+[*]Colorful
 [/list]
