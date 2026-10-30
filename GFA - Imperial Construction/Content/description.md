@@ -1,6 +1,6 @@
 ![img](https://i.imgur.com/fVVaDCS.gif)
 
-**Current version:** [1.2](https://steamcommunity.com/sharedfiles/filedetails/changelog/3440043209)
+**Current version:** [1.3](https://steamcommunity.com/sharedfiles/filedetails/changelog/3440043209)
 
 ![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_description.png)
 

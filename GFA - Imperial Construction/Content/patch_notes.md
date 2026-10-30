@@ -1,4 +1,3 @@
-# Patch 1.2
+# Patch 1.3
 
-* Added Standing Lamp Offset.
-* Adjustment for airtightness of Hangar Frame
+* Colorful icons.
