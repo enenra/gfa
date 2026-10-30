@@ -1,6 +1,6 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3297107279]1.0b[/url]
+[b]Current version:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3297107279]1.1[/url]
 
 [img]https://i.imgur.com/3D6U1Br.png[/img]
 [quote]
@@ -9,10 +9,8 @@ The TIE/mg Starfighter is identifieable by its cutout hexagonal solar collector 
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2978742816][img]https://i.imgur.com/XytuSmz.png[/img][/url]
 
-
 [img]https://i.imgur.com/TGu2yer.png[/img]
 [img]https://i.imgur.com/luEcar2.gif[/img]
-
 
 [img]https://i.imgur.com/4canKDu.png[/img]
 
@@ -28,11 +26,9 @@ The next GFA mod I'll be working on is a set of turrets. What comes after that i
 [b]Q: How dare you steal this mod from X!?[/b]
 That's not really a question but let's address this anyway: I made all models in this mod by myself, from scratch. Other similar mods existing does not mean nobody else is allowed to make a mod like that anymore.
 
-
 [img]https://i.imgur.com/Ky5F2bo.png[/img]
 [list]
 [*][b]Mexpex[/b] - For hooking me up with the script to reduce the sound delay on thrusters.
 [/list]
-
 
 [url=https://steamcommunity.com/workshop/discussions/18446744073709551615/2793874853443195941/?appid=244850][img]https://raw.githubusercontent.com/enenra/aqdse/master/usage_guidelines.png[/img][/url]

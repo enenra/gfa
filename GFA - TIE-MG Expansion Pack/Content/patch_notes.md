@@ -1,4 +1,4 @@
-[h1]Patch 1.0b[/h1]
+[h1]Patch 1.1[/h1]
 [list]
-[*]Add support for controller.
+[*]Colorful icons.
 [/list]
