@@ -1,3 +1,3 @@
-# Patch 1.3d
+# Patch 1.4
 
-* Compatibility with Space Engineers update 1.210 .
+* Colorful icons.

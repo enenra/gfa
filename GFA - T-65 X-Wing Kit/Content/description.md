@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/fVVaDCS.gif)
 
-**Current version:** [1.3d](https://steamcommunity.com/sharedfiles/filedetails/changelog/3044374869)
+**Current version:** [1.4](https://steamcommunity.com/sharedfiles/filedetails/changelog/3044374869)
 
 ![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_description.png)
 
@@ -10,11 +10,11 @@
 
 ![img](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_features.png)
 
-![img](https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20T-65%20X-Wing%20Kit\OriginalContent\Promo\BasicComponents.gif)
+![img](<https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20T-65%20X-Wing%20Kit\OriginalContent\Promo\BasicComponents.gif>)
 
-![img](https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20T-65%20X-Wing%20Kit/OriginalContent/Promo/CombatComponents.gif)
+![img](<https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20T-65%20X-Wing%20Kit/OriginalContent/Promo/CombatComponents.gif>)
 
-![img](https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20T-65%20X-Wing%20Kit/OriginalContent/Promo/AuxiliaryComponents.gif)
+![img](<https://raw.githubusercontent.com/enenra/gfa/master/GFA%20-%20T-65%20X-Wing%20Kit/OriginalContent/Promo/AuxiliaryComponents.gif>)
 
 ![](https://raw.githubusercontent.com/enenra/gfa/master/assets/header_notes.png)
 
