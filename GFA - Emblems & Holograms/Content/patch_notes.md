@@ -1,4 +1,4 @@
-[h1]Patch 1.1a[/h1]
+[h1]Patch 1.2[/h1]
 [list]
-[*]Added controller compatibility.
+[*]Colorful icons.
 [/list]
