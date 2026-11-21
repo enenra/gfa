@@ -46,6 +46,11 @@
         [SetSandboxVector3Ds:true]
         [SandboxVector3Ds:MES-GFA_ANS_Location_Jundar,{X:2980847.13693645 Y:-994599.304887873 Z:-3818695.2689451}]
 
+        [ChangeBooleans:true]
+        [SetBooleansFalse:GFA_ANS_MainPlot_1_Completed]
+        [SetBooleansFalse:GFA_ANS_MainPlot_1_InProgress]
+        [SetBooleansTrue:GFA_ANS_MainPlot_Active]
+
         [DebugChatMessage: Sandbox Variables set.]
       </Description>
     </EntityComponent>

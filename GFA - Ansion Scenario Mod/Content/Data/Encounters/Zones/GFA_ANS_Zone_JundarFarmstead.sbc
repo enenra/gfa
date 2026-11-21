@@ -15,12 +15,15 @@
         [Active:true]
         [Persistent:true]
 
-        [Coordinates:{X:2980847.13693645 Y:-994599.304887873 Z:-3818695.2689451}]
-        [Radius:1500]
+        [Radius:1220]
+
+        [PlanetaryZone:true]
+        [PlanetName:Ansion]
+        [Direction:{X:-0.481718236387802 Y:0.0290836968599783 Z:-0.875843410267145}]
+        [HeightOffset:0]
 
         [UseZoneAnnounce:true]
         [ZoneEnterAnnounce:Entering Jundar Farmstead]
-        [ZoneLeaveAnnounce:Leaving Jundar Farmstead]
       </Description>
     </EntityComponent>
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
