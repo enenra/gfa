@@ -1,3 +1,3 @@
-# Update 1.0b
+# Update 1.1
 
-* Fixed issue with Hangar Force Field 13x4 where the force field was offset from where it should display.
+* Colorful icons.
