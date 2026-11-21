@@ -141,6 +141,41 @@
 
   <!-- Overrides ================================================================================================================================ -->
 
+  <!-- Food Items -->
+  <data name="DisplayName_Item_ClangCola" xml:space="preserve">
+    <value>Kola</value>
+  </data>
+  <data name="DisplayName_Item_CosmicCoffee" xml:space="preserve">
+    <value>Caf</value>
+  </data>
+  <data name="Description_ClangKola" xml:space="preserve">
+    <value>A fizzy soft drink with a surprisingly strong flavor. The recipe for this beloved beverage remains one of the best-kept secrets in the galaxy.
+
+Heal Value: {0}
+Fill Value: {1}</value>
+  </data>
+  <data name="Item_ClangCola_Extra_Tooltip" xml:space="preserve">
+    <value>Heal Value: {0}
+Fill Value: {1}
+
+A fizzy soft drink with a surprisingly strong flavor. The recipe for this
+beloved beverage remains one of the best-kept secrets in the galaxy.</value>
+  </data>
+  <data name="Description_CosmicCoffee" xml:space="preserve">
+    <value>Dark, bitter, and loaded with caffeine. Brewed with the utmost care using genuine caf beans.
+
+Heal Value: {0}
+Fill Value: {1}</value>
+  </data>
+  <data name="Item_CosmicCoffee_Extra_Tooltip" xml:space="preserve">
+    <value>Heal Value: {0}
+Fill Value: {1}
+
+Dark, bitter, and loaded with caffeine. Brewed with the utmost care
+using genuine caf beans.</value>
+  </data>
+
+
   <!-- Space Credits to Credits -->
   <data name="Description_ContractBlock" xml:space="preserve">
     <value>A self-service contract terminal that lets users browse, accept, and complete jobs in exchange for Credits.</value>
@@ -253,7 +288,6 @@ Prototech blocks contain advanced components that will be lost if extraction is 
 
 
   <!-- Glass to Transparisteel -->
-
   <data name="DisplayName_Item_BulletproofGlass" xml:space="preserve">
     <value>Transparisteel</value>
   </data>
@@ -269,7 +303,6 @@ Prototech blocks contain advanced components that will be lost if extraction is 
 
 
   <!-- Steel to Durasteel -->
-
   <data name="DisplayName_Item_SteelPlate" xml:space="preserve">
     <value>Durasteel Plate</value>
   </data>
@@ -304,7 +337,6 @@ Prototech blocks contain advanced components that will be lost if extraction is 
 
 
   <!-- Concrete to Duracrete -->
-
   <data name="DisplayName_AQD_Comp_Concrete" xml:space="preserve">
     <value>Duracrete</value>
     <comment/>
